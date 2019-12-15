@@ -46,6 +46,19 @@ module.exports = function Biffer(raw) {
 		this.pos += position;
 	};
 
+	this.find = function(from) {
+		const buffer = Buffer.from(from);
+
+		const offset = this.buffer.indexOf(buffer, this.pos);
+
+		if(offset > -1) {
+			this.pos = offset;
+
+		}
+
+		return offset;
+	};
+
 	this.unpackString = function(format = 'L') {
 		let [length] = this.unpack(format);
 

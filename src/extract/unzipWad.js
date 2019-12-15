@@ -33,7 +33,7 @@ module.exports = async function unzipkWad(wadPath, unzipMap) {
 
 		const saveName = unzipMap[hash];
 		if(saveName) {
-			const fileBuffer = wadBiffer.buffer.slice(offset, offset+compressedSize);
+			const fileBuffer = wadBiffer.buffer.slice(offset, offset + compressedSize);
 
 			const pathSave = RD('_cache', 'extract', saveName);
 

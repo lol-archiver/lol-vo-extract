@@ -9,7 +9,7 @@ module.exports = {
 	hero: 'annie',
 	lang: 'en_us',
 
-	skinTry: 20,
+	skinMax: 20,
 
 	finalFormat: 'ogg',
 

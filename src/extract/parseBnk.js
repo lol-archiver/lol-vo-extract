@@ -45,12 +45,12 @@ module.exports = async function parserBnk(bnkPath, events) {
 	}
 
 	const eventNameMap = {};
-	const eventFiles = [];
+	const eventFileMap = {};
 
 	for(const [idx, name] of events) {
 		const hash = fnv_1(name);
 
-		(eventNameMap[hash] || (eventNameMap[hash] = [])).push(`${idx}-${name}`);
+		(eventNameMap[hash] || (eventNameMap[hash] = [])).push([name, idx]);
 	}
 
 	const eventSections = entries.filter(entry => entry instanceof HircEvent);
@@ -78,8 +78,19 @@ module.exports = async function parserBnk(bnkPath, events) {
 			}
 		}
 
-		eventFiles.push([eventNameMap[eventSection.id], eventSounds]);
+		for(const sound of eventSounds) {
+			const soundMap = eventFileMap[sound] || (eventFileMap[sound] = {});
+
+			for(const [event, idx] of eventNameMap[eventSection.id] ) {
+				const eventMap = soundMap[event] || ( soundMap[event] = []);
+
+				eventMap.push(idx);
+			}
+
+		}
+
+		// eventFiles.push([eventNameMap[eventSection.id], eventSounds]);
 	}
 
-	return eventFiles;
+	return eventFileMap;
 };

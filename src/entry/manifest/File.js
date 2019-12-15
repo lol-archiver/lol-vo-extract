@@ -20,11 +20,17 @@ module.exports = function File(name, fileSize, link, langs, fileChunks, version)
 		L(`[File] ${this.name} length ${bundleIDSet.size}`);
 
 		let bundleBuffer = {};
-		for(let bundleID of bundleIDSet) {
-			let [bid, buffer] = await fetchBundle(bundleID, version, cdn);
 
-			bundleBuffer[bid] = buffer;
+		const promises = [];
+		for(let bundleID of bundleIDSet) {
+			promises.push(fetchBundle(bundleID, version, cdn).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
+		await Promise.all(promises);
+		// for(let bundleID of bundleIDSet) {
+		// 	let [bid, buffer] = await fetchBundle(bundleID, version, cdn);
+
+		// 	bundleBuffer[bid] = buffer;
+		// }
 
 		Fex.removeSync(pathSave);
 
