@@ -12,7 +12,7 @@ module.exports = function File(name, fileSize, link, langs, fileChunks, version)
 	this.fileChunks = fileChunks;
 	this.version = version;
 
-	this.extract = async function(version, cdn) {
+	this.extract = async function(version, cdn, pathSave) {
 		let bundleIDSet = new Set();
 
 		this.fileChunks.forEach(chunk => bundleIDSet.add(chunk.bundleID));
@@ -26,9 +26,7 @@ module.exports = function File(name, fileSize, link, langs, fileChunks, version)
 			bundleBuffer[bid] = buffer;
 		}
 
-		let pathFinal = _pa.join('./_cache/assets/', this.name);
-
-		Fex.removeSync(pathFinal);
+		Fex.removeSync(pathSave);
 
 		for(let chunk of this.fileChunks) {
 			let bid = ('0000000000000000' + chunk.bundleID.toString(16)).slice(-16).toUpperCase();
@@ -37,13 +35,13 @@ module.exports = function File(name, fileSize, link, langs, fileChunks, version)
 
 			parser.seek(chunk.offset);
 
-			Fex.ensureDirSync(_pa.parse(pathFinal).dir);
+			Fex.ensureDirSync(_pa.parse(pathSave).dir);
 
 			let chunkBuffer = await T.unZstd(_pa.join('./_cache/chunk', `${chunk.chunkID}.chunk`), parser.raw(chunk.size), true);
 
-			Fex.appendFileSync(pathFinal, chunkBuffer);
+			Fex.appendFileSync(pathSave, chunkBuffer);
 		}
 
-		return pathFinal;
+		return pathSave;
 	};
 };

@@ -7,6 +7,21 @@ global._ul = require('url');
 global.Axios = require('axios');
 global.Fex = require('fs-extra');
 global.Zstd = require('node-zstandard');
+global.Gzip = require('node-gzip');
+
+const XXHash = require('xxhash');
+
+global.R = global._pa.resolve;
+
+global.P = {
+	// 当前工作目录
+	cwd: process.cwd(),
+	// 程序目录
+	dir: R(__dirname)
+};
+
+global.RC = function(...paths) { return global.R(P.cwd, ...paths); };
+global.RD = function(...paths) { return global.R(P.dir, ...paths); };
 
 let logs = [];
 
@@ -25,7 +40,7 @@ global.L.end = function(text, path) {
 	}
 
 	if(path) {
-		_fs.writeFileSync(path, logs.join('\r\n'));
+		_fs.writeFileSync(path, logs.join('\n'));
 	}
 };
 
@@ -46,9 +61,9 @@ global.T = {
 		return obj;
 	},
 	async unZstd(path, buffer, returnBuffer = false) {
-		_fs.writeFileSync('./_cache/zstd', buffer);
+		_fs.writeFileSync(RD('_cache', 'zstd'), buffer);
 
-		await new Promise((resolve, reject) => Zstd.decompress('./_cache/zstd', path, err => err ? reject(err) : resolve()));
+		await new Promise((resolve, reject) => Zstd.decompress(RD('_cache', 'zstd'), path, err => err ? reject(err) : resolve()));
 
 		if(returnBuffer) {
 			return _fs.readFileSync(path);
@@ -63,13 +78,28 @@ global.T = {
 		}
 
 		return hexArr.reverse().join('');
+	},
+	wadHash(str) {
+		if(typeof str != 'string') { throw 'argv not String'; }
+
+		const strLower = str.toLowerCase();
+		const strBuffer = Buffer.from(strLower);
+		const hashBuffer = XXHash.hash64(strBuffer, 0);
+		const hashHexRaw = hashBuffer.swap64().toString('hex');
+		const hashBigInt = BigInt(`0x${hashHexRaw}`);
+		// const hashBigIntSlice = hashBigInt;
+		// const hashHex = hashBigIntSlice.toString('16').toUpperCase();
+		// const hashHexPad = hashHex.padStart(10, '0');
+
+		return hashBigInt;
 	}
 };
 
 try {
 	global.C = require('./config');
-} catch (error) {
+} catch(error) {
 	L('[Config] Default');
+
 	global.C = require('./config.default');
 }
 

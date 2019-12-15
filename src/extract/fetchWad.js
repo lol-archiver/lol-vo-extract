@@ -11,8 +11,8 @@ Fex.ensureDirSync('./_cache/bundle');
 Fex.ensureDirSync('./_cache/chunk');
 Fex.ensureDirSync('./_cache/assets');
 
-module.exports = async function Downloader(files) {
-	L(`[Progress][1/4] -------Download-------`);
+module.exports = async function FetchWad(files) {
+	L(`-------FetchWad-------`);
 
 	let [maniURL, version] = await fetchEntry(C.channel, C.solution, C.cdn);
 
@@ -23,11 +23,17 @@ module.exports = async function Downloader(files) {
 	let bodyBuffer = await parseRman(manifest, maniBuffer);
 	await parseBody(manifest, bodyBuffer);
 
-	const fileEntries = Object.values(manifest.files).filter(({ name: path }) => files.filter(filename => path.toLowerCase().endsWith(filename)).length);
+	let result = [];
 
-	for(let file of fileEntries) {
-		await file.extract(manifest.version, manifest.cdn);
+	for(let file of Object.values(manifest.files)) {
+		for(let [matchname, savePath] of files) {
+			if(file.name.toLowerCase().endsWith(matchname)) {
+				result.push(await file.extract(manifest.version, manifest.cdn, savePath));
+
+				break;
+			}
+		}
 	}
 
-	return version;
+	return result;
 };

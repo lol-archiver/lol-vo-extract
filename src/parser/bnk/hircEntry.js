@@ -1,75 +1,81 @@
-module.exports = function HIRC(type, id) {
-	if(!(this instanceof HIRC)) {
-		return new HIRC(...arguments);
+const HircSound = require('../../entry/bnk/HircSound');
+const HircAction = require('../../entry/bnk/HircAction');
+const HircEvent = require('../../entry/bnk/HircEvent');
+const HircPool = require('../../entry/bnk/HircPool');
+
+module.exports = function parseEntry(type, id, B) {
+	let entry;
+
+	// Sound
+	if(type == 2) {
+		const [embedType, audioID, sourceID] = B.unpack('xxxxBLL');
+
+		entry = HircSound(id, embedType, audioID, sourceID);
+
+		if(embedType == 0) {
+			const [fileIndex, fileLength] = B.unpack('LL');
+
+			entry.fileIndex = fileIndex;
+			entry.fileLength = fileLength;
+		}
+
+		const [soundType] = B.unpack('L');
+
+		entry.soundType = soundType;
+		// Unused Sound structure;
 	}
+	// Even Action
+	else if(type == 3) {
+		const [scope, actionType, hircID, paramCount] = B.unpack('BBLxB');
 
-	this.type = type;
-	this.id = id;
+		entry = HircAction(id, scope, actionType, hircID, paramCount);
 
-	this.parse = function(B) {
-		// Sound
-		if(type == 2) {
-			const [embedType, audioID, sourceID] = B.unpack('xxxxBLL');
+		entry.scope = scope;
+		entry.actionType = actionType;
+		entry.hircID = hircID;
 
-			this.embedType = embedType;
-			this.audioID = audioID;
-			this.sourceID = sourceID;
+		// if(paramCount) {
+		// 	// Unused Struct
+		// 	entry.paramTypes = B.unpack(`${paramCount}B`);
+		// 	entry.params = B.unpack(`${paramCount}L`);
 
-			if(embedType == 0) {
-				const [fileIndex, fileLength] = B.unpack('LL');
+		// 	L('Unused Event Action Param', actionType, paramCount);
+		// }
 
-				this.fileIndex = fileIndex;
-				this.fileLength = fileLength;
-			}
+		// Unused Struct
+		// if(entry.actionType != 4) {
+		// 	debugger;
+		// }
+	}
+	// Event
+	else if(type == 4) {
+		const [count] = B.unpack('B');
 
-			const [soundType] = B.unpack('L');
+		entry = HircEvent(id, count);
 
-			this.soundType = soundType;
+		entry.count = count;
 
-			// Unused Sound structure;
+		if(count) {
+			entry.eventActions = B.unpack(`${count}L`);
 		}
-		// Even Action
-		else if(type == 3) {
-			const [scope, actionType, hircID, paramCount] = B.unpack('BBLxB');
+	}
+	// Pool
+	else if(type == 5) {
+		entry = HircPool(id);
 
-			this.scope = scope;
-			this.actionType = actionType;
-			this.hircID = hircID;
+		const b = Biffer(Buffer.from([...B.buffer].reverse()));
 
-			if(paramCount) {
-				// Unused Struct
-				this.paramTypes = B.unpack(`${paramCount}B`);
-				this.params = B.unpack(`${paramCount}L`);
-
-				L('Unused Even Action Param', actionType, paramCount);
-			}
-
-			// Unused Struct
-			if(this.actionType != 4) {
-				debugger;
-			}
+		while(b.unpack('>L')[0] == 0xC350) {
+			entry.soundIDs.push(b.unpack('>L')[0]);
 		}
-		// Event
-		else if(type == 4) {
-			const [count] = B.unpack('B');
+	}
+	// else {
+	// 	// unused Type
+	// 	// 7: Actor Mixer
+	// 	// 14: Attenuation
+	// 	L(type, id);
+	// }
 
-			this.count = count;
 
-			if(count) {
-				this.eActions = B.unpack(`${count}L`);
-			}
-		}
-		// Pool
-		else if(type == 5) {
-			const b = Biffer(Buffer.from([...B.buffer].reverse()));
-
-			this.soundIDs = [];
-
-			while(b.unpack('>L')[0] == 0xC350) {
-				this.soundIDs.push(b.unpack('>L')[0]);
-			}
-		}
-
-		return this;
-	};
+	return entry;
 };

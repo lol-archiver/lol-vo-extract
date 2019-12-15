@@ -46,8 +46,8 @@ module.exports = function Biffer(raw) {
 		this.pos += position;
 	};
 
-	this.unpackString = function() {
-		let [length] = this.unpack('<L');
+	this.unpackString = function(format = 'L') {
+		let [length] = this.unpack(format);
 
 		let result = this.raw(length);
 

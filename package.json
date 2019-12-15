@@ -10,8 +10,11 @@
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.19.0",
+		"eslint": "^6.7.2",
 		"fs-extra": "^8.1.0",
 		"moment": "^2.24.0",
-		"node-zstandard": "^1.2.4"
+		"node-gzip": "^1.1.2",
+		"node-zstandard": "^1.2.4",
+		"xxhash": "^0.3.0"
 	}
 }

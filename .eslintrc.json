@@ -21,6 +21,10 @@
 		"L": true,
 		"T": true,
 		"C": true,
+		"P": true,
+		"R": true,
+		"RC": true,
+		"RD": true,
 
 		"_fs": true,
 		"_pa": true,
@@ -32,6 +36,7 @@
 		"Axios": true,
 		"Fex": true,
 		"Zstd": true,
+		"Gzip": true,
 
 		"Biffer": true
 	}
