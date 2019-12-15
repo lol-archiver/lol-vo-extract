@@ -10,4 +10,4 @@ most of implementation based on [CDTB](https://github.com/CommunityDragon/CDTB)'
 - √ Extract BNK/WPK from WAD
 - √ Extract WEM from WPK
 - √ Extract Event Info from BNK and match them
-- X Convert WPK to WAV (or OGG?)
+- √ Convert WPK to WAV (or OGG?)

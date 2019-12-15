@@ -1,5 +1,4 @@
 const HircSound = require('../entry/bnk/HircSound');
-const HircAction = require('../entry/bnk/HircAction');
 const HircEvent = require('../entry/bnk/HircEvent');
 const HircPool = require('../entry/bnk/HircPool');
 
@@ -57,7 +56,7 @@ module.exports = async function parserBnk(bnkPath, events) {
 	const eventSections = entries.filter(entry => entry instanceof HircEvent);
 
 	for(const eventSection of eventSections) {
-		const eventResult = [];
+		const eventSounds = [];
 
 		for(const actionID of eventSection.eventActions) {
 			const action = entries.find(entry => entry.id == actionID);
@@ -65,13 +64,13 @@ module.exports = async function parserBnk(bnkPath, events) {
 			const entrySound = entries.find(entry => entry.id == action.hircID);
 
 			if(entrySound instanceof HircSound) {
-				eventResult.push(entrySound.audioID);
+				eventSounds.push(entrySound.audioID);
 			}
 			else if(entrySound instanceof HircPool) {
 				const sounds = entries.filter(entry => entrySound.soundIDs.indexOf(entry.id) > -1);
 
 				for(const sound of sounds) {
-					eventResult.push(sound.audioID);
+					eventSounds.push(sound.audioID);
 				}
 			}
 			else {
@@ -79,7 +78,7 @@ module.exports = async function parserBnk(bnkPath, events) {
 			}
 		}
 
-		eventFiles.push([eventNameMap[eventSection.id], eventSection.id, ...eventResult]);
+		eventFiles.push([eventNameMap[eventSection.id], eventSounds]);
 	}
 
 	return eventFiles;

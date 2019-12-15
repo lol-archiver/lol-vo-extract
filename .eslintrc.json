@@ -30,6 +30,7 @@
 		"_pa": true,
 		"_ul": true,
 		"_as": true,
+		"_cp": true,
 
 		"BigInt": true,
 

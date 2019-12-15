@@ -48,10 +48,44 @@ const unzipWpk = require('./src/extract/unzipWpk');
 		events = events.concat(parseBin(RD('_cache', 'extract', `skin${i}.bin`), i));
 	}
 
-	await parseBnk(RD('_cache', 'extract', 'event.bnk'), events.filter(event => event[1].indexOf('_sfx_') == -1));
+	const eventMatch = await parseBnk(RD('_cache', 'extract', 'event.bnk'), events.filter(event => event[1].indexOf('_sfx_') == -1));
+
+	Fex.emptyDirSync(RD('_cache', 'extract', 'sound'));
 
 
-	await unzipWpk(RD('_cache', 'extract', 'audio.wpk'));
+	if(C.finalFormat == 'wem') {
+		await unzipWpk(RD('_cache', 'extract', 'audio.wpk'));
+	}
+	else if((C.finalFormat == 'wav' || C.finalFormat == 'ogg') && _fs.existsSync(C.convertToolPath)) {
+		_cp.execFileSync(C.convertToolPath, [
+			RD('_cache', 'extract', 'audio.wpk'),
+			RD('_cache', 'extract', 'sound'),
+			`/sf:${C.finalFormat}`
+		], { stdio: [process.stdin, process.stdout, process.stderr] });
+	}
+	else {
+		L('[Error] Bad FinalFormat');
+	}
+
+	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));
+
+	for(const [events, sounds] of eventMatch) {
+		for(const event of events) {
+			for(const sound of sounds) {
+				const src = RD('_cache', 'extract', 'sound', `${sound}.${C.finalFormat}`);
+
+				if(_fs.existsSync(src)) {
+					_fs.copyFileSync(
+						src,
+						RD('_final', `${C.hero}@${C.lang}`, `Skin${event}-${sound}.${C.finalFormat}`),
+					);
+				}
+				else {
+					L(`Unfind Sound: ${sound}`);
+				}
+			}
+		}
+	}
 
 	L.end();
 })();
