@@ -111,8 +111,7 @@ module.exports = {
 				start += size * count;
 			}
 			else {
-				L(`警告，Struct.unpack 发现不支持的字符 ${char}`);
-				debugger;
+				L(`[WARNING] Struct.unpack found Unknown [Slot] ${char}`);
 			}
 		});
 

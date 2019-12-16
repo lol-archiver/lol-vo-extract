@@ -11,8 +11,8 @@ Fex.ensureDirSync('./_cache/bundle');
 Fex.ensureDirSync('./_cache/chunk');
 Fex.ensureDirSync('./_cache/assets');
 
-module.exports = async function FetchWad(files) {
-	L(`-------FetchWad-------`);
+module.exports = async function downWad(files) {
+	L(`-------DownWad-------`);
 
 	let [maniURL, version] = await fetchEntry(C.channel, C.solution, C.cdn);
 

@@ -1,10 +1,7 @@
-Fex.ensureDirSync('./_cache/extract');
-Fex.ensureDirSync('./_cache/extract/wem');
-
 module.exports = async function unzipkWpk(wpkPath) {
-	L(`-------UnzipkWpk ${_pa.parse(wpkPath).base}-------`);
-
 	const wpkBiffuer = Biffer(wpkPath);
+
+	Fex.ensureDirSync('./_cache/extract/wem');
 
 	// eslint-disable-next-line no-unused-vars
 	const [magic, version, count] = wpkBiffuer.unpack("4sLL");

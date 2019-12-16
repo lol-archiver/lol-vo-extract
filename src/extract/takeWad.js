@@ -1,7 +1,7 @@
 Fex.ensureDirSync('./_cache/extract');
 
-module.exports = async function unzipkWad(wadPath, unzipMap) {
-	L(`-------UnzipkWad ${_pa.parse(wadPath).base}-------`);
+module.exports = async function takeWad(wadPath, unzipMap) {
+	L(`-------takeWad ${_pa.parse(wadPath).base}-------`);
 
 	const wadBiffer = Biffer(wadPath);
 
@@ -19,6 +19,7 @@ module.exports = async function unzipkWad(wadPath, unzipMap) {
 	}
 
 	const [entryCount] = wadBiffer.unpack("I");
+	const unzipFiles = [];
 
 	for(let i = 0; i < entryCount; i++) {
 		// eslint-disable-next-line no-unused-vars
@@ -37,6 +38,8 @@ module.exports = async function unzipkWad(wadPath, unzipMap) {
 
 			const pathSave = RD('_cache', 'extract', saveName);
 
+			unzipFiles.push(saveName);
+
 			if(type == 0) {
 				_fs.writeFileSync(pathSave, fileBuffer);
 			}
@@ -53,4 +56,6 @@ module.exports = async function unzipkWad(wadPath, unzipMap) {
 			}
 		}
 	}
+
+	return unzipFiles;
 };

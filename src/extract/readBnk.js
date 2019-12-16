@@ -17,8 +17,8 @@ const fnv_1 = function(name) {
 	return h;
 };
 
-module.exports = async function parserBnk(bnkPath, events) {
-	L('-------parserBnk-------');
+module.exports = async function readBnk(bnkPath, events) {
+	L(`-------readBnk ${_pa.parse(bnkPath).base}-------`);
 
 	const bnkBiffer = Biffer(bnkPath);
 
@@ -47,10 +47,13 @@ module.exports = async function parserBnk(bnkPath, events) {
 	const eventNameMap = {};
 	const eventFileMap = {};
 
-	for(const [idx, name] of events) {
-		const hash = fnv_1(name);
+	for(const { id, events: eves } of events) {
 
-		(eventNameMap[hash] || (eventNameMap[hash] = [])).push([name, idx]);
+		for(const event of eves) {
+			const hash = fnv_1(event);
+
+			(eventNameMap[hash] || (eventNameMap[hash] = [])).push({ id, event });
+		}
 	}
 
 	const eventSections = entries.filter(entry => entry instanceof HircEvent);
@@ -74,19 +77,16 @@ module.exports = async function parserBnk(bnkPath, events) {
 				}
 			}
 			else {
-				debugger
+				L(`[WARNING] Unknown Entry Sound Type`);
 			}
 		}
 
 		for(const sound of eventSounds) {
 			const soundMap = eventFileMap[sound] || (eventFileMap[sound] = {});
 
-			for(const [event, idx] of eventNameMap[eventSection.id] ) {
-				const eventMap = soundMap[event] || ( soundMap[event] = []);
-
-				eventMap.push(idx);
+			for(const { id, event } of eventNameMap[eventSection.id]) {
+				soundMap[event] || (soundMap[event] = []).push(id);
 			}
-
 		}
 
 		// eventFiles.push([eventNameMap[eventSection.id], eventSounds]);
