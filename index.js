@@ -55,23 +55,23 @@ const takeWpk = require('./src/extract/takeWpk');
 
 	await takeWad(skinWadPath, takeMap);
 
-	let allSkinVoices = [];
+	let allEvents = [];
 
 	for(let i = 0; i <= C.skinMax; i++) {
 		const result = readBin(RD('_cache', 'extract', `skin${i}.bin`), i);
 
 		if(result) {
-			result.id = i;
-
-			allSkinVoices.push(result);
+			allEvents = allEvents.concat(result);
 		}
 	}
+
+	allEvents = new Set(allEvents);
 
 	const allSkinEventFileMap = [];
 	for(let eventFile of takeVoices.filter(file => file.indexOf('event.bnk') > -1)) {
 		allSkinEventFileMap.push(await readBnk(
 			RD('_cache', 'extract', eventFile),
-			allSkinVoices
+			allEvents
 		));
 	}
 
@@ -87,7 +87,7 @@ const takeWpk = require('./src/extract/takeWpk');
 				RD('_cache', 'extract', audioFile),
 				RD('_cache', 'sound'),
 				`/sf:${C.finalFormat}`
-			], { stdio: [process.stdin, process.stdout, process.stderr] });
+			], { timeout: 1000 * 60 * 10 });
 		}
 		else {
 			L('[Error] Bad FinalFormat');
@@ -96,28 +96,29 @@ const takeWpk = require('./src/extract/takeWpk');
 
 	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));
 
-	for(const eventFileMap of allSkinEventFileMap) {
-		for(const sound in eventFileMap) {
-			const src = RD('_cache', 'sound', `${sound}.${C.finalFormat}`);
-			const eventMap = eventFileMap[sound];
+	let allEventFiles = {};
 
-			if(_fs.existsSync(src)) {
-				const texts = [];
-
-				for(const event in eventMap) {
-					const skinText = `${event}@${eventMap[event].sort().join('')}`;
-
-					texts.push(skinText);
-				}
-
-				_fs.copyFileSync(
-					src,
-					RD('_final', `${C.hero}@${C.lang}`, `${texts.join('&')}-${T.toHexL(sound)}.${C.finalFormat}`),
-				);
+	for(const skinMapEntries of allSkinEventFileMap.map(skinMap => Object.entries(skinMap))) {
+		for(const skinMapEntry of skinMapEntries) {
+			for(const event of skinMapEntry[1]) {
+				(allEventFiles[skinMapEntry[0]] || (allEventFiles[skinMapEntry[0]] = new Set())).add(event);
 			}
-			else {
-				L(`Unfind Sound: ${sound}`);
-			}
+		}
+	}
+
+	for(const sound in allEventFiles) {
+		const src = RD('_cache', 'sound', `${sound}.${C.finalFormat}`);
+		const eventText = [...allEventFiles[sound]].sort().join('&').replace(/Play_vo_/g, '');
+
+		if(_fs.existsSync(src)) {
+
+			_fs.copyFileSync(
+				src,
+				RD('_final', `${C.hero}@${C.lang}`, `${eventText}-${T.toHexL(sound)}.${C.finalFormat}`),
+			);
+		}
+		else {
+			L(`Unfind Sound: ${sound}`);
 		}
 	}
 

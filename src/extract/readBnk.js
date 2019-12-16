@@ -1,6 +1,7 @@
 const HircSound = require('../entry/bnk/HircSound');
 const HircEvent = require('../entry/bnk/HircEvent');
 const HircPool = require('../entry/bnk/HircPool');
+const HircAction = require('../entry/bnk/HircAction');
 
 const parseHircEntry = require('../parser/bnk/hircEntry');
 
@@ -17,7 +18,7 @@ const fnv_1 = function(name) {
 	return h;
 };
 
-module.exports = async function readBnk(bnkPath, events) {
+module.exports = async function readBnk(bnkPath, allEvents) {
 	L(`-------readBnk ${_pa.parse(bnkPath).base}-------`);
 
 	const bnkBiffer = Biffer(bnkPath);
@@ -47,13 +48,10 @@ module.exports = async function readBnk(bnkPath, events) {
 	const eventNameMap = {};
 	const eventFileMap = {};
 
-	for(const { id, events: eves } of events) {
+	for(const event of allEvents) {
+		const hash = fnv_1(event);
 
-		for(const event of eves) {
-			const hash = fnv_1(event);
-
-			(eventNameMap[hash] || (eventNameMap[hash] = [])).push({ id, event });
-		}
+		eventNameMap[hash] = event;
 	}
 
 	const eventSections = entries.filter(entry => entry instanceof HircEvent);
@@ -61,35 +59,44 @@ module.exports = async function readBnk(bnkPath, events) {
 	for(const eventSection of eventSections) {
 		const eventSounds = [];
 
-		for(const actionID of eventSection.eventActions) {
-			const action = entries.find(entry => entry.id == actionID);
+		if(eventSection.count) {
+			for(const actionID of eventSection.eventActions) {
+				const action = entries.find(entry => entry.id == actionID);
 
-			const entrySound = entries.find(entry => entry.id == action.hircID);
+				const actionSound = entries.find(entry => entry.id == action.hircID);
 
-			if(entrySound instanceof HircSound) {
-				eventSounds.push(entrySound.audioID);
-			}
-			else if(entrySound instanceof HircPool) {
-				const sounds = entries.filter(entry => entrySound.soundIDs.indexOf(entry.id) > -1);
-
-				for(const sound of sounds) {
-					eventSounds.push(sound.audioID);
+				if(actionSound instanceof HircSound) {
+					eventSounds.push(actionSound.audioID);
 				}
-			}
-			else {
-				L(`[WARNING] Unknown Entry Sound Type`);
+				else if(actionSound instanceof HircPool) {
+					const sounds = entries.filter(entry => actionSound.soundIDs.indexOf(entry.id) > -1);
+
+					for(const sound of sounds) {
+						eventSounds.push(sound.audioID);
+					}
+				}
+				else if(!actionSound) {
+					L(`[WARNING] UnFind Entry Sound`);
+				}
+				else {
+					L(`[WARNING] Unknown Entry Sound Type`);
+				}
 			}
 		}
 
 		for(const sound of eventSounds) {
-			const soundMap = eventFileMap[sound] || (eventFileMap[sound] = {});
+			const soundMap = eventFileMap[sound] || (eventFileMap[sound] = []);
 
-			for(const { id, event } of eventNameMap[eventSection.id]) {
-				soundMap[event] || (soundMap[event] = []).push(id);
+			const eventName = eventNameMap[eventSection.id];
+
+			if(!eventName) {
+				L(`[WARNING] Unknown Event Section ID ${eventSection.id}`);
+
+				continue;
 			}
-		}
 
-		// eventFiles.push([eventNameMap[eventSection.id], eventSounds]);
+			soundMap.push(eventName);
+		}
 	}
 
 	return eventFileMap;
