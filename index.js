@@ -75,6 +75,7 @@ const takeWpk = require('./src/extract/takeWpk');
 		));
 	}
 
+	Fex.emptyDirSync(RD('_cache', 'sound'));
 	for(let audioFile of takeVoices.filter(file => file.indexOf('audio.wpk') > -1)) {
 		L(`-------takeWpk ${audioFile} AS ${C.finalFormat}-------`);
 
@@ -84,7 +85,7 @@ const takeWpk = require('./src/extract/takeWpk');
 		else if((C.finalFormat == 'wav' || C.finalFormat == 'ogg') && _fs.existsSync(C.convertToolPath)) {
 			_cp.execFileSync(C.convertToolPath, [
 				RD('_cache', 'extract', audioFile),
-				RD('_cache', 'extract', 'sound'),
+				RD('_cache', 'sound'),
 				`/sf:${C.finalFormat}`
 			], { stdio: [process.stdin, process.stdout, process.stderr] });
 		}
@@ -97,11 +98,12 @@ const takeWpk = require('./src/extract/takeWpk');
 
 	for(const eventFileMap of allSkinEventFileMap) {
 		for(const sound in eventFileMap) {
-			const src = RD('_cache', 'extract', 'sound', `${sound}.${C.finalFormat}`);
+			const src = RD('_cache', 'sound', `${sound}.${C.finalFormat}`);
 			const eventMap = eventFileMap[sound];
 
 			if(_fs.existsSync(src)) {
 				const texts = [];
+
 				for(const event in eventMap) {
 					const skinText = `${event}@${eventMap[event].sort().join('')}`;
 
@@ -110,7 +112,7 @@ const takeWpk = require('./src/extract/takeWpk');
 
 				_fs.copyFileSync(
 					src,
-					RD('_final', `${C.hero}@${C.lang}`, `${texts.join('&')}-${sound}.${C.finalFormat}`),
+					RD('_final', `${C.hero}@${C.lang}`, `${texts.join('&')}-${T.toHexL(sound)}.${C.finalFormat}`),
 				);
 			}
 			else {

@@ -1,8 +1,6 @@
 module.exports = async function unzipkWpk(wpkPath) {
 	const wpkBiffuer = Biffer(wpkPath);
 
-	Fex.ensureDirSync('./_cache/extract/wem');
-
 	// eslint-disable-next-line no-unused-vars
 	const [magic, version, count] = wpkBiffuer.unpack("4sLL");
 
@@ -14,6 +12,6 @@ module.exports = async function unzipkWpk(wpkPath) {
 		const [offset, size, nameLength] = wpkBiffuer.unpack('LLL');
 		const name = Buffer.from([...wpkBiffuer.raw(nameLength * 2)].filter(byte => byte)).toString('utf8');
 
-		_fs.writeFileSync(RD('_cache', 'extract', 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
+		_fs.writeFileSync(RD('_cache', 'sound', 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
 	}
 };

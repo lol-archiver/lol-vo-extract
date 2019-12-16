@@ -71,7 +71,7 @@ global.T = {
 		}
 	},
 	toHexL(number) {
-		const hex = number.toString(16).toUpperCase();
+		const hex = BigInt(number).toString(16).toUpperCase();
 
 		const hexArr = [];
 		for(let i = 0; i < hex.length; i += 2) {
