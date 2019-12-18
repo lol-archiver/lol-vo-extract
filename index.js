@@ -55,71 +55,96 @@ const takeWpk = require('./src/extract/takeWpk');
 
 	await takeWad(skinWadPath, takeMap);
 
-	let allEvents = [];
+	let allEventMap = {};
 
 	for(let i = 0; i <= C.skinMax; i++) {
 		const result = readBin(RD('_cache', 'extract', `skin${i}.bin`), i);
 
 		if(result) {
-			allEvents = allEvents.concat(result);
-		}
-	}
-
-	allEvents = new Set(allEvents);
-
-	const allSkinEventFileMap = [];
-	for(let eventFile of takeVoices.filter(file => file.indexOf('event.bnk') > -1)) {
-		allSkinEventFileMap.push(await readBnk(
-			RD('_cache', 'extract', eventFile),
-			allEvents
-		));
-	}
-
-	Fex.emptyDirSync(RD('_cache', 'sound'));
-	for(let audioFile of takeVoices.filter(file => file.indexOf('audio.wpk') > -1)) {
-		L(`-------takeWpk ${audioFile} AS ${C.finalFormat}-------`);
-
-		if(C.finalFormat == 'wem') {
-			await takeWpk(RD('_cache', 'extract', audioFile));
-		}
-		else if((C.finalFormat == 'wav' || C.finalFormat == 'ogg') && _fs.existsSync(C.convertToolPath)) {
-			_cp.execFileSync(C.convertToolPath, [
-				RD('_cache', 'extract', audioFile),
-				RD('_cache', 'sound'),
-				`/sf:${C.finalFormat}`
-			], { timeout: 1000 * 60 * 10 });
-		}
-		else {
-			L('[Error] Bad FinalFormat');
-		}
-	}
-
-	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));
-
-	let allEventFiles = {};
-
-	for(const skinMapEntries of allSkinEventFileMap.map(skinMap => Object.entries(skinMap))) {
-		for(const skinMapEntry of skinMapEntries) {
-			for(const event of skinMapEntry[1]) {
-				(allEventFiles[skinMapEntry[0]] || (allEventFiles[skinMapEntry[0]] = new Set())).add(event);
+			for(const eventInfo of result) {
+				(allEventMap[eventInfo.full] || (allEventMap[eventInfo.full] = [])).push(eventInfo);
 			}
 		}
 	}
 
-	for(const sound in allEventFiles) {
-		const src = RD('_cache', 'sound', `${sound}.${C.finalFormat}`);
-		const eventText = [...allEventFiles[sound]].sort().join('&').replace(/Play_vo_/g, '');
+	const allEventRaws = new Set(Object.keys(allEventMap));
 
-		if(_fs.existsSync(src)) {
+	const allSkinEventFileMap = {};
+	for(let eventFile of takeVoices.filter(file => file.indexOf('event.bnk') > -1)) {
+		const efMap = await readBnk(
+			RD('_cache', 'extract', eventFile),
+			allEventRaws
+		);
 
-			_fs.copyFileSync(
-				src,
-				RD('_final', `${C.hero}@${C.lang}`, `${eventText}-${T.toHexL(sound)}.${C.finalFormat}`),
-			);
+		if(efMap) {
+			for(const fileID in efMap) {
+				const eventList = efMap[fileID];
+
+				for(const eventFull of eventList) {
+					const eventInfos = allEventMap[eventFull];
+
+					if(eventInfos) {
+						for(const eventInfo of eventInfos) {
+							(allSkinEventFileMap[fileID] || (allSkinEventFileMap[fileID] = [])).push(eventInfo);
+						}
+					}
+				}
+			}
 		}
-		else {
-			L(`Unfind Sound: ${sound}`);
+	}
+
+	// Fex.emptyDirSync(RD('_cache', 'sound'));
+	// for(let audioFile of takeVoices.filter(file => file.indexOf('audio.wpk') > -1)) {
+	// 	L(`-------takeWpk ${audioFile} AS ${C.finalFormat}-------`);
+
+	// 	if(C.finalFormat == 'wem') {
+	// 		await takeWpk(RD('_cache', 'extract', audioFile));
+	// 	}
+	// 	else if((C.finalFormat == 'wav' || C.finalFormat == 'ogg') && _fs.existsSync(C.rextractorConsolePath)) {
+	// 		_cp.execFileSync(C.rextractorConsolePath, [
+	// 			RD('_cache', 'extract', audioFile),
+	// 			RD('_cache', 'sound'),
+	// 			`/sf:${C.finalFormat}`
+	// 		], { timeout: 1000 * 60 * 10 });
+	// 	}
+	// 	else {
+	// 		L('[Error] Bad FinalFormat');
+	// 	}
+	// }
+
+	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));
+
+	// let allEventFiles = {};
+
+	// for(const skinMapEntries of allSkinEventFileMap.map(skinMap => Object.entries(skinMap))) {
+	// 	for(const skinMapEntry of skinMapEntries) {
+	// 		for(const event of skinMapEntry[1]) {
+	// 			(allEventFiles[skinMapEntry[0]] || (allEventFiles[skinMapEntry[0]] = new Set())).add(event);
+	// 		}
+	// 	}
+	// }
+
+	for(let soundFile of _fs.readdirSync(RD('_cache', 'sound'))) {
+		const soundID = _pa.parse(soundFile).name;
+
+		const eventInfos = allSkinEventFileMap[soundID];
+
+		const eventMap = {};
+		for(const eventInfo of eventInfos) {
+			(eventMap[eventInfo.name] || (eventMap[eventInfo.name] = [])).push(eventInfo.isBase ? 'Base Skin' : eventInfo.skinName.replace(/:/g, ''));
 		}
+
+		const eventTotalText = [];
+		for(const eventName in eventMap) {
+			eventTotalText.push(`${eventName}@${eventMap[eventName].map(s => `[${s.replace(/[23]D$/g, '')}]`).join('')}`);
+		}
+
+		const src = RD('_cache', 'sound', `${soundID}.${C.finalFormat}`);
+
+		_fs.copyFileSync(
+			src,
+			RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText.join('-') || '_Unknown'}[${T.toHexL(soundID)}].${C.finalFormat}`),
+		);
 	}
 
 	L.end();

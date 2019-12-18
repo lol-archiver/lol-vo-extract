@@ -13,5 +13,5 @@ module.exports = {
 
 	finalFormat: 'ogg',
 
-	convertToolPath: 'D://RExtractorConsole.exe',
+	rextractorConsolePath: 'D:/RavioliGameTools/RExtractorConsole.exe',
 };
