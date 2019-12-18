@@ -114,16 +114,6 @@ const takeWpk = require('./src/extract/takeWpk');
 
 	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));
 
-	// let allEventFiles = {};
-
-	// for(const skinMapEntries of allSkinEventFileMap.map(skinMap => Object.entries(skinMap))) {
-	// 	for(const skinMapEntry of skinMapEntries) {
-	// 		for(const event of skinMapEntry[1]) {
-	// 			(allEventFiles[skinMapEntry[0]] || (allEventFiles[skinMapEntry[0]] = new Set())).add(event);
-	// 		}
-	// 	}
-	// }
-
 	for(let soundFile of _fs.readdirSync(RD('_cache', 'sound'))) {
 		const soundID = _pa.parse(soundFile).name;
 
@@ -131,12 +121,12 @@ const takeWpk = require('./src/extract/takeWpk');
 
 		const eventMap = {};
 		for(const eventInfo of eventInfos) {
-			(eventMap[eventInfo.name] || (eventMap[eventInfo.name] = [])).push(eventInfo.isBase ? 'Base Skin' : eventInfo.skinName.replace(/:/g, ''));
+			(eventMap[eventInfo.name] || (eventMap[eventInfo.name] = [])).push(`[${eventInfo.isBase ? 'Base Skin' : eventInfo.skinName.replace(/:/g, '')}]`);
 		}
 
 		const eventTotalText = [];
 		for(const eventName in eventMap) {
-			eventTotalText.push(`${eventName}@${eventMap[eventName].map(s => `[${s.replace(/[23]D$/g, '')}]`).join('')}`);
+			eventTotalText.push(`${eventName.replace(/[23]D/g, '')}@${eventMap[eventName].join('')}`);
 		}
 
 		const src = RD('_cache', 'sound', `${soundID}.${C.finalFormat}`);

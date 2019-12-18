@@ -47,10 +47,10 @@ module.exports = function readBin(binPath, skinIndex) {
 			const eventFull = binBiffer.unpackString('H');
 
 			if(eventFull.indexOf('_sfx_') == -1) {
-				let [, eventName] = eventFull.replace('Play_vo_', '').split('_');
+				let [, ...eventName] = eventFull.replace('Play_vo_', '').split('_');
 
 				skinEvents.push({
-					name: eventName,
+					name: eventName.join(''),
 					index: skinIndex,
 					skinName: skinNameFinal || `Skin${skinIndex}`,
 					full: eventFull,
