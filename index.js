@@ -8,6 +8,7 @@ const takeWad = require('./src/extract/takeWad');
 const readBin = require('./src/extract/readBin');
 const readBnk = require('./src/extract/readBnk');
 const takeWpk = require('./src/extract/takeWpk');
+const copyVoc = require('./src/extract/copyVoc');
 
 (async function main() {
 	const voiceWad = `${C.hero}.${C.lang}.wad.client`.toLowerCase();
@@ -51,7 +52,7 @@ const takeWpk = require('./src/extract/takeWpk');
 		takeMap[hashEvent] = `skin${pad}_event.bnk`;
 	}
 
-	const takeVoices = await takeWad(voiceWadPath, takeMap);
+	const voiceFiles = await takeWad(voiceWadPath, takeMap);
 
 	await takeWad(skinWadPath, takeMap);
 
@@ -70,7 +71,7 @@ const takeWpk = require('./src/extract/takeWpk');
 	const allEventRaws = new Set(Object.keys(allEventMap));
 
 	const allSkinEventFileMap = {};
-	for(let eventFile of takeVoices.filter(file => file.indexOf('event.bnk') > -1)) {
+	for(let eventFile of voiceFiles.filter(file => file.indexOf('event.bnk') > -1)) {
 		const efMap = await readBnk(
 			RD('_cache', 'extract', eventFile),
 			allEventRaws
@@ -93,64 +94,11 @@ const takeWpk = require('./src/extract/takeWpk');
 		}
 	}
 
-	Fex.emptyDirSync(RD('_cache', 'sound'));
-	for(let audioFile of takeVoices.filter(file => file.indexOf('audio.wpk') > -1)) {
-		L(`-------takeWpk ${audioFile} AS ${C.finalFormat}-------`);
+	// extract vocie files from wpk
+	takeWpk(voiceFiles.filter(file => file.indexOf('audio.wpk') > -1));
 
-		if(C.finalFormat == 'wem') {
-			await takeWpk(RD('_cache', 'extract', audioFile));
-		}
-		else if((C.finalFormat == 'wav' || C.finalFormat == 'ogg') && _fs.existsSync(C.rextractorConsolePath)) {
-			_cp.execFileSync(C.rextractorConsolePath, [
-				RD('_cache', 'extract', audioFile),
-				RD('_cache', 'sound'),
-				`/sf:${C.finalFormat}`
-			], { timeout: 1000 * 60 * 10 });
-		}
-		else {
-			L('[Error] Bad FinalFormat');
-		}
-	}
-
-	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));
-
-	const toLongList = [`-------${M().format('YYYY-MM-DD HH:mm:ss')}-------`];
-
-	for(let soundFile of _fs.readdirSync(RD('_cache', 'sound'))) {
-		const soundID = _pa.parse(soundFile).name;
-
-		const eventInfos = allSkinEventFileMap[soundID];
-
-		const eventMap = {};
-		for(const eventInfo of eventInfos) {
-			(eventMap[eventInfo.name] || (eventMap[eventInfo.name] = [])).push(`[${eventInfo.isBase ? 'Base Skin' : eventInfo.skinName.replace(/:/g, '')}]`);
-		}
-
-		const eventTotalText = [];
-		for(const eventName in eventMap) {
-			eventTotalText.push(`${eventName.replace(/[23]D/g, '')}@${eventMap[eventName].join('')}`);
-		}
-
-		const src = RD('_cache', 'sound', `${soundID}.${C.finalFormat}`);
-
-		try {
-			_fs.copyFileSync(
-				src,
-				RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText.join('-') || '_Unknown'}[${T.toHexL(soundID)}].${C.finalFormat}`),
-			);
-		} catch(error) {
-			_fs.copyFileSync(
-				src,
-				RD('_final', `${C.hero}@${C.lang}`, `_EventToLong[${T.toHexL(soundID)}].${C.finalFormat}`),
-			);
-
-			toLongList.push(`[${T.toHexL(soundID)}] ==>\n${eventTotalText.map(t=>`\t${t}`).join('\n') || '_Unknown'}`);
-		}
-	}
-
-	if(toLongList.length > 1) {
-		_fs.appendFileSync(RD('_final', `${C.hero}@${C.lang}`, '_ToLongEvent.txt'), toLongList.join('\n'));
-	}
+	// copy voice files and rename with events
+	copyVoc(allSkinEventFileMap);
 
 	L.end();
 })();
