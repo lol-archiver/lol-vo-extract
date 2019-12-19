@@ -93,26 +93,28 @@ const takeWpk = require('./src/extract/takeWpk');
 		}
 	}
 
-	// Fex.emptyDirSync(RD('_cache', 'sound'));
-	// for(let audioFile of takeVoices.filter(file => file.indexOf('audio.wpk') > -1)) {
-	// 	L(`-------takeWpk ${audioFile} AS ${C.finalFormat}-------`);
+	Fex.emptyDirSync(RD('_cache', 'sound'));
+	for(let audioFile of takeVoices.filter(file => file.indexOf('audio.wpk') > -1)) {
+		L(`-------takeWpk ${audioFile} AS ${C.finalFormat}-------`);
 
-	// 	if(C.finalFormat == 'wem') {
-	// 		await takeWpk(RD('_cache', 'extract', audioFile));
-	// 	}
-	// 	else if((C.finalFormat == 'wav' || C.finalFormat == 'ogg') && _fs.existsSync(C.rextractorConsolePath)) {
-	// 		_cp.execFileSync(C.rextractorConsolePath, [
-	// 			RD('_cache', 'extract', audioFile),
-	// 			RD('_cache', 'sound'),
-	// 			`/sf:${C.finalFormat}`
-	// 		], { timeout: 1000 * 60 * 10 });
-	// 	}
-	// 	else {
-	// 		L('[Error] Bad FinalFormat');
-	// 	}
-	// }
+		if(C.finalFormat == 'wem') {
+			await takeWpk(RD('_cache', 'extract', audioFile));
+		}
+		else if((C.finalFormat == 'wav' || C.finalFormat == 'ogg') && _fs.existsSync(C.rextractorConsolePath)) {
+			_cp.execFileSync(C.rextractorConsolePath, [
+				RD('_cache', 'extract', audioFile),
+				RD('_cache', 'sound'),
+				`/sf:${C.finalFormat}`
+			], { timeout: 1000 * 60 * 10 });
+		}
+		else {
+			L('[Error] Bad FinalFormat');
+		}
+	}
 
 	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));
+
+	const toLongList = [`-------${M().format('YYYY-MM-DD HH:mm:ss')}-------`];
 
 	for(let soundFile of _fs.readdirSync(RD('_cache', 'sound'))) {
 		const soundID = _pa.parse(soundFile).name;
@@ -131,10 +133,23 @@ const takeWpk = require('./src/extract/takeWpk');
 
 		const src = RD('_cache', 'sound', `${soundID}.${C.finalFormat}`);
 
-		_fs.copyFileSync(
-			src,
-			RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText.join('-') || '_Unknown'}[${T.toHexL(soundID)}].${C.finalFormat}`),
-		);
+		try {
+			_fs.copyFileSync(
+				src,
+				RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText.join('-') || '_Unknown'}[${T.toHexL(soundID)}].${C.finalFormat}`),
+			);
+		} catch(error) {
+			_fs.copyFileSync(
+				src,
+				RD('_final', `${C.hero}@${C.lang}`, `_EventToLong[${T.toHexL(soundID)}].${C.finalFormat}`),
+			);
+
+			toLongList.push(`[${T.toHexL(soundID)}] ==>\n${eventTotalText.map(t=>`\t${t}`).join('\n') || '_Unknown'}`);
+		}
+	}
+
+	if(toLongList.length > 1) {
+		_fs.appendFileSync(RD('_final', `${C.hero}@${C.lang}`, '_ToLongEvent.txt'), toLongList.join('\n'));
 	}
 
 	L.end();

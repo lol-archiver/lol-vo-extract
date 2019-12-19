@@ -19,6 +19,7 @@
 	},
 	"globals": {
 		"L": true,
+		"M": true,
 		"T": true,
 		"C": true,
 		"P": true,

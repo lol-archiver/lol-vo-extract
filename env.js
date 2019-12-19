@@ -12,6 +12,8 @@ global.Gzip = require('node-gzip');
 
 const XXHash = require('xxhash');
 
+global.M = require('moment');
+
 global.R = global._pa.resolve;
 
 global.P = {
