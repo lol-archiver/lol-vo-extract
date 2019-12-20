@@ -98,7 +98,12 @@ global.T = {
 		return hashBigInt;
 	},
 	crc32(buffer) {
-		return T.toHexL(CRC32.unsigned(buffer), 8);
+		try {
+			return T.toHexL(CRC32.unsigned(buffer), 8);
+		}
+		catch(error) {
+			return '';
+		}
 	}
 };
 

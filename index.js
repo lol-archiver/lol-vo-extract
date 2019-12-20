@@ -9,6 +9,7 @@ const readBin = require('./src/extract/readBin');
 const readBnk = require('./src/extract/readBnk');
 const takeWpk = require('./src/extract/takeWpk');
 const copyVoc = require('./src/extract/copyVoc');
+const saveEve = require('./src/extract/saveEve');
 
 (async function main() {
 	const voiceWad = `${C.hero}.${C.lang}.wad.client`.toLowerCase();
@@ -99,6 +100,9 @@ const copyVoc = require('./src/extract/copyVoc');
 
 	// copy voice files and rename with events
 	copyVoc(allSkinEventFileMap);
+
+	// save event JSON for `lol-vo-lines-dictation`
+	saveEve(allSkinEventFileMap);
 
 	L.end();
 })();
