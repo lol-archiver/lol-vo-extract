@@ -32,15 +32,15 @@ module.exports = async function copyVoc(allSkinEventFileMap) {
 		try {
 			_fs.copyFileSync(
 				src,
-				RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText.join('-') || '_Unknown'}[${T.toHexL(soundID)}].${C.finalFormat}`),
+				RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText.join('-') || '_Unknown'}[${T.toHexL(soundID, 8)}].${C.finalFormat}`),
 			);
 		} catch(error) {
 			_fs.copyFileSync(
 				src,
-				RD('_final', `${C.hero}@${C.lang}`, `_EventToLong[${T.toHexL(soundID)}].${C.finalFormat}`),
+				RD('_final', `${C.hero}@${C.lang}`, `_EventToLong[${T.toHexL(soundID, 8)}].${C.finalFormat}`),
 			);
 
-			toLongList.push(`[${T.toHexL(soundID)}] ==>\n${eventTotalText.map(t => `\t${t}`).join('\n') || '_Unknown'}`);
+			toLongList.push(`[${T.toHexL(soundID, 8)}] ==>\n${eventTotalText.map(t => `\t${t}`).join('\n') || '_Unknown'}`);
 		}
 	}
 

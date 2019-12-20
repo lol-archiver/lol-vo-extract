@@ -72,7 +72,7 @@ global.T = {
 			return _fs.readFileSync(path);
 		}
 	},
-	toHexL(number) {
+	toHexL(number, pad = 0) {
 		const hex = BigInt(number).toString(16).toUpperCase();
 
 		const hexArr = [];
@@ -80,7 +80,7 @@ global.T = {
 			hexArr.push(hex.slice(i, i + 2));
 		}
 
-		return hexArr.reverse().join('');
+		return hexArr.reverse().join('').padStart(pad, '0');
 	},
 	wadHash(str) {
 		if(typeof str != 'string') { throw 'argv not String'; }
