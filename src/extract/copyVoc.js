@@ -1,4 +1,6 @@
 module.exports = async function copyVoc(allSkinEventFileMap) {
+	L(`-------copyVoc-------`);
+
 	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));
 
 	const toLongList = [`-------${M().format('YYYY-MM-DD HH:mm:ss')}-------`];
@@ -6,7 +8,7 @@ module.exports = async function copyVoc(allSkinEventFileMap) {
 	for(let soundFile of _fs.readdirSync(RD('_cache', 'sound'))) {
 		const soundID = _pa.parse(soundFile).name;
 
-		const eventInfos = allSkinEventFileMap[soundID];
+		const eventInfos = allSkinEventFileMap[soundID] || [];
 
 		const eventMap = {};
 		for(const eventInfo of eventInfos) {

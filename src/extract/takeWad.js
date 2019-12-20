@@ -1,6 +1,6 @@
 Fex.ensureDirSync('./_cache/extract');
 
-module.exports = async function takeWad(wadPath, unzipMap) {
+module.exports = async function takeWad(wadPath, takeMap) {
 	L(`-------takeWad ${_pa.parse(wadPath).base}-------`);
 
 	const wadBiffer = Biffer(wadPath);
@@ -19,7 +19,7 @@ module.exports = async function takeWad(wadPath, unzipMap) {
 	}
 
 	const [entryCount] = wadBiffer.unpack("I");
-	const unzipFiles = [];
+	const takeFiles = [];
 
 	for(let i = 0; i < entryCount; i++) {
 		// eslint-disable-next-line no-unused-vars
@@ -32,13 +32,13 @@ module.exports = async function takeWad(wadPath, unzipMap) {
 			[hash, offset, compressedSize, size, type, duplicate, , , sha256] = wadBiffer.unpack("QIIIBBBBQ");
 		}
 
-		const saveName = unzipMap[hash];
+		const saveName = takeMap[hash];
 		if(saveName) {
 			const fileBuffer = wadBiffer.buffer.slice(offset, offset + compressedSize);
 
 			const pathSave = RD('_cache', 'extract', saveName);
 
-			unzipFiles.push(saveName);
+			takeFiles.push(saveName);
 
 			if(type == 0) {
 				_fs.writeFileSync(pathSave, fileBuffer);
@@ -57,5 +57,5 @@ module.exports = async function takeWad(wadPath, unzipMap) {
 		}
 	}
 
-	return unzipFiles;
+	return takeFiles;
 };

@@ -1,9 +1,9 @@
 const isSameTakeConfig = function() {
 	let isSameTakeConfig = false;
 	try {
-		const lastTakeWpk = require('../../_cache/lastTakeWpk.json');
+		const lastTakeConfig = require('../../_cache/lastTakeWpk.json');
 
-		if(lastTakeWpk && lastTakeWpk.hero == C.hero && lastTakeWpk.finalFormat == C.finalFormat) {
+		if(lastTakeConfig && lastTakeConfig.hero == C.hero && lastTakeConfig.lang == C.lang && lastTakeConfig.finalFormat == C.finalFormat) {
 			isSameTakeConfig = true;
 		}
 	} catch(error) {
@@ -33,6 +33,7 @@ const takeWpkRaw = function(wpkFile) {
 
 module.exports = async function takeWpk(wpkFiles) {
 	L(`-------takeWpk-------`);
+
 	if(isSameTakeConfig()) { L('Same TakeConfig. Skip...'); return; }
 
 	Fex.emptyDirSync(RD('_cache', 'sound'));
@@ -61,5 +62,5 @@ module.exports = async function takeWpk(wpkFiles) {
 		}
 	}
 
-	_fs.writeFileSync(RD('_cache', 'lastTakeWpk.json'), JSON.stringify({ hero: C.hero, finalFormat: C.finalFormat }));
+	_fs.writeFileSync(RD('_cache', 'lastTakeWpk.json'), JSON.stringify({ hero: C.hero, lang: C.lang, finalFormat: C.finalFormat }));
 };

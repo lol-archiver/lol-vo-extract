@@ -8,10 +8,9 @@ module.exports = {
 
 	hero: 'annie',
 	lang: 'en_us',
+	finalFormat: 'ogg',
 
 	skinMax: 20,
-
-	finalFormat: 'ogg',
 
 	rextractorConsolePath: 'D:/RavioliGameTools/RExtractorConsole.exe',
 };
