@@ -11,6 +11,7 @@ global.Zstd = require('node-zstandard');
 global.Gzip = require('node-gzip');
 
 const XXHash = require('xxhash');
+const CRC32 = require('buffer-crc32');
 
 global.M = require('moment');
 
@@ -95,6 +96,9 @@ global.T = {
 		// const hashHexPad = hashHex.padStart(10, '0');
 
 		return hashBigInt;
+	},
+	crc32(buffer) {
+		return T.toHexL(CRC32.unsigned(buffer), 8);
 	}
 };
 

@@ -6,7 +6,7 @@ module.exports = async function(bundleID, version, cdn) {
 	let bundleBuffer;
 
 	if(_fs.existsSync(bundleLocal)) {
-		L(`[Bundle-${bid}] cache exists, use cache.`);
+		// L(`[Bundle-${bid}] cache exists, use cache.`);
 
 		bundleBuffer = _fs.readFileSync(bundleLocal);
 	}

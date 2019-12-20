@@ -28,16 +28,17 @@ module.exports = async function copyVoc(allSkinEventFileMap) {
 		}
 
 		const src = RD('_cache', 'sound', `${soundID}.${C.finalFormat}`);
+		const srcBuffer = _fs.readFileSync(src);
 
 		try {
 			_fs.copyFileSync(
 				src,
-				RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText.join('-') || '_Unknown'}[${T.toHexL(soundID, 8)}].${C.finalFormat}`),
+				RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText.join('-') || '_Unknown'}[${T.toHexL(soundID, 8)}][${T.crc32(srcBuffer)}].${C.finalFormat}`),
 			);
 		} catch(error) {
 			_fs.copyFileSync(
 				src,
-				RD('_final', `${C.hero}@${C.lang}`, `_EventToLong[${T.toHexL(soundID, 8)}].${C.finalFormat}`),
+				RD('_final', `${C.hero}@${C.lang}`, `_EventToLong[${T.toHexL(soundID, 8)}][${T.crc32(srcBuffer)}].${C.finalFormat}`),
 			);
 
 			toLongList.push(`[${T.toHexL(soundID, 8)}] ==>\n${eventTotalText.map(t => `\t${t}`).join('\n') || '_Unknown'}`);

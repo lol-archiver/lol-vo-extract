@@ -26,11 +26,14 @@ module.exports = function File(name, fileSize, link, langs, fileChunks, version)
 			promises.push(fetchBundle(bundleID, version, cdn).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
 		await Promise.all(promises);
+
 		// for(let bundleID of bundleIDSet) {
 		// 	let [bid, buffer] = await fetchBundle(bundleID, version, cdn);
 
 		// 	bundleBuffer[bid] = buffer;
 		// }
+
+		L(`[File] ${this.name} AllFetched, UnZstding...`);
 
 		Fex.removeSync(pathSave);
 
