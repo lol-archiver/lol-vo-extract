@@ -38,6 +38,8 @@ module.exports = function readBin(binPath, skinIndex) {
 
 	let isFind = true;
 
+	const eventPoolNameSet = new Set();
+
 	while(isFind) {
 		if(binBiffer.find([0x84, 0xE3, 0xD8, 0x12]) == -1) { break; }
 
@@ -47,7 +49,22 @@ module.exports = function readBin(binPath, skinIndex) {
 			const eventFull = binBiffer.unpackString('H');
 
 			if(eventFull.indexOf('_sfx_') == -1) {
-				let [, ...eventName] = eventFull.replace('Play_vo_', '').split('_');
+				let eventPoolName;
+				let eventName;
+
+				if(eventFull.startsWith('Play_vo_')) {
+					[eventPoolName, ...eventName] = eventFull.replace('Play_vo_', '').split('_');
+				}
+				else if(eventFull.indexOf('_vo_') > -1) {
+					let action;
+					[action, eventPoolName, ...eventName] = eventFull.replace('_vo_', '_').split('_');
+					eventName.unshift(action);
+				}
+				else {
+					L('Unkown Event Name Format');
+				}
+
+				eventPoolNameSet.add(eventPoolName);
 
 				skinEvents.push({
 					name: eventName.join('_'),
@@ -59,6 +76,8 @@ module.exports = function readBin(binPath, skinIndex) {
 			}
 		}
 	}
+
+	if(eventPoolNameSet.size) { L(`[EventPool] ${[...eventPoolNameSet].join()}`); }
 
 	return skinEvents;
 };
