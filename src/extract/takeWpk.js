@@ -31,7 +31,7 @@ const takeWpkRaw = function(wpkFile) {
 	}
 };
 
-module.exports = async function takeWpk(wpkFiles) {
+module.exports = function takeWpk(wpkFiles) {
 	L(`-------takeWpk-------`);
 
 	if(isSameTakeConfig()) { L('Same TakeConfig. Skip...'); return; }

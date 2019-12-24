@@ -41,15 +41,18 @@ const saveEve = require('./src/extract/saveEve');
 	}
 
 	takeMap[T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/base/${C.hero}_base_vo_audio.wpk`)] = 'base_audio.wpk';
+	takeMap[T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/base/${C.hero}_base_vo_audio.bnk`)] = 'base_audio.bnk';
 	takeMap[T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/base/${C.hero}_base_vo_events.bnk`)] = 'base_event.bnk';
 
 	for(let i = 0; i <= C.skinMax; i++) {
 		const pad = `0${i}`.slice(-2);
 
 		const hashAudio = T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/skin${pad}/${C.hero}_skin${pad}_vo_audio.wpk`);
+		const hashAudioB = T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/skin${pad}/${C.hero}_skin${pad}_vo_audio.bnk`);
 		const hashEvent = T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/skin${pad}/${C.hero}_skin${pad}_vo_events.bnk`);
 
 		takeMap[hashAudio] = `skin${pad}_audio.wpk`;
+		takeMap[hashAudioB] = `skin${pad}_audio.bnk`;
 		takeMap[hashEvent] = `skin${pad}_event.bnk`;
 	}
 
@@ -96,7 +99,7 @@ const saveEve = require('./src/extract/saveEve');
 	}
 
 	// extract vocie files from wpk
-	takeWpk(voiceFiles.filter(file => file.indexOf('audio.wpk') > -1));
+	takeWpk(voiceFiles.filter(file => file.indexOf('audio.') > -1));
 
 	// copy voice files and rename with events
 	copyVoc(allSkinEventFileMap);

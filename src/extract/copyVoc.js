@@ -1,4 +1,4 @@
-module.exports = async function copyVoc(allSkinEventFileMap) {
+module.exports = function copyVoc(allSkinEventFileMap) {
 	L(`-------copyVoc-------`);
 
 	Fex.ensureDirSync(RD('_final', `${C.hero}@${C.lang}`));

@@ -74,14 +74,14 @@ global.T = {
 		}
 	},
 	toHexL(number, pad = 0) {
-		const hex = BigInt(number).toString(16).toUpperCase();
+		const hex = BigInt(number).toString(16).toUpperCase().padStart(pad, '0');
 
 		const hexArr = [];
 		for(let i = 0; i < hex.length; i += 2) {
 			hexArr.push(hex.slice(i, i + 2));
 		}
 
-		return hexArr.reverse().join('').padStart(pad, '0');
+		return hexArr.reverse().join('');
 	},
 	wadHash(str) {
 		if(typeof str != 'string') { throw 'argv not String'; }

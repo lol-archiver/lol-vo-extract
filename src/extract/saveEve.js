@@ -1,4 +1,4 @@
-module.exports = async function saveEve(allSkinEventFileMap) {
+module.exports = function saveEve(allSkinEventFileMap) {
 	L(`-------saveEve-------`);
 
 	const result = [];
@@ -8,7 +8,15 @@ module.exports = async function saveEve(allSkinEventFileMap) {
 	for(const [soundID, eventInfos] of Object.entries(allSkinEventFileMap)) {
 		const src = RD('_cache', 'sound', `${soundID}.${C.finalFormat}`);
 
-		const crc32 = T.crc32(_fs.readFileSync(src));
+		let crc32;
+
+		if(_fs.existsSync(src)) {
+			crc32 = T.crc32(_fs.readFileSync(src));
+		}
+		else {
+			crc32 = 'NOFILE';
+		}
+
 		const hex = T.toHexL(soundID, 8);
 
 		for(const eventInfo of eventInfos) {
