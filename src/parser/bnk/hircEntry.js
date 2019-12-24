@@ -37,14 +37,9 @@ module.exports = function parseEntry(type, id, B) {
 		// if(paramCount) {
 		// 	// Unused Struct
 		// 	entry.paramTypes = B.unpack(`${paramCount}B`);
-		// 	entry.params = B.unpack(`${paramCount}L`);
+		// 	// entry.params = B.unpack(`${paramCount}L`);
 
-		// 	L('Unused Event Action Param', actionType, paramCount);
-		// }
-
-		// Unused Struct
-		// if(entry.actionType != 4) {
-		// 	debugger;
+		// 	L('Even Action Param Types: ', id, hircID, entry.paramTypes.join(','));
 		// }
 	}
 	// Event

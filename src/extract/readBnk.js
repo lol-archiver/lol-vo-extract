@@ -26,7 +26,7 @@ module.exports = async function readBnk(bnkPath, allEvents) {
 	const entries = [];
 
 	while(!bnkBiffer.isEnd()) {
-		let [magic, sectionSize] = bnkBiffer.unpack('4sL');
+		const [magic, sectionSize] = bnkBiffer.unpack('4sL');
 
 		if(magic == 'HIRC') {
 			const sectionBiffer = bnkBiffer.sub(sectionSize);
@@ -41,6 +41,13 @@ module.exports = async function readBnk(bnkPath, allEvents) {
 				if(entry) {
 					entries.push(entry);
 				}
+			}
+		}
+		else {
+			bnkBiffer.skip(sectionSize);
+
+			if(magic != 'BKHD') {
+				L(magic);
 			}
 		}
 	}

@@ -50,7 +50,7 @@ module.exports = function readBin(binPath, skinIndex) {
 				let [, ...eventName] = eventFull.replace('Play_vo_', '').split('_');
 
 				skinEvents.push({
-					name: eventName.join(''),
+					name: eventName.join('_'),
 					index: skinIndex,
 					skinName: skinNameFinal || `Skin${skinIndex}`,
 					full: eventFull,
