@@ -37,13 +37,13 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 	for(const [skin, skinMap] of Object.entries(eventMap)) {
 		result.push(`### ${skin}`);
 
-		for(const [eventName, eventInfos] of Object.entries(skinMap)) {
+		for(const [eventName, eventInfos] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
 			result.push(`-  | ${eventName}`);
 
 			let arrEventText = [];
 
 			for(const { hex, crc32 } of eventInfos) {
-				arrEventText.push(`  - \`${hex}\`: CRC32[${crc32}] ***`);
+				arrEventText.push(`  - CRC32[${crc32}] \`${hex}\`: ***`);
 			}
 
 			for(const text of arrEventText.sort()) {
