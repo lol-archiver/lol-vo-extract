@@ -1,7 +1,7 @@
 Fex.ensureDirSync('./_cache/extract');
 
 module.exports = async function takeWad(wadPath, takeMap) {
-	L(`-------takeWad ${_pa.parse(wadPath).base}-------`);
+	L(`[Main] Take game files from Wad [${_pa.parse(wadPath).base}]`);
 
 	const wadBiffer = Biffer(wadPath);
 
@@ -57,5 +57,5 @@ module.exports = async function takeWad(wadPath, takeMap) {
 		}
 	}
 
-	return takeFiles;
+	return takeFiles.sort();
 };

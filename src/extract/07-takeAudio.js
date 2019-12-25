@@ -13,7 +13,7 @@ const isSameTakeConfig = function() {
 	return isSameTakeConfig;
 };
 
-const takeWpkRaw = function(wpkFile) {
+const takeWpkRaw = function(wpkFile, audioPackFile) {
 	const wpkBiffuer = Biffer(RD('_cache', 'extract', wpkFile));
 
 	// eslint-disable-next-line no-unused-vars
@@ -27,20 +27,21 @@ const takeWpkRaw = function(wpkFile) {
 		const [offset, size, nameLength] = wpkBiffuer.unpack('LLL');
 		const name = Buffer.from([...wpkBiffuer.raw(nameLength * 2)].filter(byte => byte)).toString('utf8');
 
-		_fs.writeFileSync(RD('_cache', 'sound', 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
+		_fs.writeFileSync(RD('_cache', 'audio', wpkFile, 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
 	}
 };
 
-module.exports = function takeWpk(wpkFiles) {
-	L(`-------takeWpk-------`);
+module.exports = function takeAudio(wpkFiles) {
+	L(`[Main] Take audio files from Wpk/Bnk`);
 
-	if(isSameTakeConfig()) { L('Same TakeConfig. Skip...'); return; }
+	if(isSameTakeConfig()) { L('\tSame Take audio config, skip...'); return; }
 
-	Fex.emptyDirSync(RD('_cache', 'sound'));
+	Fex.emptyDirSync(RD('_cache', 'audio'));
 
 	for(let wpkFile of wpkFiles) {
-		L(`[TakeWpk] ${wpkFile} TO ${C.finalFormat}`);
+		L(`\tConvert ${wpkFile} to ${C.finalFormat}`);
 
+		Fex.emptyDirSync(RD('_cache', 'audio', wpkFile));
 		if(C.finalFormat == 'wem') {
 			takeWpkRaw(wpkFile);
 		}
@@ -48,7 +49,7 @@ module.exports = function takeWpk(wpkFiles) {
 			if(_fs.existsSync(C.rextractorConsolePath)) {
 				_cp.execFileSync(C.rextractorConsolePath, [
 					RD('_cache', 'extract', wpkFile),
-					RD('_cache', 'sound'),
+					RD('_cache', 'audio', wpkFile),
 					`/sf:${C.finalFormat}`
 				], { timeout: 1000 * 60 * 10 });
 			}
@@ -58,7 +59,7 @@ module.exports = function takeWpk(wpkFiles) {
 
 		}
 		else {
-			L(`[Error] Bad FinalFormat: ${C.finalFormat}`);
+			L(`[Error] Bad FinalFormat: ${C.finalFormat}, skip...`);
 		}
 	}
 

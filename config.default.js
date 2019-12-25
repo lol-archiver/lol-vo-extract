@@ -10,6 +10,9 @@ module.exports = {
 	lang: 'en_us',
 	finalFormat: 'ogg',
 
+	// 0, no SFX; 1, only asset; 2, all
+	sfxLevel: 0,
+
 	skinMax: 20,
 
 	rextractorConsolePath: 'D:/RavioliGameTools/RExtractorConsole.exe',

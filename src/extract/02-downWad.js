@@ -12,7 +12,7 @@ Fex.ensureDirSync('./_cache/chunk');
 Fex.ensureDirSync('./_cache/assets');
 
 module.exports = async function downWad(files) {
-	L(`-------DownWad-------`);
+	L(`[Main] Download Wad from CDN`);
 
 	let [maniURL, version] = await fetchEntry(C.channel, C.solution, C.cdn);
 
@@ -23,17 +23,17 @@ module.exports = async function downWad(files) {
 	let bodyBuffer = await parseRman(manifest, maniBuffer);
 	await parseBody(manifest, bodyBuffer);
 
-	let result = [];
+	let arrFetchedFile = [];
 
 	for(let file of Object.values(manifest.files)) {
 		for(let [matchname, savePath] of files) {
 			if(file.name.toLowerCase().endsWith(matchname)) {
-				result.push(await file.extract(manifest.version, manifest.cdn, savePath));
+				arrFetchedFile.push(await file.extract(manifest.version, manifest.cdn, savePath));
 
 				break;
 			}
 		}
 	}
 
-	return result;
+	return arrFetchedFile;
 };

@@ -1,0 +1,86 @@
+const skinIndexMap = require('../../data/skinIndex');
+
+module.exports = function readBin(binPath, indexSkin) {
+	if(!_fs.existsSync(binPath)) { return; }
+
+	L(`[Main] Read Bin [${_pa.parse(binPath).base}]`);
+
+	const binBiffer = Biffer(binPath);
+
+	const arrEvent = [];
+
+	let skinNameFinal = null;
+	let isBase = false;
+
+	if(binBiffer.find([0xae, 0xf4, 0x77, 0xa9]) > -1) {
+		const [skinID] = binBiffer.unpack('5xL');
+		const skinInfo = skinIndexMap[skinID];
+
+		// Chroma
+		if(!skinInfo) {
+			L(`\t[SkinID] ${skinID} is Undetected. Continue with SkinBinName`);
+		}
+		else if(skinInfo[0] == 3) {
+			L(`\t[SkinID] ${skinID} is Chroma, skip...`);
+
+			return;
+		}
+		else if(skinInfo[0] == 1 || skinInfo[0] == 2) {
+			skinNameFinal = skinInfo[1];
+
+			isBase = skinInfo[0] == 1;
+
+			L(`\t[SkinID] ${skinID} is "${skinNameFinal}"`);
+		}
+
+	}
+	binBiffer.seek(0);
+
+	let isFind = true;
+
+	const setEventPoolName = new Set();
+
+	while(isFind) {
+		if(binBiffer.find([0x84, 0xE3, 0xD8, 0x12]) == -1) { break; }
+
+		const [, , , , countEvent] = binBiffer.unpack('LBBLL');
+
+		for(let i = 0; i < countEvent; i++) {
+			const eventName = binBiffer.unpackString('H');
+
+			if(eventName.indexOf('_sfx_') == -1) {
+				let eventPoolName;
+				let eventNameShort = [];
+
+				if(eventName.startsWith('Play_vo_')) {
+					[eventPoolName, ...eventNameShort] = eventName.replace('Play_vo_', '').split('_');
+				}
+				else if(eventName.indexOf('_vo_') > -1) {
+					let action;
+					[action, eventPoolName, ...eventNameShort] = eventName.replace('_vo_', '_').split('_');
+					eventNameShort.unshift(action);
+				}
+				else if(eventName.startsWith('Play_')) {
+					[eventPoolName, ...eventNameShort] = eventName.replace('Play_', '').split('_');
+				}
+				else {
+					L('Unkown Event Name Format');
+				}
+
+				setEventPoolName.add(eventPoolName);
+
+				arrEvent.push({
+					name: eventName,
+					short: eventNameShort.join('_'),
+					index: indexSkin,
+					skinName: skinNameFinal || `Skin${indexSkin}`,
+					isBase,
+				});
+			}
+		}
+	}
+
+	if(setEventPoolName.size > 1) { L(`\t[EventPool] ${[...setEventPoolName].join(', ')}`); }
+
+	return arrEvent;
+};

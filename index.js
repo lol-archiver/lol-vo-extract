@@ -2,95 +2,61 @@ require('./env');
 
 L(`[Hero] ${C.hero} [Language] ${C.lang}`);
 L(`[Channel] ${C.channel} [Solution] ${C.solution} [CDN] ${C.cdn}`);
+L('--------------');
 
-const downWad = require('./src/extract/downWad');
-const takeWad = require('./src/extract/takeWad');
-const readBin = require('./src/extract/readBin');
-const readBnk = require('./src/extract/readBnk');
-const takeWpk = require('./src/extract/takeWpk');
-const copyVoc = require('./src/extract/copyVoc');
-const saveEve = require('./src/extract/saveEve');
+const makeWadArr = require('./src/extract/01-makeWadArr');
+const downWad = require('./src/extract/02-downWad');
+const makeGameFileMap = require('./src/extract/03-makeGameFileMap');
+const takeWad = require('./src/extract/04-takeWad');
+const readBin = require('./src/extract/05-readBin');
+const readBnk = require('./src/extract/06-readBnk');
+const takeAudio = require('./src/extract/07-takeAudio');
+const copyAudio = require('./src/extract/08-copyAudio');
+const saveEvent = require('./src/extract/09-saveEvent');
 
 (async function main() {
-	const voiceWad = `${C.hero}.${C.lang}.wad.client`.toLowerCase();
-	const voiceWadPath = RD('_cache', 'assets', voiceWad);
+	const [arrFetchFile, pathVoiceWad, pathSkinWad] = makeWadArr();
 
-	const skinWad = `${C.hero}.wad.client`.toLowerCase();
-	const skinWadPath = RD('_cache', 'assets', skinWad);
-
-	const fetchList = [];
-
-	if(!_fs.existsSync(voiceWadPath) || C.cache == false) {
-		fetchList.push([voiceWad, voiceWadPath]);
-	}
-
-	if(!_fs.existsSync(skinWadPath) || C.cache == false) {
-		fetchList.push([skinWad, skinWadPath]);
-	}
-
-	if(fetchList.length) {
-		await downWad(fetchList);
-	}
+	if(arrFetchFile.length) { await downWad(arrFetchFile); }
 
 	Fex.emptyDirSync(RD('_cache', 'extract'));
 
-	let takeMap = {};
+	const mapHash_GameFile = makeGameFileMap();
 
-	for(let i = 0; i <= C.skinMax; i++) {
-		takeMap[T.wadHash(`data/characters/${C.hero}/skins/skin${i}.bin`)] = `skin${i}.bin`;
-	}
+	const arrSkinFile = await takeWad(pathSkinWad, mapHash_GameFile);
 
-	takeMap[T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/base/${C.hero}_base_vo_audio.wpk`)] = 'base_audio.wpk';
-	takeMap[T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/base/${C.hero}_base_vo_audio.bnk`)] = 'base_audio.bnk';
-	takeMap[T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/base/${C.hero}_base_vo_events.bnk`)] = 'base_event.bnk';
+	const mapName_Event = {};
 
-	for(let i = 0; i <= C.skinMax; i++) {
-		const pad = `0${i}`.slice(-2);
+	for(const binFile of arrSkinFile.filter(file => file.includes('.bin'))) {
+		const arrEvent = readBin(RD('_cache', 'extract', binFile), ~~binFile.match(/\d+/g)[0]);
 
-		const hashAudio = T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/skin${pad}/${C.hero}_skin${pad}_vo_audio.wpk`);
-		const hashAudioB = T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/skin${pad}/${C.hero}_skin${pad}_vo_audio.bnk`);
-		const hashEvent = T.wadHash(`assets/sounds/wwise2016/vo/${C.lang}/characters/${C.hero}/skins/skin${pad}/${C.hero}_skin${pad}_vo_events.bnk`);
-
-		takeMap[hashAudio] = `skin${pad}_audio.wpk`;
-		takeMap[hashAudioB] = `skin${pad}_audio.bnk`;
-		takeMap[hashEvent] = `skin${pad}_event.bnk`;
-	}
-
-	const voiceFiles = await takeWad(voiceWadPath, takeMap);
-
-	await takeWad(skinWadPath, takeMap);
-
-	let allEventMap = {};
-
-	for(let i = 0; i <= C.skinMax; i++) {
-		const result = readBin(RD('_cache', 'extract', `skin${i}.bin`), i);
-
-		if(result) {
-			for(const eventInfo of result) {
-				(allEventMap[eventInfo.full] || (allEventMap[eventInfo.full] = [])).push(eventInfo);
+		if(arrEvent instanceof Array) {
+			for(const event of arrEvent) {
+				(mapName_Event[event.name] || (mapName_Event[event.name] = [])).push(event);
 			}
 		}
 	}
 
-	const allEventRaws = new Set(Object.keys(allEventMap));
+	const setEventName = new Set(Object.keys(mapName_Event));
+	const arrVoiceFile = await takeWad(pathVoiceWad, mapHash_GameFile);
+	const mapAudioID_Event = {};
 
-	const allSkinEventFileMap = {};
-	for(let eventFile of voiceFiles.filter(file => file.indexOf('event.bnk') > -1)) {
-		const efMap = await readBnk(
+	for(let eventFile of arrVoiceFile.filter(file => file.includes('event.bnk'))) {
+		const mapAudioID_EventName = await readBnk(
 			RD('_cache', 'extract', eventFile),
-			allEventRaws
+			setEventName
 		);
 
-		if(efMap) {
-			for(const fileID in efMap) {
-				const eventList = efMap[fileID];
+		if(mapAudioID_EventName) {
+			for(const audioID in mapAudioID_EventName) {
+				const setEventName_AudioID = mapAudioID_EventName[audioID];
 
-				for(const eventFull of eventList) {
-					const eventInfos = allEventMap[eventFull];
+				for(const eventName of setEventName_AudioID) {
+					const arrEvent_EventName = mapName_Event[eventName];
 
-					if(eventInfos) {
-						for(const eventInfo of eventInfos) {
-							(allSkinEventFileMap[fileID] || (allSkinEventFileMap[fileID] = [])).push(eventInfo);
+					if(arrEvent_EventName) {
+						for(const event of arrEvent_EventName) {
+							(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(event);
 						}
 					}
 				}
@@ -98,14 +64,19 @@ const saveEve = require('./src/extract/saveEve');
 		}
 	}
 
+	const arrAudioPackFile = [
+		...arrVoiceFile.filter(file => file.includes('audio.')),
+		...arrSkinFile.filter(file => file.includes('audio.')),
+	];
+
 	// extract vocie files from wpk
-	takeWpk(voiceFiles.filter(file => file.indexOf('audio.') > -1));
+	takeAudio(arrAudioPackFile);
 
 	// copy voice files and rename with events
-	copyVoc(allSkinEventFileMap);
+	copyAudio(mapAudioID_Event, arrAudioPackFile);
 
 	// save event JSON for `lol-vo-lines-dictation`
-	saveEve(allSkinEventFileMap);
+	saveEvent(mapAudioID_Event, arrAudioPackFile);
 
 	L.end();
 })();
