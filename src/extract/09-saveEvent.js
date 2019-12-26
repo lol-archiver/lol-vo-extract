@@ -61,19 +61,19 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 	for(const [skin, skinMap] of Object.entries(eventMap)) {
 		result.push(`# ${skin}`);
 
-		const arrCatalog = ['## Event List:事件目录'];
+		const arrCatalog = ['## Catalog:目录'];
 		const arrEventList = [];
 
-		for(const [eventName, eventInfos] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
+		for(const [eventName, arrAudioInfo] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
 			const eventTitle = `${findFriendly(eventName, mapFriendly)} | ${eventName}`;
 
 			arrCatalog.push(`* [${eventTitle}](#${eventTitle.replace(/[、/:|[\]]/g, '').replace(/ /g, '-')})`);
-			arrEventList.push(`## ${eventTitle}`);
+			arrEventList.push(`#### ${eventTitle}`);
 			arrEventList.push(`-`);
 
-			let arrEventText = [];
+			const arrEventText = [];
 
-			for(const { hex, crc32 } of eventInfos) {
+			for(const { hex, crc32 } of arrAudioInfo) {
 				arrEventText.push(`  - CRC32[${crc32}] \`${hex}\`: ***`);
 			}
 
@@ -83,6 +83,8 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 		}
 
 		arrCatalog.forEach(text => result.push(text));
+		result.push('');
+		result.push('## Lines:目录');
 		arrEventList.forEach(text => result.push(text));
 	}
 
