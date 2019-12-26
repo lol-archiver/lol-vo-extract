@@ -61,13 +61,13 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 	for(const [skin, skinMap] of Object.entries(eventMap)) {
 		result.push(`# ${skin}`);
 
-		const arrCategory = ['## Event List:事件目录'];
+		const arrCatalog = ['## Event List:事件目录'];
 		const arrEventList = [];
 
 		for(const [eventName, eventInfos] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
 			const eventTitle = `${findFriendly(eventName, mapFriendly)} | ${eventName}`;
 
-			arrCategory.push(`* [${eventTitle}](#${eventTitle.replace(/[、/-:|[\]]/g, '').replace(/ /g, '-')})`);
+			arrCatalog.push(`* [${eventTitle}](#${eventTitle.replace(/[、/:|[\]]/g, '').replace(/ /g, '-')})`);
 			arrEventList.push(`## ${eventTitle}`);
 			arrEventList.push(`-`);
 
@@ -82,7 +82,7 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 			arrEventList.push('');
 		}
 
-		arrCategory.forEach(text => result.push(text));
+		arrCatalog.forEach(text => result.push(text));
 		arrEventList.forEach(text => result.push(text));
 	}
 
