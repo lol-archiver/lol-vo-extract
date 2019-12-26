@@ -1,8 +1,32 @@
+const findFriendly = function(name, map) {
+	let nameFormat = name.toLowerCase().replace(/[23]d/g, '');
+	const arrTrans = [];
+
+	for(const raw in map) {
+		if(nameFormat.includes(raw.toLowerCase())) {
+			nameFormat = nameFormat.replace(raw.toLowerCase(), '');
+			arrTrans.push(map[raw]);
+		}
+	}
+
+	return arrTrans.join('');
+};
+
 module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 	L(`[Main] Save Event info for dictaion`);
 
-	const result = [];
+	const mapFriendlyRaw = require(`../../data/eventFriendlyName/${C.lang}`);
+	const mapFriendly = {};
 
+	for(const skill of 'qwer'.split('')) {
+		mapFriendly[`${C.hero}${skill}`] = `${skill.toUpperCase()}技能`;
+	}
+
+	for(const raw in mapFriendlyRaw) {
+		mapFriendly[raw] = mapFriendlyRaw[raw];
+	}
+
+	const result = [];
 	const eventMap = {};
 
 	for(const [audioID, eventInfos] of Object.entries(mapAudioID_Event)) {
@@ -35,10 +59,17 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 	}
 
 	for(const [skin, skinMap] of Object.entries(eventMap)) {
-		result.push(`### ${skin}`);
+		result.push(`# ${skin}`);
+
+		const arrCategory = ['## Event List:事件目录'];
+		const arrEventList = [];
 
 		for(const [eventName, eventInfos] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
-			result.push(`-  | ${eventName}`);
+			const eventTitle = `${findFriendly(eventName, mapFriendly)} | ${eventName}`;
+
+			arrCategory.push(`* [${eventTitle}](#${eventTitle.replace(/[、/-:|[\]]/g, '').replace(/ /g, '-')})`);
+			arrEventList.push(`## ${eventTitle}`);
+			arrEventList.push(`-`);
 
 			let arrEventText = [];
 
@@ -46,12 +77,13 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 				arrEventText.push(`  - CRC32[${crc32}] \`${hex}\`: ***`);
 			}
 
-			for(const text of arrEventText.sort()) {
-				result.push(text);
-			}
+			arrEventText.sort().forEach(text => arrEventList.push(text));
 
-			result.push('');
+			arrEventList.push('');
 		}
+
+		arrCategory.forEach(text => result.push(text));
+		arrEventList.forEach(text => result.push(text));
 	}
 
 	_fs.writeFileSync(RD('_final', `${C.hero}@${C.lang}.events.md`), result.join('\n'));
