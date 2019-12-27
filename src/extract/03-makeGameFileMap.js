@@ -25,7 +25,7 @@ module.exports = function makeGameFileDict() {
 		}
 
 		for(let i = 0; i <= C.skinMax; i++) {
-			for(const [pathSoundBank, simpleName] of makeArrPathSoundBank(usage, C.lang, C.hero, String(i).padStart(2, '0'))) {
+			for(const [pathSoundBank, simpleName] of makeArrPathSoundBank(usage, C.lang, C.hero, `skin${String(i).padStart(2, '0')}`)) {
 				mapHash_GameFile[T.wadHash(pathSoundBank)] = simpleName;
 			}
 		}

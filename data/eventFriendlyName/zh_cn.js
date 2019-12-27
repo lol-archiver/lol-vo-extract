@@ -11,6 +11,7 @@ module.exports = {
 	EndedNearby: '回应',
 	Respawn: '重生',
 	RecallLeadIn: '回城',
+	CritAttack: '暴击',
 	General: '',
 
 	KillingSpree: '[连杀:大杀特杀]',
@@ -18,7 +19,7 @@ module.exports = {
 	Ally: '友方',
 	Enemy: '敌方',
 
-	Champion: '[英雄:]',
+	Champion: '英雄',
 	Kill: '击杀',
 	Nearby: '附近',
 	Move: '移动',

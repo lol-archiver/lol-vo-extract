@@ -69,15 +69,18 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 
 			arrCatalog.push(`* [${eventTitle}](#${eventTitle.replace(/[、/:|[\]]/g, '').replace(/ /g, '-')})`);
 			arrEventList.push(`#### ${eventTitle}`);
-			arrEventList.push(`-`);
 
 			const arrEventText = [];
 
 			for(const { hex, crc32 } of arrAudioInfo) {
-				arrEventText.push(`  - CRC32[${hex}|${crc32}] \`${hex}\`: ***`);
+				arrEventText.push(`  - >${hex}< CRC32[${crc32}] \`${hex}\`: ***`);
 			}
 
-			arrEventText.sort().forEach(text => arrEventList.push(text));
+			arrEventText.sort();
+
+			arrEventText[0] = arrEventText[0].replace(' ', '-');
+
+			arrEventText.forEach(text => arrEventList.push(text.replace(/>.*< /g, '')));
 
 			arrEventList.push('');
 		}

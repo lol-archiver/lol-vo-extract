@@ -35,7 +35,7 @@ module.exports = function copyVoc(mapAudioID_Event, arrAudioPackFile) {
 			const srcBuffer = _fs.readFileSync(src);
 
 			if(!eventsTotalText.length && !copyWhileEmpty) {
-				L(`\tAudio[${audioIDHex}] is SFX with empty vo event and low sfx level, skip...`);
+				// L(`\tAudio[${audioIDHex}] is SFX with empty vo event and low sfx level, skip...`);
 
 				continue;
 			}
