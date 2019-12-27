@@ -74,7 +74,7 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 			const arrEventText = [];
 
 			for(const { hex, crc32 } of arrAudioInfo) {
-				arrEventText.push(`  - CRC32[${crc32}] \`${hex}\`: ***`);
+				arrEventText.push(`  - CRC32[${hex}|${crc32}] \`${hex}\`: ***`);
 			}
 
 			arrEventText.sort().forEach(text => arrEventList.push(text));
