@@ -2,6 +2,7 @@ const HircSound = require('../../entry/bnk/HircSound');
 const HircAction = require('../../entry/bnk/HircAction');
 const HircEvent = require('../../entry/bnk/HircEvent');
 const HircPool = require('../../entry/bnk/HircPool');
+const HircSwitchContainer = require('../../entry/bnk/HircSwitchContainer');
 
 module.exports = function parseEntry(type, id, B) {
 	let entry;
@@ -62,6 +63,18 @@ module.exports = function parseEntry(type, id, B) {
 
 		while(b.unpack('>L')[0] == 0xC350) {
 			entry.soundIDs.push(b.unpack('>L')[0]);
+		}
+	}
+	// Switch Container
+	else if(type == 6) {
+		L('[DEBUG] Need More Switch Container Confirm');
+
+		entry = HircSwitchContainer(id);
+
+		const b = Biffer(Buffer.from([...B.buffer].reverse()));
+
+		while(b.unpack('LLBB').join('|') == '0|0|1|0') {
+			entry.arrContainerID.push(b.unpack('>L')[0]);
 		}
 	}
 	// else {

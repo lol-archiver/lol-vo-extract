@@ -1,6 +1,7 @@
 const HircSound = require('../entry/bnk/HircSound');
 const HircEvent = require('../entry/bnk/HircEvent');
 const HircPool = require('../entry/bnk/HircPool');
+const HircSwitchContainer = require('../entry/bnk/HircSwitchContainer');
 
 const parseHircEntry = require('../parser/bnk/hircEntry');
 
@@ -17,12 +18,44 @@ const fnv_1 = function(name) {
 	return h;
 };
 
+const parseActionSoundEntry = function(entryParsed, arrEntryAll) {
+	const result = [];
+
+	if(entryParsed instanceof HircSound) {
+		result.push(entryParsed.audioID);
+	}
+	else if(entryParsed instanceof HircPool) {
+		const arrSoundEntry = arrEntryAll.filter(entry => entryParsed.soundIDs.indexOf(entry.id) > -1);
+
+		for(const soundEntry of arrSoundEntry) {
+			result.push(soundEntry.audioID);
+		}
+	}
+	else if(entryParsed instanceof HircSwitchContainer) {
+		const arrEntry = arrEntryAll.filter(entry => entryParsed.arrContainerID.includes(entry.id));
+
+		for(const entry of arrEntry) {
+			for(const eventAudio of parseActionSoundEntry(entry, arrEntryAll)) {
+				result.push(eventAudio);
+			}
+		}
+	}
+	else if(!entryParsed) {
+		L(`[WARNING] Unknown action sound entry`);
+	}
+	else {
+		L(`[WARNING] Unknown action sound entry Type`);
+	}
+
+	return result;
+};
+
 module.exports = async function readBnk(bnkPath, eventNameSet) {
 	L(`[Main] Read Bnk [${_pa.parse(bnkPath).base}]`);
 
 	const bnkBiffer = Biffer(bnkPath);
 
-	const entryArr = [];
+	const arrEntry = [];
 
 	while(!bnkBiffer.isEnd()) {
 		const [magic, sectionSize] = bnkBiffer.unpack('4sL');
@@ -38,7 +71,7 @@ module.exports = async function readBnk(bnkPath, eventNameSet) {
 				const entry = parseHircEntry(type, id, sectionBiffer.sub(length - 4));
 
 				if(entry) {
-					entryArr.push(entry);
+					arrEntry.push(entry);
 				}
 			}
 		}
@@ -58,7 +91,7 @@ module.exports = async function readBnk(bnkPath, eventNameSet) {
 		mapHash_EventName[fnv_1(event)] = event;
 	}
 
-	const hircEventArr = entryArr.filter(entry => entry instanceof HircEvent);
+	const hircEventArr = arrEntry.filter(entry => entry instanceof HircEvent);
 
 	for(const hircEvent of hircEventArr) {
 		const arrEventAudio = [];
@@ -73,25 +106,12 @@ module.exports = async function readBnk(bnkPath, eventNameSet) {
 
 		if(hircEvent.count) {
 			for(const actionID of hircEvent.eventActions) {
-				const action = entryArr.find(entry => entry.id == actionID);
+				const action = arrEntry.find(entry => entry.id == actionID);
 
-				const actionSoundEntry = entryArr.find(entry => entry.id == action.hircID);
+				const actionSoundEntry = arrEntry.find(entry => entry.id == action.hircID);
 
-				if(actionSoundEntry instanceof HircSound) {
-					arrEventAudio.push(actionSoundEntry.audioID);
-				}
-				else if(actionSoundEntry instanceof HircPool) {
-					const arrSoundEntry = entryArr.filter(entry => actionSoundEntry.soundIDs.indexOf(entry.id) > -1);
-
-					for(const soundEntry of arrSoundEntry) {
-						arrEventAudio.push(soundEntry.audioID);
-					}
-				}
-				else if(!actionSoundEntry) {
-					L(`[WARNING] Unknown action sound entry`);
-				}
-				else {
-					L(`[WARNING] Unknown action sound entry Type`);
+				for(const eventAudio of parseActionSoundEntry(actionSoundEntry, arrEntry)) {
+					arrEventAudio.push(eventAudio);
 				}
 			}
 		}

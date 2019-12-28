@@ -15,7 +15,14 @@ const findFriendly = function(name, map) {
 module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 	L(`[Main] Save Event info for dictaion`);
 
-	const mapFriendlyRaw = require(`../../data/eventFriendlyName/${C.lang}`);
+	let mapFriendlyRaw;
+
+	try {
+		mapFriendlyRaw = require(`../../data/eventFriendlyName/${C.lang}`);
+	}
+	catch(error) {
+		mapFriendlyRaw = {};
+	}
 	const mapFriendly = {};
 
 	for(const skill of 'qwer'.split('')) {
