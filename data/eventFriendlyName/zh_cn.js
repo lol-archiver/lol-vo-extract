@@ -39,6 +39,7 @@ module.exports = {
 	Ionia: '[地区:艾欧尼亚]',
 	MountTargon: '[地区:巨神峰]',
 	Noxus: '[地区:诺克萨斯]',
+	Noxians: '[地区:诺克萨斯]',
 	Piltover: '[地区:皮尔特沃夫]',
 	ShadowIsles: '[地区:暗影岛]',
 	Shurima: '[地区:恕瑞玛]',
