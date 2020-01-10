@@ -94,7 +94,7 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 
 		arrCatalog.forEach(text => result.push(text));
 		result.push('');
-		result.push('## Lines:目录');
+		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
 	}
 
