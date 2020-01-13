@@ -37,22 +37,24 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 	const eventMap = {};
 
 	for(const [audioID, eventInfos] of Object.entries(mapAudioID_Event)) {
-		const arrSrcCRC32 = arrAudioPackFile
+		let arrSrcCRC32 = arrAudioPackFile
 			.map(file => RD('_cache', 'audio', file, `${audioID}.${C.finalFormat}`))
 			.filter(src => _fs.existsSync(src))
 			.map(src => T.crc32(_fs.readFileSync(src)));
 
+		arrSrcCRC32 = new Set(arrSrcCRC32);
+
 		let crc32;
 
-		if(!arrSrcCRC32.length) {
+		if(!arrSrcCRC32.size) {
 			crc32 = 'NOFILE';
 		}
 		else {
-			if(arrSrcCRC32.length > 1) {
+			if(arrSrcCRC32.size > 1) {
 				L(`\t [WARING] Multi Take Audio File [${audioID}]`);
 			}
 
-			crc32 = arrSrcCRC32.join('|');
+			crc32 = [...arrSrcCRC32].join('|');
 		}
 
 		const hex = T.toHexL(audioID, 8);
