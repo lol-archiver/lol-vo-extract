@@ -14,6 +14,7 @@ module.exports = {
 	RecallLeadIn: '回城',
 	CritAttack: '暴击',
 	LongMove: '长距离移动',
+	MoverOrder2DLong: '长距离移动',
 	EnemyFirstEncounter: '首次遇到敌方',
 	Passive: '被动',
 	TurnFrom: '背向',
@@ -32,6 +33,7 @@ module.exports = {
 	Move: '移动',
 	Attack: '攻击',
 	Recall: '回城',
+	Response: '回应',
 
 	Bilgewater: '[地区:比尔吉沃特]',
 	Demacia: '[地区:德玛西亚]',

@@ -58,6 +58,11 @@ module.exports = function Biffer(raw) {
 
 		return offset;
 	};
+	this.findFromStart = function(from) {
+		this.seek(0);
+
+		return this.find(from);
+	};
 
 	this.unpackString = function(format = 'L') {
 		let [length] = this.unpack(format);

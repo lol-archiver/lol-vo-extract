@@ -25,7 +25,7 @@ module.exports = function copyVoc(mapAudioID_Event, arrAudioPackFile) {
 
 				let eventsText = '@[Base]';
 				if(!events.find(event => event == '[Base!]')) {
-					eventsText = `@${mapEventNameShort_SkinName[eventName].join('&')}`;
+					eventsText = `@${mapEventNameShort_SkinName[eventName].join('')}`;
 				}
 
 				eventsTotalText.push(`${eventName}${eventsText}`);

@@ -15,10 +15,17 @@ module.exports = function readBin(binPath, indexSkin) {
 	if(binBiffer.find([0xae, 0xf4, 0x77, 0xa9]) > -1) {
 		const [skinID] = binBiffer.unpack('5xL');
 		const skinInfo = skinIndexMap[skinID];
-
 		// Chroma
 		if(!skinInfo) {
-			L(`\t[SkinID] ${skinID} is Undetected. Continue with SkinBinName`);
+			if(binBiffer.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
+				L(`\t[SkinID] ${skinID} is Chroma, skip...`);
+
+				return;
+			}
+
+			L(`\t[SkinID] ${skinID} is Undetected. skip...`);
+
+			return;
 		}
 		else if(skinInfo[0] == 3) {
 			L(`\t[SkinID] ${skinID} is Chroma, skip...`);
@@ -32,7 +39,6 @@ module.exports = function readBin(binPath, indexSkin) {
 
 			L(`\t[SkinID] ${skinID} is "${skinNameFinal}"`);
 		}
-
 	}
 	binBiffer.seek(0);
 
