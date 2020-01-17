@@ -5,6 +5,8 @@ const HircSwitchContainer = require('../entry/bnk/HircSwitchContainer');
 
 const parseHircEntry = require('../parser/bnk/hircEntry');
 
+const mapEventRedirect = require(`../../data/eventRedirect/${C.hero}.json`);
+
 const fnv_1 = function(name) {
 	let h = 0x811c9dc5n;
 
@@ -48,6 +50,16 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll) {
 	}
 
 	return result;
+};
+
+const getEventFull = function(mapHash_EventName, hircEventID) {
+	let eventFull = mapHash_EventName[hircEventID];
+
+	while(!eventFull && mapEventRedirect[hircEventID]) {
+		eventFull = mapHash_EventName[hircEventID = mapEventRedirect[hircEventID]];
+	}
+
+	return eventFull;
 };
 
 module.exports = async function readBnk(bnkPath, eventNameSet) {
@@ -96,7 +108,7 @@ module.exports = async function readBnk(bnkPath, eventNameSet) {
 	for(const hircEvent of hircEventArr) {
 		const arrEventAudio = [];
 
-		let eventFull = mapHash_EventName[hircEvent.id];
+		let eventFull = getEventFull(mapHash_EventName, hircEvent.id);
 
 		if(!eventFull) {
 			L(`[WARNING] Unknown [Hirc Event ID] ${hircEvent.id}`);

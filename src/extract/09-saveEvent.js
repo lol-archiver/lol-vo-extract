@@ -60,10 +60,17 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 		const hex = T.toHexL(audioID, 8);
 
 		for(const eventInfo of eventInfos) {
-			const skin = eventInfo.isBase ? 'Base' : eventInfo.skinName.replace(/:/g, '');
-			const skinMap = eventMap[skin] || (eventMap[skin] = {});
+			if(typeof eventInfo == 'object') {
+				const skin = eventInfo.isBase ? 'Base' : eventInfo.skinName.replace(/:/g, '');
+				const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-			(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32 });
+				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32 });
+			}
+			else if(typeof eventInfo == 'number') {
+				const skinMap = eventMap['Unknown'] || (eventMap['Unknown'] = {});
+
+				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ hex, crc32 });
+			}
 		}
 	}
 

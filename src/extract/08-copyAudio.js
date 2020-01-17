@@ -16,7 +16,12 @@ module.exports = function copyVoc(mapAudioID_Event, arrAudioPackFile) {
 
 			const mapEventNameShort_SkinName = {};
 			for(const eventInfo of arrEvent) {
-				(mapEventNameShort_SkinName[eventInfo.short] || (mapEventNameShort_SkinName[eventInfo.short] = [])).push(`[${eventInfo.isBase ? 'Base!' : eventInfo.skinName.replace(/:/g, '')}]`);
+				if(typeof eventInfo == 'object') {
+					(mapEventNameShort_SkinName[eventInfo.short] || (mapEventNameShort_SkinName[eventInfo.short] = [])).push(`[${eventInfo.isBase ? 'Base!' : eventInfo.skinName.replace(/:/g, '')}]`);
+				}
+				else if(typeof eventInfo == 'number') {
+					(mapEventNameShort_SkinName[eventInfo] || (mapEventNameShort_SkinName[eventInfo] = [])).push(`{Unknown}`);
+				}
 			}
 
 			const eventsTotalText = [];

@@ -59,6 +59,9 @@ const saveEvent = require('./src/extract/09-saveEvent');
 							(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(event);
 						}
 					}
+					else {
+						(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(eventName);
+					}
 				}
 			}
 		}

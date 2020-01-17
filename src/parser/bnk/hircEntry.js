@@ -25,7 +25,7 @@ module.exports = function parseEntry(type, id, B) {
 		entry.soundType = soundType;
 		// Unused Sound structure;
 	}
-	// Even Action
+	// Event Action
 	else if(type == 3) {
 		const [scope, actionType, hircID, paramCount] = B.unpack('BBLxB');
 
