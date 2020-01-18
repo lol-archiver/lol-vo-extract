@@ -5,13 +5,13 @@ const HircSwitchContainer = require('../entry/bnk/HircSwitchContainer');
 
 const parseHircEntry = require('../parser/bnk/hircEntry');
 
-let mapEventRedirect;
+let mapEventID;
 
 try {
-	mapEventRedirect = require(`../../data/eventRedirect/${C.hero}.json`);
+	mapEventID = require(`../../data/EventIDMap/${C.hero}.json`);
 }
 catch(error) {
-	mapEventRedirect = {};
+	mapEventID = {};
 }
 
 const fnv_1 = function(name) {
@@ -62,8 +62,8 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll) {
 const getEventFull = function(mapHash_EventName, hircEventID) {
 	let eventFull = mapHash_EventName[hircEventID];
 
-	while(!eventFull && mapEventRedirect[hircEventID]) {
-		eventFull = mapHash_EventName[hircEventID = mapEventRedirect[hircEventID]];
+	while(!eventFull && mapEventID[hircEventID]) {
+		eventFull = mapHash_EventName[hircEventID = mapEventID[hircEventID]];
 	}
 
 	return eventFull;

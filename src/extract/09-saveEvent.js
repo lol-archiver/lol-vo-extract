@@ -18,7 +18,7 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 	let mapFriendlyRaw;
 
 	try {
-		mapFriendlyRaw = require(`../../data/eventFriendlyName/${C.lang}`);
+		mapFriendlyRaw = require(`../../data/FriendlyName/${C.lang}`);
 	}
 	catch(error) {
 		mapFriendlyRaw = {};
