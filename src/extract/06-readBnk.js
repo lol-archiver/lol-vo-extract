@@ -5,7 +5,14 @@ const HircSwitchContainer = require('../entry/bnk/HircSwitchContainer');
 
 const parseHircEntry = require('../parser/bnk/hircEntry');
 
-const mapEventRedirect = require(`../../data/eventRedirect/${C.hero}.json`);
+let mapEventRedirect;
+
+try {
+	mapEventRedirect = require(`../../data/eventRedirect/${C.hero}.json`);
+}
+catch(error) {
+	mapEventRedirect = {};
+}
 
 const fnv_1 = function(name) {
 	let h = 0x811c9dc5n;
