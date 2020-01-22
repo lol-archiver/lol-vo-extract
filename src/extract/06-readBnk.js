@@ -27,7 +27,7 @@ const fnv_1 = function(name) {
 	return h;
 };
 
-const parseActionSoundEntry = function(entryParsed, arrEntryAll) {
+const parseActionSoundEntry = function(entryParsed, arrEntryAll, hircID) {
 	const result = [];
 
 	if(entryParsed instanceof HircSound) {
@@ -50,7 +50,7 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll) {
 		}
 	}
 	else if(!entryParsed) {
-		L(`[WARNING] Unknown action sound entry`);
+		L(`[WARNING] Unknown action sound entry ${hircID}`);
 	}
 	else {
 		L(`[WARNING] Unknown action sound entry Type`);
@@ -129,7 +129,7 @@ module.exports = async function readBnk(bnkPath, eventNameSet) {
 
 				const actionSoundEntry = arrEntry.find(entry => entry.id == action.hircID);
 
-				for(const eventAudio of parseActionSoundEntry(actionSoundEntry, arrEntry)) {
+				for(const eventAudio of parseActionSoundEntry(actionSoundEntry, arrEntry, action.hircID)) {
 					arrEventAudio.push(eventAudio);
 				}
 			}
