@@ -8,7 +8,7 @@ module.exports = {
 	FirstMove: '首次移动',
 	FirstEncounter: '首次遇到',
 	LongMove: '长距离移动',
-	MoveOrderLong: '长距离移动',
+	MoveOrder2DLong: '长距离移动',
 	MoveOrder: '移动',
 	KillChampion: '击杀英雄',
 	EndedNearby: '回应',

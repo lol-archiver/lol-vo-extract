@@ -16,7 +16,7 @@ module.exports = function makeGameFileDict() {
 	const usages = C.sfxLevel ? ['vo', 'sfx'] : ['vo'];
 
 	for(const usage of usages) {
-		for(let i = 0; i <= C.skinMax; i++) {
+		for(let i = C.skinMin; i <= C.skinMax; i++) {
 			mapHash_GameFile[T.wadHash(`data/characters/${C.hero}/skins/skin${i}.bin`)] = `skin${i}.bin`;
 		}
 
@@ -24,7 +24,7 @@ module.exports = function makeGameFileDict() {
 			mapHash_GameFile[T.wadHash(pathSoundBank)] = simpleName;
 		}
 
-		for(let i = 0; i <= C.skinMax; i++) {
+		for(let i = C.skinMin; i <= C.skinMax; i++) {
 			for(const [pathSoundBank, simpleName] of makeArrPathSoundBank(usage, C.lang, C.hero, `skin${String(i).padStart(2, '0')}`)) {
 				mapHash_GameFile[T.wadHash(pathSoundBank)] = simpleName;
 			}
