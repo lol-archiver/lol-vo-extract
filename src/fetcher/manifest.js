@@ -1,19 +1,28 @@
-module.exports = async function(manifestURL, version) {
-	let maniLocal = _pa.join('./_cache/manifest', `${version}-${_pa.parse(manifestURL).base}`);
-	let maniBuffer;
+module.exports = async function(arrURLManifest, version) {
+	const arrBufferManifest = [];
 
-	if(_fs.existsSync(maniLocal)) {
-		L('[Manifest] cache exists, use cache.');
+	for(const urlManifest of arrURLManifest) {
+		const idManifest = _pa.parse(urlManifest).name;
 
-		maniBuffer = _fs.readFileSync(maniLocal);
+		const fileCache = _pa.join('./_cache/manifest', `${version}-${idManifest}.manifest`);
+
+		if(_fs.existsSync(fileCache)) {
+			L(`[Manifest]${idManifest} cache exists, use cache.`);
+
+			arrBufferManifest.push(_fs.readFileSync(fileCache));
+		}
+		else {
+			L(`[Manifest]${idManifest} fetch from '${urlManifest}'`);
+
+			const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy || undefined })).data;
+
+			arrBufferManifest.push(bufferManifest);
+
+			_fs.writeFileSync(fileCache, bufferManifest);
+
+			L(`[Manifest]${idManifest} fetched, saved at '${fileCache}', size ${bufferManifest.length}`);
+		}
 	}
-	else {
-		L(`[Manifest] fetch from '${manifestURL}'`);
-		maniBuffer = (await Axios.get(manifestURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined })).data;
 
-		L(`[Manifest] fetched, save at '${maniLocal}', size ${maniBuffer.length}`);
-		_fs.writeFileSync(maniLocal, maniBuffer);
-	}
-
-	return maniBuffer;
+	return arrBufferManifest;
 };

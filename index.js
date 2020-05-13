@@ -1,7 +1,7 @@
 require('./env');
 
 L(`[Hero] ${C.hero} [Language] ${C.lang}`);
-L(`[Channel] ${C.channel} [Solution] ${C.solution} [CDN] ${C.cdn}`);
+L(`[Region] ${C.region} [Solution] ${C.solution} [CDN] ${C.cdn}`);
 L('--------------');
 
 const makeWadArr = require('./src/extract/01-makeWadArr');

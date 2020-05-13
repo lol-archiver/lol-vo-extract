@@ -1,9 +1,9 @@
-module.exports = function Manifest(patchURL, version, cdn) {
+module.exports = function Manifest(url, version) {
 	if(!(this instanceof Manifest)) {
 		return new Manifest(...arguments);
 	}
 
-	this.patchURL = patchURL;
+	this.url = url;
 	this.version = version;
-	this.cdn = cdn;
+	this.files = null;
 };

@@ -14,21 +14,23 @@ Fex.ensureDirSync('./_cache/assets');
 module.exports = async function downWad(files) {
 	L(`[Main] Download Wad from CDN`);
 
-	let [maniURL, version] = await fetchEntry(C.channel, C.solution, C.cdn);
+	const [arrURLManifest, version] = await fetchEntry(C.region, C.solution, C.sie);
 
-	let maniBuffer = await fetchManifest(maniURL, version);
+	const arrBufferManifest = await fetchManifest(arrURLManifest, version);
 
-	let manifest = Manifest(maniURL, version, C.cdn);
+	const arrManifest = arrURLManifest.map((urlManifest) => Manifest(urlManifest, version));
+	const arrManifestTemp = arrManifest.map((manifest, index) => [manifest, arrBufferManifest[index]]);
 
-	let bodyBuffer = await parseRman(manifest, maniBuffer);
-	await parseBody(manifest, bodyBuffer);
+	await parseRman(arrManifestTemp);
+	await parseBody(arrManifestTemp);
 
-	let arrFetchedFile = [];
+	const arrFetchedFile = [];
+	const arrFilesAll = arrManifest.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
 
-	for(let file of Object.values(manifest.files)) {
-		for(let [matchname, savePath] of files) {
+	for(const file of arrFilesAll) {
+		for(const [matchname, savePath] of files) {
 			if(file.name.toLowerCase().endsWith(matchname)) {
-				arrFetchedFile.push(await file.extract(manifest.version, manifest.cdn, savePath));
+				arrFetchedFile.push(await file.extract(version, C.cdn, savePath));
 
 				break;
 			}

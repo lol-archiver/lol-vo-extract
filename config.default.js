@@ -1,5 +1,5 @@
 module.exports = {
-	channel: 'pbe-pbe-win',
+	region: 'PBE1',
 	solution: 'game',
 	cdn: 'https://lol.dyn.riotcdn.net',
 
