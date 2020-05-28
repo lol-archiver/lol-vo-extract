@@ -51,12 +51,12 @@ module.exports = function copyVoc(mapAudioID_Event, arrAudioPackFile) {
 			try {
 				_fs.copyFileSync(
 					src,
-					RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText || '_Unknown'}[${audioText}][${T.crc32(srcBuffer)}].${C.finalFormat}`),
+					RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText || '_Unknown'}[${T.crc32(srcBuffer)}][${audioText}].${C.finalFormat}`),
 				);
 			} catch(error) {
 				_fs.copyFileSync(
 					src,
-					RD('_final', `${C.hero}@${C.lang}`, `_EventToLong[${audioIDHex}][${T.crc32(srcBuffer)}].${C.finalFormat}`),
+					RD('_final', `${C.hero}@${C.lang}`, `_EventToLong[${T.crc32(srcBuffer)}][${audioIDHex}].${C.finalFormat}`),
 				);
 
 				toLongList.push(`[${audioIDHex}] ==>\n${eventsTotalText.map(t => `\t${t}`).join('\n') || '_Unknown'}`);

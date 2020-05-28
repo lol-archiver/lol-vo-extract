@@ -10,6 +10,9 @@ module.exports = {
 	Dance: '跳舞',
 
 	FirstEncounter: '初遇',
+	Move2DFirst: '移动[初次]',
+	Move2DLong: '移动[长途]',
+	Move2DStandard: '移动',
 	FirstMove: '移动[初次]',
 	LongMove: '移动[长途]',
 	MoveOrder2DLong: '移动[长途]',
