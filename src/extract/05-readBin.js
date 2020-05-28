@@ -12,34 +12,55 @@ module.exports = function readBin(binPath, indexSkin) {
 	let skinNameFinal = null;
 	let isBase = false;
 
+	let skinID;
 	if(binBiffer.find([0xae, 0xf4, 0x77, 0xa9]) > -1) {
-		const [skinID] = binBiffer.unpack('5xL');
-		const skinInfo = skinIndexMap[skinID];
-		// Chroma
-		if(!skinInfo) {
-			if(binBiffer.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
-				L(`\t[SkinID] ${skinID} is Chroma, skip...`);
+		[skinID] = binBiffer.unpack('5xL');
 
-				return;
-			}
+	}
+	else {
+		const subID = _pa.parse(binPath).base.match(/\d+/)[0];
+		skinID = `${C.id}${subID.padStart(3, '0')}`;
+	}
 
-			L(`\t[SkinID] ${skinID} is Undetected. skip...`);
-
-			return;
-		}
-		else if(skinInfo[0] == 3) {
+	const skinInfo = skinIndexMap[skinID];
+	if(!skinInfo) {
+		if(binBiffer.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
 			L(`\t[SkinID] ${skinID} is Chroma, skip...`);
 
 			return;
 		}
-		else if(skinInfo[0] == 1 || skinInfo[0] == 2) {
-			skinNameFinal = skinInfo[1];
+		else if(binBiffer.findFromStart([0x80, 0x58, 0x22, 0x87]) > -1) {
+			const [clazz] = binBiffer.unpack('5xB');
 
-			isBase = skinInfo[0] == 1;
+			if(clazz == 1) {
+				skinNameFinal = skinID;
 
-			L(`\t[SkinID] ${skinID} is "${skinNameFinal}"`);
+				L(`\t[SkinID] ${skinID} is "Skin${skinNameFinal}"`);
+			}
+			else if(clazz == 2) {
+				L(`\t[SkinID] ${skinID} is Chroma, skip...`);
+
+				return;
+			}
 		}
+
+		L(`\t[SkinID] ${skinID} is Undetected. skip...`);
+
+		return;
 	}
+	else if(skinInfo[0] == 3) {
+		L(`\t[SkinID] ${skinID} is Chroma, skip...`);
+
+		return;
+	}
+	else if(skinInfo[0] == 1 || skinInfo[0] == 2) {
+		skinNameFinal = skinInfo[1];
+
+		isBase = skinInfo[0] == 1;
+
+		L(`\t[SkinID] ${skinID} is "${skinNameFinal}"`);
+	}
+
 	binBiffer.seek(0);
 
 	let isFind = true;

@@ -27,7 +27,7 @@ const saveEvent = require('./src/extract/09-saveEvent');
 
 	const mapName_Event = {};
 
-	for(const binFile of arrSkinFile.filter(file => file.includes('.bin'))) {
+	for(const binFile of arrSkinFile.filter(file => file.includes('.bin')).sort((a, b) => a.match(/\d+/)[0] - b.match(/\d+/)[0])) {
 		const arrEvent = readBin(RD('_cache', 'extract', binFile), ~~binFile.match(/\d+/g)[0]);
 
 		if(arrEvent instanceof Array) {
