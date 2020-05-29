@@ -84,7 +84,7 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 			const eventTitle = `${findFriendly(eventName, mapFriendly)}|${eventName}`;
 
 			// arrCatalog.push(`* [${eventTitle}](#${eventTitle.replace(/[、/:|[\]]/g, '').replace(/ /g, '-')})`);
-			arrEventList.push(`### ${eventTitle}`);
+			arrEventList.push(`### ** ${eventTitle}`);
 
 			const arrEventText = [];
 
