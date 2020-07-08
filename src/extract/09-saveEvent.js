@@ -81,20 +81,20 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 		const arrEventList = [];
 
 		for(const [eventName, arrAudioInfo] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
-			const eventTitle = `${findFriendly(eventName, mapFriendly)} | ${eventName}`;
+			const eventTitle = `${findFriendly(eventName, mapFriendly)}|${eventName}`;
 
-			arrCatalog.push(`* [${eventTitle}](#${eventTitle.replace(/[、/:|[\]]/g, '').replace(/ /g, '-')})`);
-			arrEventList.push(`#### ${eventTitle}`);
+			// arrCatalog.push(`* [${eventTitle}](#${eventTitle.replace(/[、/:|[\]]/g, '').replace(/ /g, '-')})`);
+			arrEventList.push(`### ** ${eventTitle}`);
 
 			const arrEventText = [];
 
 			for(const { hex, crc32 } of arrAudioInfo) {
-				arrEventText.push(`  - >${hex}< CRC32[${crc32}] \`${hex}\`: ***`);
+				arrEventText.push(`- >${hex}< CRC32[${crc32}] \`${hex}\` ***`);
 			}
 
 			arrEventText.sort();
 
-			arrEventText[0] = arrEventText[0].replace(' ', '-');
+			// arrEventText[0] = arrEventText[0].replace(' ', '-');
 
 			arrEventText.forEach(text => arrEventList.push(text.replace(/>.*< /g, '')));
 
@@ -102,7 +102,6 @@ module.exports = function saveEve(mapAudioID_Event, arrAudioPackFile) {
 		}
 
 		arrCatalog.forEach(text => result.push(text));
-		result.push('');
 		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
 	}
