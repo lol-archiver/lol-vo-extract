@@ -1,4 +1,6 @@
-let fetchBundle = require('../../fetcher/bundle');
+const fetchBundle = require('../../fetcher/bundle');
+
+const pathCacheZstd = RD('_cache', 'zstd');
 
 module.exports = function File(name, fileSize, link, langs, fileChunks, version) {
 	if(!(this instanceof File)) {
@@ -13,44 +15,44 @@ module.exports = function File(name, fileSize, link, langs, fileChunks, version)
 	this.version = version;
 
 	this.extract = async function(version, cdn, pathSave) {
-		let bundleIDSet = new Set();
+		const bundleIDSet = new Set();
 
 		this.fileChunks.forEach(chunk => bundleIDSet.add(chunk.bundleID));
 
 		L(`[File] ${this.name} length ${bundleIDSet.size}`);
 
-		let bundleBuffer = {};
+		const bundleBuffer = {};
 
 		const promises = [];
-		for(let bundleID of bundleIDSet) {
+		for(const bundleID of bundleIDSet) {
 			promises.push(fetchBundle(bundleID, version, cdn).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
 		await Promise.all(promises);
 
-		// for(let bundleID of bundleIDSet) {
-		// 	let [bid, buffer] = await fetchBundle(bundleID, version, cdn);
+		// for(const bundleID of bundleIDSet) {
+		// 	const [bid, buffer] = await fetchBundle(bundleID, version, cdn);
 
 		// 	bundleBuffer[bid] = buffer;
 		// }
 
 		L(`[File] ${this.name} AllFetched, UnZstding...`);
 
+		Fex.ensureDirSync(_pa.parse(pathSave).dir);
 		Fex.removeSync(pathSave);
+		Fex.removeSync(pathCacheZstd);
 
-		for(let chunk of this.fileChunks) {
-			let bid = ('0000000000000000' + chunk.bundleID.toString(16)).slice(-16).toUpperCase();
+		for(const chunk of this.fileChunks) {
+			const bid = ('0000000000000000' + chunk.bundleID.toString(16)).slice(-16).toUpperCase();
 
-			let parser = Biffer(bundleBuffer[bid]);
+			const parser = Biffer(bundleBuffer[bid]);
 
 			parser.seek(chunk.offset);
 
-			Fex.ensureDirSync(_pa.parse(pathSave).dir);
+			// const chunkBuffer = await T.unZstd(_pa.join('./_cache/chunk', `${chunk.chunkID}.chunk`), parser.raw(chunk.size), true);
 
-			let chunkBuffer = await T.unZstd(_pa.join('./_cache/chunk', `${chunk.chunkID}.chunk`), parser.raw(chunk.size), true);
-
-			Fex.appendFileSync(pathSave, chunkBuffer);
+			Fex.appendFileSync(pathCacheZstd, parser.raw(chunk.size));
 		}
 
-		return pathSave;
+		return await new Promise((resolve, reject) => Zstd.decompress(pathCacheZstd, pathSave, err => err ? reject(err) : resolve(pathSave)));
 	};
 };

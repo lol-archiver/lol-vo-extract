@@ -34,10 +34,12 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll, hircID) {
 		result.push(entryParsed.audioID);
 	}
 	else if(entryParsed instanceof HircPool) {
-		const arrSoundEntry = arrEntryAll.filter(entry => entryParsed.soundIDs.indexOf(entry.id) > -1);
+		const arrEntry = arrEntryAll.filter(entry => entryParsed.soundIDs.includes(entry.id));
 
-		for(const soundEntry of arrSoundEntry) {
-			result.push(soundEntry.audioID);
+		for(const entry of arrEntry) {
+			for(const eventAudio of parseActionSoundEntry(entry, arrEntryAll)) {
+				result.push(eventAudio);
+			}
 		}
 	}
 	else if(entryParsed instanceof HircSwitchContainer) {
