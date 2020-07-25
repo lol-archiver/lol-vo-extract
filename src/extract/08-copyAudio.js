@@ -51,7 +51,7 @@ module.exports = function copyVoc(mapAudioID_Event, arrAudioPackFile) {
 			try {
 				_fs.copyFileSync(
 					src,
-					RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText || '_Unknown'}[${T.crc32(srcBuffer)}][${audioText}].${C.finalFormat}`),
+					RD('_final', `${C.hero}@${C.lang}`, `${eventTotalText || '_Unknown'}[${audioText}][${T.crc32(srcBuffer)}].${C.finalFormat}`),
 				);
 			} catch(error) {
 				_fs.copyFileSync(
