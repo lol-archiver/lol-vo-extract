@@ -7,7 +7,7 @@ module.exports = async function(region, solution, sie) {
 
 	let arrRelease = data.releases.filter(release => release.release.labels.branch.values[0] == 'main');
 
-	const version = Math.max(...data.releases.map(release => ~~release.release.labels['riot:revision'].values[0]));
+	const version = Math.max(...arrRelease.map(release => ~~release.release.labels['riot:revision'].values[0]));
 
 	L(`[Version] ${version}`);
 
