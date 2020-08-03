@@ -109,6 +109,14 @@ global.T = {
 
 try {
 	global.C = require('./config');
+
+	for(const [slot, id] of Object.entries(require('./data/champSlotMap'))) {
+		if(slot.toLowerCase() == C.hero.toLowerCase()) {
+			C.hero = slot;
+			C.id = id;
+			break;
+		}
+	}
 } catch(error) {
 	L('[Config] Default');
 

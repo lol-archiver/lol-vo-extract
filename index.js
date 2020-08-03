@@ -1,6 +1,6 @@
 require('./env');
 
-L(`[Hero] ${C.hero} [Language] ${C.lang}`);
+L(`[Champion] ${C.hero} [ID] ${C.id} [Language] ${C.lang}`);
 L(`[Region] ${C.region} [Solution] ${C.solution} [CDN] ${C.cdn}`);
 L('--------------');
 
