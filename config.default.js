@@ -1,19 +1,32 @@
 module.exports = {
-	region: 'PBE1',
+	region: 'NA1',
 	solution: 'game',
 	cdn: 'https://lol.dyn.riotcdn.net',
+	sie: 'https://sieve.services.riotcdn.net',
 
 	proxy: false,
 	// proxy: { host: '127.0.0.1', port: 9000, },
 
-	hero: 'annie',
+	champ: 'annie',
 	lang: 'en_us',
+	format: 'wav',
 
-	sfxLevel: 0,
+	// 0, no SFX; 1, only asset; 2, all
+	useSFXLevel: 0,
+	// 0, cache first; 1, force fetch; 2, use client file
+	useWADLevel: 0,
 
-	skinMax: 20,
+	detect: {
+		baseForce: false,
 
-	finalFormat: 'wav',
+		array: [],
 
-	rextractorConsolePath: 'D:/RavioliGameTools/RExtractorConsole.exe',
+		min: 0,
+		max: 27,
+	},
+
+	path: {
+		rextractorConsole: 'D:/RavioliGameTools/RExtractorConsole.exeRExtractorConsole.exe',
+		game: 'D:/Game/League of Legends',
+	}
 };

@@ -1,21 +1,21 @@
-module.exports = async function parseRman(arrManifestTemp) {
-	for(const manifestTemp of arrManifestTemp) {
-		const [manifest, bufferFull] = manifestTemp;
-		const parser = Biffer(bufferFull);
+module.exports = async function parseRman(manifests) {
+	for(const manifest of manifests) {
+		const { buffer } = manifest;
+		const bifferManifest = new Biffer(buffer);
 
-		const [magic, versionMajor, versionMinor] = parser.unpack('<4sBB');
+		const [codeMagic, versionMajor, versionMinor] = bifferManifest.unpack('<4sBB');
 
-		if(magic != 'RMAN') { throw 'invalid magic code'; }
+		if(codeMagic != 'RMAN') { throw 'invalid magic code'; }
 		if(versionMajor != 2 || versionMinor != 0) { throw `unsupported RMAN version: ${versionMajor}.${versionMinor}`; }
 
 		// eslint-disable-next-line no-unused-vars
-		const [flags, offset, length, manifestId, bodyLength] = parser.unpack("<HLLQL");
+		const [bitsFlag, offset, length, idManifest, lengthBody] = bifferManifest.unpack("<HLLQL");
 
-		_as(flags & (1 << 9));
-		_as(offset == parser.tell());
+		_as(bitsFlag & (1 << 9));
+		_as(offset == bifferManifest.tell());
 
-		manifest.id = manifestId;
+		manifest.id = idManifest;
 
-		manifestTemp[1] = await T.unZstd(`./_cache/manifest/${manifest.version}-${manifest.id}-body.manifest`, parser.raw(length), true);
+		manifest.buffer = await T.unZstd(`./_cache/manifest/${manifest.version}-${manifest.id}-body.manifest`, bifferManifest.raw(length), true);
 	}
 };

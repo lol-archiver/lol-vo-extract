@@ -1,9 +1,7 @@
-module.exports = function HircPool(id) {
-	if(!(this instanceof HircPool)) {
-		return new HircPool(...arguments);
+module.exports = class HircPool {
+	constructor(id) {
+		this.id = id;
+
+		this.soundIDs = [];
 	}
-
-	this.id = id;
-
-	this.soundIDs = [];
 };

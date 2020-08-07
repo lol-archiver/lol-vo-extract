@@ -1,73 +1,77 @@
 const File = require('../../entry/manifest/File');
 
 const parseTable = require('./table');
+
 const parseBundle = require('./bundle');
 const parseLang = require('./lang');
 const parseFileEntry = require('./fileEntry');
 const parseDirectory = require('./Directory');
 
-module.exports = async function parseBody(arrManifestTemp) {
-	for(const [manifest, buffer] of arrManifestTemp) {
-		const parser = Biffer(buffer);
+module.exports = async function parseBody(manifests) {
+	for(const manifest of manifests) {
+		const biffer = new Biffer(manifest.buffer);
 
 		// header (unknown values, skip it)
-		const [n] = parser.unpack('<l');
-		parser.skip(n);
+		const [n] = biffer.unpack('<l');
+		biffer.skip(n);
 
 		// offsets to tables(convert to absolute)
-		const offsetsBase = parser.tell();
-		const d = parser.unpack('<6l');
+		const offsetsBase = biffer.tell();
+		const d = biffer.unpack('<6l');
 		const offsets = d.map((v, i) => offsetsBase + 4 * i + v);
 
-		parser.seek(offsets[0]);
-		manifest.bundles = await parseTable(parser, parseBundle);
+		biffer.seek(offsets[0]);
+		manifest.bundles = await parseTable(biffer, parseBundle);
 
-		parser.seek(offsets[1]);
+		biffer.seek(offsets[1]);
 
 		manifest.langs = {};
-		(await parseTable(parser, parseLang)).forEach(lang => manifest.langs[lang.langID] = lang.lang);
+		(await parseTable(biffer, parseLang)).forEach(lang => manifest.langs[lang.langID] = lang.lang);
 
-		// build a list of chunks, indexed by ID
+		// Build a map of chunks, indexed by ID
+		// Some of ChunkIDs are duplicates, but they are always the same size
 		manifest.chunks = {};
 		for(const bundle of manifest.bundles) {
 			for(const chunk of bundle.chunks) {
-				manifest.chunks[chunk.chunkID] = chunk;
-				chunk.bundleID = bundle.bundleID;
-				delete chunk.bundle;
+				_as(!manifest.chunks[chunk.id] || (manifest.chunks[chunk.id].size == chunk.size || manifest.chunks[chunk.id].targetSize == chunk.targetSize));
+
+				manifest.chunks[chunk.id] = chunk;
+
+				chunk.idBundle = bundle.id;
 			}
 		}
 
-		parser.seek(offsets[2]);
+		biffer.seek(offsets[2]);
 
-		manifest.fileEntries = await parseTable(parser, parseFileEntry);
+		manifest.fileEntries = await parseTable(biffer, parseFileEntry);
 
-		parser.seek(offsets[3]);
+		biffer.seek(offsets[3]);
 
-		const folder = await parseTable(parser, parseDirectory);
+		const folder = await parseTable(biffer, parseDirectory);
 		const directories = {};
 		for(const dir of folder) {
-			directories[dir.directoryID] = dir;
+			directories[dir.id] = dir;
 		}
 
 		// merge files and directory data
 		const files = {};
 		for(const f of manifest.fileEntries) {
-			const { link, langIDs, fileSize, chunkIDs } = f;
-			let { name, directoryID } = f;
+			const { link, langIDs, fileSize, idsChunk } = f;
+			let { name, idDirectory } = f;
 
-			while(directoryID) {
-				const directory = directories[directoryID] || {};
+			while(idDirectory) {
+				const directory = directories[idDirectory] || {};
 
 				const dirName = directory.name;
-				directoryID = directory.parentID;
+				idDirectory = directory.parentID;
 
 				name = `${dirName}/${name}`;
 			}
 
 			const langs = (langIDs || []).map(id => manifest.langs[id]);
-			const fileChunks = (chunkIDs || []).map(id => manifest.chunks[id]);
+			const fileChunks = (idsChunk || []).map(id => manifest.chunks[id]);
 
-			files[name] = File(name, fileSize, link, langs, fileChunks, manifest.version);
+			files[name] = new File(name, fileSize, link, langs, fileChunks, manifest.version);
 		}
 
 		manifest.files = files;

@@ -1,9 +1,9 @@
 Fex.ensureDirSync('./_cache/extract');
 
-module.exports = async function takeWad(wadPath, takeMap) {
+module.exports = async function extractWad(wadPath, takeMap) {
 	L(`[Main] Take game files from Wad [${_pa.parse(wadPath).base}]`);
 
-	const wadBiffer = Biffer(wadPath);
+	const wadBiffer = new Biffer(wadPath);
 
 	// eslint-disable-next-line no-unused-vars
 	const [magic, versionMajor, versionMinor] = wadBiffer.unpack("2sBB");
@@ -48,7 +48,7 @@ module.exports = async function takeWad(wadPath, takeMap) {
 			}
 			else if(type == 2) {
 				throw 'unused extract';
-				// const [n] = Biffer(fileBuffer).unpack('L');
+				// const [n] = new Biffer(fileBuffer).unpack('L');
 				// target = data[4: 4 + n].rstrip(b'\0').decode('utf-8')
 			}
 			else if(type == 3) {

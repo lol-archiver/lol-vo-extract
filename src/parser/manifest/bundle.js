@@ -1,26 +1,26 @@
 const Bundle = require('../../entry/manifest/Bundle');
 
-module.exports = async function parserBundle(parser) {
-	let [, n, bundleID] = parser.unpack('<llQ');
+module.exports = function parserBundle(biffer) {
+	const [, sizeHeader, id] = biffer.unpack('<llQ');
 
-	// skip remaining header part, if any
-	parser.skip(n - 12);
+	// Skip remaining header part
+	biffer.skip(sizeHeader - 12);
 
-	let bundle = Bundle(bundleID);
+	const bundle = new Bundle(id);
 
-	[n] = parser.unpack('<l');
+	const [sizeChunk] = biffer.unpack('<l');
+	for(let i = 0; i < sizeChunk; i++) {
+		const pos = biffer.tell();
+		const [offset] = biffer.unpack('<l');
 
-	for(let i = 0; i < n; i++) {
-		let pos = parser.tell();
-		let [offset] = parser.unpack('<l');
+		biffer.seek(pos + offset);
+		biffer.skip(4); // skip offset table offset
 
-		parser.seek(pos + offset);
-		parser.skip(4); // skip offset table offset
+		const [sizeCompressed, sizeUncompressed, idChunk] = biffer.unpack('<LLQ');
 
-		let [compressedSize, uncompressedSize, chunkID] = parser.unpack('<LLQ');
+		bundle.addChunk(idChunk, sizeCompressed, sizeUncompressed);
 
-		bundle.addChunk(chunkID, compressedSize, uncompressedSize);
-		parser.seek(pos + 4);
+		biffer.seek(pos + 4);
 	}
 
 	return bundle;

@@ -15,12 +15,13 @@ module.exports = async function parserFileEntry(parser) {
 		flags = 0;
 	}
 
+	// eslint-disable-next-line no-unused-vars
 	let [structSize, linkOffset, fileID] = parser.unpack('<llQ');
 	// note: name and linkOffset are read later, at the end
 
-	let directoryID = null;
+	let idDirectory = null;
 	if(structSize > 28) {
-		[directoryID] = parser.unpack('<Q');
+		[idDirectory] = parser.unpack('<Q');
 	}
 
 	let [fileSize] = parser.unpack('<LL');
@@ -41,7 +42,7 @@ module.exports = async function parserFileEntry(parser) {
 	}
 
 	let [, chunkCount] = parser.unpack('<LL');
-	let chunkIDs = parser.unpack(`${chunkCount}Q`);
+	let idsChunk = parser.unpack(`${chunkCount}Q`);
 
 	parser.seek(pos + 4 + nameOffset);
 	let name = parser.unpackString();
@@ -51,5 +52,5 @@ module.exports = async function parserFileEntry(parser) {
 		link = null;
 	}
 
-	return FileEntry(flags, name, link, langIDs, directoryID, fileSize, chunkIDs);
+	return new FileEntry(flags, name, link, langIDs, idDirectory, fileSize, idsChunk);
 };

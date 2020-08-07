@@ -1,24 +1,16 @@
 const Chunk = require('./Chunk');
 
-module.exports = function Bundle(bundleID) {
-	if(!(this instanceof Bundle)) {
-		return new Bundle(...arguments);
+module.exports = class Bundle {
+	constructor(id) {
+		this.id = id;
+		this.chunks = [];
 	}
 
-	this.bundleID = bundleID;
-	this.chunks = [];
+	addChunk(id, size, targetSize) {
+		const lastChunk = this.chunks[this.chunks.length - 1];
 
-	this.addChunk = function(chunkID, size, targetSize) {
-		let lastChunk = this.chunks[this.chunks.length - 1];
-		let offset;
-
-		if(lastChunk) {
-			offset = lastChunk.offset + lastChunk.size;
-		}
-		else {
-			offset = 0;
-		}
-
-		this.chunks.push(Chunk(chunkID, this, offset, size, targetSize));
-	};
+		this.chunks.push(
+			new Chunk(id, (lastChunk ? lastChunk.offset + lastChunk.size : 0), size, targetSize)
+		);
+	}
 };

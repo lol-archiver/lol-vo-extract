@@ -35,6 +35,13 @@ global.L = function(...argv) {
 	logs.push(argv.join('\t'));
 };
 
+const LogUpdate = require('log-update');
+global.LU = function(...argv) {
+	LogUpdate(...argv);
+
+	logs.push(argv.join('\t'));
+};
+
 global.L.end = function(text, path) {
 	if(text) {
 		L('END', text);
@@ -111,10 +118,20 @@ try {
 	global.C = require('./config');
 
 	for(const [slot, id] of Object.entries(require('./data/champSlotMap'))) {
-		if(slot.toLowerCase() == C.hero.toLowerCase()) {
-			C.hero = slot;
+		if(slot.toLowerCase() == C.champ.toLowerCase()) {
+			C.champ = slot;
 			C.id = id;
 			break;
+		}
+	}
+
+	if(!(C.detect.array instanceof Array)) {
+		C.detect.array = [];
+	}
+
+	if(!C.detect.array.length) {
+		for(let i = C.detect.min; i <= C.detect.max; i++) {
+			C.detect.array.push(i);
 		}
 	}
 } catch(error) {

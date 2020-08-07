@@ -1,8 +1,6 @@
-module.exports = function Lang(langID, lang) {
-	if(!(this instanceof Lang)) {
-		return new Lang(...arguments);
+module.exports = class Lang {
+	constructor(langID, lang) {
+		this.langID = langID;
+		this.lang = lang;
 	}
-
-	this.langID = langID;
-	this.lang = lang;
 };

@@ -1,26 +1,26 @@
 
-module.exports = async function(bundleID, version, cdn) {
-	let bid = ('0000000000000000' + bundleID.toString(16)).slice(-16).toUpperCase();
+module.exports = async function(id, version, cdn) {
+	const bid = ('0000000000000000' + id.toString(16)).slice(-16).toUpperCase();
 
-	let bundleLocal = _pa.join('./_cache/bundle', `${bid}.bundle`);
-	let bundleBuffer;
+	const pathBundle = _pa.join('./_cache/bundle', `${bid}.bundle`);
 
-	if(_fs.existsSync(bundleLocal)) {
+	let bufferBundle;
+	if(_fs.existsSync(pathBundle)) {
 		// L(`[Bundle-${bid}] cache exists, use cache.`);
 
-		bundleBuffer = _fs.readFileSync(bundleLocal);
+		bufferBundle = _fs.readFileSync(pathBundle);
 	}
 	else {
-		let bundleURL = _ul.resolve(cdn, `channels/public/bundles/${bid}.bundle`);
+		const bundleURL = _ul.resolve(cdn, `channels/public/bundles/${bid}.bundle`);
 
-		L(`[Bundle-${bid}] fetch from '${bundleURL}'`);
-		let { data } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined });
+		// L(`[Bundle-${bid}] fetch from '${bundleURL}'`);
+		const { data } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined });
 
-		bundleBuffer = data;
+		bufferBundle = data;
 
-		L(`[Bundle-${bid}] fetched, save at '${bundleLocal}', size ${bundleBuffer.length}`);
-		_fs.writeFileSync(bundleLocal, bundleBuffer);
+		L(`[Bundle-${bid}] fetched, save at '${pathBundle}', size ${bufferBundle.length}`);
+		_fs.writeFileSync(pathBundle, bufferBundle);
 	}
 
-	return [bid, bundleBuffer];
+	return [bid, bufferBundle];
 };

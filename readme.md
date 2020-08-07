@@ -35,29 +35,42 @@ node index
 
 ````javascript
 module.exports = {
-	region: 'PBE1',
+	region: 'NA1',
 	solution: 'game',
 	cdn: 'https://lol.dyn.riotcdn.net',
+	sie: 'https://sieve.services.riotcdn.net',
 
 	proxy: false,
 	// proxy: { host: '127.0.0.1', port: 9000, },
 
-	hero: 'annie',
+	champ: 'annie',
 	lang: 'en_us',
+	format: 'wav',
 
-	sfxLevel: 0,
+	// 0, no SFX; 1, only asset; 2, all
+	useSFXLevel: 0,
+	// 0, cache first; 1, force fetch; 2, use client file
+	useWADLevel: 0,
 
-	skinMax: 20,
+	detect: {
+		baseForce: false,
 
-	finalFormat: 'wav',
+		array: [],
 
-	rextractorConsolePath: 'D:/RavioliGameTools/RExtractorConsole.exe',
+		min: 0,
+		max: 27,
+	},
+
+	path: {
+		rextractorConsole: 'D:/RavioliGameTools/RExtractorConsole.exeRExtractorConsole.exe',
+		game: 'D:/Game/League of Legends',
+	}
 };
 ````
 
-## SFX
+## useSFXLevel
 `VO` and `SFX` are two types of sound that each skin has. They are usually independent of each other. But some skins use each other.
-We can choose to parse SFX events and audios by modifying the `sfxLevel` option in `config.js`.
+We can choose to parse SFX events and audios by modifying the `useSFXLevel` option in `config.js`.
 * Level 0, no SFX events and sounds;
 * Level 1, use SFX events;
 * Level 2, use SFX events and extract SFX audios;
@@ -66,7 +79,7 @@ We can choose to parse SFX events and audios by modifying the `sfxLevel` option 
 
 Currently, `lol-vo-extract` can extract `WEM` directly without `RExtractor`.
 
-`lol-vo-extract` also support convert `WEM` to `WAV` or `OGG` by calling `RExtractorConsole.exe`. You need to configure `rextractorConsole` at first.
+`lol-vo-extract` also support convert `WEM` to `WAV` or `OGG` by calling `RExtractorConsole.exe`. You need to configure the path of `rextractorConsole` at first.
 
 ````javascript
 module.exports = {

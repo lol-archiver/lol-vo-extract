@@ -6,5 +6,5 @@ module.exports = async function parserLang(parser) {
 
 	parser.skip(offset - 4);
 
-	return Lang(langID, parser.unpackString());
+	return new Lang(langID, parser.unpackString());
 };

@@ -8,7 +8,7 @@ const parseHircEntry = require('../parser/bnk/hircEntry');
 let mapEventID;
 
 try {
-	mapEventID = require(`../../data/EventIDMap/${C.hero}.json`);
+	mapEventID = require(`../../data/EventIDMap/${C.champ}.json`);
 }
 catch(error) {
 	mapEventID = {};
@@ -71,10 +71,10 @@ const getEventFull = function(mapHash_EventName, hircEventID) {
 	return eventFull;
 };
 
-module.exports = async function readBnk(bnkPath, eventNameSet) {
+module.exports = async function parseBnk(bnkPath, eventNameSet) {
 	L(`[Main] Read Bnk [${_pa.parse(bnkPath).base}]`);
 
-	const bnkBiffer = Biffer(bnkPath);
+	const bnkBiffer = new Biffer(bnkPath);
 
 	const arrEntry = [];
 

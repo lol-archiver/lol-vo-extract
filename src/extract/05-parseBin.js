@@ -1,31 +1,32 @@
-const skinIndexMap = require('../../data/skinIndex');
+const dataBase = require('../../data/BaseData/en_us.json');
 
-module.exports = function readBin(binPath, indexSkin) {
+module.exports = function parseBin(binPath, indexSkin) {
 	if(!_fs.existsSync(binPath)) { return; }
 
-	L(`[Main] Read Bin [${_pa.parse(binPath).base}]`);
+	// L(`[parseBin] [${_pa.parse(binPath).base}]`);
 
-	const binBiffer = Biffer(binPath);
+	const binBiffer = new Biffer(binPath);
 
 	const arrEvent = [];
 
 	let skinNameFinal = null;
 	let isBase = false;
 
-	let skinID;
+	let idSkin;
 	if(binBiffer.find([0xae, 0xf4, 0x77, 0xa9]) > -1) {
-		[skinID] = binBiffer.unpack('5xL');
-
+		[idSkin] = binBiffer.unpack('5xL');
+		idSkin = ~~idSkin.substr(-3, 3);
 	}
 	else {
 		const subID = _pa.parse(binPath).base.match(/\d+/)[0];
-		skinID = `${C.id}${subID.padStart(3, '0')}`;
+		// idSkin = `${C.id}${subID.padStart(3, '0')}`;
+		idSkin = ~~subID;
 	}
 
-	const skinInfo = skinIndexMap[skinID];
-	if(!skinInfo) {
+	const skin = dataBase[C.id].skins[idSkin];
+	if(!skin) {
 		if(binBiffer.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
-			L(`\t[SkinID] ${skinID} is Chroma, skip...`);
+			L(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
 
 			return;
 		}
@@ -33,32 +34,32 @@ module.exports = function readBin(binPath, indexSkin) {
 			const [clazz] = binBiffer.unpack('5xB');
 
 			if(clazz == 1) {
-				skinNameFinal = skinID;
+				skinNameFinal = idSkin;
 
-				L(`\t[SkinID] ${skinID} is "Skin${skinNameFinal}"`);
+				L(`\t[parseBin] Skin${idSkin} is "Skin${skinNameFinal}"`);
 			}
 			else if(clazz == 2) {
-				L(`\t[SkinID] ${skinID} is Chroma, skip...`);
+				L(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
 
 				return;
 			}
 		}
 
-		L(`\t[SkinID] ${skinID} is Undetected. skip...`);
+		L(`\t[parseBin] Skin${idSkin} is Undetected. skip...`);
 
 		return;
 	}
-	else if(skinInfo[0] == 3) {
-		L(`\t[SkinID] ${skinID} is Chroma, skip...`);
+	else if(typeof skin == 'string') {
+		L(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
 
 		return;
 	}
-	else if(skinInfo[0] == 1 || skinInfo[0] == 2) {
-		skinNameFinal = skinInfo[1];
+	else if(skin && typeof skin == 'object') {
+		skinNameFinal = skin.name;
 
-		isBase = skinInfo[0] == 1;
+		isBase = idSkin == 0;
 
-		L(`\t[SkinID] ${skinID} is "${skinNameFinal}"`);
+		L(`\t[parseBin] Skin${idSkin} is "${skinNameFinal}"`);
 	}
 
 	binBiffer.seek(0);

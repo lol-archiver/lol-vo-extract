@@ -1,10 +1,8 @@
-module.exports = function HircEvent(id, count) {
-	if(!(this instanceof HircEvent)) {
-		return new HircEvent(...arguments);
+module.exports = class HircEvent {
+	constructor(id, count) {
+		this.id = id;
+
+		this.count = count;
+		this.eventActions = null;
 	}
-
-	this.id = id;
-
-	this.count = count;
-	this.eventActions = null;
 };

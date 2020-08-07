@@ -1,11 +1,8 @@
-module.exports = function Chunk(chunkID, bundle, offset, size, targetSize) {
-	if(!(this instanceof Chunk)) {
-		return new Chunk(...arguments);
+module.exports = class Chunk {
+	constructor(id, offset, size, targetSize) {
+		this.id = id;
+		this.offset = offset;
+		this.size = size;
+		this.targetSize = targetSize;
 	}
-
-	this.chunkID = chunkID;
-	this.bundle = bundle;
-	this.offset = offset;
-	this.size = size;
-	this.targetSize = targetSize;
 };

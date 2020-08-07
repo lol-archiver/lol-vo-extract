@@ -1,8 +1,8 @@
 const HIRC = require('./hircEntry');
 
 module.exports = function HircSection(type) {
-	if(!(this instanceof Section)) {
-		return new Section(...arguments);
+	if(!(this instanceof HircSection)) {
+		return new HircSection(...arguments);
 	}
 
 	this.type = type;

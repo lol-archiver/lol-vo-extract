@@ -1,9 +1,7 @@
-module.exports = function Directory(name, directoryID, parentID) {
-	if(!(this instanceof Directory)) {
-		return new Directory(...arguments);
+module.exports = class Directory {
+	constructor(id, name, parentID) {
+		this.id = id;
+		this.name = name;
+		this.parentID = parentID;
 	}
-
-	this.name = name;
-	this.directoryID = directoryID;
-	this.parentID = parentID;
 };

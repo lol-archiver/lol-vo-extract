@@ -1,20 +1,20 @@
 const Directory = require('../../entry/manifest/Directory');
 
 module.exports = async function parseDirectory(parser) {
-	let [offset_table_offset] = parser.unpack('<l');
-	let pos = parser.tell();
+	const [offset_table_offset] = parser.unpack('<l');
+	const pos = parser.tell();
 
 	// get offsets for directory and parent IDs
 	parser.skip(-offset_table_offset);
-	let [directoryIDOffset, parentIDOffset] = parser.unpack('<hh');
+	const [idOffset, parentIDOffset] = parser.unpack('<hh');
 	parser.seek(pos);
 
-	let [nameOffset] = parser.unpack('<l');
+	const [nameOffset] = parser.unpack('<l');
 	// note: name is read later, at the end
 
-	let directoryID = null;
-	if(directoryIDOffset > 0) {
-		[directoryID] = parser.unpack('<Q');
+	let id = null;
+	if(idOffset > 0) {
+		[id] = parser.unpack('<Q');
 	}
 
 	let parentID = null;
@@ -23,7 +23,7 @@ module.exports = async function parseDirectory(parser) {
 	}
 
 	parser.seek(pos + nameOffset);
-	let name = parser.unpackString();
+	const name = parser.unpackString();
 
-	return Directory(name, directoryID, parentID);
+	return new Directory(id, name, parentID);
 };

@@ -1,22 +1,22 @@
-module.exports = async function parseTable(parser, entryParser) {
-	let [count] = parser.unpack('<l');
+module.exports = async function parseTable(biffer, parserItem) {
+	const [count] = biffer.unpack('<l');
 
-	let list = [];
+	const items = [];
 
-	for(let i = 0; i < count; i++) {
-		if((i+1) % 1000 == 0 || i == count - 1 || i == 0) {
-			L(`[${entryParser.name}] ${i+1}/${count}`);
+	for(let i = 1; i <= count; i++) {
+		if(i % 1000 == 0 || i == count || i == 1) {
+			LU(`[${parserItem.name}] ${i}/${count}`);
 		}
 
-		let pos = parser.tell();
-		let [offset] = parser.unpack('<l');
+		const pos = biffer.tell();
+		const [offset] = biffer.unpack('<l');
 
-		parser.seek(pos + offset);
+		biffer.seek(pos + offset);
 
-		list.push(await entryParser(parser));
+		items.push(await parserItem(biffer));
 
-		parser.seek(pos + 4);
+		biffer.seek(pos + 4);
 	}
 
-	return list;
+	return items;
 };

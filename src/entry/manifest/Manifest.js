@@ -1,9 +1,7 @@
-module.exports = function Manifest(url, version) {
-	if(!(this instanceof Manifest)) {
-		return new Manifest(...arguments);
+module.exports = class Manifest {
+	constructor(url, version) {
+		this.url = url;
+		this.version = version;
+		this.files = null;
 	}
-
-	this.url = url;
-	this.version = version;
-	this.files = null;
 };

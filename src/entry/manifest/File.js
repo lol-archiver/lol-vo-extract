@@ -2,38 +2,30 @@ const fetchBundle = require('../../fetcher/bundle');
 
 const pathCacheZstd = RD('_cache', 'zstd');
 
-module.exports = function File(name, fileSize, link, langs, fileChunks, version) {
-	if(!(this instanceof File)) {
-		return new File(...arguments);
+module.exports = class File {
+	constructor(name, fileSize, link, langs, fileChunks, version) {
+		this.name = name;
+		this.fileSize = fileSize;
+		this.link = link;
+		this.langs = langs;
+		this.fileChunks = fileChunks;
+		this.version = version;
 	}
 
-	this.name = name;
-	this.fileSize = fileSize;
-	this.link = link;
-	this.langs = langs;
-	this.fileChunks = fileChunks;
-	this.version = version;
+	async extract(version, cdn, pathSave) {
+		const setIDBundle = new Set();
 
-	this.extract = async function(version, cdn, pathSave) {
-		const bundleIDSet = new Set();
+		this.fileChunks.forEach(chunk => setIDBundle.add(chunk.idBundle));
 
-		this.fileChunks.forEach(chunk => bundleIDSet.add(chunk.bundleID));
-
-		L(`[File] ${this.name} length ${bundleIDSet.size}`);
+		L(`[File] ${this.name} length ${setIDBundle.size}`);
 
 		const bundleBuffer = {};
 
 		const promises = [];
-		for(const bundleID of bundleIDSet) {
-			promises.push(fetchBundle(bundleID, version, cdn).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
+		for(const idBundle of setIDBundle) {
+			promises.push(fetchBundle(idBundle, version, cdn).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
 		await Promise.all(promises);
-
-		// for(const bundleID of bundleIDSet) {
-		// 	const [bid, buffer] = await fetchBundle(bundleID, version, cdn);
-
-		// 	bundleBuffer[bid] = buffer;
-		// }
 
 		L(`[File] ${this.name} AllFetched, UnZstding...`);
 
@@ -42,17 +34,15 @@ module.exports = function File(name, fileSize, link, langs, fileChunks, version)
 		Fex.removeSync(pathCacheZstd);
 
 		for(const chunk of this.fileChunks) {
-			const bid = ('0000000000000000' + chunk.bundleID.toString(16)).slice(-16).toUpperCase();
+			const bid = ('0000000000000000' + chunk.idBundle.toString(16)).slice(-16).toUpperCase();
 
-			const parser = Biffer(bundleBuffer[bid]);
+			const parser = new Biffer(bundleBuffer[bid]);
 
 			parser.seek(chunk.offset);
-
-			// const chunkBuffer = await T.unZstd(_pa.join('./_cache/chunk', `${chunk.chunkID}.chunk`), parser.raw(chunk.size), true);
 
 			Fex.appendFileSync(pathCacheZstd, parser.raw(chunk.size));
 		}
 
-		return await new Promise((resolve, reject) => Zstd.decompress(pathCacheZstd, pathSave, err => err ? reject(err) : resolve(pathSave)));
-	};
+		return new Promise((resolve, reject) => Zstd.decompress(pathCacheZstd, pathSave, err => err ? reject(err) : resolve(pathSave)));
+	}
 };

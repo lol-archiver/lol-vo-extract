@@ -1,9 +1,7 @@
-module.exports = function HircSwitchContainer(id) {
-	if(!(this instanceof HircSwitchContainer)) {
-		return new HircSwitchContainer(...arguments);
+module.exports = class HircSwitchContainer {
+	constructor(id) {
+		this.id = id;
+
+		this.arrContainerID = [];
 	}
-
-	this.id = id;
-
-	this.arrContainerID = [];
 };
