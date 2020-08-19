@@ -1,7 +1,7 @@
 const detectFetch = function(wadsToFetch, nameWad, pathWad, isUseClient) {
 	const isExist = _fs.existsSync(pathWad);
 
-	if(isUseClient && isExist) {
+	if(isUseClient && !isExist) {
 		throw `[Error] Use Client Wad. But Wad[${pathWad}] doesn't exist`;
 	}
 	else if(C.useWADLevel == 1 || !isExist) {
