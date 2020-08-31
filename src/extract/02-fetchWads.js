@@ -24,10 +24,11 @@ module.exports = async function fetchWads(wadsToFetch) {
 	await parseRman(manifests);
 	await parseBody(manifests);
 
-	const filesFetched = [];
-	const filesAll = manifests.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
+	const files = manifests.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
 
-	for(const file of filesAll) {
+	const filesFetched = [];
+
+	for(const file of files) {
 		for(const [matchname, savePath] of wadsToFetch) {
 			if(file.name.toLowerCase().endsWith(matchname)) {
 				filesFetched.push(await file.extract(versionLatest, C.cdn, savePath));

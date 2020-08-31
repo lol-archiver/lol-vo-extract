@@ -1,56 +1,38 @@
 const FileEntry = require('../../entry/manifest/FileEntry');
+const parseTableEntry = require('./tableEntry');
 
-module.exports = async function parserFileEntry(parser) {
-	parser.skip(4); // skip offset table offset
-	let pos = parser.tell();
+module.exports = async function parserFileEntry(biffer) {
+	const entry = parseTableEntry(biffer, [
+		null,
+		['chunks', 'offset'],
+		['id', '<Q'],
+		['idDirectory', '<Q'],
+		['sizeFile', '<L'],
+		['name', 'string'],
+		['locales', '<Q'],
+		null,
+		null,
+		null,
+		null,
+		['link', 'string'],
+		null,
+		null,
+		null,
+	]);
 
-	let [flags] = parser.unpack('<L');
-
-	let nameOffset;
-	if(flags == 0x00010200 || (flags >> 24) != 0) {
-		[nameOffset] = parser.unpack('<l');
-	}
-	else {
-		nameOffset = flags - 4;
-		flags = 0;
-	}
-
-	// eslint-disable-next-line no-unused-vars
-	let [structSize, linkOffset, fileID] = parser.unpack('<llQ');
-	// note: name and linkOffset are read later, at the end
-
-	let idDirectory = null;
-	if(structSize > 28) {
-		[idDirectory] = parser.unpack('<Q');
-	}
-
-	let [fileSize] = parser.unpack('<LL');
-
-	let langMask;
-	let langIDs = [];
-	if(structSize > 36) {
-		[langMask] = parser.unpack('<Q');
-
+	const langIDs = [];
+	if(entry.locales) {
 		for(let i = 0; i < 64; i++) {
-			if(langMask & (BigInt(1) << BigInt(i))) {
+			if(entry.locales & (BigInt(1) << BigInt(i))) {
 				langIDs.push(i + 1);
 			}
 		}
 	}
-	else {
-		langIDs = null;
-	}
 
-	let [, chunkCount] = parser.unpack('<LL');
-	let idsChunk = parser.unpack(`${chunkCount}Q`);
+	biffer.seek(entry.chunks);
 
-	parser.seek(pos + 4 + nameOffset);
-	let name = parser.unpackString();
-	parser.seek(pos + 12 + linkOffset);
-	let link = parser.unpackString();
-	if(!link) {
-		link = null;
-	}
+	const sizeChunk = biffer.unpack('<L');
+	const idsChunk = biffer.unpack(`<${sizeChunk}Q`);
 
-	return new FileEntry(flags, name, link, langIDs, idDirectory, fileSize, idsChunk);
+	return new FileEntry(entry.id, entry.name, entry.link, langIDs, entry.idDirectory, entry.sizeFile, idsChunk);
 };

@@ -47,20 +47,20 @@ module.exports = async function parseBody(manifests) {
 
 		biffer.seek(offsets[3]);
 
-		const folder = await parseTable(biffer, parseDirectory);
-		const directories = {};
-		for(const dir of folder) {
-			directories[dir.id] = dir;
+		const directories = await parseTable(biffer, parseDirectory);
+		const directories_id = {};
+		for(const directory of directories) {
+			directories_id[directory.id] = directory;
 		}
 
 		// merge files and directory data
 		const files = {};
-		for(const f of manifest.fileEntries) {
-			const { link, langIDs, fileSize, idsChunk } = f;
-			let { name, idDirectory } = f;
+		for(const fileEntry of manifest.fileEntries) {
+			const { id, link, langIDs, sizeFile, idsChunk } = fileEntry;
+			let { name, idDirectory } = fileEntry;
 
 			while(idDirectory) {
-				const directory = directories[idDirectory] || {};
+				const directory = directories_id[idDirectory] || {};
 
 				const dirName = directory.name;
 				idDirectory = directory.parentID;
@@ -71,7 +71,7 @@ module.exports = async function parseBody(manifests) {
 			const langs = (langIDs || []).map(id => manifest.langs[id]);
 			const fileChunks = (idsChunk || []).map(id => manifest.chunks[id]);
 
-			files[name] = new File(name, fileSize, link, langs, fileChunks, manifest.version);
+			files[name] = new File(id, name, sizeFile, link, langs, fileChunks, manifest.version);
 		}
 
 		manifest.files = files;

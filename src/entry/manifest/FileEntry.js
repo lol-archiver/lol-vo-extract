@@ -1,12 +1,11 @@
-
 module.exports = class FileEntry {
-	constructor(flags, name, link, langIDs, idDirectory, fileSize, idsChunk) {
-		this.flags = flags;
+	constructor(id, name, link, langIDs, idDirectory, sizeFile, idsChunk) {
+		this.id = id;
 		this.name = name;
 		this.link = link;
 		this.langIDs = langIDs;
 		this.idDirectory = idDirectory;
-		this.fileSize = fileSize;
+		this.sizeFile = sizeFile;
 		this.idsChunk = idsChunk;
 	}
 };

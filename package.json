@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "",
 	"main": "index.js",
-	"author": "DanoR",
+	"author": "Nuogz",
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.19.2",

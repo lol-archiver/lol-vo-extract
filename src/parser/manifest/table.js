@@ -13,7 +13,7 @@ module.exports = async function parseTable(biffer, parserItem) {
 
 		biffer.seek(pos + offset);
 
-		items.push(await parserItem(biffer));
+		items.push(await parserItem(biffer, i));
 
 		biffer.seek(pos + 4);
 	}

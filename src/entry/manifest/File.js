@@ -3,9 +3,10 @@ const fetchBundle = require('../../fetcher/bundle');
 const pathCacheZstd = RD('_cache', 'zstd');
 
 module.exports = class File {
-	constructor(name, fileSize, link, langs, fileChunks, version) {
+	constructor(id, name, sizeFile, link, langs, fileChunks, version) {
+		this.id = id;
 		this.name = name;
-		this.fileSize = fileSize;
+		this.sizeFile = sizeFile;
 		this.link = link;
 		this.langs = langs;
 		this.fileChunks = fileChunks;
