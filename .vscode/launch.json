@@ -6,13 +6,26 @@
 			"request": "launch",
 			"name": "index.js",
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}\\index.js"
+			"program": "${workspaceFolder}/index.js"
+		},
+
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "RSTConvert",
+			"runtimeExecutable": "node.exe",
+			"console": "integratedTerminal",
+			"program": "${workspaceFolder}/side/rstc.js",
+			"skipFiles": [
+				"<node_internals>/**"
+			]
 		},
 		{
 			"type": "node",
 			"request": "launch",
 			"name": "bnk.js",
-			"program": "${workspaceFolder}\\bnk.js"
+			"runtimeExecutable": "node.exe",
+			"program": "${workspaceFolder}/bnk.js"
 		}
 	]
 }
