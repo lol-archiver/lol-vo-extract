@@ -22377,6 +22377,33 @@
 			"r": "Final Chapter"
 		}
 	},
+	"360": {
+		"id": 360,
+		"name": "Samira",
+		"slot": "Samira",
+		"roles": [
+			"fighter",
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Samira",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "PsyOps Samira"
+			}
+		},
+		"spells": {
+			"p": "Daredevil Impulse",
+			"q": "Flair",
+			"w": "Blade Whirl",
+			"e": "Wild Rush",
+			"r": "Inferno Trigger"
+		}
+	},
 	"412": {
 		"id": 412,
 		"name": "Thresh",

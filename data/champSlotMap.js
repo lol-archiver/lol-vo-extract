@@ -133,6 +133,7 @@ module.exports = {
 	'Nami': 267,
 	'Azir': 268,
 	'Yuumi': 350,
+	'Samira': 360,
 	'Thresh': 412,
 	'Illaoi': 420,
 	'RekSai': 421,

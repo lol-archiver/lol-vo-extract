@@ -7,6 +7,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.19.2",
+		"bluebird": "^3.7.2",
 		"buffer-crc32": "^0.2.13",
 		"eslint": "^6.8.0",
 		"fs-extra": "^8.1.0",

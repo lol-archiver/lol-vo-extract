@@ -2,6 +2,8 @@ const fetchBundle = require('../../fetcher/bundle');
 
 const pathCacheZstd = RD('_cache', 'zstd');
 
+const Bluebird = require('bluebird');
+
 module.exports = class File {
 	constructor(id, name, sizeFile, link, langs, fileChunks, version) {
 		this.id = id;
@@ -26,7 +28,7 @@ module.exports = class File {
 		for(const idBundle of setIDBundle) {
 			promises.push(fetchBundle(idBundle, version, cdn).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
-		await Promise.all(promises);
+		await Bluebird.map(promises, r => r, { concurrency: 45 });
 
 		L(`[File] ${this.name} AllFetched, UnZstding...`);
 

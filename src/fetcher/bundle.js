@@ -14,12 +14,18 @@ module.exports = async function(id, version, cdn) {
 		const bundleURL = _ul.resolve(cdn, `channels/public/bundles/${bid}.bundle`);
 
 		// L(`[Bundle-${bid}] fetch from '${bundleURL}'`);
-		const { data } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined });
 
-		bufferBundle = data;
+		try {
+			const { data } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined });
 
-		L(`[Bundle-${bid}] fetched, save at '${pathBundle}', size ${bufferBundle.length}`);
-		_fs.writeFileSync(pathBundle, bufferBundle);
+			bufferBundle = data;
+
+			L(`[Bundle-${bid}] fetched, save at '${pathBundle}', size ${bufferBundle.length}`);
+			_fs.writeFileSync(pathBundle, bufferBundle);
+		}
+		catch(error) {
+			debugger
+		}
 	}
 
 	return [bid, bufferBundle];
