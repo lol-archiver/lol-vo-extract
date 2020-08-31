@@ -52,11 +52,15 @@ module.exports = function extractAudios(wpkFiles) {
 		}
 		else if((C.format == 'wav' || C.format == 'ogg')) {
 			if(_fs.existsSync(C.path.rextractorConsole)) {
-				_cp.execFileSync(C.path.rextractorConsole, [
-					RD('_cache', 'extract', wpkFile),
-					RD('_cache', 'audio', wpkFile),
-					`/sf:${C.format}`
-				], { timeout: 1000 * 60 * 10 });
+				try {
+					_cp.execFileSync(C.path.rextractorConsole, [
+						RD('_cache', 'extract', wpkFile),
+						RD('_cache', 'audio', wpkFile),
+						`/sf:${C.format}`
+					], { timeout: 1000 * 60 * 10 });
+				} catch(error) {
+					L(`[Error] Exec File Error: ${error.message}`);
+				}
 			}
 			else {
 				L(`[Error] Bad Path RextractorConsole: ${C.path.rextractorConsole}`);
