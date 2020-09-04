@@ -15,7 +15,7 @@ module.exports = function parseBin(binPath, indexSkin) {
 	let idSkin;
 	if(binBiffer.find([0xae, 0xf4, 0x77, 0xa9]) > -1) {
 		[idSkin] = binBiffer.unpack('5xL');
-		idSkin = ~~idSkin.substr(-3, 3);
+		idSkin = ~~String(idSkin).substr(-3, 3);
 	}
 	else {
 		const subID = _pa.parse(binPath).base.match(/\d+/)[0];
