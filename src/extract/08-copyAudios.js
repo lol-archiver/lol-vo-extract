@@ -44,7 +44,7 @@ module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 
 				Fex.ensureDirSync(pathFolder);
 
-				const eventsText = events.join('@');
+				const eventsText = events.join('&');
 				const audioText = `[${nameSkin == '[Bad]' ? audioID : audioIDHex}][${crc32}].${C.format}`;
 
 				try {
