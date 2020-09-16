@@ -1,7 +1,8 @@
 {
 	"1": {
 		"id": 1,
-		"name": "黑暗之女",
+		"name": "安妮",
+		"title": "黑暗之女",
 		"slot": "Annie",
 		"roles": [
 			"mage"
@@ -83,7 +84,8 @@
 	},
 	"2": {
 		"id": 2,
-		"name": "狂战士",
+		"name": "奥拉夫",
+		"title": "狂战士",
 		"slot": "Olaf",
 		"roles": [
 			"fighter",
@@ -292,7 +294,8 @@
 	},
 	"3": {
 		"id": 3,
-		"name": "正义巨像",
+		"name": "加里奥",
+		"title": "正义巨像",
 		"slot": "Galio",
 		"roles": [
 			"tank",
@@ -451,7 +454,8 @@
 	},
 	"4": {
 		"id": 4,
-		"name": "卡牌大师",
+		"name": "崔斯特",
+		"title": "卡牌大师",
 		"slot": "TwistedFate",
 		"roles": [
 			"mage"
@@ -538,7 +542,8 @@
 	},
 	"5": {
 		"id": 5,
-		"name": "德邦总管",
+		"name": "赵信",
+		"title": "德邦总管",
 		"slot": "XinZhao",
 		"roles": [
 			"fighter",
@@ -766,7 +771,8 @@
 	},
 	"6": {
 		"id": 6,
-		"name": "无畏战车",
+		"name": "厄加特",
+		"title": "无畏战车",
 		"slot": "Urgot",
 		"roles": [
 			"fighter",
@@ -970,7 +976,8 @@
 	},
 	"7": {
 		"id": 7,
-		"name": "诡术妖姬",
+		"name": "乐芙兰",
+		"title": "诡术妖姬",
 		"slot": "Leblanc",
 		"roles": [
 			"assassin",
@@ -1249,7 +1256,8 @@
 	},
 	"8": {
 		"id": 8,
-		"name": "猩红收割者",
+		"name": "弗拉基米尔",
+		"title": "猩红收割者",
 		"slot": "Vladimir",
 		"roles": [
 			"mage"
@@ -1417,7 +1425,8 @@
 	},
 	"9": {
 		"id": 9,
-		"name": "远古恐惧",
+		"name": "费德提克",
+		"title": "远古恐惧",
 		"slot": "FiddleSticks",
 		"roles": [
 			"mage",
@@ -1641,7 +1650,8 @@
 	},
 	"10": {
 		"id": 10,
-		"name": "正义天使",
+		"name": "凯尔",
+		"title": "正义天使",
 		"slot": "Kayle",
 		"roles": [
 			"fighter",
@@ -1833,7 +1843,8 @@
 	},
 	"11": {
 		"id": 11,
-		"name": "无极剑圣",
+		"name": "易",
+		"title": "无极剑圣",
 		"slot": "MasterYi",
 		"roles": [
 			"assassin",
@@ -2177,7 +2188,8 @@
 	},
 	"12": {
 		"id": 12,
-		"name": "牛头酋长",
+		"name": "阿利斯塔",
+		"title": "牛头酋长",
 		"slot": "Alistar",
 		"roles": [
 			"tank",
@@ -2403,7 +2415,8 @@
 	},
 	"13": {
 		"id": 13,
-		"name": "符文法师",
+		"name": "瑞兹",
+		"title": "符文法师",
 		"slot": "Ryze",
 		"roles": [
 			"mage",
@@ -2551,7 +2564,8 @@
 	},
 	"14": {
 		"id": 14,
-		"name": "亡灵战神",
+		"name": "赛恩",
+		"title": "亡灵战神",
 		"slot": "Sion",
 		"roles": [
 			"tank",
@@ -2741,7 +2755,8 @@
 	},
 	"15": {
 		"id": 15,
-		"name": "战争女神",
+		"name": "希维尔",
+		"title": "战争女神",
 		"slot": "Sivir",
 		"roles": [
 			"marksman"
@@ -2938,7 +2953,8 @@
 	},
 	"16": {
 		"id": 16,
-		"name": "众星之子",
+		"name": "索拉卡",
+		"title": "众星之子",
 		"slot": "Soraka",
 		"roles": [
 			"support",
@@ -3062,7 +3078,8 @@
 	},
 	"17": {
 		"id": 17,
-		"name": "迅捷斥候",
+		"name": "提莫",
+		"title": "迅捷斥候",
 		"slot": "Teemo",
 		"roles": [
 			"marksman",
@@ -3284,7 +3301,8 @@
 	},
 	"18": {
 		"id": 18,
-		"name": "麦林炮手",
+		"name": "崔丝塔娜",
+		"title": "麦林炮手",
 		"slot": "Tristana",
 		"roles": [
 			"marksman",
@@ -3619,7 +3637,8 @@
 	},
 	"19": {
 		"id": 19,
-		"name": "祖安怒兽",
+		"name": "沃里克",
+		"title": "祖安怒兽",
 		"slot": "Warwick",
 		"roles": [
 			"fighter",
@@ -3844,7 +3863,8 @@
 	},
 	"20": {
 		"id": 20,
-		"name": "雪原双子",
+		"name": "努努和威朗普",
+		"title": "雪原双子",
 		"slot": "Nunu",
 		"roles": [
 			"tank",
@@ -3971,7 +3991,8 @@
 	},
 	"21": {
 		"id": 21,
-		"name": "赏金猎人",
+		"name": "厄运小姐",
+		"title": "赏金猎人",
 		"slot": "MissFortune",
 		"roles": [
 			"marksman"
@@ -4118,7 +4139,8 @@
 	},
 	"22": {
 		"id": 22,
-		"name": "寒冰射手",
+		"name": "艾希",
+		"title": "寒冰射手",
 		"slot": "Ashe",
 		"roles": [
 			"marksman",
@@ -4298,7 +4320,8 @@
 	},
 	"23": {
 		"id": 23,
-		"name": "蛮族之王",
+		"name": "泰达米尔",
+		"title": "蛮族之王",
 		"slot": "Tryndamere",
 		"roles": [
 			"fighter",
@@ -4435,7 +4458,8 @@
 	},
 	"24": {
 		"id": 24,
-		"name": "武器大师",
+		"name": "贾克斯",
+		"title": "武器大师",
 		"slot": "Jax",
 		"roles": [
 			"fighter",
@@ -4587,7 +4611,8 @@
 	},
 	"25": {
 		"id": 25,
-		"name": "堕落天使",
+		"name": "莫甘娜",
+		"title": "堕落天使",
 		"slot": "Morgana",
 		"roles": [
 			"mage",
@@ -4844,7 +4869,8 @@
 	},
 	"26": {
 		"id": 26,
-		"name": "时光守护者",
+		"name": "基兰",
+		"title": "时光守护者",
 		"slot": "Zilean",
 		"roles": [
 			"support",
@@ -4961,7 +4987,8 @@
 	},
 	"27": {
 		"id": 27,
-		"name": "炼金术士",
+		"name": "辛吉德",
+		"title": "炼金术士",
 		"slot": "Singed",
 		"roles": [
 			"tank",
@@ -5029,7 +5056,8 @@
 	},
 	"28": {
 		"id": 28,
-		"name": "痛苦之拥",
+		"name": "伊芙琳",
+		"title": "痛苦之拥",
 		"slot": "Evelynn",
 		"roles": [
 			"assassin",
@@ -5147,7 +5175,8 @@
 	},
 	"29": {
 		"id": 29,
-		"name": "瘟疫之源",
+		"name": "图奇",
+		"title": "瘟疫之源",
 		"slot": "Twitch",
 		"roles": [
 			"marksman",
@@ -5386,7 +5415,8 @@
 	},
 	"30": {
 		"id": 30,
-		"name": "死亡颂唱者",
+		"name": "卡尔萨斯",
+		"title": "死亡颂唱者",
 		"slot": "Karthus",
 		"roles": [
 			"mage"
@@ -5526,7 +5556,8 @@
 	},
 	"31": {
 		"id": 31,
-		"name": "虚空恐惧",
+		"name": "科加斯",
+		"title": "虚空恐惧",
 		"slot": "Chogath",
 		"roles": [
 			"tank",
@@ -5639,7 +5670,8 @@
 	},
 	"32": {
 		"id": 32,
-		"name": "殇之木乃伊",
+		"name": "阿木木",
+		"title": "殇之木乃伊",
 		"slot": "Amumu",
 		"roles": [
 			"tank",
@@ -5831,7 +5863,8 @@
 	},
 	"33": {
 		"id": 33,
-		"name": "披甲龙龟",
+		"name": "拉莫斯",
+		"title": "披甲龙龟",
 		"slot": "Rammus",
 		"roles": [
 			"tank",
@@ -5963,7 +5996,8 @@
 	},
 	"34": {
 		"id": 34,
-		"name": "冰晶凤凰",
+		"name": "艾尼维亚",
+		"title": "冰晶凤凰",
 		"slot": "Anivia",
 		"roles": [
 			"mage",
@@ -6099,7 +6133,8 @@
 	},
 	"35": {
 		"id": 35,
-		"name": "恶魔小丑",
+		"name": "萨科",
+		"title": "恶魔小丑",
 		"slot": "Shaco",
 		"roles": [
 			"assassin"
@@ -6285,7 +6320,8 @@
 	},
 	"36": {
 		"id": 36,
-		"name": "祖安狂人",
+		"name": "蒙多医生",
+		"title": "祖安狂人",
 		"slot": "DrMundo",
 		"roles": [
 			"fighter",
@@ -6404,7 +6440,8 @@
 	},
 	"37": {
 		"id": 37,
-		"name": "琴瑟仙女",
+		"name": "娑娜",
+		"title": "琴瑟仙女",
 		"slot": "Sona",
 		"roles": [
 			"support",
@@ -6620,7 +6657,8 @@
 	},
 	"38": {
 		"id": 38,
-		"name": "虚空行者",
+		"name": "卡萨丁",
+		"title": "虚空行者",
 		"slot": "Kassadin",
 		"roles": [
 			"assassin",
@@ -6728,7 +6766,8 @@
 	},
 	"39": {
 		"id": 39,
-		"name": "刀锋舞者",
+		"name": "艾瑞莉娅",
+		"title": "刀锋舞者",
 		"slot": "Irelia",
 		"roles": [
 			"fighter",
@@ -6939,7 +6978,8 @@
 	},
 	"40": {
 		"id": 40,
-		"name": "风暴之怒",
+		"name": "迦娜",
+		"title": "风暴之怒",
 		"slot": "Janna",
 		"roles": [
 			"support",
@@ -7159,7 +7199,8 @@
 	},
 	"41": {
 		"id": 41,
-		"name": "海洋之灾",
+		"name": "普朗克",
+		"title": "海洋之灾",
 		"slot": "Gangplank",
 		"roles": [
 			"fighter"
@@ -7342,7 +7383,8 @@
 	},
 	"42": {
 		"id": 42,
-		"name": "英勇投弹手",
+		"name": "库奇",
+		"title": "英勇投弹手",
 		"slot": "Corki",
 		"roles": [
 			"marksman"
@@ -7556,7 +7598,8 @@
 	},
 	"43": {
 		"id": 43,
-		"name": "天启者",
+		"name": "卡尔玛",
+		"title": "天启者",
 		"slot": "Karma",
 		"roles": [
 			"mage",
@@ -7762,7 +7805,8 @@
 	},
 	"44": {
 		"id": 44,
-		"name": "瓦洛兰之盾",
+		"name": "塔里克",
+		"title": "瓦洛兰之盾",
 		"slot": "Taric",
 		"roles": [
 			"support",
@@ -7920,7 +7964,8 @@
 	},
 	"45": {
 		"id": 45,
-		"name": "邪恶小法师",
+		"name": "维迦",
+		"title": "邪恶小法师",
 		"slot": "Veigar",
 		"roles": [
 			"mage"
@@ -8180,7 +8225,8 @@
 	},
 	"48": {
 		"id": 48,
-		"name": "巨魔之王",
+		"name": "特朗德尔",
+		"title": "巨魔之王",
 		"slot": "Trundle",
 		"roles": [
 			"fighter",
@@ -8279,7 +8325,8 @@
 	},
 	"50": {
 		"id": 50,
-		"name": "诺克萨斯统领",
+		"name": "斯维因",
+		"title": "诺克萨斯统领",
 		"slot": "Swain",
 		"roles": [
 			"mage",
@@ -8382,7 +8429,8 @@
 	},
 	"51": {
 		"id": 51,
-		"name": "皮城女警",
+		"name": "凯特琳",
+		"title": "皮城女警",
 		"slot": "Caitlyn",
 		"roles": [
 			"marksman"
@@ -8553,7 +8601,8 @@
 	},
 	"53": {
 		"id": 53,
-		"name": "蒸汽机器人",
+		"name": "布里茨",
+		"title": "蒸汽机器人",
 		"slot": "Blitzcrank",
 		"roles": [
 			"tank",
@@ -8787,7 +8836,8 @@
 	},
 	"54": {
 		"id": 54,
-		"name": "熔岩巨兽",
+		"name": "墨菲特",
+		"title": "熔岩巨兽",
 		"slot": "Malphite",
 		"roles": [
 			"tank",
@@ -9003,7 +9053,8 @@
 	},
 	"55": {
 		"id": 55,
-		"name": "不祥之刃",
+		"name": "卡特琳娜",
+		"title": "不祥之刃",
 		"slot": "Katarina",
 		"roles": [
 			"assassin",
@@ -9233,7 +9284,8 @@
 	},
 	"56": {
 		"id": 56,
-		"name": "永恒梦魇",
+		"name": "魔腾",
+		"title": "永恒梦魇",
 		"slot": "Nocturne",
 		"roles": [
 			"assassin",
@@ -9369,7 +9421,8 @@
 	},
 	"57": {
 		"id": 57,
-		"name": "扭曲树精",
+		"name": "茂凯",
+		"title": "扭曲树精",
 		"slot": "Maokai",
 		"roles": [
 			"tank",
@@ -9569,7 +9622,8 @@
 	},
 	"58": {
 		"id": 58,
-		"name": "荒漠屠夫",
+		"name": "雷克顿",
+		"title": "荒漠屠夫",
 		"slot": "Renekton",
 		"roles": [
 			"fighter",
@@ -9775,7 +9829,8 @@
 	},
 	"59": {
 		"id": 59,
-		"name": "德玛西亚皇子",
+		"name": "嘉文四世",
+		"title": "德玛西亚皇子",
 		"slot": "JarvanIV",
 		"roles": [
 			"tank",
@@ -9941,7 +9996,8 @@
 	},
 	"60": {
 		"id": 60,
-		"name": "蜘蛛女皇",
+		"name": "伊莉丝",
+		"title": "蜘蛛女皇",
 		"slot": "Elise",
 		"roles": [
 			"mage",
@@ -9989,7 +10045,8 @@
 	},
 	"61": {
 		"id": 61,
-		"name": "发条魔灵",
+		"name": "奥莉安娜",
+		"title": "发条魔灵",
 		"slot": "Orianna",
 		"roles": [
 			"mage",
@@ -10150,7 +10207,8 @@
 	},
 	"62": {
 		"id": 62,
-		"name": "齐天大圣",
+		"name": "孙悟空",
+		"title": "齐天大圣",
 		"slot": "MonkeyKing",
 		"roles": [
 			"fighter",
@@ -10203,7 +10261,8 @@
 	},
 	"63": {
 		"id": 63,
-		"name": "复仇焰魂",
+		"name": "布兰德",
+		"title": "复仇焰魂",
 		"slot": "Brand",
 		"roles": [
 			"mage"
@@ -10297,7 +10356,8 @@
 	},
 	"64": {
 		"id": 64,
-		"name": "盲僧",
+		"name": "李青",
+		"title": "盲僧",
 		"slot": "LeeSin",
 		"roles": [
 			"fighter",
@@ -10524,7 +10584,13 @@
 					}
 				}
 			},
-			"30": 29
+			"30": 29,
+			"31": {
+				"id": 31,
+				"name": "神龙尊者 李青",
+				"chromas": {
+				}
+			}
 		},
 		"spells": {
 			"p": "疾风骤雨",
@@ -10536,7 +10602,8 @@
 	},
 	"67": {
 		"id": 67,
-		"name": "暗夜猎手",
+		"name": "薇恩",
+		"title": "暗夜猎手",
 		"slot": "Vayne",
 		"roles": [
 			"marksman",
@@ -10730,7 +10797,8 @@
 	},
 	"68": {
 		"id": 68,
-		"name": "机械公敌",
+		"name": "兰博",
+		"title": "机械公敌",
 		"slot": "Rumble",
 		"roles": [
 			"fighter",
@@ -10846,7 +10914,8 @@
 	},
 	"69": {
 		"id": 69,
-		"name": "魔蛇之拥",
+		"name": "卡西奥佩娅",
+		"title": "魔蛇之拥",
 		"slot": "Cassiopeia",
 		"roles": [
 			"mage"
@@ -10999,7 +11068,8 @@
 	},
 	"72": {
 		"id": 72,
-		"name": "水晶先锋",
+		"name": "斯卡纳",
+		"title": "水晶先锋",
 		"slot": "Skarner",
 		"roles": [
 			"fighter",
@@ -11042,7 +11112,8 @@
 	},
 	"74": {
 		"id": 74,
-		"name": "大发明家",
+		"name": "黑默丁格",
+		"title": "大发明家",
 		"slot": "Heimerdinger",
 		"roles": [
 			"mage",
@@ -11173,7 +11244,8 @@
 	},
 	"75": {
 		"id": 75,
-		"name": "沙漠死神",
+		"name": "内瑟斯",
+		"title": "沙漠死神",
 		"slot": "Nasus",
 		"roles": [
 			"fighter",
@@ -11301,7 +11373,8 @@
 	},
 	"76": {
 		"id": 76,
-		"name": "狂野女猎手",
+		"name": "奈德丽",
+		"title": "狂野女猎手",
 		"slot": "Nidalee",
 		"roles": [
 			"assassin",
@@ -11439,7 +11512,8 @@
 	},
 	"77": {
 		"id": 77,
-		"name": "兽灵行者",
+		"name": "乌迪尔",
+		"title": "兽灵行者",
 		"slot": "Udyr",
 		"roles": [
 			"fighter",
@@ -11487,7 +11561,8 @@
 	},
 	"78": {
 		"id": 78,
-		"name": "圣锤之毅",
+		"name": "波比",
+		"title": "圣锤之毅",
 		"slot": "Poppy",
 		"roles": [
 			"tank",
@@ -11679,7 +11754,8 @@
 	},
 	"79": {
 		"id": 79,
-		"name": "酒桶",
+		"name": "古拉加斯",
+		"title": "酒桶",
 		"slot": "Gragas",
 		"roles": [
 			"fighter",
@@ -11752,7 +11828,8 @@
 	},
 	"80": {
 		"id": 80,
-		"name": "不屈之枪",
+		"name": "潘森",
+		"title": "不屈之枪",
 		"slot": "Pantheon",
 		"roles": [
 			"fighter",
@@ -11957,7 +12034,8 @@
 	},
 	"81": {
 		"id": 81,
-		"name": "探险家",
+		"name": "伊泽瑞尔",
+		"title": "探险家",
 		"slot": "Ezreal",
 		"roles": [
 			"marksman",
@@ -12128,7 +12206,8 @@
 	},
 	"82": {
 		"id": 82,
-		"name": "铁铠冥魂",
+		"name": "莫德凯撒",
+		"title": "铁铠冥魂",
 		"slot": "Mordekaiser",
 		"roles": [
 			"fighter"
@@ -12235,7 +12314,8 @@
 	},
 	"83": {
 		"id": 83,
-		"name": "牧魂人",
+		"name": "约里克",
+		"title": "牧魂人",
 		"slot": "Yorick",
 		"roles": [
 			"fighter",
@@ -12342,7 +12422,8 @@
 	},
 	"84": {
 		"id": 84,
-		"name": "离群之刺",
+		"name": "阿卡丽",
+		"title": "离群之刺",
 		"slot": "Akali",
 		"roles": [
 			"assassin"
@@ -12671,7 +12752,8 @@
 	},
 	"85": {
 		"id": 85,
-		"name": "狂暴之心",
+		"name": "凯南",
+		"title": "狂暴之心",
 		"slot": "Kennen",
 		"roles": [
 			"mage",
@@ -12862,7 +12944,8 @@
 	},
 	"86": {
 		"id": 86,
-		"name": "德玛西亚之力",
+		"name": "盖伦",
+		"title": "德玛西亚之力",
 		"slot": "Garen",
 		"roles": [
 			"fighter",
@@ -13047,7 +13130,8 @@
 	},
 	"89": {
 		"id": 89,
-		"name": "曙光女神",
+		"name": "蕾欧娜",
+		"title": "曙光女神",
 		"slot": "Leona",
 		"roles": [
 			"tank",
@@ -13216,7 +13300,8 @@
 	},
 	"90": {
 		"id": 90,
-		"name": "虚空先知",
+		"name": "玛尔扎哈",
+		"title": "虚空先知",
 		"slot": "Malzahar",
 		"roles": [
 			"mage",
@@ -13362,7 +13447,8 @@
 	},
 	"91": {
 		"id": 91,
-		"name": "刀锋之影",
+		"name": "泰隆",
+		"title": "刀锋之影",
 		"slot": "Talon",
 		"roles": [
 			"assassin"
@@ -13611,7 +13697,8 @@
 	},
 	"92": {
 		"id": 92,
-		"name": "放逐之刃",
+		"name": "锐雯",
+		"title": "放逐之刃",
 		"slot": "Riven",
 		"roles": [
 			"fighter",
@@ -13890,7 +13977,8 @@
 	},
 	"96": {
 		"id": 96,
-		"name": "深渊巨口",
+		"name": "克格莫",
+		"title": "深渊巨口",
 		"slot": "KogMaw",
 		"roles": [
 			"marksman",
@@ -14114,7 +14202,8 @@
 	},
 	"98": {
 		"id": 98,
-		"name": "暮光之眼",
+		"name": "慎",
+		"title": "暮光之眼",
 		"slot": "Shen",
 		"roles": [
 			"tank"
@@ -14456,7 +14545,8 @@
 	},
 	"99": {
 		"id": 99,
-		"name": "光辉女郎",
+		"name": "拉克丝",
+		"title": "光辉女郎",
 		"slot": "Lux",
 		"roles": [
 			"mage",
@@ -14590,7 +14680,8 @@
 	},
 	"101": {
 		"id": 101,
-		"name": "远古巫灵",
+		"name": "泽拉斯",
+		"title": "远古巫灵",
 		"slot": "Xerath",
 		"roles": [
 			"mage"
@@ -14692,7 +14783,8 @@
 	},
 	"102": {
 		"id": 102,
-		"name": "龙血武姬",
+		"name": "希瓦娜",
+		"title": "龙血武姬",
 		"slot": "Shyvana",
 		"roles": [
 			"fighter",
@@ -14755,7 +14847,8 @@
 	},
 	"103": {
 		"id": 103,
-		"name": "九尾妖狐",
+		"name": "阿狸",
+		"title": "九尾妖狐",
 		"slot": "Ahri",
 		"roles": [
 			"mage",
@@ -15022,7 +15115,8 @@
 	},
 	"104": {
 		"id": 104,
-		"name": "法外狂徒",
+		"name": "格雷福斯",
+		"title": "法外狂徒",
 		"slot": "Graves",
 		"roles": [
 			"marksman"
@@ -15315,7 +15409,8 @@
 	},
 	"105": {
 		"id": 105,
-		"name": "潮汐海灵",
+		"name": "菲兹",
+		"title": "潮汐海灵",
 		"slot": "Fizz",
 		"roles": [
 			"assassin",
@@ -15439,7 +15534,8 @@
 	},
 	"106": {
 		"id": 106,
-		"name": "不灭狂雷",
+		"name": "沃利贝尔",
+		"title": "不灭狂雷",
 		"slot": "Volibear",
 		"roles": [
 			"fighter",
@@ -15492,7 +15588,8 @@
 	},
 	"107": {
 		"id": 107,
-		"name": "傲之追猎者",
+		"name": "雷恩加尔",
+		"title": "傲之追猎者",
 		"slot": "Rengar",
 		"roles": [
 			"assassin",
@@ -15756,7 +15853,8 @@
 	},
 	"110": {
 		"id": 110,
-		"name": "惩戒之箭",
+		"name": "韦鲁斯",
+		"title": "惩戒之箭",
 		"slot": "Varus",
 		"roles": [
 			"marksman",
@@ -15885,7 +15983,8 @@
 	},
 	"111": {
 		"id": 111,
-		"name": "深海泰坦",
+		"name": "诺提勒斯",
+		"title": "深海泰坦",
 		"slot": "Nautilus",
 		"roles": [
 			"tank",
@@ -15948,7 +16047,8 @@
 	},
 	"112": {
 		"id": 112,
-		"name": "机械先驱",
+		"name": "维克托",
+		"title": "机械先驱",
 		"slot": "Viktor",
 		"roles": [
 			"mage"
@@ -16068,7 +16168,8 @@
 	},
 	"113": {
 		"id": 113,
-		"name": "北地之怒",
+		"name": "瑟庄妮",
+		"title": "北地之怒",
 		"slot": "Sejuani",
 		"roles": [
 			"tank",
@@ -16191,7 +16292,8 @@
 	},
 	"114": {
 		"id": 114,
-		"name": "无双剑姬",
+		"name": "菲奥娜",
+		"title": "无双剑姬",
 		"slot": "Fiora",
 		"roles": [
 			"fighter",
@@ -16552,7 +16654,8 @@
 	},
 	"115": {
 		"id": 115,
-		"name": "爆破鬼才",
+		"name": "吉格斯",
+		"title": "爆破鬼才",
 		"slot": "Ziggs",
 		"roles": [
 			"mage"
@@ -16747,7 +16850,8 @@
 	},
 	"117": {
 		"id": 117,
-		"name": "仙灵女巫",
+		"name": "璐璐",
+		"title": "仙灵女巫",
 		"slot": "Lulu",
 		"roles": [
 			"support",
@@ -16966,7 +17070,8 @@
 	},
 	"119": {
 		"id": 119,
-		"name": "荣耀行刑官",
+		"name": "德莱文",
+		"title": "荣耀行刑官",
 		"slot": "Draven",
 		"roles": [
 			"marksman"
@@ -17129,7 +17234,8 @@
 	},
 	"120": {
 		"id": 120,
-		"name": "战争之影",
+		"name": "赫卡里姆",
+		"title": "战争之影",
 		"slot": "Hecarim",
 		"roles": [
 			"fighter",
@@ -17238,7 +17344,8 @@
 	},
 	"121": {
 		"id": 121,
-		"name": "虚空掠夺者",
+		"name": "卡兹克",
+		"title": "虚空掠夺者",
 		"slot": "Khazix",
 		"roles": [
 			"assassin"
@@ -17566,7 +17673,8 @@
 	},
 	"122": {
 		"id": 122,
-		"name": "诺克萨斯之手",
+		"name": "德莱厄斯",
+		"title": "诺克萨斯之手",
 		"slot": "Darius",
 		"roles": [
 			"fighter",
@@ -17767,7 +17875,8 @@
 	},
 	"126": {
 		"id": 126,
-		"name": "未来守护者",
+		"name": "杰斯",
+		"title": "未来守护者",
 		"slot": "Jayce",
 		"roles": [
 			"fighter",
@@ -17897,7 +18006,8 @@
 	},
 	"127": {
 		"id": 127,
-		"name": "冰霜女巫",
+		"name": "丽桑卓",
+		"title": "冰霜女巫",
 		"slot": "Lissandra",
 		"roles": [
 			"mage"
@@ -18003,7 +18113,8 @@
 	},
 	"131": {
 		"id": 131,
-		"name": "皎月女神",
+		"name": "黛安娜",
+		"title": "皎月女神",
 		"slot": "Diana",
 		"roles": [
 			"fighter",
@@ -18221,7 +18332,8 @@
 	},
 	"133": {
 		"id": 133,
-		"name": "德玛西亚之翼",
+		"name": "奎因",
+		"title": "德玛西亚之翼",
 		"slot": "Quinn",
 		"roles": [
 			"marksman",
@@ -18264,7 +18376,8 @@
 	},
 	"134": {
 		"id": 134,
-		"name": "暗黑元首",
+		"name": "辛德拉",
+		"title": "暗黑元首",
 		"slot": "Syndra",
 		"roles": [
 			"mage",
@@ -18395,7 +18508,8 @@
 	},
 	"136": {
 		"id": 136,
-		"name": "铸星龙王",
+		"name": "奥瑞利安·索尔",
+		"title": "铸星龙王",
 		"slot": "AurelionSol",
 		"roles": [
 			"mage"
@@ -18491,7 +18605,8 @@
 	},
 	"141": {
 		"id": 141,
-		"name": "影流之镰",
+		"name": "凯隐",
+		"title": "影流之镰",
 		"slot": "Kayn",
 		"roles": [
 			"fighter",
@@ -18524,7 +18639,8 @@
 	},
 	"142": {
 		"id": 142,
-		"name": "暮光星灵",
+		"name": "佐伊",
+		"title": "暮光星灵",
 		"slot": "Zoe",
 		"roles": [
 			"mage",
@@ -18700,7 +18816,8 @@
 	},
 	"143": {
 		"id": 143,
-		"name": "荆棘之兴",
+		"name": "婕拉",
+		"title": "荆棘之兴",
 		"slot": "Zyra",
 		"roles": [
 			"mage",
@@ -18753,7 +18870,8 @@
 	},
 	"145": {
 		"id": 145,
-		"name": "虚空之女",
+		"name": "卡莎",
+		"title": "虚空之女",
 		"slot": "Kaisa",
 		"roles": [
 			"marksman"
@@ -18946,7 +19064,8 @@
 	},
 	"150": {
 		"id": 150,
-		"name": "迷失之牙",
+		"name": "纳尔",
+		"title": "迷失之牙",
 		"slot": "Gnar",
 		"roles": [
 			"fighter",
@@ -19132,7 +19251,8 @@
 	},
 	"154": {
 		"id": 154,
-		"name": "生化魔人",
+		"name": "扎克",
+		"title": "生化魔人",
 		"slot": "Zac",
 		"roles": [
 			"tank",
@@ -19198,7 +19318,8 @@
 	},
 	"157": {
 		"id": 157,
-		"name": "疾风剑豪",
+		"name": "亚索",
+		"title": "疾风剑豪",
 		"slot": "Yasuo",
 		"roles": [
 			"fighter",
@@ -19587,7 +19708,8 @@
 	},
 	"161": {
 		"id": 161,
-		"name": "虚空之眼",
+		"name": "维克兹",
+		"title": "虚空之眼",
 		"slot": "Velkoz",
 		"roles": [
 			"mage"
@@ -19684,7 +19806,8 @@
 	},
 	"163": {
 		"id": 163,
-		"name": "岩雀",
+		"name": "塔莉垭",
+		"title": "岩雀",
 		"slot": "Taliyah",
 		"roles": [
 			"mage",
@@ -19786,7 +19909,8 @@
 	},
 	"164": {
 		"id": 164,
-		"name": "青钢影",
+		"name": "卡蜜尔",
+		"title": "青钢影",
 		"slot": "Camille",
 		"roles": [
 			"fighter",
@@ -19888,7 +20012,8 @@
 	},
 	"201": {
 		"id": 201,
-		"name": "弗雷尔卓德之心",
+		"name": "布隆",
+		"title": "弗雷尔卓德之心",
 		"slot": "Braum",
 		"roles": [
 			"support",
@@ -20178,7 +20303,8 @@
 	},
 	"202": {
 		"id": 202,
-		"name": "戏命师",
+		"name": "烬",
+		"title": "戏命师",
 		"slot": "Jhin",
 		"roles": [
 			"marksman",
@@ -20299,7 +20425,8 @@
 	},
 	"203": {
 		"id": 203,
-		"name": "永猎双子",
+		"name": "千珏",
+		"title": "永猎双子",
 		"slot": "Kindred",
 		"roles": [
 			"marksman"
@@ -20409,7 +20536,8 @@
 	},
 	"222": {
 		"id": 222,
-		"name": "暴走萝莉",
+		"name": "金克丝",
+		"title": "暴走萝莉",
 		"slot": "Jinx",
 		"roles": [
 			"marksman"
@@ -20727,7 +20855,8 @@
 	},
 	"223": {
 		"id": 223,
-		"name": "河流之王",
+		"name": "塔姆",
+		"title": "河流之王",
 		"slot": "TahmKench",
 		"roles": [
 			"support",
@@ -20820,7 +20949,8 @@
 	},
 	"235": {
 		"id": 235,
-		"name": "涤魂圣枪",
+		"name": "赛娜",
+		"title": "涤魂圣枪",
 		"slot": "Senna",
 		"roles": [
 			"marksman",
@@ -20968,7 +21098,8 @@
 	},
 	"236": {
 		"id": 236,
-		"name": "圣枪游侠",
+		"name": "卢锡安",
+		"title": "圣枪游侠",
 		"slot": "Lucian",
 		"roles": [
 			"marksman"
@@ -21178,7 +21309,8 @@
 	},
 	"238": {
 		"id": 238,
-		"name": "影流之主",
+		"name": "劫",
+		"title": "影流之主",
 		"slot": "Zed",
 		"roles": [
 			"assassin"
@@ -21383,7 +21515,8 @@
 	},
 	"240": {
 		"id": 240,
-		"name": "暴怒骑士",
+		"name": "克烈",
+		"title": "暴怒骑士",
 		"slot": "Kled",
 		"roles": [
 			"fighter",
@@ -21471,7 +21604,8 @@
 	},
 	"245": {
 		"id": 245,
-		"name": "时间刺客",
+		"name": "艾克",
+		"title": "时间刺客",
 		"slot": "Ekko",
 		"roles": [
 			"assassin",
@@ -21785,7 +21919,8 @@
 	},
 	"246": {
 		"id": 246,
-		"name": "元素女皇",
+		"name": "奇亚娜",
+		"title": "元素女皇",
 		"slot": "Qiyana",
 		"roles": [
 			"assassin",
@@ -21887,7 +22022,8 @@
 	},
 	"254": {
 		"id": 254,
-		"name": "皮城执法官",
+		"name": "蔚",
+		"title": "皮城执法官",
 		"slot": "Vi",
 		"roles": [
 			"fighter",
@@ -22133,7 +22269,8 @@
 	},
 	"266": {
 		"id": 266,
-		"name": "暗裔剑魔",
+		"name": "亚托克斯",
+		"title": "暗裔剑魔",
 		"slot": "Aatrox",
 		"roles": [
 			"fighter",
@@ -22224,7 +22361,8 @@
 	},
 	"267": {
 		"id": 267,
-		"name": "唤潮鲛姬",
+		"name": "娜美",
+		"title": "唤潮鲛姬",
 		"slot": "Nami",
 		"roles": [
 			"support",
@@ -22429,7 +22567,8 @@
 	},
 	"268": {
 		"id": 268,
-		"name": "沙漠皇帝",
+		"name": "阿兹尔",
+		"title": "沙漠皇帝",
 		"slot": "Azir",
 		"roles": [
 			"mage",
@@ -22472,7 +22611,8 @@
 	},
 	"350": {
 		"id": 350,
-		"name": "魔法猫咪",
+		"name": "悠米",
+		"title": "魔法猫咪",
 		"slot": "Yuumi",
 		"roles": [
 			"support",
@@ -22651,7 +22791,8 @@
 	},
 	"360": {
 		"id": 360,
-		"name": "沙漠玫瑰",
+		"name": "莎弥拉",
+		"title": "沙漠玫瑰",
 		"slot": "Samira",
 		"roles": [
 			"marksman"
@@ -22751,7 +22892,8 @@
 	},
 	"412": {
 		"id": 412,
-		"name": "魂锁典狱长",
+		"name": "锤石",
+		"title": "魂锁典狱长",
 		"slot": "Thresh",
 		"roles": [
 			"support",
@@ -22973,7 +23115,8 @@
 	},
 	"420": {
 		"id": 420,
-		"name": "海兽祭司",
+		"name": "俄洛伊",
+		"title": "海兽祭司",
 		"slot": "Illaoi",
 		"roles": [
 			"fighter",
@@ -23070,7 +23213,8 @@
 	},
 	"421": {
 		"id": 421,
-		"name": "虚空遁地兽",
+		"name": "雷克塞",
+		"title": "虚空遁地兽",
 		"slot": "RekSai",
 		"roles": [
 			"fighter"
@@ -23226,7 +23370,8 @@
 	},
 	"427": {
 		"id": 427,
-		"name": "翠神",
+		"name": "艾翁",
+		"title": "翠神",
 		"slot": "Ivern",
 		"roles": [
 			"support",
@@ -23332,7 +23477,8 @@
 	},
 	"429": {
 		"id": 429,
-		"name": "复仇之矛",
+		"name": "卡莉丝塔",
+		"title": "复仇之矛",
 		"slot": "Kalista",
 		"roles": [
 			"marksman"
@@ -23379,7 +23525,8 @@
 	},
 	"432": {
 		"id": 432,
-		"name": "星界游神",
+		"name": "巴德",
+		"title": "星界游神",
 		"slot": "Bard",
 		"roles": [
 			"support",
@@ -23533,7 +23680,8 @@
 	},
 	"497": {
 		"id": 497,
-		"name": "幻翎",
+		"name": "洛",
+		"title": "幻翎",
 		"slot": "Rakan",
 		"roles": [
 			"support"
@@ -23608,7 +23756,8 @@
 	},
 	"498": {
 		"id": 498,
-		"name": "逆羽",
+		"name": "霞",
+		"title": "逆羽",
 		"slot": "Xayah",
 		"roles": [
 			"marksman"
@@ -23678,7 +23827,8 @@
 	},
 	"516": {
 		"id": 516,
-		"name": "山隐之焰",
+		"name": "奥恩",
+		"title": "山隐之焰",
 		"slot": "Ornn",
 		"roles": [
 			"tank",
@@ -23706,7 +23856,8 @@
 	},
 	"517": {
 		"id": 517,
-		"name": "解脱者",
+		"name": "塞拉斯",
+		"title": "解脱者",
 		"slot": "Sylas",
 		"roles": [
 			"mage",
@@ -23831,7 +23982,8 @@
 	},
 	"518": {
 		"id": 518,
-		"name": "万花通灵",
+		"name": "妮蔻",
+		"title": "万花通灵",
 		"slot": "Neeko",
 		"roles": [
 			"mage",
@@ -23942,7 +24094,8 @@
 	},
 	"523": {
 		"id": 523,
-		"name": "残月之肃",
+		"name": "厄斐琉斯",
+		"title": "残月之肃",
 		"slot": "Aphelios",
 		"roles": [
 			"marksman"
@@ -24033,7 +24186,8 @@
 	},
 	"555": {
 		"id": 555,
-		"name": "血港鬼影",
+		"name": "派克",
+		"title": "血港鬼影",
 		"slot": "Pyke",
 		"roles": [
 			"support",
@@ -24341,7 +24495,8 @@
 	},
 	"777": {
 		"id": 777,
-		"name": "封魔剑魂",
+		"name": "永恩",
+		"title": "封魔剑魂",
 		"slot": "Yone",
 		"roles": [
 			"assassin",
@@ -24442,7 +24597,8 @@
 	},
 	"875": {
 		"id": 875,
-		"name": "腕豪",
+		"name": "瑟提",
+		"title": "腕豪",
 		"slot": "Sett",
 		"roles": [
 			"fighter",
@@ -24525,7 +24681,8 @@
 	},
 	"876": {
 		"id": 876,
-		"name": "含羞蓓蕾",
+		"name": "莉莉娅",
+		"title": "含羞蓓蕾",
 		"slot": "Lillia",
 		"roles": [
 			"fighter",
@@ -24626,7 +24783,8 @@
 	},
 	"-1": {
 		"id": -1,
-		"name": "无",
+		"name": "",
+		"title": "无",
 		"slot": "None",
 		"roles": [],
 		"skins": {},

@@ -4,6 +4,7 @@ global._pa = require('path');
 global._as = require('assert');
 global._ul = require('url');
 global._cp = require('child_process');
+global._cr = require('crypto');
 
 global.Axios = require('axios');
 global.Fex = require('fs-extra');

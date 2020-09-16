@@ -18,7 +18,7 @@ const isSameTakeConfig = function() {
 	return isSameTakeConfig;
 };
 
-const takeWpkRaw = function(wpkFile, audioPackFile) {
+const takeWpkRaw = function(wpkFile) {
 	const wpkBiffuer = new Biffer(RD('_cache', 'extract', wpkFile));
 
 	// eslint-disable-next-line no-unused-vars

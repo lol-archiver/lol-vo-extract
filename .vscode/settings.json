@@ -1,3 +1,4 @@
 {
 	"eslint.nodePath": "./node_modules",
+	"files.trimTrailingWhitespace": true,
 }

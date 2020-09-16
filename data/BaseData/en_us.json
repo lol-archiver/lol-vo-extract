@@ -2,6 +2,7 @@
 	"1": {
 		"id": 1,
 		"name": "Annie",
+		"title": "the Dark Child",
 		"slot": "Annie",
 		"roles": [
 			"mage"
@@ -84,6 +85,7 @@
 	"2": {
 		"id": 2,
 		"name": "Olaf",
+		"title": "the Berserker",
 		"slot": "Olaf",
 		"roles": [
 			"fighter",
@@ -293,6 +295,7 @@
 	"3": {
 		"id": 3,
 		"name": "Galio",
+		"title": "the Colossus",
 		"slot": "Galio",
 		"roles": [
 			"tank",
@@ -452,6 +455,7 @@
 	"4": {
 		"id": 4,
 		"name": "Twisted Fate",
+		"title": "the Card Master",
 		"slot": "TwistedFate",
 		"roles": [
 			"mage"
@@ -539,6 +543,7 @@
 	"5": {
 		"id": 5,
 		"name": "Xin Zhao",
+		"title": "the Seneschal of Demacia",
 		"slot": "XinZhao",
 		"roles": [
 			"fighter",
@@ -767,6 +772,7 @@
 	"6": {
 		"id": 6,
 		"name": "Urgot",
+		"title": "the Dreadnought",
 		"slot": "Urgot",
 		"roles": [
 			"fighter",
@@ -971,6 +977,7 @@
 	"7": {
 		"id": 7,
 		"name": "LeBlanc",
+		"title": "the Deceiver",
 		"slot": "Leblanc",
 		"roles": [
 			"assassin",
@@ -1250,6 +1257,7 @@
 	"8": {
 		"id": 8,
 		"name": "Vladimir",
+		"title": "the Crimson Reaper",
 		"slot": "Vladimir",
 		"roles": [
 			"mage"
@@ -1418,6 +1426,7 @@
 	"9": {
 		"id": 9,
 		"name": "Fiddlesticks",
+		"title": "the Ancient Fear",
 		"slot": "FiddleSticks",
 		"roles": [
 			"mage",
@@ -1642,6 +1651,7 @@
 	"10": {
 		"id": 10,
 		"name": "Kayle",
+		"title": "the Righteous",
 		"slot": "Kayle",
 		"roles": [
 			"fighter",
@@ -1834,6 +1844,7 @@
 	"11": {
 		"id": 11,
 		"name": "Master Yi",
+		"title": "the Wuju Bladesman",
 		"slot": "MasterYi",
 		"roles": [
 			"assassin",
@@ -2178,6 +2189,7 @@
 	"12": {
 		"id": 12,
 		"name": "Alistar",
+		"title": "the Minotaur",
 		"slot": "Alistar",
 		"roles": [
 			"tank",
@@ -2404,6 +2416,7 @@
 	"13": {
 		"id": 13,
 		"name": "Ryze",
+		"title": "the Rune Mage",
 		"slot": "Ryze",
 		"roles": [
 			"mage",
@@ -2552,6 +2565,7 @@
 	"14": {
 		"id": 14,
 		"name": "Sion",
+		"title": "The Undead Juggernaut",
 		"slot": "Sion",
 		"roles": [
 			"tank",
@@ -2742,6 +2756,7 @@
 	"15": {
 		"id": 15,
 		"name": "Sivir",
+		"title": "the Battle Mistress",
 		"slot": "Sivir",
 		"roles": [
 			"marksman"
@@ -2939,6 +2954,7 @@
 	"16": {
 		"id": 16,
 		"name": "Soraka",
+		"title": "the Starchild",
 		"slot": "Soraka",
 		"roles": [
 			"support",
@@ -3063,6 +3079,7 @@
 	"17": {
 		"id": 17,
 		"name": "Teemo",
+		"title": "the Swift Scout",
 		"slot": "Teemo",
 		"roles": [
 			"marksman",
@@ -3285,6 +3302,7 @@
 	"18": {
 		"id": 18,
 		"name": "Tristana",
+		"title": "the Yordle Gunner",
 		"slot": "Tristana",
 		"roles": [
 			"marksman",
@@ -3620,6 +3638,7 @@
 	"19": {
 		"id": 19,
 		"name": "Warwick",
+		"title": "the Uncaged Wrath of Zaun",
 		"slot": "Warwick",
 		"roles": [
 			"fighter",
@@ -3845,6 +3864,7 @@
 	"20": {
 		"id": 20,
 		"name": "Nunu & Willump",
+		"title": "the Boy and His Yeti",
 		"slot": "Nunu",
 		"roles": [
 			"tank",
@@ -3972,6 +3992,7 @@
 	"21": {
 		"id": 21,
 		"name": "Miss Fortune",
+		"title": "the Bounty Hunter",
 		"slot": "MissFortune",
 		"roles": [
 			"marksman"
@@ -4119,6 +4140,7 @@
 	"22": {
 		"id": 22,
 		"name": "Ashe",
+		"title": "the Frost Archer",
 		"slot": "Ashe",
 		"roles": [
 			"marksman",
@@ -4299,6 +4321,7 @@
 	"23": {
 		"id": 23,
 		"name": "Tryndamere",
+		"title": "the Barbarian King",
 		"slot": "Tryndamere",
 		"roles": [
 			"fighter",
@@ -4436,6 +4459,7 @@
 	"24": {
 		"id": 24,
 		"name": "Jax",
+		"title": "Grandmaster at Arms",
 		"slot": "Jax",
 		"roles": [
 			"fighter",
@@ -4588,6 +4612,7 @@
 	"25": {
 		"id": 25,
 		"name": "Morgana",
+		"title": "the Fallen",
 		"slot": "Morgana",
 		"roles": [
 			"mage",
@@ -4845,6 +4870,7 @@
 	"26": {
 		"id": 26,
 		"name": "Zilean",
+		"title": "the Chronokeeper",
 		"slot": "Zilean",
 		"roles": [
 			"support",
@@ -4962,6 +4988,7 @@
 	"27": {
 		"id": 27,
 		"name": "Singed",
+		"title": "the Mad Chemist",
 		"slot": "Singed",
 		"roles": [
 			"tank",
@@ -5030,6 +5057,7 @@
 	"28": {
 		"id": 28,
 		"name": "Evelynn",
+		"title": "Agony's Embrace",
 		"slot": "Evelynn",
 		"roles": [
 			"assassin",
@@ -5148,6 +5176,7 @@
 	"29": {
 		"id": 29,
 		"name": "Twitch",
+		"title": "the Plague Rat",
 		"slot": "Twitch",
 		"roles": [
 			"marksman",
@@ -5387,6 +5416,7 @@
 	"30": {
 		"id": 30,
 		"name": "Karthus",
+		"title": "the Deathsinger",
 		"slot": "Karthus",
 		"roles": [
 			"mage"
@@ -5527,6 +5557,7 @@
 	"31": {
 		"id": 31,
 		"name": "Cho'Gath",
+		"title": "the Terror of the Void",
 		"slot": "Chogath",
 		"roles": [
 			"tank",
@@ -5640,6 +5671,7 @@
 	"32": {
 		"id": 32,
 		"name": "Amumu",
+		"title": "the Sad Mummy",
 		"slot": "Amumu",
 		"roles": [
 			"tank",
@@ -5832,6 +5864,7 @@
 	"33": {
 		"id": 33,
 		"name": "Rammus",
+		"title": "the Armordillo",
 		"slot": "Rammus",
 		"roles": [
 			"tank",
@@ -5964,6 +5997,7 @@
 	"34": {
 		"id": 34,
 		"name": "Anivia",
+		"title": "the Cryophoenix",
 		"slot": "Anivia",
 		"roles": [
 			"mage",
@@ -6100,6 +6134,7 @@
 	"35": {
 		"id": 35,
 		"name": "Shaco",
+		"title": "the Demon Jester",
 		"slot": "Shaco",
 		"roles": [
 			"assassin"
@@ -6286,6 +6321,7 @@
 	"36": {
 		"id": 36,
 		"name": "Dr. Mundo",
+		"title": "the Madman of Zaun",
 		"slot": "DrMundo",
 		"roles": [
 			"fighter",
@@ -6405,6 +6441,7 @@
 	"37": {
 		"id": 37,
 		"name": "Sona",
+		"title": "Maven of the Strings",
 		"slot": "Sona",
 		"roles": [
 			"support",
@@ -6621,6 +6658,7 @@
 	"38": {
 		"id": 38,
 		"name": "Kassadin",
+		"title": "the Void Walker",
 		"slot": "Kassadin",
 		"roles": [
 			"assassin",
@@ -6729,6 +6767,7 @@
 	"39": {
 		"id": 39,
 		"name": "Irelia",
+		"title": "the Blade Dancer",
 		"slot": "Irelia",
 		"roles": [
 			"fighter",
@@ -6940,6 +6979,7 @@
 	"40": {
 		"id": 40,
 		"name": "Janna",
+		"title": "the Storm's Fury",
 		"slot": "Janna",
 		"roles": [
 			"support",
@@ -7160,6 +7200,7 @@
 	"41": {
 		"id": 41,
 		"name": "Gangplank",
+		"title": "the Saltwater Scourge",
 		"slot": "Gangplank",
 		"roles": [
 			"fighter"
@@ -7343,6 +7384,7 @@
 	"42": {
 		"id": 42,
 		"name": "Corki",
+		"title": "the Daring Bombardier",
 		"slot": "Corki",
 		"roles": [
 			"marksman"
@@ -7557,6 +7599,7 @@
 	"43": {
 		"id": 43,
 		"name": "Karma",
+		"title": "the Enlightened One",
 		"slot": "Karma",
 		"roles": [
 			"mage",
@@ -7763,6 +7806,7 @@
 	"44": {
 		"id": 44,
 		"name": "Taric",
+		"title": "the Shield of Valoran",
 		"slot": "Taric",
 		"roles": [
 			"support",
@@ -7921,6 +7965,7 @@
 	"45": {
 		"id": 45,
 		"name": "Veigar",
+		"title": "the Tiny Master of Evil",
 		"slot": "Veigar",
 		"roles": [
 			"mage"
@@ -8181,6 +8226,7 @@
 	"48": {
 		"id": 48,
 		"name": "Trundle",
+		"title": "the Troll King",
 		"slot": "Trundle",
 		"roles": [
 			"fighter",
@@ -8280,6 +8326,7 @@
 	"50": {
 		"id": 50,
 		"name": "Swain",
+		"title": "the Noxian Grand General",
 		"slot": "Swain",
 		"roles": [
 			"mage",
@@ -8383,6 +8430,7 @@
 	"51": {
 		"id": 51,
 		"name": "Caitlyn",
+		"title": "the Sheriff of Piltover",
 		"slot": "Caitlyn",
 		"roles": [
 			"marksman"
@@ -8554,6 +8602,7 @@
 	"53": {
 		"id": 53,
 		"name": "Blitzcrank",
+		"title": "the Great Steam Golem",
 		"slot": "Blitzcrank",
 		"roles": [
 			"tank",
@@ -8788,6 +8837,7 @@
 	"54": {
 		"id": 54,
 		"name": "Malphite",
+		"title": "Shard of the Monolith",
 		"slot": "Malphite",
 		"roles": [
 			"tank",
@@ -9004,6 +9054,7 @@
 	"55": {
 		"id": 55,
 		"name": "Katarina",
+		"title": "the Sinister Blade",
 		"slot": "Katarina",
 		"roles": [
 			"assassin",
@@ -9234,6 +9285,7 @@
 	"56": {
 		"id": 56,
 		"name": "Nocturne",
+		"title": "the Eternal Nightmare",
 		"slot": "Nocturne",
 		"roles": [
 			"assassin",
@@ -9370,6 +9422,7 @@
 	"57": {
 		"id": 57,
 		"name": "Maokai",
+		"title": "the Twisted Treant",
 		"slot": "Maokai",
 		"roles": [
 			"tank",
@@ -9570,6 +9623,7 @@
 	"58": {
 		"id": 58,
 		"name": "Renekton",
+		"title": "the Butcher of the Sands",
 		"slot": "Renekton",
 		"roles": [
 			"fighter",
@@ -9776,6 +9830,7 @@
 	"59": {
 		"id": 59,
 		"name": "Jarvan IV",
+		"title": "the Exemplar of Demacia",
 		"slot": "JarvanIV",
 		"roles": [
 			"tank",
@@ -9942,6 +9997,7 @@
 	"60": {
 		"id": 60,
 		"name": "Elise",
+		"title": "the Spider Queen",
 		"slot": "Elise",
 		"roles": [
 			"mage",
@@ -9990,6 +10046,7 @@
 	"61": {
 		"id": 61,
 		"name": "Orianna",
+		"title": "the Lady of Clockwork",
 		"slot": "Orianna",
 		"roles": [
 			"mage",
@@ -10151,6 +10208,7 @@
 	"62": {
 		"id": 62,
 		"name": "Wukong",
+		"title": "the Monkey King",
 		"slot": "MonkeyKing",
 		"roles": [
 			"fighter",
@@ -10204,6 +10262,7 @@
 	"63": {
 		"id": 63,
 		"name": "Brand",
+		"title": "the Burning Vengeance",
 		"slot": "Brand",
 		"roles": [
 			"mage"
@@ -10298,6 +10357,7 @@
 	"64": {
 		"id": 64,
 		"name": "Lee Sin",
+		"title": "the Blind Monk",
 		"slot": "LeeSin",
 		"roles": [
 			"fighter",
@@ -10524,7 +10584,13 @@
 					}
 				}
 			},
-			"30": 29
+			"30": 29,
+			"31": {
+				"id": 31,
+				"name": "Storm Dragon Lee Sin",
+				"chromas": {
+				}
+			}
 		},
 		"spells": {
 			"p": "Flurry",
@@ -10537,6 +10603,7 @@
 	"67": {
 		"id": 67,
 		"name": "Vayne",
+		"title": "the Night Hunter",
 		"slot": "Vayne",
 		"roles": [
 			"marksman",
@@ -10731,6 +10798,7 @@
 	"68": {
 		"id": 68,
 		"name": "Rumble",
+		"title": "the Mechanized Menace",
 		"slot": "Rumble",
 		"roles": [
 			"fighter",
@@ -10847,6 +10915,7 @@
 	"69": {
 		"id": 69,
 		"name": "Cassiopeia",
+		"title": "the Serpent's Embrace",
 		"slot": "Cassiopeia",
 		"roles": [
 			"mage"
@@ -11000,6 +11069,7 @@
 	"72": {
 		"id": 72,
 		"name": "Skarner",
+		"title": "the Crystal Vanguard",
 		"slot": "Skarner",
 		"roles": [
 			"fighter",
@@ -11043,6 +11113,7 @@
 	"74": {
 		"id": 74,
 		"name": "Heimerdinger",
+		"title": "the Revered Inventor",
 		"slot": "Heimerdinger",
 		"roles": [
 			"mage",
@@ -11174,6 +11245,7 @@
 	"75": {
 		"id": 75,
 		"name": "Nasus",
+		"title": "the Curator of the Sands",
 		"slot": "Nasus",
 		"roles": [
 			"fighter",
@@ -11302,6 +11374,7 @@
 	"76": {
 		"id": 76,
 		"name": "Nidalee",
+		"title": "the Bestial Huntress",
 		"slot": "Nidalee",
 		"roles": [
 			"assassin",
@@ -11440,6 +11513,7 @@
 	"77": {
 		"id": 77,
 		"name": "Udyr",
+		"title": "the Spirit Walker",
 		"slot": "Udyr",
 		"roles": [
 			"fighter",
@@ -11488,6 +11562,7 @@
 	"78": {
 		"id": 78,
 		"name": "Poppy",
+		"title": "Keeper of the Hammer",
 		"slot": "Poppy",
 		"roles": [
 			"tank",
@@ -11680,6 +11755,7 @@
 	"79": {
 		"id": 79,
 		"name": "Gragas",
+		"title": "the Rabble Rouser",
 		"slot": "Gragas",
 		"roles": [
 			"fighter",
@@ -11753,6 +11829,7 @@
 	"80": {
 		"id": 80,
 		"name": "Pantheon",
+		"title": "the Unbreakable Spear",
 		"slot": "Pantheon",
 		"roles": [
 			"fighter",
@@ -11958,6 +12035,7 @@
 	"81": {
 		"id": 81,
 		"name": "Ezreal",
+		"title": "the Prodigal Explorer",
 		"slot": "Ezreal",
 		"roles": [
 			"marksman",
@@ -12129,6 +12207,7 @@
 	"82": {
 		"id": 82,
 		"name": "Mordekaiser",
+		"title": "the Iron Revenant",
 		"slot": "Mordekaiser",
 		"roles": [
 			"fighter"
@@ -12236,6 +12315,7 @@
 	"83": {
 		"id": 83,
 		"name": "Yorick",
+		"title": "Shepherd of Souls",
 		"slot": "Yorick",
 		"roles": [
 			"fighter",
@@ -12343,6 +12423,7 @@
 	"84": {
 		"id": 84,
 		"name": "Akali",
+		"title": "the Rogue Assassin",
 		"slot": "Akali",
 		"roles": [
 			"assassin"
@@ -12672,6 +12753,7 @@
 	"85": {
 		"id": 85,
 		"name": "Kennen",
+		"title": "the Heart of the Tempest",
 		"slot": "Kennen",
 		"roles": [
 			"mage",
@@ -12863,6 +12945,7 @@
 	"86": {
 		"id": 86,
 		"name": "Garen",
+		"title": "The Might of Demacia",
 		"slot": "Garen",
 		"roles": [
 			"fighter",
@@ -13048,6 +13131,7 @@
 	"89": {
 		"id": 89,
 		"name": "Leona",
+		"title": "the Radiant Dawn",
 		"slot": "Leona",
 		"roles": [
 			"tank",
@@ -13217,6 +13301,7 @@
 	"90": {
 		"id": 90,
 		"name": "Malzahar",
+		"title": "the Prophet of the Void",
 		"slot": "Malzahar",
 		"roles": [
 			"mage",
@@ -13363,6 +13448,7 @@
 	"91": {
 		"id": 91,
 		"name": "Talon",
+		"title": "the Blade's Shadow",
 		"slot": "Talon",
 		"roles": [
 			"assassin"
@@ -13612,6 +13698,7 @@
 	"92": {
 		"id": 92,
 		"name": "Riven",
+		"title": "the Exile",
 		"slot": "Riven",
 		"roles": [
 			"fighter",
@@ -13891,6 +13978,7 @@
 	"96": {
 		"id": 96,
 		"name": "Kog'Maw",
+		"title": "the Mouth of the Abyss",
 		"slot": "KogMaw",
 		"roles": [
 			"marksman",
@@ -14115,6 +14203,7 @@
 	"98": {
 		"id": 98,
 		"name": "Shen",
+		"title": "the Eye of Twilight",
 		"slot": "Shen",
 		"roles": [
 			"tank"
@@ -14457,6 +14546,7 @@
 	"99": {
 		"id": 99,
 		"name": "Lux",
+		"title": "the Lady of Luminosity",
 		"slot": "Lux",
 		"roles": [
 			"mage",
@@ -14591,6 +14681,7 @@
 	"101": {
 		"id": 101,
 		"name": "Xerath",
+		"title": "the Magus Ascendant",
 		"slot": "Xerath",
 		"roles": [
 			"mage"
@@ -14693,6 +14784,7 @@
 	"102": {
 		"id": 102,
 		"name": "Shyvana",
+		"title": "the Half-Dragon",
 		"slot": "Shyvana",
 		"roles": [
 			"fighter",
@@ -14756,6 +14848,7 @@
 	"103": {
 		"id": 103,
 		"name": "Ahri",
+		"title": "the Nine-Tailed Fox",
 		"slot": "Ahri",
 		"roles": [
 			"mage",
@@ -15023,6 +15116,7 @@
 	"104": {
 		"id": 104,
 		"name": "Graves",
+		"title": "the Outlaw",
 		"slot": "Graves",
 		"roles": [
 			"marksman"
@@ -15316,6 +15410,7 @@
 	"105": {
 		"id": 105,
 		"name": "Fizz",
+		"title": "the Tidal Trickster",
 		"slot": "Fizz",
 		"roles": [
 			"assassin",
@@ -15440,6 +15535,7 @@
 	"106": {
 		"id": 106,
 		"name": "Volibear",
+		"title": "the Relentless Storm",
 		"slot": "Volibear",
 		"roles": [
 			"fighter",
@@ -15493,6 +15589,7 @@
 	"107": {
 		"id": 107,
 		"name": "Rengar",
+		"title": "the Pridestalker",
 		"slot": "Rengar",
 		"roles": [
 			"assassin",
@@ -15757,6 +15854,7 @@
 	"110": {
 		"id": 110,
 		"name": "Varus",
+		"title": "the Arrow of Retribution",
 		"slot": "Varus",
 		"roles": [
 			"marksman",
@@ -15886,6 +15984,7 @@
 	"111": {
 		"id": 111,
 		"name": "Nautilus",
+		"title": "the Titan of the Depths",
 		"slot": "Nautilus",
 		"roles": [
 			"tank",
@@ -15949,6 +16048,7 @@
 	"112": {
 		"id": 112,
 		"name": "Viktor",
+		"title": "the Machine Herald",
 		"slot": "Viktor",
 		"roles": [
 			"mage"
@@ -16069,6 +16169,7 @@
 	"113": {
 		"id": 113,
 		"name": "Sejuani",
+		"title": "Fury of the North",
 		"slot": "Sejuani",
 		"roles": [
 			"tank",
@@ -16192,6 +16293,7 @@
 	"114": {
 		"id": 114,
 		"name": "Fiora",
+		"title": "the Grand Duelist",
 		"slot": "Fiora",
 		"roles": [
 			"fighter",
@@ -16553,6 +16655,7 @@
 	"115": {
 		"id": 115,
 		"name": "Ziggs",
+		"title": "the Hexplosives Expert",
 		"slot": "Ziggs",
 		"roles": [
 			"mage"
@@ -16748,6 +16851,7 @@
 	"117": {
 		"id": 117,
 		"name": "Lulu",
+		"title": "the Fae Sorceress",
 		"slot": "Lulu",
 		"roles": [
 			"support",
@@ -16967,6 +17071,7 @@
 	"119": {
 		"id": 119,
 		"name": "Draven",
+		"title": "the Glorious Executioner",
 		"slot": "Draven",
 		"roles": [
 			"marksman"
@@ -17130,6 +17235,7 @@
 	"120": {
 		"id": 120,
 		"name": "Hecarim",
+		"title": "the Shadow of War",
 		"slot": "Hecarim",
 		"roles": [
 			"fighter",
@@ -17239,6 +17345,7 @@
 	"121": {
 		"id": 121,
 		"name": "Kha'Zix",
+		"title": "the Voidreaver",
 		"slot": "Khazix",
 		"roles": [
 			"assassin"
@@ -17567,6 +17674,7 @@
 	"122": {
 		"id": 122,
 		"name": "Darius",
+		"title": "the Hand of Noxus",
 		"slot": "Darius",
 		"roles": [
 			"fighter",
@@ -17768,6 +17876,7 @@
 	"126": {
 		"id": 126,
 		"name": "Jayce",
+		"title": "the Defender of Tomorrow",
 		"slot": "Jayce",
 		"roles": [
 			"fighter",
@@ -17898,6 +18007,7 @@
 	"127": {
 		"id": 127,
 		"name": "Lissandra",
+		"title": "the Ice Witch",
 		"slot": "Lissandra",
 		"roles": [
 			"mage"
@@ -18004,6 +18114,7 @@
 	"131": {
 		"id": 131,
 		"name": "Diana",
+		"title": "Scorn of the Moon",
 		"slot": "Diana",
 		"roles": [
 			"fighter",
@@ -18222,6 +18333,7 @@
 	"133": {
 		"id": 133,
 		"name": "Quinn",
+		"title": "Demacia's Wings",
 		"slot": "Quinn",
 		"roles": [
 			"marksman",
@@ -18265,6 +18377,7 @@
 	"134": {
 		"id": 134,
 		"name": "Syndra",
+		"title": "the Dark Sovereign",
 		"slot": "Syndra",
 		"roles": [
 			"mage",
@@ -18396,6 +18509,7 @@
 	"136": {
 		"id": 136,
 		"name": "Aurelion Sol",
+		"title": "The Star Forger",
 		"slot": "AurelionSol",
 		"roles": [
 			"mage"
@@ -18492,6 +18606,7 @@
 	"141": {
 		"id": 141,
 		"name": "Kayn",
+		"title": "the Shadow Reaper",
 		"slot": "Kayn",
 		"roles": [
 			"fighter",
@@ -18525,6 +18640,7 @@
 	"142": {
 		"id": 142,
 		"name": "Zoe",
+		"title": "the Aspect of Twilight",
 		"slot": "Zoe",
 		"roles": [
 			"mage",
@@ -18701,6 +18817,7 @@
 	"143": {
 		"id": 143,
 		"name": "Zyra",
+		"title": "Rise of the Thorns",
 		"slot": "Zyra",
 		"roles": [
 			"mage",
@@ -18754,6 +18871,7 @@
 	"145": {
 		"id": 145,
 		"name": "Kai'Sa",
+		"title": "Daughter of the Void",
 		"slot": "Kaisa",
 		"roles": [
 			"marksman"
@@ -18947,6 +19065,7 @@
 	"150": {
 		"id": 150,
 		"name": "Gnar",
+		"title": "the Missing Link",
 		"slot": "Gnar",
 		"roles": [
 			"fighter",
@@ -19133,6 +19252,7 @@
 	"154": {
 		"id": 154,
 		"name": "Zac",
+		"title": "the Secret Weapon",
 		"slot": "Zac",
 		"roles": [
 			"tank",
@@ -19199,6 +19319,7 @@
 	"157": {
 		"id": 157,
 		"name": "Yasuo",
+		"title": "the Unforgiven",
 		"slot": "Yasuo",
 		"roles": [
 			"fighter",
@@ -19588,6 +19709,7 @@
 	"161": {
 		"id": 161,
 		"name": "Vel'Koz",
+		"title": "the Eye of the Void",
 		"slot": "Velkoz",
 		"roles": [
 			"mage"
@@ -19685,6 +19807,7 @@
 	"163": {
 		"id": 163,
 		"name": "Taliyah",
+		"title": "the Stoneweaver",
 		"slot": "Taliyah",
 		"roles": [
 			"mage",
@@ -19787,6 +19910,7 @@
 	"164": {
 		"id": 164,
 		"name": "Camille",
+		"title": "the Steel Shadow",
 		"slot": "Camille",
 		"roles": [
 			"fighter",
@@ -19889,6 +20013,7 @@
 	"201": {
 		"id": 201,
 		"name": "Braum",
+		"title": "the Heart of the Freljord",
 		"slot": "Braum",
 		"roles": [
 			"support",
@@ -20179,6 +20304,7 @@
 	"202": {
 		"id": 202,
 		"name": "Jhin",
+		"title": "the Virtuoso",
 		"slot": "Jhin",
 		"roles": [
 			"marksman",
@@ -20300,6 +20426,7 @@
 	"203": {
 		"id": 203,
 		"name": "Kindred",
+		"title": "The Eternal Hunters",
 		"slot": "Kindred",
 		"roles": [
 			"marksman"
@@ -20410,6 +20537,7 @@
 	"222": {
 		"id": 222,
 		"name": "Jinx",
+		"title": "the Loose Cannon",
 		"slot": "Jinx",
 		"roles": [
 			"marksman"
@@ -20728,6 +20856,7 @@
 	"223": {
 		"id": 223,
 		"name": "Tahm Kench",
+		"title": "the River King",
 		"slot": "TahmKench",
 		"roles": [
 			"support",
@@ -20821,6 +20950,7 @@
 	"235": {
 		"id": 235,
 		"name": "Senna",
+		"title": "the Redeemer",
 		"slot": "Senna",
 		"roles": [
 			"marksman",
@@ -20969,6 +21099,7 @@
 	"236": {
 		"id": 236,
 		"name": "Lucian",
+		"title": "the Purifier",
 		"slot": "Lucian",
 		"roles": [
 			"marksman"
@@ -21179,6 +21310,7 @@
 	"238": {
 		"id": 238,
 		"name": "Zed",
+		"title": "the Master of Shadows",
 		"slot": "Zed",
 		"roles": [
 			"assassin"
@@ -21384,6 +21516,7 @@
 	"240": {
 		"id": 240,
 		"name": "Kled",
+		"title": "the Cantankerous Cavalier",
 		"slot": "Kled",
 		"roles": [
 			"fighter",
@@ -21472,6 +21605,7 @@
 	"245": {
 		"id": 245,
 		"name": "Ekko",
+		"title": "the Boy Who Shattered Time",
 		"slot": "Ekko",
 		"roles": [
 			"assassin",
@@ -21786,6 +21920,7 @@
 	"246": {
 		"id": 246,
 		"name": "Qiyana",
+		"title": "Empress of the Elements",
 		"slot": "Qiyana",
 		"roles": [
 			"assassin",
@@ -21888,6 +22023,7 @@
 	"254": {
 		"id": 254,
 		"name": "Vi",
+		"title": "the Piltover Enforcer",
 		"slot": "Vi",
 		"roles": [
 			"fighter",
@@ -22134,6 +22270,7 @@
 	"266": {
 		"id": 266,
 		"name": "Aatrox",
+		"title": "the Darkin Blade",
 		"slot": "Aatrox",
 		"roles": [
 			"fighter",
@@ -22225,6 +22362,7 @@
 	"267": {
 		"id": 267,
 		"name": "Nami",
+		"title": "the Tidecaller",
 		"slot": "Nami",
 		"roles": [
 			"support",
@@ -22430,6 +22568,7 @@
 	"268": {
 		"id": 268,
 		"name": "Azir",
+		"title": "the Emperor of the Sands",
 		"slot": "Azir",
 		"roles": [
 			"mage",
@@ -22473,6 +22612,7 @@
 	"350": {
 		"id": 350,
 		"name": "Yuumi",
+		"title": "the Magical Cat",
 		"slot": "Yuumi",
 		"roles": [
 			"support",
@@ -22652,6 +22792,7 @@
 	"360": {
 		"id": 360,
 		"name": "Samira",
+		"title": "the Desert Rose",
 		"slot": "Samira",
 		"roles": [
 			"marksman"
@@ -22752,6 +22893,7 @@
 	"412": {
 		"id": 412,
 		"name": "Thresh",
+		"title": "the Chain Warden",
 		"slot": "Thresh",
 		"roles": [
 			"support",
@@ -22974,6 +23116,7 @@
 	"420": {
 		"id": 420,
 		"name": "Illaoi",
+		"title": "the Kraken Priestess",
 		"slot": "Illaoi",
 		"roles": [
 			"fighter",
@@ -23071,6 +23214,7 @@
 	"421": {
 		"id": 421,
 		"name": "Rek'Sai",
+		"title": "the Void Burrower",
 		"slot": "RekSai",
 		"roles": [
 			"fighter"
@@ -23227,6 +23371,7 @@
 	"427": {
 		"id": 427,
 		"name": "Ivern",
+		"title": "the Green Father",
 		"slot": "Ivern",
 		"roles": [
 			"support",
@@ -23333,6 +23478,7 @@
 	"429": {
 		"id": 429,
 		"name": "Kalista",
+		"title": "the Spear of Vengeance",
 		"slot": "Kalista",
 		"roles": [
 			"marksman"
@@ -23380,6 +23526,7 @@
 	"432": {
 		"id": 432,
 		"name": "Bard",
+		"title": "the Wandering Caretaker",
 		"slot": "Bard",
 		"roles": [
 			"support",
@@ -23534,6 +23681,7 @@
 	"497": {
 		"id": 497,
 		"name": "Rakan",
+		"title": "The Charmer",
 		"slot": "Rakan",
 		"roles": [
 			"support"
@@ -23609,6 +23757,7 @@
 	"498": {
 		"id": 498,
 		"name": "Xayah",
+		"title": "the Rebel",
 		"slot": "Xayah",
 		"roles": [
 			"marksman"
@@ -23679,6 +23828,7 @@
 	"516": {
 		"id": 516,
 		"name": "Ornn",
+		"title": "The Fire below the Mountain",
 		"slot": "Ornn",
 		"roles": [
 			"tank",
@@ -23707,6 +23857,7 @@
 	"517": {
 		"id": 517,
 		"name": "Sylas",
+		"title": "the Unshackled",
 		"slot": "Sylas",
 		"roles": [
 			"mage",
@@ -23832,6 +23983,7 @@
 	"518": {
 		"id": 518,
 		"name": "Neeko",
+		"title": "the Curious Chameleon",
 		"slot": "Neeko",
 		"roles": [
 			"mage",
@@ -23943,6 +24095,7 @@
 	"523": {
 		"id": 523,
 		"name": "Aphelios",
+		"title": "the Weapon of the Faithful",
 		"slot": "Aphelios",
 		"roles": [
 			"marksman"
@@ -24034,6 +24187,7 @@
 	"555": {
 		"id": 555,
 		"name": "Pyke",
+		"title": "the Bloodharbor Ripper",
 		"slot": "Pyke",
 		"roles": [
 			"support",
@@ -24342,6 +24496,7 @@
 	"777": {
 		"id": 777,
 		"name": "Yone",
+		"title": "the Unforgotten",
 		"slot": "Yone",
 		"roles": [
 			"assassin",
@@ -24443,6 +24598,7 @@
 	"875": {
 		"id": 875,
 		"name": "Sett",
+		"title": "the Boss",
 		"slot": "Sett",
 		"roles": [
 			"fighter",
@@ -24526,6 +24682,7 @@
 	"876": {
 		"id": 876,
 		"name": "Lillia",
+		"title": "the Bashful Bloom",
 		"slot": "Lillia",
 		"roles": [
 			"fighter",
@@ -24627,6 +24784,7 @@
 	"-1": {
 		"id": -1,
 		"name": "None",
+		"title": "",
 		"slot": "None",
 		"roles": [],
 		"skins": {},

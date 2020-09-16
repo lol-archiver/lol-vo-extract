@@ -25,8 +25,9 @@ module.exports = class File {
 		const bundleBuffer = {};
 
 		const promises = [];
+		const counter = { now: 0, max: setIDBundle.size };
 		for(const idBundle of setIDBundle) {
-			promises.push(fetchBundle(idBundle, version, cdn).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
+			promises.push(fetchBundle(idBundle, version, cdn, counter).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
 		await Bluebird.map(promises, r => r, { concurrency: 45 });
 

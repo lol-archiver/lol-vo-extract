@@ -26,6 +26,8 @@ module.exports = async function fetchWads(wadsToFetch) {
 
 	const files = manifests.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
 
+	// await files.find(file => file.name.toLowerCase().includes('Global.wad.client'.toLowerCase())).extract(versionLatest, C.cdn, 'D:/Desktop/Global.en_us.wad.client');
+
 	const filesFetched = [];
 
 	for(const file of files) {

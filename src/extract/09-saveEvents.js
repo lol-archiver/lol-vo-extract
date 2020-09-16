@@ -5,11 +5,11 @@ const findFriendly = function(name, map) {
 	for(const raw in map) {
 		if(nameFormat.includes(raw.toLowerCase())) {
 			nameFormat = nameFormat.replace(raw.toLowerCase(), '');
-			arrTrans.push(map[raw]);
+			if(map[raw].trim()) { arrTrans.push(map[raw].trim()); }
 		}
 	}
 
-	return arrTrans.join('');
+	return arrTrans.join(':');
 };
 
 module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
@@ -23,6 +23,7 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 	catch(error) {
 		mapFriendlyRaw = {};
 	}
+
 	const mapFriendly = {};
 
 	for(const skill of 'qwer'.split('')) {
@@ -33,7 +34,6 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		mapFriendly[raw] = mapFriendlyRaw[raw];
 	}
 
-	const result = [];
 	const eventMap = {};
 
 	for(const [audioID, eventInfos] of Object.entries(mapAudioID_Event)) {
@@ -61,13 +61,13 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {
-				const skin = eventInfo.isBase ? 'Base' : eventInfo.skinName.replace(/:/g, '');
+				const skin = `[${String(C.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]${eventInfo.skinName.replace(/:/g, '')}`;
 				const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
 				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32 });
 			}
 			else if(typeof eventInfo == 'number') {
-				const skinMap = eventMap['Unknown'] || (eventMap['Unknown'] = {});
+				const skinMap = eventMap['[Bad]'] || (eventMap['[Bad]'] = {});
 
 				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ hex, crc32 });
 			}
@@ -75,15 +75,16 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 	}
 
 	for(const [skin, skinMap] of Object.entries(eventMap)) {
+		const result = [];
+
 		result.push(`# ${skin}`);
 
 		const arrCatalog = ['## Catalog:目录'];
 		const arrEventList = [];
 
 		for(const [eventName, arrAudioInfo] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
-			const eventTitle = `${findFriendly(eventName, mapFriendly)}|${eventName}`;
+			const eventTitle = `[${findFriendly(eventName, mapFriendly)}]|${eventName}`;
 
-			// arrCatalog.push(`* [${eventTitle}](#${eventTitle.replace(/[、/:|[\]]/g, '').replace(/ /g, '-')})`);
 			arrEventList.push(`### ** ${eventTitle}`);
 
 			const arrEventText = [];
@@ -94,8 +95,6 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 			arrEventText.sort();
 
-			// arrEventText[0] = arrEventText[0].replace(' ', '-');
-
 			arrEventText.forEach(text => arrEventList.push(text.replace(/>.*< /g, '')));
 
 			arrEventList.push('');
@@ -104,7 +103,7 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		arrCatalog.forEach(text => result.push(text));
 		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
-	}
 
-	_fs.writeFileSync(RD('_final', `${C.champ}@${C.lang}.events.md`), result.join('\n'));
+		_fs.writeFileSync(RD('_final', `[${C.champ}@${C.region}@${C.lang}]${skin}.md`), result.join('\n'));
+	}
 };

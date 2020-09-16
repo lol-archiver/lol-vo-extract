@@ -33,6 +33,7 @@
 		"_ul": true,
 		"_as": true,
 		"_cp": true,
+		"_cr": true,
 
 		"BigInt": true,
 

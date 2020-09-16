@@ -3,6 +3,7 @@ import path from 'path';
 import url from 'url';
 import assert from 'assert';
 import childProcess from 'child_process';
+import crypto from 'crypto';
 
 import axios from 'axios';
 import fex from 'fs-extra';
@@ -20,6 +21,7 @@ declare global {
 	const _ul = url;
 	const _as = assert;
 	const _cp = childProcess;
+	const _cr = crypto;
 
 	const Axios = axios;
 	const Fex = fex;

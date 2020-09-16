@@ -1,9 +1,6 @@
 module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 	L(`[Main] Copy audio file`);
 
-	Fex.ensureDirSync(RD('_final', `${C.champ}@${C.lang}@${C.region}`));
-
-	const logsTooLong = [`-------${M().format('YYYY-MM-DD HH:mm:ss')}-------`];
 
 	for(const audioPackFile of arrAudioPackFile) {
 		const copyWhileEmpty = audioPackFile.startsWith('sfx') ? (C.useSFXLevel >= 2 ? true : false) : true;
@@ -11,60 +8,63 @@ module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 		for(let audioFile of _fs.readdirSync(RD('_cache', 'audio', audioPackFile))) {
 			const audioID = _pa.parse(audioFile).name;
 			const audioIDHex = T.toHexL(audioID, 8);
+			const src = RD('_cache', 'audio', audioPackFile, `${audioID}.${C.format}`);
 
-			const arrEvent = mapAudioID_Event[audioID] || [];
+			const events_nameSkin = {};
+			const events_audioID = mapAudioID_Event[audioID] || [];
 
-			const mapEventNameShort_SkinName = {};
-			for(const eventInfo of arrEvent) {
+			for(const eventInfo of events_audioID) {
+				let nameSkin;
+				let event;
+
 				if(typeof eventInfo == 'object') {
-					(mapEventNameShort_SkinName[eventInfo.short] || (mapEventNameShort_SkinName[eventInfo.short] = [])).push(`[${eventInfo.isBase ? 'Base!' : eventInfo.skinName.replace(/:/g, '')}]`);
+					nameSkin = `[${String(C.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]${eventInfo.skinName.replace(/:/g, '')}`;
+					event = eventInfo.short;
 				}
 				else if(typeof eventInfo == 'number') {
-					(mapEventNameShort_SkinName[eventInfo] || (mapEventNameShort_SkinName[eventInfo] = [])).push(`{Unknown}`);
-				}
-			}
-
-			const eventsTotalText = [];
-			for(const eventName in mapEventNameShort_SkinName) {
-				const events = mapEventNameShort_SkinName[eventName];
-
-				let eventsText = '@[Base]';
-				if(!events.find(event => event == '[Base!]')) {
-					eventsText = `@${mapEventNameShort_SkinName[eventName].join('')}`;
+					nameSkin = '[Bad]';
+					event = eventInfo;
 				}
 
-				eventsTotalText.push(`${eventName}${eventsText}`);
+				(events_nameSkin[nameSkin] || (events_nameSkin[nameSkin] = [])).push(event);
 			}
 
-			const src = RD('_cache', 'audio', audioPackFile, `${audioID}.${C.format}`);
-			const srcBuffer = _fs.readFileSync(src);
-
-			if(!eventsTotalText.length && !copyWhileEmpty) {
-				// L(`\tAudio[${audioIDHex}] is SFX with empty vo event and low sfx level, skip...`);
-
-				continue;
+			if(!events_audioID.length && copyWhileEmpty) {
+				(events_nameSkin['[Bad]'] || (events_nameSkin['[Bad]'] = [])).push('Unmatch');
 			}
 
-			const eventTotalText = eventsTotalText.join('-');
-			const audioText = eventTotalText ? audioIDHex : audioID;
+			if(!Object.keys(events_nameSkin).length) { continue; }
 
-			try {
-				_fs.copyFileSync(
-					src,
-					RD('_final', `${C.champ}@${C.lang}@${C.region}`, `${eventTotalText || '_Unknown'}[${audioText}][${T.crc32(srcBuffer)}].${C.format}`),
-				);
-			} catch(error) {
-				_fs.copyFileSync(
-					src,
-					RD('_final', `${C.champ}@${C.lang}@${C.region}`, `_EventToLong[${T.crc32(srcBuffer)}][${audioIDHex}].${C.format}`),
-				);
+			const crc32 = T.crc32(_fs.readFileSync(src));
 
-				logsTooLong.push(`[${audioIDHex}] ==>\n${eventsTotalText.map(t => `\t${t}`).join('\n') || '_Unknown'}`);
+			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
+				const logsTooLong = [`-------${M().format('YYYY-MM-DD HH:mm:ss')}-------`];
+
+				const pathFolder = RD('_final', `[${C.champ}@${C.region}@${C.lang}]${nameSkin}`);
+
+				Fex.ensureDirSync(pathFolder);
+
+				const eventsText = events.join('@');
+				const audioText = `[${nameSkin == '[Bad]' ? audioID : audioIDHex}][${crc32}].${C.format}`;
+
+				try {
+					_fs.copyFileSync(
+						src,
+						RD(pathFolder, `${eventsText}${audioText}`),
+					);
+				} catch(error) {
+					_fs.copyFileSync(
+						src,
+						RD(pathFolder, `_EventsTooLong${audioText}`),
+					);
+
+					logsTooLong.push(`[${audioIDHex}] ==>\n${events.map(e => `\t${e}`).join('\n')}`);
+				}
+
+				if(logsTooLong.length > 1) {
+					_fs.appendFileSync(RD(pathFolder, '_EventsTooLong.txt'), logsTooLong.join('\n'));
+				}
 			}
 		}
-	}
-
-	if(logsTooLong.length > 1) {
-		_fs.appendFileSync(RD('_final', `${C.champ}@${C.lang}@${C.region}`, '_ToLongEvent.txt'), logsTooLong.join('\n'));
 	}
 };

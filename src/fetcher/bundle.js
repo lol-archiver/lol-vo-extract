@@ -1,5 +1,5 @@
 
-module.exports = async function(id, version, cdn) {
+module.exports = async function(id, version, cdn, counter) {
 	const bid = ('0000000000000000' + id.toString(16)).slice(-16).toUpperCase();
 
 	const pathBundle = _pa.join('./_cache/bundle', `${bid}.bundle`);
@@ -7,6 +7,7 @@ module.exports = async function(id, version, cdn) {
 	let bufferBundle;
 	if(_fs.existsSync(pathBundle)) {
 		// L(`[Bundle-${bid}] cache exists, use cache.`);
+		++counter.now;
 
 		bufferBundle = _fs.readFileSync(pathBundle);
 	}
@@ -15,16 +16,44 @@ module.exports = async function(id, version, cdn) {
 
 		// L(`[Bundle-${bid}] fetch from '${bundleURL}'`);
 
-		try {
-			const { data } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined });
+		let timesFetched = 0;
+		let passFetched = false;
 
-			bufferBundle = data;
+		while(timesFetched++ <= 4) {
+			try {
+				const { data, headers } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined });
 
-			L(`[Bundle-${bid}] fetched, save at '${pathBundle}', size ${bufferBundle.length}`);
-			_fs.writeFileSync(pathBundle, bufferBundle);
+				if(data.length != headers['content-length']) {
+					L(`[Bundle-${bid}] fetched, but length check failed, refetched, times: ${timesFetched}`);
+				}
+				else {
+					const hash = _cr.createHash('md5');
+					hash.update(data);
+
+					if(headers.etag.toLowerCase() != `"${hash.digest('hex')}"`.toLowerCase()) {
+						L(`[Bundle-${bid}] fetched, but etag check failed, refetched, times: ${timesFetched}`);
+					}
+					else {
+						passFetched = true;
+					}
+				}
+
+				if(passFetched) {
+					bufferBundle = data;
+
+					L(`[Bundle-${bid}] (${++counter.now}/${counter.max}) fetched, save at '${pathBundle}', size ${bufferBundle.length}`);
+					_fs.writeFileSync(pathBundle, bufferBundle);
+
+					break;
+				}
+			}
+			catch(error) {
+				L(`[Bundle-${bid}] fetch failed, ${error.message}, refetched, times: ${timesFetched}`);
+			}
 		}
-		catch(error) {
-			debugger
+
+		if(!passFetched) {
+			throw L(`[Bundle-${bid}] fetch failed finally, over max fetch times`);
 		}
 	}
 

@@ -1,4 +1,14 @@
-const dataBase = require('../../data/BaseData/en_us.json');
+const loadDataBase = function() {
+	try {
+		return require(`../../data/BaseData/${C.lang}.json`);
+	}
+	catch(error) {
+		L(`[DataBase] Load {${C.lang}.json} Failed. Try to load {en_us.json}. Error: ${error.message}`);
+
+		return require(`../../data/BaseData/en_us.json`);
+	}
+};
+const dataBase = loadDataBase();
 
 module.exports = function parseBin(binPath, indexSkin) {
 	if(!_fs.existsSync(binPath)) { return; }
