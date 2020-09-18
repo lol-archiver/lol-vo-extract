@@ -40,7 +40,7 @@ module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
 				const logsTooLong = [`-------${M().format('YYYY-MM-DD HH:mm:ss')}-------`];
 
-				const pathFolder = RD('_final', `[${C.champ}@${C.region}@${C.lang}]${nameSkin}`);
+				const pathFolder = RD('_final', `${nameSkin}[${C.champ}@${C.region}@${C.lang}]`);
 
 				Fex.ensureDirSync(pathFolder);
 
