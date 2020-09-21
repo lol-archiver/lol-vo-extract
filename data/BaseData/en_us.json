@@ -1220,24 +1220,24 @@
 						"id": 30,
 						"name": "Championship LeBlanc",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"31": {
 						"id": 31,
 						"name": "Championship LeBlanc",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"32": {
 						"id": 32,
 						"name": "Championship LeBlanc",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					}
 				}
@@ -1762,64 +1762,64 @@
 						"id": 16,
 						"name": "PsyOps Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"17": {
 						"id": 17,
 						"name": "PsyOps Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DED6B0",
+							"#DED6B0"
 						]
 					},
 					"18": {
 						"id": 18,
 						"name": "PsyOps Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"19": {
 						"id": 19,
 						"name": "PsyOps Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"20": {
 						"id": 20,
 						"name": "PsyOps Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"21": {
 						"id": 21,
 						"name": "PsyOps Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"22": {
 						"id": 22,
 						"name": "PsyOps Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"23": {
 						"id": 23,
 						"name": "PsyOps Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#B2D1E4",
+							"#3CABFF"
 						]
 					}
 				}
@@ -4308,7 +4308,85 @@
 			"19": 17,
 			"20": 17,
 			"21": 17,
-			"22": 17
+			"22": 17,
+			"23": {
+				"id": 23,
+				"name": "Fae Dragon Ashe",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#88FF00",
+							"#00B170"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"24": 23,
+			"25": 23,
+			"26": 23,
+			"27": 23,
+			"28": 23,
+			"29": 23,
+			"30": 23,
+			"31": 23
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -10341,10 +10419,88 @@
 					}
 				}
 			},
+			"8": {
+				"id": 8,
+				"name": "Eternal Dragon Brand",
+				"chromas": {
+					"13": {
+						"id": 13,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#88FF00",
+							"#00B170"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
 			"9": 7,
 			"10": 7,
 			"11": 7,
-			"12": 7
+			"12": 7,
+			"13": 8,
+			"14": 8,
+			"15": 8,
+			"16": 8,
+			"17": 8,
+			"18": 8,
+			"19": 8,
+			"20": 8
 		},
 		"spells": {
 			"p": "Blaze",
@@ -10589,8 +10745,62 @@
 				"id": 31,
 				"name": "Storm Dragon Lee Sin",
 				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "Storm Dragon Lee Sin",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Storm Dragon Lee Sin",
+						"colors": [
+							"#88FF00",
+							"#00B170"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Storm Dragon Lee Sin",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Storm Dragon Lee Sin",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Storm Dragon Lee Sin",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Storm Dragon Lee Sin",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
 				}
-			}
+			},
+			"32": 31,
+			"33": 31,
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31
 		},
 		"spells": {
 			"p": "Flurry",
@@ -14390,8 +14600,8 @@
 						"id": 31,
 						"name": "Pulsefire Shen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#162D57",
+							"#A50031"
 						]
 					}
 				}
@@ -16087,64 +16297,64 @@
 						"id": 6,
 						"name": "PsyOps Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"7": {
 						"id": 7,
 						"name": "PsyOps Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DED6B0",
+							"#DED6B0"
 						]
 					},
 					"8": {
 						"id": 8,
 						"name": "PsyOps Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"9": {
 						"id": 9,
 						"name": "PsyOps Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"10": {
 						"id": 10,
 						"name": "PsyOps Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"11": {
 						"id": 11,
 						"name": "PsyOps Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"12": {
 						"id": 12,
 						"name": "PsyOps Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#B6E084",
+							"#B6E084"
 						]
 					},
 					"13": {
 						"id": 13,
 						"name": "PsyOps Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#B2D1E4",
+							"#3CABFF"
 						]
 					}
 				}
@@ -18593,7 +18803,85 @@
 			"7": 2,
 			"8": 2,
 			"9": 2,
-			"10": 2
+			"10": 2,
+			"11": {
+				"id": 11,
+				"name": "Storm Dragon Aurelion Sol",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#88FF00",
+							"#00B170"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "Center of the Universe",
@@ -21434,64 +21722,64 @@
 						"id": 16,
 						"name": "PsyOps Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"17": {
 						"id": 17,
 						"name": "PsyOps Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"18": {
 						"id": 18,
 						"name": "PsyOps Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"19": {
 						"id": 19,
 						"name": "PsyOps Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#B2D1E4",
+							"#3CABFF"
 						]
 					},
 					"20": {
 						"id": 20,
 						"name": "PsyOps Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DED6B0",
+							"#DED6B0"
 						]
 					},
 					"21": {
 						"id": 21,
 						"name": "PsyOps Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"22": {
 						"id": 22,
 						"name": "PsyOps Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"23": {
 						"id": 23,
 						"name": "PsyOps Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					}
 				}
@@ -22811,64 +23099,64 @@
 						"id": 2,
 						"name": "PsyOps Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"3": {
 						"id": 3,
 						"name": "PsyOps Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"4": {
 						"id": 4,
 						"name": "PsyOps Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"5": {
 						"id": 5,
 						"name": "PsyOps Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"6": {
 						"id": 6,
 						"name": "PsyOps Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"7": {
 						"id": 7,
 						"name": "PsyOps Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#B6E084",
+							"#B6E084"
 						]
 					},
 					"8": {
 						"id": 8,
 						"name": "PsyOps Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#B2D1E4",
+							"#3CABFF"
 						]
 					},
 					"9": {
 						"id": 9,
 						"name": "PsyOps Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -24414,64 +24702,64 @@
 						"id": 26,
 						"name": "PsyOps Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"27": {
 						"id": 27,
 						"name": "PsyOps Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DED6B0",
+							"#DED6B0"
 						]
 					},
 					"28": {
 						"id": 28,
 						"name": "PsyOps Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"29": {
 						"id": 29,
 						"name": "PsyOps Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"30": {
 						"id": 30,
 						"name": "PsyOps Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"31": {
 						"id": 31,
 						"name": "PsyOps Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"32": {
 						"id": 32,
 						"name": "PsyOps Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#B2D1E4",
+							"#3CABFF"
 						]
 					},
 					"33": {
 						"id": 33,
 						"name": "PsyOps Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -24669,7 +24957,17 @@
 			"4": 1,
 			"5": 1,
 			"6": 1,
-			"7": 1
+			"7": 1,
+			"8": {
+				"id": 8,
+				"name": "Obsidian Dragon Sett",
+				"chromas": {}
+			},
+			"9": {
+				"id": 9,
+				"name": "Obsidian Dragon Sett Prestige Edition",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Pit Grit",
