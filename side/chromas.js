@@ -25,14 +25,17 @@ const ids =
 	// ['10.02', '040020', '107023', '013013', '131018', '002016', '048006']
 	// ['10.01', '875000', '024014', '086023', '119013', '086022', '089012', '875001', '517008']
 	// ['09.24', '523000', '016015', '016016', '064028', '050011', '043019', '523001', '064027', '076011', '201024', '028008', '115014', '026006']
-	['09.23', '412014', '266009', '412013']
+	// ['09.23', '412014', '266009', '412013']
+	['09.22', '235000', '245019', '246010', '084015', '246002', '235001', '157018']
+		// ['09.', ]
 		.map(id => [~~id.substr(0, 3), ~~id.substr(3, 3)]);
 ids.shift();
 
 const namesChroma_color = {
 	'#27211C': 'Obsidian', '#2756CE': 'Sapphire', '#2DA130': 'Emerald', '#54209B': 'Tanzanite', '#5F432B': 'Meteorite', '#6ABBEE': 'Aquamarine',
-	'#73BFBE': 'Turquoise', '#85827F': 'Granite', '#9C68D7': 'Amethyst', '#B6E084': 'Peridot', '#C1F2FF': 'Rainbow', '#D33528': 'Ruby',
-	'#DED6B0': 'Sandstone', '#DF9117': 'Citrine', '#E58BA5': 'Rose Quartz', '#ECF9F8': 'Pearl', '#FFEE59': 'Catseye', '#9F4A25': 'Jasper',
+	'#73BFBE': 'Turquoise', '#85827F': 'Granite', '#9C68D7': 'Amethyst', '#9F4A25': 'Jasper', '#B6E084': 'Peridot', '#C1F2FF': 'Rainbow',
+	'#D33528': 'Ruby', '#DED6B0': 'Sandstone', '#DF9117': 'Citrine', '#E58BA5': 'Rose Quartz', '#ECF9F8': 'Pearl', '#FF2C25': 'Amber',
+	'#FFEE59': 'Catseye',
 
 	'#88FF00#00B170': 'Jadeclaw', // 10.20
 	'#B2D1E4#3CABFF': 'Hunter', // 10.18
@@ -44,6 +47,7 @@ const namesChroma_color = {
 	'#6FFDFF#2377FF': 'Paragon', // 09.24
 	'#C33C3E#0C0E15': 'Pariah', // 09.24
 	'#E58BA5#6FFDFF': 'Sweet Tooth', // 09.24
+	'#BD1357#19182A': 'Freestyle', // 09.22
 };
 
 const resultN = [];
