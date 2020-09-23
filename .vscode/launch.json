@@ -6,16 +6,28 @@
 			"request": "launch",
 			"name": "index.js",
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/index.js"
+			"program": "${workspaceFolder}/index.js",
+			"skipFiles": [
+				"<node_internals>/**"
+			]
 		},
 
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "RSTConvert",
+			"name": "Side/RSTConvert",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal",
 			"program": "${workspaceFolder}/side/rstc.js",
+			"skipFiles": [
+				"<node_internals>/**"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Side/Chromas",
+			"runtimeExecutable": "node.exe",
+			"program": "${workspaceFolder}/side/chromas.js",
 			"skipFiles": [
 				"<node_internals>/**"
 			]

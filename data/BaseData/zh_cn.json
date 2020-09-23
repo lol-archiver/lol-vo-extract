@@ -25081,13 +25081,13 @@
 	},
 	"-1": {
 		"id": -1,
-		"name": "",
+		"name": "None",
 		"title": "无",
 		"slot": "None",
 		"roles": [],
 		"skins": {},
 		"spells": {
-			"p": "",
+			"p": null,
 			"q": null,
 			"w": null,
 			"e": null,

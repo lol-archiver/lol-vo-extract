@@ -18473,11 +18473,11 @@
 			"17": 12,
 			"18": {
 				"id": 18,
-				"name": "",
+				"name": "Dragonslayer Diana",
 				"chromas": {
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Dragonslayer Diana",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -18485,7 +18485,7 @@
 					},
 					"20": {
 						"id": 20,
-						"name": "",
+						"name": "Dragonslayer Diana",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -18493,7 +18493,7 @@
 					},
 					"21": {
 						"id": 21,
-						"name": "",
+						"name": "Dragonslayer Diana",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -18501,7 +18501,7 @@
 					},
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Dragonslayer Diana",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -18509,7 +18509,7 @@
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Dragonslayer Diana",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -18517,7 +18517,7 @@
 					},
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Dragonslayer Diana",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -20504,11 +20504,11 @@
 			"23": 1,
 			"24": {
 				"id": 24,
-				"name": "",
+				"name": "Sugar Rush Braum",
 				"chromas": {
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Sugar Rush Braum",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -20516,7 +20516,7 @@
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Sugar Rush Braum",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -20524,7 +20524,7 @@
 					},
 					"27": {
 						"id": 27,
-						"name": "",
+						"name": "Sugar Rush Braum",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -20532,7 +20532,7 @@
 					},
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Sugar Rush Braum",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -20540,7 +20540,7 @@
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Sugar Rush Braum",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -20548,7 +20548,7 @@
 					},
 					"30": {
 						"id": 30,
-						"name": "",
+						"name": "Sugar Rush Braum",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -20556,7 +20556,7 @@
 					},
 					"31": {
 						"id": 31,
-						"name": "",
+						"name": "Sugar Rush Braum",
 						"colors": [
 							"#B6E084",
 							"#B6E084"
@@ -20564,7 +20564,7 @@
 					},
 					"32": {
 						"id": 32,
-						"name": "",
+						"name": "Sugar Rush Braum",
 						"colors": [
 							"#E58BA5",
 							"#6FFDFF"
@@ -25082,12 +25082,12 @@
 	"-1": {
 		"id": -1,
 		"name": "None",
-		"title": "",
+		"title": "无",
 		"slot": "None",
 		"roles": [],
 		"skins": {},
 		"spells": {
-			"p": "",
+			"p": null,
 			"q": null,
 			"w": null,
 			"e": null,
