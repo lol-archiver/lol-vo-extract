@@ -35,6 +35,17 @@
 		{
 			"type": "node",
 			"request": "launch",
+			"name": "[Side] Find",
+			"runtimeExecutable": "node.exe",
+			// "console": "integratedTerminal",
+			"program": "${workspaceFolder}/side/Find.js",
+			"skipFiles": [
+				"<node_internals>/**"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
 			"name": "bnk.js",
 			"runtimeExecutable": "node.exe",
 			"program": "${workspaceFolder}/bnk.js"
