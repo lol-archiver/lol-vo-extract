@@ -1,6 +1,9 @@
 require('../env');
 
-const pathFile = 'D:/Desktop/fontconfig_zh_cn.txt';
+const pathFile = 'D:/Desk/fontconfig_zh_cn.txt';
+
+const hashes = _fs.readFileSync('data/texts.rst.txt', 'utf8').split('\n')
+	.reduce((r, str) => ((r[T.rstHash(str, true)] = str) && 0) || r, {});
 
 const biffer = new Biffer(pathFile);
 
@@ -47,16 +50,18 @@ for(const entry of entries) {
 
 	const bufferSub = bifferText.raw(end - start);
 
-	entry[0] = entry[1];
+	const text = hashes[entry[1].toString(16).toUpperCase()];
+
+	entry[0] = text || entry[1];
 
 	if(bufferSub[0] == 195 && bufferSub[0] == 191) {
-		debugger
+		L('wait');
 	}
 	else {
 		entry[1] = `"${bufferSub.toString('utf8')}"`;
 	}
 }
 
-_fs.writeFileSync(pathFile + '.un.txt', entries.map(e => e.join(' = ')).join('\n'));
+_fs.writeFileSync(pathFile + '.un.txt', entries.map(e => e.join(' = ')).sort().join('\n'));
 
 L.end();

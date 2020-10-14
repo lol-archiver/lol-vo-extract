@@ -111,6 +111,7 @@ module.exports = {
 	'Zoe': 142,
 	'Zyra': 143,
 	'KaiSa': 145,
+	'Seraphine': 147,
 	'Gnar': 150,
 	'Zac': 154,
 	'Yasuo': 157,
@@ -147,7 +148,7 @@ module.exports = {
 	'Neeko': 518,
 	'Aphelios': 523,
 	'Pyke': 555,
+	'Yone': 777,
 	'Sett': 875,
 	'Lillia': 876,
-	'Yone': 777,
 };

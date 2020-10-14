@@ -530,7 +530,94 @@
 					}
 				}
 			},
-			"12": 11
+			"12": 11,
+			"13": {
+				"id": 13,
+				"name": "Odyssey Twisted Fate",
+				"chromas": {
+					"14": {
+						"id": 14,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#0C0C0F",
+							"#9B1520"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Odyssey Twisted Fate",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"14": 13,
+			"15": 13,
+			"16": 13,
+			"17": 13,
+			"18": 13,
+			"19": 13,
+			"20": 13,
+			"21": 13,
+			"22": 13
 		},
 		"spells": {
 			"p": "Loaded Dice",
@@ -2941,7 +3028,85 @@
 			"21": 16,
 			"22": 16,
 			"23": 16,
-			"24": 16
+			"24": 16,
+			"25": {
+				"id": 25,
+				"name": "Odyssey Sivir",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Odyssey Sivir",
+						"colors": [
+							"#0C0C0F",
+							"#9B1520"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Odyssey Sivir",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Odyssey Sivir",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Odyssey Sivir",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Odyssey Sivir",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Odyssey Sivir",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Odyssey Sivir",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Odyssey Sivir",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25
 		},
 		"spells": {
 			"p": "Fleet of Foot",
@@ -3214,7 +3379,80 @@
 			"14": {
 				"id": 14,
 				"name": "Little Devil Teemo",
-				"chromas": {}
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Little Devil Teemo",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
 			},
 			"15": 8,
 			"16": 8,
@@ -3289,7 +3527,16 @@
 				"id": 27,
 				"name": "Spirit Blossom Teemo Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"28": 14,
+			"29": 14,
+			"30": 14,
+			"31": 14,
+			"32": 14,
+			"33": 14,
+			"34": 14,
+			"35": 14,
+			"36": 14
 		},
 		"spells": {
 			"p": "Guerrilla Warfare",
@@ -4809,7 +5056,72 @@
 			"11": {
 				"id": 11,
 				"name": "Bewitching Morgana",
-				"chromas": {}
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Bewitching Morgana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Bewitching Morgana",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Bewitching Morgana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Bewitching Morgana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Bewitching Morgana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Bewitching Morgana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Bewitching Morgana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Bewitching Morgana",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					}
+				}
 			},
 			"12": 4,
 			"13": 4,
@@ -4935,7 +5247,15 @@
 			"27": 26,
 			"28": 26,
 			"29": 26,
-			"30": 26
+			"30": 26,
+			"31": 11,
+			"32": 11,
+			"33": 11,
+			"34": 11,
+			"35": 11,
+			"36": 11,
+			"37": 11,
+			"38": 11
 		},
 		"spells": {
 			"p": "Soul Siphon",
@@ -5241,7 +5561,85 @@
 			"11": 8,
 			"12": 8,
 			"13": 8,
-			"14": 8
+			"14": 8,
+			"15": {
+				"id": 15,
+				"name": "K/DA ALL OUT Evelynn",
+				"chromas": {
+					"16": {
+						"id": 16,
+						"name": "K/DA ALL OUT Evelynn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "K/DA ALL OUT Evelynn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "K/DA ALL OUT Evelynn",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "K/DA ALL OUT Evelynn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "K/DA ALL OUT Evelynn",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "K/DA ALL OUT Evelynn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "K/DA ALL OUT Evelynn",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "K/DA ALL OUT Evelynn",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"16": 15,
+			"17": 15,
+			"18": 15,
+			"19": 15,
+			"20": 15,
+			"21": 15,
+			"22": 15,
+			"23": 15
 		},
 		"spells": {
 			"p": "Demon Shade",
@@ -5929,7 +6327,94 @@
 				"id": 23,
 				"name": "Hextech Amumu",
 				"chromas": {}
+			},
+			"24": {
+				"id": 24,
+				"name": "Pumpkin Prince Amumu",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Pumpkin Prince Amumu",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
 			}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24,
+			"33": 24
 		},
 		"spells": {
 			"p": "Cursed Touch",
@@ -6832,7 +7317,12 @@
 			"10": 6,
 			"11": 6,
 			"12": 6,
-			"13": 6
+			"13": 6,
+			"14": {
+				"id": 14,
+				"name": "Hextech Kassadin",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Void Stone",
@@ -7871,7 +8361,85 @@
 			"22": 19,
 			"23": 19,
 			"24": 19,
-			"25": 19
+			"25": 19,
+			"26": {
+				"id": 26,
+				"name": "Odyssey Karma",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Odyssey Karma",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Odyssey Karma",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Odyssey Karma",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Odyssey Karma",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Odyssey Karma",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Odyssey Karma",
+						"colors": [
+							"#0C0C0F",
+							"#9B1520"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Odyssey Karma",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Odyssey Karma",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26,
+			"35": 26
 		},
 		"spells": {
 			"p": "Gathering Fire",
@@ -10111,7 +10679,85 @@
 				"id": 5,
 				"name": "Super Galaxy Elise",
 				"chromas": {}
+			},
+			"6": {
+				"id": 6,
+				"name": "Bewitching Elise",
+				"chromas": {
+					"7": {
+						"id": 7,
+						"name": "Bewitching Elise",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Bewitching Elise",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Bewitching Elise",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Bewitching Elise",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Bewitching Elise",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Bewitching Elise",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Bewitching Elise",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Bewitching Elise",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
 			}
+				}
+			},
+			"7": 6,
+			"8": 6,
+			"9": 6,
+			"10": 6,
+			"11": 6,
+			"12": 6,
+			"13": 6,
+			"14": 6
 		},
 		"spells": {
 			"p": "Spider Queen",
@@ -12943,6 +13589,76 @@
 			"29": 15,
 			"30": 15,
 			"31": 15,
+			"32": {
+				"id": 32,
+				"name": "K/DA ALL OUT Akali",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "K/DA ALL OUT Akali",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "K/DA ALL OUT Akali",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "K/DA ALL OUT Akali",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "K/DA ALL OUT Akali",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "K/DA ALL OUT Akali",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "K/DA ALL OUT Akali",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "K/DA ALL OUT Akali",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "K/DA ALL OUT Akali",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
 			"33": 4,
 			"34": 4,
 			"35": 4,
@@ -12950,7 +13666,15 @@
 			"37": 4,
 			"38": 4,
 			"39": 4,
-			"40": 4
+			"40": 4,
+			"41": 32,
+			"42": 32,
+			"43": 32,
+			"44": 32,
+			"45": 32,
+			"46": 32,
+			"47": 32,
+			"48": 32
 		},
 		"spells": {
 			"p": "Assassin's Mark",
@@ -15309,11 +16033,89 @@
 					}
 				}
 			},
+			"28": {
+				"id": 28,
+				"name": "K/DA ALL OUT Ahri",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
 			"29": 27,
 			"30": 27,
 			"31": 27,
 			"32": 27,
-			"33": 27
+			"33": 27,
+			"34": 28,
+			"35": 28,
+			"36": 28,
+			"37": 28,
+			"38": 28,
+			"39": 28,
+			"40": 28,
+			"41": 28
 		},
 		"spells": {
 			"p": "Essence Theft",
@@ -15732,7 +16534,85 @@
 				"id": 15,
 				"name": "Fuzz Fizz Prestige Edition",
 				"chromas": {}
+			},
+			"16": {
+				"id": 16,
+				"name": "Little Devil Fizz",
+				"chromas": {
+					"17": {
+						"id": 17,
+						"name": "Little Devil Fizz",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Little Devil Fizz",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Little Devil Fizz",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Little Devil Fizz",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Little Devil Fizz",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Little Devil Fizz",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Little Devil Fizz",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Little Devil Fizz",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
 			}
+				}
+			},
+			"17": 16,
+			"18": 16,
+			"19": 16,
+			"20": 16,
+			"21": 16,
+			"22": 16,
+			"23": 16,
+			"24": 16
 		},
 		"spells": {
 			"p": "Nimble Fighter",
@@ -17871,7 +18751,85 @@
 			"51": 11,
 			"53": 11,
 			"54": 11,
-			"59": 11
+			"59": 11,
+			"60": {
+				"id": 60,
+				"name": "Odyssey Kha'Zix",
+				"chromas": {
+					"61": {
+						"id": 61,
+						"name": "Odyssey Kha'Zix",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Odyssey Kha'Zix",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Odyssey Kha'Zix",
+						"colors": [
+							"#0C0C0F",
+							"#9B1520"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Odyssey Kha'Zix",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Odyssey Kha'Zix",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Odyssey Kha'Zix",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Odyssey Kha'Zix",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Odyssey Kha'Zix",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"61": 60,
+			"62": 60,
+			"63": 60,
+			"64": 60,
+			"65": 60,
+			"66": 60,
+			"67": 60,
+			"68": 60
 		},
 		"spells": {
 			"p": "Unseen Threat",
@@ -18914,8 +19872,54 @@
 			"2": {
 				"id": 2,
 				"name": "Odyssey Kayn",
-				"chromas": {}
+				"chromas": {
+					"3": {
+						"id": 3,
+						"name": "Odyssey Kayn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Odyssey Kayn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Odyssey Kayn",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Odyssey Kayn",
+						"colors": [
+							"#0C0C0F",
+							"#9B1520"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Odyssey Kayn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
 			}
+				}
+			},
+			"3": 2,
+			"4": 2,
+			"5": 2,
+			"6": 2,
+			"7": 2
 		},
 		"spells": {
 			"p": "The Darkin Scythe",
@@ -19340,7 +20344,17 @@
 			"22": 17,
 			"23": 17,
 			"24": 17,
-			"25": 17
+			"25": 17,
+			"26": {
+				"id": 26,
+				"name": "K/DA ALL OUT Kai'Sa",
+				"chromas": {}
+			},
+			"27": {
+				"id": 27,
+				"name": "K/DA ALL OUT Kai'Sa Prestige Edition",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -19348,6 +20362,32 @@
 			"w": "Void Seeker",
 			"e": "Supercharge",
 			"r": "Killer Instinct"
+		}
+	},
+	"147": {
+		"id": 147,
+		"name": "Seraphine",
+		"title": "",
+		"slot": "Seraphine",
+		"roles": [],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Seraphine",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "K/DA ALL OUT Seraphine Indie",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Stage Presence",
+			"q": "High Note",
+			"w": "Surround Sound",
+			"e": "Beat Drop",
+			"r": "Encore"
 		}
 	},
 	"150": {
@@ -21711,7 +22751,56 @@
 			"13": {
 				"id": 13,
 				"name": "Galaxy Slayer Zed",
-				"chromas": {}
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Galaxy Slayer Zed",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Galaxy Slayer Zed",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Galaxy Slayer Zed",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Galaxy Slayer Zed",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Galaxy Slayer Zed",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Galaxy Slayer Zed",
+						"colors": [
+							"#0C0C0F",
+							"#9B1520"
+						]
+					}
+				}
 			},
 			"14": 3,
 			"15": {
@@ -21791,7 +22880,13 @@
 			"20": 15,
 			"21": 15,
 			"22": 15,
-			"23": 15
+			"23": 15,
+			"24": 13,
+			"25": 13,
+			"26": 13,
+			"27": 13,
+			"28": 13,
+			"29": 13
 		},
 		"spells": {
 			"p": "Contempt for the Weak",
@@ -22637,7 +23732,85 @@
 					}
 				}
 			},
-			"10": 9
+			"10": 9,
+			"11": {
+				"id": 11,
+				"name": "Odyssey Aatrox",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Odyssey Aatrox",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Odyssey Aatrox",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Odyssey Aatrox",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Odyssey Aatrox",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Odyssey Aatrox",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Odyssey Aatrox",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Odyssey Aatrox",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Odyssey Aatrox",
+						"colors": [
+							"#0C0C0F",
+							"#9B1520"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "Deathbringer Stance",

@@ -91,7 +91,7 @@ global.T = {
 
 		return hexArr.reverse().join('');
 	},
-	wadHash(str) {
+	wadHash(str, isHex = false) {
 		if(typeof str != 'string') { throw 'argv not String'; }
 
 		const strLower = str.toLowerCase();
@@ -99,9 +99,33 @@ global.T = {
 		const hashBuffer = XXHash.hash64(strBuffer, 0);
 		const hashHexRaw = hashBuffer.swap64().toString('hex');
 		const hashBigInt = BigInt(`0x${hashHexRaw}`);
-		// const hashBigIntSlice = hashBigInt;
-		// const hashHex = hashBigIntSlice.toString('16').toUpperCase();
-		// const hashHexPad = hashHex.padStart(10, '0');
+
+		if(isHex) {
+			const hashBigIntSlice = hashBigInt;
+			const hashHex = hashBigIntSlice.toString('16').toUpperCase();
+			const hashHexPad = hashHex.padStart(10, '0');
+
+			return hashHexPad;
+		}
+
+		return hashBigInt;
+	},
+	rstHash(str, isHex = false) {
+		if(typeof str != 'string') { throw 'argv not String'; }
+
+		const strLower = str.toLowerCase();
+		const strBuffer = Buffer.from(strLower);
+		const hashBuffer = XXHash.hash64(strBuffer, 0);
+		const hashHexRaw = hashBuffer.swap64().toString('hex');
+		const hashBigInt = BigInt(`0x${hashHexRaw}`) & 0xffffffffffn;
+
+		if(isHex) {
+			const hashBigIntSlice = hashBigInt;
+			const hashHex = hashBigIntSlice.toString('16').toUpperCase();
+			const hashHexPad = hashHex.padStart(10, '0');
+
+			return hashHexPad;
+		}
 
 		return hashBigInt;
 	},
