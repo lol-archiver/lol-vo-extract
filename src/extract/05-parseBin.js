@@ -46,7 +46,7 @@ module.exports = function parseBin(binPath, indexSkin) {
 			if(clazz == 1) {
 				skinNameFinal = idSkin;
 
-				L(`\t[parseBin] Skin${idSkin} is "Skin${skinNameFinal}"`);
+				L(`\t[parseBin] Skin${idSkin} is Unknown-skin "${skinNameFinal}"`);
 			}
 			else if(clazz == 2) {
 				L(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
@@ -59,17 +59,27 @@ module.exports = function parseBin(binPath, indexSkin) {
 
 		return;
 	}
-	else if(typeof skin == 'string') {
-		L(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
-
-		return;
-	}
 	else if(skin && typeof skin == 'object') {
 		skinNameFinal = skin.name;
 
 		isBase = idSkin == 0;
 
-		L(`\t[parseBin] Skin${idSkin} is "${skinNameFinal}"`);
+		L(`\t[parseBin] Skin${idSkin} is Detected-skin "${skinNameFinal}"`);
+	}
+	else if(skin && typeof skin == 'number') {
+		const chromas = dataBase[C.id].skins[skin].chromas[idSkin];
+		const stage = chromas.stage;
+
+		if(stage) {
+			skinNameFinal = chromas.name;
+
+			L(`\t[parseBin] Skin${idSkin} is Quest-skin "${skinNameFinal}"`);
+		}
+		else {
+			L(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
+
+			return;
+		}
 	}
 
 	binBiffer.seek(0);
@@ -101,8 +111,13 @@ module.exports = function parseBin(binPath, indexSkin) {
 				else if(eventName.startsWith('Play_')) {
 					[eventPoolName, ...eventNameShort] = eventName.replace('Play_', '').split('_');
 				}
+				else if(eventName.startsWith('SetState_')) {
+					let action;
+					[action, eventPoolName, ...eventNameShort] = eventName.split('_');
+					eventNameShort.unshift(action);
+				}
 				else {
-					L('Unkown Event Name Format');
+					L('Unkown Event Name Format', eventName);
 				}
 
 				setEventPoolName.add(eventPoolName);
@@ -111,7 +126,7 @@ module.exports = function parseBin(binPath, indexSkin) {
 					name: eventName,
 					short: eventNameShort.join('_'),
 					index: indexSkin,
-					skinName: skinNameFinal || `Skin${indexSkin}`,
+					skinName: skinNameFinal.replace(/[\\/]/g, '') || `Skin${indexSkin}`,
 					isBase,
 				});
 			}
