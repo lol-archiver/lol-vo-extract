@@ -147,6 +147,7 @@ module.exports = {
 	'Sylas': 517,
 	'Neeko': 518,
 	'Aphelios': 523,
+	'Rell': 526,
 	'Pyke': 555,
 	'Yone': 777,
 	'Sett': 875,

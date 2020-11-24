@@ -6403,7 +6403,7 @@
 							"#6ABBEE",
 							"#6ABBEE"
 						]
-			}
+					}
 				}
 			},
 			"25": 24,
@@ -10747,7 +10747,7 @@
 							"#5F432B",
 							"#5F432B"
 						]
-			}
+					}
 				}
 			},
 			"7": 6,
@@ -16602,7 +16602,7 @@
 							"#2756CE",
 							"#2756CE"
 						]
-			}
+					}
 				}
 			},
 			"17": 16,
@@ -19912,7 +19912,7 @@
 							"#2756CE",
 							"#2756CE"
 						]
-			}
+					}
 				}
 			},
 			"3": 2,
@@ -25657,6 +25657,77 @@
 			"w": "Phase",
 			"e": "Weapon Queue System",
 			"r": "Moonlight Vigil"
+		}
+	},
+	"526": {
+		"id": 526,
+		"name": "Rell",
+		"title": "the Iron Maiden",
+		"slot": "Rell",
+		"roles": [
+			"fighter"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Rell",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Battle Queen Rell",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Battle Queen Rell",
+						"colors": []
+					},
+					"3": {
+						"id": 3,
+						"name": "Battle Queen Rell",
+						"colors": []
+					},
+					"4": {
+						"id": 4,
+						"name": "Battle Queen Rell",
+						"colors": []
+					},
+					"5": {
+						"id": 5,
+						"name": "Battle Queen Rell",
+						"colors": []
+					},
+					"6": {
+						"id": 6,
+						"name": "Battle Queen Rell",
+						"colors": []
+					},
+					"7": {
+						"id": 7,
+						"name": "Battle Queen Rell",
+						"colors": []
+					},
+					"8": {
+						"id": 8,
+						"name": "Battle Queen Rell",
+						"colors": []
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1
+		},
+		"spells": {
+			"p": "Break the Mold",
+			"q": "Shattering Strike",
+			"w": "Metalmancy",
+			"e": "Attract | Repel",
+			"r": "Magnetic Overload"
 		}
 	},
 	"555": {
