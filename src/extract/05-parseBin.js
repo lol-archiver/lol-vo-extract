@@ -64,6 +64,11 @@ module.exports = function parseBin(binPath, indexSkin) {
 
 		isBase = idSkin == 0;
 
+		if(isBase) {
+			skinNameFinal = `${dataBase[C.id].title} ${dataBase[C.id].name}`;
+		}
+
+
 		L(`\t[parseBin] Skin${idSkin} is Detected-skin "${skinNameFinal}"`);
 	}
 	else if(skin && typeof skin == 'number') {
