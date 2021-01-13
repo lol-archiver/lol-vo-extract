@@ -846,7 +846,85 @@
 			"23": 20,
 			"24": 20,
 			"25": 20,
-			"26": 5
+			"26": 5,
+			"27": {
+				"id": 27,
+				"name": "Marauder Xin Zhao",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Marauder Xin Zhao",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Marauder Xin Zhao",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Marauder Xin Zhao",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Marauder Xin Zhao",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Marauder Xin Zhao",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Marauder Xin Zhao",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Marauder Xin Zhao",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Marauder Xin Zhao",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27
 		},
 		"spells": {
 			"p": "Determination",
@@ -1500,7 +1578,85 @@
 			"17": 14,
 			"18": 14,
 			"19": 14,
-			"20": 14
+			"20": 14,
+			"21": {
+				"id": 21,
+				"name": "Cosmic Devourer Vladimir",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "Cosmic Devourer Vladimir",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Cosmic Devourer Vladimir",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Cosmic Devourer Vladimir",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Cosmic Devourer Vladimir",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Cosmic Devourer Vladimir",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Cosmic Devourer Vladimir",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Cosmic Devourer Vladimir",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Cosmic Devourer Vladimir",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21
 		},
 		"spells": {
 			"p": "Crimson Pact",
@@ -3230,6 +3386,11 @@
 			"16": {
 				"id": 16,
 				"name": "Nightbringer Soraka",
+				"chromas": {}
+			},
+			"17": {
+				"id": 17,
+				"name": "Star Guardian Soraka Prestige Edition",
 				"chromas": {}
 			}
 		},
@@ -5442,7 +5603,85 @@
 				"id": 9,
 				"name": "Beekeeper Singed",
 				"chromas": {}
-			}
+			},
+			"10": {
+				"id": 10,
+				"name": "Resistance Singed",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Resistance Singed",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Resistance Singed",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Resistance Singed",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Resistance Singed",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Resistance Singed",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Resistance Singed",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Resistance Singed",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Resistance Singed",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10
 		},
 		"spells": {
 			"p": "Noxious Slipstream",
@@ -5626,8 +5865,8 @@
 						"id": 23,
 						"name": "K/DA ALL OUT Evelynn",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#0C0C0F",
+							"#272A3F"
 						]
 					}
 				}
@@ -6134,7 +6373,85 @@
 			"10": 5,
 			"11": 5,
 			"12": 5,
-			"13": 5
+			"13": 5,
+			"14": {
+				"id": 14,
+				"name": "Shan Hai Scrolls Cho'Gath",
+				"chromas": {
+					"15": {
+						"id": 15,
+						"name": "Shan Hai Scrolls Cho'Gath",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Shan Hai Scrolls Cho'Gath",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Shan Hai Scrolls Cho'Gath",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Shan Hai Scrolls Cho'Gath",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Shan Hai Scrolls Cho'Gath",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Shan Hai Scrolls Cho'Gath",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Shan Hai Scrolls Cho'Gath",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Shan Hai Scrolls Cho'Gath",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					}
+				}
+			},
+			"15": 14,
+			"16": 14,
+			"17": 14,
+			"18": 14,
+			"19": 14,
+			"20": 14,
+			"21": 14,
+			"22": 14
 		},
 		"spells": {
 			"p": "Carnivore",
@@ -6684,7 +7001,94 @@
 			"13": 8,
 			"14": 8,
 			"15": 8,
-			"16": 8
+			"16": 8,
+			"17": {
+				"id": 17,
+				"name": "Cosmic Flight Anivia",
+				"chromas": {
+					"18": {
+						"id": 18,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Cosmic Flight Anivia",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"18": 17,
+			"19": 17,
+			"20": 17,
+			"21": 17,
+			"22": 17,
+			"23": 17,
+			"24": 17,
+			"25": 17,
+			"26": 17
 		},
 		"spells": {
 			"p": "Rebirth",
@@ -7755,7 +8159,85 @@
 			"23": 20,
 			"24": 20,
 			"25": 20,
-			"26": 20
+			"26": 20,
+			"27": {
+				"id": 27,
+				"name": "Battle Queen Janna",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Battle Queen Janna",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Battle Queen Janna",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Battle Queen Janna",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Battle Queen Janna",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Battle Queen Janna",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Battle Queen Janna",
+						"colors": [
+							"#FF80B1",
+							"#9DFFEF"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Battle Queen Janna",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Battle Queen Janna",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27
 		},
 		"spells": {
 			"p": "Tailwind",
@@ -8432,6 +8914,68 @@
 					}
 				}
 			},
+			"27": {
+				"id": 27,
+				"name": "Ruined Karma",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Ruined Karma",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Ruined Karma",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Ruined Karma",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Ruined Karma",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Ruined Karma",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Ruined Karma",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Ruined Karma",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
 			"28": 26,
 			"29": 26,
 			"30": 26,
@@ -8439,7 +8983,14 @@
 			"32": 26,
 			"33": 26,
 			"34": 26,
-			"35": 26
+			"35": 26,
+			"36": 27,
+			"37": 27,
+			"38": 27,
+			"39": 27,
+			"40": 27,
+			"41": 27,
+			"42": 27
 		},
 		"spells": {
 			"p": "Gathering Fire",
@@ -9918,7 +10469,76 @@
 			"25": 21,
 			"26": 21,
 			"27": 21,
-			"28": 21
+			"28": 21,
+			"29": {
+				"id": 29,
+				"name": "Battle Queen Katarina",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Battle Queen Katarina",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Battle Queen Katarina",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Battle Queen Katarina",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Battle Queen Katarina",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Battle Queen Katarina",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Battle Queen Katarina",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Battle Queen Katarina",
+						"colors": [
+							"#FF80B1",
+							"#9DFFEF"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29
 		},
 		"spells": {
 			"p": "Voracity",
@@ -11956,7 +12576,85 @@
 				"id": 4,
 				"name": "Guardian of the Sands Skarner",
 				"chromas": {}
-			}
+			},
+			"5": {
+				"id": 5,
+				"name": "Cosmic Sting Skarner",
+				"chromas": {
+					"6": {
+						"id": 6,
+						"name": "Cosmic Sting Skarner",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Cosmic Sting Skarner",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Cosmic Sting Skarner",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Cosmic Sting Skarner",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Cosmic Sting Skarner",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Cosmic Sting Skarner",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Cosmic Sting Skarner",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Cosmic Sting Skarner",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"6": 5,
+			"7": 5,
+			"8": 5,
+			"9": 5,
+			"10": 5,
+			"11": 5,
+			"12": 5,
+			"13": 5
 		},
 		"spells": {
 			"p": "Crystal Spires",
@@ -12217,7 +12915,85 @@
 			"12": 11,
 			"13": 11,
 			"14": 11,
-			"15": 11
+			"15": 11,
+			"16": {
+				"id": 16,
+				"name": "Battlecast Nasus",
+				"chromas": {
+					"17": {
+						"id": 17,
+						"name": "Battlecast Nasus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Battlecast Nasus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Battlecast Nasus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Battlecast Nasus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Battlecast Nasus",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Battlecast Nasus",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Battlecast Nasus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Battlecast Nasus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"17": 16,
+			"18": 16,
+			"19": 16,
+			"20": 16,
+			"21": 16,
+			"22": 16,
+			"23": 16,
+			"24": 16
 		},
 		"spells": {
 			"p": "Soul Eater",
@@ -12356,7 +13132,85 @@
 			"14": 11,
 			"15": 11,
 			"16": 11,
-			"17": 11
+			"17": 11,
+			"18": {
+				"id": 18,
+				"name": "Cosmic Huntress Nidalee",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "Cosmic Huntress Nidalee",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Cosmic Huntress Nidalee",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Cosmic Huntress Nidalee",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Cosmic Huntress Nidalee",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Cosmic Huntress Nidalee",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Cosmic Huntress Nidalee",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Cosmic Huntress Nidalee",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Cosmic Huntress Nidalee",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"19": 18,
+			"20": 18,
+			"21": 18,
+			"22": 18,
+			"23": 18,
+			"24": 18,
+			"25": 18,
+			"26": 18
 		},
 		"spells": {
 			"p": "Prowl",
@@ -12672,7 +13526,85 @@
 				"id": 10,
 				"name": "Arctic Ops Gragas",
 				"chromas": {}
-			}
+			},
+			"11": {
+				"id": 11,
+				"name": "Warden Gragas",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Warden Gragas",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Warden Gragas",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Warden Gragas",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Warden Gragas",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Warden Gragas",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Warden Gragas",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Warden Gragas",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Warden Gragas",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "Happy Hour",
@@ -13266,7 +14198,85 @@
 			"8": 4,
 			"9": 4,
 			"10": 4,
-			"11": 4
+			"11": 4,
+			"12": {
+				"id": 12,
+				"name": "Resistance Yorick",
+				"chromas": {
+					"13": {
+						"id": 13,
+						"name": "Resistance Yorick",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Resistance Yorick",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Resistance Yorick",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Resistance Yorick",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Resistance Yorick",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Resistance Yorick",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Resistance Yorick",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Resistance Yorick",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"13": 12,
+			"14": 12,
+			"15": 12,
+			"16": 12,
+			"17": 12,
+			"18": 12,
+			"19": 12,
+			"20": 12
 		},
 		"spells": {
 			"p": "Shepherd of Souls",
@@ -13645,8 +14655,8 @@
 						"id": 47,
 						"name": "K/DA ALL OUT Akali",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#0C0C0F",
+							"#272A3F"
 						]
 					},
 					"48": {
@@ -15769,7 +16779,76 @@
 				"name": "Super Galaxy Shyvana",
 				"chromas": {}
 			},
-			"7": 5
+			"7": 5,
+			"8": {
+				"id": 8,
+				"name": "Ruined Shyvana",
+				"chromas": {
+					"9": {
+						"id": 9,
+						"name": "Ruined Shyvana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Ruined Shyvana",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Ruined Shyvana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Ruined Shyvana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Ruined Shyvana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Ruined Shyvana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Ruined Shyvana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"9": 8,
+			"10": 8,
+			"11": 8,
+			"12": 8,
+			"13": 8,
+			"14": 8,
+			"15": 8
 		},
 		"spells": {
 			"p": "Fury of the Dragonborn",
@@ -16089,16 +17168,16 @@
 						"id": 40,
 						"name": "K/DA ALL OUT Ahri",
 						"colors": [
-							"#9C68D7",
-							"#9C68D7"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"41": {
 						"id": 41,
 						"name": "K/DA ALL OUT Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#0C0C0F",
+							"#272A3F"
 						]
 					}
 				}
@@ -17061,7 +18140,76 @@
 			"12": 9,
 			"13": 9,
 			"14": 9,
-			"15": 6
+			"15": 6,
+			"17": {
+				"id": 17,
+				"name": "Cosmic Hunter Varus",
+				"chromas": {
+					"18": {
+						"id": 18,
+						"name": "Cosmic Hunter Varus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Cosmic Hunter Varus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Cosmic Hunter Varus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Cosmic Hunter Varus",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Cosmic Hunter Varus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Cosmic Hunter Varus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Cosmic Hunter Varus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"18": 17,
+			"19": 17,
+			"20": 17,
+			"21": 17,
+			"22": 17,
+			"23": 17,
+			"24": 17
 		},
 		"spells": {
 			"p": "Living Vengeance",
@@ -17125,7 +18273,85 @@
 				"name": "Conqueror Nautilus",
 				"chromas": {}
 			},
-			"8": 3
+			"8": 3,
+			"9": {
+				"id": 9,
+				"name": "Shan Hai Scrolls Nautilus",
+				"chromas": {
+					"10": {
+						"id": 10,
+						"name": "Shan Hai Scrolls Nautilus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Shan Hai Scrolls Nautilus",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Shan Hai Scrolls Nautilus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Shan Hai Scrolls Nautilus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Shan Hai Scrolls Nautilus",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Shan Hai Scrolls Nautilus",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Shan Hai Scrolls Nautilus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Shan Hai Scrolls Nautilus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"10": 9,
+			"11": 9,
+			"12": 9,
+			"13": 9,
+			"14": 9,
+			"15": 9,
+			"16": 9,
+			"17": 9
 		},
 		"spells": {
 			"p": "Staggering Blow",
@@ -18312,7 +19538,76 @@
 			"16": 13,
 			"17": 13,
 			"18": 13,
-			"19": 13
+			"19": 13,
+			"20": {
+				"id": 20,
+				"name": "Ruined Draven",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Ruined Draven",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Ruined Draven",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Ruined Draven",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Ruined Draven",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Ruined Draven",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Ruined Draven",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Ruined Draven",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20
 		},
 		"spells": {
 			"p": "League of Draven",
@@ -18422,7 +19717,76 @@
 			"10": 8,
 			"11": 8,
 			"12": 8,
-			"13": 8
+			"13": 8,
+			"14": {
+				"id": 14,
+				"name": "Cosmic Charger Hecarim",
+				"chromas": {
+					"15": {
+						"id": 15,
+						"name": "Cosmic Charger Hecarim",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Cosmic Charger Hecarim",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Cosmic Charger Hecarim",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Cosmic Charger Hecarim",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Cosmic Charger Hecarim",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Cosmic Charger Hecarim",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Cosmic Charger Hecarim",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"15": 14,
+			"16": 14,
+			"17": 14,
+			"18": 14,
+			"19": 14,
+			"20": 14,
+			"21": 14
 		},
 		"spells": {
 			"p": "Warpath",
@@ -19162,7 +20526,85 @@
 			"11": 5,
 			"12": 5,
 			"13": 5,
-			"14": 5
+			"14": 5,
+			"15": {
+				"id": 15,
+				"name": "Resistance Jayce",
+				"chromas": {
+					"16": {
+						"id": 16,
+						"name": "Resistance Jayce",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Resistance Jayce",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Resistance Jayce",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Resistance Jayce",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Resistance Jayce",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Resistance Jayce",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Resistance Jayce",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Resistance Jayce",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"16": 15,
+			"17": 15,
+			"18": 15,
+			"19": 15,
+			"20": 15,
+			"21": 15,
+			"22": 15,
+			"23": 15
 		},
 		"spells": {
 			"p": "Hextech Capacitor",
@@ -19269,7 +20711,94 @@
 			"8": 4,
 			"9": 4,
 			"10": 4,
-			"11": 4
+			"11": 4,
+			"12": {
+				"id": 12,
+				"name": "Dark Cosmic Lissandra",
+				"chromas": {
+					"13": {
+						"id": 13,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Dark Cosmic Lissandra",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"13": 12,
+			"14": 12,
+			"15": 12,
+			"16": 12,
+			"17": 12,
+			"18": 12,
+			"19": 12,
+			"20": 12,
+			"21": 12
 		},
 		"spells": {
 			"p": "Iceborn Subjugation",
@@ -19488,7 +21017,17 @@
 			"21": 18,
 			"22": 18,
 			"23": 18,
-			"24": 18
+			"24": 18,
+			"25": {
+				"id": 25,
+				"name": "Battle Queen Diana",
+				"chromas": {}
+			},
+			"26": {
+				"id": 26,
+				"name": "Battle Queen Diana Prestige Edition",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Moonsilver Blade",
@@ -19532,7 +21071,85 @@
 				"id": 4,
 				"name": "Heartseeker Quinn",
 				"chromas": {}
-			}
+			},
+			"5": {
+				"id": 5,
+				"name": "Warden Quinn",
+				"chromas": {
+					"6": {
+						"id": 6,
+						"name": "Warden Quinn",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Warden Quinn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Warden Quinn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Warden Quinn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Warden Quinn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Warden Quinn",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Warden Quinn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Warden Quinn",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"6": 5,
+			"7": 5,
+			"8": 5,
+			"9": 5,
+			"10": 5,
+			"11": 5,
+			"12": 5,
+			"13": 5
 		},
 		"spells": {
 			"p": "Harrier",
@@ -20348,13 +21965,23 @@
 			"26": {
 				"id": 26,
 				"name": "K/DA ALL OUT Kai'Sa",
-				"chromas": {}
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "K/DA ALL OUT Kai'Sa",
+						"colors": [
+							"#0C0C0F",
+							"#272A3F"
+						]
+					}
+				}
 			},
 			"27": {
 				"id": 27,
 				"name": "K/DA ALL OUT Kai'Sa Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"28": 26
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -20367,9 +21994,12 @@
 	"147": {
 		"id": 147,
 		"name": "Seraphine",
-		"title": "",
+		"title": "the Starry-Eyed Songstress",
 		"slot": "Seraphine",
-		"roles": [],
+		"roles": [
+			"mage",
+			"support"
+		],
 		"skins": {
 			"0": {
 				"id": 0,
@@ -20648,7 +22278,67 @@
 				"id": 6,
 				"name": "SKT T1 Zac",
 				"chromas": {}
-			}
+			},
+			"7": {
+				"id": 7,
+				"name": "Battlecast Zac",
+				"chromas": {
+					"8": {
+						"id": 8,
+						"name": "Battlecast Zac",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Battlecast Zac",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Battlecast Zac",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Battlecast Zac",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Battlecast Zac",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Battlecast Zac",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"8": 7,
+			"9": 7,
+			"10": 7,
+			"11": 7,
+			"12": 7,
+			"13": 7
 		},
 		"spells": {
 			"p": "Cell Division",
@@ -21476,11 +23166,11 @@
 			},
 			"11": {
 				"id": 11,
-				"name": "Mafia Braum",
+				"name": "Crime City Braum",
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "Mafia Braum",
+						"name": "Crime City Braum",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -21488,7 +23178,7 @@
 					},
 					"13": {
 						"id": 13,
-						"name": "Mafia Braum",
+						"name": "Crime City Braum",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -21496,7 +23186,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "Mafia Braum",
+						"name": "Crime City Braum",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -21504,7 +23194,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "Mafia Braum",
+						"name": "Crime City Braum",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -21512,7 +23202,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "Mafia Braum",
+						"name": "Crime City Braum",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -21520,7 +23210,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "Mafia Braum",
+						"name": "Crime City Braum",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -21528,7 +23218,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "Mafia Braum",
+						"name": "Crime City Braum",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -21536,7 +23226,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "Mafia Braum",
+						"name": "Crime City Braum",
 						"colors": [
 							"#DED6B0",
 							"#DED6B0"
@@ -21755,7 +23445,85 @@
 			"10": 1,
 			"11": 1,
 			"12": 1,
-			"13": 1
+			"13": 1,
+			"14": {
+				"id": 14,
+				"name": "Shan Hai Scrolls Jhin",
+				"chromas": {
+					"15": {
+						"id": 15,
+						"name": "Shan Hai Scrolls Jhin",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Shan Hai Scrolls Jhin",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Shan Hai Scrolls Jhin",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Shan Hai Scrolls Jhin",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Shan Hai Scrolls Jhin",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Shan Hai Scrolls Jhin",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Shan Hai Scrolls Jhin",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Shan Hai Scrolls Jhin",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"15": 14,
+			"16": 14,
+			"17": 14,
+			"18": 14,
+			"19": 14,
+			"20": 14,
+			"21": 14,
+			"22": 14
 		},
 		"spells": {
 			"p": "Whisper",
@@ -22289,6 +24057,90 @@
 			"r": "Abyssal Voyage"
 		}
 	},
+	"234": {
+		"id": 234,
+		"name": "Viego",
+		"title": "",
+		"slot": "Viego",
+		"roles": [
+			"tank",
+			"fighter"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Viego",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Lunar Beast Viego",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Lunar Beast Viego",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Lunar Beast Viego",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Lunar Beast Viego",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Lunar Beast Viego",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Lunar Beast Viego",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Lunar Beast Viego",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1
+		},
+		"spells": {
+			"p": "Sovereign's Domination",
+			"q": "Blade of the Ruined King",
+			"w": "Spectral Maw",
+			"e": "Harrowed Path",
+			"r": "Heartbreaker"
+		}
+	},
 	"235": {
 		"id": 235,
 		"name": "Senna",
@@ -22639,7 +24491,58 @@
 			"21": 8,
 			"22": 8,
 			"23": 8,
-			"24": 8
+			"24": 8,
+			"25": {
+				"id": 25,
+				"name": "Victorious Lucian",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Victorious Lucian",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Victorious Lucian",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Victorious Lucian",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Victorious Lucian",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Victorious Lucian",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25
 		},
 		"spells": {
 			"p": "Lightslinger",
@@ -22989,7 +24892,85 @@
 			"5": 2,
 			"6": 2,
 			"7": 2,
-			"8": 2
+			"8": 2,
+			"9": {
+				"id": 9,
+				"name": "Marauder Kled",
+				"chromas": {
+					"10": {
+						"id": 10,
+						"name": "Marauder Kled",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Marauder Kled",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Marauder Kled",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Marauder Kled",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Marauder Kled",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Marauder Kled",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Marauder Kled",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Marauder Kled",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"10": 9,
+			"11": 9,
+			"12": 9,
+			"13": 9,
+			"14": 9,
+			"15": 9,
+			"16": 9,
+			"17": 9
 		},
 		"spells": {
 			"p": "Skaarl, the Cowardly Lizard",
@@ -23407,7 +25388,85 @@
 				"id": 10,
 				"name": "True Damage Qiyana Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"11": {
+				"id": 11,
+				"name": "Battle Queen Qiyana",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Battle Queen Qiyana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Battle Queen Qiyana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Battle Queen Qiyana",
+						"colors": [
+							"#FF80B1",
+							"#9DFFEF"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Battle Queen Qiyana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Battle Queen Qiyana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Battle Queen Qiyana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Battle Queen Qiyana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Battle Queen Qiyana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "Royal Privilege",
@@ -24030,7 +26089,76 @@
 			"20": 15,
 			"21": 15,
 			"22": 15,
-			"23": 15
+			"23": 15,
+			"24": {
+				"id": 24,
+				"name": "Cosmic Destiny Nami",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Cosmic Destiny Nami",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Cosmic Destiny Nami",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Cosmic Destiny Nami",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Cosmic Destiny Nami",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Cosmic Destiny Nami",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Cosmic Destiny Nami",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Cosmic Destiny Nami",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24
 		},
 		"spells": {
 			"p": "Surging Tides",
@@ -24074,7 +26202,85 @@
 				"id": 4,
 				"name": "Warring Kingdoms Azir",
 				"chromas": {}
-			}
+			},
+			"5": {
+				"id": 5,
+				"name": "Elderwood Azir",
+				"chromas": {
+					"6": {
+						"id": 6,
+						"name": "Elderwood Azir",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Elderwood Azir",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Elderwood Azir",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Elderwood Azir",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Elderwood Azir",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Elderwood Azir",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Elderwood Azir",
+						"colors": [
+							"#27211C",
+							"#971458"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Elderwood Azir",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"6": 5,
+			"7": 5,
+			"8": 5,
+			"9": 5,
+			"10": 5,
+			"11": 5,
+			"12": 5,
+			"13": 5
 		},
 		"spells": {
 			"p": "Shurima's Legacy",
@@ -24676,7 +26882,76 @@
 			"6": 2,
 			"7": 2,
 			"8": 2,
-			"9": 2
+			"9": 2,
+			"10": {
+				"id": 10,
+				"name": "Cosmic Invoker Illaoi",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Cosmic Invoker Illaoi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Cosmic Invoker Illaoi",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Cosmic Invoker Illaoi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Cosmic Invoker Illaoi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Cosmic Invoker Illaoi",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Cosmic Invoker Illaoi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Cosmic Invoker Illaoi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10
 		},
 		"spells": {
 			"p": "Prophet of an Elder God",
@@ -24940,7 +27215,85 @@
 			"7": 2,
 			"8": 2,
 			"9": 2,
-			"10": 2
+			"10": 2,
+			"11": {
+				"id": 11,
+				"name": "Elderwood Ivern",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Elderwood Ivern",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Elderwood Ivern",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Elderwood Ivern",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Elderwood Ivern",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Elderwood Ivern",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Elderwood Ivern",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Elderwood Ivern",
+						"colors": [
+							"#27211C",
+							"#971458"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Elderwood Ivern",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "Friend of the Forest",
@@ -24988,7 +27341,85 @@
 				"name": "SKT T1 Kalista",
 				"chromas": {}
 			},
-			"4": 2
+			"4": 2,
+			"5": {
+				"id": 5,
+				"name": "Marauder Kalista",
+				"chromas": {
+					"6": {
+						"id": 6,
+						"name": "Marauder Kalista",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Marauder Kalista",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Marauder Kalista",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Marauder Kalista",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Marauder Kalista",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Marauder Kalista",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Marauder Kalista",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Marauder Kalista",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"6": 5,
+			"7": 5,
+			"8": 5,
+			"9": 5,
+			"10": 5,
+			"11": 5,
+			"12": 5,
+			"13": 5
 		},
 		"spells": {
 			"p": "Martial Poise",
@@ -25219,7 +27650,85 @@
 			},
 			"6": 5,
 			"7": 5,
-			"8": 5
+			"8": 5,
+			"9": {
+				"id": 9,
+				"name": "Elderwood Rakan",
+				"chromas": {
+					"10": {
+						"id": 10,
+						"name": "Elderwood Rakan",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Elderwood Rakan",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Elderwood Rakan",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Elderwood Rakan",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Elderwood Rakan",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Elderwood Rakan",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Elderwood Rakan",
+						"colors": [
+							"#27211C",
+							"#971458"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Elderwood Rakan",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					}
+				}
+			},
+			"10": 9,
+			"11": 9,
+			"12": 9,
+			"13": 9,
+			"14": 9,
+			"15": 9,
+			"16": 9,
+			"17": 9
 		},
 		"spells": {
 			"p": "Fey Feathers",
@@ -25290,7 +27799,85 @@
 			},
 			"5": 4,
 			"6": 4,
-			"7": 4
+			"7": 4,
+			"8": {
+				"id": 8,
+				"name": "Elderwood Xayah",
+				"chromas": {
+					"9": {
+						"id": 9,
+						"name": "Elderwood Xayah",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Elderwood Xayah",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Elderwood Xayah",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Elderwood Xayah",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Elderwood Xayah",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Elderwood Xayah",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Elderwood Xayah",
+						"colors": [
+							"#27211C",
+							"#971458"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Elderwood Xayah",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					}
+				}
+			},
+			"9": 8,
+			"10": 8,
+			"11": 8,
+			"12": 8,
+			"13": 8,
+			"14": 8,
+			"15": 8,
+			"16": 8
 		},
 		"spells": {
 			"p": "Clean Cuts",
@@ -25319,7 +27906,85 @@
 				"id": 1,
 				"name": "Thunder Lord Ornn",
 				"chromas": {}
-			}
+			},
+			"2": {
+				"id": 2,
+				"name": "Elderwood Ornn",
+				"chromas": {
+					"3": {
+						"id": 3,
+						"name": "Elderwood Ornn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Elderwood Ornn",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Elderwood Ornn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Elderwood Ornn",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Elderwood Ornn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Elderwood Ornn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Elderwood Ornn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Elderwood Ornn",
+						"colors": [
+							"#27211C",
+							"#971458"
+						]
+					}
+				}
+			},
+			"3": 2,
+			"4": 2,
+			"5": 2,
+			"6": 2,
+			"7": 2,
+			"8": 2,
+			"9": 2,
+			"10": 2
 		},
 		"spells": {
 			"p": "Living Forge",
@@ -25557,7 +28222,85 @@
 				"id": 11,
 				"name": "Star Guardian Neeko Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"12": {
+				"id": 12,
+				"name": "Shan Hai Scrolls Neeko",
+				"chromas": {
+					"13": {
+						"id": 13,
+						"name": "Shan Hai Scrolls Neeko",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Shan Hai Scrolls Neeko",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Shan Hai Scrolls Neeko",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Shan Hai Scrolls Neeko",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Shan Hai Scrolls Neeko",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Shan Hai Scrolls Neeko",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Shan Hai Scrolls Neeko",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Shan Hai Scrolls Neeko",
+						"colors": [
+							"#85827F",
+							"#85827F"
+						]
+					}
+				}
+			},
+			"13": 12,
+			"14": 12,
+			"15": 12,
+			"16": 12,
+			"17": 12,
+			"18": 12,
+			"19": 12,
+			"20": 12
 		},
 		"spells": {
 			"p": "Inherent Glamour",
@@ -25665,7 +28408,7 @@
 		"title": "the Iron Maiden",
 		"slot": "Rell",
 		"roles": [
-			"fighter"
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -25680,37 +28423,66 @@
 					"2": {
 						"id": 2,
 						"name": "Battle Queen Rell",
-						"colors": []
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
 					},
 					"3": {
 						"id": 3,
 						"name": "Battle Queen Rell",
-						"colors": []
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
 					},
 					"4": {
 						"id": 4,
 						"name": "Battle Queen Rell",
-						"colors": []
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
 					},
 					"5": {
 						"id": 5,
 						"name": "Battle Queen Rell",
-						"colors": []
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
 					},
 					"6": {
 						"id": 6,
 						"name": "Battle Queen Rell",
-						"colors": []
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
 					},
 					"7": {
 						"id": 7,
 						"name": "Battle Queen Rell",
-						"colors": []
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
 					},
 					"8": {
 						"id": 8,
 						"name": "Battle Queen Rell",
-						"colors": []
+						"colors": [
+							"#FF80B1",
+							"#9DFFEF"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Battle Queen Rell",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
 					}
 				}
 			},
@@ -25720,14 +28492,15 @@
 			"5": 1,
 			"6": 1,
 			"7": 1,
-			"8": 1
+			"8": 1,
+			"9": 1
 		},
 		"spells": {
 			"p": "Break the Mold",
 			"q": "Shattering Strike",
-			"w": "Metalmancy",
-			"e": "Attract | Repel",
-			"r": "Magnetic Overload"
+			"w": "Ferromancy",
+			"e": "Attract and Repel",
+			"r": "Magnet Storm"
 		}
 	},
 	"555": {
@@ -26340,7 +29113,7 @@
 	"-1": {
 		"id": -1,
 		"name": "None",
-		"title": "无",
+		"title": "None",
 		"slot": "None",
 		"roles": [],
 		"skins": {},

@@ -6,6 +6,7 @@
 			"request": "launch",
 			"name": "[Main] VO Extract",
 			"runtimeExecutable": "node.exe",
+			"console": "integratedTerminal",
 			"program": "${workspaceFolder}/index.js",
 			"skipFiles": [
 				"<node_internals>/**"

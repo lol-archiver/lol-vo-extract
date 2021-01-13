@@ -123,6 +123,7 @@ module.exports = {
 	'Kindred': 203,
 	'Jinx': 222,
 	'TahmKench': 223,
+	'Viego': 234,
 	'Senna': 235,
 	'Lucian': 236,
 	'Zed': 238,
