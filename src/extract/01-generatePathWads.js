@@ -15,13 +15,13 @@ module.exports = function generateWadsToFetch() {
 	const nameWadVoice = `${C.champ}.${C.lang}.wad.client`.toLowerCase();
 	const nameWadChamp = `${C.champ}.wad.client`.toLowerCase();
 
-	const isUseClient = C.useWADLevel == 2 && C.path.game;
+	const isUseClient = C.useWADLevel == 2 && C.path.gameVoices;
 
 	const pathWadVoice = isUseClient ?
-		R(C.path.game, 'Game', 'DATA', 'FINAL', 'Champions', nameWadVoice) :
+		R(C.path.gameVoices, nameWadVoice) :
 		RD('_cache', 'assets', nameWadVoice);
 	const pathWadChamp = isUseClient ?
-		R(C.path.game, 'Game', 'DATA', 'FINAL', 'Champions', nameWadChamp) :
+		R(C.path.gameVoices, nameWadChamp) :
 		RD('_cache', 'assets', nameWadChamp);
 
 	const wadsToFetch = [];
