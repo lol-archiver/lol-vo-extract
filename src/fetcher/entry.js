@@ -9,7 +9,7 @@ module.exports = async function fetchEntry(region, solution, sie) {
 
 	L(`[fetchEntry] Fetch from [${urlEntry}]`);
 
-	const { data } = await Axios.get(urlEntry, { proxy: C.proxy || undefined });
+	const { data } = await Axios.get(urlEntry, { proxy: C.proxy || undefined, timeout: 1000 * 60 * 4 });
 
 	const content = region == 'PBE1' ? 'beta' : 'release';
 

@@ -11,7 +11,7 @@ module.exports = async function fetchManifest(urlManifest, version) {
 	else {
 		L(`[fetchManifest] Manifest[${idManifest}] fetch from [${urlManifest}]`);
 
-		const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy || undefined })).data;
+		const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy || undefined, timeout: 1000 * 60 * 4 })).data;
 
 		// bufferManifest.push(bufferManifest);
 

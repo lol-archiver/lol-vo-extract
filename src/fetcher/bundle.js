@@ -21,7 +21,7 @@ module.exports = async function(id, version, cdn, counter) {
 
 		while(timesFetched++ <= 4) {
 			try {
-				const { data, headers } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined });
+				const { data, headers } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined, timeout: 1000 * 60 * 4 });
 
 				if(data.length != headers['content-length']) {
 					L(`[Bundle-${bid}] fetched, but length check failed, refetched, times: ${timesFetched}`);
