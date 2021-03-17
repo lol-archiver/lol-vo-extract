@@ -22,7 +22,7 @@ Install NPM Package before use:
 npm install
 ````
 
-NOTE: `lol-vo-extract` depend on [xxhash](https://github.com/mscdex/node-xxhash). It is a C library that need to rebuild when installing. If rebuild failed, consider install [Windows-Build-Tools](https://github.com/felixrieseberg/windows-build-tools) at first.
+NOTE: `lol-vo-extract` depend on [xxhashjs](https://github.com/pierrec/js-xxhash). It is a C library that need to rebuild when installing. If rebuild failed, consider install [Windows-Build-Tools](https://github.com/felixrieseberg/windows-build-tools) at first.
 
 ## Usage
 The entry file is `index.js`. All extracted files will be stored in `_final` folder:

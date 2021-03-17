@@ -7,7 +7,7 @@ dependencies:
   moment: 2.29.1
   node-gzip: 1.1.2
   node-zstandard: 1.2.4
-  xxhash: 0.3.0
+  xxhashjs: 0.2.2
 devDependencies:
   eslint: 7.22.0
 lockfileVersion: 5.2
@@ -222,6 +222,10 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
+  /cuint/0.2.2:
+    dev: false
+    resolution:
+      integrity: sha1-QICG1AlVDCYxFVYZ6fp7ytw7mRs=
   /debug/4.3.1:
     dependencies:
       ms: 2.1.2
@@ -642,10 +646,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
-  /nan/2.14.2:
-    dev: false
-    resolution:
-      integrity: sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
   /natural-compare/1.4.0:
     dev: true
     resolution:
@@ -921,15 +921,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  /xxhash/0.3.0:
+  /xxhashjs/0.2.2:
     dependencies:
-      nan: 2.14.2
+      cuint: 0.2.2
     dev: false
-    engines:
-      node: '>=4.0.0'
-    requiresBuild: true
     resolution:
-      integrity: sha512-1ud2yyPiR1DJhgyF1ZVMt+Ijrn0VNS/wzej1Z8eSFfkNfRPp8abVZNV2u9tYy9574II0ZayZYZgJm8KJoyGLCw==
+      integrity: sha512-AkTuIuVTET12tpsVIQo+ZU6f/qDmKuRUcjaqR+OIvm+aCBsZ95i7UVY5WJ9TMsSaZ0DA2WxoZ4acu0sPH+OKAw==
   /yallist/4.0.0:
     dev: true
     resolution:
@@ -944,4 +941,4 @@ specifiers:
   moment: ^2.29.1
   node-gzip: ^1.1.2
   node-zstandard: ^1.2.4
-  xxhash: ^0.3.0
+  xxhashjs: ^0.2.2

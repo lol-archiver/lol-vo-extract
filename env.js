@@ -11,7 +11,7 @@ global.Fex = require('fs-extra');
 global.Zstd = require('node-zstandard');
 global.Gzip = require('node-gzip');
 
-const XXHash = require('xxhash');
+const XXHash = require('xxhashjs');
 const CRC32 = require('buffer-crc32');
 
 global.M = require('moment');
@@ -96,7 +96,7 @@ global.T = {
 
 		const strLower = str.toLowerCase();
 		const strBuffer = Buffer.from(strLower);
-		const hashBuffer = XXHash.hash64(strBuffer, 0);
+		const hashBuffer = Buffer.from(XXHash.h64(strBuffer, 0).toString(16).split(/(?<=^(?:.{2})+)(?!$)/).reverse().map(a => Number(`0x${a}`)));
 		const hashHexRaw = hashBuffer.swap64().toString('hex');
 		const hashBigInt = BigInt(`0x${hashHexRaw}`);
 
