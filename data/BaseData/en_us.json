@@ -72,7 +72,76 @@
 				"id": 12,
 				"name": "Annie-Versary",
 				"chromas": {}
-			}
+			},
+			"13": {
+				"id": 13,
+				"name": "Lunar Beast Annie",
+				"chromas": {
+					"14": {
+						"id": 14,
+						"name": "Lunar Beast Annie",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Lunar Beast Annie",
+						"colors": [
+							"#88FF00",
+							"#9B1520"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Lunar Beast Annie",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Lunar Beast Annie",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Lunar Beast Annie",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Lunar Beast Annie",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Lunar Beast Annie",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"14": 13,
+			"15": 13,
+			"16": 13,
+			"17": 13,
+			"18": 13,
+			"19": 13,
+			"20": 13
 		},
 		"spells": {
 			"p": "Pyromania",
@@ -2646,7 +2715,76 @@
 			"25": 22,
 			"26": 22,
 			"27": 22,
-			"28": 22
+			"28": 22,
+			"29": {
+				"id": 29,
+				"name": "Lunar Beast Alistar",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Lunar Beast Alistar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Lunar Beast Alistar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Lunar Beast Alistar",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Lunar Beast Alistar",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Lunar Beast Alistar",
+						"colors": [
+							"#88FF00",
+							"#9B1520"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Lunar Beast Alistar",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Lunar Beast Alistar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29
 		},
 		"spells": {
 			"p": "Triumphant Roar",
@@ -4387,7 +4525,94 @@
 			"12": 8,
 			"13": 8,
 			"14": 8,
-			"15": 8
+			"15": 8,
+			"16": {
+				"id": 16,
+				"name": "Space Groove Nunu & Willump",
+				"chromas": {
+					"17": {
+						"id": 17,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Space Groove Nunu & Willump",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"17": 16,
+			"18": 16,
+			"19": 16,
+			"20": 16,
+			"21": 16,
+			"22": 16,
+			"23": 16,
+			"24": 16,
+			"25": 16
 		},
 		"spells": {
 			"p": "Call of the Freljord",
@@ -9614,7 +9839,85 @@
 				"id": 11,
 				"name": "Hextech Swain",
 				"chromas": {}
-			}
+			},
+			"12": {
+				"id": 12,
+				"name": "Crystal Rose Swain",
+				"chromas": {
+					"13": {
+						"id": 13,
+						"name": "Crystal Rose Swain",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Crystal Rose Swain",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Crystal Rose Swain",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Crystal Rose Swain",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Crystal Rose Swain",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Crystal Rose Swain",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Crystal Rose Swain",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Crystal Rose Swain",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"13": 12,
+			"14": 12,
+			"15": 12,
+			"16": 12,
+			"17": 12,
+			"18": 12,
+			"19": 12,
+			"20": 12
 		},
 		"spells": {
 			"p": "Ravenous Flock",
@@ -9786,7 +10089,58 @@
 				"name": "Arcade Caitlyn Prestige Edition",
 				"chromas": {}
 			},
-			"21": 11
+			"21": 11,
+			"22": {
+				"id": 22,
+				"name": "Battle Academia Caitlyn",
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "Battle Academia Caitlyn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Battle Academia Caitlyn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Battle Academia Caitlyn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Battle Academia Caitlyn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Battle Academia Caitlyn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"23": 22,
+			"24": 22,
+			"25": 22,
+			"26": 22,
+			"27": 22
 		},
 		"spells": {
 			"p": "Headshot",
@@ -10021,7 +10375,67 @@
 			"25": 22,
 			"26": 22,
 			"27": 22,
-			"28": 22
+			"28": 22,
+			"29": {
+				"id": 29,
+				"name": "Space Groove Blitzcrank",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Space Groove Blitzcrank",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Space Groove Blitzcrank",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Space Groove Blitzcrank",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Space Groove Blitzcrank",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Space Groove Blitzcrank",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Space Groove Blitzcrank",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29
 		},
 		"spells": {
 			"p": "Mana Barrier",
@@ -11250,7 +11664,76 @@
 			"17": 11,
 			"18": 11,
 			"19": 11,
-			"20": 11
+			"20": 11,
+			"21": {
+				"id": 21,
+				"name": "Lunar Beast Jarvan IV",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "Lunar Beast Jarvan IV",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Lunar Beast Jarvan IV",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Lunar Beast Jarvan IV",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Lunar Beast Jarvan IV",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Lunar Beast Jarvan IV",
+						"colors": [
+							"#88FF00",
+							"#9B1520"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Lunar Beast Jarvan IV",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Lunar Beast Jarvan IV",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21
 		},
 		"spells": {
 			"p": "Martial Cadence",
@@ -11593,7 +12076,85 @@
 				"id": 6,
 				"name": "Lancer Stratus Wukong",
 				"chromas": {}
-			}
+			},
+			"7": {
+				"id": 7,
+				"name": "Battle Academia Wukong",
+				"chromas": {
+					"8": {
+						"id": 8,
+						"name": "Battle Academia Wukong",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Battle Academia Wukong",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Battle Academia Wukong",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Battle Academia Wukong",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Battle Academia Wukong",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Battle Academia Wukong",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Battle Academia Wukong",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Battle Academia Wukong",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"8": 7,
+			"9": 7,
+			"10": 7,
+			"11": 7,
+			"12": 7,
+			"13": 7,
+			"14": 7,
+			"15": 7
 		},
 		"spells": {
 			"p": "Stone Skin",
@@ -12378,7 +12939,94 @@
 			"9": 4,
 			"10": 4,
 			"11": 4,
-			"12": 4
+			"12": 4,
+			"13": {
+				"id": 13,
+				"name": "Space Groove Rumble",
+				"chromas": {
+					"14": {
+						"id": 14,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Space Groove Rumble",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"14": 13,
+			"15": 13,
+			"16": 13,
+			"17": 13,
+			"18": 13,
+			"19": 13,
+			"20": 13,
+			"21": 13,
+			"22": 13
 		},
 		"spells": {
 			"p": "Junkyard Titan",
@@ -12993,7 +13641,94 @@
 			"21": 16,
 			"22": 16,
 			"23": 16,
-			"24": 16
+			"24": 16,
+			"25": {
+				"id": 25,
+				"name": "Space Groove Nasus",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Space Groove Nasus",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25,
+			"34": 25
 		},
 		"spells": {
 			"p": "Soul Eater",
@@ -15062,7 +15797,85 @@
 				"id": 23,
 				"name": "Mecha Kingdoms Garen Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"24": {
+				"id": 24,
+				"name": "Battle Academia Garen",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Battle Academia Garen",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Battle Academia Garen",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Battle Academia Garen",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Battle Academia Garen",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Battle Academia Garen",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Battle Academia Garen",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Battle Academia Garen",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Battle Academia Garen",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Perseverance",
@@ -15232,7 +16045,90 @@
 			"17": 12,
 			"18": 12,
 			"19": 12,
-			"20": 12
+			"20": 12,
+			"21": {
+				"id": 21,
+				"name": "Battle Academia Leona",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Battle Academia Leona",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Battle Academia Leona",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Battle Academia Leona",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Battle Academia Leona",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Battle Academia Leona",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Battle Academia Leona",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Battle Academia Leona",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Battle Academia Leona",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"23": {
+				"id": 23,
+				"name": "Battle Academia Leona Prestige Edition",
+				"chromas": {}
+			},
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21,
+			"30": 21,
+			"31": 21
 		},
 		"spells": {
 			"p": "Sunlight",
@@ -15379,7 +16275,94 @@
 			"14": 9,
 			"15": 9,
 			"16": 9,
-			"17": 9
+			"17": 9,
+			"18": {
+				"id": 18,
+				"name": "Beezahar",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "Beezahar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Beezahar",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Beezahar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Beezahar",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Beezahar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Beezahar",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Beezahar",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Beezahar",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Beezahar",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"19": 18,
+			"20": 18,
+			"21": 18,
+			"22": 18,
+			"23": 18,
+			"24": 18,
+			"25": 18,
+			"26": 18,
+			"27": 18
 		},
 		"spells": {
 			"p": "Void Shift",
@@ -15629,7 +16612,85 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"29": {
+				"id": 29,
+				"name": "Withered Rose Talon",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Withered Rose Talon",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Withered Rose Talon",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Withered Rose Talon",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Withered Rose Talon",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Withered Rose Talon",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Withered Rose Talon",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Withered Rose Talon",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Withered Rose Talon",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29
 		},
 		"spells": {
 			"p": "Blade's End",
@@ -16134,7 +17195,85 @@
 			"24": 19,
 			"25": 19,
 			"26": 19,
-			"27": 19
+			"27": 19,
+			"28": {
+				"id": 28,
+				"name": "Bee'Maw",
+				"chromas": {
+					"29": {
+						"id": 29,
+						"name": "Bee'Maw",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Bee'Maw",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Bee'Maw",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Bee'Maw",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Bee'Maw",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Bee'Maw",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Bee'Maw",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Bee'Maw",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"29": 28,
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28
 		},
 		"spells": {
 			"p": "Icathian Surprise",
@@ -16612,7 +17751,94 @@
 				"id": 18,
 				"name": "Cosmic Lux",
 				"chromas": {}
-			}
+			},
+			"19": {
+				"id": 19,
+				"name": "Space Groove Lux",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Space Groove Lux",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"20": 19,
+			"21": 19,
+			"22": 19,
+			"23": 19,
+			"24": 19,
+			"25": 19,
+			"26": 19,
+			"27": 19,
+			"28": 19
 		},
 		"spells": {
 			"p": "Illumination",
@@ -18958,7 +20184,81 @@
 			"46": 41,
 			"47": 41,
 			"48": 41,
-			"49": 41
+			"49": 41,
+			"50": {
+				"id": 50,
+				"name": "Lunar Beast Fiora",
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Lunar Beast Fiora",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Lunar Beast Fiora",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Lunar Beast Fiora",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Lunar Beast Fiora",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Lunar Beast Fiora",
+						"colors": [
+							"#88FF00",
+							"#9B1520"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Lunar Beast Fiora",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Lunar Beast Fiora",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"51": {
+				"id": 51,
+				"name": "Lunar Beast Fiora Prestige Edition",
+				"chromas": {}
+			},
+			"52": 50,
+			"53": 50,
+			"54": 50,
+			"55": 50,
+			"56": 50,
+			"57": 50,
+			"58": 50
 		},
 		"spells": {
 			"p": "Duelist's Dance",
@@ -19374,7 +20674,99 @@
 			"22": 3,
 			"23": 3,
 			"24": 3,
-			"25": 3
+			"25": 3,
+			"26": {
+				"id": 26,
+				"name": "Space Groove Lulu",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Space Groove Lulu",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"27": {
+				"id": 27,
+				"name": "Space Groove Lulu Prestige Edition",
+				"chromas": {}
+			},
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26,
+			"35": 26,
+			"36": 26
 		},
 		"spells": {
 			"p": "Pix, Faerie Companion",
@@ -20395,7 +21787,76 @@
 			"20": 16,
 			"21": 16,
 			"22": 16,
-			"23": 16
+			"23": 16,
+			"24": {
+				"id": 24,
+				"name": "Lunar Beast Darius",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Lunar Beast Darius",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Lunar Beast Darius",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Lunar Beast Darius",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Lunar Beast Darius",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Lunar Beast Darius",
+						"colors": [
+							"#88FF00",
+							"#9B1520"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Lunar Beast Darius",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Lunar Beast Darius",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24
 		},
 		"spells": {
 			"p": "Hemorrhage",
@@ -21281,7 +22742,85 @@
 			"12": 7,
 			"13": 7,
 			"14": 7,
-			"15": 7
+			"15": 7,
+			"16": {
+				"id": 16,
+				"name": "Withered Rose Syndra",
+				"chromas": {
+					"17": {
+						"id": 17,
+						"name": "Withered Rose Syndra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Withered Rose Syndra",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Withered Rose Syndra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Withered Rose Syndra",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Withered Rose Syndra",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Withered Rose Syndra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Withered Rose Syndra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Withered Rose Syndra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"17": 16,
+			"18": 16,
+			"19": 16,
+			"20": 16,
+			"21": 16,
+			"22": 16,
+			"23": 16,
+			"24": 16
 		},
 		"spells": {
 			"p": "Transcendent",
@@ -21767,7 +23306,85 @@
 				"id": 6,
 				"name": "Coven Zyra Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"7": {
+				"id": 7,
+				"name": "Crystal Rose Zyra",
+				"chromas": {
+					"8": {
+						"id": 8,
+						"name": "Crystal Rose Zyra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Crystal Rose Zyra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Crystal Rose Zyra",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Crystal Rose Zyra",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Crystal Rose Zyra",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Crystal Rose Zyra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Crystal Rose Zyra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Crystal Rose Zyra",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"8": 7,
+			"9": 7,
+			"10": 7,
+			"11": 7,
+			"12": 7,
+			"13": 7,
+			"14": 7,
+			"15": 7
 		},
 		"spells": {
 			"p": "Garden of Thorns",
@@ -24060,10 +25677,10 @@
 	"234": {
 		"id": 234,
 		"name": "Viego",
-		"title": "",
+		"title": "The Ruined King",
 		"slot": "Viego",
 		"roles": [
-			"tank",
+			"assassin",
 			"fighter"
 		],
 		"skins": {
@@ -24123,6 +25740,14 @@
 							"#27211C",
 							"#27211C"
 						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Lunar Beast Viego",
+						"colors": [
+							"#88FF00",
+							"#9B1520"
+						]
 					}
 				}
 			},
@@ -24131,7 +25756,8 @@
 			"4": 1,
 			"5": 1,
 			"6": 1,
-			"7": 1
+			"7": 1,
+			"8": 1
 		},
 		"spells": {
 			"p": "Sovereign's Domination",
@@ -26460,7 +28086,85 @@
 			"15": 11,
 			"16": 11,
 			"17": 11,
-			"18": 11
+			"18": 11,
+			"19": {
+				"id": 19,
+				"name": "Yuubee",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Yuubee",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Yuubee",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Yuubee",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Yuubee",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Yuubee",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Yuubee",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Yuubee",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Yuubee",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"20": 19,
+			"21": 19,
+			"22": 19,
+			"23": 19,
+			"24": 19,
+			"25": 19,
+			"26": 19,
+			"27": 19
 		},
 		"spells": {
 			"p": "Bop 'n' Block",
@@ -26561,7 +28265,94 @@
 			"6": 1,
 			"7": 1,
 			"8": 1,
-			"9": 1
+			"9": 1,
+			"10": {
+				"id": 10,
+				"name": "Space Groove Samira",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Space Groove Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10,
+			"19": 10
 		},
 		"spells": {
 			"p": "Daredevil Impulse",
@@ -28392,7 +30183,76 @@
 			"5": 1,
 			"6": 1,
 			"7": 1,
-			"8": 1
+			"8": 1,
+			"9": {
+				"id": 9,
+				"name": "Lunar Beast Aphelios",
+				"chromas": {
+					"10": {
+						"id": 10,
+						"name": "Lunar Beast Aphelios",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Lunar Beast Aphelios",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Lunar Beast Aphelios",
+						"colors": [
+							"#88FF00",
+							"#9B1520"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Lunar Beast Aphelios",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Lunar Beast Aphelios",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Lunar Beast Aphelios",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Lunar Beast Aphelios",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"10": 9,
+			"11": 9,
+			"12": 9,
+			"13": 9,
+			"14": 9,
+			"15": 9,
+			"16": 9
 		},
 		"spells": {
 			"p": "The Hitman and the Seer",
@@ -28904,7 +30764,85 @@
 			"6": 1,
 			"7": 1,
 			"8": 1,
-			"9": 1
+			"9": 1,
+			"10": {
+				"id": 10,
+				"name": "Battle Academia Yone",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Battle Academia Yone",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Battle Academia Yone",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Battle Academia Yone",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Battle Academia Yone",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Battle Academia Yone",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Battle Academia Yone",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Battle Academia Yone",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Battle Academia Yone",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10
 		},
 		"spells": {
 			"p": "Way of the Hunter",
