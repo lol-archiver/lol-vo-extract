@@ -18,7 +18,7 @@ module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 				let event;
 
 				if(typeof eventInfo == 'object') {
-					nameSkin = `[${String(C.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]${eventInfo.skinName.replace(/:/g, '')}`;
+					nameSkin = `[${String(C.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]${eventInfo.skinName.replace(/[:"]/g, '')}`;
 					event = eventInfo.short;
 				}
 				else if(typeof eventInfo == 'number') {
@@ -40,7 +40,7 @@ module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
 				const logsTooLong = [`-------${M().format('YYYY-MM-DD HH:mm:ss')}-------`];
 
-				const pathFolder = RD('_final', `${nameSkin}[${C.champ}@${C.region}@${C.lang}]`);
+				const pathFolder = RD('_final', `${nameSkin.replace(/[:"]/g, '')}[${C.champ}@${C.region}@${C.lang}]`);
 
 				Fex.ensureDirSync(pathFolder);
 
@@ -48,6 +48,8 @@ module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 				const audioText = `[${nameSkin == '[Bad]' ? `${audioID}][${audioIDHex}` : audioIDHex}][${crc32}].${C.format}`;
 
 				try {
+					if(eventsText.length > 128) { throw 'eventsText.length > 128'; }
+
 					_fs.copyFileSync(
 						src,
 						RD(pathFolder, `${eventsText}${audioText}`),
@@ -58,11 +60,11 @@ module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 						RD(pathFolder, `_EventsTooLong${audioText}`),
 					);
 
-					logsTooLong.push(`[${audioIDHex}] ==>\n${events.map(e => `\t${e}`).join('\n')}`);
+					logsTooLong.push(`[${audioIDHex}] ==> ${events.sort().join(' | ')}`);
 				}
 
 				if(logsTooLong.length > 1) {
-					_fs.appendFileSync(RD(pathFolder, '_EventsTooLong.txt'), logsTooLong.join('\n'));
+					_fs.appendFileSync(RD(pathFolder, '_EventsTooLong.txt'), '\n' + logsTooLong.join('\n'));
 				}
 			}
 		}
