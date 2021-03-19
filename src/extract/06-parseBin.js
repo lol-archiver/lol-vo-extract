@@ -142,5 +142,27 @@ module.exports = async function parseBnk(bnkPath, eventNameSet) {
 		}
 	}
 
+	const hircsPool = JSON.parse(JSON.stringify(arrEntry.filter(entry => entry instanceof HircPool)))
+		.map(p => p.soundIDs = p.soundIDs.map(id => {
+			const entry = arrEntry.find(e => e.id == id);
+
+			if(entry instanceof HircSound) {
+				const audioID = entry.audioID || 0;
+				return `${audioID}|${T.toHexL(audioID, 8)}`;
+			}
+			else if(entry instanceof HircPool) {
+				return entry.soundIDs.map(sid => {
+					const entrySub = arrEntry.find(e => e.id == sid);
+
+					const audioID = entrySub.audioID || 0;
+					return `${audioID}|${T.toHexL(audioID, 8)}`;
+				});
+			}
+		}));
+	_fs.writeFileSync(
+		RD('_final', '_pools', _pa.parse(bnkPath).base+'.json'),
+		JSON.stringify(hircsPool, null, '\t')
+	);
+
 	return mapAudioID_EventName;
 };
