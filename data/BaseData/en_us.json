@@ -11843,7 +11843,67 @@
 			"22": 18,
 			"23": 18,
 			"24": 18,
-			"25": 18
+			"25": 18,
+			"26": {
+				"id": 26,
+				"name": "PROJECT: Renekton",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "PROJECT: Renekton",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "PROJECT: Renekton",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "PROJECT: Renekton",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "PROJECT: Renekton",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "PROJECT: Renekton",
+						"colors": [
+							"#FF5500",
+							"#162B30"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "PROJECT: Renekton",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26
 		},
 		"spells": {
 			"p": "Reign of Anger",
@@ -15190,8 +15250,90 @@
 			"13": {
 				"id": 13,
 				"name": "PROJECT: Mordekaiser",
-				"chromas": {}
-			}
+				"chromas": {
+					"14": {
+						"id": 14,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "PROJECT: Mordekaiser",
+						"colors": [
+							"#FF5500",
+							"#162B30"
+						]
+					}
+				}
+			},
+			"14": 13,
+			"15": 13,
+			"16": 13,
+			"17": 13,
+			"18": 13,
+			"19": 13,
+			"20": 13,
+			"21": 13,
+			"22": 13
 		},
 		"spells": {
 			"p": "Darkness Rise",
@@ -18337,7 +18479,85 @@
 			"8": 5,
 			"9": 5,
 			"10": 5,
-			"11": 5
+			"11": 5,
+			"12": {
+				"id": 12,
+				"name": "Arcana Xerath",
+				"chromas": {
+					"13": {
+						"id": 13,
+						"name": "Arcana Xerath",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Arcana Xerath",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Arcana Xerath",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Arcana Xerath",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Arcana Xerath",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Arcana Xerath",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Arcana Xerath",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Arcana Xerath",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"13": 12,
+			"14": 12,
+			"15": 12,
+			"16": 12,
+			"17": 12,
+			"18": 12,
+			"19": 12,
+			"20": 12
 		},
 		"spells": {
 			"p": "Mana Surge",
@@ -19763,6 +19983,84 @@
 			"13": 9,
 			"14": 9,
 			"15": 6,
+			"16": {
+				"id": 16,
+				"name": "PROJECT: Varus",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "PROJECT: Varus",
+						"colors": [
+							"#FF5500",
+							"#162B30"
+						]
+					}
+				}
+			},
 			"17": {
 				"id": 17,
 				"name": "Cosmic Hunter Varus",
@@ -19831,7 +20129,16 @@
 			"21": 17,
 			"22": 17,
 			"23": 17,
-			"24": 17
+			"24": 17,
+			"25": 16,
+			"26": 16,
+			"27": 16,
+			"28": 16,
+			"29": 16,
+			"30": 16,
+			"31": 16,
+			"32": 16,
+			"33": 16
 		},
 		"spells": {
 			"p": "Living Vengeance",
@@ -20218,7 +20525,94 @@
 				"id": 15,
 				"name": "Hextech Sejuani",
 				"chromas": {}
-			}
+			},
+			"16": {
+				"id": 16,
+				"name": "PROJECT: Sejuani",
+				"chromas": {
+					"17": {
+						"id": 17,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "PROJECT: Sejuani",
+						"colors": [
+							"#FF5500",
+							"#162B30"
+						]
+					}
+				}
+			},
+			"17": 16,
+			"18": 16,
+			"19": 16,
+			"20": 16,
+			"21": 16,
+			"22": 16,
+			"23": 16,
+			"24": 16,
+			"25": 16
 		},
 		"spells": {
 			"p": "Fury of the North",
@@ -25123,7 +25517,85 @@
 				"id": 10,
 				"name": "iG Camille",
 				"chromas": {}
-			}
+			},
+			"11": {
+				"id": 11,
+				"name": "Arcana Camille",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Arcana Camille",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Arcana Camille",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Arcana Camille",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Arcana Camille",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Arcana Camille",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Arcana Camille",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Arcana Camille",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Arcana Camille",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "Adaptive Defenses",
@@ -26153,7 +26625,85 @@
 			"6": 3,
 			"7": 3,
 			"8": 3,
-			"9": 3
+			"9": 3,
+			"11": {
+				"id": 11,
+				"name": "Arcana Tahm Kench",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Arcana Tahm Kench",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Arcana Tahm Kench",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Arcana Tahm Kench",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Arcana Tahm Kench",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Arcana Tahm Kench",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Arcana Tahm Kench",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Arcana Tahm Kench",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Arcana Tahm Kench",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "An Acquired Taste",
@@ -26395,7 +26945,94 @@
 			"12": 10,
 			"13": 10,
 			"14": 10,
-			"15": 10
+			"15": 10,
+			"16": {
+				"id": 16,
+				"name": "PROJECT: Senna",
+				"chromas": {
+					"17": {
+						"id": 17,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "PROJECT: Senna",
+						"colors": [
+							"#FF5500",
+							"#162B30"
+						]
+					}
+				}
+			},
+			"17": 16,
+			"18": 16,
+			"19": 16,
+			"20": 16,
+			"21": 16,
+			"22": 16,
+			"23": 16,
+			"24": 16,
+			"25": 16
 		},
 		"spells": {
 			"p": "Absolution",
@@ -26657,7 +27294,85 @@
 			"27": 25,
 			"28": 25,
 			"29": 25,
-			"30": 25
+			"30": 25,
+			"31": {
+				"id": 31,
+				"name": "Arcana Lucian",
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "Arcana Lucian",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Arcana Lucian",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Arcana Lucian",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Arcana Lucian",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Arcana Lucian",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Arcana Lucian",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Arcana Lucian",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Arcana Lucian",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"32": 31,
+			"33": 31,
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31,
+			"38": 31,
+			"39": 31
 		},
 		"spells": {
 			"p": "Lightslinger",
@@ -30390,7 +31105,99 @@
 			"9": 8,
 			"10": 8,
 			"11": 8,
-			"12": 8
+			"12": 8,
+			"13": {
+				"id": 13,
+				"name": "PROJECT: Sylas",
+				"chromas": {
+					"15": {
+						"id": 15,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "PROJECT: Sylas",
+						"colors": [
+							"#FF5500",
+							"#162B30"
+						]
+					}
+				}
+			},
+			"14": {
+				"id": 14,
+				"name": "PROJECT: Sylas Prestige Edition",
+				"chromas": {}
+			},
+			"15": 13,
+			"16": 13,
+			"17": 13,
+			"18": 13,
+			"19": 13,
+			"20": 13,
+			"21": 13,
+			"22": 13,
+			"23": 13
 		},
 		"spells": {
 			"p": "Petricite Burst",
