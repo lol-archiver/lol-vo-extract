@@ -166,3 +166,7 @@ try {
 }
 
 global.Biffer = require('./src/util/Biffer');
+
+process.on('unhandledRejection', (error,promise) => {
+	debugger;
+});

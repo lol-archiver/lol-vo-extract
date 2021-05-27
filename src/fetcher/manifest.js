@@ -11,14 +11,21 @@ module.exports = async function fetchManifest(urlManifest, version) {
 	else {
 		L(`[fetchManifest] Manifest[${idManifest}] fetch from [${urlManifest}]`);
 
-		const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy || undefined, timeout: 1000 * 60 * 4 })).data;
+		try {
+			const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy || undefined, timeout: 1000 * 60 * 4 })).data;
 
-		// bufferManifest.push(bufferManifest);
+			// bufferManifest.push(bufferManifest);
 
-		_fs.writeFileSync(pathManifest, bufferManifest);
+			_fs.writeFileSync(pathManifest, bufferManifest);
 
-		LU(`[fetchManifest] Manifest[${idManifest}] fetched, saved at [${pathManifest}], size [${bufferManifest.length}]`);
+			LU(`[fetchManifest] Manifest[${idManifest}] fetched, saved at [${pathManifest}], size [${bufferManifest.length}]`);
 
-		return bufferManifest;
+			return bufferManifest;
+		}
+		catch(error) {
+			L(`[fetchManifest] Manifest[${idManifest}] fetch error [${error.message || error}]`);
+
+			process.exit(-1);
+		}
 	}
 };
