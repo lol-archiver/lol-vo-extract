@@ -142,7 +142,7 @@ global.T = {
 try {
 	global.C = require('./config');
 
-	for(const [slot, id] of Object.entries(require('./data/champSlotMap'))) {
+	for(const { slot, id } of Object.values(require('./data/BaseData/en_us.json'))) {
 		if(slot.toLowerCase() == C.champ.toLowerCase()) {
 			C.champ = slot;
 			C.id = id;
@@ -167,6 +167,6 @@ try {
 
 global.Biffer = require('./src/util/Biffer');
 
-process.on('unhandledRejection', (error,promise) => {
+process.on('unhandledRejection', (error, promise) => {
 	debugger;
 });
