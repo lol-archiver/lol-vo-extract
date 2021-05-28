@@ -1,3 +1,5 @@
+/* eslint-disable quote-props */
+
 module.exports = {
 	mapFake: {
 		'180c3016': 'Aatrox',
@@ -132,6 +134,7 @@ module.exports = {
 		'13f273ff': 'Veigar',
 		'48a0b608': 'Velkoz',
 		'99977388': 'Vi',
+		'881b9cdf': 'Viego',
 		'9645573e': 'Viktor',
 		'51cd9fdf': 'Vladimir',
 		'8314d79b': 'Volibear',
