@@ -104,6 +104,6 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
 
-		_fs.writeFileSync(RD('_final', '_texts', `[${C.champ}@${C.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${M().format('X')}.md`), result.join('\n'));
+		_fs.writeFileSync(RD('_texts', `[${C.champ}@${C.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${M().format('X')}.md`), result.join('\n'));
 	}
 };

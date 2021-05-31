@@ -159,8 +159,9 @@ module.exports = async function parseBnk(bnkPath, eventNameSet) {
 				});
 			}
 		}));
+
 	_fs.writeFileSync(
-		RD('_final', '_pools', _pa.parse(bnkPath).base+'.json'),
+		RD('_pools', _pa.parse(bnkPath).base + '.json'),
 		JSON.stringify(hircsPool, null, '\t')
 	);
 

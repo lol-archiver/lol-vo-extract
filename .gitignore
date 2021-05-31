@@ -2,5 +2,7 @@ node_modules
 
 _cache
 _final
+_texts
+_pools
 
 config.js
