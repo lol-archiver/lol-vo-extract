@@ -27,7 +27,7 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 	const mapFriendly = {};
 
 	for(const skill of 'QWER'.split('')) {
-		mapFriendly[`${C.champ}${skill}`] = `使用:${skill.toUpperCase()}技能`;
+		mapFriendly[`${C.champ}${skill}`] = `使用:${skill.toUpperCase()}技能:`;
 	}
 
 	for(const raw in mapFriendlyRaw) {

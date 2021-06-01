@@ -142,7 +142,7 @@ global.T = {
 try {
 	global.C = require('./config');
 
-	const [champ, min, max] = C.champ.split('|');
+	const [champ, min = '0', max] = C.champ.split('|');
 
 	for(const { slot, id } of Object.values(require('./data/BaseData/en_us.json'))) {
 		if(slot.toLowerCase() == champ.toLowerCase()) {
