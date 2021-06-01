@@ -59,9 +59,20 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 		const hex = T.toHexL(audioID, 8);
 
+		const dict = require(`../../data/BaseData/${C.lang}.json`);
+		const dictEN = require(`../../data/BaseData/en_us.json`);
+
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {
-				const skin = `[${String(C.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]${eventInfo.skinName.replace(/:/g, '')}`;
+				const slot = `[${String(C.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]`;
+
+				const dChampion = dict[C.id];
+				const dSkinCN = dChampion.skins[eventInfo.index];
+				const dSkinEN = dictEN[C.id].skins[eventInfo.index];
+
+				const skin = `${slot}${eventInfo.skinName.replace(/:/g, '')}` +
+					`||${slot} ${dChampion.slot}:${dChampion.name}` + (eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);
+
 				const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
 				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32 });
@@ -74,10 +85,11 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		}
 	}
 
-	for(const [skin, skinMap] of Object.entries(eventMap)) {
+	for(const [skin_, skinMap] of Object.entries(eventMap)) {
+		const [skin, head] = skin_.split('||');
 		const result = [];
 
-		result.push(`# ${skin}`);
+		result.push(`# ${head}`);
 
 		const arrCatalog = ['## Catalog:目录'];
 		const arrEventList = [];

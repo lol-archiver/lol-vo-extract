@@ -19,13 +19,13 @@ module.exports = function genNameFiles_hash() {
 
 	const infoFiles = [];
 	for(const usage of usages) {
-		for(const i of C.detect.array) {
+		for(const i of C.idsSkin) {
 			nameFiles_hash[T.wadHash(`data/characters/${C.champ}/skins/skin${i}.bin`)] = `skin${i}.bin`;
 
 			infoFiles.push(...genArrPathSoundBank(usage, C.lang, C.champ, `skin${String(i).padStart(2, '0')}`));
 		}
 
-		if(C.detect.array.includes(0) || C.detect.baseForce) {
+		if(C.idsSkin.includes(0) || C.forceUseBase) {
 			infoFiles.push(...genArrPathSoundBank(usage, C.lang, C.champ, 'base'));
 		}
 	}

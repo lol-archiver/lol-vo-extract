@@ -161,7 +161,7 @@ module.exports = async function parseBnk(bnkPath, eventNameSet) {
 		}));
 
 	_fs.writeFileSync(
-		RD('_pools', _pa.parse(bnkPath).base + '.json'),
+		RD('_texts', '_pools', _pa.parse(bnkPath).base + '.json'),
 		JSON.stringify(hircsPool, null, '\t')
 	);
 

@@ -7,7 +7,7 @@ const isSameTakeConfig = function() {
 			lastTakeConfig.champ == C.champ &&
 			lastTakeConfig.lang == C.lang &&
 			lastTakeConfig.format == C.format &&
-			lastTakeConfig.detect.sort().join(',') == C.detect.array.sort().join(',')
+			lastTakeConfig.detect.sort().join(',') == C.idsSkin.sort().join(',')
 		) {
 			isSameTakeConfig = true;
 		}
@@ -22,7 +22,7 @@ const takeWpkRaw = function(wpkFile) {
 	const wpkBiffuer = new Biffer(RD('_cache', 'extract', wpkFile));
 
 	// eslint-disable-next-line no-unused-vars
-	const [magic, version, count] = wpkBiffuer.unpack("4sLL");
+	const [magic, version, count] = wpkBiffuer.unpack('4sLL');
 
 	const headerOffsets = wpkBiffuer.unpack(`${count}L`);
 
@@ -71,5 +71,5 @@ module.exports = function extractAudios(wpkFiles) {
 		}
 	}
 
-	_fs.writeFileSync(RD('_cache', 'lastTakeWpk.json'), JSON.stringify({ champ: C.champ, lang: C.lang, format: C.format, detect: C.detect.array }));
+	_fs.writeFileSync(RD('_cache', 'lastTakeWpk.json'), JSON.stringify({ champ: C.champ, lang: C.lang, format: C.format, detect: C.idsSkin }));
 };

@@ -43,7 +43,7 @@ module.exports = {
 	proxy: false,
 	// proxy: { host: '127.0.0.1', port: 9000, },
 
-	champ: 'annie',
+	champ: 'annie|0|27',
 	lang: 'en_us',
 	format: 'wav',
 
@@ -52,14 +52,7 @@ module.exports = {
 	// 0, cache first; 1, force fetch; 2, use client file
 	useWADLevel: 0,
 
-	detect: {
-		baseForce: false,
-
-		array: [],
-
-		min: 0,
-		max: 27,
-	},
+	forceUseBase: false,
 
 	path: {
 		rextractorConsole: 'D:/RavioliGameTools/RExtractorConsole.exeRExtractorConsole.exe',

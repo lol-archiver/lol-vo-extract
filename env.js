@@ -142,21 +142,21 @@ global.T = {
 try {
 	global.C = require('./config');
 
+	const [champ, min, max] = C.champ.split('|');
+
 	for(const { slot, id } of Object.values(require('./data/BaseData/en_us.json'))) {
-		if(slot.toLowerCase() == C.champ.toLowerCase()) {
+		if(slot.toLowerCase() == champ.toLowerCase()) {
 			C.champ = slot;
 			C.id = id;
 			break;
 		}
 	}
 
-	if(!(C.detect.array instanceof Array)) {
-		C.detect.array = [];
-	}
+	C.idsSkin = min.split(',').map(id => Number(id));
 
-	if(!C.detect.array.length) {
-		for(let i = C.detect.min; i <= C.detect.max; i++) {
-			C.detect.array.push(i);
+	if(Number(max)) {
+		for(let i = C.idsSkin[0] + 1; i <= Number(max); i++) {
+			C.idsSkin.push(i);
 		}
 	}
 } catch(error) {
@@ -167,6 +167,8 @@ try {
 
 global.Biffer = require('./src/util/Biffer');
 
+// eslint-disable-next-line no-unused-vars
 process.on('unhandledRejection', (error, promise) => {
+	// eslint-disable-next-line no-debugger
 	debugger;
 });

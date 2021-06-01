@@ -1,6 +1,6 @@
 {
 	"name": "lol-vo-extact",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "",
 	"main": "index.js",
 	"author": "Nuogz",
@@ -17,6 +17,6 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^7.22.0"
+		"eslint": "^7.27.0"
 	}
 }
