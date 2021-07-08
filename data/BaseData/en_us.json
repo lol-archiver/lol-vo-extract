@@ -351,7 +351,94 @@
 			"21": 16,
 			"22": 16,
 			"23": 16,
-			"24": 16
+			"24": 16,
+			"25": {
+				"id": 25,
+				"name": "Sentinel Olaf",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Sentinel Olaf",
+						"colors": [
+							"#080808",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25,
+			"34": 25
 		},
 		"spells": {
 			"p": "Berserker Rage",
@@ -5009,7 +5096,94 @@
 				"id": 20,
 				"name": "Bewitching Miss Fortune Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"21": {
+				"id": 21,
+				"name": "",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Ruined Miss Fortune",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21,
+			"30": 21
 		},
 		"spells": {
 			"p": "Love Tap",
@@ -7435,7 +7609,85 @@
 				"id": 16,
 				"name": "Hextech Rammus",
 				"chromas": {}
-			}
+			},
+			"17": {
+				"id": 17,
+				"name": "Astronaut Rammus",
+				"chromas": {
+					"18": {
+						"id": 18,
+						"name": "Astronaut Rammus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Astronaut Rammus",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Astronaut Rammus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Astronaut Rammus",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Astronaut Rammus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Astronaut Rammus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Astronaut Rammus",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Astronaut Rammus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"18": 17,
+			"19": 17,
+			"20": 17,
+			"21": 17,
+			"22": 17,
+			"23": 17,
+			"24": 17,
+			"25": 17
 		},
 		"spells": {
 			"p": "Spiked Shell",
@@ -7884,7 +8136,48 @@
 			"3": {
 				"id": 3,
 				"name": "Corporate Mundo",
-				"chromas": {}
+				"chromas": {
+					"16": {
+						"id": 16,
+						"name": "Corporate Mundo",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Corporate Mundo",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Corporate Mundo",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Corporate Mundo",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Corporate Mundo",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
 			},
 			"4": {
 				"id": 4,
@@ -7966,14 +8259,19 @@
 			"12": 10,
 			"13": 10,
 			"14": 10,
-			"15": 10
+			"15": 10,
+			"16": 3,
+			"17": 3,
+			"18": 3,
+			"19": 3,
+			"20": 3
 		},
 		"spells": {
-			"p": "Adrenaline Rush",
-			"q": "Infected Cleaver",
-			"w": "Burning Agony",
-			"e": "Masochism",
-			"r": "Sadism"
+			"p": "Goes Where He Pleases",
+			"q": "Infected Bonesaw",
+			"w": "Heart Zapper",
+			"e": "Blunt Force Trauma",
+			"r": "Maximum Dosage"
 		}
 	},
 	"37": {
@@ -8509,7 +8807,94 @@
 			"22": 18,
 			"23": 18,
 			"24": 18,
-			"25": 18
+			"25": 18,
+			"26": {
+				"id": 26,
+				"name": "Sentinel Irelia",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Sentinel Irelia",
+						"colors": [
+							"#080808",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26,
+			"35": 26
 		},
 		"spells": {
 			"p": "Ionian Fervor",
@@ -9207,7 +9592,85 @@
 			"22": 18,
 			"23": 18,
 			"24": 18,
-			"25": 18
+			"25": 18,
+			"26": {
+				"id": 26,
+				"name": "Astronaut Corki",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Astronaut Corki",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Astronaut Corki",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Astronaut Corki",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Astronaut Corki",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Astronaut Corki",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Astronaut Corki",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Astronaut Corki",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Astronaut Corki",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26
 		},
 		"spells": {
 			"p": "Hextech Munitions",
@@ -9544,6 +10007,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Ruined Karma",
+						"colors": [
+							"#050B19",
+							"#ECC124"
+						]
 					}
 				}
 			},
@@ -9561,7 +10032,8 @@
 			"39": 27,
 			"40": 27,
 			"41": 27,
-			"42": 27
+			"42": 27,
+			"43": 27
 		},
 		"spells": {
 			"p": "Gathering Fire",
@@ -9981,7 +10453,85 @@
 			"28": 23,
 			"29": 23,
 			"30": 23,
-			"31": 23
+			"31": 23,
+			"32": {
+				"id": 32,
+				"name": "Astronaut Veigar",
+				"chromas": {
+					"33": {
+						"id": 33,
+						"name": "Astronaut Veigar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Astronaut Veigar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Astronaut Veigar",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Astronaut Veigar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Astronaut Veigar",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Astronaut Veigar",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Astronaut Veigar",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Astronaut Veigar",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"33": 32,
+			"34": 32,
+			"35": 32,
+			"36": 32,
+			"37": 32,
+			"38": 32,
+			"39": 32,
+			"40": 32
 		},
 		"spells": {
 			"p": "Phenomenal Evil Power",
@@ -11636,7 +12186,85 @@
 			"20": 16,
 			"21": 16,
 			"22": 16,
-			"23": 16
+			"23": 16,
+			"24": {
+				"id": 24,
+				"name": "Astronaut Maokai",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Astronaut Maokai",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Astronaut Maokai",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Astronaut Maokai",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Astronaut Maokai",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Astronaut Maokai",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Astronaut Maokai",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Astronaut Maokai",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Astronaut Maokai",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Sap Magic",
@@ -13228,7 +13856,67 @@
 			"21": 14,
 			"22": 14,
 			"23": 14,
-			"24": 14
+			"24": 14,
+			"25": {
+				"id": 25,
+				"name": "Sentinel Vayne",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Sentinel Vayne",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Sentinel Vayne",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Sentinel Vayne",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Sentinel Vayne",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Sentinel Vayne",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Sentinel Vayne",
+						"colors": [
+							"#080808",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25
 		},
 		"spells": {
 			"p": "Night Hunter",
@@ -14966,7 +15654,99 @@
 			"21": 16,
 			"22": 16,
 			"23": 16,
-			"24": 16
+			"24": 16,
+			"25": {
+				"id": 25,
+				"name": "Ruined Pantheon",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Ruined Pantheon",
+						"colors": [
+							"#050B19",
+							"#ECC124"
+						]
+					}
+				}
+			},
+			"26": {
+				"id": 26,
+				"name": "Ascended Pantheon Prestige Edition",
+				"chromas": {}
+			},
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25,
+			"34": 25,
+			"35": 25
 		},
 		"spells": {
 			"p": "Mortal Will",
@@ -17508,7 +18288,94 @@
 			"30": 23,
 			"31": 23,
 			"32": 23,
-			"33": 23
+			"33": 23,
+			"34": {
+				"id": 34,
+				"name": "Sentinel Riven",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Sentinel Riven",
+						"colors": [
+							"#080808",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"35": 34,
+			"36": 34,
+			"37": 34,
+			"38": 34,
+			"39": 34,
+			"40": 34,
+			"41": 34,
+			"42": 34,
+			"43": 34
 		},
 		"spells": {
 			"p": "Runic Blade",
@@ -18681,6 +19548,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Ruined Shyvana",
+						"colors": [
+							"#050B19",
+							"#ECC124"
+						]
 					}
 				}
 			},
@@ -18690,7 +19565,8 @@
 			"12": 8,
 			"13": 8,
 			"14": 8,
-			"15": 8
+			"15": 8,
+			"16": 8
 		},
 		"spells": {
 			"p": "Fury of the Dragonborn",
@@ -19330,7 +20206,67 @@
 			"31": 25,
 			"32": 25,
 			"33": 25,
-			"34": 25
+			"34": 25,
+			"35": {
+				"id": 35,
+				"name": "Sentinel Graves",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Sentinel Graves",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Sentinel Graves",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Sentinel Graves",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Sentinel Graves",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Sentinel Graves",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Sentinel Graves",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35
 		},
 		"spells": {
 			"p": "New Destiny",
@@ -19852,7 +20788,94 @@
 			"26": 23,
 			"27": 23,
 			"28": 23,
-			"29": 23
+			"29": 23,
+			"30": {
+				"id": 30,
+				"name": "Sentinel Rengar",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Sentinel Rengar",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30,
+			"39": 30
 		},
 		"spells": {
 			"p": "Unseen Predator",
@@ -21780,6 +22803,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Ruined Draven",
+						"colors": [
+							"#050B19",
+							"#ECC124"
+						]
 					}
 				}
 			},
@@ -21789,7 +22820,8 @@
 			"24": 20,
 			"25": 20,
 			"26": 20,
-			"27": 20
+			"27": 20,
+			"28": 20
 		},
 		"spells": {
 			"p": "League of Draven",
@@ -23278,7 +24310,94 @@
 				"id": 26,
 				"name": "Battle Queen Diana Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"27": {
+				"id": 27,
+				"name": "Sentinel Diana",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Sentinel Diana",
+						"colors": [
+							"#080808",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27,
+			"36": 27
 		},
 		"spells": {
 			"p": "Moonsilver Blade",
@@ -25605,6 +26724,108 @@
 			"r": "The Hextech Ultimatum"
 		}
 	},
+	"166": {
+		"id": 166,
+		"name": "Akshan",
+		"title": "",
+		"slot": "Akshan",
+		"roles": [
+			"marksman",
+			"assassin"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Akshan",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Cyber Pop Akshan",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Cyber Pop Akshan",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Cyber Pop Akshan",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Cyber Pop Akshan",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Cyber Pop Akshan",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Cyber Pop Akshan",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Cyber Pop Akshan",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Cyber Pop Akshan",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Cyber Pop Akshan",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1
+		},
+		"spells": {
+			"p": "Dirty Fighting",
+			"q": "Avengerang",
+			"w": "Going Rogue",
+			"e": "Heroic Swing",
+			"r": "Comeuppance"
+		}
+	},
 	"201": {
 		"id": 201,
 		"name": "Braum",
@@ -25886,7 +27107,85 @@
 			"29": 24,
 			"30": 24,
 			"31": 24,
-			"32": 24
+			"32": 24,
+			"33": {
+				"id": 33,
+				"name": "Pool Party Braum",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Pool Party Braum",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Pool Party Braum",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Pool Party Braum",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Pool Party Braum",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Pool Party Braum",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Pool Party Braum",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Pool Party Braum",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Pool Party Braum",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33
 		},
 		"spells": {
 			"p": "Concussive Blows",
@@ -26544,7 +27843,7 @@
 	"223": {
 		"id": 223,
 		"name": "Tahm Kench",
-		"title": "the River King",
+		"title": "The River King",
 		"slot": "TahmKench",
 		"roles": [
 			"support",
@@ -26708,9 +28007,9 @@
 		"spells": {
 			"p": "An Acquired Taste",
 			"q": "Tongue Lash",
-			"w": "Devour",
+			"w": "Abyssal Dive",
 			"e": "Thick Skin",
-			"r": "Abyssal Voyage"
+			"r": "Devour"
 		}
 	},
 	"234": {
@@ -27633,7 +28932,12 @@
 			"26": 13,
 			"27": 13,
 			"28": 13,
-			"29": 13
+			"29": 13,
+			"30": {
+				"id": 30,
+				"name": "PROJECT: Zed Prestige Edition",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Contempt for the Weak",
@@ -29779,7 +31083,12 @@
 			"23": 17,
 			"24": 17,
 			"25": 17,
-			"26": 17
+			"26": 17,
+			"27": {
+				"id": 27,
+				"name": "Unbound Thresh",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Damnation",
@@ -31958,7 +33267,94 @@
 			"30": 25,
 			"31": 25,
 			"32": 25,
-			"33": 25
+			"33": 25,
+			"34": {
+				"id": 34,
+				"name": "Sentinel Pyke",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Sentinel Pyke",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"35": 34,
+			"36": 34,
+			"37": 34,
+			"38": 34,
+			"39": 34,
+			"40": 34,
+			"41": 34,
+			"42": 34,
+			"43": 34
 		},
 		"spells": {
 			"p": "Gift of the Drowned Ones",
@@ -32232,7 +33628,85 @@
 				"id": 9,
 				"name": "Obsidian Dragon Sett Prestige Edition",
 				"chromas": {}
-			}
+			},
+			"10": {
+				"id": 10,
+				"name": "Pool Party Sett",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Pool Party Sett",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Pool Party Sett",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Pool Party Sett",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Pool Party Sett",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Pool Party Sett",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Pool Party Sett",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Pool Party Sett",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Pool Party Sett",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10
 		},
 		"spells": {
 			"p": "Pit Grit",
