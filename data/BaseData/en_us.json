@@ -5099,7 +5099,7 @@
 			},
 			"21": {
 				"id": 21,
-				"name": "",
+				"name": "Ruined Miss Fortune",
 				"chromas": {
 					"22": {
 						"id": 22,
@@ -5169,8 +5169,8 @@
 						"id": 30,
 						"name": "Ruined Miss Fortune",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#050B19",
+							"#ECC124"
 						]
 					}
 				}
@@ -20255,8 +20255,8 @@
 						"id": 41,
 						"name": "Sentinel Graves",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#080808",
+							"#8E0A38"
 						]
 					}
 				}
@@ -20861,8 +20861,8 @@
 						"id": 39,
 						"name": "Sentinel Rengar",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#080808",
+							"#8E0A38"
 						]
 					}
 				}
@@ -26727,7 +26727,7 @@
 	"166": {
 		"id": 166,
 		"name": "Akshan",
-		"title": "",
+		"title": "the Rogue Sentinel",
 		"slot": "Akshan",
 		"roles": [
 			"marksman",
@@ -33340,8 +33340,8 @@
 						"id": 43,
 						"name": "Sentinel Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#080808",
+							"#8E0A38"
 						]
 					}
 				}
