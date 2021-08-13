@@ -1,4 +1,4 @@
-require('../env');
+require('../lib/en1v');
 
 const dataE = require('../data/BaseData/en_us.json');
 const dataZ = require('../data/BaseData/zh_cn.json');

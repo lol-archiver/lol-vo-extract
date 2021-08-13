@@ -1,11 +1,16 @@
-const File = require('../../entry/manifest/File');
+import as from 'assert';
 
-const parseTable = require('./table');
+import Biffer from '../../../lib/Biffer.js';
 
-const parseBundle = require('./bundle');
-const parseLang = require('./lang');
-const parseFileEntry = require('./fileEntry');
-const parseDirectory = require('./Directory');
+import File from '../../entry/manifest/File.js';
+
+import parseTable from './table.js';
+
+import parseBundle from './bundle.js';
+import parseLang from './lang.js';
+import parseFileEntry from './fileEntry.js';
+import parseDirectory from './Directory.js';
+
 
 module.exports = async function parseBody(manifests) {
 	for(const manifest of manifests) {
@@ -33,7 +38,7 @@ module.exports = async function parseBody(manifests) {
 		manifest.chunks = {};
 		for(const bundle of manifest.bundles) {
 			for(const chunk of bundle.chunks) {
-				_as(!manifest.chunks[chunk.id] || (manifest.chunks[chunk.id].size == chunk.size || manifest.chunks[chunk.id].targetSize == chunk.targetSize));
+				as(!manifest.chunks[chunk.id] || (manifest.chunks[chunk.id].size == chunk.size || manifest.chunks[chunk.id].targetSize == chunk.targetSize));
 
 				manifest.chunks[chunk.id] = chunk;
 

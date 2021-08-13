@@ -1,22 +1,20 @@
-const fetchEntry = require('../fetcher/entry');
-const fetchManifest = require('../fetcher/manifest');
+import { G } from '../../lib/global.js';
 
-const parseRman = require('../parser/manifest/rman');
-const parseBody = require('../parser/manifest/body');
+import fetchEntry from '../fetcher/entry.js';
+import fetchManifest from '../fetcher/manifest.js';
 
-const Manifest = require('../entry/manifest/Manifest');
+import Manifest from '../entry/manifest/Manifest.js';
 
-Fex.ensureDirSync('./_cache/manifest');
-Fex.ensureDirSync('./_cache/bundle');
-Fex.ensureDirSync('./_cache/chunk');
-Fex.ensureDirSync('./_cache/assets');
+import parseRman from '../parser/manifest/rman.js';
+import parseBody from '../parser/manifest/body.js';
 
-module.exports = async function fetchWads(wadsToFetch) {
-	L(`[WadFetcher] Fetch wads from CDN`);
 
-	const [urlManifests, versionLatest] = await fetchEntry(C.region, C.solution, C.sie);
+export default async function fetchWads(wadsToFetch, server) {
+	if(!wadsToFetch.length) { return; }
 
-	const buffersManifest = await Promise.all(urlManifests.map((urlManifest) => fetchManifest(urlManifest, versionLatest)));
+	const [urlManifests, versionLatest] = await fetchEntry(server);
+
+	const buffersManifest = await Promise.all(urlManifests.map((urlManifest) => fetchManifest(urlManifest, versionLatest, server)));
 
 	const manifests = urlManifests.map((urlManifest) => new Manifest(urlManifest, versionLatest));
 
@@ -33,12 +31,14 @@ module.exports = async function fetchWads(wadsToFetch) {
 	for(const file of files) {
 		for(const [matchname, savePath] of wadsToFetch) {
 			if(file.name.toLowerCase().endsWith(matchname)) {
-				filesFetched.push(await file.extract(versionLatest, C.cdn, savePath));
+				filesFetched.push(await file.extract(versionLatest, server.cdn, savePath));
 
 				break;
 			}
 		}
 	}
 
+	G.info('WadFetcher', 'fetch wads from CDN', '✔ ');
+
 	return filesFetched;
-};
+}

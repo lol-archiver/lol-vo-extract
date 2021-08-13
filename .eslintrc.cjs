@@ -1,6 +1,6 @@
 const rc = {
 	env: {
-		es2020: true,
+		es2021: true,
 		node: true,
 	},
 	extends: [
@@ -20,33 +20,6 @@ const rc = {
 		quoteProps: [2, 'as-needed'],
 		requireAtomicUpdates: [0],
 	},
-	globals: {
-		L: true,
-		LU: true,
-		M: true,
-		T: true,
-		C: true,
-		P: true,
-		R: true,
-		RC: true,
-		RD: true,
-
-		_fs: true,
-		_pa: true,
-		_ul: true,
-		_as: true,
-		_cp: true,
-		_cr: true,
-
-		BigInt: true,
-
-		Axios: true,
-		Fex: true,
-		Zstd: true,
-		Gzip: true,
-
-		Biffer: true
-	}
 };
 
 for(const key in rc.rules) {

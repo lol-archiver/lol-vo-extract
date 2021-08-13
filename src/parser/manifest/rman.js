@@ -1,4 +1,10 @@
-module.exports = async function parseRman(manifests) {
+import as from 'assert';
+
+import Biffer from '../../../lib/Biffer.js';
+import { unZstd } from '../../../lib/Tool.js';
+
+
+export default async function parseRman(manifests) {
 	for(const manifest of manifests) {
 		const { buffer } = manifest;
 		const bifferManifest = new Biffer(buffer);
@@ -9,13 +15,13 @@ module.exports = async function parseRman(manifests) {
 		if(versionMajor != 2 || versionMinor != 0) { throw `unsupported RMAN version: ${versionMajor}.${versionMinor}`; }
 
 		// eslint-disable-next-line no-unused-vars
-		const [bitsFlag, offset, length, idManifest, lengthBody] = bifferManifest.unpack("<HLLQL");
+		const [bitsFlag, offset, length, idManifest, lengthBody] = bifferManifest.unpack('<HLLQL');
 
-		_as(bitsFlag & (1 << 9));
-		_as(offset == bifferManifest.tell());
+		as(bitsFlag & (1 << 9));
+		as(offset == bifferManifest.tell());
 
 		manifest.id = idManifest;
 
-		manifest.buffer = await T.unZstd(`./_cache/manifest/${manifest.version}-${manifest.id}-body.manifest`, bifferManifest.raw(length), true);
+		manifest.buffer = await unZstd(`./_cache/manifest/${manifest.version}-${manifest.id}-body.manifest`, bifferManifest.raw(length), true);
 	}
-};
+}

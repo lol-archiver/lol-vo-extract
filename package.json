@@ -1,15 +1,19 @@
 {
 	"name": "lol-vo-extact",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "",
-	"main": "index.js",
 	"author": "Nuogz",
-	"license": "ISC",
+	"license": "LGPL-3.0-or-later",
+	"main": "index.js",
+	"type": "module",
 	"dependencies": {
+		"@nuogz/hades": "^2.5.2",
+		"@nuogz/poseidon": "^4.0.0",
 		"axios": "^0.21.1",
 		"bluebird": "^3.7.2",
 		"buffer-crc32": "^0.2.13",
 		"fs-extra": "^9.1.0",
+		"jsonc-parser": "^3.0.0",
 		"log-update": "^4.0.0",
 		"moment": "^2.29.1",
 		"node-gzip": "^1.1.2",
@@ -17,6 +21,6 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^7.27.0"
+		"eslint": "^7.32.0"
 	}
 }

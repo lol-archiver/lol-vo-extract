@@ -1,23 +1,30 @@
-module.exports = async function fetchEntry(region, solution, sie) {
-	if(C.manifest) {
-		L(`[fetchEntry] Detect Manifest [${C.manifest}] version [${C.version || 1}]`);
+import URL from 'url';
 
-		return [[_ul.resolve(C.cdn, `channels/public/releases/${C.manifest}.manifest`)], C.version || 1];
+import Axios from 'axios';
+
+import { G } from '../../lib/global.js';
+
+
+export default async function fetchEntry({ region, cdn, sie, manifest, version, proxy } = {}) {
+	if(manifest) {
+		G.info('EntryFetcher', 'detect', `manifest [${manifest}] version [${version || 1}]`);
+
+		return [[URL.resolve(cdn, `channels/public/releases/${manifest}.manifest`)], version || 1];
 	}
 
-	const urlEntry = _ul.resolve(sie, `/api/v1/products/lol/version-sets/${region}?q[artifact_type_id]=lol-game-client&q[platform]=windows`);
+	const urlEntry = URL.resolve(sie, `/api/v1/products/lol/version-sets/${region}?q[artifact_type_id]=lol-game-client&q[platform]=windows`);
 
-	L(`[fetchEntry] Fetch from [${urlEntry}]`);
+	G.info('EntryFetcher', `fetching...`);
 
-	const { data } = await Axios.get(urlEntry, { proxy: C.proxy || undefined, timeout: 1000 * 60 * 4 });
+	const { data } = await Axios.get(urlEntry, { proxy: proxy || undefined, timeout: 1000 * 60 * 4 });
 
 	const content = region == 'PBE1' ? 'beta' : 'release';
 
 	const releases = data.releases.filter(release => release.release.labels.content.values[0] == content);
 
-	const versionLatest = C.version || Math.max(...releases.map(release => ~~release.release.labels['riot:revision'].values[0]));
+	const versionLatest = version || Math.max(...releases.map(release => ~~release.release.labels['riot:revision'].values[0]));
 
-	L(`[fetchEntry] Latest [${content}] version [${versionLatest}]`);
+	G.info('EntryFetcher', `latest [${content}] version [${versionLatest}]`);
 
 	return [
 		data.releases
@@ -25,4 +32,4 @@ module.exports = async function fetchEntry(region, solution, sie) {
 			.map(release => release.download.url),
 		versionLatest
 	];
-};
+}

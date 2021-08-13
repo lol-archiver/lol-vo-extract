@@ -1,4 +1,4 @@
-require('../env');
+require('../lib/en1v');
 
 const pathFile = 'D:/Desk/fontconfig_zh_cn.txt';
 

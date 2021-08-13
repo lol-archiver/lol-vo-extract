@@ -1,7 +1,7 @@
 # lol-vo-extract
-League of Legends Champion Voices Download/Extract/Rename with events.
+League of Legends champion voices download, extract with renamed events.
 
-Most of implementation based on [CDTB](https://github.com/CommunityDragon/CDTB)'s by Node.js 10.X+. Sincerely Thanks!
+**Most of implementation based on [CDTB](https://github.com/CommunityDragon/CDTB). Sincerely Thanks!**
 
 ## ATTENTION PLEASE
 `lol-vo-extract` does not guarantee 100% match for all events for all skin:
@@ -13,14 +13,12 @@ Some not perfect match as following:
 * Twist Fate: `VO` and `SFX` are not independent of each other. Need to increase `sfxLevel`.
 * Mecha Kingdoms Jax: The event `JaxRelentlessAssault` shows that the trigger of this is to activate the passive `Relentless Assault`. But in the actual game, the trigger is to use the R skill `Grandmaster's Might`.
 
-## Installation
-
-`lol-vo-extract` requires `Node.js v10.X+` or higher for ES2015, Async function and BigInt support. (v8.X+ maybe OK, v6.X+ should be not)
-
-Install NPM Package before use:
-````javascript
-npm install
-````
+## Requirement
+- Node.js 14.X+
+- Package which published on my private NPM BUT NOT published on `npmjs.com`.  
+	You can clone them and install them locally
+	- [@nuogz/hades](https://github.com/zheung/hades)
+	- [@nuogz/poseidon](https://github.com/zheung/poseidon)
 
 NOTE: `lol-vo-extract` depend on [xxhashjs](https://github.com/pierrec/js-xxhash). It is a C library that need to rebuild when installing. If rebuild failed, consider install [Windows-Build-Tools](https://github.com/felixrieseberg/windows-build-tools) at first.
 

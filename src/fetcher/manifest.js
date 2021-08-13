@@ -1,31 +1,37 @@
-module.exports = async function fetchManifest(urlManifest, version) {
-	const idManifest = _pa.parse(urlManifest).name;
+import { existsSync, readFileSync, writeFileSync } from 'fs';
+import { join, parse } from 'path';
 
-	const pathManifest = _pa.join('./_cache/manifest', `${version}-${idManifest}.manifest`);
+import Axios from 'axios';
 
-	if(_fs.existsSync(pathManifest)) {
-		L(`[fetchManifest] Manifest[${idManifest}] cache exists, use cache.`);
+import { G } from '../../lib/global.js';
 
-		return _fs.readFileSync(pathManifest);
+
+export default async function fetchManifest(urlManifest, version, server) {
+	const idManifest = parse(urlManifest).name;
+
+	const pathManifest = join('./_cache/manifest', `${version}-${idManifest}.manifest`);
+
+	if(existsSync(pathManifest)) {
+		G.info('ManifestFetcher', 'detect', `manifest[${idManifest}] exists a cache, use cache first`);
+
+		return readFileSync(pathManifest);
 	}
 	else {
-		L(`[fetchManifest] Manifest[${idManifest}] fetch from [${urlManifest}]`);
+		G.info('ManifestFetcher', 'detect' `will fetch manifest[${idManifest}] from [${urlManifest}]`);
 
 		try {
-			const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy || undefined, timeout: 1000 * 60 * 4 })).data;
+			const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: server.proxy || undefined, timeout: 1000 * 60 * 4 })).data;
 
-			// bufferManifest.push(bufferManifest);
+			writeFileSync(pathManifest, bufferManifest);
 
-			_fs.writeFileSync(pathManifest, bufferManifest);
-
-			LU(`[fetchManifest] Manifest[${idManifest}] fetched, saved at [${pathManifest}], size [${bufferManifest.length}]`);
+			G.info('ManifestFetcher', `manifest[${idManifest}] fetched, saved at [${pathManifest}], size [${bufferManifest.length}]`);
 
 			return bufferManifest;
 		}
 		catch(error) {
-			L(`[fetchManifest] Manifest[${idManifest}] fetch error [${error.message || error}]`);
+			G.info('ManifestFetcher', `manifest[${idManifest}] fetch error [${error.message || error}]`);
 
-			process.exit(-1);
+			process.exit(1);
 		}
 	}
-};
+}

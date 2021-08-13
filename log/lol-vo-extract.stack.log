@@ -1,0 +1,13 @@
+[31m[21-08-13 10:32:41:976][错误] Entry >  Detect info  Cannot read property '24' of undefined[39m
+-------------- Stack --------------
+[31mCannot read property '24' of undefined[39m
+TypeError: Cannot read property '24' of undefined
+	at file:///E:/Project/lol-vo-extract-pure/lib/detectInfo.js:35:33
+	at Array.forEach (<anonymous>)
+	at detectInfo (file:///E:/Project/lol-vo-extract-pure/lib/detectInfo.js:34:14)
+	at file:///E:/Project/lol-vo-extract-pure/index.js:18:1
+	at ModuleJob.run (internal/modules/esm/module_job.js:169:25)
+	at async Loader.import (internal/modules/esm/loader.js:177:24)
+	at async Object.loadESM (internal/process/esm_loader.js:68:5)
+===================================
+
