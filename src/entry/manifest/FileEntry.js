@@ -1,4 +1,4 @@
-module.exports = class FileEntry {
+export default class FileEntry {
 	constructor(id, name, link, langIDs, idDirectory, sizeFile, idsChunk) {
 		this.id = id;
 		this.name = name;
@@ -8,4 +8,4 @@ module.exports = class FileEntry {
 		this.sizeFile = sizeFile;
 		this.idsChunk = idsChunk;
 	}
-};
+}

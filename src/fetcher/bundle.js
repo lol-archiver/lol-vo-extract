@@ -1,18 +1,26 @@
+import { join } from 'path';
+import { existsSync, writeFileSync, readFileSync, resolve } from 'fs';
+import { createHash } from 'crypto';
+
+import Axios from 'axios';
+
+import { G, C } from '../../lib/global';
+
 
 module.exports = async function(id, version, cdn, counter) {
 	const bid = ('0000000000000000' + id.toString(16)).slice(-16).toUpperCase();
 
-	const pathBundle = _pa.join('./_cache/bundle', `${bid}.bundle`);
+	const pathBundle = join('./_cache/bundle', `${bid}.bundle`);
 
 	let bufferBundle;
-	if(_fs.existsSync(pathBundle)) {
+	if(existsSync(pathBundle)) {
 		// L(`[Bundle-${bid}] cache exists, use cache.`);
 		++counter.now;
 
-		bufferBundle = _fs.readFileSync(pathBundle);
+		bufferBundle = readFileSync(pathBundle);
 	}
 	else {
-		const bundleURL = _ul.resolve(cdn, `channels/public/bundles/${bid}.bundle`);
+		const bundleURL = resolve(cdn, `channels/public/bundles/${bid}.bundle`);
 
 		// L(`[Bundle-${bid}] fetch from '${bundleURL}'`);
 
@@ -21,17 +29,17 @@ module.exports = async function(id, version, cdn, counter) {
 
 		while(timesFetched++ <= 4) {
 			try {
-				const { data, headers } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.proxy || undefined, timeout: 1000 * 60 * 4 });
+				const { data, headers } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.server.proxy, timeout: 1000 * 60 * 4 });
 
 				if(data.length != headers['content-length']) {
-					L(`[Bundle-${bid}] fetched, but length check failed, refetched, times: ${timesFetched}`);
+					G.error('BundleFetcher', `[${bid}] fetched, but length check failed, refetched, times: [${timesFetched}]`);
 				}
 				else {
-					const hash = _cr.createHash('md5');
+					const hash = createHash('md5');
 					hash.update(data);
 
 					if(headers.etag.toLowerCase() != `"${hash.digest('hex')}"`.toLowerCase()) {
-						L(`[Bundle-${bid}] fetched, but etag check failed, refetched, times: ${timesFetched}`);
+						G.error('BundleFetcher', `[${bid}] fetched, but etag check failed, refetched, times: [${timesFetched}]`);
 					}
 					else {
 						passFetched = true;
@@ -41,19 +49,19 @@ module.exports = async function(id, version, cdn, counter) {
 				if(passFetched) {
 					bufferBundle = data;
 
-					L(`[Bundle-${bid}] (${++counter.now}/${counter.max}) fetched, save at '${pathBundle}', size ${bufferBundle.length}`);
-					_fs.writeFileSync(pathBundle, bufferBundle);
+					G.info('BundleFetcher', `[${bid}] (${++counter.now}/${counter.max}) fetched, save at [${pathBundle}], size [${bufferBundle.length}]`);
+					writeFileSync(pathBundle, bufferBundle);
 
 					break;
 				}
 			}
 			catch(error) {
-				L(`[Bundle-${bid}] fetch failed, ${error.message}, refetched, times: ${timesFetched}`);
+				G.error('BundleFetcher', `[${bid}] fetch failed, ${error.message}, will refetch, times [${timesFetched}]`);
 			}
 		}
 
 		if(!passFetched) {
-			throw L(`[Bundle-${bid}] fetch failed finally, over max fetch times`);
+			throw G.error('BundleFetcher', `[${bid}] fetch failed finally, over max fetch times`);
 		}
 	}
 

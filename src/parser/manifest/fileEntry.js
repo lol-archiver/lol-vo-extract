@@ -1,7 +1,8 @@
-const FileEntry = require('../../entry/manifest/FileEntry');
-const parseTableEntry = require('./tableEntry');
+import FileEntry from '../../entry/manifest/FileEntry';
+import parseTableEntry from './tableEntry';
 
-module.exports = async function parserFileEntry(biffer) {
+
+export default async function parserFileEntry(biffer) {
 	const entry = parseTableEntry(biffer, [
 		null,
 		['chunks', 'offset'],

@@ -1,6 +1,7 @@
-const Bundle = require('../../entry/manifest/Bundle');
+import Bundle from '../../entry/manifest/Bundle';
 
-module.exports = function parserBundle(biffer) {
+
+export default function parserBundle(biffer) {
 	const [, sizeHeader, id] = biffer.unpack('<llQ');
 
 	// Skip remaining header part
@@ -24,4 +25,4 @@ module.exports = function parserBundle(biffer) {
 	}
 
 	return bundle;
-};
+}

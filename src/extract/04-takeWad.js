@@ -1,12 +1,23 @@
-Fex.ensureDirSync('./_cache/extract');
+import { parse, resolve } from 'path';
+import { writeFileSync } from 'fs';
+
+import { ensureDirSync } from 'fs-extra';
+import { ungzip } from 'node-gzip';
+
+import { dirCache, G } from '../../lib/global';
+import Biffer from '../../lib/Biffer';
+import { unZstd } from '../../lib/Tool';
+
+
+ensureDirSync('./_cache/extract');
 
 module.exports = async function extractWad(wadPath, takeMap) {
-	L(`[Main] Take game files from Wad [${_pa.parse(wadPath).base}]`);
+	G.info(`[Main] Take game files from Wad [${parse(wadPath).base}]`);
 
 	const wadBiffer = new Biffer(wadPath);
 
 	// eslint-disable-next-line no-unused-vars
-	const [magic, versionMajor, versionMinor] = wadBiffer.unpack("2sBB");
+	const [magic, versionMajor, versionMinor] = wadBiffer.unpack('2sBB');
 
 	if(versionMajor == 1) {
 		wadBiffer.seek(8);
@@ -18,7 +29,7 @@ module.exports = async function extractWad(wadPath, takeMap) {
 		wadBiffer.seek(268);
 	}
 
-	const [entryCount] = wadBiffer.unpack("I");
+	const [entryCount] = wadBiffer.unpack('I');
 	const takeFiles = [];
 
 	for(let i = 0; i < entryCount; i++) {
@@ -26,25 +37,26 @@ module.exports = async function extractWad(wadPath, takeMap) {
 		let hash, offset, size, type, compressedSize, duplicate, sha256;
 
 		if(versionMajor == 1) {
-			[hash, offset, compressedSize, size, type] = wadBiffer.unpack("QIIII");
+			[hash, offset, compressedSize, size, type] = wadBiffer.unpack('QIIII');
 		}
 		else {
-			[hash, offset, compressedSize, size, type, duplicate, , , sha256] = wadBiffer.unpack("QIIIBBBBQ");
+			// eslint-disable-next-line no-unused-vars
+			[hash, offset, compressedSize, size, type, duplicate, , , sha256] = wadBiffer.unpack('QIIIBBBBQ');
 		}
 
 		const saveName = takeMap[hash];
 		if(saveName) {
 			const fileBuffer = wadBiffer.buffer.slice(offset, offset + compressedSize);
 
-			const pathSave = RD('_cache', 'extract', saveName);
+			const pathSave = resolve(dirCache, 'extract', saveName);
 
 			takeFiles.push(saveName);
 
 			if(type == 0) {
-				_fs.writeFileSync(pathSave, fileBuffer);
+				writeFileSync(pathSave, fileBuffer);
 			}
 			else if(type == 1) {
-				_fs.writeFileSync(pathSave, await Gzip.ungzip(fileBuffer));
+				writeFileSync(pathSave, await ungzip(fileBuffer));
 			}
 			else if(type == 2) {
 				throw 'unused extract';
@@ -52,7 +64,7 @@ module.exports = async function extractWad(wadPath, takeMap) {
 				// target = data[4: 4 + n].rstrip(b'\0').decode('utf-8')
 			}
 			else if(type == 3) {
-				await T.unZstd(pathSave, fileBuffer);
+				await unZstd(pathSave, fileBuffer);
 			}
 		}
 	}

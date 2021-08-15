@@ -1,3 +1,9 @@
+import { existsSync } from 'fs';
+import { parse } from 'path';
+import Biffer from '../../lib/Biffer';
+import { C } from '../../lib/global';
+
+
 const loadDataBase = function() {
 	try {
 		return require(`../../data/BaseData/${C.lang}.json`);
@@ -11,7 +17,7 @@ const loadDataBase = function() {
 const dataBase = loadDataBase();
 
 module.exports = function parseBin(binPath, indexSkin) {
-	if(!_fs.existsSync(binPath)) { return; }
+	if(!existsSync(binPath)) { return; }
 
 	// L(`[parseBin] [${_pa.parse(binPath).base}]`);
 
@@ -28,7 +34,7 @@ module.exports = function parseBin(binPath, indexSkin) {
 		idSkin = ~~String(idSkin).substr(-3, 3);
 	}
 	else {
-		const subID = _pa.parse(binPath).base.match(/\d+/)[0];
+		const subID = parse(binPath).base.match(/\d+/)[0];
 		// idSkin = `${C.id}${subID.padStart(3, '0')}`;
 		idSkin = ~~subID;
 	}

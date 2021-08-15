@@ -12,7 +12,7 @@ import parseFileEntry from './fileEntry.js';
 import parseDirectory from './Directory.js';
 
 
-module.exports = async function parseBody(manifests) {
+export default async function parseBody(manifests) {
 	for(const manifest of manifests) {
 		const biffer = new Biffer(manifest.buffer);
 
@@ -81,4 +81,4 @@ module.exports = async function parseBody(manifests) {
 
 		manifest.files = files;
 	}
-};
+}

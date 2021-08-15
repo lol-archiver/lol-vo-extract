@@ -1,11 +1,14 @@
-module.exports = async function parseTable(biffer, parserItem) {
+import { G } from '../../../lib/global';
+
+
+export default async function parseTable(biffer, parserItem) {
 	const [count] = biffer.unpack('<l');
 
 	const items = [];
 
 	for(let i = 1; i <= count; i++) {
 		if(i % 1000 == 0 || i == count || i == 1) {
-			LU(`[${parserItem.name}] ${i}/${count}`);
+			G.info(`[${parserItem.name}] ${i}/${count}`);
 		}
 
 		const pos = biffer.tell();
@@ -19,4 +22,4 @@ module.exports = async function parseTable(biffer, parserItem) {
 	}
 
 	return items;
-};
+}

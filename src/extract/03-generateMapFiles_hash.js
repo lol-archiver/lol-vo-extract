@@ -1,3 +1,7 @@
+import { C, G, I } from '../../lib/global';
+import { wadHash } from '../../lib/Tool';
+
+
 const genPathSoundBank = function(usage, lang, champion, index, type, format, version = '2016') {
 	return `assets/sounds/wwise${version}/${usage}/${usage == 'vo' ? `${lang}/` : ''}characters/${C.champ}/skins/${index}/${C.champ}_${index}_${usage}_${type}.${format}`;
 };
@@ -10,8 +14,8 @@ const genArrPathSoundBank = function(usage, lang, champion, index, version = '20
 	];
 };
 
-module.exports = function genNameFiles_hash() {
-	L(`[Main] Generate a name map to in-wad files, indexed by path-hashes`);
+export default function genNameFiles_hash() {
+	G.info(`[Main] Generate a name map to in-wad files, indexed by path-hashes`);
 
 	const nameFiles_hash = {};
 
@@ -19,20 +23,20 @@ module.exports = function genNameFiles_hash() {
 
 	const infoFiles = [];
 	for(const usage of usages) {
-		for(const i of C.idsSkin) {
-			nameFiles_hash[T.wadHash(`data/characters/${C.champ}/skins/skin${i}.bin`)] = `skin${i}.bin`;
+		for(const i of I.idsSkin) {
+			nameFiles_hash[wadHash(`data/characters/${I.slot}/skins/skin${i}.bin`)] = `skin${i}.bin`;
 
-			infoFiles.push(...genArrPathSoundBank(usage, C.lang, C.champ, `skin${String(i).padStart(2, '0')}`));
+			infoFiles.push(...genArrPathSoundBank(usage, C.lang, I.slot, `skin${String(i).padStart(2, '0')}`));
 		}
 
-		if(C.idsSkin.includes(0) || C.forceUseBase) {
-			infoFiles.push(...genArrPathSoundBank(usage, C.lang, C.champ, 'base'));
+		if(I.idsSkin.includes(0) || C.forceUseBase) {
+			infoFiles.push(...genArrPathSoundBank(usage, C.lang, I.slot, 'base'));
 		}
 	}
 
 	for(const [pathSoundBank, nameFile] of infoFiles) {
-		nameFiles_hash[T.wadHash(pathSoundBank)] = nameFile;
+		nameFiles_hash[wadHash(pathSoundBank)] = nameFile;
 	}
 
 	return nameFiles_hash;
-};
+}

@@ -1,7 +1,8 @@
-const Directory = require('../../entry/manifest/Directory');
-const parseTableEntry = require('./tableEntry');
+import Directory from '../../entry/manifest/Directory';
+import parseTableEntry from './tableEntry';
 
-module.exports = async function parseDirectory(biffer) {
+
+export default async function parseDirectory(biffer) {
 	const entry = parseTableEntry(biffer, [
 		null,
 		null,
@@ -11,4 +12,4 @@ module.exports = async function parseDirectory(biffer) {
 	]);
 
 	return new Directory(entry.id, entry.name, entry.idParent);
-};
+}

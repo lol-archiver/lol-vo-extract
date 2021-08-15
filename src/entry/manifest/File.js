@@ -1,10 +1,20 @@
-const fetchBundle = require('../../fetcher/bundle');
+import { resolve, removeSync, appendFileSync } from 'fs';
+import { parse } from 'path';
 
-const pathCacheZstd = RD('_cache', 'zstd');
+import { map } from 'bluebird';
+import { decompress } from 'node-zstandard';
+import { ensureDirSync } from 'fs-extra';
 
-const Bluebird = require('bluebird');
+import { G, dirCache } from '../../../lib/global';
+import Biffer from '../../../lib/Biffer';
 
-module.exports = class File {
+import fetchBundle from '../../fetcher/bundle';
+
+
+const pathCacheZstd = resolve(dirCache, 'zstd');
+
+
+export default class File {
 	constructor(id, name, sizeFile, link, langs, fileChunks, version) {
 		this.id = id;
 		this.name = name;
@@ -20,7 +30,7 @@ module.exports = class File {
 
 		this.fileChunks.forEach(chunk => setIDBundle.add(chunk.idBundle));
 
-		L(`[File] ${this.name} length ${setIDBundle.size}`);
+		G.info('FileExtracter', `[${this.name}] length [${setIDBundle.size}]`);
 
 		const bundleBuffer = {};
 
@@ -29,13 +39,13 @@ module.exports = class File {
 		for(const idBundle of setIDBundle) {
 			promises.push(fetchBundle(idBundle, version, cdn, counter).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
-		await Bluebird.map(promises, r => r, { concurrency: 45 });
+		await map(promises, r => r, { concurrency: 45 });
 
-		L(`[File] ${this.name} AllFetched, UnZstding...`);
+		G.info('FileExtracter', `[${this.name}] AllFetched, UnZstding...`);
 
-		Fex.ensureDirSync(_pa.parse(pathSave).dir);
-		Fex.removeSync(pathSave);
-		Fex.removeSync(pathCacheZstd);
+		ensureDirSync(parse(pathSave).dir);
+		removeSync(pathSave);
+		removeSync(pathCacheZstd);
 
 		for(const chunk of this.fileChunks) {
 			const bid = ('0000000000000000' + chunk.idBundle.toString(16)).slice(-16).toUpperCase();
@@ -44,9 +54,9 @@ module.exports = class File {
 
 			parser.seek(chunk.offset);
 
-			Fex.appendFileSync(pathCacheZstd, parser.raw(chunk.size));
+			appendFileSync(pathCacheZstd, parser.raw(chunk.size));
 		}
 
-		return new Promise((resolve, reject) => Zstd.decompress(pathCacheZstd, pathSave, err => err ? reject(err) : resolve(pathSave)));
+		return new Promise((resolve, reject) => decompress(pathCacheZstd, pathSave, err => err ? reject(err) : resolve(pathSave)));
 	}
-};
+}

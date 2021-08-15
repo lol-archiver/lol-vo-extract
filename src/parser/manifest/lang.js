@@ -1,4 +1,4 @@
-const Lang = require('../../entry/manifest/Lang');
+import Lang from '../../entry/manifest/Lang';
 
 module.exports = async function parserLang(parser) {
 	parser.skip(4); // skip offset table offset
