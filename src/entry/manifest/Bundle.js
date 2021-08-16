@@ -1,6 +1,7 @@
-const Chunk = require('./Chunk');
+import Chunk from './Chunk.js';
 
-module.exports = class Bundle {
+
+export default class Bundle {
 	constructor(id) {
 		this.id = id;
 		this.chunks = [];
@@ -13,4 +14,4 @@ module.exports = class Bundle {
 			new Chunk(id, (lastChunk ? lastChunk.offset + lastChunk.size : 0), size, targetSize)
 		);
 	}
-};
+}

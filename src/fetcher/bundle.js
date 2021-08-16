@@ -7,7 +7,7 @@ import Axios from 'axios';
 import { G, C } from '../../lib/global';
 
 
-module.exports = async function(id, version, cdn, counter) {
+export default async function(id, version, cdn, counter) {
 	const bid = ('0000000000000000' + id.toString(16)).slice(-16).toUpperCase();
 
 	const pathBundle = join('./_cache/bundle', `${bid}.bundle`);
@@ -66,4 +66,4 @@ module.exports = async function(id, version, cdn, counter) {
 	}
 
 	return [bid, bufferBundle];
-};
+}

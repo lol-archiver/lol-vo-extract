@@ -1,4 +1,4 @@
-module.exports = class HircSound {
+export default class HircSound {
 	constructor(id, embedType, audioID, sourceID) {
 		this.id = id;
 
@@ -11,4 +11,4 @@ module.exports = class HircSound {
 
 		this.soundType = null;
 	}
-};
+}

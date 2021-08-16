@@ -11,7 +11,7 @@ import { unZstd } from '../../lib/Tool';
 
 ensureDirSync('./_cache/extract');
 
-module.exports = async function extractWad(wadPath, takeMap) {
+export default async function extractWad(wadPath, takeMap) {
 	G.info(`[Main] Take game files from Wad [${parse(wadPath).base}]`);
 
 	const wadBiffer = new Biffer(wadPath);
@@ -70,4 +70,4 @@ module.exports = async function extractWad(wadPath, takeMap) {
 	}
 
 	return takeFiles.sort();
-};
+}

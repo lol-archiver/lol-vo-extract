@@ -1,14 +1,22 @@
-module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
-	L(`[Main] Copy audio file`);
+import { appendFileSync, copyFileSync, readdirSync, readFileSync } from 'fs';
+import { ensureDirSync } from 'fs-extra';
+import Moment from 'moment';
+import { parse, resolve } from 'path';
+import { C, dirApp, dirCache, G, I } from '../../lib/global.js';
+import { crc32, toHexL } from '../../lib/Tool.js';
+
+
+export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
+	G.info(`[Main] Copy audio file`);
 
 
 	for(const audioPackFile of arrAudioPackFile) {
 		const copyWhileEmpty = audioPackFile.startsWith('sfx') ? (C.useSFXLevel >= 2 ? true : false) : true;
 
-		for(let audioFile of _fs.readdirSync(RD('_cache', 'audio', audioPackFile))) {
-			const audioID = _pa.parse(audioFile).name;
-			const audioIDHex = T.toHexL(audioID, 8);
-			const src = RD('_cache', 'audio', audioPackFile, `${audioID}.${C.format}`);
+		for(let audioFile of readdirSync(resolve(dirCache, 'audio', audioPackFile))) {
+			const audioID = parse(audioFile).name;
+			const audioIDHex = toHexL(audioID, 8);
+			const src = resolve(dirCache, 'audio', audioPackFile, `${audioID}.${C.format}`);
 
 			const events_nameSkin = {};
 			const events_audioID = mapAudioID_Event[audioID] || [];
@@ -35,38 +43,38 @@ module.exports = function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 
 			if(!Object.keys(events_nameSkin).length) { continue; }
 
-			const crc32 = T.crc32(_fs.readFileSync(src));
+			const crc32File = crc32(readFileSync(src));
 
 			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
-				const logsTooLong = [`-------${M().format('YYYY-MM-DD HH:mm:ss')}-------`];
+				const logsTooLong = [`-------${Moment().format('YYYY-MM-DD HH:mm:ss')}-------`];
 
-				const pathFolder = RD('_final', `${nameSkin.replace(/[:"]/g, '')}[${C.champ}@${C.region}@${C.lang}]`);
+				const pathFolder = resolve(dirApp, '_final', `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.region}@${C.lang}]`);
 
-				Fex.ensureDirSync(pathFolder);
+				ensureDirSync(pathFolder);
 
 				const eventsText = events.join('&');
-				const audioText = `[${nameSkin == '[Bad]' ? `${audioID}][${audioIDHex}` : audioIDHex}][${crc32}].${C.format}`;
+				const audioText = `[${nameSkin == '[Bad]' ? `${audioID}][${audioIDHex}` : audioIDHex}][${crc32File}].${C.format}`;
 
 				try {
 					if(eventsText.length > 128) { throw 'eventsText.length > 128'; }
 
-					_fs.copyFileSync(
+					copyFileSync(
 						src,
-						RD(pathFolder, `${eventsText}${audioText}`),
+						resolve(pathFolder, `${eventsText}${audioText}`),
 					);
 				} catch(error) {
-					_fs.copyFileSync(
+					copyFileSync(
 						src,
-						RD(pathFolder, `_EventsTooLong${audioText}`),
+						resolve(pathFolder, `_EventsTooLong${audioText}`),
 					);
 
 					logsTooLong.push(`[${audioIDHex}] ==> ${events.sort().join(' | ')}`);
 				}
 
 				if(logsTooLong.length > 1) {
-					_fs.appendFileSync(RD(pathFolder, '_EventsTooLong.txt'), '\n' + logsTooLong.join('\n'));
+					appendFileSync(resolve(pathFolder, '_EventsTooLong.txt'), '\n' + logsTooLong.join('\n'));
 				}
 			}
 		}
 	}
-};
+}

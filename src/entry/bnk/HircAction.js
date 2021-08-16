@@ -1,4 +1,4 @@
-module.exports = class HircAction {
+export default class HircAction {
 	constructor(id, scope, actionType, hircID, paramCount) {
 		this.id = id;
 
@@ -10,4 +10,4 @@ module.exports = class HircAction {
 		this.paramTypes = null;
 		this.params = null;
 	}
-};
+}

@@ -1,14 +1,21 @@
-const HircSound = require('../entry/bnk/HircSound');
-const HircEvent = require('../entry/bnk/HircEvent');
-const HircPool = require('../entry/bnk/HircPool');
-const HircSwitchContainer = require('../entry/bnk/HircSwitchContainer');
+import { parse, resolve } from 'path';
+import { writeFileSync } from 'fs';
 
-const parseHircEntry = require('../parser/bnk/hircEntry');
+import { G, I } from '../../lib/global.js';
+import Biffer from '../../lib/Biffer.js';
+import { toHexL } from '../../lib/Tool.js';
+
+import HircSound from '../entry/bnk/HircSound';
+import HircEvent from '../entry/bnk/HircEvent';
+import HircPool from '../entry/bnk/HircPool';
+import HircSwitchContainer from '../entry/bnk/HircSwitchContainer';
+
+import parseHircEntry from '../parser/bnk/hircEntry';
+
 
 let mapEventID;
-
 try {
-	mapEventID = require(`../../data/EventIDMap/${C.champ}.json`);
+	mapEventID = import(`../../data/EventIDMap/${I.slot}.json`);
 }
 catch(error) {
 	mapEventID = {};
@@ -52,10 +59,10 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll, hircID) {
 		}
 	}
 	else if(!entryParsed) {
-		L(`[WARNING] Unknown action sound entry ${hircID}`);
+		G.warn(`[WARNING] Unknown action sound entry ${hircID}`);
 	}
 	else {
-		L(`[WARNING] Unknown action sound entry Type`);
+		G.warn(`[WARNING] Unknown action sound entry Type`);
 	}
 
 	return result;
@@ -71,8 +78,8 @@ const getEventFull = function(mapHash_EventName, hircEventID) {
 	return eventFull;
 };
 
-module.exports = async function parseBnk(bnkPath, eventNameSet) {
-	L(`[Main] Read Bnk [${_pa.parse(bnkPath).base}]`);
+export default async function parseBnk(bnkPath, eventNameSet) {
+	G.info(`[Main] Read Bnk [${parse(bnkPath).base}]`);
 
 	const bnkBiffer = new Biffer(bnkPath);
 
@@ -100,7 +107,7 @@ module.exports = async function parseBnk(bnkPath, eventNameSet) {
 			bnkBiffer.skip(sectionSize);
 
 			if(magic != 'BKHD') {
-				L(magic);
+				G.info(magic);
 			}
 		}
 	}
@@ -120,7 +127,7 @@ module.exports = async function parseBnk(bnkPath, eventNameSet) {
 		let eventFull = getEventFull(mapHash_EventName, hircEvent.id);
 
 		if(!eventFull) {
-			L(`[WARNING] Unknown [Hirc Event ID] ${hircEvent.id}`);
+			G.info(`[WARNING] Unknown [Hirc Event ID] ${hircEvent.id}`);
 
 			eventFull = hircEvent.id;
 		}
@@ -148,22 +155,22 @@ module.exports = async function parseBnk(bnkPath, eventNameSet) {
 
 			if(entry instanceof HircSound) {
 				const audioID = entry.audioID || 0;
-				return `${audioID}|${T.toHexL(audioID, 8)}`;
+				return `${audioID}|${toHexL(audioID, 8)}`;
 			}
 			else if(entry instanceof HircPool) {
 				return entry.soundIDs.map(sid => {
 					const entrySub = arrEntry.find(e => e.id == sid);
 
 					const audioID = entrySub.audioID || 0;
-					return `${audioID}|${T.toHexL(audioID, 8)}`;
+					return `${audioID}|${toHexL(audioID, 8)}`;
 				});
 			}
 		}));
 
-	_fs.writeFileSync(
-		RD('_texts', '_pools', _pa.parse(bnkPath).base + '.json'),
+	writeFileSync(
+		resolve('_texts', '_pools', parse(bnkPath).base + '.json'),
 		JSON.stringify(hircsPool, null, '\t')
 	);
 
 	return mapAudioID_EventName;
-};
+}

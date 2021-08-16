@@ -1,7 +1,13 @@
-require('../lib/en1v');
+import assert from 'assert';
+import { appendFileSync } from 'fs';
 
-const dataE = require('../data/BaseData/en_us.json');
-const dataZ = require('../data/BaseData/zh_cn.json');
+import { readJsonSync } from 'fs-extra';
+
+import { G } from '../lib/global.js';
+
+
+const dataE = readJsonSync('../data/BaseData/en_us.json');
+const dataZ = readJsonSync('../data/BaseData/zh_cn.json');
 
 const ids =
 	// ['10.20', '064031', '875009', '022023', '136011', '063008', '875008']
@@ -27,16 +33,16 @@ const ids =
 	// ['09.24', '523000', '016015', '016016', '064028', '050011', '043019', '523001', '064027', '076011', '201024', '028008', '115014', '026006']
 	// ['09.23', '412014', '266009', '412013']
 	// ['09.22', '235000', '245019', '246010', '084015', '246002', '235001', '157018']
-	// ["09.21", "001012", "021018", "021020", "038006", "053022"]
-	// ["09.20", "022017", "122016", "120008"]
-	// ["09.19", "092022", "013011", "032023", "025017", "267015", "092020"]
-	// ["09.18", "497005", "498004", "518011", "518010", "142009"]
-	// ["09.17", "103017", "056007", "045013", "003013", "098016", "110009"]
-	// ["09.16", "080000", "033016", "077005"]
-	// ["09.15", "555016", "039017", "084014", "039016", "222020", "019016"]
-	// ["09.14", "086014", "236009"]
-	// ["09.13", "246000", "051020", "051019", "145017", "246001", "157017"]
-	["09.12", "082000", "202005", "043008", "035008"]
+	// ['09.21', '001012', '021018', '021020', '038006', '053022']
+	// ['09.20', '022017', '122016', '120008']
+	// ['09.19', '092022', '013011', '032023', '025017', '267015', '092020']
+	// ['09.18', '497005', '498004', '518011', '518010', '142009']
+	// ['09.17', '103017', '056007', '045013', '003013', '098016', '110009']
+	// ['09.16', '080000', '033016', '077005']
+	// ['09.15', '555016', '039017', '084014', '039016', '222020', '019016']
+	// ['09.14', '086014', '236009']
+	// ['09.13', '246000', '051020', '051019', '145017', '246001', '157017']
+	['09.12', '082000', '202005', '043008', '035008']
 		.map(id => [~~id.substr(0, 3), ~~id.substr(3, 3)]);
 ids.shift();
 
@@ -70,7 +76,7 @@ const resultN = [];
 const resultC = [];
 
 for(const [hid, sid] of ids) {
-	L(hid, sid);
+	G.info(hid, sid);
 
 	const heroE = dataE[hid];
 	const heroZ = dataZ[hid];
@@ -79,10 +85,10 @@ for(const [hid, sid] of ids) {
 	const chromasE = Object.values(skinE.chromas);
 	const chromasZ = Object.values(skinZ.chromas);
 
-	L(skinE.name);
-	L(skinZ.name);
+	G.info(skinE.name);
+	G.info(skinZ.name);
 
-	_as(chromasE.length == chromasZ.length);
+	assert(chromasE.length == chromasZ.length);
 
 	const rN = [[], []];
 	const rC = [[], []];
@@ -103,9 +109,9 @@ for(const [hid, sid] of ids) {
 		const color1Z = chromaZ.colors[0];
 		const color2Z = chromaZ.colors[1];
 
-		_as(chromaE.id == chromaZ.id);
-		_as(color1E == color1Z);
-		_as(color2E == color2Z);
+		assert(chromaE.id == chromaZ.id);
+		assert(color1E == color1Z);
+		assert(color2E == color2Z);
 
 		rNE.push((color1Z == color2Z ? namesChroma_color[color1E] : namesChroma_color[color1E + color2E]) || '****');
 		rNZ.push(chromaZ.name.replace(skinZ.name, '').trim());
@@ -132,7 +138,7 @@ for(const [hid, sid] of ids) {
 	resultC.push(rC);
 }
 
-_fs.appendFileSync('./_final/chromas.txt', [
+appendFileSync('./_final/chromas.txt', [
 	'\n-------',
 	resultN.map(l => l.map(s => s.join('\t')).join('\n')).join('\n'),
 	'-------',

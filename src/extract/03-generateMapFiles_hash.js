@@ -3,7 +3,7 @@ import { wadHash } from '../../lib/Tool';
 
 
 const genPathSoundBank = function(usage, lang, champion, index, type, format, version = '2016') {
-	return `assets/sounds/wwise${version}/${usage}/${usage == 'vo' ? `${lang}/` : ''}characters/${C.champ}/skins/${index}/${C.champ}_${index}_${usage}_${type}.${format}`;
+	return `assets/sounds/wwise${version}/${usage}/${usage == 'vo' ? `${lang}/` : ''}characters/${I.slot}/skins/${index}/${I.slot}_${index}_${usage}_${type}.${format}`;
 };
 
 const genArrPathSoundBank = function(usage, lang, champion, index, version = '2016') {

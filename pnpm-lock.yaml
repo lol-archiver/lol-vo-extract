@@ -7,8 +7,7 @@ specifiers:
   bluebird: ^3.7.2
   buffer-crc32: ^0.2.13
   eslint: ^7.32.0
-  fs-extra: ^9.1.0
-  jsonc-parser: ^3.0.0
+  fs-extra: ^10.0.0
   log-update: ^4.0.0
   moment: ^2.29.1
   node-gzip: ^1.1.2
@@ -21,8 +20,7 @@ dependencies:
   axios: 0.21.1
   bluebird: 3.7.2
   buffer-crc32: 0.2.13
-  fs-extra: 9.1.0
-  jsonc-parser: 3.0.0
+  fs-extra: 10.0.0
   log-update: 4.0.0
   moment: 2.29.1
   node-gzip: 1.1.2
@@ -87,7 +85,7 @@ packages:
     dev: true
 
   /@nuogz/hades/2.5.2:
-    resolution: {integrity: sha512-6J1fpV+0vxCSdyPXqgqbEOr9SFfh5XZxb2yoRDTDpb7UNBBETON5mKaVtFGY66DttvSzloGv8XzW1+AKTIj7hA==}
+    resolution: {integrity: sha512-6J1fpV+0vxCSdyPXqgqbEOr9SFfh5XZxb2yoRDTDpb7UNBBETON5mKaVtFGY66DttvSzloGv8XzW1+AKTIj7hA==, tarball: https://npm.danor.app:443/@nuogz%2fhades/-/hades-2.5.2.tgz}
     dependencies:
       chalk: 4.1.2
       log4js: 6.3.0
@@ -97,7 +95,7 @@ packages:
     dev: false
 
   /@nuogz/poseidon/4.0.0:
-    resolution: {integrity: sha512-txRwsaKvEmwTr8ldpYOLlXLDovtwePELz1jyrreNB51cTotic4bl9lHpJHJNE2Y6tvMGVw5qPOzRVWTp029YhA==}
+    resolution: {integrity: sha512-txRwsaKvEmwTr8ldpYOLlXLDovtwePELz1jyrreNB51cTotic4bl9lHpJHJNE2Y6tvMGVw5qPOzRVWTp029YhA==, tarball: https://npm.danor.app:443/@nuogz%2fposeidon/-/poseidon-4.0.0.tgz}
     dev: false
 
   /acorn-jsx/5.3.2_acorn@7.4.1:
@@ -170,11 +168,6 @@ packages:
   /astral-regex/2.0.0:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
-
-  /at-least-node/1.0.0:
-    resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
-    engines: {node: '>= 4.0.0'}
-    dev: false
 
   /axios/0.21.1:
     resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
@@ -482,6 +475,15 @@ packages:
         optional: true
     dev: false
 
+  /fs-extra/10.0.0:
+    resolution: {integrity: sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.8
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
+
   /fs-extra/8.1.0:
     resolution: {integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==}
     engines: {node: '>=6 <7 || >=8'}
@@ -489,16 +491,6 @@ packages:
       graceful-fs: 4.2.8
       jsonfile: 4.0.0
       universalify: 0.1.2
-    dev: false
-
-  /fs-extra/9.1.0:
-    resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      at-least-node: 1.0.0
-      graceful-fs: 4.2.8
-      jsonfile: 6.1.0
-      universalify: 2.0.0
     dev: false
 
   /fs.realpath/1.0.0:
@@ -619,10 +611,6 @@ packages:
   /json-stable-stringify-without-jsonify/1.0.1:
     resolution: {integrity: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=}
     dev: true
-
-  /jsonc-parser/3.0.0:
-    resolution: {integrity: sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==}
-    dev: false
 
   /jsonfile/4.0.0:
     resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=}

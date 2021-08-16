@@ -1,6 +1,6 @@
-const HIRC = require('./hircEntry');
+import HIRCEntry from './hircEntry.js';
 
-module.exports = function HircSection(type) {
+export default function HircSection(type) {
 	if(!(this instanceof HircSection)) {
 		return new HircSection(...arguments);
 	}
@@ -24,10 +24,10 @@ module.exports = function HircSection(type) {
 
 			while(!B.isEnd()) {
 				const [type, length, id] = B.unpack('BLL');
-				this.subs.push(HIRC(type, id).parse(B.sub(length - 4)));
+				this.subs.push(HIRCEntry(type, id).parse(B.sub(length - 4)));
 			}
 		}
 
 		return this;
 	};
-};
+}

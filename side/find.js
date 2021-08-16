@@ -1,7 +1,11 @@
-require('../lib/en1v');
+import { writeFileSync } from 'fs';
 
-const dataE = require('../data/BaseData/en_us.json');
-const dataZ = require('../data/BaseData/zh_cn.json');
+import { readJsonSync } from 'fs-extra';
+
+
+const dataE = readJsonSync('../data/BaseData/en_us.json');
+const dataZ = readJsonSync('../data/BaseData/zh_cn.json');
+
 
 const ver = '09.12';
 const names = `
@@ -45,6 +49,6 @@ result.push(line2.trimEnd());
 
 result[0] = ver + result[0];
 
-_fs.writeFileSync('./_final/chromas.txt', result.join('\n'));
+writeFileSync('./_final/chromas.txt', result.join('\n'));
 
-require('./chromas');
+import('./chromas.js');

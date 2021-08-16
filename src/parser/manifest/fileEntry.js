@@ -36,4 +36,4 @@ export default async function parserFileEntry(biffer) {
 	const idsChunk = biffer.unpack(`<${sizeChunk}Q`);
 
 	return new FileEntry(entry.id, entry.name, entry.link, langIDs, entry.idDirectory, entry.sizeFile, idsChunk);
-};
+}

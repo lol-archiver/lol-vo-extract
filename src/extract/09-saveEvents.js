@@ -1,3 +1,8 @@
+import { existsSync, readFileSync, resolve, writeFileSync } from 'fs';
+import Moment from 'moment';
+import { C, dirCache, G, I } from '../../lib/global.js';
+import { crc32, toHexL } from '../../lib/Tool.js';
+
 const findFriendly = function(name, map) {
 	let nameFormat = name.toLowerCase().replace(/[23]d/g, '');
 	const arrTrans = [];
@@ -12,13 +17,13 @@ const findFriendly = function(name, map) {
 	return arrTrans.join(':');
 };
 
-module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
-	L(`[Main] Save Event info for dictaion`);
+export default function saveEvents(mapAudioID_Event, arrAudioPackFile) {
+	G.info(`[Main] Save Event info for dictaion`);
 
 	let mapFriendlyRaw;
 
 	try {
-		mapFriendlyRaw = require(`../../data/FriendlyName/${C.lang}`);
+		mapFriendlyRaw = import(`../../data/FriendlyName/${C.lang}`);
 	}
 	catch(error) {
 		mapFriendlyRaw = {};
@@ -27,7 +32,7 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 	const mapFriendly = {};
 
 	for(const skill of 'QWER'.split('')) {
-		mapFriendly[`${C.champ}${skill}`] = `使用:${skill.toUpperCase()}技能:`;
+		mapFriendly[`${I.slot}${skill}`] = `使用:${skill.toUpperCase()}技能:`;
 	}
 
 	for(const raw in mapFriendlyRaw) {
@@ -38,29 +43,29 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 	for(const [audioID, eventInfos] of Object.entries(mapAudioID_Event)) {
 		let arrSrcCRC32 = arrAudioPackFile
-			.map(file => RD('_cache', 'audio', file, `${audioID}.${C.format}`))
-			.filter(src => _fs.existsSync(src))
-			.map(src => T.crc32(_fs.readFileSync(src)));
+			.map(file => resolve(dirCache, 'audio', file, `${audioID}.${C.format}`))
+			.filter(src => existsSync(src))
+			.map(src => crc32(readFileSync(src)));
 
 		arrSrcCRC32 = new Set(arrSrcCRC32);
 
-		let crc32;
+		let crc32Src;
 
 		if(!arrSrcCRC32.size) {
-			crc32 = 'NOFILE';
+			crc32Src = 'NOFILE';
 		}
 		else {
 			if(arrSrcCRC32.size > 1) {
-				L(`\t [WARING] Multi Take Audio File [${audioID}]`);
+				G.info(`\t [WARING] Multi Take Audio File [${audioID}]`);
 			}
 
-			crc32 = [...arrSrcCRC32].join('|');
+			crc32Src = [...arrSrcCRC32].join('|');
 		}
 
-		const hex = T.toHexL(audioID, 8);
+		const hex = toHexL(audioID, 8);
 
-		const dict = require(`../../data/BaseData/${C.lang}.json`);
-		const dictEN = require(`../../data/BaseData/en_us.json`);
+		const dict = import(`../../data/BaseData/${C.lang}.json`);
+		const dictEN = import(`../../data/BaseData/en_us.json`);
 
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {
@@ -75,12 +80,12 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 				const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32 });
+				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crc32Src });
 			}
 			else if(typeof eventInfo == 'number') {
 				const skinMap = eventMap['[Bad]'] || (eventMap['[Bad]'] = {});
 
-				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ hex, crc32 });
+				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ hex, crc32: crc32Src });
 			}
 		}
 	}
@@ -116,6 +121,6 @@ module.exports = function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
 
-		_fs.writeFileSync(RD('_texts', `[${C.champ}@${C.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${M().format('X')}.md`), result.join('\n'));
+		writeFileSync(resolve('_texts', `[${I.slot}@${C.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${Moment().format('X')}.md`), result.join('\n'));
 	}
-};
+}

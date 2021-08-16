@@ -1,10 +1,14 @@
-const HircSound = require('../../entry/bnk/HircSound');
-const HircAction = require('../../entry/bnk/HircAction');
-const HircEvent = require('../../entry/bnk/HircEvent');
-const HircPool = require('../../entry/bnk/HircPool');
-const HircSwitchContainer = require('../../entry/bnk/HircSwitchContainer');
+import { G } from '../../../lib/global.js';
+import Biffer from '../../../lib/Biffer.js';
 
-module.exports = function parseEntry(type, id, B) {
+import HircSound from '../../entry/bnk/HircSound';
+import HircAction from '../../entry/bnk/HircAction';
+import HircEvent from '../../entry/bnk/HircEvent';
+import HircPool from '../../entry/bnk/HircPool';
+import HircSwitchContainer from '../../entry/bnk/HircSwitchContainer';
+
+
+export default function parseEntry(type, id, B) {
 	let entry;
 
 	// Sound
@@ -67,7 +71,7 @@ module.exports = function parseEntry(type, id, B) {
 	}
 	// Switch Container
 	else if(type == 6) {
-		L('[DEBUG] Need More Switch Container Confirm');
+		G.debug('[DEBUG] Need More Switch Container Confirm');
 
 		entry = new HircSwitchContainer(id);
 
@@ -86,4 +90,4 @@ module.exports = function parseEntry(type, id, B) {
 
 
 	return entry;
-};
+}

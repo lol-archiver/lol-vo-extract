@@ -1,6 +1,6 @@
-const HIRC = require('./HIRC');
+import HIRCEntry from './hircEntry.js';
 
-module.exports = class HIRCSection {
+export default class HIRCSection {
 	constructor(type) {
 		this.type = type;
 
@@ -21,11 +21,11 @@ module.exports = class HIRCSection {
 
 				while(!B.isEnd()) {
 					const [type, length, id] = B.unpack('BLL');
-					this.subs.push(HIRC(type, id).parse(B.sub(length - 4)));
+					this.subs.push(HIRCEntry(type, id).parse(B.sub(length - 4)));
 				}
 			}
 
 			return this;
 		};
 	}
-};
+}

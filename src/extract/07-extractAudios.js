@@ -1,10 +1,18 @@
+import { execFileSync } from 'child_process';
+import { existsSync, writeFileSync } from 'fs';
+import { emptyDirSync } from 'fs-extra';
+import { resolve } from 'path';
+import Biffer from '../../lib/Biffer.js';
+import { I, C, dirCache, G } from '../../lib/global.js';
+
+
 const isSameTakeConfig = function() {
 	let isSameTakeConfig = false;
 	try {
-		const lastTakeConfig = require('../../_cache/lastTakeWpk.json');
+		const lastTakeConfig = import('../../_cache/lastTakeWpk.json');
 
 		if(C.useWADLevel != 1 && lastTakeConfig &&
-			lastTakeConfig.champ == C.champ &&
+			lastTakeConfig.champ == I.slot &&
 			lastTakeConfig.lang == C.lang &&
 			lastTakeConfig.format == C.format &&
 			lastTakeConfig.detect.sort().join(',') == C.idsSkin.sort().join(',')
@@ -19,7 +27,7 @@ const isSameTakeConfig = function() {
 };
 
 const takeWpkRaw = function(wpkFile) {
-	const wpkBiffuer = new Biffer(RD('_cache', 'extract', wpkFile));
+	const wpkBiffuer = new Biffer(resolve(dirCache, 'extract', wpkFile));
 
 	// eslint-disable-next-line no-unused-vars
 	const [magic, version, count] = wpkBiffuer.unpack('4sLL');
@@ -32,44 +40,44 @@ const takeWpkRaw = function(wpkFile) {
 		const [offset, size, nameLength] = wpkBiffuer.unpack('LLL');
 		const name = Buffer.from([...wpkBiffuer.raw(nameLength * 2)].filter(byte => byte)).toString('utf8');
 
-		_fs.writeFileSync(RD('_cache', 'audio', wpkFile, 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
+		writeFileSync(resolve(dirCache, 'audio', wpkFile, 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
 	}
 };
 
-module.exports = function extractAudios(wpkFiles) {
-	L(`[Main] Extract audio files from Wpk/Bnk`);
+export default function extractAudios(wpkFiles) {
+	G.info(`[Main] Extract audio files from Wpk/Bnk`);
 
-	if(isSameTakeConfig()) { L('\tSame Take audio config, skip...'); return; }
+	if(isSameTakeConfig()) { G.info('\tSame Take audio config, skip...'); return; }
 
-	Fex.emptyDirSync(RD('_cache', 'audio'));
+	emptyDirSync(resolve(dirCache, 'audio'));
 
 	for(let wpkFile of wpkFiles) {
-		L(`\tConvert ${wpkFile} to ${C.format}`);
+		G.info(`\tConvert ${wpkFile} to ${C.format}`);
 
-		Fex.emptyDirSync(RD('_cache', 'audio', wpkFile));
+		emptyDirSync(resolve(dirCache, 'audio', wpkFile));
 		if(C.format == 'wem') {
 			takeWpkRaw(wpkFile);
 		}
 		else if((C.format == 'wav' || C.format == 'ogg')) {
-			if(_fs.existsSync(C.path.rextractorConsole)) {
+			if(existsSync(C.path.rextractorConsole)) {
 				try {
-					_cp.execFileSync(C.path.rextractorConsole, [
-						RD('_cache', 'extract', wpkFile),
-						RD('_cache', 'audio', wpkFile),
+					execFileSync(C.path.rextractorConsole, [
+						resolve(dirCache, 'extract', wpkFile),
+						resolve(dirCache, 'audio', wpkFile),
 						`/sf:${C.format}`
 					], { timeout: 1000 * 60 * 10 });
 				} catch(error) {
-					L(`[Error] Exec File Error: ${error.message}`);
+					G.info(`[Error] Exec File Error: ${error.message}`);
 				}
 			}
 			else {
-				L(`[Error] Bad Path RextractorConsole: ${C.path.rextractorConsole}`);
+				G.info(`[Error] Bad Path RextractorConsole: ${C.path.rextractorConsole}`);
 			}
 		}
 		else {
-			L(`[Error] Bad Format to Convert: ${C.format}, skip...`);
+			G.info(`[Error] Bad Format to Convert: ${C.format}, skip...`);
 		}
 	}
 
-	_fs.writeFileSync(RD('_cache', 'lastTakeWpk.json'), JSON.stringify({ champ: C.champ, lang: C.lang, format: C.format, detect: C.idsSkin }));
-};
+	writeFileSync(resolve(dirCache, 'lastTakeWpk.json'), JSON.stringify({ champ: I.slot, lang: C.lang, format: C.format, detect: C.idsSkin }));
+}
