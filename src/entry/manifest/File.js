@@ -1,14 +1,14 @@
-import { resolve, removeSync, appendFileSync } from 'fs';
+import { appendFileSync, resolve, removeSync } from 'fs';
 import { parse } from 'path';
 
 import { map } from 'bluebird';
-import { decompress } from 'node-zstandard';
 import { ensureDirSync } from 'fs-extra';
+import { decompress } from 'node-zstandard';
 
-import { G, dirCache } from '../../../lib/global';
-import Biffer from '../../../lib/Biffer';
+import { G, dirCache } from '../../../lib/global.js';
+import Biffer from '../../../lib/Biffer.js';
 
-import fetchBundle from '../../fetcher/bundle';
+import fetchBundle from '../../fetcher/bundle.js';
 
 
 const pathCacheZstd = resolve(dirCache, 'zstd');

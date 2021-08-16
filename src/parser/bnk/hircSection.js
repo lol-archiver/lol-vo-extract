@@ -1,5 +1,6 @@
 import HIRCEntry from './hircEntry.js';
 
+
 export default function HircSection(type) {
 	if(!(this instanceof HircSection)) {
 		return new HircSection(...arguments);

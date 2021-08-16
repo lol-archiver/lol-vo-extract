@@ -1,6 +1,8 @@
 import { resolve } from 'fs';
+
+import { emptyDirSync } from 'fs-extra';
+
 import { dirCache } from './lib/global.js';
-import FSX from 'fs-extra';
 
 import { pathWadVoice, pathWadChamp, wadsToFetch } from './src/extract/01-initFetch.js';
 import fetchWads from './src/extract/02-fetchWads.js';
@@ -12,10 +14,11 @@ import extractAudios from './src/extract/07-extractAudios.js';
 import copyAudios from './src/extract/08-copyAudios.js';
 import saveEvents from './src/extract/09-saveEvents.js';
 
+
 (async () => {
 	await fetchWads(wadsToFetch);
 
-	FSX.emptyDirSync(resolve(dirCache, 'extract'));
+	emptyDirSync(resolve(dirCache, 'extract'));
 
 	const mapHash_GameFile = generateMapFiles_hash();
 

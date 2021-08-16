@@ -1,5 +1,5 @@
-import Directory from '../../entry/manifest/Directory';
-import parseTableEntry from './tableEntry';
+import Directory from '../../entry/manifest/Directory.js';
+import parseTableEntry from './tableEntry.js';
 
 
 export default async function parseDirectory(biffer) {

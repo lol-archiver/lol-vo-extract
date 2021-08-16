@@ -1,7 +1,10 @@
 import { existsSync, readFileSync, resolve, writeFileSync } from 'fs';
+
 import Moment from 'moment';
-import { C, dirCache, G, I } from '../../lib/global.js';
+
+import { C, I, G, dirCache } from '../../lib/global.js';
 import { crc32, toHexL } from '../../lib/Tool.js';
+
 
 const findFriendly = function(name, map) {
 	let nameFormat = name.toLowerCase().replace(/[23]d/g, '');

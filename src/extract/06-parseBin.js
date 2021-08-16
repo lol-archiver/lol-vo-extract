@@ -1,16 +1,16 @@
-import { parse, resolve } from 'path';
 import { writeFileSync } from 'fs';
+import { parse, resolve } from 'path';
 
 import { G, I } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
 import { toHexL } from '../../lib/Tool.js';
 
-import HircSound from '../entry/bnk/HircSound';
-import HircEvent from '../entry/bnk/HircEvent';
-import HircPool from '../entry/bnk/HircPool';
-import HircSwitchContainer from '../entry/bnk/HircSwitchContainer';
+import HircSound from '../entry/bnk/HircSound.js';
+import HircEvent from '../entry/bnk/HircEvent.js';
+import HircPool from '../entry/bnk/HircPool.js';
+import HircSwitchContainer from '../entry/bnk/HircSwitchContainer.js';
 
-import parseHircEntry from '../parser/bnk/hircEntry';
+import parseHircEntry from '../parser/bnk/hircEntry.js';
 
 
 let mapEventID;

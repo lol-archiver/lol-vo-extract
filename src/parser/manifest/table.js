@@ -1,4 +1,4 @@
-import { G } from '../../../lib/global';
+import { G } from '../../../lib/global.js';
 
 
 export default async function parseTable(biffer, parserItem) {

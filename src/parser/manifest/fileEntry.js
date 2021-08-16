@@ -1,5 +1,5 @@
-import FileEntry from '../../entry/manifest/FileEntry';
-import parseTableEntry from './tableEntry';
+import FileEntry from '../../entry/manifest/FileEntry.js';
+import parseTableEntry from './tableEntry.js';
 
 
 export default async function parserFileEntry(biffer) {

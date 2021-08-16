@@ -1,7 +1,7 @@
 import { existsSync } from 'fs';
 import { resolve } from 'path';
 
-import { G, I, C, dirApp } from '../../lib/global.js';
+import { C, I, G, dirApp } from '../../lib/global.js';
 
 
 const detectFetch = function(wadsToFetch, nameWad, pathWad, isUseClient) {

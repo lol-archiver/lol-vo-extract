@@ -1,10 +1,10 @@
-import { join } from 'path';
-import { existsSync, writeFileSync, readFileSync, resolve } from 'fs';
 import { createHash } from 'crypto';
+import { existsSync, readFileSync, resolve, writeFileSync } from 'fs';
+import { join } from 'path';
 
 import Axios from 'axios';
 
-import { G, C } from '../../lib/global';
+import { G, C } from '../../lib/global.js';
 
 
 export default async function(id, version, cdn, counter) {

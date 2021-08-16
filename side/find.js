@@ -1,10 +1,6 @@
 import { writeFileSync } from 'fs';
 
-import { readJsonSync } from 'fs-extra';
-
-
-const dataE = readJsonSync('../data/BaseData/en_us.json');
-const dataZ = readJsonSync('../data/BaseData/zh_cn.json');
+import { en_us as dataE, zh_cn as dataZ } from '../lib/BaseData.js';
 
 
 const ver = '09.12';

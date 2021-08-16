@@ -1,13 +1,9 @@
-import assert from 'assert';
+import AS from 'assert';
 import { appendFileSync } from 'fs';
 
-import { readJsonSync } from 'fs-extra';
-
 import { G } from '../lib/global.js';
+import { en_us as dataE, zh_cn as dataZ } from '../lib/BaseData.js';
 
-
-const dataE = readJsonSync('../data/BaseData/en_us.json');
-const dataZ = readJsonSync('../data/BaseData/zh_cn.json');
 
 const ids =
 	// ['10.20', '064031', '875009', '022023', '136011', '063008', '875008']
@@ -88,7 +84,7 @@ for(const [hid, sid] of ids) {
 	G.info(skinE.name);
 	G.info(skinZ.name);
 
-	assert(chromasE.length == chromasZ.length);
+	AS(chromasE.length == chromasZ.length);
 
 	const rN = [[], []];
 	const rC = [[], []];
@@ -109,9 +105,9 @@ for(const [hid, sid] of ids) {
 		const color1Z = chromaZ.colors[0];
 		const color2Z = chromaZ.colors[1];
 
-		assert(chromaE.id == chromaZ.id);
-		assert(color1E == color1Z);
-		assert(color2E == color2Z);
+		AS(chromaE.id == chromaZ.id);
+		AS(color1E == color1Z);
+		AS(color2E == color2Z);
 
 		rNE.push((color1Z == color2Z ? namesChroma_color[color1E] : namesChroma_color[color1E + color2E]) || '****');
 		rNZ.push(chromaZ.name.replace(skinZ.name, '').trim());

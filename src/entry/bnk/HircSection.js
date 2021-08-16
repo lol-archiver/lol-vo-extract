@@ -1,5 +1,6 @@
 import HIRCEntry from './hircEntry.js';
 
+
 export default class HIRCSection {
 	constructor(type) {
 		this.type = type;

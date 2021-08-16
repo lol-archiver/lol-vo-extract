@@ -1,11 +1,9 @@
-import assert from 'assert';
-
+import AS from 'assert';
 import { readFileSync, writeFileSync } from 'fs';
-import Biffer from '../lib/Biffer.js';
 
 import { G } from '../lib/global.js';
+import Biffer from '../lib/Biffer.js';
 import { rstHash } from '../lib/Tool.js';
-
 
 
 const pathFile = 'D:/Desk/fontconfig_zh_cn.txt';
@@ -41,7 +39,7 @@ for(let i = 0; i < count; i++) {
 	entries.push([v >> 40n, v & 0xffffffffffn]);
 }
 
-assert(biffer.raw(1)[0] == versionMinor);
+AS(biffer.raw(1)[0] == versionMinor);
 
 const bifferText = biffer.sub(biffer.length);
 

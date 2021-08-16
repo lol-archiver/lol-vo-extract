@@ -1,4 +1,4 @@
-import as from 'assert';
+import AS from 'assert';
 
 import Biffer from '../../../lib/Biffer.js';
 import { unZstd } from '../../../lib/Tool.js';
@@ -17,8 +17,8 @@ export default async function parseRman(manifests) {
 		// eslint-disable-next-line no-unused-vars
 		const [bitsFlag, offset, length, idManifest, lengthBody] = bifferManifest.unpack('<HLLQL');
 
-		as(bitsFlag & (1 << 9));
-		as(offset == bifferManifest.tell());
+		AS(bitsFlag & (1 << 9));
+		AS(offset == bifferManifest.tell());
 
 		manifest.id = idManifest;
 

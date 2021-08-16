@@ -1,9 +1,11 @@
 import { execFileSync } from 'child_process';
 import { existsSync, writeFileSync } from 'fs';
-import { emptyDirSync } from 'fs-extra';
 import { resolve } from 'path';
+
+import { emptyDirSync } from 'fs-extra';
+
+import { C, I, G, dirCache } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
-import { I, C, dirCache, G } from '../../lib/global.js';
 
 
 const isSameTakeConfig = function() {

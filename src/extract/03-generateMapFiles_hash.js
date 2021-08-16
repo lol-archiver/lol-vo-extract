@@ -1,5 +1,5 @@
-import { C, G, I } from '../../lib/global';
-import { wadHash } from '../../lib/Tool';
+import { C, I, G } from '../../lib/global.js';
+import { wadHash } from '../../lib/Tool.js';
 
 
 const genPathSoundBank = function(usage, lang, champion, index, type, format, version = '2016') {

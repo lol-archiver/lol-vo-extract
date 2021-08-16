@@ -1,8 +1,10 @@
 import { appendFileSync, copyFileSync, readdirSync, readFileSync } from 'fs';
+import { parse, resolve } from 'path';
+
 import { ensureDirSync } from 'fs-extra';
 import Moment from 'moment';
-import { parse, resolve } from 'path';
-import { C, dirApp, dirCache, G, I } from '../../lib/global.js';
+
+import { C, I, G, dirApp, dirCache } from '../../lib/global.js';
 import { crc32, toHexL } from '../../lib/Tool.js';
 
 

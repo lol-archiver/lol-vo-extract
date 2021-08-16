@@ -1,8 +1,8 @@
 import { existsSync } from 'fs';
 import { parse } from 'path';
 
-import { C, G } from '../../lib/global';
-import Biffer from '../../lib/Biffer';
+import { C, G } from '../../lib/global.js';
+import Biffer from '../../lib/Biffer.js';
 
 
 const loadDataBase = function() {

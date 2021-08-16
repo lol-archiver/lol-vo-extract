@@ -1,11 +1,11 @@
 import { G } from '../../../lib/global.js';
 import Biffer from '../../../lib/Biffer.js';
 
-import HircSound from '../../entry/bnk/HircSound';
-import HircAction from '../../entry/bnk/HircAction';
-import HircEvent from '../../entry/bnk/HircEvent';
-import HircPool from '../../entry/bnk/HircPool';
-import HircSwitchContainer from '../../entry/bnk/HircSwitchContainer';
+import HircSound from '../../entry/bnk/HircSound.js';
+import HircAction from '../../entry/bnk/HircAction.js';
+import HircEvent from '../../entry/bnk/HircEvent.js';
+import HircPool from '../../entry/bnk/HircPool.js';
+import HircSwitchContainer from '../../entry/bnk/HircSwitchContainer.js';
 
 
 export default function parseEntry(type, id, B) {

@@ -1,4 +1,4 @@
-import Bundle from '../../entry/manifest/Bundle';
+import Bundle from '../../entry/manifest/Bundle.js';
 
 
 export default function parserBundle(biffer) {

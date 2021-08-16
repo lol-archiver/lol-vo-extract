@@ -1,4 +1,4 @@
-import as from 'assert';
+import AS from 'assert';
 
 import Biffer from '../../../lib/Biffer.js';
 
@@ -38,7 +38,7 @@ export default async function parseBody(manifests) {
 		manifest.chunks = {};
 		for(const bundle of manifest.bundles) {
 			for(const chunk of bundle.chunks) {
-				as(!manifest.chunks[chunk.id] || (manifest.chunks[chunk.id].size == chunk.size || manifest.chunks[chunk.id].targetSize == chunk.targetSize));
+				AS(!manifest.chunks[chunk.id] || (manifest.chunks[chunk.id].size == chunk.size || manifest.chunks[chunk.id].targetSize == chunk.targetSize));
 
 				manifest.chunks[chunk.id] = chunk;
 

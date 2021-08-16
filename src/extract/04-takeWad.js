@@ -1,12 +1,12 @@
-import { parse, resolve } from 'path';
 import { writeFileSync } from 'fs';
+import { parse, resolve } from 'path';
 
 import { ensureDirSync } from 'fs-extra';
 import { ungzip } from 'node-gzip';
 
-import { dirCache, G } from '../../lib/global';
-import Biffer from '../../lib/Biffer';
-import { unZstd } from '../../lib/Tool';
+import { dirCache, G } from '../../lib/global.js';
+import Biffer from '../../lib/Biffer.js';
+import { unZstd } from '../../lib/Tool.js';
 
 
 ensureDirSync('./_cache/extract');
