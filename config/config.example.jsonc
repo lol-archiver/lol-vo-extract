@@ -1,0 +1,19 @@
+{
+	// Extract Target: "{champion slot}|{min skinID or single skinID}|[{max skinID}]"
+	"target": "evelynn|24",
+	// Extract Language
+	"lang": "en_us",
+	// Extract Format: "wem|wav|ogg"
+	"format": "wav",
+	// Detect how to fetch WAD files: 0, use cache first; 1, force fetch file; 2, use client file
+	"useWADLevel": 1,
+	// Detect how to use SFX WAD files to improve in formatting events: 0, no SFX; 1, only asset; 2, all
+	"useSFXLevel": 0,
+	// Detect whether to force parsing of the base skin to improve in formatting events
+	"forceUseBase": false,
+	// Some external paths
+	"_path": {
+		"rextractorConsole": "D:/Tools/RavioliGameTools/RExtractorConsole.exe",
+		"gameVoices": "D:/Games/League of Legends"
+	}
+}

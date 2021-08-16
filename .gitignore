@@ -6,4 +6,5 @@ _texts
 _pools
 
 config.json
-config.js
+config.server.json
+config.log.json
