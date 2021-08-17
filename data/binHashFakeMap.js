@@ -1,6 +1,6 @@
 /* eslint-disable quote-props */
 
-module.exports = {
+export default {
 	mapFake: {
 		'180c3016': 'Aatrox',
 		'dbe3e6d1': 'Ahri',

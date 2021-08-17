@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	AttackChampion: '攻击:英雄',
 	BasicAttack: '普攻',
 

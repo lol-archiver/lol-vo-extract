@@ -1,8 +1,8 @@
-import { appendFileSync, resolve, removeSync } from 'fs';
-import { parse } from 'path';
+import { appendFileSync } from 'fs';
+import { parse, resolve } from 'path';
 
-import { map } from 'bluebird';
-import { ensureDirSync } from 'fs-extra';
+import Bluebird from 'bluebird';
+import FSX from 'fs-extra';
 import { decompress } from 'node-zstandard';
 
 import { G, dirCache } from '../../../lib/global.js';
@@ -39,13 +39,13 @@ export default class File {
 		for(const idBundle of setIDBundle) {
 			promises.push(fetchBundle(idBundle, version, cdn, counter).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
-		await map(promises, r => r, { concurrency: 45 });
+		await Bluebird.map(promises, r => r, { concurrency: 45 });
 
 		G.info('FileExtracter', `[${this.name}] AllFetched, UnZstding...`);
 
-		ensureDirSync(parse(pathSave).dir);
-		removeSync(pathSave);
-		removeSync(pathCacheZstd);
+		FSX.ensureDirSync(parse(pathSave).dir);
+		FSX.removeSync(pathSave);
+		FSX.removeSync(pathCacheZstd);
 
 		for(const chunk of this.fileChunks) {
 			const bid = ('0000000000000000' + chunk.idBundle.toString(16)).slice(-16).toUpperCase();

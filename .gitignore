@@ -1,10 +1,12 @@
 node_modules
 
-_cache
-_final
-_texts
-_pools
+/_cache
+/_final
+/_texts
+/_pools
 
-config.json
-config.server.json
-config.log.json
+/config/config.json
+/config/config.server.json
+/config/config.log.json
+
+/log/*

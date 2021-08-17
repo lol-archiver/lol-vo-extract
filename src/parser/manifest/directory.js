@@ -1,9 +1,9 @@
 import Directory from '../../entry/manifest/Directory.js';
-import parseTableEntry from './tableEntry.js';
+import TableEntryParser from './tableEntry.js';
 
 
-export default async function parseDirectory(biffer) {
-	const entry = parseTableEntry(biffer, [
+export default async function DirectoryParser(biffer) {
+	const entry = TableEntryParser(biffer, [
 		null,
 		null,
 		['id', '<Q'],

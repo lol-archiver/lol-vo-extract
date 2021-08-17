@@ -1,7 +1,7 @@
 import { appendFileSync, copyFileSync, readdirSync, readFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import { ensureDirSync } from 'fs-extra';
+import FSX from 'fs-extra';
 import Moment from 'moment';
 
 import { C, I, G, dirApp, dirCache } from '../../lib/global.js';
@@ -52,7 +52,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 
 				const pathFolder = resolve(dirApp, '_final', `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.region}@${C.lang}]`);
 
-				ensureDirSync(pathFolder);
+				FSX.ensureDirSync(pathFolder);
 
 				const eventsText = events.join('&');
 				const audioText = `[${nameSkin == '[Bad]' ? `${audioID}][${audioIDHex}` : audioIDHex}][${crc32File}].${C.format}`;

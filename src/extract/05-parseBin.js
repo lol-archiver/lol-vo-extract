@@ -3,19 +3,9 @@ import { parse } from 'path';
 
 import { C, G } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
+import baseData from '../../lib/BaseData.js';
 
-
-const loadDataBase = function() {
-	try {
-		return import(`../../data/BaseData/${C.lang}.json`);
-	}
-	catch(error) {
-		G.info(`[DataBase] Load {${C.lang}.json} Failed. Try to load {en_us.json}. Error: ${error.message}`);
-
-		return import(`../../data/BaseData/en_us.json`);
-	}
-};
-const dataBase = loadDataBase();
+const baseDataNow = baseData();
 
 export default function parseBin(binPath, indexSkin) {
 	if(!existsSync(binPath)) { return; }
@@ -40,7 +30,7 @@ export default function parseBin(binPath, indexSkin) {
 		idSkin = ~~subID;
 	}
 
-	const skin = dataBase[C.id].skins[idSkin];
+	const skin = baseDataNow[C.id].skins[idSkin];
 	if(!skin) {
 		if(binBiffer.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
 			G.info(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
@@ -72,14 +62,14 @@ export default function parseBin(binPath, indexSkin) {
 		isBase = idSkin == 0;
 
 		if(isBase) {
-			skinNameFinal = `${dataBase[C.id].title} ${dataBase[C.id].name}`;
+			skinNameFinal = `${baseDataNow[C.id].title} ${baseDataNow[C.id].name}`;
 		}
 
 
 		G.info(`\t[parseBin] Skin${idSkin} is Detected-skin "${skinNameFinal}"`);
 	}
 	else if(skin && typeof skin == 'number') {
-		const chromas = dataBase[C.id].skins[skin].chromas[idSkin];
+		const chromas = baseDataNow[C.id].skins[skin].chromas[idSkin];
 		const stage = chromas.stage;
 
 		if(stage) {

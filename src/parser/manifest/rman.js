@@ -1,7 +1,9 @@
 import AS from 'assert';
+import { resolve } from 'path';
 
 import Biffer from '../../../lib/Biffer.js';
-import { unZstd } from '../../../lib/Tool.js';
+import { dirCache } from '../../../lib/global.js';
+import { toHexL, unZstd } from '../../../lib/Tool.js';
 
 
 export default async function parseRman(manifests) {
@@ -22,6 +24,6 @@ export default async function parseRman(manifests) {
 
 		manifest.id = idManifest;
 
-		manifest.buffer = await unZstd(`./_cache/manifest/${manifest.version}-${manifest.id}-body.manifest`, bifferManifest.raw(length), true);
+		manifest.buffer = await unZstd(resolve(dirCache, 'manifest', `${manifest.version}-${toHexL(manifest.id, 0, false)}-body.manifest`), bifferManifest.raw(length), true);
 	}
 }

@@ -1,8 +1,9 @@
 import { createHash } from 'crypto';
-import { existsSync, readFileSync, resolve, writeFileSync } from 'fs';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 import Axios from 'axios';
+import joinURL from 'url-join';
 
 import { G, C } from '../../lib/global.js';
 
@@ -20,7 +21,7 @@ export default async function(id, version, cdn, counter) {
 		bufferBundle = readFileSync(pathBundle);
 	}
 	else {
-		const bundleURL = resolve(cdn, `channels/public/bundles/${bid}.bundle`);
+		const bundleURL = joinURL(cdn, `channels/public/bundles/${bid}.bundle`);
 
 		// L(`[Bundle-${bid}] fetch from '${bundleURL}'`);
 

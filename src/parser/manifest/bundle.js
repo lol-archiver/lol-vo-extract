@@ -1,7 +1,7 @@
 import Bundle from '../../entry/manifest/Bundle.js';
 
 
-export default function parserBundle(biffer) {
+export default function BundleParser(biffer) {
 	const [, sizeHeader, id] = biffer.unpack('<llQ');
 
 	// Skip remaining header part

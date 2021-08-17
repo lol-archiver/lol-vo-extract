@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@nuogz/hades': ^2.5.2
+  '@nuogz/hades': ^3.1.0
   '@nuogz/poseidon': ^4.0.0
   axios: ^0.21.1
   bluebird: ^3.7.2
@@ -12,10 +12,11 @@ specifiers:
   moment: ^2.29.1
   node-gzip: ^1.1.2
   node-zstandard: ^1.2.4
+  url-join: ^4.0.1
   xxhashjs: ^0.2.2
 
 dependencies:
-  '@nuogz/hades': 2.5.2
+  '@nuogz/hades': 3.1.0
   '@nuogz/poseidon': 4.0.0
   axios: 0.21.1
   bluebird: 3.7.2
@@ -25,6 +26,7 @@ dependencies:
   moment: 2.29.1
   node-gzip: 1.1.2
   node-zstandard: 1.2.4
+  url-join: 4.0.1
   xxhashjs: 0.2.2
 
 devDependencies:
@@ -84,12 +86,14 @@ packages:
     resolution: {integrity: sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==}
     dev: true
 
-  /@nuogz/hades/2.5.2:
-    resolution: {integrity: sha512-6J1fpV+0vxCSdyPXqgqbEOr9SFfh5XZxb2yoRDTDpb7UNBBETON5mKaVtFGY66DttvSzloGv8XzW1+AKTIj7hA==, tarball: https://npm.danor.app:443/@nuogz%2fhades/-/hades-2.5.2.tgz}
+  /@nuogz/hades/3.1.0:
+    resolution: {integrity: sha512-dAWIJvkCu52QvJyfIBp6Gr3RMrEUZ5RSLcnWEZTTACq5sEFrWwwNiULgCfPasZp78dpQMUVeXywCpZq92dTFmQ==, tarball: https://npm.danor.app:443/@nuogz%2fhades/-/hades-3.1.0.tgz}
     dependencies:
       chalk: 4.1.2
+      log-update: 4.0.0
       log4js: 6.3.0
       moment: 2.29.1
+      streamroller: 2.2.4
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -924,6 +928,10 @@ packages:
     dependencies:
       punycode: 2.1.1
     dev: true
+
+  /url-join/4.0.1:
+    resolution: {integrity: sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==}
+    dev: false
 
   /v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}

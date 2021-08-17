@@ -1,9 +1,9 @@
 import FileEntry from '../../entry/manifest/FileEntry.js';
-import parseTableEntry from './tableEntry.js';
+import TableEntryParser from './tableEntry.js';
 
 
-export default async function parserFileEntry(biffer) {
-	const entry = parseTableEntry(biffer, [
+export default async function FileEntryParser(biffer) {
+	const entry = TableEntryParser(biffer, [
 		null,
 		['chunks', 'offset'],
 		['id', '<Q'],

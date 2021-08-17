@@ -6,7 +6,7 @@ import fetchManifest from '../fetcher/manifest.js';
 import Manifest from '../entry/manifest/Manifest.js';
 
 import parseRman from '../parser/manifest/rman.js';
-import parseBody from '../parser/manifest/body.js';
+import BodyParse from '../parser/manifest/body.js';
 
 
 export default async function fetchWads(wadsToFetch) {
@@ -20,7 +20,7 @@ export default async function fetchWads(wadsToFetch) {
 
 	manifests.forEach((manifest, index) => manifest.buffer = buffersManifest[index]);
 	await parseRman(manifests);
-	await parseBody(manifests);
+	await BodyParse(manifests);
 
 	const files = manifests.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
 

@@ -1,10 +1,13 @@
-import { existsSync, readFileSync, resolve, writeFileSync } from 'fs';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
+import { resolve } from 'path';
 
 import Moment from 'moment';
 
 import { C, I, G, dirCache } from '../../lib/global.js';
 import { crc32, toHexL } from '../../lib/Tool.js';
+import baseData, { en_us } from '../../lib/BaseData.js';
 
+const baseDataNow = baseData();
 
 const findFriendly = function(name, map) {
 	let nameFormat = name.toLowerCase().replace(/[23]d/g, '');
@@ -20,13 +23,13 @@ const findFriendly = function(name, map) {
 	return arrTrans.join(':');
 };
 
-export default function saveEvents(mapAudioID_Event, arrAudioPackFile) {
+export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 	G.info(`[Main] Save Event info for dictaion`);
 
 	let mapFriendlyRaw;
 
 	try {
-		mapFriendlyRaw = import(`../../data/FriendlyName/${C.lang}`);
+		mapFriendlyRaw = (await import(`../../data/FriendlyName/${C.lang}.js`)).default;
 	}
 	catch(error) {
 		mapFriendlyRaw = {};
@@ -67,8 +70,8 @@ export default function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 		const hex = toHexL(audioID, 8);
 
-		const dict = import(`../../data/BaseData/${C.lang}.json`);
-		const dictEN = import(`../../data/BaseData/en_us.json`);
+		const dict = baseDataNow;
+		const dictEN = en_us;
 
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {

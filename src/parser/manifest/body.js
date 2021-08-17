@@ -1,18 +1,19 @@
 import AS from 'assert';
 
+import { G } from '../../../lib/global.js';
 import Biffer from '../../../lib/Biffer.js';
 
 import File from '../../entry/manifest/File.js';
 
-import parseTable from './table.js';
+import TableParser from './table.js';
 
-import parseBundle from './bundle.js';
-import parseLang from './lang.js';
-import parseFileEntry from './fileEntry.js';
-import parseDirectory from './Directory.js';
+import BundleParser from './bundle.js';
+import LangParser from './lang.js';
+import FileEntryParser from './fileEntry.js';
+import DirectoryParser from './directory.js';
 
 
-export default async function parseBody(manifests) {
+export default async function BodyParse(manifests) {
 	for(const manifest of manifests) {
 		const biffer = new Biffer(manifest.buffer);
 
@@ -26,12 +27,12 @@ export default async function parseBody(manifests) {
 		const offsets = d.map((v, i) => offsetsBase + 4 * i + v);
 
 		biffer.seek(offsets[0]);
-		manifest.bundles = await parseTable(biffer, parseBundle);
+		manifest.bundles = await TableParser(biffer, BundleParser);
 
 		biffer.seek(offsets[1]);
 
 		manifest.langs = {};
-		(await parseTable(biffer, parseLang)).forEach(lang => manifest.langs[lang.langID] = lang.lang);
+		(await TableParser(biffer, LangParser)).forEach(lang => manifest.langs[lang.langID] = lang.lang);
 
 		// Build a map of chunks, indexed by ID
 		// Some of ChunkIDs are duplicates, but they are always the same size
@@ -48,11 +49,11 @@ export default async function parseBody(manifests) {
 
 		biffer.seek(offsets[2]);
 
-		manifest.fileEntries = await parseTable(biffer, parseFileEntry);
+		manifest.fileEntries = await TableParser(biffer, FileEntryParser);
 
 		biffer.seek(offsets[3]);
 
-		const directories = await parseTable(biffer, parseDirectory);
+		const directories = await TableParser(biffer, DirectoryParser);
 		const directories_id = {};
 		for(const directory of directories) {
 			directories_id[directory.id] = directory;

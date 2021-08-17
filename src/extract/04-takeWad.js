@@ -1,15 +1,12 @@
 import { writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import { ensureDirSync } from 'fs-extra';
-import { ungzip } from 'node-gzip';
+import GZIP from 'node-gzip';
 
 import { dirCache, G } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
 import { unZstd } from '../../lib/Tool.js';
 
-
-ensureDirSync('./_cache/extract');
 
 export default async function extractWad(wadPath, takeMap) {
 	G.info(`[Main] Take game files from Wad [${parse(wadPath).base}]`);
@@ -56,7 +53,7 @@ export default async function extractWad(wadPath, takeMap) {
 				writeFileSync(pathSave, fileBuffer);
 			}
 			else if(type == 1) {
-				writeFileSync(pathSave, await ungzip(fileBuffer));
+				writeFileSync(pathSave, await GZIP.ungzip(fileBuffer));
 			}
 			else if(type == 2) {
 				throw 'unused extract';

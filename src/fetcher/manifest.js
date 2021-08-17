@@ -17,7 +17,7 @@ export default async function fetchManifest(urlManifest, version) {
 		return readFileSync(pathManifest);
 	}
 	else {
-		G.info('ManifestFetcher', 'detect' `will fetch manifest[${idManifest}] from [${urlManifest}]`);
+		G.info('ManifestFetcher', 'detect', 'will fetch manifest', `manifest [${idManifest}]`, `from [${urlManifest}]`);
 
 		try {
 			const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy, timeout: 1000 * 60 * 4 })).data;

@@ -1,8 +1,8 @@
-import { resolve } from 'fs';
+import { resolve } from 'path';
 
 import { emptyDirSync } from 'fs-extra';
 
-import { dirCache } from './lib/global.js';
+import { dirCache, } from './lib/global.js';
 
 import { pathWadVoice, pathWadChamp, wadsToFetch } from './src/extract/01-initFetch.js';
 import fetchWads from './src/extract/02-fetchWads.js';

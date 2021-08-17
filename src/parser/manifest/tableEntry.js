@@ -1,4 +1,4 @@
-export default function parseTableEntry(parser, typesKey) {
+export default function TableEntryParser(parser, typesKey) {
 	const result = {};
 
 	const posEntry = parser.tell();

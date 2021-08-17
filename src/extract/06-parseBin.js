@@ -1,6 +1,8 @@
 import { writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
+import FSX from 'fs-extra';
+
 import { G, I } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
 import { toHexL } from '../../lib/Tool.js';
@@ -13,13 +15,11 @@ import HircSwitchContainer from '../entry/bnk/HircSwitchContainer.js';
 import parseHircEntry from '../parser/bnk/hircEntry.js';
 
 
-let mapEventID;
+let mapEventID = {};
 try {
-	mapEventID = import(`../../data/EventIDMap/${I.slot}.json`);
+	mapEventID = FSX.readJsonSync(`../../data/EventIDMap/${I.slot}.json`);
 }
-catch(error) {
-	mapEventID = {};
-}
+catch(error) { void 0; }
 
 const fnv_1 = function(name) {
 	let h = 0x811c9dc5n;

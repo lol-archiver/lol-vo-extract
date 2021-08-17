@@ -2,7 +2,7 @@ import { execFileSync } from 'child_process';
 import { existsSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-import { emptyDirSync } from 'fs-extra';
+import FSX from 'fs-extra';
 
 import { C, I, G, dirCache } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
@@ -11,7 +11,7 @@ import Biffer from '../../lib/Biffer.js';
 const isSameTakeConfig = function() {
 	let isSameTakeConfig = false;
 	try {
-		const lastTakeConfig = import('../../_cache/lastTakeWpk.json');
+		const lastTakeConfig = FSX.readJsonSync('../../_cache/lastTakeWpk.json');
 
 		if(C.useWADLevel != 1 && lastTakeConfig &&
 			lastTakeConfig.champ == I.slot &&
@@ -51,12 +51,10 @@ export default function extractAudios(wpkFiles) {
 
 	if(isSameTakeConfig()) { G.info('\tSame Take audio config, skip...'); return; }
 
-	emptyDirSync(resolve(dirCache, 'audio'));
 
 	for(let wpkFile of wpkFiles) {
 		G.info(`\tConvert ${wpkFile} to ${C.format}`);
 
-		emptyDirSync(resolve(dirCache, 'audio', wpkFile));
 		if(C.format == 'wem') {
 			takeWpkRaw(wpkFile);
 		}

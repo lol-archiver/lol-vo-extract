@@ -1,6 +1,5 @@
-import URL from 'url';
-
 import Axios from 'axios';
+import joinURL from 'url-join';
 
 import { C, G } from '../../lib/global.js';
 
@@ -9,12 +8,12 @@ export default async function fetchEntry() {
 	if(C.server.manifest) {
 		G.info('EntryFetcher', 'detect', `manifest [${C.server.manifest}] version [${C.server.version || 1}]`);
 
-		return [[URL.resolve(C.server.cdn, `channels/public/releases/${C.server.manifest}.manifest`)], C.server.version || 1];
+		return [[joinURL(C.server.cdn, `channels/public/releases/${C.server.manifest}.manifest`)], C.server.version || 1];
 	}
 
-	const urlEntry = URL.resolve(C.server.sie, `/api/v1/products/lol/version-sets/${C.server.region}?q[artifact_type_id]=lol-game-client&q[platform]=windows`);
+	const urlEntry = joinURL(C.server.sie, `/api/v1/products/lol/version-sets/${C.server.region}?q[artifact_type_id]=lol-game-client&q[platform]=windows`);
 
-	G.info('EntryFetcher', `fetching...`);
+	G.infoU('EntryFetcher', `fetching...`);
 
 	const { data } = await Axios.get(urlEntry, { proxy: C.server.proxy, timeout: 1000 * 60 * 4 });
 
@@ -24,7 +23,7 @@ export default async function fetchEntry() {
 
 	const versionLatest = C.server.version || Math.max(...releases.map(release => ~~release.release.labels['riot:revision'].values[0]));
 
-	G.info('EntryFetcher', `latest [${content}] version [${versionLatest}]`);
+	G.infoD('EntryFetcher', `latest {${content}} version {${versionLatest}}`);
 
 	return [
 		data.releases
