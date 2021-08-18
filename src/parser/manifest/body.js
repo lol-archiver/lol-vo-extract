@@ -1,6 +1,5 @@
 import AS from 'assert';
 
-import { G } from '../../../lib/global.js';
 import Biffer from '../../../lib/Biffer.js';
 
 import File from '../../entry/manifest/File.js';

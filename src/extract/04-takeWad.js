@@ -9,7 +9,7 @@ import { unZstd } from '../../lib/Tool.js';
 
 
 export default async function extractWad(wadPath, takeMap) {
-	G.info(`[Main] Take game files from Wad [${parse(wadPath).base}]`);
+	G.info('WADExtractor',`extract game files from wad~{${parse(wadPath).base}}`);
 
 	const wadBiffer = new Biffer(wadPath);
 

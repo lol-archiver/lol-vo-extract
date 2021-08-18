@@ -24,7 +24,7 @@ const findFriendly = function(name, map) {
 };
 
 export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
-	G.info(`[Main] Save Event info for dictaion`);
+	G.info('EventSaver', 'save event');
 
 	let mapFriendlyRaw;
 
@@ -62,7 +62,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		}
 		else {
 			if(arrSrcCRC32.size > 1) {
-				G.info(`\t [WARING] Multi Take Audio File [${audioID}]`);
+				G.warn('EventSaver', 'save event', `found multi extract audio file ~{${audioID}}`);
 			}
 
 			crc32Src = [...arrSrcCRC32].join('|');
@@ -75,11 +75,11 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {
-				const slot = `[${String(C.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]`;
+				const slot = `[${String(I.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]`;
 
-				const dChampion = dict[C.id];
+				const dChampion = dict[I.id];
 				const dSkinCN = dChampion.skins[eventInfo.index];
-				const dSkinEN = dictEN[C.id].skins[eventInfo.index];
+				const dSkinEN = dictEN[I.id].skins[eventInfo.index];
 
 				const skin = `${slot}${eventInfo.skinName.replace(/:/g, '')}` +
 					`||${slot} ${dChampion.slot}:${dChampion.name}` + (eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);

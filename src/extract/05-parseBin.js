@@ -1,7 +1,7 @@
 import { existsSync } from 'fs';
 import { parse } from 'path';
 
-import { C, G } from '../../lib/global.js';
+import { I, G } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
 import baseData from '../../lib/BaseData.js';
 
@@ -10,7 +10,7 @@ const baseDataNow = baseData();
 export default function parseBin(binPath, indexSkin) {
 	if(!existsSync(binPath)) { return; }
 
-	// G.info(`[parseBin] [${_pa.parse(binPath).base}]`);
+	// G.info('BINParser', `[${_pa.parse(binPath).base}]`);
 
 	const binBiffer = new Biffer(binPath);
 
@@ -26,14 +26,14 @@ export default function parseBin(binPath, indexSkin) {
 	}
 	else {
 		const subID = parse(binPath).base.match(/\d+/)[0];
-		// idSkin = `${C.id}${subID.padStart(3, '0')}`;
+		// idSkin = `${I.id}${subID.padStart(3, '0')}`;
 		idSkin = ~~subID;
 	}
 
-	const skin = baseDataNow[C.id].skins[idSkin];
+	const skin = baseDataNow[I.id].skins[idSkin];
 	if(!skin) {
 		if(binBiffer.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
-			G.info(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
+			G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[chroma] skip`);
 
 			return;
 		}
@@ -43,16 +43,16 @@ export default function parseBin(binPath, indexSkin) {
 			if(clazz == 1) {
 				skinNameFinal = idSkin;
 
-				G.info(`\t[parseBin] Skin${idSkin} is Unknown-skin "${skinNameFinal}"`);
+				G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[unknown Skin]~{${skinNameFinal}}`);
 			}
 			else if(clazz == 2) {
-				G.info(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
+				G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[chroma] skip`);
 
 				return;
 			}
 		}
 
-		G.info(`\t[parseBin] Skin${idSkin} is Undetected. skip...`);
+		G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[undetected] skip`);
 
 		return;
 	}
@@ -62,23 +62,23 @@ export default function parseBin(binPath, indexSkin) {
 		isBase = idSkin == 0;
 
 		if(isBase) {
-			skinNameFinal = `${baseDataNow[C.id].title} ${baseDataNow[C.id].name}`;
+			skinNameFinal = `${baseDataNow[I.id].title} ${baseDataNow[I.id].name}`;
 		}
 
 
-		G.info(`\t[parseBin] Skin${idSkin} is Detected-skin "${skinNameFinal}"`);
+		G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[skin]~{${skinNameFinal}}`);
 	}
 	else if(skin && typeof skin == 'number') {
-		const chromas = baseDataNow[C.id].skins[skin].chromas[idSkin];
+		const chromas = baseDataNow[I.id].skins[skin].chromas[idSkin];
 		const stage = chromas.stage;
 
 		if(stage) {
 			skinNameFinal = chromas.name;
 
-			G.info(`\t[parseBin] Skin${idSkin} is Quest-skin "${skinNameFinal}"`);
+			G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[quest-skin]~{${skinNameFinal}}`);
 		}
 		else {
-			G.info(`\t[parseBin] Skin${idSkin} is Chroma, skip...`);
+			G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[chroma] skip`);
 
 			return;
 		}
@@ -119,7 +119,7 @@ export default function parseBin(binPath, indexSkin) {
 					eventNameShort.unshift(action);
 				}
 				else {
-					G.info('Unkown Event Name Format', eventName);
+					G.info('BINParser', `parse [event-name]`, `[Unkown]~{${eventName}}`);
 				}
 
 				setEventPoolName.add(eventPoolName);
@@ -135,7 +135,7 @@ export default function parseBin(binPath, indexSkin) {
 		}
 	}
 
-	if(setEventPoolName.size > 1) { G.info(`\t[EventPool] ${[...setEventPoolName].join(', ')}`); }
+	if(setEventPoolName.size > 1) { G.info('BINParser', '[EventPool]', `${[...setEventPoolName].join(', ')}`); }
 
 	return arrEvent;
 }

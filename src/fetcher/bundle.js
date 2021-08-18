@@ -15,8 +15,7 @@ export default async function(id, version, cdn, counter) {
 
 	let bufferBundle;
 	if(existsSync(pathBundle)) {
-		// L(`[Bundle-${bid}] cache exists, use cache.`);
-		++counter.now;
+		G.infoU('BundleFetcher', `fetch bundle~{${bid}}~{${++counter.now}/${counter.max}}`, `cache founded`);
 
 		bufferBundle = readFileSync(pathBundle);
 	}
@@ -33,14 +32,14 @@ export default async function(id, version, cdn, counter) {
 				const { data, headers } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.server.proxy, timeout: 1000 * 60 * 4 });
 
 				if(data.length != headers['content-length']) {
-					G.error('BundleFetcher', `[${bid}] fetched, but length check failed, refetched, times: [${timesFetched}]`);
+					G.errorU('BundleFetcher', `fetch bundle~{${bid}}`, `content-length match failed. remains~{${timesFetched}}`);
 				}
 				else {
 					const hash = createHash('md5');
 					hash.update(data);
 
 					if(headers.etag.toLowerCase() != `"${hash.digest('hex')}"`.toLowerCase()) {
-						G.error('BundleFetcher', `[${bid}] fetched, but etag check failed, refetched, times: [${timesFetched}]`);
+						G.errorU('BundleFetcher', `fetch bundle~{${bid}}`, `etag match failed. remains~{${timesFetched}}`);
 					}
 					else {
 						passFetched = true;
@@ -50,19 +49,19 @@ export default async function(id, version, cdn, counter) {
 				if(passFetched) {
 					bufferBundle = data;
 
-					G.info('BundleFetcher', `[${bid}] (${++counter.now}/${counter.max}) fetched, save at [${pathBundle}], size [${bufferBundle.length}]`);
+					G.infoU('BundleFetcher', `fetch bundle~{${bid}}~{${++counter.now}/${counter.max}}`, `fetched`);
 					writeFileSync(pathBundle, bufferBundle);
 
 					break;
 				}
 			}
 			catch(error) {
-				G.error('BundleFetcher', `[${bid}] fetch failed, ${error.message}, will refetch, times [${timesFetched}]`);
+				G.errorU('BundleFetcher', `fetch bundle~{${bid}}`, error, `remains~{${timesFetched}}`);
 			}
 		}
 
 		if(!passFetched) {
-			throw G.error('BundleFetcher', `[${bid}] fetch failed finally, over max fetch times`);
+			throw G.error('BundleFetcher', `fetch bundle~{${bid}}`, `failed finally. over max times`);
 		}
 	}
 

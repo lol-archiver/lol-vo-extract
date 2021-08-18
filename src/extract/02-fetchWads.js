@@ -38,7 +38,7 @@ export default async function fetchWads(wadsToFetch) {
 		}
 	}
 
-	G.info('WadFetcher', 'fetch wads from CDN', '✔ ');
+	G.info('WadFetcher', 'fetch and extract wads', '✔ ');
 
 	return filesFetched;
 }

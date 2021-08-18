@@ -8,7 +8,7 @@ export default async function TableParser(biffer, parserItem) {
 
 	for(let i = 1; i <= count; i++) {
 		if(i % 1000 == 0 || i == count || i == 1) {
-			G.infoU(parserItem.name, 'parsing...', `{${i}/${count}}`);
+			G.infoU('TableParser', `${parserItem.name}~{${i}/${count}}`, `parsing...`);
 		}
 
 		const pos = biffer.tell();
@@ -21,7 +21,7 @@ export default async function TableParser(biffer, parserItem) {
 		biffer.seek(pos + 4);
 	}
 
-	G.infoD(parserItem.name, 'parsed', '✔ ');
+	G.infoD('TableParser', parserItem.name, '✔ ');
 
 	return items;
 }

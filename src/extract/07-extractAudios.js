@@ -11,13 +11,13 @@ import Biffer from '../../lib/Biffer.js';
 const isSameTakeConfig = function() {
 	let isSameTakeConfig = false;
 	try {
-		const lastTakeConfig = FSX.readJsonSync('../../_cache/lastTakeWpk.json');
+		const lastTakeConfig = FSX.readJsonSync(resolve(dirCache, 'lastTakeWpk.json'));
 
 		if(C.useWADLevel != 1 && lastTakeConfig &&
-			lastTakeConfig.champ == I.slot &&
+			lastTakeConfig.slot == I.slot &&
 			lastTakeConfig.lang == C.lang &&
 			lastTakeConfig.format == C.format &&
-			lastTakeConfig.detect.sort().join(',') == C.idsSkin.sort().join(',')
+			lastTakeConfig.detect.sort().join(',') == I.idsSkin.sort().join(',')
 		) {
 			isSameTakeConfig = true;
 		}
@@ -47,13 +47,10 @@ const takeWpkRaw = function(wpkFile) {
 };
 
 export default function extractAudios(wpkFiles) {
-	G.info(`[Main] Extract audio files from Wpk/Bnk`);
-
-	if(isSameTakeConfig()) { G.info('\tSame Take audio config, skip...'); return; }
-
+	if(isSameTakeConfig()) { G.infoD('AudioExtractor', 'same extract-config founded', 'skip'); return; }
 
 	for(let wpkFile of wpkFiles) {
-		G.info(`\tConvert ${wpkFile} to ${C.format}`);
+		G.infoU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `extracting...`);
 
 		if(C.format == 'wem') {
 			takeWpkRaw(wpkFile);
@@ -67,17 +64,19 @@ export default function extractAudios(wpkFiles) {
 						`/sf:${C.format}`
 					], { timeout: 1000 * 60 * 10 });
 				} catch(error) {
-					G.info(`[Error] Exec File Error: ${error.message}`);
+					G.errorU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `exec ~[Rextractor]`, error);
 				}
 			}
 			else {
-				G.info(`[Error] Bad Path RextractorConsole: ${C.path.rextractorConsole}`);
+				G.errorU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `~[Rextractor] not exists`, `path~{${C.path.rextractorConsole}}`);
 			}
 		}
 		else {
-			G.info(`[Error] Bad Format to Convert: ${C.format}, skip...`);
+			G.errorU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `unknown format~{${C.format}}`, 'skip');
 		}
+
+		G.infoD('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, '✔ ');
 	}
 
-	writeFileSync(resolve(dirCache, 'lastTakeWpk.json'), JSON.stringify({ champ: I.slot, lang: C.lang, format: C.format, detect: C.idsSkin }));
+	writeFileSync(resolve(dirCache, 'lastTakeWpk.json'), JSON.stringify({ slot: I.slot, lang: C.lang, format: C.format, detect: I.idsSkin }));
 }

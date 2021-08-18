@@ -59,10 +59,10 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll, hircID) {
 		}
 	}
 	else if(!entryParsed) {
-		G.warn(`[WARNING] Unknown action sound entry ${hircID}`);
+		G.warn('BNKParser', 'unknown ~[action sound entry]', hircID);
 	}
 	else {
-		G.warn(`[WARNING] Unknown action sound entry Type`);
+		G.warn('BNKParser', 'unknown ~[action sound entry]', entryParsed);
 	}
 
 	return result;
@@ -79,7 +79,7 @@ const getEventFull = function(mapHash_EventName, hircEventID) {
 };
 
 export default async function parseBnk(bnkPath, eventNameSet) {
-	G.info(`[Main] Read Bnk [${parse(bnkPath).base}]`);
+	G.infoU('BNKParser', `parse BNK~{${parse(bnkPath).base}}`, 'parsing...');
 
 	const bnkBiffer = new Biffer(bnkPath);
 
@@ -107,7 +107,7 @@ export default async function parseBnk(bnkPath, eventNameSet) {
 			bnkBiffer.skip(sectionSize);
 
 			if(magic != 'BKHD') {
-				G.info(magic);
+				G.warn('BNKParser', 'unknown ~[BNK magic]', `~{${magic}}`);
 			}
 		}
 	}
@@ -127,7 +127,7 @@ export default async function parseBnk(bnkPath, eventNameSet) {
 		let eventFull = getEventFull(mapHash_EventName, hircEvent.id);
 
 		if(!eventFull) {
-			G.info(`[WARNING] Unknown [Hirc Event ID] ${hircEvent.id}`);
+			G.warn('BNKParser', 'unknown ~[Hirc Event ID]', `~{${hircEvent.id}}`);
 
 			eventFull = hircEvent.id;
 		}
@@ -171,6 +171,8 @@ export default async function parseBnk(bnkPath, eventNameSet) {
 		resolve('_texts', '_pools', parse(bnkPath).base + '.json'),
 		JSON.stringify(hircsPool, null, '\t')
 	);
+
+	G.infoD('BNKParser', `parse BNK~{${parse(bnkPath).base}}`, '✔ ');
 
 	return mapAudioID_EventName;
 }

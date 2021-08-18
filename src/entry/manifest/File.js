@@ -30,7 +30,9 @@ export default class File {
 
 		this.fileChunks.forEach(chunk => setIDBundle.add(chunk.idBundle));
 
-		G.info('FileExtracter', `[${this.name}] length [${setIDBundle.size}]`);
+		const parseInfo = parse(this.name);
+
+		G.info('FileExtracter', `extract file~{${parseInfo.base}}`, `bundle-length~{${setIDBundle.size}}`);
 
 		const bundleBuffer = {};
 
@@ -41,7 +43,7 @@ export default class File {
 		}
 		await Bluebird.map(promises, r => r, { concurrency: 45 });
 
-		G.info('FileExtracter', `[${this.name}] AllFetched, UnZstding...`);
+		G.infoU('FileExtracter', `extract file~{${parseInfo.base}}`, `bundle-length~{${setIDBundle.size}} all fetched, unZstding...`);
 
 		FSX.ensureDirSync(parse(pathSave).dir);
 		FSX.removeSync(pathSave);
@@ -57,6 +59,12 @@ export default class File {
 			appendFileSync(pathCacheZstd, parser.raw(chunk.size));
 		}
 
-		return new Promise((resolve, reject) => decompress(pathCacheZstd, pathSave, err => err ? reject(err) : resolve(pathSave)));
+		return new Promise((resolve, reject) => decompress(pathCacheZstd, pathSave, error => {
+			if(error) { reject(error); }
+
+			G.infoD('FileExtracter', `extract file~{${parseInfo.base}}`, '✔ ');
+
+			resolve(pathSave);
+		}));
 	}
 }

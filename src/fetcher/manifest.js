@@ -12,24 +12,23 @@ export default async function fetchManifest(urlManifest, version) {
 	const pathManifest = join('./_cache/manifest', `${version}-${idManifest}.manifest`);
 
 	if(existsSync(pathManifest)) {
-		G.info('ManifestFetcher', 'detect', `manifest[${idManifest}] exists a cache, use cache first`);
+		G.infoD('ManifestFetcher', `fetch [manifest]~{${idManifest}}`, `cache founded`);
 
 		return readFileSync(pathManifest);
 	}
 	else {
-		G.info('ManifestFetcher', 'detect', 'will fetch manifest', `manifest [${idManifest}]`, `from [${urlManifest}]`);
+		G.infoU('ManifestFetcher', `fetch [manifest]~{${idManifest}}`, 'fetching...', `url~{${urlManifest}}`);
 
 		try {
 			const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy, timeout: 1000 * 60 * 4 })).data;
 
 			writeFileSync(pathManifest, bufferManifest);
-
-			G.info('ManifestFetcher', `manifest[${idManifest}] fetched, saved at [${pathManifest}], size [${bufferManifest.length}]`);
+			G.infoD('ManifestFetcher', `fetch [manifest]~{${idManifest}}`, '✔ ', `save at~{${pathManifest}} size~{${bufferManifest.length}}`);
 
 			return bufferManifest;
 		}
 		catch(error) {
-			G.info('ManifestFetcher', `manifest[${idManifest}] fetch error [${error.message || error}]`);
+			G.errorD('ManifestFetcher', `fetch [manifest]~{${idManifest}}`, error);
 
 			process.exit(1);
 		}

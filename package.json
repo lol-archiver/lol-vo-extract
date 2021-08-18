@@ -7,7 +7,7 @@
 	"main": "index.js",
 	"type": "module",
 	"dependencies": {
-		"@nuogz/hades": "^3.1.0",
+		"@nuogz/hades": "^3.3.0",
 		"@nuogz/poseidon": "^4.0.0",
 		"axios": "^0.21.1",
 		"bluebird": "^3.7.2",

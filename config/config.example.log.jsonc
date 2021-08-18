@@ -1,4 +1,7 @@
 {
 	"name": "lol-vo-extract",
-	"level": "all"
+	"level": "all",
+	"option": {
+		"lang": "en_us"
+	}
 }

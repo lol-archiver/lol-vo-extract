@@ -3,7 +3,6 @@ import { resolve } from 'path';
 
 import { C, I, G, dirApp } from '../../lib/global.js';
 
-
 const detectFetch = function(wadsToFetch, nameWad, pathWad, isUseClient) {
 	const isExist = existsSync(pathWad);
 
@@ -32,7 +31,7 @@ const wadsToFetch = [];
 detectFetch(wadsToFetch, nameWadVoice, pathWadVoice, isUseClient);
 detectFetch(wadsToFetch, nameWadChamp, pathWadChamp, isUseClient);
 
-G.info('FetchIniter', `init`, '✔ ');
+G.info('FetchIniter', `fetch info`, '✔ ', ...wadsToFetch.map(i => `file~{${i[0]}}`));
 
 
 export { pathWadVoice, pathWadChamp, wadsToFetch, };

@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@nuogz/hades': ^3.1.0
+  '@nuogz/hades': ^3.3.0
   '@nuogz/poseidon': ^4.0.0
   axios: ^0.21.1
   bluebird: ^3.7.2
@@ -16,7 +16,7 @@ specifiers:
   xxhashjs: ^0.2.2
 
 dependencies:
-  '@nuogz/hades': 3.1.0
+  '@nuogz/hades': 3.3.0
   '@nuogz/poseidon': 4.0.0
   axios: 0.21.1
   bluebird: 3.7.2
@@ -86,8 +86,8 @@ packages:
     resolution: {integrity: sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==}
     dev: true
 
-  /@nuogz/hades/3.1.0:
-    resolution: {integrity: sha512-dAWIJvkCu52QvJyfIBp6Gr3RMrEUZ5RSLcnWEZTTACq5sEFrWwwNiULgCfPasZp78dpQMUVeXywCpZq92dTFmQ==, tarball: https://npm.danor.app:443/@nuogz%2fhades/-/hades-3.1.0.tgz}
+  /@nuogz/hades/3.3.0:
+    resolution: {integrity: sha512-aWqJeTQ1z1DWxGhmFbMcmul27V57qyZN56eFVdWdxBCqbLOEqH8qZQ/ryMTN73/hLSXNHHIg/OgJC2VgJlMVFg==, tarball: https://npm.danor.app:443/@nuogz%2fhades/-/hades-3.3.0.tgz}
     dependencies:
       chalk: 4.1.2
       log-update: 4.0.0

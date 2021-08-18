@@ -1,4 +1,4 @@
-import { appendFileSync, copyFileSync, readdirSync, readFileSync } from 'fs';
+import { appendFileSync, copyFileSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
 import FSX from 'fs-extra';
@@ -9,16 +9,23 @@ import { crc32, toHexL } from '../../lib/Tool.js';
 
 
 export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
-	G.info(`[Main] Copy audio file`);
-
+	G.infoU('AudioCopier', 'copy audio', 'coping...');
 
 	for(const audioPackFile of arrAudioPackFile) {
 		const copyWhileEmpty = audioPackFile.startsWith('sfx') ? (C.useSFXLevel >= 2 ? true : false) : true;
 
-		for(let audioFile of readdirSync(resolve(dirCache, 'audio', audioPackFile))) {
+		const pathDir = resolve(dirCache, 'audio', audioPackFile);
+
+		if(!existsSync(pathDir)) {
+			G.warn('AudioCopier', 'copy audio', `path~{${pathDir}} not exists`);
+
+			continue;
+		}
+
+		for(let audioFile of readdirSync(resolve(pathDir))) {
 			const audioID = parse(audioFile).name;
 			const audioIDHex = toHexL(audioID, 8);
-			const src = resolve(dirCache, 'audio', audioPackFile, `${audioID}.${C.format}`);
+			const src = resolve(pathDir, `${audioID}.${C.format}`);
 
 			const events_nameSkin = {};
 			const events_audioID = mapAudioID_Event[audioID] || [];
@@ -79,4 +86,6 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 			}
 		}
 	}
+
+	G.infoD('AudioCopier', 'copy audio', '✔ ');
 }

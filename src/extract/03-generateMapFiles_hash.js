@@ -15,7 +15,7 @@ const genArrPathSoundBank = function(usage, lang, champion, index, version = '20
 };
 
 export default function genNameFiles_hash() {
-	G.info(`[Main] Generate a name map to in-wad files, indexed by path-hashes`);
+	G.info('HashGenerator', 'generate a name map to in-wad files, indexed by path-hashes');
 
 	const nameFiles_hash = {};
 
