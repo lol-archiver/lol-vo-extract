@@ -2,54 +2,26 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"type": "node",
+			"type": "pwa-node",
 			"request": "launch",
-			"name": "[Main] VO Extract",
-			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal",
+			"name": "Extract",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
 			"program": "${workspaceFolder}/index.js",
-			"skipFiles": [
-				"<node_internals>/**"
-			]
-		},
-
-		{
-			"type": "node",
-			"request": "launch",
-			"name": "[Side] RSTConvert",
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/rstc.js",
-			"skipFiles": [
-				"<node_internals>/**"
-			]
+			"console": "integratedTerminal"
 		},
 		{
-			"type": "node",
+			"type": "pwa-node",
 			"request": "launch",
-			"name": "[Side] Chromas",
-			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/chromas.js",
+			"name": "ConvertBaseData",
 			"skipFiles": [
 				"<node_internals>/**"
-			]
-		},
-		{
-			"type": "node",
-			"request": "launch",
-			"name": "[Side] Find",
+			],
+			"program": "${workspaceFolder}/side/convertBaseData.js",
 			"runtimeExecutable": "node.exe",
-			// "console": "integratedTerminal",
-			"program": "${workspaceFolder}/side/Find.js",
-			"skipFiles": [
-				"<node_internals>/**"
-			]
+			"console": "integratedTerminal"
 		},
-		{
-			"type": "node",
-			"request": "launch",
-			"name": "bnk.js",
-			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/bnk.js"
-		}
 	]
 }

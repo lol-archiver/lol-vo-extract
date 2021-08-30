@@ -438,7 +438,85 @@
 			"31": 25,
 			"32": 25,
 			"33": 25,
-			"34": 25
+			"34": 25,
+			"35": {
+				"id": 35,
+				"name": "Pentakill III: Lost Chapter Olaf",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Pentakill III: Lost Chapter Olaf",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Pentakill III: Lost Chapter Olaf",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Pentakill III: Lost Chapter Olaf",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Pentakill III: Lost Chapter Olaf",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Pentakill III: Lost Chapter Olaf",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Pentakill III: Lost Chapter Olaf",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Pentakill III: Lost Chapter Olaf",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Pentakill III: Lost Chapter Olaf",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35
 		},
 		"spells": {
 			"p": "Berserker Rage",
@@ -866,7 +944,94 @@
 					}
 				}
 			},
-			"24": 23
+			"24": 23,
+			"25": {
+				"id": 25,
+				"name": "Crime City Nightmare Twisted Fate",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Crime City Nightmare Twisted Fate",
+						"colors": [
+							"#181121",
+							"#53022D"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25,
+			"34": 25
 		},
 		"spells": {
 			"p": "Loaded Dice",
@@ -1457,7 +1622,7 @@
 						"name": "Prestigious LeBlanc",
 						"colors": [
 							"#73BFBE",
-							"#000000"
+							"#73BFBE"
 						]
 					}
 				}
@@ -1615,6 +1780,14 @@
 							"#2756CE",
 							"#2756CE"
 						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Coven LeBlanc",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
 					}
 				}
 			},
@@ -1658,7 +1831,13 @@
 			},
 			"30": 29,
 			"31": 29,
-			"32": 29
+			"32": 29,
+			"33": {
+				"id": 33,
+				"name": "Coven LeBlanc Prestige Edition",
+				"chromas": {}
+			},
+			"34": 20
 		},
 		"spells": {
 			"p": "Mirror Image",
@@ -2401,7 +2580,85 @@
 			"29": 24,
 			"30": 24,
 			"31": 24,
-			"32": 24
+			"32": 24,
+			"33": {
+				"id": 33,
+				"name": "Pentakill III: Lost Chapter Kayle",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Pentakill III: Lost Chapter Kayle",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Pentakill III: Lost Chapter Kayle",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Pentakill III: Lost Chapter Kayle",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Pentakill III: Lost Chapter Kayle",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Pentakill III: Lost Chapter Kayle",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Pentakill III: Lost Chapter Kayle",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Pentakill III: Lost Chapter Kayle",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Pentakill III: Lost Chapter Kayle",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33
 		},
 		"spells": {
 			"p": "Divine Ascent",
@@ -4498,7 +4755,12 @@
 			"36": 33,
 			"37": 33,
 			"38": 33,
-			"39": 33
+			"39": 33,
+			"40": {
+				"id": 40,
+				"name": "Hextech Tristana",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Draw a Bead",
@@ -4733,7 +4995,94 @@
 			"31": 16,
 			"32": 16,
 			"33": 16,
-			"34": 16
+			"34": 16,
+			"35": {
+				"id": 35,
+				"name": "Old God Warwick",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Old God Warwick",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Old God Warwick",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Old God Warwick",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Old God Warwick",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Old God Warwick",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Old God Warwick",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Old God Warwick",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Old God Warwick",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Old God Warwick",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35,
+			"44": 35
 		},
 		"spells": {
 			"p": "Eternal Hunger",
@@ -5442,7 +5791,94 @@
 			"28": 23,
 			"29": 23,
 			"30": 23,
-			"31": 23
+			"31": 23,
+			"32": {
+				"id": 32,
+				"name": "Coven Ashe",
+				"chromas": {
+					"33": {
+						"id": 33,
+						"name": "Coven Ashe",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Coven Ashe",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Coven Ashe",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Coven Ashe",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Coven Ashe",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Coven Ashe",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Coven Ashe",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Coven Ashe",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Coven Ashe",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"33": 32,
+			"34": 32,
+			"35": 32,
+			"36": 32,
+			"37": 32,
+			"38": 32,
+			"39": 32,
+			"40": 32,
+			"41": 32
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -6060,6 +6496,14 @@
 							"#27211C",
 							"#27211C"
 						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Coven Morgana",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
 					}
 				}
 			},
@@ -6074,7 +6518,8 @@
 			"35": 11,
 			"36": 11,
 			"37": 11,
-			"38": 11
+			"38": 11,
+			"40": 26
 		},
 		"spells": {
 			"p": "Soul Siphon",
@@ -6540,8 +6985,63 @@
 			"24": {
 				"id": 24,
 				"name": "Coven Evelynn",
-				"chromas": {}
-			}
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Coven Evelynn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Coven Evelynn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Coven Evelynn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Coven Evelynn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Coven Evelynn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Coven Evelynn",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24
 		},
 		"spells": {
 			"p": "Demon Shade",
@@ -7009,7 +7509,85 @@
 			"13": 10,
 			"14": 10,
 			"15": 10,
-			"16": 10
+			"16": 10,
+			"17": {
+				"id": 17,
+				"name": "Pentakill III: Lost Chapter Karthus",
+				"chromas": {
+					"18": {
+						"id": 18,
+						"name": "Pentakill III: Lost Chapter Karthus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Pentakill III: Lost Chapter Karthus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Pentakill III: Lost Chapter Karthus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Pentakill III: Lost Chapter Karthus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Pentakill III: Lost Chapter Karthus",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Pentakill III: Lost Chapter Karthus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Pentakill III: Lost Chapter Karthus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Pentakill III: Lost Chapter Karthus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"18": 17,
+			"19": 17,
+			"20": 17,
+			"21": 17,
+			"22": 17,
+			"23": 17,
+			"24": 17,
+			"25": 17
 		},
 		"spells": {
 			"p": "Death Defied",
@@ -7301,7 +7879,7 @@
 						"id": 13,
 						"name": "Surprise Party Amumu",
 						"colors": [
-							"#C1F2E1",
+							"#C1F2FF",
 							"#C1F2FF"
 						]
 					},
@@ -7916,7 +8494,85 @@
 			"23": 17,
 			"24": 17,
 			"25": 17,
-			"26": 17
+			"26": 17,
+			"27": {
+				"id": 27,
+				"name": "Divine Phoenix Anivia",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27
 		},
 		"spells": {
 			"p": "Rebirth",
@@ -8103,7 +8759,94 @@
 			"19": 15,
 			"20": 15,
 			"21": 15,
-			"22": 15
+			"22": 15,
+			"23": {
+				"id": 23,
+				"name": "Crime City Nightmare Shaco",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Crime City Nightmare Shaco",
+						"colors": [
+							"#181121",
+							"#53022D"
+						]
+					}
+				}
+			},
+			"24": 23,
+			"25": 23,
+			"26": 23,
+			"27": 23,
+			"28": 23,
+			"29": 23,
+			"30": 23,
+			"31": 23,
+			"32": 23
 		},
 		"spells": {
 			"p": "Backstab",
@@ -8486,7 +9229,85 @@
 			"22": 17,
 			"23": 17,
 			"24": 17,
-			"25": 17
+			"25": 17,
+			"26": {
+				"id": 26,
+				"name": "Pentakill III: Lost Chapter Sona",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Pentakill III: Lost Chapter Sona",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Pentakill III: Lost Chapter Sona",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Pentakill III: Lost Chapter Sona",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Pentakill III: Lost Chapter Sona",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Pentakill III: Lost Chapter Sona",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Pentakill III: Lost Chapter Sona",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Pentakill III: Lost Chapter Sona",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Pentakill III: Lost Chapter Sona",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26
 		},
 		"spells": {
 			"p": "Power Chord",
@@ -9298,7 +10119,7 @@
 						"name": "Dreadnova Gangplank",
 						"colors": [
 							"#27211C",
-							"#272100"
+							"#27211C"
 						]
 					}
 				}
@@ -11553,7 +12374,94 @@
 					}
 				}
 			},
-			"26": 25
+			"26": 25,
+			"27": {
+				"id": 27,
+				"name": "Old God Malphite",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Old God Malphite",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Old God Malphite",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Old God Malphite",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Old God Malphite",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Old God Malphite",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Old God Malphite",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Old God Malphite",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Old God Malphite",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Old God Malphite",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27,
+			"36": 27
 		},
 		"spells": {
 			"p": "Granite Shield",
@@ -11910,11 +12818,11 @@
 			},
 			"7": {
 				"id": 7,
-				"name": "Elderwood Nocturne",
+				"name": "Old God Nocturne",
 				"chromas": {
 					"8": {
 						"id": 8,
-						"name": "Elderwood Nocturne",
+						"name": "Old God Nocturne",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -11922,7 +12830,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Elderwood Nocturne",
+						"name": "Old God Nocturne",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -11930,7 +12838,7 @@
 					},
 					"10": {
 						"id": 10,
-						"name": "Elderwood Nocturne",
+						"name": "Old God Nocturne",
 						"colors": [
 							"#2377FF",
 							"#2377FF"
@@ -11938,7 +12846,7 @@
 					},
 					"11": {
 						"id": 11,
-						"name": "Elderwood Nocturne",
+						"name": "Old God Nocturne",
 						"colors": [
 							"#6ABBEE",
 							"#6ABBEE"
@@ -11946,7 +12854,7 @@
 					},
 					"12": {
 						"id": 12,
-						"name": "Elderwood Nocturne",
+						"name": "Old God Nocturne",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -11954,7 +12862,7 @@
 					},
 					"13": {
 						"id": 13,
-						"name": "Elderwood Nocturne",
+						"name": "Old God Nocturne",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -11962,7 +12870,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "Elderwood Nocturne",
+						"name": "Old God Nocturne",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -11970,7 +12878,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "Elderwood Nocturne",
+						"name": "Old God Nocturne",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -14279,7 +15187,94 @@
 			"14": 9,
 			"15": 9,
 			"16": 9,
-			"17": 9
+			"17": 9,
+			"18": {
+				"id": 18,
+				"name": "Coven Cassiopeia",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Coven Cassiopeia",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"19": 18,
+			"20": 18,
+			"21": 18,
+			"22": 18,
+			"23": 18,
+			"24": 18,
+			"25": 18,
+			"26": 18,
+			"27": 18
 		},
 		"spells": {
 			"p": "Serpentine Grace",
@@ -16118,7 +17113,85 @@
 			"19": 13,
 			"20": 13,
 			"21": 13,
-			"22": 13
+			"22": 13,
+			"23": {
+				"id": 23,
+				"name": "Pentakill III: Lost Chapter Mordekaiser",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Pentakill III: Lost Chapter Mordekaiser",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Pentakill III: Lost Chapter Mordekaiser",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Pentakill III: Lost Chapter Mordekaiser",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Pentakill III: Lost Chapter Mordekaiser",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Pentakill III: Lost Chapter Mordekaiser",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Pentakill III: Lost Chapter Mordekaiser",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Pentakill III: Lost Chapter Mordekaiser",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Pentakill III: Lost Chapter Mordekaiser",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"24": 23,
+			"25": 23,
+			"26": 23,
+			"27": 23,
+			"28": 23,
+			"29": 23,
+			"30": 23,
+			"31": 23
 		},
 		"spells": {
 			"p": "Darkness Rise",
@@ -16304,7 +17377,85 @@
 			"17": 12,
 			"18": 12,
 			"19": 12,
-			"20": 12
+			"20": 12,
+			"21": {
+				"id": 21,
+				"name": "Pentakill III: Lost Chapter Yorick",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "Pentakill III: Lost Chapter Yorick",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Pentakill III: Lost Chapter Yorick",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Pentakill III: Lost Chapter Yorick",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Pentakill III: Lost Chapter Yorick",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Pentakill III: Lost Chapter Yorick",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Pentakill III: Lost Chapter Yorick",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Pentakill III: Lost Chapter Yorick",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Pentakill III: Lost Chapter Yorick",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21
 		},
 		"spells": {
 			"p": "Shepherd of Souls",
@@ -16712,7 +17863,94 @@
 			"45": 32,
 			"46": 32,
 			"47": 32,
-			"48": 32
+			"48": 32,
+			"50": {
+				"id": 50,
+				"name": "Crime City Nightmare Akali",
+				"chromas": {
+					"51": {
+						"id": 51,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Crime City Nightmare Akali",
+						"colors": [
+							"#181121",
+							"#53022D"
+						]
+					}
+				}
+			},
+			"51": 50,
+			"52": 50,
+			"53": 50,
+			"54": 50,
+			"55": 50,
+			"56": 50,
+			"57": 50,
+			"58": 50,
+			"59": 50
 		},
 		"spells": {
 			"p": "Assassin's Mark",
@@ -19917,7 +21155,94 @@
 			"38": 28,
 			"39": 28,
 			"40": 28,
-			"41": 28
+			"41": 28,
+			"42": {
+				"id": 42,
+				"name": "Coven Ahri",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Coven Ahri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Coven Ahri",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Coven Ahri",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Coven Ahri",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Coven Ahri",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Coven Ahri",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Coven Ahri",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Coven Ahri",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Coven Ahri",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42,
+			"48": 42,
+			"49": 42,
+			"50": 42,
+			"51": 42
 		},
 		"spells": {
 			"p": "Essence Theft",
@@ -23683,7 +25008,94 @@
 			"28": 24,
 			"29": 24,
 			"30": 24,
-			"31": 24
+			"31": 24,
+			"33": {
+				"id": 33,
+				"name": "Crime City Nightmare Darius",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Crime City Nightmare Darius",
+						"colors": [
+							"#181121",
+							"#53022D"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33,
+			"42": 33
 		},
 		"spells": {
 			"p": "Hemorrhage",
@@ -23990,6 +25402,14 @@
 							"#DED6B0",
 							"#DED6B0"
 						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Coven Lissandra",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
 					}
 				}
 			},
@@ -24086,7 +25506,8 @@
 			"18": 12,
 			"19": 12,
 			"20": 12,
-			"21": 12
+			"21": 12,
+			"22": 4
 		},
 		"spells": {
 			"p": "Iceborn Subjugation",
@@ -25214,7 +26635,80 @@
 			"5": {
 				"id": 5,
 				"name": "Coven Zyra",
-				"chromas": {}
+				"chromas": {
+					"17": {
+						"id": 17,
+						"name": "Coven Zyra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Coven Zyra",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Coven Zyra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Coven Zyra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Coven Zyra",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Coven Zyra",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Coven Zyra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Coven Zyra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Coven Zyra",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
+					}
+				}
 			},
 			"6": {
 				"id": 6,
@@ -25298,7 +26792,103 @@
 			"12": 7,
 			"13": 7,
 			"14": 7,
-			"15": 7
+			"15": 7,
+			"16": {
+				"id": 16,
+				"name": "Crime City Nightmare Zyra",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Crime City Nightmare Zyra",
+						"colors": [
+							"#181121",
+							"#53022D"
+						]
+					}
+				}
+			},
+			"17": 5,
+			"18": 5,
+			"19": 5,
+			"20": 5,
+			"21": 5,
+			"22": 5,
+			"23": 5,
+			"24": 5,
+			"25": 5,
+			"26": 16,
+			"27": 16,
+			"28": 16,
+			"29": 16,
+			"30": 16,
+			"31": 16,
+			"32": 16,
+			"33": 16,
+			"34": 16
 		},
 		"spells": {
 			"p": "Garden of Thorns",
@@ -25539,8 +27129,8 @@
 			},
 			"1": {
 				"id": 1,
-				"name": "K/DA ALL OUT Seraphine Indie",
-				"nameStage": "K/DA ALL OUT Seraphine",
+				"name": "K/DA ALL OUT Seraphine",
+				"nameStage": "K/DA ALL OUT Seraphine Indie",
 				"chromas": {
 					"2": {
 						"id": 2,
@@ -25556,7 +27146,85 @@
 				"stage": 1
 			},
 			"2": 1,
-			"3": 1
+			"3": 1,
+			"4": {
+				"id": 4,
+				"name": "Graceful Phoenix Seraphine",
+				"chromas": {
+					"5": {
+						"id": 5,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"5": 4,
+			"6": 4,
+			"7": 4,
+			"8": 4,
+			"9": 4,
+			"10": 4,
+			"11": 4,
+			"12": 4
 		},
 		"spells": {
 			"p": "Stage Presence",
@@ -26628,6 +28296,14 @@
 							"#73BFBE",
 							"#73BFBE"
 						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Coven Camille",
+						"colors": [
+							"#162B30",
+							"#8E0A38"
+						]
 					}
 				}
 			},
@@ -26720,7 +28396,8 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": 2
 		},
 		"spells": {
 			"p": "Adaptive Defenses",
@@ -28101,7 +29778,85 @@
 			"5": 1,
 			"6": 1,
 			"7": 1,
-			"8": 1
+			"8": 1,
+			"10": {
+				"id": 10,
+				"name": "Dissonance of Pentakill Viego",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Dissonance of Pentakill Viego",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Dissonance of Pentakill Viego",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Dissonance of Pentakill Viego",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Dissonance of Pentakill Viego",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Dissonance of Pentakill Viego",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Dissonance of Pentakill Viego",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Dissonance of Pentakill Viego",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Dissonance of Pentakill Viego",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10
 		},
 		"spells": {
 			"p": "Sovereign's Domination",
@@ -31528,11 +33283,11 @@
 			"10": 2,
 			"11": {
 				"id": 11,
-				"name": "Elderwood Ivern",
+				"name": "Old God Ivern",
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "Elderwood Ivern",
+						"name": "Old God Ivern",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -31540,7 +33295,7 @@
 					},
 					"13": {
 						"id": 13,
-						"name": "Elderwood Ivern",
+						"name": "Old God Ivern",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -31548,7 +33303,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "Elderwood Ivern",
+						"name": "Old God Ivern",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -31556,7 +33311,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "Elderwood Ivern",
+						"name": "Old God Ivern",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -31564,7 +33319,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "Elderwood Ivern",
+						"name": "Old God Ivern",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -31572,7 +33327,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "Elderwood Ivern",
+						"name": "Old God Ivern",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -31580,7 +33335,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "Elderwood Ivern",
+						"name": "Old God Ivern",
 						"colors": [
 							"#27211C",
 							"#971458"
@@ -31588,7 +33343,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "Elderwood Ivern",
+						"name": "Old God Ivern",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -32187,7 +33942,85 @@
 			"13": 8,
 			"14": 8,
 			"15": 8,
-			"16": 8
+			"16": 8,
+			"17": {
+				"id": 17,
+				"name": "Brave Phoenix Xayah",
+				"chromas": {
+					"18": {
+						"id": 18,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"18": 17,
+			"19": 17,
+			"20": 17,
+			"21": 17,
+			"22": 17,
+			"23": 17,
+			"24": 17,
+			"25": 17
 		},
 		"spells": {
 			"p": "Clean Cuts",
