@@ -1,8 +1,8 @@
 import AS from 'assert';
 import { appendFileSync } from 'fs';
 
-import { G } from '../lib/global.js';
-import { en_us as dataE, zh_cn as dataZ } from '../lib/BaseData.js';
+import { G } from '../../lib/global.js';
+import { en_us as dataE, zh_cn as dataZ } from '../../lib/BaseData.js';
 
 
 const ids =
