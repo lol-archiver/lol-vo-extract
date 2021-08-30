@@ -11975,7 +11975,7 @@
 						"name": "Battle Boss Blitzcrank",
 						"colors": [
 							"#DF9117",
-							"#E99117"
+							"#DF9117"
 						]
 					},
 					"15": {
@@ -21294,8 +21294,8 @@
 						"id": 8,
 						"name": "Pool Party Graves",
 						"colors": [
-							"#E99117",
-							"#E99117"
+							"#DF9117",
+							"#DF9117"
 						]
 					},
 					"9": {
@@ -35766,21 +35766,6 @@
 			"w": "Hallowed Mist",
 			"e": "Skip 'n Slash",
 			"r": "Needlework"
-		}
-	},
-	"-1": {
-		"id": -1,
-		"name": "None",
-		"title": "None",
-		"slot": "None",
-		"roles": [],
-		"skins": {},
-		"spells": {
-			"p": null,
-			"q": null,
-			"w": null,
-			"e": null,
-			"r": null
 		}
 	}
 }

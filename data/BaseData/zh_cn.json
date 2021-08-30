@@ -35767,20 +35767,5 @@
 			"e": "断续疾走",
 			"r": "引针簇射"
 		}
-	},
-	"-1": {
-		"id": -1,
-		"name": "None",
-		"title": "无",
-		"slot": "None",
-		"roles": [],
-		"skins": {},
-		"spells": {
-			"p": null,
-			"q": null,
-			"w": null,
-			"e": null,
-			"r": null
-		}
 	}
 }

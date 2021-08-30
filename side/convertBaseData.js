@@ -21,6 +21,8 @@ const convert = (region) => {
 	const countsChroma = {};
 
 	championsSum.forEach(({ id }) => {
+		if(id < 0) { return; }
+
 		const { name, title, alias: slot, roles, skins: skinsRaw, spells: spellsRaw, passive: passiveRaw } =
 			FX.readJsonSync(resolve(dirBase, 'champions', `${id}.json`));
 
