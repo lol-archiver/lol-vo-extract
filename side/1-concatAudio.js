@@ -1,19 +1,19 @@
 import { readdirSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
-import { ensureDirSync } from 'fs-extra';
+import { emptyDirSync, ensureDirSync } from 'fs-extra';
 import Iconv from 'iconv-lite';
-import { dirApp } from '../lib/globalDir.js';
+import { C,I, dirApp } from '../lib/global.js';
+import { pad0 } from '../lib/Tool.js';
 
 
 const dirFinal = resolve(dirApp, '_final');
 const dirCWD = resolve(dirFinal, 'Audio2Text');
 const dirAudio = resolve(dirCWD, 'audio');
 const dirText = resolve(dirCWD, 'text');
-ensureDirSync(dirAudio);
+emptyDirSync(dirAudio);
 ensureDirSync(dirText);
 
-
-const dirSource = resolve(dirFinal, '[028024]魔女 伊芙琳[Evelynn@PBE1@zh_cn]');
+const dirSource = resolve(dirFinal, `[${pad0(I.id)}${pad0(I.idsSkin[0])}]${I.champion.skins[17].name}[${I.slot}@${C.server.region}@${C.lang}]`);
 const files = readdirSync(dirSource);
 
 const dicts = {};
@@ -44,4 +44,4 @@ Object.entries(dicts).forEach(([event, inputs]) => {
 
 cmds.push('pause');
 
-writeFileSync(resolve(dirCWD, 'concatAudio.bat'), Iconv.encode(cmds.join('\r\n'), 'GB2312'));
+writeFileSync(resolve(dirCWD, 'concatAudio.bat'), Iconv.encode(cmds.join('\r\n'), 'GBK'));

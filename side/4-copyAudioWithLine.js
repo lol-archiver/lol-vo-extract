@@ -1,7 +1,8 @@
 import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
 import { ensureDirSync } from 'fs-extra';
-import { dirApp } from '../lib/globalDir.js';
+import { C, I, dirApp } from '../lib/global.js';
+import { pad0 } from '../lib/Tool.js';
 
 
 const dirFinal = resolve(dirApp, '_final');
@@ -10,7 +11,7 @@ ensureDirSync(dirTarget);
 
 
 const pathsAudios = [
-	resolve(dirFinal, '[028024]魔女 伊芙琳[Evelynn@PBE1@zh_cn]'),
+	resolve(dirFinal, `[${pad0(I.id)}${pad0(I.idsSkin[0])}]${I.champion.skins[17].name}[${I.slot}@${C.server.region}@${C.lang}]`),
 ];
 const pathLine = 'E:/Project/lol-vo-lines-dictation/Evelynn/Coven@zh_cn.md';
 
