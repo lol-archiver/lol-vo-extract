@@ -5,7 +5,7 @@ import FSX from 'fs-extra';
 import Moment from 'moment';
 
 import { C, I, G, dirApp, dirCache } from '../../lib/global.js';
-import { crc32, toHexL } from '../../lib/Tool.js';
+import { crc32, pad0, toHexL } from '../../lib/Tool.js';
 
 
 export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
@@ -35,7 +35,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 				let event;
 
 				if(typeof eventInfo == 'object') {
-					nameSkin = `[${String(C.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]${eventInfo.skinName.replace(/[:"]/g, '')}`;
+					nameSkin = `[${pad0(I.id)}${pad0(eventInfo.index)}]${eventInfo.skinName.replace(/[:"]/g, '')}`;
 					event = eventInfo.short;
 				}
 				else if(typeof eventInfo == 'number') {
@@ -57,7 +57,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
 				const logsTooLong = [`-------${Moment().format('YYYY-MM-DD HH:mm:ss')}-------`];
 
-				const pathFolder = resolve(dirApp, '_final', `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.region}@${C.lang}]`);
+				const pathFolder = resolve(dirApp, '_final', `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.server.region}@${C.lang}]`);
 
 				FSX.ensureDirSync(pathFolder);
 

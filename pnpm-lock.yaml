@@ -89,7 +89,7 @@ packages:
     dev: true
 
   /@nuogz/hades/3.3.1:
-    resolution: {integrity: sha512-sXbvq1q00DE8mdzTMpbT+Y6oPXFwBb+yc7AXj34nTAxYryP+iXzrJnH4IXSH2s+3lIe/a9mxkTb8iSsz5OWC8A==}
+    resolution: {integrity: sha512-sXbvq1q00DE8mdzTMpbT+Y6oPXFwBb+yc7AXj34nTAxYryP+iXzrJnH4IXSH2s+3lIe/a9mxkTb8iSsz5OWC8A==, tarball: https://npm.danor.app:443/@nuogz%2fhades/-/hades-3.3.1.tgz}
     dependencies:
       chalk: 4.1.2
       log-update: 4.0.0
@@ -101,7 +101,7 @@ packages:
     dev: false
 
   /@nuogz/poseidon/4.1.0:
-    resolution: {integrity: sha512-lEXMgKPymtAcuiut5ZsCeToCEemzfqk7kRtqtWPy/CuK2G7cP42TNrF/ys1ecDDvJOZ7TJ6JsosoibDW/LwYGw==}
+    resolution: {integrity: sha512-lEXMgKPymtAcuiut5ZsCeToCEemzfqk7kRtqtWPy/CuK2G7cP42TNrF/ys1ecDDvJOZ7TJ6JsosoibDW/LwYGw==, tarball: https://npm.danor.app:443/@nuogz%2fposeidon/-/poseidon-4.1.0.tgz}
     dev: false
 
   /acorn-jsx/5.3.2_acorn@7.4.1:

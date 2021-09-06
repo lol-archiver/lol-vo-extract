@@ -4,8 +4,9 @@ import { resolve } from 'path';
 import Moment from 'moment';
 
 import { C, I, G, dirCache } from '../../lib/global.js';
-import { crc32, toHexL } from '../../lib/Tool.js';
+import { crc32, pad0, toHexL } from '../../lib/Tool.js';
 import baseData, { en_us } from '../../lib/BaseData.js';
+
 
 const baseDataNow = baseData();
 
@@ -75,7 +76,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {
-				const slot = `[${String(I.id).padStart(3, '0')}${String(eventInfo.index).padStart(3, '0')}]`;
+				const slot = `[${pad0(I.id)}${pad0(eventInfo.index)}]`;
 
 				const dChampion = dict[I.id];
 				const dSkinCN = dChampion.skins[eventInfo.index];

@@ -1,5 +1,5 @@
 import { C, I, G } from '../../lib/global.js';
-import { wadHash } from '../../lib/Tool.js';
+import { pad0, wadHash } from '../../lib/Tool.js';
 
 
 const genPathSoundBank = function(usage, lang, champion, index, type, format, version = '2016') {
@@ -26,7 +26,7 @@ export default function genNameFiles_hash() {
 		for(const i of I.idsSkin) {
 			nameFiles_hash[wadHash(`data/characters/${I.slot}/skins/skin${i}.bin`)] = `skin${i}.bin`;
 
-			infoFiles.push(...genArrPathSoundBank(usage, C.lang, I.slot, `skin${String(i).padStart(2, '0')}`));
+			infoFiles.push(...genArrPathSoundBank(usage, C.lang, I.slot, `skin${pad0(i, 2)}`));
 		}
 
 		if(I.idsSkin.includes(0) || C.forceUseBase) {

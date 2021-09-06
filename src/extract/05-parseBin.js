@@ -26,7 +26,7 @@ export default function parseBin(binPath, indexSkin) {
 	}
 	else {
 		const subID = parse(binPath).base.match(/\d+/)[0];
-		// idSkin = `${I.id}${subID.padStart(3, '0')}`;
+		// idSkin = `${I.id}${pad0(subID)}`;
 		idSkin = ~~subID;
 	}
 

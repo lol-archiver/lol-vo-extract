@@ -21,10 +21,10 @@ const isUseClient = C.useWADLevel == 2 && C.path.gameVoices;
 
 const pathWadVoice = isUseClient ?
 	resolve(C.path.gameVoices, nameWadVoice) :
-	resolve(dirApp, '_cache', 'assets', nameWadVoice);
+	resolve(dirApp, '_cache', 'asset', nameWadVoice);
 const pathWadChamp = isUseClient ?
 	resolve(C.path.gameVoices, nameWadChamp) :
-	resolve(dirApp, '_cache', 'assets', nameWadChamp);
+	resolve(dirApp, '_cache', 'asset', nameWadChamp);
 
 const wadsToFetch = [];
 
