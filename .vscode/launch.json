@@ -15,11 +15,44 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "ConvertBaseData",
+			"name": "Convert BaseData",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
 			"program": "${workspaceFolder}/side/convertBaseData.js",
+			"runtimeExecutable": "node.exe",
+			"console": "integratedTerminal"
+		},
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "Copy Audio with Line",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/side/copyAudioWithLine.js",
+			"runtimeExecutable": "node.exe",
+			"console": "integratedTerminal"
+		},
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "Concat Audio",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/side/concatAudio.js",
+			"runtimeExecutable": "node.exe",
+			"console": "integratedTerminal"
+		},
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "Concat Raw Line",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/side/concatRawLine.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},

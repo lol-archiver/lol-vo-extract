@@ -1,9 +1,9 @@
-
 import AS from 'assert';
 import { writeFileSync } from 'fs';
-import FX from 'fs-extra';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
+
+import FX from 'fs-extra';
 
 
 const regions = ['default', 'zh_cn'];
