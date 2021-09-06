@@ -4,7 +4,7 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "Extract",
+			"name": "0-Extract Audio and Voice",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
@@ -15,46 +15,47 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "Convert BaseData",
+			"name": "1-Concat Audio",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/convertBaseData.js",
+			"program": "${workspaceFolder}/side/1-concatAudio.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "Copy Audio with Line",
+			"name": "2-Concat Raw Line",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/copyAudioWithLine.js",
+			"program": "${workspaceFolder}/side/2-concatRawLine.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "Concat Audio",
+			"name": "3-Convert Base Data",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/concatAudio.js",
+			"program": "${workspaceFolder}/side/3-convertBaseData.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "Concat Raw Line",
+			"name": "4-Copy Audio with Line",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/concatRawLine.js",
+			"program": "${workspaceFolder}/side/4-copyAudioWithLine.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
+
 	]
 }
