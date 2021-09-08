@@ -35203,6 +35203,107 @@
 			"r": "Death From Below"
 		}
 	},
+	"711": {
+		"id": 711,
+		"name": "Vex",
+		"title": "the Gloomist",
+		"slot": "Vex",
+		"roles": [
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Vex",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Dawnbringer Vex",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Dawnbringer Vex",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Dawnbringer Vex",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Dawnbringer Vex",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Dawnbringer Vex",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Dawnbringer Vex",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Dawnbringer Vex",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Dawnbringer Vex",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Dawnbringer Vex",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1
+		},
+		"spells": {
+			"p": "Doom 'n Gloom",
+			"q": "Mistral Bolt",
+			"w": "Personal Space",
+			"e": "Looming Darkness",
+			"r": "Shadow Surge"
+		}
+	},
 	"777": {
 		"id": 777,
 		"name": "Yone",
