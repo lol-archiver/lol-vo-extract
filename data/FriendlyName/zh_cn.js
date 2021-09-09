@@ -9,6 +9,7 @@ export default {
 	Laugh: '大笑',
 	Dance: '跳舞',
 
+	FirstEncounter3DGeneral: '初遇:英雄',
 	FirstEncounter: '初遇',
 	MoveFirst: '移动:初次',
 	MoveLong: '移动:长途',
@@ -44,8 +45,8 @@ export default {
 	Recall: '回城',
 	Response: '回应',
 
-	Female: '性别:女',
-	Male: '性别:男',
+	Female: '女性',
+	Male: '男性',
 
 	Bilgewater: '地区:比尔吉沃特',
 	Demacia: '地区:德玛西亚',

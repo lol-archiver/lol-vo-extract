@@ -9,9 +9,10 @@ const dirFinal = resolve(dirApp, '_final');
 const dirTarget = resolve(dirFinal, 'LineAudio');
 ensureDirSync(dirTarget);
 
+const idSkin = I.idsSkin[0];
 
 const pathsAudios = [
-	resolve(dirFinal, `[${pad0(I.id)}${pad0(I.idsSkin[0])}]${I.champion.skins[17].name}[${I.slot}@${C.server.region}@${C.lang}]`),
+	resolve(dirFinal, `[${pad0(I.id)}${pad0(I.idsSkin[0])}]${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}[${I.slot}@${C.server.region}@${C.lang}]`),
 ];
 const pathLine = 'E:/Project/lol-vo-lines-dictation/Evelynn/Coven@zh_cn.md';
 

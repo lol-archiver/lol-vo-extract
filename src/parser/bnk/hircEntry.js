@@ -71,7 +71,7 @@ export default function parseEntry(type, id, B) {
 	}
 	// Switch Container
 	else if(type == 6) {
-		G.debug('[DEBUG] Need More Switch Container Confirm');
+		G.debug('HIRCEntryParser', 'Need More Switch Container Confirm');
 
 		entry = new HircSwitchContainer(id);
 

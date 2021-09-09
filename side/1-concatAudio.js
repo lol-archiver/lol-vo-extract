@@ -2,7 +2,7 @@ import { readdirSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { emptyDirSync, ensureDirSync } from 'fs-extra';
 import Iconv from 'iconv-lite';
-import { C,I, dirApp } from '../lib/global.js';
+import { C, I, dirApp } from '../lib/global.js';
 import { pad0 } from '../lib/Tool.js';
 
 
@@ -13,7 +13,8 @@ const dirText = resolve(dirCWD, 'text');
 emptyDirSync(dirAudio);
 ensureDirSync(dirText);
 
-const dirSource = resolve(dirFinal, `[${pad0(I.id)}${pad0(I.idsSkin[0])}]${I.champion.skins[17].name}[${I.slot}@${C.server.region}@${C.lang}]`);
+const idSkin = I.idsSkin[0];
+const dirSource = resolve(dirFinal, `[${pad0(I.id)}${pad0(idSkin)}]${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}[${I.slot}@${C.server.region}@${C.lang}]`);
 const files = readdirSync(dirSource);
 
 const dicts = {};
