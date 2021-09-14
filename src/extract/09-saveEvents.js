@@ -114,7 +114,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 			const arrEventText = [];
 
 			for(const { hex, crc32 } of arrAudioInfo) {
-				arrEventText.push(`- >${hex}< CRC32[${crc32}] \`${hex}\` ***`);
+				arrEventText.push(`- >${hex}< \`${hex}|${crc32}\` ***`);
 			}
 
 			arrEventText.sort();

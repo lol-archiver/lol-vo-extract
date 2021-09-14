@@ -52,6 +52,8 @@ export default function extractAudios(wpkFiles) {
 	for(let wpkFile of wpkFiles) {
 		G.infoU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `extracting...`);
 
+		FSX.emptyDirSync(resolve(dirCache, 'audio', wpkFile));
+
 		if(C.format == 'wem') {
 			takeWpkRaw(wpkFile);
 		}
