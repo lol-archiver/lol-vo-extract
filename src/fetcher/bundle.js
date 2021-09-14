@@ -20,7 +20,7 @@ export default async function(id, version, cdn, counter) {
 		bufferBundle = readFileSync(pathBundle);
 	}
 	else {
-		G.infoU('BundleFetcher', `fetch bundle~{${bid}}~{${++counter.now}/${counter.max}}`, `? fetching...`);
+		G.infoU('BundleFetcher', `fetch bundle~{${bid}}~{${counter.now + 1}/${counter.max}}`, `? fetching...`);
 
 		const bundleURL = joinURL(cdn, `channels/public/bundles/${bid}.bundle`);
 
