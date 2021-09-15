@@ -22,10 +22,11 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 			continue;
 		}
 
-		for(let audioFile of readdirSync(resolve(pathDir))) {
+		for(let audioFile of readdirSync(pathDir).filter(file => file != 'wem')) {
 			const audioID = parse(audioFile).name;
 			const audioIDHex = toHexL(audioID, 8);
 			const src = resolve(pathDir, `${audioID}.${C.format}`);
+			const srcWEM = resolve(pathDir, 'wem', `${audioID}.wem`);
 
 			const events_nameSkin = {};
 			const events_audioID = mapAudioID_Event[audioID] || [];
@@ -52,7 +53,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 
 			if(!Object.keys(events_nameSkin).length) { continue; }
 
-			const crc32File = crc32(readFileSync(src));
+			const crcWEM = crc32(readFileSync(srcWEM));
 
 			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
 				const logsTooLong = [`-------${Moment().format('YYYY-MM-DD HH:mm:ss')}-------`];
@@ -62,7 +63,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 				FSX.ensureDirSync(pathFolder);
 
 				const eventsText = events.join('&');
-				const audioText = `[${nameSkin == '[Bad]' ? `${audioID}][${audioIDHex}` : audioIDHex}][${crc32File}].${C.format}`;
+				const audioText = `[${nameSkin == '[Bad]' ? `${audioID}][${audioIDHex}` : audioIDHex}][${crcWEM}].${C.format}`;
 
 				try {
 					if(eventsText.length > 128) { throw 'eventsText.length > 128'; }

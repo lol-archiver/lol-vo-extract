@@ -28,56 +28,67 @@ const isSameTakeConfig = function() {
 	return isSameTakeConfig;
 };
 
-const takeWpkRaw = function(wpkFile) {
-	const wpkBiffuer = new Biffer(resolve(dirCache, 'extract', wpkFile));
+const takeWpkRaw = function(fileWPK) {
+	try {
+		G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, `extracting...`);
 
-	// eslint-disable-next-line no-unused-vars
-	const [magic, version, count] = wpkBiffuer.unpack('4sLL');
+		const wpkBiffuer = new Biffer(resolve(dirCache, 'extract', fileWPK));
 
-	const headerOffsets = wpkBiffuer.unpack(`${count}L`);
+		FSX.emptyDirSync(resolve(dirCache, 'audio', fileWPK, 'wem'));
 
-	for(const headerOffset of headerOffsets) {
-		wpkBiffuer.seek(headerOffset);
+		// eslint-disable-next-line no-unused-vars
+		const [magic, version, count] = wpkBiffuer.unpack('4sLL');
 
-		const [offset, size, nameLength] = wpkBiffuer.unpack('LLL');
-		const name = Buffer.from([...wpkBiffuer.raw(nameLength * 2)].filter(byte => byte)).toString('utf8');
+		const headerOffsets = wpkBiffuer.unpack(`${count}L`);
 
-		writeFileSync(resolve(dirCache, 'audio', wpkFile, 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
+		for(const headerOffset of headerOffsets) {
+			wpkBiffuer.seek(headerOffset);
+
+			const [offset, size, nameLength] = wpkBiffuer.unpack('LLL');
+			const name = Buffer.from([...wpkBiffuer.raw(nameLength * 2)].filter(byte => byte)).toString('utf8');
+
+			writeFileSync(resolve(dirCache, 'audio', fileWPK, 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
+		}
+
+		G.infoD('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, `✔ `);
+	}
+	catch(error) {
+		G.errorD('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, error);
 	}
 };
 
-export default function extractAudios(wpkFiles) {
+export default function extractAudios(filesWPK) {
 	if(isSameTakeConfig()) { G.infoD('AudioExtractor', 'same extract config founded', 'skip'); return; }
 
-	for(let wpkFile of wpkFiles) {
-		G.infoU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `extracting...`);
+	for(let fileWPK of filesWPK) {
+		FSX.emptyDirSync(resolve(dirCache, 'audio', fileWPK));
 
-		FSX.emptyDirSync(resolve(dirCache, 'audio', wpkFile));
-		FSX.ensureDirSync(resolve(dirCache, 'audio', 'wem'));
+		takeWpkRaw(fileWPK);
 
-		takeWpkRaw(wpkFile);
+		if(C.format == 'wav' || C.format == 'ogg') {
+			G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `extracting...`);
 
-		if((C.format == 'wav' || C.format == 'ogg')) {
 			if(existsSync(C.path.rextractorConsole)) {
 				try {
 					execFileSync(C.path.rextractorConsole, [
-						resolve(dirCache, 'extract', wpkFile),
-						resolve(dirCache, 'audio', wpkFile),
+						resolve(dirCache, 'extract', fileWPK),
+						resolve(dirCache, 'audio', fileWPK),
 						`/sf:${C.format}`
 					], { timeout: 1000 * 60 * 10 });
-				} catch(error) {
-					G.errorU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `exec ~[Rextractor]`, error);
+				}
+				catch(error) {
+					G.errorD('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `exec ~[Rextractor]`, error);
 				}
 			}
 			else {
-				G.errorU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `~[Rextractor] not exists`, `path~{${C.path.rextractorConsole}}`);
+				G.errorD('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `~[Rextractor] not exists`, `path~{${C.path.rextractorConsole}}`);
 			}
+
+			G.infoD('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, '✔ ');
 		}
 		else {
-			G.errorU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `unknown format~{${C.format}}`, 'skip');
+			G.error('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `unknown format~{${C.format}}`, 'skip');
 		}
-
-		G.infoD('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, '✔ ');
 	}
 
 	writeFileSync(resolve(dirCache, 'lastTakeWpk.json'), JSON.stringify({ slot: I.slot, lang: C.lang, format: C.format, detect: I.idsSkin }));

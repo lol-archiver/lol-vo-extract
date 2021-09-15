@@ -168,7 +168,7 @@ export default async function parseBnk(bnkPath, eventNameSet) {
 		}));
 
 	writeFileSync(
-		resolve('_texts', '_pools', parse(bnkPath).base + '.json'),
+		resolve('_text', '_pool', parse(bnkPath).base + '.json'),
 		JSON.stringify(hircsPool, null, '\t')
 	);
 

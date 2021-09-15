@@ -1,7 +1,7 @@
 export default class Manifest {
-	constructor(url, version) {
+	constructor(url, version, buffer) {
 		this.url = url;
 		this.version = version;
-		this.files = null;
+		this.buffer = buffer;
 	}
 }

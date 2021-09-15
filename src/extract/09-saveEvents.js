@@ -49,24 +49,24 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 	const eventMap = {};
 
 	for(const [audioID, eventInfos] of Object.entries(mapAudioID_Event)) {
-		let arrSrcCRC32 = arrAudioPackFile
-			.map(file => resolve(dirCache, 'audio', file, `${audioID}.${C.format}`))
+		let crcsSrc = arrAudioPackFile
+			.map(file => resolve(dirCache, 'audio', file, 'wem', `${audioID}.wem`))
 			.filter(src => existsSync(src))
 			.map(src => crc32(readFileSync(src)));
 
-		arrSrcCRC32 = new Set(arrSrcCRC32);
+		crcsSrc = new Set(crcsSrc);
 
-		let crc32Src;
+		let crcSrc;
 
-		if(!arrSrcCRC32.size) {
-			crc32Src = 'NOFILE';
+		if(!crcsSrc.size) {
+			crcSrc = 'NOFILE';
 		}
 		else {
-			if(arrSrcCRC32.size > 1) {
+			if(crcsSrc.size > 1) {
 				G.warn('EventSaver', 'save event', `found multi extract audio file ~{${audioID}}`);
 			}
 
-			crc32Src = [...arrSrcCRC32].join('|');
+			crcSrc = [...crcsSrc].join('|');
 		}
 
 		const hex = toHexL(audioID, 8);
@@ -87,12 +87,12 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 				const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crc32Src });
+				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc });
 			}
 			else if(typeof eventInfo == 'number') {
 				const skinMap = eventMap['[Bad]'] || (eventMap['[Bad]'] = {});
 
-				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ hex, crc32: crc32Src });
+				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ hex, crc32: crcSrc });
 			}
 		}
 	}
@@ -128,6 +128,6 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
 
-		writeFileSync(resolve('_texts', `[${I.slot}@${C.server.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${Moment().format('X')}.md`), result.join('\n'));
+		writeFileSync(resolve('_text', `[${I.slot}@${C.server.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${Moment().format('X')}.md`), result.join('\n'));
 	}
 }

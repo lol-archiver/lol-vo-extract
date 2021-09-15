@@ -6,7 +6,7 @@ import { dirCache } from '../../../lib/global.js';
 import { toHexL, unZstd } from '../../../lib/Tool.js';
 
 
-export default async function parseRman(manifests) {
+export default async function RmanParser(manifests) {
 	for(const manifest of manifests) {
 		const { buffer } = manifest;
 		const bifferManifest = new Biffer(buffer);

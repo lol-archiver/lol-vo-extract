@@ -12,7 +12,7 @@ import FileEntryParser from './fileEntry.js';
 import DirectoryParser from './directory.js';
 
 
-export default async function BodyParse(manifests) {
+export default async function BodyParser(manifests) {
 	for(const manifest of manifests) {
 		const biffer = new Biffer(manifest.buffer);
 
