@@ -14,7 +14,7 @@ const idSkin = I.idsSkin[0];
 const pathsAudios = [
 	resolve(dirFinal, `[${pad0(I.id)}${pad0(I.idsSkin[0])}]${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}[${I.slot}@${C.server.region}@${C.lang}]`),
 ];
-const pathLine = 'E:/Project/lol-vo-lines-dictation/Evelynn/Coven@zh_cn.md';
+const pathLine = C.path.line;
 
 
 const arrAudioFile = pathsAudios.reduce((acc, pathAudios) => { acc.push(...readdirSync(pathAudios).map(name => resolve(pathAudios, name))); return acc; }, []);

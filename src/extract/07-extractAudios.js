@@ -47,17 +47,17 @@ const takeWpkRaw = function(wpkFile) {
 };
 
 export default function extractAudios(wpkFiles) {
-	if(isSameTakeConfig()) { G.infoD('AudioExtractor', 'same extract-config founded', 'skip'); return; }
+	if(isSameTakeConfig()) { G.infoD('AudioExtractor', 'same extract config founded', 'skip'); return; }
 
 	for(let wpkFile of wpkFiles) {
 		G.infoU('AudioExtractor', `extract ~{${wpkFile}} to ~{${C.format}}`, `extracting...`);
 
 		FSX.emptyDirSync(resolve(dirCache, 'audio', wpkFile));
+		FSX.ensureDirSync(resolve(dirCache, 'audio', 'wem'));
 
-		if(C.format == 'wem') {
-			takeWpkRaw(wpkFile);
-		}
-		else if((C.format == 'wav' || C.format == 'ogg')) {
+		takeWpkRaw(wpkFile);
+
+		if((C.format == 'wav' || C.format == 'ogg')) {
 			if(existsSync(C.path.rextractorConsole)) {
 				try {
 					execFileSync(C.path.rextractorConsole, [

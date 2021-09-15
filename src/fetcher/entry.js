@@ -23,7 +23,7 @@ export default async function fetchEntry() {
 
 	const versionLatest = C.server.version || Math.max(...releases.map(release => ~~release.release.labels['riot:revision'].values[0]));
 
-	G.infoD('EntryFetcher', 'entry', `[latest]~{${content}} [version]~{${versionLatest}}`);
+	G.infoD('EntryFetcher', 'entry', `~[version]~{${versionLatest}}`);
 
 	return [
 		data.releases

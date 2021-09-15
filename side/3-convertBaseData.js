@@ -5,11 +5,13 @@ import { fileURLToPath } from 'url';
 
 import FX from 'fs-extra';
 
+import { C } from '../lib/global.js';
+
 
 const regions = ['default', 'zh_cn'];
 
 const dirSelf = dirname(fileURLToPath(import.meta.url));
-const dirRaw = 'E:/PBERawFile';
+const dirRaw = C.path.dirRaw;
 
 
 
