@@ -6016,7 +6016,85 @@
 			"14": 10,
 			"15": 10,
 			"16": 10,
-			"17": 10
+			"17": 10,
+			"18": {
+				"id": 18,
+				"name": "Nightbringer Tryndamere",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "Nightbringer Tryndamere",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Nightbringer Tryndamere",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Nightbringer Tryndamere",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Nightbringer Tryndamere",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Nightbringer Tryndamere",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Nightbringer Tryndamere",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Nightbringer Tryndamere",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Nightbringer Tryndamere",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"19": 18,
+			"20": 18,
+			"21": 18,
+			"22": 18,
+			"23": 18,
+			"24": 18,
+			"25": 18,
+			"26": 18
 		},
 		"spells": {
 			"p": "Battle Fury",
@@ -6519,7 +6597,85 @@
 			"36": 11,
 			"37": 11,
 			"38": 11,
-			"40": 26
+			"39": {
+				"id": 39,
+				"name": "Dawnbringer Morgana",
+				"chromas": {
+					"42": {
+						"id": 42,
+						"name": "Dawnbringer Morgana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Dawnbringer Morgana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Dawnbringer Morgana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Dawnbringer Morgana",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Dawnbringer Morgana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Dawnbringer Morgana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Dawnbringer Morgana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Dawnbringer Morgana",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"40": 26,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39,
+			"48": 39,
+			"49": 39
 		},
 		"spells": {
 			"p": "Soul Siphon",
@@ -13680,7 +13836,49 @@
 			"25": 21,
 			"26": 21,
 			"27": 21,
-			"28": 21
+			"28": 21,
+			"30": {
+				"id": 30,
+				"name": "Worlds 2021 Jarvan IV",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Worlds 2021 Jarvan IV",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Worlds 2021 Jarvan IV",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Worlds 2021 Jarvan IV",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Worlds 2021 Jarvan IV",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30
 		},
 		"spells": {
 			"p": "Martial Cadence",
@@ -26410,7 +26608,63 @@
 			"4": 2,
 			"5": 2,
 			"6": 2,
-			"7": 2
+			"7": 2,
+			"8": {
+				"id": 8,
+				"name": "Nightbringer Kayn",
+				"chromas": {
+					"10": {
+						"id": 10,
+						"name": "Nightbringer Kayn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Nightbringer Kayn",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Nightbringer Kayn",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Nightbringer Kayn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Nightbringer Kayn",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"9": {
+				"id": 9,
+				"name": "Nightbringer Kayn Prestige Edition",
+				"chromas": {}
+			},
+			"10": 8,
+			"11": 8,
+			"12": 8,
+			"13": 8,
+			"14": 8
 		},
 		"spells": {
 			"p": "The Darkin Scythe",
@@ -35474,7 +35728,67 @@
 			"15": 10,
 			"16": 10,
 			"17": 10,
-			"18": 10
+			"18": 10,
+			"19": {
+				"id": 19,
+				"name": "Dawnbringer Yone",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Dawnbringer Yone",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Dawnbringer Yone",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Dawnbringer Yone",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Dawnbringer Yone",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Dawnbringer Yone",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Dawnbringer Yone",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+			}
+				}
+			},
+			"20": 19,
+			"21": 19,
+			"22": 19,
+			"23": 19,
+			"24": 19,
+			"25": 19
 		},
 		"spells": {
 			"p": "Way of the Hunter",
@@ -35748,7 +36062,85 @@
 			"6": 1,
 			"7": 1,
 			"8": 1,
-			"9": 1
+			"9": 1,
+			"10": {
+				"id": 10,
+				"name": "Nightbringer Lillia",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Nightbringer Lillia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Nightbringer Lillia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Nightbringer Lillia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Nightbringer Lillia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Nightbringer Lillia",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Nightbringer Lillia",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Nightbringer Lillia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Nightbringer Lillia",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10
 		},
 		"spells": {
 			"p": "Dream-Laden Bough",
