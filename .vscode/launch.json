@@ -56,17 +56,5 @@
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
-		{
-			"type": "pwa-node",
-			"request": "launch",
-			"name": "6-Monit Voice File",
-			"skipFiles": [
-				"<node_internals>/**"
-			],
-			"program": "${workspaceFolder}/side/5-monitVoiceFile.js",
-			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
-		},
-
 	]
 }
