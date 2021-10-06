@@ -17,13 +17,13 @@ const detectFetch = function(wadsToFetch, nameWad, pathWad, isUseClient) {
 const nameWadVoice = `${I.slot}.${C.lang}.wad.client`.toLowerCase();
 const nameWadChamp = `${I.slot}.wad.client`.toLowerCase();
 
-const isUseClient = C.useWADLevel == 2 && C.path.gameWADSChampion;
+const isUseClient = C.useWADLevel == 2 && C.path.gameVoices;
 
 const pathWadVoice = isUseClient ?
-	resolve(C.path.gameWADSChampion, nameWadVoice) :
+	resolve(C.path.gameVoices, nameWadVoice) :
 	resolve(dirApp, '_cache', 'asset', nameWadVoice);
 const pathWadChamp = isUseClient ?
-	resolve(C.path.gameWADSChampion, nameWadChamp) :
+	resolve(C.path.gameVoices, nameWadChamp) :
 	resolve(dirApp, '_cache', 'asset', nameWadChamp);
 
 const wadsToFetch = [];
