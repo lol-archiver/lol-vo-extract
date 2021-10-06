@@ -5781,6 +5781,14 @@
 							"#C1F2FF",
 							"#C1F2FF"
 						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Fae Dragon Ashe",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 					}
 				}
 			},
@@ -5878,7 +5886,8 @@
 			"38": 32,
 			"39": 32,
 			"40": 32,
-			"41": 32
+			"41": 32,
+			"42": 23
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -6081,8 +6090,8 @@
 						"id": 26,
 						"name": "Nightbringer Tryndamere",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#1E1B1A",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -6661,13 +6670,18 @@
 						"id": 49,
 						"name": "Dawnbringer Morgana",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#A67400"
 						]
 					}
 				}
 			},
 			"40": 26,
+			"41": {
+				"id": 41,
+				"name": "Bewitching Morgana Prestige Edition",
+				"chromas": {}
+			},
 			"42": 39,
 			"43": 39,
 			"44": 39,
@@ -11015,7 +11029,94 @@
 			"40": 27,
 			"41": 27,
 			"42": 27,
-			"43": 27
+			"43": 27,
+			"44": {
+				"id": 44,
+				"name": "Tranquility Dragon Karma",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Tranquility Dragon Karma",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44,
+			"53": 44
 		},
 		"spells": {
 			"p": "Gathering Fire",
@@ -13869,8 +13970,8 @@
 						"id": 34,
 						"name": "Worlds 2021 Jarvan IV",
 						"colors": [
-							"#27211C",
-							"#27211C"
+							"#201B17",
+							"#911A1A"
 						]
 					}
 				}
@@ -14458,6 +14559,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Eternal Dragon Brand",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 					}
 				}
 			},
@@ -14472,7 +14581,8 @@
 			"17": 8,
 			"18": 8,
 			"19": 8,
-			"20": 8
+			"20": 8,
+			"23": 8
 		},
 		"spells": {
 			"p": "Blaze",
@@ -14764,6 +14874,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Storm Dragon Lee Sin",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 					}
 				}
 			},
@@ -14772,7 +14890,8 @@
 			"34": 31,
 			"35": 31,
 			"36": 31,
-			"37": 31
+			"37": 31,
+			"38": 31
 		},
 		"spells": {
 			"p": "Flurry",
@@ -16494,7 +16613,85 @@
 			"20": 16,
 			"21": 16,
 			"22": 16,
-			"23": 16
+			"23": 16,
+			"24": {
+				"id": 24,
+				"name": "Bewitching Poppy",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Bewitching Poppy",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Bewitching Poppy",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Bewitching Poppy",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Bewitching Poppy",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Bewitching Poppy",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Bewitching Poppy",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Bewitching Poppy",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Bewitching Poppy",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Iron Ambassador",
@@ -22051,7 +22248,99 @@
 				"id": 6,
 				"name": "The Thousand-Pierced Bear",
 				"chromas": {}
+			},
+			"7": {
+				"id": 7,
+				"name": "Duality Dragon Volibear",
+				"chromas": {
+					"10": {
+						"id": 10,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Duality Dragon Volibear",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 			}
+				}
+			},
+			"9": {
+				"id": 9,
+				"name": "Duality Dragon Volibear Prestige Edition",
+				"chromas": {}
+			},
+			"10": 7,
+			"11": 7,
+			"12": 7,
+			"13": 7,
+			"14": 7,
+			"15": 7,
+			"16": 7,
+			"17": 7,
+			"18": 7
 		},
 		"spells": {
 			"p": "The Relentless Storm",
@@ -23599,7 +23888,85 @@
 			"55": 50,
 			"56": 50,
 			"57": 50,
-			"58": 50
+			"58": 50,
+			"60": {
+				"id": 60,
+				"name": "Bewitching Fiora",
+				"chromas": {
+					"61": {
+						"id": 61,
+						"name": "Bewitching Fiora",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Bewitching Fiora",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Bewitching Fiora",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Bewitching Fiora",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Bewitching Fiora",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Bewitching Fiora",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Bewitching Fiora",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Bewitching Fiora",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"61": 60,
+			"62": 60,
+			"63": 60,
+			"64": 60,
+			"65": 60,
+			"66": 60,
+			"67": 60,
+			"68": 60
 		},
 		"spells": {
 			"p": "Duelist's Dance",
@@ -26353,7 +26720,85 @@
 			"21": 16,
 			"22": 16,
 			"23": 16,
-			"24": 16
+			"24": 16,
+			"25": {
+				"id": 25,
+				"name": "Bewitching Syndra",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Bewitching Syndra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Bewitching Syndra",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Bewitching Syndra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Bewitching Syndra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Bewitching Syndra",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Bewitching Syndra",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Bewitching Syndra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Bewitching Syndra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25
 		},
 		"spells": {
 			"p": "Transcendent",
@@ -26518,6 +26963,14 @@
 							"#E58BA5",
 							"#E58BA5"
 						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Storm Dragon Aurelion Sol",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 					}
 				}
 			},
@@ -26528,7 +26981,8 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": 11
 		},
 		"spells": {
 			"p": "Center of the Universe",
@@ -26649,8 +27103,8 @@
 						"id": 14,
 						"name": "Nightbringer Kayn",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#1E1B1A",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -27356,7 +27810,94 @@
 				"name": "K/DA ALL OUT Kai'Sa Prestige Edition",
 				"chromas": {}
 			},
-			"28": 26
+			"28": 26,
+			"29": {
+				"id": 29,
+				"name": "Lagoon Dragon Kai'Sa",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Lagoon Dragon Kai'Sa",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29,
+			"38": 29
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -28182,7 +28723,17 @@
 			"41": 36,
 			"42": 36,
 			"43": 36,
-			"44": 36
+			"44": 36,
+			"54": {
+				"id": 54,
+				"name": "Dream Dragon Yasuo",
+				"chromas": {}
+			},
+			"55": {
+				"id": 55,
+				"name": "Truth Dragon Yasuo",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Way of the Wanderer",
@@ -31868,8 +32419,8 @@
 			"p": "Blast Shield",
 			"q": "Vault Breaker",
 			"w": "Denting Blows",
-			"e": "Excessive Force",
-			"r": "Assault and Battery"
+			"e": "Relentless Force",
+			"r": "Cease and Desist"
 		}
 	},
 	"266": {
@@ -32307,7 +32858,85 @@
 			"28": 24,
 			"29": 24,
 			"30": 24,
-			"31": 24
+			"31": 24,
+			"32": {
+				"id": 32,
+				"name": "Bewitching Nami",
+				"chromas": {
+					"33": {
+						"id": 33,
+						"name": "Bewitching Nami",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Bewitching Nami",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Bewitching Nami",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Bewitching Nami",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Bewitching Nami",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Bewitching Nami",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Bewitching Nami",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Bewitching Nami",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"33": 32,
+			"34": 32,
+			"35": 32,
+			"36": 32,
+			"37": 32,
+			"38": 32,
+			"39": 32,
+			"40": 32
 		},
 		"spells": {
 			"p": "Surging Tides",
@@ -32687,7 +33316,85 @@
 			"24": 19,
 			"25": 19,
 			"26": 19,
-			"27": 19
+			"27": 19,
+			"28": {
+				"id": 28,
+				"name": "Bewitching Yuumi",
+				"chromas": {
+					"29": {
+						"id": 29,
+						"name": "Bewitching Yuumi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Bewitching Yuumi",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Bewitching Yuumi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Bewitching Yuumi",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Bewitching Yuumi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Bewitching Yuumi",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Bewitching Yuumi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Bewitching Yuumi",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"29": 28,
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28
 		},
 		"spells": {
 			"p": "Bop 'n' Block",
@@ -33103,7 +33810,94 @@
 				"id": 27,
 				"name": "Unbound Thresh",
 				"chromas": {}
+			},
+			"28": {
+				"id": 28,
+				"name": "Steel Dragon Thresh",
+				"chromas": {
+					"29": {
+						"id": 29,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Steel Dragon Thresh",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 			}
+				}
+			},
+			"29": 28,
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28,
+			"37": 28
 		},
 		"spells": {
 			"p": "Damnation",
@@ -35536,7 +36330,7 @@
 						"name": "Dawnbringer Vex",
 						"colors": [
 							"#73BFBE",
-							"#73BFBE"
+							"#A67400"
 						]
 					}
 				}
@@ -35777,8 +36571,8 @@
 						"id": 25,
 						"name": "Dawnbringer Yone",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#A67400"
 						]
 			}
 				}
@@ -35876,7 +36670,80 @@
 			"8": {
 				"id": 8,
 				"name": "Obsidian Dragon Sett",
-				"chromas": {}
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Obsidian Dragon Sett",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
 			},
 			"9": {
 				"id": 9,
@@ -35960,7 +36827,16 @@
 			"15": 10,
 			"16": 10,
 			"17": 10,
-			"18": 10
+			"18": 10,
+			"20": 8,
+			"21": 8,
+			"22": 8,
+			"23": 8,
+			"24": 8,
+			"25": 8,
+			"26": 8,
+			"27": 8,
+			"28": 8
 		},
 		"spells": {
 			"p": "Pit Grit",
@@ -36127,8 +37003,8 @@
 						"id": 18,
 						"name": "Nightbringer Lillia",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#1E1B1A",
+							"#FFFFFF"
 						]
 					}
 				}
