@@ -1,6 +1,6 @@
 {
 	"name": "lol-vo-extact",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "",
 	"author": "Nuogz",
 	"license": "LGPL-3.0-or-later",
@@ -22,6 +22,6 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^7.32.0"
+		"eslint": "^8.0.0"
 	}
 }

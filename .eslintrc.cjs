@@ -1,6 +1,6 @@
 const rc = {
 	env: {
-		es2021: true,
+		es2022: true,
 		node: true,
 	},
 	extends: [
