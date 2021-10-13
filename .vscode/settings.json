@@ -1,5 +1,4 @@
 {
-	"eslint.useESLintClass": true,
 	"files.trimTrailingWhitespace": true,
 	"javascript.preferences.importModuleSpecifierEnding": "js",
 	"vetur.format.defaultFormatter.html": "none",
