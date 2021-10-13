@@ -1,13 +1,5 @@
 {
+	"eslint.packageManager": "pnpm",
 	"files.trimTrailingWhitespace": true,
 	"javascript.preferences.importModuleSpecifierEnding": "js",
-	"vetur.format.defaultFormatter.html": "none",
-	"vetur.format.defaultFormatter.js": "vscode-typescript",
-	"vetur.format.options.tabSize": 4,
-	"vetur.format.options.useTabs": true,
-	"vetur.format.scriptInitialIndent": true,
-	"vetur.format.styleInitialIndent": true,
-	"vetur.validation.script": false,
-	"vetur.validation.style": false,
-	"vetur.validation.template": false,
 }
