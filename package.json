@@ -6,6 +6,9 @@
 	"license": "LGPL-3.0-or-later",
 	"main": "index.js",
 	"type": "module",
+	"engines": {
+		"node": ">=14.18.0"
+	},
 	"dependencies": {
 		"@nuogz/hades": "^3.5.0",
 		"@nuogz/poseidon": "^4.1.0",
@@ -14,7 +17,6 @@
 		"buffer-crc32": "^0.2.13",
 		"fs-extra": "^10.0.0",
 		"iconv-lite": "^0.6.3",
-		"log-update": "^4.0.0",
 		"moment": "^2.29.1",
 		"node-gzip": "^1.1.2",
 		"node-zstandard": "^1.2.4",
@@ -22,6 +24,6 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^8.0.0"
+		"eslint": "^8.0.1"
 	}
 }
