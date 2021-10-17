@@ -38,14 +38,15 @@ for(const lineText of arrLineText) {
 		curEvent = event;
 	}
 	else {
-		const [crc32, line] = lineText.replace('- `', '').split('` ');
+		const [crc32_, line] = lineText.replace('- `', '').split('` ');
+		const [crc32] = crc32_.split('|');
 
 		const file = arrAudioFile.find(fileName => fileName.includes(crc32));
 
 		if(file) {
 			copyFileSync(
 				file,
-				resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]]/g, '')}] ${line.replace(/\*/g, '').replace(/\\n/g, '，').replace(/\//g, '')}(${crc32}).wav`)
+				resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]]/g, '')}] ${line.replace(/\*/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
 			);
 		}
 		else {
