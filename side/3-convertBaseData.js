@@ -11,12 +11,10 @@ import { C } from '../lib/global.js';
 const regions = ['default', 'zh_cn'];
 
 const dirSelf = dirname(fileURLToPath(import.meta.url));
-const dirRaw = C.path.dirRaw;
-
 
 
 const convert = (region) => {
-	const dirBase = resolve(dirRaw, 'plugins', 'rcp-be-lol-game-data', 'global', region, 'v1');
+	const dirBase = resolve(C.path.dirBase, region);
 	const championsSum = FX.readJsonSync(resolve(dirBase, 'champion-summary.json'));
 
 	const result = {};

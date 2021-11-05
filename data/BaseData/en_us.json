@@ -141,7 +141,85 @@
 			"17": 13,
 			"18": 13,
 			"19": 13,
-			"20": 13
+			"20": 13,
+			"22": {
+				"id": 22,
+				"name": "Cafe Cuties Annie",
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "Cafe Cuties Annie",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Cafe Cuties Annie",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Cafe Cuties Annie",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Cafe Cuties Annie",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Cafe Cuties Annie",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Cafe Cuties Annie",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Cafe Cuties Annie",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Cafe Cuties Annie",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"23": 22,
+			"24": 22,
+			"25": 22,
+			"26": 22,
+			"27": 22,
+			"28": 22,
+			"29": 22,
+			"30": 22
 		},
 		"spells": {
 			"p": "Pyromania",
@@ -2084,7 +2162,85 @@
 			"26": 21,
 			"27": 21,
 			"28": 21,
-			"29": 21
+			"29": 21,
+			"30": {
+				"id": 30,
+				"name": "Cafe Cuties Vladimir",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Cafe Cuties Vladimir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Cafe Cuties Vladimir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Cafe Cuties Vladimir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Cafe Cuties Vladimir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Cafe Cuties Vladimir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Cafe Cuties Vladimir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Cafe Cuties Vladimir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Cafe Cuties Vladimir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30
 		},
 		"spells": {
 			"p": "Crimson Pact",
@@ -3984,7 +4140,85 @@
 			"30": 25,
 			"31": 25,
 			"32": 25,
-			"33": 25
+			"33": 25,
+			"34": {
+				"id": 34,
+				"name": "Cafe Cuties Sivir",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "Cafe Cuties Sivir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Cafe Cuties Sivir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Cafe Cuties Sivir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Cafe Cuties Sivir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Cafe Cuties Sivir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Cafe Cuties Sivir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Cafe Cuties Sivir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Cafe Cuties Sivir",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"35": 34,
+			"36": 34,
+			"37": 34,
+			"38": 34,
+			"39": 34,
+			"40": 34,
+			"41": 34,
+			"42": 34
 		},
 		"spells": {
 			"p": "Fleet of Foot",
@@ -4114,7 +4348,85 @@
 				"id": 17,
 				"name": "Star Guardian Soraka Prestige Edition",
 				"chromas": {}
+			},
+			"18": {
+				"id": 18,
+				"name": "Cafe Cuties Soraka",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 			}
+				}
+			},
+			"19": 18,
+			"20": 18,
+			"21": 18,
+			"22": 18,
+			"23": 18,
+			"24": 18,
+			"25": 18,
+			"26": 18
 		},
 		"spells": {
 			"p": "Salvation",
@@ -11923,8 +12235,8 @@
 						"id": 7,
 						"name": "Caitlyn Rebel",
 						"colors": [
-							"#DA769A",
-							"#F4E3D5"
+							"#426FC9",
+							"#A2A8AB"
 						]
 					},
 					"8": {
@@ -11939,8 +12251,8 @@
 						"id": 9,
 						"name": "Caitlyn Rebel",
 						"colors": [
-							"#426FC9",
-							"#A2A8AB"
+							"#DA769A",
+							"#F4E3D5"
 						]
 					}
 				}
@@ -12119,7 +12431,12 @@
 			"24": 22,
 			"25": 22,
 			"26": 22,
-			"27": 22
+			"27": 22,
+			"28": {
+				"id": 28,
+				"name": "Arcane Caitlyn",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Headshot",
@@ -12414,7 +12731,103 @@
 			"32": 29,
 			"33": 29,
 			"34": 29,
-			"35": 29
+			"35": 29,
+			"36": {
+				"id": 36,
+				"name": "Victorious Blitzcrank",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#65337F",
+							"#65337F"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#9D228D",
+							"#9D228D"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#B31316",
+							"#B31316"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#1D62C8",
+							"#1D62C8"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#26854C",
+							"#7BDDA9"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#65337F",
+							"#6F587F"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#9D228D",
+							"#9D5B92"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#B31316",
+							"#B35556"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Victorious Blitzcrank",
+						"colors": [
+							"#1D62C8",
+							"#638BC8"
+						]
+					}
+				}
+			},
+			"37": 36,
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36,
+			"45": 36,
+			"46": 36
 		},
 		"spells": {
 			"p": "Mana Barrier",
@@ -25869,7 +26282,12 @@
 			"20": 15,
 			"21": 15,
 			"22": 15,
-			"23": 15
+			"23": 15,
+			"24": {
+				"id": 24,
+				"name": "Arcane Jayce",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Hextech Capacitor",
@@ -30318,7 +30736,12 @@
 			"33": 29,
 			"34": 29,
 			"35": 29,
-			"36": 29
+			"36": 29,
+			"37": {
+				"id": 37,
+				"name": "Arcane Jinx",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Get Excited!",
@@ -32413,7 +32836,12 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"29": {
+				"id": 29,
+				"name": "Arcane Vi",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Blast Shield",
@@ -34687,7 +35115,85 @@
 			"13": 8,
 			"14": 8,
 			"15": 8,
-			"16": 8
+			"16": 8,
+			"17": {
+				"id": 17,
+				"name": "Cafe Cuties Bard",
+				"chromas": {
+					"18": {
+						"id": 18,
+						"name": "Cafe Cuties Bard",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Cafe Cuties Bard",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Cafe Cuties Bard",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Cafe Cuties Bard",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Cafe Cuties Bard",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Cafe Cuties Bard",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Cafe Cuties Bard",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Cafe Cuties Bard",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"18": 17,
+			"19": 17,
+			"20": 17,
+			"21": 17,
+			"22": 17,
+			"23": 17,
+			"24": 17,
+			"25": 17
 		},
 		"spells": {
 			"p": "Traveler's Call",
@@ -37127,7 +37633,85 @@
 			"7": 1,
 			"8": 1,
 			"9": 1,
-			"10": 1
+			"10": 1,
+			"11": {
+				"id": 11,
+				"name": "Cafe Cuties Gwen",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "A Thousand Cuts",
