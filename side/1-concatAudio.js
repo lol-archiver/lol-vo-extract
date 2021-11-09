@@ -10,8 +10,11 @@ const dirFinal = resolve(dirApp, '_final');
 const dirCWD = resolve(dirFinal, 'Audio2Text');
 const dirAudio = resolve(dirCWD, 'audio');
 const dirText = resolve(dirCWD, 'text');
-emptyDirSync(dirAudio);
+ensureDirSync(dirAudio);
 ensureDirSync(dirText);
+
+emptyDirSync(dirAudio);
+emptyDirSync(dirText);
 
 const idSkin = I.idsSkin[0];
 const dirSource = resolve(dirFinal, `[${pad0(I.id)}${pad0(idSkin)}]${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}[${I.slot}@${C.server.region}@${C.lang}]`);
