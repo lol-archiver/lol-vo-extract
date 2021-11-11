@@ -1,71 +1,79 @@
 import AS from 'assert';
 import { readFileSync, writeFileSync } from 'fs';
+import { parse, resolve } from 'path';
 
-import { G } from '../lib/global.js';
+import { dirApp } from '../lib/globalDir.js';
+import { C, G } from '../lib/global.js';
 import Biffer from '../lib/Biffer.js';
-import { rstHash } from '../lib/Tool.js';
 
 
-const pathFile = 'D:/Desk/fontconfig_zh_cn.txt';
+const hashes = readFileSync(resolve(dirApp, 'data', 'hashes.rst.txt'), 'utf8').split('\n').map(line => line.split(' '))
+	.reduce((r, [strHash, text]) => ((r[strHash] = text) && 0) || r, {});
 
-const hashes = readFileSync('data/texts.rst.txt', 'utf8').split('\n')
-	.reduce((r, str) => ((r[rstHash(str, true)] = str) && 0) || r, {});
 
-const biffer = new Biffer(pathFile);
+const biffer = new Biffer(C.path.rst);
 
-const [magic, versionMajor, versionMinor] = biffer.unpack('<3sBB');
 
-if(magic != 'RST') {
-	throw `Invalid magic code: ${magic}`;
+const [magic, versionMajor] = biffer.unpack('<3sB');
+AS(magic == 'RST', `Invalid magic code: ${magic}`);
+AS(2 <= versionMajor && versionMajor <= 5, `Unsupported RST version: ${versionMajor}`);
+
+
+let configFont;
+let bitHash = 40n;
+let maskHash = (1n << bitHash) - 1n;
+
+
+let versionMinor;
+if(versionMajor == 2 && (versionMinor = biffer.unpack('B')[0])) {
+	// eslint-disable-next-line no-unused-vars
+	configFont = biffer.unpackString();
 }
-if(!['2.0', '2.1'].includes(`${versionMajor}.${versionMinor}`)) {
-	throw `Unsupported RST version: ${versionMajor}.${versionMinor}`;
+else if([4, 5].includes(versionMajor)) {
+	bitHash = 39n;
+	maskHash = (1n << bitHash) - 1n;
 }
 
-const rst = {};
-
-if(versionMinor == 1) {
-	rst.font_config = biffer.unpackString();
-}
-else {
-	rst.font_config = null;
-}
 
 const [count] = biffer.unpack('<L');
 const entries = [];
 
 for(let i = 0; i < count; i++) {
 	const [v] = biffer.unpack('<Q');
-	entries.push([v >> 40n, v & 0xffffffffffn]);
+	entries.push({
+		pos: v >> bitHash,
+		hash: v & maskHash,
+		text: null,
+		content: null,
+	});
 }
 
-AS(biffer.raw(1)[0] == versionMinor);
+if(versionMajor < 5) {
+	AS(biffer.raw(1)[0] == versionMinor);
+}
 
-const bifferText = biffer.sub(biffer.length);
+const bifferEntries = biffer.sub(biffer.length);
 
 for(const entry of entries) {
-	if(entry[0] > Number.MAX_SAFE_INTEGER) {
-		throw 'Over MAX_SAFE_INTEGER';
-	}
+	AS(entry.pos <= Number.MAX_SAFE_INTEGER, 'Over MAX_SAFE_INTEGER');
 
-	const start = Number(entry[0]);
 
-	bifferText.seek(start);
-	const end = bifferText.find([0]);
-	bifferText.seek(start);
+	const posLeft = Number(entry.pos);
 
-	const bufferSub = bifferText.raw(end - start);
+	bifferEntries.seek(posLeft);
+	const posRight = bifferEntries.find([0]);
 
-	const text = hashes[entry[1].toString(16).toUpperCase()];
+	bifferEntries.seek(posLeft);
+	const bufferText = bifferEntries.raw(posRight - posLeft);
 
-	entry[0] = text || entry[1];
 
-	if(bufferSub[0] == 195 && bufferSub[0] == 191) {
-		G.info('wait');
-	}
-	else {
-		entry[1] = `"${bufferSub.toString('utf8')}"`;
-	}
+	if(bufferText[0] == 195 && bufferText[0] == 191) { G.info('wait'); }
+
+
+	entry.text = hashes[entry.hash.toString(16).toUpperCase()];
+	entry.content = bufferText.toString('utf8');
 }
 
-writeFileSync(pathFile + '.un.txt', entries.map(e => e.join(' = ')).sort().join('\n'));
+const fileRST = parse(C.path.rst);
+writeFileSync(resolve(fileRST.dir, `${fileRST.name}.match${fileRST.ext}`), entries.filter(e => e.text).map(e => `${e.text} = ${e.content}`).sort().join('\n'));
+writeFileSync(resolve(fileRST.dir, `${fileRST.name}.unmatch${fileRST.ext}`), entries.filter(e => !e.text).map(e => `${e.hash} = ${e.content}`).join('\n'));

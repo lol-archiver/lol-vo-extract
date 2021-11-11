@@ -4,7 +4,7 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "1-Extract Audio and Voice",
+			"name": "0-Extract Audio and Voice",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
@@ -15,7 +15,7 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "2-Concat Audio",
+			"name": "1-Concat Audio",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
@@ -26,7 +26,7 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "3-Concat Raw Line",
+			"name": "2-Concat Raw Line",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
@@ -37,7 +37,7 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "4-Convert Base Data",
+			"name": "3-Convert Base Data",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
@@ -48,7 +48,7 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "5-Copy Audio with Line",
+			"name": "4-Copy Audio with Line",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
@@ -59,11 +59,22 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "6-Convert RST",
+			"name": "5-Convert RST",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
 			"program": "${workspaceFolder}/side/5-convertRST.js",
+			"runtimeExecutable": "node.exe",
+			"console": "integratedTerminal"
+		},
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "6-Update RST",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/side/6-updateRST.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
