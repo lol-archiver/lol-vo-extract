@@ -56,5 +56,16 @@
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "6-Convert RST",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/side/5-convertRST.js",
+			"runtimeExecutable": "node.exe",
+			"console": "integratedTerminal"
+		},
 	]
 }
