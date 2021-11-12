@@ -70,7 +70,7 @@ for(const entry of entries) {
 	if(bufferText[0] == 195 && bufferText[0] == 191) { G.info('wait'); }
 
 
-	entry.text = hashes[entry.hash.toString(16).toUpperCase()];
+	entry.text = hashes[entry.hash.toString(16).toUpperCase().padStart(10, '0')];
 	entry.content = bufferText.toString('utf8');
 }
 
