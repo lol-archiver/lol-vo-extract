@@ -31926,6 +31926,11 @@
 				"id": 30,
 				"name": "PROJECT: Zed Prestige Edition",
 				"chromas": {}
+			},
+			"31": {
+				"id": 31,
+				"name": "Debonair Zed",
+				"chromas": {}
 			}
 		},
 		"spells": {
