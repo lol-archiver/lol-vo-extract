@@ -3,7 +3,8 @@ import { parse, resolve } from 'path';
 
 import GZIP from 'node-gzip';
 
-import { dirCache, G } from '../../lib/global.js';
+import { dirCache } from '../../lib/global.dir.js';
+import { G } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
 import { unZstd } from '../../lib/Tool.js';
 

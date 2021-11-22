@@ -2,7 +2,7 @@ import AS from 'assert';
 import { resolve } from 'path';
 
 import Biffer from '../../../lib/Biffer.js';
-import { dirCache } from '../../../lib/global.js';
+import { dirCache } from '../../../lib/global.dir.js';
 import { toHexL, unZstd } from '../../../lib/Tool.js';
 
 

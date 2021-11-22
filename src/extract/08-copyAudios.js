@@ -4,7 +4,8 @@ import { parse, resolve } from 'path';
 import FSX from 'fs-extra';
 import Moment from 'moment';
 
-import { C, I, G, dirApp, dirCache } from '../../lib/global.js';
+import { dirCache, dirFinal } from '../../lib/global.dir.js';
+import { C, I, G } from '../../lib/global.js';
 import { crc32, pad0, toHexL } from '../../lib/Tool.js';
 
 
@@ -58,7 +59,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
 				const logsTooLong = [`-------${Moment().format('YYYY-MM-DD HH:mm:ss')}-------`];
 
-				const pathFolder = resolve(dirApp, '_final', `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.server.region}@${C.lang}]`);
+				const pathFolder = resolve(dirFinal, `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.server.region}@${C.lang}]`);
 
 				FSX.ensureDirSync(pathFolder);
 

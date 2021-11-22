@@ -4,7 +4,8 @@ import { resolve } from 'path';
 
 import FSX from 'fs-extra';
 
-import { C, I, G, dirCache } from '../../lib/global.js';
+import { dirCache } from '../../lib/global.dir.js';
+import { C, I, G } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
 
 

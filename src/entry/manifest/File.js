@@ -5,7 +5,8 @@ import Bluebird from 'bluebird';
 import FSX from 'fs-extra';
 import { decompress } from 'node-zstandard';
 
-import { G, dirCache } from '../../../lib/global.js';
+import { dirCache } from '../../../lib/global.dir.js';
+import { G } from '../../../lib/global.js';
 import Biffer from '../../../lib/Biffer.js';
 
 import fetchBundle from '../../fetcher/bundle.js';

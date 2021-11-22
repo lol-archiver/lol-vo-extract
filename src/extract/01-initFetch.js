@@ -1,7 +1,8 @@
 import { existsSync } from 'fs';
 import { resolve } from 'path';
 
-import { C, I, G, dirApp } from '../../lib/global.js';
+import { dirCache } from '../../lib/global.dir.js';
+import { C, I, G } from '../../lib/global.js';
 
 const detectFetch = function(wadsToFetch, nameWad, pathWad, isUseClient) {
 	const isExist = existsSync(pathWad);
@@ -21,10 +22,10 @@ const isUseClient = C.useWADLevel == 2 && C.path.gameVoices;
 
 const pathWadVoice = isUseClient ?
 	resolve(C.path.gameVoices, nameWadVoice) :
-	resolve(dirApp, '_cache', 'asset', nameWadVoice);
+	resolve(dirCache, 'asset', nameWadVoice);
 const pathWadChamp = isUseClient ?
 	resolve(C.path.gameVoices, nameWadChamp) :
-	resolve(dirApp, '_cache', 'asset', nameWadChamp);
+	resolve(dirCache, 'asset', nameWadChamp);
 
 const wadsToFetch = [];
 

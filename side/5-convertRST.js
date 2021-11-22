@@ -2,12 +2,12 @@ import AS from 'assert';
 import { readFileSync, writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import { dirApp } from '../lib/globalDir.js';
+import { dirData } from '../lib/global.dir.js';
 import { C, G } from '../lib/global.js';
 import Biffer from '../lib/Biffer.js';
 
 
-const hashes = readFileSync(resolve(dirApp, 'data', 'hashes.rst.txt'), 'utf8').split('\n').map(line => line.split(' '))
+const hashes = readFileSync(resolve(dirData, 'hashes.rst.txt'), 'utf8').split('\n').map(line => line.split(' '))
 	.reduce((r, [strHash, text]) => ((r[strHash] = text) && 0) || r, {});
 
 

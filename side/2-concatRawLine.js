@@ -1,10 +1,9 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { ensureDirSync } from 'fs-extra';
-import { dirApp } from '../lib/globalDir.js';
+import { dirFinal } from '../lib/global.dir.js';
 
 
-const dirFinal = resolve(dirApp, '_final');
 const dirCWD = resolve(dirFinal, 'Audio2Text');
 const dirText = resolve(dirCWD, 'text');
 ensureDirSync(dirText);

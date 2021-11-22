@@ -1,11 +1,11 @@
 import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
 import { ensureDirSync } from 'fs-extra';
-import { C, I, dirApp } from '../lib/global.js';
+import { dirFinal } from '../lib/global.dir.js';
+import { C, I } from '../lib/global.js';
 import { pad0 } from '../lib/Tool.js';
 
 
-const dirFinal = resolve(dirApp, '_final');
 const dirTarget = resolve(dirFinal, 'LineAudio');
 ensureDirSync(dirTarget);
 
