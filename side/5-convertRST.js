@@ -75,5 +75,5 @@ for(const entry of entries) {
 }
 
 const fileRST = parse(C.path.rst);
-writeFileSync(resolve(fileRST.dir, `${fileRST.name}.match${fileRST.ext}`), entries.filter(e => e.text).map(e => `${e.text} = ${e.content}`).sort().join('\n'));
+writeFileSync(resolve(fileRST.dir, `${fileRST.name}.match${fileRST.ext}`), entries.filter(e => e.text).map(e => `${e.hash} = ${e.text} = ${e.content}`).sort().join('\n'));
 writeFileSync(resolve(fileRST.dir, `${fileRST.name}.unmatch${fileRST.ext}`), entries.filter(e => !e.text).map(e => `${e.hash} = ${e.content}`).join('\n'));
