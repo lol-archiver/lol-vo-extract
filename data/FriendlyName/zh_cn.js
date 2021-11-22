@@ -1,9 +1,13 @@
 export default {
 	AttackChampion: '攻击:英雄',
+	Attack2DGeneral: '攻击:英雄',
 	BasicAttack: '普攻',
 
 	Death: '阵亡',
 
+	JokeResponse: '回应:玩笑',
+	TauntResponse: '回应:嘲讽',
+	Response: '回应',
 	Joke: '玩笑',
 	Taunt: '嘲讽',
 	Laugh: '大笑',
@@ -19,6 +23,7 @@ export default {
 	MoveOrderLong: '移动:长途',
 	MoveOrder: '移动',
 
+	Kill3DGeneral: '击杀:英雄',
 	KillChampion: '击杀:英雄',
 	EndedNearby: '回应',
 	Respawn: '重生',
@@ -33,6 +38,7 @@ export default {
 	KillingSpree: '连杀:大杀特杀',
 
 	PentaKill: '多杀:五杀',
+	Penta: '多杀:五杀',
 
 	Ally: '友方',
 	Enemy: '敌方',
@@ -43,7 +49,6 @@ export default {
 	Move: '移动',
 	Attack: '攻击',
 	Recall: '回城',
-	Response: '回应',
 
 	Female: '女性',
 	Male: '男性',
@@ -952,8 +957,8 @@ export default {
 	LeonaSkin03: '皮肤:钢铁烈阳 蕾欧娜',
 	LeonaSkin02: '皮肤:神圣守卫 蕾欧娜',
 	LeonaSkin01: '皮肤:瓦尔基里 蕾欧娜',
-	LeonaSkin00: '皮肤:曙光女神',
-	LeonaSkin: '皮肤:曙光女神',
+	LeonaSkin00: '皮肤:蕾欧娜',
+	LeonaSkin: '皮肤:蕾欧娜',
 	Leona: '英雄:蕾欧娜',
 	LeeSinSkin29: '皮肤:FPX 李青',
 	LeeSinSkin28: '皮肤:黑夜使者 李青 至臻',

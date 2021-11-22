@@ -150,64 +150,64 @@
 						"id": 23,
 						"name": "Cafe Cuties Annie",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"24": {
 						"id": 24,
 						"name": "Cafe Cuties Annie",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"25": {
 						"id": 25,
 						"name": "Cafe Cuties Annie",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"26": {
 						"id": 26,
 						"name": "Cafe Cuties Annie",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"27": {
 						"id": 27,
 						"name": "Cafe Cuties Annie",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"28": {
 						"id": 28,
 						"name": "Cafe Cuties Annie",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"29": {
 						"id": 29,
 						"name": "Cafe Cuties Annie",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"30": {
 						"id": 30,
 						"name": "Cafe Cuties Annie",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -1915,7 +1915,94 @@
 				"name": "Coven LeBlanc Prestige Edition",
 				"chromas": {}
 			},
-			"34": 20
+			"34": 20,
+			"35": {
+				"id": 35,
+				"name": "Debonair LeBlanc",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Debonair LeBlanc",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35,
+			"44": 35
 		},
 		"spells": {
 			"p": "Mirror Image",
@@ -2171,64 +2258,64 @@
 						"id": 31,
 						"name": "Cafe Cuties Vladimir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"32": {
 						"id": 32,
 						"name": "Cafe Cuties Vladimir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"33": {
 						"id": 33,
 						"name": "Cafe Cuties Vladimir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"34": {
 						"id": 34,
 						"name": "Cafe Cuties Vladimir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"35": {
 						"id": 35,
 						"name": "Cafe Cuties Vladimir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"36": {
 						"id": 36,
 						"name": "Cafe Cuties Vladimir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"37": {
 						"id": 37,
 						"name": "Cafe Cuties Vladimir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"38": {
 						"id": 38,
 						"name": "Cafe Cuties Vladimir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -3159,7 +3246,94 @@
 			"38": 33,
 			"39": 33,
 			"40": 33,
-			"41": 33
+			"41": 33,
+			"42": {
+				"id": 42,
+				"name": "Debonair Master Yi",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Debonair Master Yi",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42,
+			"48": 42,
+			"49": 42,
+			"50": 42,
+			"51": 42
 		},
 		"spells": {
 			"p": "Double Strike",
@@ -4149,64 +4323,64 @@
 						"id": 35,
 						"name": "Cafe Cuties Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"36": {
 						"id": 36,
 						"name": "Cafe Cuties Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"37": {
 						"id": 37,
 						"name": "Cafe Cuties Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"38": {
 						"id": 38,
 						"name": "Cafe Cuties Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"39": {
 						"id": 39,
 						"name": "Cafe Cuties Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"40": {
 						"id": 40,
 						"name": "Cafe Cuties Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"41": {
 						"id": 41,
 						"name": "Cafe Cuties Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"42": {
 						"id": 42,
 						"name": "Cafe Cuties Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -4355,68 +4529,68 @@
 				"chromas": {
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Cafe Cuties Soraka",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"20": {
 						"id": 20,
-						"name": "",
+						"name": "Cafe Cuties Soraka",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"21": {
 						"id": 21,
-						"name": "",
+						"name": "Cafe Cuties Soraka",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#B6E084",
+							"#B6E084"
 						]
 					},
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Cafe Cuties Soraka",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Cafe Cuties Soraka",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Cafe Cuties Soraka",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Cafe Cuties Soraka",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Cafe Cuties Soraka",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
-			}
+					}
 				}
 			},
 			"19": 18,
@@ -14995,7 +15169,99 @@
 			"18": 8,
 			"19": 8,
 			"20": 8,
-			"23": 8
+			"21": {
+				"id": 21,
+				"name": "Debonair Brand",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Debonair Brand",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Debonair Brand",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Debonair Brand",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Debonair Brand",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Debonair Brand",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Debonair Brand",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Debonair Brand",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Debonair Brand",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Debonair Brand",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"22": {
+				"id": 22,
+				"name": "Debonair Brand Prestige Edition",
+				"chromas": {}
+			},
+			"23": 8,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21,
+			"30": 21,
+			"31": 21,
+			"32": 21
 		},
 		"spells": {
 			"p": "Blaze",
@@ -19497,7 +19763,94 @@
 			"29": 21,
 			"30": 21,
 			"31": 21,
-			"32": 22
+			"32": 22,
+			"33": {
+				"id": 33,
+				"name": "Debonair Leona",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "Debonair Leona",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Debonair Leona",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Debonair Leona",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Debonair Leona",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Debonair Leona",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Debonair Leona",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Debonair Leona",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Debonair Leona",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Debonair Leona",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33,
+			"42": 33,
+			"43": 33
 		},
 		"spells": {
 			"p": "Sunlight",
@@ -19731,7 +20084,94 @@
 			"24": 18,
 			"25": 18,
 			"26": 18,
-			"27": 18
+			"27": 18,
+			"28": {
+				"id": 28,
+				"name": "Debonair Malzahar",
+				"chromas": {
+					"29": {
+						"id": 29,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Debonair Malzahar",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"29": 28,
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28,
+			"37": 28
 		},
 		"spells": {
 			"p": "Void Shift",
@@ -21645,17 +22085,44 @@
 			"1": {
 				"id": 1,
 				"name": "Dynasty Ahri",
-				"chromas": {}
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Dynasty Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
 			},
 			"2": {
 				"id": 2,
 				"name": "Midnight Ahri",
-				"chromas": {}
+				"chromas": {
+					"53": {
+						"id": 53,
+						"name": "Midnight Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
 			},
 			"3": {
 				"id": 3,
 				"name": "Foxfire Ahri",
-				"chromas": {}
+				"chromas": {
+					"54": {
+						"id": 54,
+						"name": "Foxfire Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
 			},
 			"4": {
 				"id": 4,
@@ -21708,6 +22175,14 @@
 							"#FFEE59",
 							"#FFEE59"
 						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Popstar Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 					}
 				}
 			},
@@ -21722,18 +22197,44 @@
 							"#FFC948",
 							"#FFC948"
 						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Challenger Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 					}
 				}
 			},
 			"6": {
 				"id": 6,
 				"name": "Academy Ahri",
-				"chromas": {}
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "Academy Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
 			},
 			"7": {
 				"id": 7,
 				"name": "Arcade Ahri",
-				"chromas": {}
+				"chromas": {
+					"58": {
+						"id": 58,
+						"name": "Arcade Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
 			},
 			"8": 4,
 			"9": 4,
@@ -21744,12 +22245,30 @@
 			"14": {
 				"id": 14,
 				"name": "Star Guardian Ahri",
-				"chromas": {}
+				"chromas": {
+					"59": {
+						"id": 59,
+						"name": "Star Guardian Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
 			},
 			"15": {
 				"id": 15,
 				"name": "K/DA Ahri",
-				"chromas": {}
+				"chromas": {
+					"60": {
+						"id": 60,
+						"name": "K/DA Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
 			},
 			"16": {
 				"id": 16,
@@ -21823,6 +22342,14 @@
 							"#27211C",
 							"#27211C"
 						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Elderwood Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 					}
 				}
 			},
@@ -21877,6 +22404,14 @@
 						"colors": [
 							"#0C0C0F",
 							"#B2D1E4"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Spirit Blossom Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
 						]
 					}
 				}
@@ -21947,6 +22482,14 @@
 						"colors": [
 							"#0C0C0F",
 							"#272A3F"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "K/DA ALL OUT Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
 						]
 					}
 				}
@@ -22039,6 +22582,14 @@
 							"#162B30",
 							"#8E0A38"
 						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Coven Ahri",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
 					}
 				}
 			},
@@ -22050,7 +22601,20 @@
 			"48": 42,
 			"49": 42,
 			"50": 42,
-			"51": 42
+			"51": 42,
+			"52": 1,
+			"53": 2,
+			"54": 3,
+			"55": 4,
+			"56": 5,
+			"57": 6,
+			"58": 7,
+			"59": 14,
+			"60": 15,
+			"61": 17,
+			"62": 27,
+			"63": 28,
+			"64": 42
 		},
 		"spells": {
 			"p": "Essence Theft",
@@ -25129,7 +25693,94 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"29": {
+				"id": 29,
+				"name": "Debonair Draven",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Debonair Draven",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Debonair Draven",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Debonair Draven",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Debonair Draven",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Debonair Draven",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Debonair Draven",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Debonair Draven",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Debonair Draven",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Debonair Draven",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29,
+			"38": 29
 		},
 		"spells": {
 			"p": "League of Draven",
@@ -31930,8 +32581,63 @@
 			"31": {
 				"id": 31,
 				"name": "Debonair Zed",
-				"chromas": {}
-			}
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "Debonair Zed",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Debonair Zed",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Debonair Zed",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Debonair Zed",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Debonair Zed",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Debonair Zed",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"32": 31,
+			"33": 31,
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31
 		},
 		"spells": {
 			"p": "Contempt for the Weak",
@@ -35129,64 +35835,64 @@
 						"id": 18,
 						"name": "Cafe Cuties Bard",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"19": {
 						"id": 19,
 						"name": "Cafe Cuties Bard",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"20": {
 						"id": 20,
 						"name": "Cafe Cuties Bard",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"21": {
 						"id": 21,
 						"name": "Cafe Cuties Bard",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"22": {
 						"id": 22,
 						"name": "Cafe Cuties Bard",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"23": {
 						"id": 23,
 						"name": "Cafe Cuties Bard",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"24": {
 						"id": 24,
 						"name": "Cafe Cuties Bard",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"25": {
 						"id": 25,
 						"name": "Cafe Cuties Bard",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -37645,66 +38351,66 @@
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "",
+						"name": "Cafe Cuties Gwen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"13": {
 						"id": 13,
-						"name": "",
+						"name": "Cafe Cuties Gwen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"14": {
 						"id": 14,
-						"name": "",
+						"name": "Cafe Cuties Gwen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"15": {
 						"id": 15,
-						"name": "",
+						"name": "Cafe Cuties Gwen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"16": {
 						"id": 16,
-						"name": "",
+						"name": "Cafe Cuties Gwen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Cafe Cuties Gwen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Cafe Cuties Gwen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Cafe Cuties Gwen",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					}
 				}
