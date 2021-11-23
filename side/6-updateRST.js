@@ -8,5 +8,5 @@ import { rstHash } from '../lib/Tool.js';
 writeFileSync(
 	resolve(dirData, 'hashes.rst.txt'),
 	readFileSync(resolve(dirData, 'texts.rst.txt'), 'utf8')
-		.split('\n').map(l => `${rstHash(l, true)} ${l}`).join('\n')
+		.split('\n').map(l => `${rstHash(l, true, 39).toLowerCase()} ${l}`).join('\n')
 );
