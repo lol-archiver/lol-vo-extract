@@ -1,6 +1,6 @@
 export default {
 	AttackChampion: '攻击:英雄',
-	Attack2DGeneral: '攻击:英雄',
+	AttackGeneral: '攻击:英雄',
 	BasicAttack: '普攻',
 
 	Death: '阵亡',
@@ -13,7 +13,7 @@ export default {
 	Laugh: '大笑',
 	Dance: '跳舞',
 
-	FirstEncounter3DGeneral: '初遇:英雄',
+	FirstEncounterGeneral: '初遇:英雄',
 	FirstEncounter: '初遇',
 	MoveFirst: '移动:初次',
 	MoveLong: '移动:长途',
@@ -23,7 +23,7 @@ export default {
 	MoveOrderLong: '移动:长途',
 	MoveOrder: '移动',
 
-	Kill3DGeneral: '击杀:英雄',
+	KillGeneral: '击杀:英雄',
 	KillChampion: '击杀:英雄',
 	EndedNearby: '回应',
 	Respawn: '重生',
