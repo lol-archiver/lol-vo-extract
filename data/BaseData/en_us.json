@@ -1416,7 +1416,94 @@
 			"32": 27,
 			"33": 27,
 			"34": 27,
-			"35": 27
+			"35": 27,
+			"36": {
+				"id": 36,
+				"name": "Firecracker Xin Zhao",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Firecracker Xin Zhao",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
+			},
+			"37": 36,
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36,
+			"45": 36
 		},
 		"spells": {
 			"p": "Determination",
@@ -1988,8 +2075,8 @@
 						"id": 44,
 						"name": "Debonair LeBlanc",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#42A7CC",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -3319,8 +3406,8 @@
 						"id": 51,
 						"name": "Debonair Master Yi",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#42A7CC",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -4905,7 +4992,94 @@
 			"33": 14,
 			"34": 14,
 			"35": 14,
-			"36": 14
+			"36": 14,
+			"37": {
+				"id": 37,
+				"name": "Firecracker Teemo",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Firecracker Teemo",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37,
+			"46": 37
 		},
 		"spells": {
 			"p": "Guerrilla Warfare",
@@ -5246,7 +5420,94 @@
 				"id": 40,
 				"name": "Hextech Tristana",
 				"chromas": {}
+			},
+			"41": {
+				"id": 41,
+				"name": "Firecracker Tristana",
+				"chromas": {
+					"42": {
+						"id": 42,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Firecracker Tristana",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
 			}
+				}
+			},
+			"42": 41,
+			"43": 41,
+			"44": 41,
+			"45": 41,
+			"46": 41,
+			"47": 41,
+			"48": 41,
+			"49": 41,
+			"50": 41
 		},
 		"spells": {
 			"p": "Draw a Bead",
@@ -8715,7 +8976,94 @@
 			"30": 24,
 			"31": 24,
 			"32": 24,
-			"33": 24
+			"33": 24,
+			"34": {
+				"id": 34,
+				"name": "Porcelain Amumu",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Porcelain Amumu",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
+			},
+			"35": 34,
+			"36": 34,
+			"37": 34,
+			"38": 34,
+			"39": 34,
+			"40": 34,
+			"41": 34,
+			"42": 34,
+			"43": 34
 		},
 		"spells": {
 			"p": "Cursed Touch",
@@ -9218,6 +9566,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Divine Phoenix Anivia",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
 					}
 				}
 			},
@@ -9228,7 +9584,8 @@
 			"32": 27,
 			"33": 27,
 			"34": 27,
-			"35": 27
+			"35": 27,
+			"36": 27
 		},
 		"spells": {
 			"p": "Rebirth",
@@ -10675,7 +11032,85 @@
 			"32": 27,
 			"33": 27,
 			"34": 27,
-			"35": 27
+			"35": 27,
+			"36": {
+				"id": 36,
+				"name": "Crystal Rose Janna",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Crystal Rose Janna",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Crystal Rose Janna",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Crystal Rose Janna",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Crystal Rose Janna",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Crystal Rose Janna",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Crystal Rose Janna",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Crystal Rose Janna",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Crystal Rose Janna",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"37": 36,
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36
 		},
 		"spells": {
 			"p": "Tailwind",
@@ -12409,8 +12844,8 @@
 						"id": 7,
 						"name": "Caitlyn Rebel",
 						"colors": [
-							"#426FC9",
-							"#A2A8AB"
+							"#DA769A",
+							"#F4E3D5"
 						]
 					},
 					"8": {
@@ -12425,8 +12860,8 @@
 						"id": 9,
 						"name": "Caitlyn Rebel",
 						"colors": [
-							"#DA769A",
-							"#F4E3D5"
+							"#426FC9",
+							"#A2A8AB"
 						]
 					}
 				}
@@ -12472,8 +12907,8 @@
 						"id": 12,
 						"name": "Lunar Wraith Caitlyn",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -14693,7 +15128,85 @@
 			"11": 6,
 			"12": 6,
 			"13": 6,
-			"14": 6
+			"14": 6,
+			"15": {
+				"id": 15,
+				"name": "Withered Rose Elise",
+				"chromas": {
+					"16": {
+						"id": 16,
+						"name": "Withered Rose Elise",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Withered Rose Elise",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Withered Rose Elise",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Withered Rose Elise",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Withered Rose Elise",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Withered Rose Elise",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Withered Rose Elise",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Withered Rose Elise",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"16": 15,
+			"17": 15,
+			"18": 15,
+			"19": 15,
+			"20": 15,
+			"21": 15,
+			"22": 15,
+			"23": 15
 		},
 		"spells": {
 			"p": "Spider Queen",
@@ -15241,8 +15754,8 @@
 						"id": 32,
 						"name": "Debonair Brand",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#42A7CC",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -15666,7 +16179,16 @@
 			"12": {
 				"id": 12,
 				"name": "Firecracker Vayne",
-				"chromas": {}
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Firecracker Vayne",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
 			},
 			"13": {
 				"id": 13,
@@ -15825,7 +16347,8 @@
 			"28": 25,
 			"29": 25,
 			"30": 25,
-			"31": 25
+			"31": 25,
+			"34": 12
 		},
 		"spells": {
 			"p": "Night Hunter",
@@ -17992,7 +18515,67 @@
 				"id": 23,
 				"name": "PsyOps Ezreal Prestige Edition",
 				"chromas": {}
+			},
+			"25": {
+				"id": 25,
+				"name": "Porcelain Protector Ezreal",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Porcelain Protector Ezreal",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Porcelain Protector Ezreal",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Porcelain Protector Ezreal",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Porcelain Protector Ezreal",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Porcelain Protector Ezreal",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Porcelain Protector Ezreal",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
 			}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25
 		},
 		"spells": {
 			"p": "Rising Spell Force",
@@ -19836,8 +20419,8 @@
 						"id": 43,
 						"name": "Debonair Leona",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#42A7CC",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -20157,8 +20740,8 @@
 						"id": 37,
 						"name": "Debonair Malzahar",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#42A7CC",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -21734,7 +22317,99 @@
 			"25": 19,
 			"26": 19,
 			"27": 19,
-			"28": 19
+			"28": 19,
+			"29": {
+				"id": 29,
+				"name": "Porcelain Lux",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Porcelain Lux",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29,
+			"40": {
+				"id": 40,
+				"name": "Porcelain Lux Prestige Edition",
+				"chromas": {}
+			},
+			"41": 29
 		},
 		"spells": {
 			"p": "Illumination",
@@ -22090,8 +22765,8 @@
 						"id": 52,
 						"name": "Dynasty Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22104,8 +22779,8 @@
 						"id": 53,
 						"name": "Midnight Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22118,8 +22793,8 @@
 						"id": 54,
 						"name": "Foxfire Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22180,8 +22855,8 @@
 						"id": 55,
 						"name": "Popstar Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22202,8 +22877,8 @@
 						"id": 56,
 						"name": "Challenger Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22216,8 +22891,8 @@
 						"id": 57,
 						"name": "Academy Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22230,8 +22905,8 @@
 						"id": 58,
 						"name": "Arcade Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22250,8 +22925,8 @@
 						"id": 59,
 						"name": "Star Guardian Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22264,8 +22939,8 @@
 						"id": 60,
 						"name": "K/DA Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22347,8 +23022,8 @@
 						"id": 61,
 						"name": "Elderwood Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22410,8 +23085,8 @@
 						"id": 62,
 						"name": "Spirit Blossom Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22488,8 +23163,8 @@
 						"id": 63,
 						"name": "K/DA ALL OUT Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -22587,8 +23262,8 @@
 						"id": 64,
 						"name": "Coven Ahri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2E38C4",
+							"#C8003F"
 						]
 					}
 				}
@@ -24329,6 +25004,14 @@
 							"#73BFBE",
 							"#73BFBE"
 						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Firecracker Sejuani",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
 					}
 				}
 			},
@@ -24429,7 +25112,8 @@
 			"22": 16,
 			"23": 16,
 			"24": 16,
-			"25": 16
+			"25": 16,
+			"27": 8
 		},
 		"spells": {
 			"p": "Fury of the North",
@@ -25766,8 +26450,8 @@
 						"id": 38,
 						"name": "Debonair Draven",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#42A7CC",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -27141,7 +27825,94 @@
 			"19": 12,
 			"20": 12,
 			"21": 12,
-			"22": 4
+			"22": 4,
+			"23": {
+				"id": 23,
+				"name": "Porcelain Lissandra",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Porcelain Lissandra",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
+			},
+			"24": 23,
+			"25": 23,
+			"26": 23,
+			"27": 23,
+			"28": 23,
+			"29": 23,
+			"30": 23,
+			"31": 23,
+			"32": 23
 		},
 		"spells": {
 			"p": "Iceborn Subjugation",
@@ -27457,7 +28228,94 @@
 			"33": 27,
 			"34": 27,
 			"35": 27,
-			"36": 27
+			"36": 27,
+			"37": {
+				"id": 37,
+				"name": "Firecracker Diana",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Firecracker Diana",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37,
+			"46": 37
 		},
 		"spells": {
 			"p": "Moonsilver Blade",
@@ -29078,6 +29936,14 @@
 							"#73BFBE",
 							"#73BFBE"
 						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Graceful Phoenix Seraphine",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
 					}
 				}
 			},
@@ -29088,7 +29954,8 @@
 			"9": 4,
 			"10": 4,
 			"11": 4,
-			"12": 4
+			"12": 4,
+			"13": 4
 		},
 		"spells": {
 			"p": "Stage Presence",
@@ -29275,7 +30142,85 @@
 			"18": 15,
 			"19": 15,
 			"20": 15,
-			"21": 15
+			"21": 15,
+			"22": {
+				"id": 22,
+				"name": "Elderwood Gnar",
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "Elderwood Gnar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Elderwood Gnar",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Elderwood Gnar",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Elderwood Gnar",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Elderwood Gnar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Elderwood Gnar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Elderwood Gnar",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Elderwood Gnar",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"23": 22,
+			"24": 22,
+			"25": 22,
+			"26": 22,
+			"27": 22,
+			"28": 22,
+			"29": 22,
+			"30": 22
 		},
 		"spells": {
 			"p": "Rage Gene",
@@ -30373,7 +31318,85 @@
 			"6": 1,
 			"7": 1,
 			"8": 1,
-			"9": 1
+			"9": 1,
+			"10": {
+				"id": 10,
+				"name": "Crystal Rose Akshan",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Crystal Rose Akshan",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Crystal Rose Akshan",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Crystal Rose Akshan",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Crystal Rose Akshan",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Crystal Rose Akshan",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Crystal Rose Akshan",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Crystal Rose Akshan",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Crystal Rose Akshan",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10
 		},
 		"spells": {
 			"p": "Dirty Fighting",
@@ -31068,7 +32091,94 @@
 			"8": 3,
 			"9": 3,
 			"10": 3,
-			"11": 3
+			"11": 3,
+			"12": {
+				"id": 12,
+				"name": "Porcelain Kindred",
+				"chromas": {
+					"13": {
+						"id": 13,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Porcelain Kindred",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
+			},
+			"13": 12,
+			"14": 12,
+			"15": 12,
+			"16": 12,
+			"17": 12,
+			"18": 12,
+			"19": 12,
+			"20": 12,
+			"21": 12
 		},
 		"spells": {
 			"p": "Mark of the Kindred",
@@ -31076,6 +32186,107 @@
 			"w": "Wolf's Frenzy",
 			"e": "Mounting Dread",
 			"r": "Lamb's Respite"
+		}
+	},
+	"221": {
+		"id": 221,
+		"name": "Zeri",
+		"title": "The Spark of Zaun",
+		"slot": "Zeri",
+		"roles": [
+			"marksman"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Zeri",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Withered Rose Zeri",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Withered Rose Zeri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Withered Rose Zeri",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Withered Rose Zeri",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Withered Rose Zeri",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Withered Rose Zeri",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Withered Rose Zeri",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Withered Rose Zeri",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Withered Rose Zeri",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1
+		},
+		"spells": {
+			"p": "Living Battery",
+			"q": "Burst Fire",
+			"w": "Ultrashock Laser",
+			"e": "Spark Surge",
+			"r": "Lightning Crash"
 		}
 	},
 	"222": {
@@ -31155,6 +32366,14 @@
 						"colors": [
 							"#2DA130",
 							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Firecracker Jinx",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
 						]
 					}
 				}
@@ -31392,7 +32611,8 @@
 				"id": 37,
 				"name": "Arcane Jinx",
 				"chromas": {}
-			}
+			},
+			"39": 2
 		},
 		"spells": {
 			"p": "Get Excited!",
@@ -32626,8 +33846,8 @@
 						"id": 37,
 						"name": "Debonair Zed",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#42A7CC",
+							"#FFFFFF"
 						]
 					}
 				}
@@ -35360,7 +36580,85 @@
 			"13": 9,
 			"14": 9,
 			"15": 9,
-			"16": 9
+			"16": 9,
+			"17": {
+				"id": 17,
+				"name": "Elderwood Rek'Sai",
+				"chromas": {
+					"18": {
+						"id": 18,
+						"name": "Elderwood Rek'Sai",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Elderwood Rek'Sai",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Elderwood Rek'Sai",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Elderwood Rek'Sai",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Elderwood Rek'Sai",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Elderwood Rek'Sai",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Elderwood Rek'Sai",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Elderwood Rek'Sai",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"18": 17,
+			"19": 17,
+			"20": 17,
+			"21": 17,
+			"22": 17,
+			"23": 17,
+			"24": 17,
+			"25": 17
 		},
 		"spells": {
 			"p": "Fury of the Xer'Sai",
@@ -36275,6 +37573,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Brave Phoenix Xayah",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
 					}
 				}
 			},
@@ -36285,7 +37591,13 @@
 			"22": 17,
 			"23": 17,
 			"24": 17,
-			"25": 17
+			"25": 17,
+			"26": {
+				"id": 26,
+				"name": "Brave Phoenix Xayah Prestige Edition",
+				"chromas": {}
+			},
+			"27": 17
 		},
 		"spells": {
 			"p": "Clean Cuts",
@@ -38045,6 +39357,84 @@
 			"16": 10,
 			"17": 10,
 			"18": 10,
+			"19": {
+				"id": 19,
+				"name": "Firecracker Sett",
+				"chromas": {
+					"29": {
+						"id": 29,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Firecracker Sett",
+						"colors": [
+							"#FF9D13",
+							"#B9FFC1"
+						]
+					}
+				}
+			},
 			"20": 8,
 			"21": 8,
 			"22": 8,
@@ -38053,7 +39443,16 @@
 			"25": 8,
 			"26": 8,
 			"27": 8,
-			"28": 8
+			"28": 8,
+			"29": 19,
+			"30": 19,
+			"31": 19,
+			"32": 19,
+			"33": 19,
+			"34": 19,
+			"35": 19,
+			"36": 19,
+			"37": 19
 		},
 		"spells": {
 			"p": "Pit Grit",
