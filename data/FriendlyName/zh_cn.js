@@ -37,8 +37,10 @@ export default {
 
 	KillingSpree: '连杀:大杀特杀',
 
-	PentaKill: '多杀:五杀',
-	Penta: '多杀:五杀',
+	PentaKill: '击杀:多杀:五杀',
+	KillPenta: '击杀:多杀:五杀',
+	KillQuadra: '击杀:多杀:四杀',
+	KillTriple: '击杀:多杀:三杀',
 
 	Ally: '友方',
 	Enemy: '敌方',
