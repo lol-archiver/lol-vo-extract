@@ -17,7 +17,8 @@ const pathsAudios = [
 const pathLine = C.path.line;
 
 
-const arrAudioFile = pathsAudios.reduce((acc, pathAudios) => { acc.push(...readdirSync(pathAudios).map(name => resolve(pathAudios, name))); return acc; }, []);
+const arrAudioFile = pathsAudios.reduce((acc, pathAudios) => { acc.push(...readdirSync(pathAudios).map(name => resolve(pathAudios, name))); return acc; }, [])
+	;
 const arrLineText = readFileSync(pathLine, 'UTF8').split('\n').filter(text => text.trim());
 
 let curEvent;
@@ -33,7 +34,7 @@ for(const lineText of arrLineText) {
 	}
 
 	if(lineText.startsWith('### **')) {
-		const [event] = lineText.replace('### ', '').replace('**', '').trim().split(' | ');
+		const [event] = lineText.replace('### ', '').replace(/\*\*/g, '').trim().split(' | ');
 
 		curEvent = event;
 	}
@@ -48,6 +49,20 @@ for(const lineText of arrLineText) {
 				file,
 				resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]]/g, '')}] ${line.replace(/\*/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
 			);
+		}
+		else if(crc32 == '00000000') {
+			if(curEvent.includes('选用')) {
+				copyFileSync(
+					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'pick.wav'),
+					resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]]/g, '')}] ${line.replace(/\*/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
+				);
+			}
+			else if(curEvent.includes('禁用')) {
+				copyFileSync(
+					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'ban.wav'),
+					resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]]/g, '')}] ${line.replace(/\*/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
+				);
+			}
 		}
 		else {
 			// eslint-disable-next-line no-console
