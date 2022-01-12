@@ -1,8 +1,0 @@
-{
-	"region": "NA1",
-	"solution": "game",
-	"cdn": "https://lol.dyn.riotcdn.net",
-	"sie": "https://sieve.services.riotcdn.net",
-	// proxy: { host: '127.0.0.1', port: 9000, },
-	"proxy": false
-}

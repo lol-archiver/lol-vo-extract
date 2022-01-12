@@ -1,0 +1,45 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema",
+	"title": "Log Config",
+	"description": "lol-vo-extract.log",
+	"type": "object",
+	"properties": {
+		"name": {
+			"description": "日志名称",
+			"type": "string"
+		},
+		"level": {
+			"description": "日志等级",
+			"type": "string",
+			"enum": [
+				"all",
+				"off",
+				"trace",
+				"debug",
+				"info",
+				"warn",
+				"error",
+				"fatal",
+				"mark"
+			]
+		},
+		"option": {
+			"description": "选项",
+			"type": "object",
+			"properties": {
+				"lang": {
+					"description": "日志语言",
+					"type": "string",
+					"enum": [
+						"zh_cn",
+						"en_us"
+					]
+				}
+			}
+		}
+	},
+	"required": [
+		"name",
+		"level"
+	]
+}

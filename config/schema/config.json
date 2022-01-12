@@ -1,0 +1,92 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema",
+	"title": "Config",
+	"description": "lol-vo-extract.config",
+	"type": "object",
+	"properties": {
+		"target": {
+			"description": "解压目标",
+			"type": "string",
+			"examples": [
+				"{champion slot}|{min skinID or single skinID}|[{max skinID}]"
+			]
+		},
+		"lang": {
+			"description": "解压语言",
+			"type": "string",
+			"enum": [
+				"zh_cn",
+				"en_us"
+			]
+		},
+		"format": {
+			"description": "音频文件格式",
+			"type": "string",
+			"enum": [
+				"wav",
+				"ogg",
+				"wem"
+			]
+		},
+		"useWADLevel": {
+			"description": "WAD文件获取策略\n0，优先使用缓存\n1，优先下载文件\n2、优先使用客户端文件",
+			"type": "integer",
+			"minimum": 0,
+			"maximum": 2,
+			"default": 0
+		},
+		"useSFXLevel": {
+			"description": "音效文件提取策略\n0，不提取音效\n1，只用于辅助分析事件\n2、提取音效",
+			"type": "integer",
+			"minimum": 0,
+			"maximum": 2,
+			"default": 0
+		},
+		"forceUseBase": {
+			"description": "是否强制解析基础皮肤文件，以辅助分析事件",
+			"type": "boolean",
+			"default": false
+		},
+		"_path": {
+			"description": "路径合集",
+			"type": "object",
+			"properties": {
+				"dirRaw": {
+					"description": "原始素材目录",
+					"type": "string"
+				},
+				"dirBase": {
+					"description": "基本素材目录",
+					"type": "string"
+				},
+				"dirWAD": {
+					"description": "WAD文件目录",
+					"type": "string"
+				},
+				"dirGameVoices": {
+					"description": "本科客户端英雄文件目录",
+					"type": "string"
+				},
+				"dirAutogen": {
+					"description": "lol-vp-aeproject-autogen项目目录",
+					"type": "string"
+				},
+				"rextractorConsole": {
+					"description": "RExtractorConsole.exe程序路径",
+					"type": "string"
+				},
+				"line": {
+					"description": "台词文件路径",
+					"type": "string"
+				},
+				"rst": {
+					"description": "RST字典路径",
+					"type": "string"
+				}
+			}
+		}
+	},
+	"required": [
+		"target"
+	]
+}

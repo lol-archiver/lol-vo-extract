@@ -1,0 +1,55 @@
+{
+	"$schema": "https://json-schema.org/draft-07/schema",
+	"title": "Server Config",
+	"description": "lol-vo-extract.server",
+	"type": "object",
+	"properties": {
+		"region": {
+			"description": "服务器ID",
+			"type": "string"
+		},
+		"solution": {
+			"description": "解决方案",
+			"type": "string"
+		},
+		"cdn": {
+			"description": "CDN地址",
+			"type": "string"
+		},
+		"sie": {
+			"description": "SIE地址",
+			"type": "string"
+		},
+		"proxy": {
+			"description": "代理",
+			"type": [
+				"object",
+				"boolean"
+			],
+			"properties": {
+				"host": {
+					"description": "代理主机地址",
+					"type": "string"
+				},
+				"post": {
+					"description": "代理主机端口",
+					"type": "number"
+				}
+			},
+			"required": [
+				"host",
+				"post"
+			],
+			"not": {
+				"const": true
+			},
+			"default": false
+		}
+	},
+	"required": [
+		"region",
+		"solution",
+		"cdn",
+		"sie"
+	]
+}

@@ -1,5 +1,27 @@
 {
+	"npm.packageManager": "pnpm",
 	"eslint.packageManager": "pnpm",
 	"files.trimTrailingWhitespace": true,
 	"javascript.preferences.importModuleSpecifierEnding": "js",
+	"json.schemas": [
+		{
+			"url": "/config/schema/config.json",
+			"fileMatch": [
+				"/config/config.json"
+			]
+		},
+		{
+			"url": "/config/schema/config.log.json",
+			"fileMatch": [
+				"/config/config.log.json"
+			]
+		},
+		{
+			"url": "/config/schema/config.server.json",
+			"fileMatch": [
+				"/config/config.server.json"
+			]
+		},
+	],
+
 }
