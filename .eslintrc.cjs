@@ -5,12 +5,12 @@ const rcNode = {
 	parserOptions: { sourceType: 'module', ecmaVersion: 13 },
 	rules: {
 		indent: [2, 'tab', { ignoreComments: true, SwitchCase: 1 }],
-		linebreakStyle: [2],
+		linebreakStyle: [2, 'unix'],
 		quotes: [2, 'single', { allowTemplateLiterals: true }],
 		semi: [2],
 		noUnusedVars: [2, { vars: 'all', args: 'none' }],
 		noVar: [2],
-		noConsole: [2],
+		noConsole: [2, { allow: ['log', 'warn', 'error'] }],
 	},
 };
 

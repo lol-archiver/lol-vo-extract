@@ -110,9 +110,9 @@ const convert = (region) => {
 		}
 	}
 
-	// writeFileSync(resolve(dirSelf, '..', 'data', 'BaseData', `${region}-chromaCounts.json`), JSON.stringify(countsChroma, null, '\t'));
+	// writeFileSync(resolve(dirSelf, '..', 'data', 'base', `${region}-chromaCounts.json`), JSON.stringify(countsChroma, null, '\t'));
 
-	writeFileSync(resolve(dirSelf, '..', 'data', 'BaseData', `${region}-new.json`), JSON.stringify(result, null, '\t')
+	writeFileSync(resolve(dirSelf, '..', 'data', 'base', `${region}-new.json`), JSON.stringify(result, null, '\t')
 		.replace(/ · /g, '·')
 		.replace(/ {2}/g, ' ')
 		.replace(RegExp(Buffer.from([0xc2, 0xa0]).toString(), 'g'), ' ')

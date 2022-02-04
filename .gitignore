@@ -10,3 +10,5 @@ node_modules
 /config/config.log.json
 
 /log/*
+
+/side/0-local.js

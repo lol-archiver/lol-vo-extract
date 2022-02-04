@@ -6,10 +6,10 @@ import Moment from 'moment';
 import { dirCache } from '../../lib/global.dir.js';
 import { C, I, G } from '../../lib/global.js';
 import { crc32, pad0, toHexL } from '../../lib/Tool.js';
-import baseData, { en_us } from '../../lib/BaseData.js';
+import dataBase, { en_us } from '../../lib/dataBase.js';
 
 
-const baseDataNow = baseData();
+const dataBaseNow = dataBase();
 
 const findFriendly = function(name, map) {
 	let nameFormat = name.toLowerCase().replace(/[23]d/g, '');
@@ -72,7 +72,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 		const hex = toHexL(audioID, 8);
 
-		const dict = baseDataNow;
+		const dict = dataBaseNow;
 		const dictEN = en_us;
 
 		for(const eventInfo of eventInfos) {

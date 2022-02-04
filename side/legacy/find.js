@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 
-import { en_us as dataE, zh_cn as dataZ } from '../lib/BaseData.js';
+import { en_us as dataE, zh_cn as dataZ } from '../lib/dataBase.js';
 
 
 const ver = '09.12';
