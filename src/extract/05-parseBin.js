@@ -3,9 +3,7 @@ import { parse } from 'path';
 
 import { I, G } from '../../lib/global.js';
 import Biffer from '../../lib/Biffer.js';
-import dataBase from '../../lib/dataBase.js';
-
-const dataBaseNow = dataBase();
+import { dataBase } from '../../lib/dataBase.js';
 
 export default function parseBin(binPath, indexSkin) {
 	if(!existsSync(binPath)) { return; }
@@ -30,7 +28,7 @@ export default function parseBin(binPath, indexSkin) {
 		idSkin = ~~subID;
 	}
 
-	const skin = dataBaseNow[I.id].skins[idSkin];
+	const skin = dataBase[I.id].skins[idSkin];
 	if(!skin) {
 		if(binBiffer.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
 			G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[chroma] skip`);
@@ -62,14 +60,14 @@ export default function parseBin(binPath, indexSkin) {
 		isBase = idSkin == 0;
 
 		if(isBase) {
-			skinNameFinal = `${dataBaseNow[I.id].title} ${dataBaseNow[I.id].name}`;
+			skinNameFinal = `${dataBase[I.id].title} ${dataBase[I.id].name}`;
 		}
 
 
 		G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[skin]~{${skinNameFinal}}`);
 	}
 	else if(skin && typeof skin == 'number') {
-		const chromas = dataBaseNow[I.id].skins[skin].chromas[idSkin];
+		const chromas = dataBase[I.id].skins[skin].chromas[idSkin];
 		const stage = chromas.stage;
 
 		if(stage) {

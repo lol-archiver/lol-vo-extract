@@ -1,0 +1,34 @@
+{
+	"translation": {
+		"champion": "champion",
+		"matchInfo": "match ~[info]",
+		"1": "1"
+	},
+	"where": {
+		"Process": "Process",
+		"Top": "Top",
+		"1": "1"
+	},
+	"error": {
+		"unhandledRejection": "Unhandled Rejection",
+		"1": "1"
+	},
+	"matchChampion": {
+		"do": "match ~[champion]",
+		"ok": "✔ ~[id]{{id,hv}} ~[slot]{{slot,hv}} ~[name]{{name,hv}}",
+		"no": "✖ ~[slot]{{slot,hv}} not found"
+	},
+	"matchSkin": {
+		"do": "match ~[skin]",
+		"ok": "✔ ~[id]{{id,hv}} ~[name]{{name,hv}}",
+		"no": "✖ ~[id]{{id,hv}} not found"
+	},
+	"matchLanguage": {
+		"do": "match ~[language]",
+		"ok": "✔ ~[language]{{lang,hv}}"
+	},
+	"matchServer": {
+		"do": "match ~[server]",
+		"ok": "✔ ~[region]{{region,hv}} ~[solution]{{solution,hv}} ~[CDN]{{-cdn,hv}} ~[SIE]{{-sie,hv}}"
+	}
+}

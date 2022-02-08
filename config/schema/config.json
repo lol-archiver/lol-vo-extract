@@ -28,19 +28,43 @@
 				"wem"
 			]
 		},
-		"useWADLevel": {
-			"description": "WAD文件获取策略\n0，优先使用缓存\n1，优先下载文件\n2、优先使用客户端文件",
-			"type": "integer",
-			"minimum": 0,
-			"maximum": 2,
-			"default": 0
+		"sourceWAD": {
+			"description": "WAD文件来源：\n'cache'，优先使用已缓存的WAD文件。若不存在则下载文件\n'fetch'，n优先下载最新的WAD文件\n'client'，n优先使用游戏客户端中的文件WAD文件",
+			"type": "string",
+			"default": "cache",
+			"oneOf": [
+				{
+					"const": "cache",
+					"description": "WAD文件来源：\n优先使用已缓存的WAD文件。若不存在则下载文件"
+				},
+				{
+					"const": "fetch",
+					"description": "WAD文件来源：\n优先下载最新的WAD文件"
+				},
+				{
+					"const": "client",
+					"description": "WAD文件来源：\n优先使用游戏客户端中的文件WAD文件"
+				}
+			]
 		},
 		"useSFXLevel": {
 			"description": "音效文件提取策略\n0，不提取音效\n1，只用于辅助分析事件\n2、提取音效",
 			"type": "integer",
-			"minimum": 0,
-			"maximum": 2,
-			"default": 0
+			"default": 0,
+			"oneOf": [
+				{
+					"const": 0,
+					"description": "WAD文件来源：\n优先使用已缓存的WAD文件。若不存在则下载文件"
+				},
+				{
+					"const": 1,
+					"description": "WAD文件来源：\n优先下载最新的WAD文件"
+				},
+				{
+					"const": 2,
+					"description": "WAD文件来源：\n优先使用游戏客户端中的文件WAD文件"
+				}
+			]
 		},
 		"forceUseBase": {
 			"description": "是否强制解析基础皮肤文件，以辅助分析事件",

@@ -1,0 +1,34 @@
+{
+	"translation": {
+		"champion": "英雄",
+		"matchInfo": "匹配 ~[信息]",
+		"1": "1"
+	},
+	"where": {
+		"Process": "进程",
+		"Top": "顶级",
+		"1": "1"
+	},
+	"error": {
+		"unhandledRejection": "未处理的驳回",
+		"1": "1"
+	},
+	"matchChampion": {
+		"do": "匹配~[英雄]",
+		"ok": "✔ ~[id]{{id,hv}} ~[slot]{{slot,hv}} ~[名称]{{name,hv}}",
+		"no": "✖ ~[slot]{{slot,hv}}无法匹配"
+	},
+	"matchSkin": {
+		"do": "匹配~[皮肤]",
+		"ok": "✔ ~[id]{{id,hv}} ~[名称]{{name,hv}}",
+		"no": "✖ ~[id]{{id,hv}}无法匹配"
+	},
+	"matchLanguage": {
+		"do": "匹配~[语言]",
+		"ok": "✔ ~[语言]{{lang,hv}}"
+	},
+	"matchServer": {
+		"do": "匹配~[服务器]",
+		"ok": "✔ ~[区域]{{region,hv}} ~[解决方案]{{solution,hv}} ~[CDN]{{-cdn,hv}} ~[SIE]{{-sie,hv}}"
+	}
+}

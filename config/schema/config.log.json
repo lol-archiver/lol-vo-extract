@@ -23,19 +23,13 @@
 				"mark"
 			]
 		},
-		"option": {
-			"description": "选项",
-			"type": "object",
-			"properties": {
-				"lang": {
-					"description": "日志语言",
-					"type": "string",
-					"enum": [
-						"zh_cn",
-						"en_us"
-					]
-				}
-			}
+		"lang": {
+			"description": "日志语言",
+			"type": "string",
+			"enum": [
+				"zh_cn",
+				"en_us"
+			]
 		}
 	},
 	"required": [

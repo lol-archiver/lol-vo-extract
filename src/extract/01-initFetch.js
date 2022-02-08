@@ -1,38 +1,50 @@
 import { existsSync } from 'fs';
 import { resolve } from 'path';
+import { SOURCE_WAD } from '../../lib/constant.js';
 
 import { dirCache } from '../../lib/global.dir.js';
 import { C, I, G } from '../../lib/global.js';
 
-const detectFetch = function(wadsToFetch, nameWad, pathWad, isUseClient) {
-	const isExist = existsSync(pathWad);
 
-	if(isUseClient && !isExist) {
-		throw `Use Client Wad. But Wad[${pathWad}] doesn't exist`;
+const useFileFromClient = C.useWADLevel == SOURCE_WAD.CLIENT;
+
+const detectFetch = (nameWAD, pathWAD) => {
+	const isFileExist = existsSync(pathWAD);
+
+	if(!isFileExist && useFileFromClient) {
+		throw Error(`Use Client Wad. But Wad[${pathWAD}] doesn't exist`);
 	}
-	else if(C.useWADLevel == 1 || !isExist) {
-		wadsToFetch.push([nameWad, pathWad]);
+	else if(C.sourceWAD == SOURCE_WAD.FETCH || !isFileExist) {
+		return([nameWAD, pathWAD]);
 	}
 };
 
-const nameWadVoice = `${I.slot}.${C.lang}.wad.client`.toLowerCase();
-const nameWadChamp = `${I.slot}.wad.client`.toLowerCase();
 
-const isUseClient = C.useWADLevel == 2 && C.path.dirGameVoice;
-
-const pathWadVoice = isUseClient ?
-	resolve(C.path.dirGameVoice, nameWadVoice) :
-	resolve(dirCache, 'asset', nameWadVoice);
-const pathWadChamp = isUseClient ?
-	resolve(C.path.dirGameVoice, nameWadChamp) :
-	resolve(dirCache, 'asset', nameWadChamp);
-
-const wadsToFetch = [];
-
-detectFetch(wadsToFetch, nameWadVoice, pathWadVoice, isUseClient);
-detectFetch(wadsToFetch, nameWadChamp, pathWadChamp, isUseClient);
-
-G.info('FetchIniter', `fetch info`, '✔ ', ...wadsToFetch.map(i => `file~{${i[0]}}`));
+const dirCacheAsset = resolve(dirCache, 'asset');
 
 
-export { pathWadVoice, pathWadChamp, wadsToFetch, };
+export default function initWADInfo() {
+	const nameWADChampionDefault = `${I.slot}.wad.client`.toLowerCase();
+	const fileWADChampionDefault = resolve(
+		useFileFromClient ? C.path.dirGameVoice : dirCacheAsset,
+		nameWADChampionDefault
+	);
+
+	const nameWADChampionLocale = `${I.slot}.${C.lang}.wad.client`.toLowerCase();
+	const fileWADChampionLocale = resolve(
+		useFileFromClient ? C.path.dirGameVoice : dirCacheAsset,
+		nameWADChampionLocale
+	);
+
+
+	const wadsToFetch = [];
+
+	wadsToFetch.push(...(detectFetch(nameWADChampionLocale, fileWADChampionLocale) ?? []));
+	wadsToFetch.push(...(detectFetch(nameWADChampionDefault, fileWADChampionDefault) ?? []));
+
+
+	G.info('FetchIniter', `fetch info`, '✔ ', ...wadsToFetch.map(i => `file~{${i[0]}}`));
+
+
+	return { fileWADChampionDefault, fileWADChampionLocale, wadsToFetch };
+}
