@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@nuogz/hades': ^3.5.0
-  '@nuogz/lol-wad-extract': ^1.1.0
+  '@nuogz/lol-wad-extract': ^1.2.0
   '@nuogz/poseidon': ^4.1.0
   axios: ^0.22.0
   bluebird: ^3.7.2
@@ -18,7 +18,7 @@ specifiers:
 
 dependencies:
   '@nuogz/hades': 3.5.0
-  '@nuogz/lol-wad-extract': 1.1.0
+  '@nuogz/lol-wad-extract': 1.2.0
   '@nuogz/poseidon': 4.1.0
   axios: 0.22.0
   bluebird: 3.7.2
@@ -94,8 +94,8 @@ packages:
       - supports-color
     dev: false
 
-  /@nuogz/lol-wad-extract/1.1.0:
-    resolution: {integrity: sha512-k6dQQOfNavXgb8O2xBE+0EqNKhsZAwMN+iBtBrlmm//JdLKpIHfY3Xp3BpS+GiQvs9R0cBsTjgZeOU+yHKORTw==}
+  /@nuogz/lol-wad-extract/1.2.0:
+    resolution: {integrity: sha512-x5r4CX4kX91sJzu9K0g6ciNVzQTJHEU3KUnR3omz/vT7NUtehSBIt5SMY3KYaqezNPxZNo1m+ijgioCaL/j0oQ==}
     engines: {node: '>=14.18.1'}
     dependencies:
       '@nuogz/biffer': 1.2.0

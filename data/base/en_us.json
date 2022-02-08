@@ -10434,7 +10434,85 @@
 				"id": 14,
 				"name": "Hextech Kassadin",
 				"chromas": {}
+			},
+			"15": {
+				"id": 15,
+				"name": "Shockblade Kassadin",
+				"chromas": {
+					"16": {
+						"id": 16,
+						"name": "Shockblade Kassadin",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Shockblade Kassadin",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Shockblade Kassadin",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Shockblade Kassadin",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Shockblade Kassadin",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Shockblade Kassadin",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Shockblade Kassadin",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Shockblade Kassadin",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
 			}
+				}
+			},
+			"16": 15,
+			"17": 15,
+			"18": 15,
+			"19": 15,
+			"20": 15,
+			"21": 15,
+			"22": 15,
+			"23": 15
 		},
 		"spells": {
 			"p": "Void Stone",
@@ -18548,8 +18626,8 @@
 						"id": 29,
 						"name": "Porcelain Protector Ezreal",
 						"colors": [
-							"#2DA130",
-							"#2DA130"
+							"#FF9D13",
+							"#B9FFC1"
 						]
 					},
 					"30": {
@@ -22095,7 +22173,85 @@
 			"36": 22,
 			"37": 22,
 			"38": 22,
-			"39": 22
+			"39": 22,
+			"40": {
+				"id": 40,
+				"name": "Shockblade Shen",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Shockblade Shen",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Shockblade Shen",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Shockblade Shen",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Shockblade Shen",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Shockblade Shen",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Shockblade Shen",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Shockblade Shen",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Shockblade Shen",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40,
+			"47": 40,
+			"48": 40
 		},
 		"spells": {
 			"p": "Ki Barrier",
@@ -34339,7 +34495,12 @@
 			"32": 28,
 			"33": 28,
 			"34": 28,
-			"35": 28
+			"35": 28,
+			"36": {
+				"id": 36,
+				"name": "Firelight Ekko",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Z-Drive Resonance",
@@ -34520,7 +34681,85 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "Shockblade Qiyana",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "Shockblade Qiyana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Shockblade Qiyana",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Shockblade Qiyana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Shockblade Qiyana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Shockblade Qiyana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Shockblade Qiyana",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Shockblade Qiyana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Shockblade Qiyana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20,
+			"29": 20
 		},
 		"spells": {
 			"p": "Royal Privilege",
@@ -39829,6 +40068,108 @@
 			"w": "Hallowed Mist",
 			"e": "Skip 'n Slash",
 			"r": "Needlework"
+		}
+	},
+	"888": {
+		"id": 888,
+		"name": "Renata Glasc",
+		"title": "the Chem-Baroness",
+		"slot": "Renata",
+		"roles": [
+			"support",
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Renata Glasc",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Admiral Glasc",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1
+		},
+		"spells": {
+			"p": "Leverage",
+			"q": "Handshake",
+			"w": "Bailout",
+			"e": "Loyalty Program",
+			"r": "Hostile Takeover"
 		}
 	}
 }

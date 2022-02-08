@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
-import FX from 'fs-extra';
+import { extractWAD } from '@nuogz/lol-wad-extract';
 
 import { C } from '../lib/global.js';
 
@@ -13,18 +13,36 @@ const regions = ['default', 'zh_cn'];
 const dirSelf = dirname(fileURLToPath(import.meta.url));
 
 
-const convert = (region) => {
-	const dirBase = resolve(C.path.dirBase, region);
-	const championsSum = FX.readJsonSync(resolve(dirBase, 'champion-summary.json'));
+const convert = async (region) => {
+	const fileAssets = resolve(C.path.dirBase, `${region}-assets.wad`);
+
+	const { summary: bufferSummary } = await extractWAD(
+		fileAssets,
+		{
+			[`plugins/rcp-be-lol-game-data/global/${region}/v1/champion-summary.json`]: 'buffer|summary'
+		}
+	);
+
+	const championsSummary = JSON.parse(bufferSummary.toString());
+
+	const infoExtract = championsSummary.reduce((acc, { id }) => {
+		acc[`plugins/rcp-be-lol-game-data/global/${region}/v1/champions/${id}.json`] = `buffer|${id}`;
+
+		return acc;
+	}, {});
+
+	const buffersJSONChampion = await extractWAD(fileAssets, infoExtract);
+
+
 
 	const result = {};
 	const countsChroma = {};
 
-	championsSum.forEach(({ id }) => {
-		if(id < 0) { return; }
+	for(const { id } of championsSummary) {
+		if(id <= 0) { continue; }
 
 		const { name, title, alias: slot, roles, skins: skinsRaw, spells: spellsRaw, passive: passiveRaw } =
-			FX.readJsonSync(resolve(dirBase, 'champions', `${id}.json`));
+			JSON.parse(buffersJSONChampion[id].toString());
 
 		const champion = result[id] = {
 			id,
@@ -100,7 +118,7 @@ const convert = (region) => {
 
 			}
 		}
-	});
+	}
 
 	for(const key in countsChroma) {
 		const element = countsChroma[key];
@@ -120,4 +138,4 @@ const convert = (region) => {
 	);
 };
 
-regions.forEach(region => convert(region));
+for(const region of regions) { await convert(region); }

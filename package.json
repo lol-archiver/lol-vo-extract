@@ -1,6 +1,6 @@
 {
 	"name": "lol-vo-extact",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "",
 	"author": "Nuogz",
 	"license": "LGPL-3.0-or-later",
@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@nuogz/hades": "^3.5.0",
-		"@nuogz/lol-wad-extract": "^1.1.0",
+		"@nuogz/lol-wad-extract": "^1.2.0",
 		"@nuogz/poseidon": "^4.1.0",
 		"axios": "^0.22.0",
 		"bluebird": "^3.7.2",

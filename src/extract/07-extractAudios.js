@@ -12,7 +12,7 @@ import Biffer from '../../lib/Biffer.js';
 const isSameTakeConfig = function() {
 	let isSameTakeConfig = false;
 	try {
-		const lastTakeConfig = FSX.readJsonSync(resolve(dirCache, 'lastTakeWpk.json'));
+		const lastTakeConfig = FSX.readJSONSync(resolve(dirCache, 'lastTakeWpk.json'));
 
 		if(C.useWADLevel != 1 && lastTakeConfig &&
 			lastTakeConfig.slot == I.slot &&

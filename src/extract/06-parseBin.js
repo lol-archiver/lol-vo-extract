@@ -17,7 +17,7 @@ import parseHircEntry from '../parser/bnk/hircEntry.js';
 
 let mapEventID = {};
 try {
-	mapEventID = FSX.readJsonSync(`../../data/EventIDMap/${I.slot}.json`);
+	mapEventID = FSX.readJSONSync(`../../data/EventIDMap/${I.slot}.json`);
 }
 catch(error) { void 0; }
 
