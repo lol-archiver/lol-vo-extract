@@ -14,7 +14,7 @@ const dirSelf = dirname(fileURLToPath(import.meta.url));
 
 
 const convert = async (region) => {
-	const fileAssets = resolve(C.path.dirBase, `${region}-assets.wad`);
+	const fileAssets = resolve(C.path.dirGameDataRaw, `${region}-assets.wad`);
 
 	const { summary: bufferSummary } = await extractWAD(
 		fileAssets,

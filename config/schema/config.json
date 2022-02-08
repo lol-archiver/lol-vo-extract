@@ -63,8 +63,12 @@
 					"description": "WAD文件目录",
 					"type": "string"
 				},
-				"dirGameVoices": {
+				"dirGameVoice": {
 					"description": "本科客户端英雄文件目录",
+					"type": "string"
+				},
+				"dirGameDataRaw": {
+					"description": "原始数据目录",
 					"type": "string"
 				},
 				"dirAutogen": {
