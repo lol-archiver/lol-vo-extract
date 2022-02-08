@@ -4,7 +4,7 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
-			"name": "0: Extract Audio and Voice",
+			"name": "Extract Audio and Voice",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
@@ -15,11 +15,22 @@
 		{
 			"type": "pwa-node",
 			"request": "launch",
+			"name": "0: Test Local",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/side/0-local.js",
+			"runtimeExecutable": "node.exe",
+			"console": "integratedTerminal"
+		},
+		{
+			"type": "pwa-node",
+			"request": "launch",
 			"name": "1: Concat Audio",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/1-concatAudio.js",
+			"program": "${workspaceFolder}/side/1-concat-audio.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
@@ -30,7 +41,7 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/2-concatRawLine.js",
+			"program": "${workspaceFolder}/side/2-concat-raw-line.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
@@ -41,7 +52,7 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/3-convertDataBase.js",
+			"program": "${workspaceFolder}/side/3-convert-base.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
@@ -52,7 +63,7 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/4-copyAudioWithLine.js",
+			"program": "${workspaceFolder}/side/4-copy-audio-with-line.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
@@ -63,7 +74,7 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/5-convertRST.js",
+			"program": "${workspaceFolder}/side/5-convert-rst.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
@@ -74,7 +85,7 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/6-updateRST.js",
+			"program": "${workspaceFolder}/side/6-update-rst.js",
 			"runtimeExecutable": "node.exe",
 			"console": "integratedTerminal"
 		},
