@@ -34499,8 +34499,81 @@
 			"36": {
 				"id": 36,
 				"name": "Firelight Ekko",
-				"chromas": {}
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Firelight Ekko",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Firelight Ekko",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Firelight Ekko",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Firelight Ekko",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Firelight Ekko",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Firelight Ekko",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Firelight Ekko",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Firelight Ekko",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
 			}
+				}
+			},
+			"37": 36,
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36
 		},
 		"spells": {
 			"p": "Z-Drive Resonance",
