@@ -6,11 +6,13 @@
 	},
 	"where": {
 		"Process": "进程",
-		"Top": "顶级",
+		"Global": "全局",
+		"Main": "主线",
 		"1": "1"
 	},
 	"error": {
 		"unhandledRejection": "未处理的驳回",
+		"clientFileNotExist":"✖ ~[客户端文件]{{file,hv}}不存在",
 		"1": "1"
 	},
 	"matchChampion": {
@@ -30,5 +32,12 @@
 	"matchServer": {
 		"do": "匹配~[服务器]",
 		"ok": "✔ ~[区域]{{region,hv}} ~[解决方案]{{solution,hv}} ~[CDN]{{-cdn,hv}} ~[SIE]{{-sie,hv}}"
+	},
+	"initWADInfo": {
+		"do": "初始化WAD信息",
+		"ok": "● ~[需要下载的文件]{{name,hv}}"
+	},
+	"fetchWADs": {
+		"do": "下载和合成WAD文件"
 	}
 }

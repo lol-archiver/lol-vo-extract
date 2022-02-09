@@ -6,11 +6,13 @@
 	},
 	"where": {
 		"Process": "Process",
-		"Top": "Top",
+		"Global": "Global",
+		"Main": "Main",
 		"1": "1"
 	},
 	"error": {
 		"unhandledRejection": "Unhandled Rejection",
+		"clientFileNotExist":"✖ ~[Client File]{{file,hv}} doesn't exist",
 		"1": "1"
 	},
 	"matchChampion": {
@@ -30,5 +32,12 @@
 	"matchServer": {
 		"do": "match ~[server]",
 		"ok": "✔ ~[region]{{region,hv}} ~[solution]{{solution,hv}} ~[CDN]{{-cdn,hv}} ~[SIE]{{-sie,hv}}"
+	},
+	"initWADInfo": {
+		"do": "init WAD info",
+		"ok": "● ~[need-fetch file]{{name,hv}}"
+	},
+	"fetchWADs": {
+		"do": "fetch and extract WAD files"
 	}
 }

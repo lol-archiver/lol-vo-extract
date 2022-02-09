@@ -5,7 +5,7 @@ import { extractWAD } from '@nuogz/lol-wad-extract';
 import { dirCache } from './lib/global.dir.js';
 
 import initWADInfo from './src/extract/01-initFetch.js';
-import fetchWads from './src/extract/02-fetchWads.js';
+import fetchWADs from './src/extract/02-fetchWads.js';
 import generateMapFiles_hash from './src/extract/03-generateMapFiles_hash.js';
 import extractWad from './src/extract/04-takeWad.js';
 import parseBin from './src/extract/05-parseBin.js';
@@ -15,10 +15,9 @@ import copyAudios from './src/extract/08-copyAudios.js';
 import saveEvents from './src/extract/09-saveEvents.js';
 
 
-const { fileWADChampionLocale, fileWADChampionDefault, wadsToFetch } = initWADInfo();
+const { fileWADChampionDefault, fileWADChampionLocale, wadsNeedFetch } = initWADInfo();
 
-
-await fetchWads(wadsToFetch);
+await fetchWADs(wadsNeedFetch);
 
 const mapHash_GameFile = generateMapFiles_hash();
 

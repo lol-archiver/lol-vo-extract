@@ -6,7 +6,7 @@ import Moment from 'moment';
 import { dirCache } from '../../lib/global.dir.js';
 import { C, I, G } from '../../lib/global.js';
 import { crc32, pad0, toHexL } from '../../lib/Tool.js';
-import { dataBase, en_us } from '../../lib/dataBase.js';
+import { D, en_us } from '../../lib/global.dataBase.js';
 
 
 const findFriendly = function(name, map) {
@@ -76,7 +76,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 			if(typeof eventInfo == 'object') {
 				const slot = `[${pad0(I.id)}${pad0(eventInfo.index)}]`;
 
-				const dChampion = dataBase[I.id];
+				const dChampion = D[I.id];
 				const dSkinCN = dChampion.skins[eventInfo.index];
 				const dSkinEN = dictEN[I.id].skins[eventInfo.index];
 

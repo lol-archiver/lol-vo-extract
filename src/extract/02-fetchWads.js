@@ -1,4 +1,4 @@
-import { C, G } from '../../lib/global.js';
+import { C, G, IT } from '../../lib/global.js';
 
 import fetchEntry from '../fetcher/entry.js';
 import fetchManifest from '../fetcher/manifest.js';
@@ -9,12 +9,13 @@ import RmanParser from '../parser/manifest/rman.js';
 import BodyParser from '../parser/manifest/body.js';
 
 
-export default async function fetchWads(wadsToFetch) {
-	if(!wadsToFetch.length) { return; }
+export default async function fetchWADs(wadsNeedFetch) {
+	if(!wadsNeedFetch.length) { return; }
+
 
 	const [urlManifests, versionLatest] = await fetchEntry();
 
-	const buffersManifest = await Promise.all(urlManifests.map((urlManifest) => fetchManifest(urlManifest, versionLatest)));
+	const buffersManifest = await Promise.all(urlManifests.map(urlManifest => fetchManifest(urlManifest, versionLatest)));
 
 	const manifests = urlManifests.map((urlManifest, index) => new Manifest(urlManifest, versionLatest, buffersManifest[index]));
 
@@ -23,21 +24,19 @@ export default async function fetchWads(wadsToFetch) {
 
 	const files = manifests.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
 
-	// await files.find(file => file.name.toLowerCase().includes('Global.wad.client'.toLowerCase())).extract(versionLatest, C.server.cdn, 'D:/Desktop/Global.en_us.wad.client');
-
 	const filesFetched = [];
 
 	for(const file of files) {
-		for(const [matchname, savePath] of wadsToFetch) {
-			if(file.name.toLowerCase().endsWith(matchname)) {
-				filesFetched.push(await file.extract(versionLatest, C.server.cdn, savePath));
+		for(const { name: nameFile, file: pathFile } of wadsNeedFetch) {
+			if(file.name.toLowerCase().endsWith(nameFile)) {
+				filesFetched.push(await file.extract(versionLatest, C.server.cdn, pathFile));
 
 				break;
 			}
 		}
 	}
 
-	G.info('WadFetcher', 'fetch and extract wads', '✔ ');
+	G.info(IT('where:Main'), IT('fetchWADs:do'), '✔ ');
 
 	return filesFetched;
 }
