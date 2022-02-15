@@ -26,6 +26,6 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^8.8.0"
+		"eslint": "^8.9.0"
 	}
 }
