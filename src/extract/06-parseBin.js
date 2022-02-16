@@ -4,7 +4,7 @@ import { parse, resolve } from 'path';
 import FSX from 'fs-extra';
 
 import { G, I } from '../../lib/global.js';
-import Biffer from '../../lib/Biffer.js';
+import Biffer from '@nuogz/biffer';
 import { toHexL } from '../../lib/Tool.js';
 
 import HircSound from '../entry/bnk/HircSound.js';

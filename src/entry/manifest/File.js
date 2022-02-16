@@ -7,7 +7,7 @@ import { decompress } from 'node-zstandard';
 
 import { dirCache } from '../../../lib/global.dir.js';
 import { G } from '../../../lib/global.js';
-import Biffer from '../../../lib/Biffer.js';
+import Biffer from '@nuogz/biffer';
 
 import fetchBundle from '../../fetcher/bundle.js';
 
@@ -57,7 +57,7 @@ export default class File {
 
 			parser.seek(chunk.offset);
 
-			appendFileSync(pathCacheZstd, parser.raw(chunk.size));
+			appendFileSync(pathCacheZstd, parser.slice(chunk.size));
 		}
 
 		return new Promise((resolve, reject) => decompress(pathCacheZstd, pathSave, error => {

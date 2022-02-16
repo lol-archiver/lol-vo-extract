@@ -4,7 +4,7 @@ import { parse, resolve } from 'path';
 
 import { dirData } from '../lib/global.dir.js';
 import { C, G } from '../lib/global.js';
-import Biffer from '../lib/Biffer.js';
+import Biffer from '@nuogz/biffer';
 
 
 const hashes = readFileSync(resolve(dirData, 'hashes.rst.txt'), 'utf8').split('\n').map(line => line.split(' '))
@@ -49,7 +49,7 @@ for(let i = 0; i < count; i++) {
 }
 
 if(versionMajor < 5) {
-	AS(biffer.raw(1)[0] == versionMinor);
+	AS(biffer.slice(1)[0] == versionMinor);
 }
 
 const bifferEntries = biffer.sub(biffer.length);
@@ -64,7 +64,7 @@ for(const entry of entries) {
 	const posRight = bifferEntries.find([0]);
 
 	bifferEntries.seek(posLeft);
-	const bufferText = bifferEntries.raw(posRight - posLeft);
+	const bufferText = bifferEntries.slice(posRight - posLeft);
 
 
 	if(bufferText[0] == 195 && bufferText[0] == 191) { G.info('wait'); }

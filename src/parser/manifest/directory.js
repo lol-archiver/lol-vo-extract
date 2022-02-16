@@ -2,7 +2,7 @@ import Directory from '../../entry/manifest/Directory.js';
 import TableEntryParser from './tableEntry.js';
 
 
-export default async function DirectoryParser(biffer) {
+export default function DirectoryParser(biffer) {
 	const entry = TableEntryParser(biffer, [
 		null,
 		null,

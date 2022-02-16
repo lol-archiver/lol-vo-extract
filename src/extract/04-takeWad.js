@@ -5,12 +5,12 @@ import GZIP from 'node-gzip';
 
 import { dirCache } from '../../lib/global.dir.js';
 import { G } from '../../lib/global.js';
-import Biffer from '../../lib/Biffer.js';
-import { unZstd } from '../../lib/Tool.js';
+import Biffer from '@nuogz/biffer';
+import { unzstd } from '../../lib/Tool.js';
 
 
 export default async function extractWad(wadPath, takeMap) {
-	G.info('WADExtractor',`extract game files from wad~{${parse(wadPath).base}}`);
+	G.info('WADExtractor', `extract game files from wad~{${parse(wadPath).base}}`);
 
 	const wadBiffer = new Biffer(wadPath);
 
@@ -62,7 +62,7 @@ export default async function extractWad(wadPath, takeMap) {
 				// target = data[4: 4 + n].rstrip(b'\0').decode('utf-8')
 			}
 			else if(type == 3) {
-				await unZstd(pathSave, fileBuffer);
+				unzstd(fileBuffer, pathSave, false);
 			}
 		}
 	}

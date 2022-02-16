@@ -12,7 +12,7 @@
 	},
 	"error": {
 		"unhandledRejection": "Unhandled Rejection",
-		"clientFileNotExist":"✖ ~[Client File]{{file,hv}} doesn't exist",
+		"clientFileNotExist": "✖ ~[Client File]{{file,hv}} doesn't exist",
 		"1": "1"
 	},
 	"matchChampion": {
@@ -35,9 +35,31 @@
 	},
 	"initWADInfo": {
 		"do": "init WAD info",
-		"ok": "● ~[need-fetch file]{{name,hv}}"
+		"item": "● ~[need-fetch file]{{name,hv}}"
 	},
 	"fetchWADs": {
-		"do": "fetch and extract WAD files"
+		"do": "fetch and extract WAD files",
+		"useLocal": {
+			"do": "use cached ~[manifest]",
+			"ok": "✔ ~[manifest]{{manifest,hv}}"
+		},
+		"parseEntry": {
+			"do": "fetch ~[manifest]",
+			"ok": "✔ latest ~[version]{{version,hv}}",
+			"item": "● ~[mainfest]{{name,hv}}"
+		}
+	},
+	"fetchEntry": {
+		"where": "~[Entry] Fetcher",
+		"do": "fetch",
+		"ing": "◌ ~[URL]{{-url,hv}}",
+		"ok": "✔ ~[URL]{{-url,hv}}"
+	},
+	"fetchManifest": {
+		"where": "~[Manifest] Fetcher",
+		"do": "fetch ~[manifest]{{id,hv}}",
+		"ing": "◌ ~[URL]{{-url,hv}}",
+		"cached": "✔ cache found",
+		"ok": "✔ ~[size]{{size,hv}}"
 	}
 }

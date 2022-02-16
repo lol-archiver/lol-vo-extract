@@ -6,7 +6,7 @@ import FSX from 'fs-extra';
 
 import { dirCache } from '../../lib/global.dir.js';
 import { C, I, G } from '../../lib/global.js';
-import Biffer from '../../lib/Biffer.js';
+import Biffer from '@nuogz/biffer';
 
 
 const isSameTakeConfig = function() {
@@ -33,22 +33,22 @@ const takeWpkRaw = function(fileWPK) {
 	try {
 		G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, `extracting...`);
 
-		const wpkBiffuer = new Biffer(resolve(dirCache, 'extract', fileWPK));
+		const bifferWPK = new Biffer(resolve(dirCache, 'extract', fileWPK));
 
 		FSX.emptyDirSync(resolve(dirCache, 'audio', fileWPK, 'wem'));
 
 		// eslint-disable-next-line no-unused-vars
-		const [magic, version, count] = wpkBiffuer.unpack('4sLL');
+		const [magic, version, count] = bifferWPK.unpack('4sLL');
 
-		const headerOffsets = wpkBiffuer.unpack(`${count}L`);
+		const headerOffsets = bifferWPK.unpack(`${count}L`);
 
 		for(const headerOffset of headerOffsets) {
-			wpkBiffuer.seek(headerOffset);
+			bifferWPK.seek(headerOffset);
 
-			const [offset, size, nameLength] = wpkBiffuer.unpack('LLL');
-			const name = Buffer.from([...wpkBiffuer.raw(nameLength * 2)].filter(byte => byte)).toString('utf8');
+			const [offset, size, nameLength] = bifferWPK.unpack('LLL');
+			const name = Buffer.from([...bifferWPK.slice(nameLength * 2)].filter(byte => byte)).toString('utf8');
 
-			writeFileSync(resolve(dirCache, 'audio', fileWPK, 'wem', name), wpkBiffuer.buffer.slice(offset, offset + size));
+			writeFileSync(resolve(dirCache, 'audio', fileWPK, 'wem', name), bifferWPK.buffer.slice(offset, offset + size));
 		}
 
 		G.infoD('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, `✔ `);

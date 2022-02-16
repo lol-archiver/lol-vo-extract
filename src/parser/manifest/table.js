@@ -1,7 +1,7 @@
 import { G } from '../../../lib/global.js';
 
 
-export default async function TableParser(biffer, parserItem) {
+export default function TableParser(biffer, parserItem) {
 	const [count] = biffer.unpack('<l');
 
 	const items = [];
@@ -16,7 +16,7 @@ export default async function TableParser(biffer, parserItem) {
 
 		biffer.seek(pos + offset);
 
-		items.push(await parserItem(biffer, i));
+		items.push(parserItem(biffer, i));
 
 		biffer.seek(pos + 4);
 	}

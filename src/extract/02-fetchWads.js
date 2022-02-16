@@ -1,26 +1,58 @@
-import { C, G, IT } from '../../lib/global.js';
+import { parse } from 'path';
+
+import joinURL from 'url-join';
+
+import { C, G, TT } from '../../lib/global.js';
 
 import fetchEntry from '../fetcher/entry.js';
 import fetchManifest from '../fetcher/manifest.js';
 
 import Manifest from '../entry/manifest/Manifest.js';
 
-import RmanParser from '../parser/manifest/rman.js';
-import BodyParser from '../parser/manifest/body.js';
+
+const detectManifest_Version = entry => {
+	const releases = entry.releases.filter(release => release.release.labels.content.values[0] == C.server.statge);
+
+	const versionLatest = C.server.version || Math.max(...releases.map(release => ~~release.release.labels['riot:revision'].values[0]));
+
+	const urlsManifest = entry.releases
+		.filter(release => release.release.labels['riot:revision'].values[0] == versionLatest)
+		.map(release => release.download.url);
+
+	return [urlsManifest, versionLatest];
+};
 
 
 export default async function fetchWADs(wadsNeedFetch) {
 	if(!wadsNeedFetch.length) { return; }
 
 
-	const [urlManifests, versionLatest] = await fetchEntry();
+	let urlsManifest;
+	let versionLatest = 1;
 
-	const buffersManifest = await Promise.all(urlManifests.map(urlManifest => fetchManifest(urlManifest, versionLatest)));
+	if(C.server.manifest) {
+		urlsManifest = [joinURL(C.server.cdn, `channels/public/releases/${C.server.manifest}.manifest`)];
 
-	const manifests = urlManifests.map((urlManifest, index) => new Manifest(urlManifest, versionLatest, buffersManifest[index]));
+		G.info(TT('where:Main'), TT('fetchWADs:useLocal.do'), TT('fetchWADs:useLocal.ok', { manifest: C.server.manifest }));
+	}
+	else {
+		[urlsManifest, versionLatest] = detectManifest_Version(await fetchEntry());
 
-	await RmanParser(manifests);
-	await BodyParser(manifests);
+		G.info(TT('where:Main'), TT('fetchWADs:parseEntry.do'), TT('fetchWADs:parseEntry.ok', { version: versionLatest }),
+			...urlsManifest.map(url => TT('fetchWADs:parseEntry.item', { name: parse(url).name }))
+		);
+	}
+
+
+	const manifests = await Promise.all(urlsManifest.map(async url => {
+		const id = parse(url).name;
+
+		return new Manifest(url, versionLatest)
+			.parse(await fetchManifest(id, url, `${versionLatest}-${id}.manifest`));
+	}));
+
+
+
 
 	const files = manifests.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
 
@@ -36,7 +68,7 @@ export default async function fetchWADs(wadsNeedFetch) {
 		}
 	}
 
-	G.info(IT('where:Main'), IT('fetchWADs:do'), '✔ ');
+	G.info(TT('where:Main'), TT('fetchWADs:do'), '✔ ');
 
 	return filesFetched;
 }

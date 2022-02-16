@@ -1,36 +1,28 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs';
-import { join, parse } from 'path';
+import { resolve } from 'path';
 
 import Axios from 'axios';
 
-import { C, G } from '../../lib/global.js';
+import { dirCache } from '../../lib/global.dir.js';
+import { C, G, TT } from '../../lib/global.js';
 
 
-export default async function fetchManifest(urlManifest, version) {
-	const idManifest = parse(urlManifest).name;
+export default async function fetchManifest(id, url, nameFile) {
+	const file = resolve(dirCache, 'manifest', nameFile);
 
-	const pathManifest = join('./_cache/manifest', `${version}-${idManifest}.manifest`);
+	if(existsSync(file)) {
+		G.debugD(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:cached'));
 
-	if(existsSync(pathManifest)) {
-		G.infoD('ManifestFetcher', `fetch [manifest]~{${idManifest}}`, `cache founded`);
-
-		return readFileSync(pathManifest);
+		return readFileSync(file);
 	}
-	else {
-		G.infoU('ManifestFetcher', `fetch [manifest]~{${idManifest}}`, 'fetching...', `url~{${urlManifest}}`);
 
-		try {
-			const bufferManifest = (await Axios.get(urlManifest, { responseType: 'arraybuffer', proxy: C.proxy, timeout: 1000 * 60 * 4 })).data;
+	G.debugU(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:ing', { url }));
 
-			writeFileSync(pathManifest, bufferManifest);
-			G.infoD('ManifestFetcher', `fetch [manifest]~{${idManifest}}`, '✔ ', `save at~{${pathManifest}} size~{${bufferManifest.length}}`);
+	const { data: bufferManifest } = await Axios.get(url, { responseType: 'arraybuffer', proxy: C.proxy, timeout: 1000 * 60 * 4 });
 
-			return bufferManifest;
-		}
-		catch(error) {
-			G.errorD('ManifestFetcher', `fetch [manifest]~{${idManifest}}`, error);
+	writeFileSync(file, bufferManifest);
 
-			process.exit(1);
-		}
-	}
+	G.debugD(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:ok', { size: bufferManifest.length }));
+
+	return bufferManifest;
 }

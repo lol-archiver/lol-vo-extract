@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 import { SOURCE_WAD } from '../../lib/constant.js';
 import { dirCache } from '../../lib/global.dir.js';
-import { C, I, G, IT } from '../../lib/global.js';
+import { C, I, G, TT } from '../../lib/global.js';
 
 
 const isSourceFromClient = C.sourceWAD == SOURCE_WAD.CLIENT;
@@ -17,7 +17,7 @@ const detectNeedFetch = ({ file }) => {
 	const isExist = existsSync(file);
 
 	if(isSourceFromClient && !isExist) {
-		throw Error(IT('error:clientFileNotExist', { file }));
+		throw Error(TT('error:clientFileNotExist', { file }));
 	}
 
 	return isSourceFromFetch || !isExist;
@@ -44,11 +44,11 @@ export default function initWADInfo() {
 			{ name: nameWADChampionLocale, file: fileWADChampionLocale },
 		].filter(detectNeedFetch);
 
-		G.info(IT('where:Main'), IT('initWADInfo:do'), '✔', ...wadsNeedFetch.map(({ name }) => IT('initWADInfo:ok', { name })));
+		G.info(TT('where:Main'), TT('initWADInfo:do'), '✔', ...wadsNeedFetch.map(({ name }) => TT('initWADInfo:item', { name })));
 
 		return { fileWADChampionDefault, fileWADChampionLocale, wadsNeedFetch };
 	}
 	catch(error) {
-		G.fatalE(2, IT('where:Main'), IT('initWADInfo:do'), error);
+		G.fatalE(2, TT('where:Main'), TT('initWADInfo:do'), error);
 	}
 }

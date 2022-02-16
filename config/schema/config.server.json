@@ -8,6 +8,18 @@
 			"description": "服务器ID",
 			"type": "string"
 		},
+		"statge": {
+			"description": "版本阶段",
+			"type": "string",
+			"oneOf": [
+				{
+					"const": "beta"
+				},
+				{
+					"const": "release"
+				}
+			]
+		},
 		"solution": {
 			"description": "解决方案",
 			"type": "string"
@@ -19,6 +31,14 @@
 		"sie": {
 			"description": "SIE地址",
 			"type": "string"
+		},
+		"manifest": {
+			"description": "清单ID",
+			"type": "string"
+		},
+		"version": {
+			"description": "内部版本",
+			"type": "integer"
 		},
 		"proxy": {
 			"description": "代理",
@@ -33,7 +53,7 @@
 				},
 				"post": {
 					"description": "代理主机端口",
-					"type": "number"
+					"type": "integer"
 				}
 			},
 			"required": [
@@ -48,6 +68,7 @@
 	},
 	"required": [
 		"region",
+		"statge",
 		"solution",
 		"cdn",
 		"sie"

@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@nuogz/biffer': ^1.2.0
   '@nuogz/hades': ^3.5.0
   '@nuogz/lol-wad-extract': ^1.2.0
   '@nuogz/poseidon': ^4.1.0
@@ -9,6 +10,7 @@ specifiers:
   buffer-crc32: ^0.2.13
   eslint: ^8.9.0
   fs-extra: ^10.0.0
+  https-proxy-agent: ^5.0.0
   i18next: ^21.6.11
   iconv-lite: ^0.6.3
   moment: ^2.29.1
@@ -18,6 +20,7 @@ specifiers:
   xxhashjs: ^0.2.2
 
 dependencies:
+  '@nuogz/biffer': 1.2.0
   '@nuogz/hades': 3.5.0
   '@nuogz/lol-wad-extract': 1.2.0
   '@nuogz/poseidon': 4.1.0
@@ -25,6 +28,7 @@ dependencies:
   bluebird: 3.7.2
   buffer-crc32: 0.2.13
   fs-extra: 10.0.0
+  https-proxy-agent: 5.0.0
   i18next: 21.6.11
   iconv-lite: 0.6.3
   moment: 2.29.1
@@ -123,6 +127,15 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
+
+  /agent-base/6.0.2:
+    resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
+    engines: {node: '>= 6.0.0'}
+    dependencies:
+      debug: 4.3.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /ajv/6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
@@ -475,6 +488,16 @@ packages:
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+
+  /https-proxy-agent/5.0.0:
+    resolution: {integrity: sha512-EkYm5BcKUGiduxzSt3Eppko+PiNWNEpa4ySk9vTC6wDsQJW9rHSa+UhGNJoRYp7bz6Ht1eaRIa6QaJqO5rCFbA==}
+    engines: {node: '>= 6'}
+    dependencies:
+      agent-base: 6.0.2
+      debug: 4.3.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /i18next/21.6.11:
     resolution: {integrity: sha512-tJ2+o0lVO+fhi8bPkCpBAeY1SgkqmQm5NzgPWCQssBrywJw98/o+Kombhty5nxQOpHtvMmsxcOopczUiH6bJxQ==}

@@ -12,7 +12,7 @@
 	},
 	"error": {
 		"unhandledRejection": "未处理的驳回",
-		"clientFileNotExist":"✖ ~[客户端文件]{{file,hv}}不存在",
+		"clientFileNotExist": "✖ ~[客户端文件]{{file,hv}}不存在",
 		"1": "1"
 	},
 	"matchChampion": {
@@ -31,13 +31,35 @@
 	},
 	"matchServer": {
 		"do": "匹配~[服务器]",
-		"ok": "✔ ~[区域]{{region,hv}} ~[解决方案]{{solution,hv}} ~[CDN]{{-cdn,hv}} ~[SIE]{{-sie,hv}}"
+		"ok": "✔ ~[区域]{{region,hv}} ~[版本阶段]{{statge,hv}} ~[解决方案]{{solution,hv}} ~[CDN]{{-cdn,hv}} ~[SIE]{{-sie,hv}}"
 	},
 	"initWADInfo": {
 		"do": "初始化WAD信息",
-		"ok": "● ~[需要下载的文件]{{name,hv}}"
+		"item": "● ~[需要下载的文件]{{name,hv}}"
 	},
 	"fetchWADs": {
-		"do": "下载和合成WAD文件"
+		"do": "下载和合成WAD文件",
+		"useLocal": {
+			"do": "使用已经缓存的~[清单]",
+			"ok": "✔ ~[清单]{{manifest,hv}}"
+		},
+		"parseEntry": {
+			"do": "下载~[清单]",
+			"ok": "✔ 最新~[版本]{{version,hv}}",
+			"item": "● ~[清单]{{name,hv}}"
+		}
+	},
+	"fetchEntry": {
+		"where": "~[入口]下载器",
+		"do": "下载",
+		"ing": "◌ ~[URL]{{-url,hv}}",
+		"ok": "✔ ~[URL]{{-url,hv}}"
+	},
+	"fetchManifest": {
+		"where": "~[清单]下载器",
+		"do": "下载~[清单]{{id,hv}}",
+		"ing": "◌ ~[URL]{{-url,hv}}",
+		"cached": "✔ 发现缓存",
+		"ok": "✔ ~[大小]{{size,hv}}"
 	}
 }

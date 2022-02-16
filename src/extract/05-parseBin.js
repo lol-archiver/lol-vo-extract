@@ -2,7 +2,7 @@ import { existsSync } from 'fs';
 import { parse } from 'path';
 
 import { I, G, D } from '../../lib/global.js';
-import Biffer from '../../lib/Biffer.js';
+import Biffer from '@nuogz/biffer';
 
 
 export default function parseBin(binPath, indexSkin) {

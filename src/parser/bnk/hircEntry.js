@@ -1,5 +1,5 @@
 import { G } from '../../../lib/global.js';
-import Biffer from '../../../lib/Biffer.js';
+import Biffer from '@nuogz/biffer';
 
 import HircSound from '../../entry/bnk/HircSound.js';
 import HircAction from '../../entry/bnk/HircAction.js';
