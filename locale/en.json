@@ -13,6 +13,7 @@
 	"error": {
 		"unhandledRejection": "Unhandled Rejection",
 		"clientFileNotExist": "✖ ~[Client File]{{file,hv}} doesn't exist",
+		"InterfaceClassNewForbidden": "✖ could not create an instance of ~[Interface Class] {{clazz,hv}}",
 		"1": "1"
 	},
 	"matchChampion": {
@@ -61,5 +62,20 @@
 		"ing": "◌ ~[URL]{{-url,hv}}",
 		"cached": "✔ cache found",
 		"ok": "✔ ~[size]{{size,hv}}"
+	},
+	"parseManifestList": {
+		"where": "~[Mainfest List] Parser",
+		"do": "parse {{item,ht}}",
+		"ing": "◌ {{-progess,hv}}",
+		"ok": "✔ {{-progess,hv}}"
+	},
+	"manifest": {
+		"item": {
+			"bundle": "Bundle",
+			"language": "Language",
+			"fileEntry": "File Entry",
+			"manifestListEntry": "Manifest List Entry",
+			"directory": "Directory"
+		}
 	}
 }

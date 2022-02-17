@@ -13,6 +13,7 @@
 	"error": {
 		"unhandledRejection": "未处理的驳回",
 		"clientFileNotExist": "✖ ~[客户端文件]{{file,hv}}不存在",
+		"InterfaceClassNewForbidden": "✖ 无法创建~[接口类]{{clazz,hv}}的实例",
 		"1": "1"
 	},
 	"matchChampion": {
@@ -61,5 +62,20 @@
 		"ing": "◌ ~[URL]{{-url,hv}}",
 		"cached": "✔ 发现缓存",
 		"ok": "✔ ~[大小]{{size,hv}}"
+	},
+	"parseManifestList": {
+		"where": "~[清单列表]解析器",
+		"do": "解析{{item,ht}}",
+		"ing": "◌ {{-progess,hv}}",
+		"ok": "✔ {{-progess,hv}}"
+	},
+	"manifest": {
+		"item": {
+			"bundle": "捆包",
+			"language": "语音",
+			"fileEntry": "文件条目",
+			"manifestListEntry": "清单列表条目",
+			"directory": "文件夹"
+		}
 	}
 }

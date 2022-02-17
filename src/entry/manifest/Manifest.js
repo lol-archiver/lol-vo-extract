@@ -4,17 +4,55 @@ import { resolve } from 'path';
 import Biffer from '@nuogz/biffer';
 
 import { dirCache } from '../../../lib/global.dir.js';
+import { G, TT } from '../../../lib/global.js';
 import { toHexL, unzstd } from '../../../lib/Tool.js';
 
+import Bundle from './Bundle.js';
+import Langauge from './Lang.js';
+import FileEntry from './FileEntry.js';
+import Directory from './Directory.js';
 import File from './File.js';
-import TableParser from '../../parser/manifest/table.js';
-import BundleParser from '../../parser/manifest/bundle.js';
-import LangParser from '../../parser/manifest/lang.js';
-import FileEntryParser from '../../parser/manifest/fileEntry.js';
-import DirectoryParser from '../../parser/manifest/directory.js';
+
+
+/**
+ * @param {Biffer} biffer
+ * @param {typeof import('./ManifestListItem.js').default} Item
+ * @returns {Array<Item.>}
+ */
+const parseManifestList = (biffer, Item) => {
+	const [count] = biffer.unpack('l');
+
+	const items = [];
+
+	for(let i = 1; i <= count; i++) {
+		if(i % 1000 == 0 || i == count || i == 1) {
+			G.infoU(TT('parseManifestList:where'), TT('parseManifestList:do', { item: Item.nameItem }), TT('parseManifestList:ing', { progess: `${i}/${count}` }));
+		}
+
+		const pos = biffer.tell();
+		const [offset] = biffer.unpack('l');
+
+		biffer.seek(pos + offset);
+
+		items.push(Item.parse(biffer, i));
+
+		biffer.seek(pos + 4);
+	}
+
+	G.infoD(TT('parseManifestList:where'), TT('parseManifestList:do', { item: Item.nameItem }), TT('parseManifestList:ok', { progess: `${count}/${count}` }));
+
+	return items;
+};
 
 
 export default class Manifest {
+	/**
+	 * @type
+	 */
+	url;
+	version;
+	buffer;
+
 	constructor(url, version, buffer) {
 		this.url = url;
 		this.version = version;
@@ -24,18 +62,18 @@ export default class Manifest {
 	parse(bufferRaw) { return this.parseRMAN(bufferRaw).parseBody(); }
 
 	parseRMAN(bufferRaw) {
-		const bifferManifest = new Biffer(bufferRaw);
+		const bifferRaw = new Biffer(bufferRaw);
 
-		const [codeMagic, versionMajor, versionMinor] = bifferManifest.unpack('<4sBB');
+		const [codeMagic, versionMajor, versionMinor] = bifferRaw.unpack('<4sBB');
 
 		AS(codeMagic == 'RMAN', 'invalid magic code');
 		AS(versionMajor == 2 && versionMinor == 0, `unsupported RMAN version: ${versionMajor}.${versionMinor}`);
 
 
-		const [bitsFlag, offset, length, idManifest, sizeBody] = bifferManifest.unpack('<HLLQL');
+		const [bitsFlag, offset, length, idManifest, sizeBody] = bifferRaw.unpack('<HLLQL');
 
 		AS(bitsFlag & (1 << 9));
-		AS(offset == bifferManifest.tell());
+		AS(offset == bifferRaw.tell());
 
 
 		this.id = idManifest;
@@ -43,14 +81,14 @@ export default class Manifest {
 
 
 		this.buffer = unzstd(
-			bifferManifest.slice(length),
+			bifferRaw.slice(length),
 			resolve(dirCache, 'manifest', `${this.version}-${toHexL(this.id, 0, false)}-body.manifest`)
 		);
 
 		return this;
 	}
 
-	async parseBody() {
+	parseBody() {
 		const biffer = new Biffer(this.buffer);
 
 		// header (unknown values, skip it)
@@ -63,19 +101,19 @@ export default class Manifest {
 		const offsets = d.map((v, i) => offsetsBase + 4 * i + v);
 
 		biffer.seek(offsets[0]);
-		this.bundles = await TableParser(biffer, BundleParser);
+		this.bundles = parseManifestList(biffer, Bundle);
 
 		biffer.seek(offsets[1]);
 
 		this.langs = {};
-		(await TableParser(biffer, LangParser)).forEach(lang => this.langs[lang.langID] = lang.lang);
+		parseManifestList(biffer, Langauge).forEach(lang => this.langs[lang.id] = lang.name);
 
 		// Build a map of chunks, indexed by ID
 		// Some of ChunkIDs are duplicates, but they are always the same size
 		this.chunks = {};
 		for(const bundle of this.bundles) {
 			for(const chunk of bundle.chunks) {
-				AS(!this.chunks[chunk.id] || (this.chunks[chunk.id].size == chunk.size || this.chunks[chunk.id].targetSize == chunk.targetSize));
+				AS(!this.chunks[chunk.id] || (this.chunks[chunk.id].size == chunk.size || this.chunks[chunk.id].sizeUncompressed == chunk.sizeUncompressed));
 
 				this.chunks[chunk.id] = chunk;
 
@@ -85,11 +123,11 @@ export default class Manifest {
 
 		biffer.seek(offsets[2]);
 
-		this.fileEntries = await TableParser(biffer, FileEntryParser);
+		this.fileEntries = parseManifestList(biffer, FileEntry);
 
 		biffer.seek(offsets[3]);
 
-		const directories = await TableParser(biffer, DirectoryParser);
+		const directories = parseManifestList(biffer, Directory);
 		const directories_id = {};
 		for(const directory of directories) {
 			directories_id[directory.id] = directory;
@@ -98,19 +136,19 @@ export default class Manifest {
 		// merge files and directory data
 		const files = {};
 		for(const fileEntry of this.fileEntries) {
-			const { id, link, langIDs, sizeFile, idsChunk } = fileEntry;
+			const { id, link, idsLanguage, sizeFile, idsChunk } = fileEntry;
 			let { name, idDirectory } = fileEntry;
 
 			while(idDirectory) {
 				const directory = directories_id[idDirectory] || {};
 
 				const dirName = directory.name;
-				idDirectory = directory.parentID;
+				idDirectory = directory.idParent;
 
 				name = `${dirName}/${name}`;
 			}
 
-			const langs = (langIDs || []).map(id => this.langs[id]);
+			const langs = (idsLanguage || []).map(id => this.langs[id]);
 			const fileChunks = (idsChunk || []).map(id => this.chunks[id]);
 
 			files[name] = new File(id, name, sizeFile, link, langs, fileChunks, this.version);
