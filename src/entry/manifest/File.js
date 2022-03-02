@@ -6,7 +6,7 @@ import FSX from 'fs-extra';
 import { decompress } from 'node-zstandard';
 
 import { dirCache } from '../../../lib/global.dir.js';
-import { G } from '../../../lib/global.js';
+import { G, TT } from '../../../lib/global.js';
 import Biffer from '@nuogz/biffer';
 
 import fetchBundle from '../../fetcher/bundle.js';
@@ -48,7 +48,7 @@ export default class File {
 
 		const parseInfo = parse(this.name);
 
-		G.info('FileExtracter', `extract file~{${parseInfo.base}}`, `bundle-length~{${setIDBundle.size}}`);
+		G.info(TT('extractFile:where'), TT('extractFile:do', { file: parseInfo.base }), TT('extractFile:info', { size: setIDBundle.size }));
 
 		const bundleBuffer = {};
 
@@ -59,7 +59,7 @@ export default class File {
 		}
 		await Bluebird.map(promises, r => r, { concurrency: 45 });
 
-		G.infoU('FileExtracter', `extract file~{${parseInfo.base}}`, `bundle-length~{${setIDBundle.size}} all fetched, unZstding...`);
+		G.infoU(TT('extractFile:where'), TT('extractFile:do', { file: parseInfo.base }), TT('extractFile:info', { size: setIDBundle.size }));
 
 		FSX.ensureDirSync(parse(pathSave).dir);
 		FSX.removeSync(pathSave);
@@ -72,13 +72,13 @@ export default class File {
 
 			parser.seek(chunk.offset);
 
-			appendFileSync(pathCacheZstd, parser.slice(chunk.size));
+			appendFileSync(pathCacheZstd, parser.slice(chunk.sizeCompressed));
 		}
 
 		return new Promise((resolve, reject) => decompress(pathCacheZstd, pathSave, error => {
 			if(error) { reject(error); }
 
-			G.infoD('FileExtracter', `extract file~{${parseInfo.base}}`, '✔ ');
+			G.infoD(TT('extractFile:where'), TT('extractFile:do', { file: parseInfo.base }), '✔ ');
 
 			resolve(pathSave);
 		}));

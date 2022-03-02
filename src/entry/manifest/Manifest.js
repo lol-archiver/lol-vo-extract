@@ -64,13 +64,13 @@ export default class Manifest {
 	parseRMAN(bufferRaw) {
 		const bifferRaw = new Biffer(bufferRaw);
 
-		const [codeMagic, versionMajor, versionMinor] = bifferRaw.unpack('<4sBB');
+		const [codeMagic, versionMajor, versionMinor] = bifferRaw.unpack('4sBB');
 
 		AS(codeMagic == 'RMAN', 'invalid magic code');
 		AS(versionMajor == 2 && versionMinor == 0, `unsupported RMAN version: ${versionMajor}.${versionMinor}`);
 
 
-		const [bitsFlag, offset, length, idManifest, sizeBody] = bifferRaw.unpack('<HLLQL');
+		const [bitsFlag, offset, length, idManifest, sizeBody] = bifferRaw.unpack('HLLQL');
 
 		AS(bitsFlag & (1 << 9));
 		AS(offset == bifferRaw.tell());
@@ -92,16 +92,16 @@ export default class Manifest {
 		const biffer = new Biffer(this.buffer);
 
 		// header (unknown values, skip it)
-		const [n] = biffer.unpack('<l');
+		const [n] = biffer.unpack('l');
 		biffer.skip(n);
 
 		// offsets to tables(convert to absolute)
 		const offsetsBase = biffer.tell();
-		const d = biffer.unpack('<6l');
+		const d = biffer.unpack('6l');
 		const offsets = d.map((v, i) => offsetsBase + 4 * i + v);
 
 		biffer.seek(offsets[0]);
-		/** @type {Object.<string, Bundle>} */
+		/** @type {Array<Bundle>} */
 		this.bundles = parseManifestList(biffer, Bundle);
 
 		biffer.seek(offsets[1]);
@@ -115,7 +115,7 @@ export default class Manifest {
 		this.chunks = {};
 		for(const bundle of this.bundles) {
 			for(const chunk of bundle.chunks) {
-				AS(!this.chunks[chunk.id] || (this.chunks[chunk.id].size == chunk.size || this.chunks[chunk.id].sizeUncompressed == chunk.sizeUncompressed));
+				AS(!this.chunks[chunk.id] || (this.chunks[chunk.id].sizeCompressed == chunk.sizeCompressed || this.chunks[chunk.id].sizeUncompressed == chunk.sizeUncompressed));
 
 				this.chunks[chunk.id] = chunk;
 

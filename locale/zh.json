@@ -77,5 +77,25 @@
 			"manifestListEntry": "清单列表条目",
 			"directory": "文件夹"
 		}
+	},
+	"extractFile": {
+		"where": "~[文件]解压器",
+		"do": "解压 ~[文件]{{file,hv}}",
+		"info": "~[捆包数量]{{size,hv}}",
+		"ing": "◌ ~[捆包数量]{{size,hv}}。已下载所有~[捆包], 解压中..."
+	},
+	"fetchBundle": {
+		"where": "~[捆包]下载器",
+		"do": "下载~[捆包]{{bid,hv}}",
+		"doing": "下载~[捆包]{{bid,hv}}{{-progess,hv}}",
+		"ing": "◌ 下载中...",
+		"cached": "✔ 发现缓存",
+		"ok": "✔ 已下载",
+		"retry": {
+			"contentLengthNotMatch": "✖ content-length不匹配。剩余重试次数{{remains,hv}}",
+			"etagNotMatch": "✖ etag不匹配。剩余重试次数{{remains,hv}}",
+			"error": "✖ 剩余重试次数{{remains,hv}}",
+			"failFinally":"✖ 失败。超过最大重试次数"
+		}
 	}
 }

@@ -63,7 +63,7 @@ const convert = async (region) => {
 
 
 		for(const { id, name, chromas = [], questSkinInfo: { tiers = [] } = {} } of skinsRaw) {
-			const idSkin = ~~String(id).substr(-3, 3);
+			const idSkin = ~~String(id).slice(-3, 0);
 
 			const skin = skins[idSkin] = {
 				id: idSkin,
@@ -74,7 +74,7 @@ const convert = async (region) => {
 			};
 
 			for(const { id, name, colors } of chromas) {
-				const idChroma = ~~String(id).substr(-3, 3);
+				const idChroma = ~~String(id).slice(-3, 0);
 
 				AS(!skins[idChroma]);
 				AS(colors.length == 2);
@@ -96,7 +96,7 @@ const convert = async (region) => {
 			}
 
 			for(const { id, name, stage, shortName, colors = [] } of tiers) {
-				const idChroma = ~~String(id).substr(-3, 3);
+				const idChroma = ~~String(id).slice(-3, 0);
 
 				if(idSkin == idChroma) {
 					skin.nameStage = name;

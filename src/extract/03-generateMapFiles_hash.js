@@ -1,5 +1,7 @@
+import { resolve } from 'path';
+import { dirCache } from '../../lib/global.dir.js';
 import { C, I, G } from '../../lib/global.js';
-import { pad0, wadHash } from '../../lib/Tool.js';
+import { pad0 } from '../../lib/Tool.js';
 
 
 const genPathSoundBank = function(usage, language, champion, index, type, format, version = '2016') {
@@ -14,17 +16,17 @@ const genArrPathSoundBank = function(usage, language, champion, index, version =
 	];
 };
 
-export default function genNameFiles_hash() {
+export default function parseInfosExtractAll() {
 	G.info('HashGenerator', 'generate a name map to in-wad files, indexed by path-hashes');
 
-	const nameFiles_hash = {};
+	const infosExtractRaw = {};
 
 	const usages = C.useSFXLevel ? ['vo', 'sfx'] : ['vo'];
 
 	const infoFiles = [];
 	for(const usage of usages) {
 		for(const i of I.idsSkin) {
-			nameFiles_hash[wadHash(`data/characters/${I.slot}/skins/skin${i}.bin`)] = `skin${i}.bin`;
+			infosExtractRaw[`data/characters/${I.slot}/skins/skin${i}.bin`] = `file|${`skin${i}.bin`}|${resolve(dirCache, 'extract', `skin${i}.bin`)}`;
 
 			infoFiles.push(...genArrPathSoundBank(usage, C.lang, I.slot, `skin${pad0(i, 2)}`));
 		}
@@ -35,8 +37,8 @@ export default function genNameFiles_hash() {
 	}
 
 	for(const [pathSoundBank, nameFile] of infoFiles) {
-		nameFiles_hash[wadHash(pathSoundBank)] = nameFile;
+		infosExtractRaw[pathSoundBank] = `file|${nameFile}|${resolve(dirCache, 'extract', nameFile)}`;
 	}
 
-	return nameFiles_hash;
+	return infosExtractRaw;
 }

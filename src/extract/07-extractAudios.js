@@ -39,16 +39,20 @@ const takeWpkRaw = function(fileWPK) {
 
 		// eslint-disable-next-line no-unused-vars
 		const [magic, version, count] = bifferWPK.unpack('4sLL');
-
+		console.log(magic, version);
 		const headerOffsets = bifferWPK.unpack(`${count}L`);
 
 		for(const headerOffset of headerOffsets) {
 			bifferWPK.seek(headerOffset);
 
 			const [offset, size, nameLength] = bifferWPK.unpack('LLL');
-			const name = Buffer.from([...bifferWPK.slice(nameLength * 2)].filter(byte => byte)).toString('utf8');
 
-			writeFileSync(resolve(dirCache, 'audio', fileWPK, 'wem', name), bifferWPK.buffer.slice(offset, offset + size));
+			if(offset && offset < bifferWPK.length) {
+				const name = Buffer.from([...bifferWPK.slice(nameLength * 2)].filter(byte => byte)).toString('utf8');
+
+				bifferWPK.seek(offset);
+				writeFileSync(resolve(dirCache, 'audio', fileWPK, 'wem', name), bifferWPK.slice(size));
+			}
 		}
 
 		G.infoD('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, `✔ `);

@@ -10,7 +10,7 @@ export default function parseBin(binPath, indexSkin) {
 
 	// G.info('BINParser', `[${_pa.parse(binPath).base}]`);
 
-	const binBiffer = new Biffer(binPath);
+	const bifferBin = new Biffer(binPath);
 
 	const arrEvent = [];
 
@@ -18,9 +18,9 @@ export default function parseBin(binPath, indexSkin) {
 	let isBase = false;
 
 	let idSkin;
-	if(binBiffer.find([0xae, 0xf4, 0x77, 0xa9]) > -1) {
-		[idSkin] = binBiffer.unpack('5xL');
-		idSkin = ~~String(idSkin).substr(-3, 3);
+	if(bifferBin.find([0xae, 0xf4, 0x77, 0xa9]) > -1) {
+		[idSkin] = bifferBin.unpack('5xL');
+		idSkin = ~~String(idSkin).slice(-3, 0);
 	}
 	else {
 		const subID = parse(binPath).base.match(/\d+/)[0];
@@ -30,13 +30,13 @@ export default function parseBin(binPath, indexSkin) {
 
 	const skin = D[I.id].skins[idSkin];
 	if(!skin) {
-		if(binBiffer.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
+		if(bifferBin.findFromStart([0x48, 0x1c, 0x4b, 0x51]) > -1) {
 			G.info('BINParser', `detect ~[id]~{${idSkin}}`, `~[chroma] skip`);
 
 			return;
 		}
-		else if(binBiffer.findFromStart([0x80, 0x58, 0x22, 0x87]) > -1) {
-			const [clazz] = binBiffer.unpack('5xB');
+		else if(bifferBin.findFromStart([0x80, 0x58, 0x22, 0x87]) > -1) {
+			const [clazz] = bifferBin.unpack('5xB');
 
 			if(clazz == 1) {
 				skinNameFinal = idSkin;
@@ -82,19 +82,19 @@ export default function parseBin(binPath, indexSkin) {
 		}
 	}
 
-	binBiffer.seek(0);
+	bifferBin.seek(0);
 
 	let isFind = true;
 
 	const setEventPoolName = new Set();
 
 	while(isFind) {
-		if(binBiffer.find([0x84, 0xE3, 0xD8, 0x12]) == -1) { break; }
+		if(bifferBin.find([0x84, 0xE3, 0xD8, 0x12]) == -1) { break; }
 
-		const [, , , , countEvent] = binBiffer.unpack('LBBLL');
+		const [, , , , countEvent] = bifferBin.unpack('LBBLL');
 
 		for(let i = 0; i < countEvent; i++) {
-			const eventName = binBiffer.unpackString('H');
+			const eventName = bifferBin.unpackString('H');
 
 			if(eventName.indexOf('_sfx_') == -1) {
 				let eventPoolName;

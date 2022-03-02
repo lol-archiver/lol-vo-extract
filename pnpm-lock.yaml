@@ -1,17 +1,17 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@nuogz/biffer': ^1.2.0
+  '@nuogz/biffer': ^1.2.2
   '@nuogz/hades': ^3.5.0
-  '@nuogz/lol-wad-extract': ^1.2.0
+  '@nuogz/lol-wad-extract': ^1.2.2
   '@nuogz/poseidon': ^4.1.0
   axios: ^0.22.0
   bluebird: ^3.7.2
   buffer-crc32: ^0.2.13
-  eslint: ^8.9.0
-  fs-extra: ^10.0.0
+  eslint: ^8.10.0
+  fs-extra: ^10.0.1
   https-proxy-agent: ^5.0.0
-  i18next: ^21.6.11
+  i18next: ^21.6.12
   iconv-lite: ^0.6.3
   moment: ^2.29.1
   node-gzip: ^1.1.2
@@ -20,16 +20,16 @@ specifiers:
   xxhashjs: ^0.2.2
 
 dependencies:
-  '@nuogz/biffer': 1.2.0
+  '@nuogz/biffer': 1.2.2
   '@nuogz/hades': 3.5.0
-  '@nuogz/lol-wad-extract': 1.2.0
+  '@nuogz/lol-wad-extract': 1.2.2
   '@nuogz/poseidon': 4.1.0
   axios: 0.22.0
   bluebird: 3.7.2
   buffer-crc32: 0.2.13
-  fs-extra: 10.0.0
+  fs-extra: 10.0.1
   https-proxy-agent: 5.0.0
-  i18next: 21.6.11
+  i18next: 21.6.12
   iconv-lite: 0.6.3
   moment: 2.29.1
   node-gzip: 1.1.2
@@ -38,7 +38,7 @@ dependencies:
   xxhashjs: 0.2.2
 
 devDependencies:
-  eslint: 8.9.0
+  eslint: 8.10.0
 
 packages:
 
@@ -49,8 +49,8 @@ packages:
       regenerator-runtime: 0.13.9
     dev: false
 
-  /@eslint/eslintrc/1.1.0:
-    resolution: {integrity: sha512-C1DfL7XX4nPqGd6jcP01W9pVM1HYCuUkFk1432D7F0v3JSlUIeOYn9oCoi3eoLZ+iwBSb29BMFxxny0YrrEZqg==}
+  /@eslint/eslintrc/1.2.0:
+    resolution: {integrity: sha512-igm9SjJHNEJRiUnecP/1R5T3wKLEJ7pL6e2P+GUSfCd0dGjPYYZve08uzw8L2J8foVHFz+NGu12JxRcU2gGo6w==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       ajv: 6.12.6
@@ -66,8 +66,8 @@ packages:
       - supports-color
     dev: true
 
-  /@humanwhocodes/config-array/0.9.3:
-    resolution: {integrity: sha512-3xSMlXHh03hCcCmFc0rbKp3Ivt2PFEJnQUJDDMTJQ2wkECZWdq4GePs2ctc5H8zV+cHPaq8k2vU8mrQjA6iHdQ==}
+  /@humanwhocodes/config-array/0.9.5:
+    resolution: {integrity: sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw==}
     engines: {node: '>=10.10.0'}
     dependencies:
       '@humanwhocodes/object-schema': 1.2.1
@@ -81,11 +81,11 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@nuogz/biffer/1.2.0:
-    resolution: {integrity: sha512-CMhaJHvOTjllFhNR06GS7t9noOuWRPhgSR52XJtdgrUmzuXTidlmkXvyEbsxnQMs1O0mOee33PtO/v5zxxzrsA==}
+  /@nuogz/biffer/1.2.2:
+    resolution: {integrity: sha512-Yx3toDoqnaH1eRos47cjFAnxUNmDSVdLzmEmOiwJAaSXTr5vaw1nfJWJdaxSW0I9v5J+PbbVKz+u2yRNMuNVdg==}
     engines: {node: '>=14.18.1'}
     dependencies:
-      i18next: 21.6.11
+      i18next: 21.6.12
     dev: false
 
   /@nuogz/hades/3.5.0:
@@ -100,11 +100,11 @@ packages:
       - supports-color
     dev: false
 
-  /@nuogz/lol-wad-extract/1.2.0:
-    resolution: {integrity: sha512-x5r4CX4kX91sJzu9K0g6ciNVzQTJHEU3KUnR3omz/vT7NUtehSBIt5SMY3KYaqezNPxZNo1m+ijgioCaL/j0oQ==}
+  /@nuogz/lol-wad-extract/1.2.2:
+    resolution: {integrity: sha512-JyFomnFdM9WXXAS9HYQjsURUZ45lN6ION2KJxEGPYIkFHomQDd3BPQMasi31SzJQ6ucatwVOEKD/KCN6G1idjA==}
     engines: {node: '>=14.18.1'}
     dependencies:
-      '@nuogz/biffer': 1.2.0
+      '@nuogz/biffer': 1.2.2
       node-gzip: 1.1.2
       node-zstandard: 1.2.4
       xxhashjs: 0.2.2
@@ -175,7 +175,7 @@ packages:
   /axios/0.22.0:
     resolution: {integrity: sha512-Z0U3uhqQeg1oNcihswf4ZD57O3NrR1+ZXhxaROaWpDmsDTx7T2HNBV2ulBtie2hwJptu8UvgnJoK+BIqdzh/1w==}
     dependencies:
-      follow-redirects: 1.14.8
+      follow-redirects: 1.14.9
     transitivePeerDependencies:
       - debug
     dev: false
@@ -293,13 +293,13 @@ packages:
       estraverse: 5.3.0
     dev: true
 
-  /eslint-utils/3.0.0_eslint@8.9.0:
+  /eslint-utils/3.0.0_eslint@8.10.0:
     resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==}
     engines: {node: ^10.0.0 || ^12.0.0 || >= 14.0.0}
     peerDependencies:
       eslint: '>=5'
     dependencies:
-      eslint: 8.9.0
+      eslint: 8.10.0
       eslint-visitor-keys: 2.1.0
     dev: true
 
@@ -313,13 +313,13 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint/8.9.0:
-    resolution: {integrity: sha512-PB09IGwv4F4b0/atrbcMFboF/giawbBLVC7fyDamk5Wtey4Jh2K+rYaBhCAbUyEI4QzB1ly09Uglc9iCtFaG2Q==}
+  /eslint/8.10.0:
+    resolution: {integrity: sha512-tcI1D9lfVec+R4LE1mNDnzoJ/f71Kl/9Cv4nG47jOueCMBrCCKYXr4AUVS7go6mWYGFD4+EoN6+eXSrEbRzXVw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@eslint/eslintrc': 1.1.0
-      '@humanwhocodes/config-array': 0.9.3
+      '@eslint/eslintrc': 1.2.0
+      '@humanwhocodes/config-array': 0.9.5
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
@@ -327,7 +327,7 @@ packages:
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.1.1
-      eslint-utils: 3.0.0_eslint@8.9.0
+      eslint-utils: 3.0.0_eslint@8.10.0
       eslint-visitor-keys: 3.3.0
       espree: 9.3.1
       esquery: 1.4.0
@@ -420,8 +420,8 @@ packages:
   /flatted/3.2.5:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
 
-  /follow-redirects/1.14.8:
-    resolution: {integrity: sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==}
+  /follow-redirects/1.14.9:
+    resolution: {integrity: sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -430,8 +430,8 @@ packages:
         optional: true
     dev: false
 
-  /fs-extra/10.0.0:
-    resolution: {integrity: sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==}
+  /fs-extra/10.0.1:
+    resolution: {integrity: sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag==}
     engines: {node: '>=12'}
     dependencies:
       graceful-fs: 4.2.9
@@ -499,8 +499,8 @@ packages:
       - supports-color
     dev: false
 
-  /i18next/21.6.11:
-    resolution: {integrity: sha512-tJ2+o0lVO+fhi8bPkCpBAeY1SgkqmQm5NzgPWCQssBrywJw98/o+Kombhty5nxQOpHtvMmsxcOopczUiH6bJxQ==}
+  /i18next/21.6.12:
+    resolution: {integrity: sha512-xlGTPdu2g5PZEUIE6TA1mQ9EIAAv9nMFONzgwAIrKL/KTmYYWufQNGgOmp5Og1PvgUji+6i1whz0rMdsz1qaKw==}
     dependencies:
       '@babel/runtime': 7.17.2
     dev: false
@@ -792,7 +792,7 @@ packages:
     dependencies:
       date-format: 4.0.3
       debug: 4.3.3
-      fs-extra: 10.0.0
+      fs-extra: 10.0.1
     transitivePeerDependencies:
       - supports-color
     dev: false

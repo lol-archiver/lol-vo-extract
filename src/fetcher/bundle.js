@@ -5,7 +5,7 @@ import { join } from 'path';
 import Axios from 'axios';
 import joinURL from 'url-join';
 
-import { G, C } from '../../lib/global.js';
+import { G, C, TT } from '../../lib/global.js';
 
 
 export default async function(id, version, cdn, counter) {
@@ -15,12 +15,12 @@ export default async function(id, version, cdn, counter) {
 
 	let bufferBundle;
 	if(existsSync(pathBundle)) {
-		G.infoU('BundleFetcher', `fetch bundle~{${bid}}~{${++counter.now}/${counter.max}}`, `cache founded`);
+		G.infoU(TT('fetchBundle:where'), TT('fetchBundle:doing', { bid, progess: `${++counter.now}/${counter.max}` }), TT('fetchBundle:cached'));
 
 		bufferBundle = readFileSync(pathBundle);
 	}
 	else {
-		G.infoU('BundleFetcher', `fetch bundle~{${bid}}~{${counter.now + 1}/${counter.max}}`, `? fetching...`);
+		G.infoU(TT('fetchBundle:where'), TT('fetchBundle:doing', { bid, progess: `${counter.now + 1}/${counter.max}` }), TT('fetchBundle:ing'));
 
 		const bundleURL = joinURL(cdn, `channels/public/bundles/${bid}.bundle`);
 
@@ -32,14 +32,14 @@ export default async function(id, version, cdn, counter) {
 				const { data, headers } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.server.proxy, timeout: 1000 * 60 * 4 });
 
 				if(data.length != headers['content-length']) {
-					G.errorU('BundleFetcher', `fetch bundle~{${bid}}`, `content-length match failed. remains~{${timesFetched}}`);
+					G.errorU(TT('fetchBundle:where'), TT('fetchBundle:do', { bid }), TT('fetchBundle:retry.contentLengthNotMatch', { remains: timesFetched }));
 				}
 				else {
 					const hash = createHash('md5');
 					hash.update(data);
 
 					if(headers.etag.toLowerCase() != `"${hash.digest('hex')}"`.toLowerCase()) {
-						G.errorU('BundleFetcher', `fetch bundle~{${bid}}`, `etag match failed. remains~{${timesFetched}}`);
+						G.errorU(TT('fetchBundle:where'), TT('fetchBundle:do', { bid }), TT('fetchBundle:retry.etagNotMatch', { remains: timesFetched }));
 					}
 					else {
 						passFetched = true;
@@ -49,19 +49,19 @@ export default async function(id, version, cdn, counter) {
 				if(passFetched) {
 					bufferBundle = data;
 
-					G.infoU('BundleFetcher', `fetch bundle~{${bid}}~{${++counter.now}/${counter.max}}`, `fetched`);
+					G.infoU(TT('fetchBundle:where'), TT('fetchBundle:doing', { bid, progess: `${++counter.now}/${counter.max}` }), TT('fetchBundle:ok'));
 					writeFileSync(pathBundle, bufferBundle);
 
 					break;
 				}
 			}
 			catch(error) {
-				G.errorU('BundleFetcher', `fetch bundle~{${bid}}`, error, `remains~{${timesFetched}}`);
+				G.errorU(TT('fetchBundle:where'), TT('fetchBundle:do', { bid }), error, TT('fetchBundle:retry.error', { remains: timesFetched }));
 			}
 		}
 
 		if(!passFetched) {
-			throw G.error('BundleFetcher', `fetch bundle~{${bid}}`, `failed finally. over max times`);
+			throw G.error(TT('fetchBundle:where'), TT('fetchBundle:do', { bid }), `failed finally. over max times`);
 		}
 	}
 

@@ -77,5 +77,25 @@
 			"manifestListEntry": "Manifest List Entry",
 			"directory": "Directory"
 		}
+	},
+	"extractFile": {
+		"where": "~[File] Extracter",
+		"do": "extract ~[File]{{file,hv}}",
+		"info": "~[bundle size]{{size,hv}}",
+		"ing": "◌ ~[bundle size]{{size,hv}}. All ~[bundle] fetched, extracting..."
+	},
+	"fetchBundle": {
+		"where": "~[Bundle] Fetcher",
+		"do": "fetch ~[Bundle]{{bid,hv}}",
+		"doing": "fetch ~[Bundle]{{bid,hv}}{{-progess,hv}}",
+		"ing": "◌ fetch...",
+		"cached": "✔ cache found",
+		"ok": "✔ fetched",
+		"retry": {
+			"contentLengthNotMatch": "✖ content-length match failed. remains{{remains,hv}}",
+			"etagNotMatch": "✖ etag match failed. remains{{remains,hv}}",
+			"error": "✖ remains{{remains,hv}}",
+			"failFinally":"✖ failed finally. over max times"
+		}
 	}
 }

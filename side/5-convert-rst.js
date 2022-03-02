@@ -14,7 +14,7 @@ const hashes = readFileSync(resolve(dirData, 'hashes.rst.txt'), 'utf8').split('\
 const biffer = new Biffer(C.path.rst);
 
 
-const [magic, versionMajor] = biffer.unpack('<3sB');
+const [magic, versionMajor] = biffer.unpack('3sB');
 AS(magic == 'RST', `Invalid magic code: ${magic}`);
 AS(2 <= versionMajor && versionMajor <= 5, `Unsupported RST version: ${versionMajor}`);
 
@@ -35,11 +35,11 @@ else if([4, 5].includes(versionMajor)) {
 }
 
 
-const [count] = biffer.unpack('<L');
+const [count] = biffer.unpack('L');
 const entries = [];
 
 for(let i = 0; i < count; i++) {
-	const [v] = biffer.unpack('<Q');
+	const [v] = biffer.unpack('Q');
 	entries.push({
 		pos: v >> bitHash,
 		hash: v & maskHash,

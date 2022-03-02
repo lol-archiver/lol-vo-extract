@@ -6,8 +6,7 @@ import { dirCache } from './lib/global.dir.js';
 
 import initWADInfo from './src/extract/01-initFetch.js';
 import fetchWADs from './src/extract/02-fetchWads.js';
-import generateMapFiles_hash from './src/extract/03-generateMapFiles_hash.js';
-import extractWad from './src/extract/04-takeWad.js';
+import parseInfosExtractAll from './src/extract/03-generateMapFiles_hash.js';
 import parseBin from './src/extract/05-parseBin.js';
 import parseBnk from './src/extract/06-parseBin.js';
 import extractAudios from './src/extract/07-extractAudios.js';
@@ -17,15 +16,19 @@ import saveEvents from './src/extract/09-saveEvents.js';
 
 const { fileWADChampionDefault, fileWADChampionLocale, wadsNeedFetch } = initWADInfo();
 
+
 await fetchWADs(wadsNeedFetch);
 
-const mapHash_GameFile = generateMapFiles_hash();
 
-const arrSkinFile = await extractWAD(fileWADChampionDefault, mapHash_GameFile);
+const infosExtractRaw = parseInfosExtractAll();
+
+
+const resultExtractDefault = await extractWAD(fileWADChampionDefault, infosExtractRaw);
+
 
 const mapName_Event = {};
 
-for(const binFile of arrSkinFile.filter(file => file.includes('.bin')).sort((a, b) => a.match(/\d+/)[0] - b.match(/\d+/)[0])) {
+for(const binFile of Object.keys(resultExtractDefault).filter(file => file.includes('.bin')).sort((a, b) => a.match(/\d+/)[0] - b.match(/\d+/)[0])) {
 	const arrEvent = parseBin(resolve(dirCache, 'extract', binFile), ~~binFile.match(/\d+/g)[0]);
 
 	if(arrEvent instanceof Array) {
@@ -36,10 +39,12 @@ for(const binFile of arrSkinFile.filter(file => file.includes('.bin')).sort((a, 
 }
 
 const setEventName = new Set(Object.keys(mapName_Event));
-const arrVoiceFile = await extractWad(fileWADChampionLocale, mapHash_GameFile);
+
+const resultExtractLocale = await extractWAD(fileWADChampionLocale, infosExtractRaw);
+
 const mapAudioID_Event = {};
 
-for(let eventFile of arrVoiceFile.filter(file => file.includes('event.bnk'))) {
+for(let eventFile of Object.keys(resultExtractLocale).filter(file => file.includes('event.bnk'))) {
 	const mapAudioID_EventName = await parseBnk(
 		resolve(dirCache, 'extract', eventFile),
 		setEventName
@@ -66,8 +71,8 @@ for(let eventFile of arrVoiceFile.filter(file => file.includes('event.bnk'))) {
 }
 
 const arrAudioPackFile = [
-	...arrVoiceFile.filter(file => file.includes('audio.')),
-	...arrSkinFile.filter(file => file.includes('audio.')),
+	...Object.keys(resultExtractLocale).filter(file => file.includes('audio.')),
+	...Object.keys(resultExtractDefault).filter(file => file.includes('audio.')),
 ];
 
 

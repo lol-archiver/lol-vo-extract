@@ -11,8 +11,8 @@ export default class Directory extends ManifestListItem {
 		const entry = new ManifestListEntry([
 			null,
 			null,
-			['id', '<Q'],
-			['idParent', '<Q'],
+			['id', 'Q'],
+			['idParent', 'Q'],
 			['name', 'string'],
 		]).parse(biffer);
 

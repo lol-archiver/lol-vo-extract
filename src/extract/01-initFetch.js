@@ -44,7 +44,7 @@ export default function initWADInfo() {
 			{ name: nameWADChampionLocale, file: fileWADChampionLocale },
 		].filter(detectNeedFetch);
 
-		G.info(TT('where:Main'), TT('initWADInfo:do'), '✔', ...wadsNeedFetch.map(({ name }) => TT('initWADInfo:item', { name })));
+		G.info(TT('where:Main'), TT('initWADInfo:do'), '✔ ', ...wadsNeedFetch.map(({ name }) => TT('initWADInfo:item', { name })));
 
 		return { fileWADChampionDefault, fileWADChampionLocale, wadsNeedFetch };
 	}

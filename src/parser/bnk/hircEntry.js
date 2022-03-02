@@ -63,7 +63,7 @@ export default function parseEntry(type, id, B) {
 	else if(type == 5) {
 		entry = new HircPool(id);
 
-		const b = new Biffer(Buffer.from([...B.buffer].reverse()));
+		const b = new Biffer(Buffer.from([...B.target].reverse()));
 
 		while(b.unpack('>L')[0] == 0xC350) {
 			entry.soundIDs.push(b.unpack('>L')[0]);
@@ -75,7 +75,7 @@ export default function parseEntry(type, id, B) {
 
 		entry = new HircSwitchContainer(id);
 
-		const b = new Biffer(Buffer.from([...B.buffer].reverse()));
+		const b = new Biffer(Buffer.from([...B.target].reverse()));
 
 		while(b.unpack('LLBB').join('|') == '0|0|1|0') {
 			entry.arrContainerID.push(b.unpack('>L')[0]);
