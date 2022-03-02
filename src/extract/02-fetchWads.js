@@ -52,12 +52,10 @@ export default async function fetchWADs(wadsNeedFetch) {
 	}));
 
 
-
-
+	/** @type {import('../entry/manifest/File.js').default[]} */
 	const files = manifests.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
 
 	const filesFetched = [];
-
 	for(const file of files) {
 		for(const { name: nameFile, file: pathFile } of wadsNeedFetch) {
 			if(file.name.toLowerCase().endsWith(nameFile)) {
@@ -67,6 +65,7 @@ export default async function fetchWADs(wadsNeedFetch) {
 			}
 		}
 	}
+
 
 	G.info(TT('where:Main'), TT('fetchWADs:do'), '✔ ');
 

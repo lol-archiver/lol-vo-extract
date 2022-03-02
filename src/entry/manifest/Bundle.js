@@ -22,6 +22,8 @@ class Chunk {
 }
 
 export default class Bundle extends ManifestListItem {
+	static Chunk = Chunk;
+
 	static nameItem = TT('manifest:item.bundle');
 
 	static parse(biffer) {

@@ -101,15 +101,17 @@ export default class Manifest {
 		const offsets = d.map((v, i) => offsetsBase + 4 * i + v);
 
 		biffer.seek(offsets[0]);
+		/** @type {Object.<string, Bundle>} */
 		this.bundles = parseManifestList(biffer, Bundle);
 
 		biffer.seek(offsets[1]);
 
-		this.langs = {};
-		parseManifestList(biffer, Langauge).forEach(lang => this.langs[lang.id] = lang.name);
+		this.languages = {};
+		parseManifestList(biffer, Langauge).forEach(language => this.languages[language.id] = language.name);
 
 		// Build a map of chunks, indexed by ID
 		// Some of ChunkIDs are duplicates, but they are always the same size
+		/** @type {Object.<string, typeof Bundle.Chunk>} */
 		this.chunks = {};
 		for(const bundle of this.bundles) {
 			for(const chunk of bundle.chunks) {
@@ -123,6 +125,7 @@ export default class Manifest {
 
 		biffer.seek(offsets[2]);
 
+		/** @type {FileEntry[]} */
 		this.fileEntries = parseManifestList(biffer, FileEntry);
 
 		biffer.seek(offsets[3]);
@@ -148,10 +151,10 @@ export default class Manifest {
 				name = `${dirName}/${name}`;
 			}
 
-			const langs = (idsLanguage || []).map(id => this.langs[id]);
+			const languages = (idsLanguage || []).map(id => this.languages[id]);
 			const fileChunks = (idsChunk || []).map(id => this.chunks[id]);
 
-			files[name] = new File(id, name, sizeFile, link, langs, fileChunks, this.version);
+			files[name] = new File(id, name, sizeFile, link, languages, fileChunks, this.version);
 		}
 
 		this.files = files;

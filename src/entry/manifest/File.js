@@ -16,12 +16,27 @@ const pathCacheZstd = resolve(dirCache, 'zstd');
 
 
 export default class File {
-	constructor(id, name, sizeFile, link, langs, fileChunks, version) {
+	/** @type {bigint} */
+	id;
+	/** @type {string} */
+	name;
+	/** @type {string} */
+	sizeFile;
+	/** @type {string} */
+	link;
+	/** @type {} */
+	languages;
+	/** @type {} */
+	fileChunks;
+	/** @type {} */
+	version;
+
+	constructor(id, name, sizeFile, link, languages, fileChunks, version) {
 		this.id = id;
 		this.name = name;
 		this.sizeFile = sizeFile;
 		this.link = link;
-		this.langs = langs;
+		this.languages = languages;
 		this.fileChunks = fileChunks;
 		this.version = version;
 	}
