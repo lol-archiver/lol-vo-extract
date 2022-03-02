@@ -5496,7 +5496,7 @@
 							"#FF9D13",
 							"#B9FFC1"
 						]
-			}
+					}
 				}
 			},
 			"42": 41,
@@ -6044,7 +6044,85 @@
 			"22": 16,
 			"23": 16,
 			"24": 16,
-			"25": 16
+			"25": 16,
+			"26": {
+				"id": 26,
+				"name": "Nunu & Beelump",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Nunu & Beelump",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Nunu & Beelump",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Nunu & Beelump",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Nunu & Beelump",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Nunu & Beelump",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Nunu & Beelump",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Nunu & Beelump",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Nunu & Beelump",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26
 		},
 		"spells": {
 			"p": "Call of the Freljord",
@@ -6279,7 +6357,72 @@
 			"27": 21,
 			"28": 21,
 			"29": 21,
-			"30": 21
+			"30": 21,
+			"31": {
+				"id": 31,
+				"name": "Battle Bunny Miss Fortune",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Battle Bunny Miss Fortune",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Battle Bunny Miss Fortune",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Battle Bunny Miss Fortune",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Battle Bunny Miss Fortune",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Battle Bunny Miss Fortune",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Battle Bunny Miss Fortune",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"33": {
+				"id": 33,
+				"name": "Bewitching Miss Fortune Prestige Edition (2022)",
+				"chromas": {}
+			},
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31,
+			"38": 31,
+			"39": 31
 		},
 		"spells": {
 			"p": "Love Tap",
@@ -7958,7 +8101,12 @@
 			"27": 24,
 			"28": 24,
 			"29": 24,
-			"30": 24
+			"30": 24,
+			"31": {
+				"id": 31,
+				"name": "K/DA Evelynn Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Demon Shade",
@@ -10502,7 +10650,7 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
-			}
+					}
 				}
 			},
 			"16": 15,
@@ -10811,7 +10959,12 @@
 			"32": 26,
 			"33": 26,
 			"34": 26,
-			"35": 26
+			"35": 26,
+			"36": {
+				"id": 36,
+				"name": "Project Irelia Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Ionian Fervor",
@@ -13122,6 +13275,11 @@
 			"28": {
 				"id": 28,
 				"name": "Arcane Caitlyn",
+				"chromas": {}
+			},
+			"29": {
+				"id": 29,
+				"name": "Arcade Caitlyn Prestige Edition (2022)",
 				"chromas": {}
 			}
 		},
@@ -15446,7 +15604,85 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "Orbeeanna",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Orbeeanna",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Orbeeanna",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Orbeeanna",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Orbeeanna",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Orbeeanna",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Orbeeanna",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Orbeeanna",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Orbeeanna",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20
 		},
 		"spells": {
 			"p": "Clockwork Windup",
@@ -16161,7 +16397,12 @@
 			"35": 31,
 			"36": 31,
 			"37": 31,
-			"38": 31
+			"38": 31,
+			"39": {
+				"id": 39,
+				"name": "Nightbringer Lee Sin Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Flurry",
@@ -16426,7 +16667,99 @@
 			"29": 25,
 			"30": 25,
 			"31": 25,
-			"34": 12
+			"32": {
+				"id": 32,
+				"name": "Battle Bat Vayne",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Battle Bat Vayne",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"33": {
+				"id": 33,
+				"name": "Firecracker Vayne Prestige Edition (2022)",
+				"chromas": {}
+			},
+			"34": 12,
+			"35": 32,
+			"36": 32,
+			"37": 32,
+			"38": 32,
+			"39": 32,
+			"40": 32,
+			"41": 32,
+			"42": 32,
+			"43": 32
 		},
 		"spells": {
 			"p": "Night Hunter",
@@ -17125,7 +17458,85 @@
 			"20": 15,
 			"21": 15,
 			"22": 15,
-			"23": 15
+			"23": 15,
+			"24": {
+				"id": 24,
+				"name": "Heimerstinger",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Heimerstinger",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Heimerstinger",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Heimerstinger",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Heimerstinger",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Heimerstinger",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Heimerstinger",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Heimerstinger",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Heimerstinger",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Hextech Affinity",
@@ -18645,7 +19056,7 @@
 							"#FFEE59",
 							"#FFEE59"
 						]
-			}
+					}
 				}
 			},
 			"26": 25,
@@ -19685,7 +20096,12 @@
 			"56": 50,
 			"57": 50,
 			"58": 50,
-			"59": 50
+			"59": 50,
+			"60": {
+				"id": 60,
+				"name": "K/DA Akali Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Assassin's Mark",
@@ -21527,7 +21943,99 @@
 			"40": 34,
 			"41": 34,
 			"42": 34,
-			"43": 34
+			"43": 34,
+			"44": {
+				"id": 44,
+				"name": "Battle Bunny Prime Riven",
+				"chromas": {
+					"46": {
+						"id": 46,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Battle Bunny Prime Riven",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"45": {
+				"id": 45,
+				"name": "Valiant Sword Riven Prestige Edition (2022)",
+				"chromas": {}
+			},
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44,
+			"53": 44,
+			"54": 44
 		},
 		"spells": {
 			"p": "Runic Blade",
@@ -22560,6 +23068,11 @@
 			"35": 29,
 			"36": 29,
 			"37": 29,
+			"39": {
+				"id": 39,
+				"name": "Battle Academia Lux Prestige Edition (2022)",
+				"chromas": {}
+			},
 			"40": {
 				"id": 40,
 				"name": "Porcelain Lux Prestige Edition",
@@ -23445,7 +23958,12 @@
 			"61": 17,
 			"62": 27,
 			"63": 28,
-			"64": 42
+			"64": 42,
+			"65": {
+				"id": 65,
+				"name": "K/DA Ahri Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Essence Theft",
@@ -24002,7 +24520,12 @@
 			"21": 16,
 			"22": 16,
 			"23": 16,
-			"24": 16
+			"24": 16,
+			"25": {
+				"id": 25,
+				"name": "Fuzz Fizz Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Nimble Fighter",
@@ -25979,7 +26502,85 @@
 				"id": 23,
 				"name": "Hextech Ziggs",
 				"chromas": {}
-			}
+			},
+			"24": {
+				"id": 24,
+				"name": "BZZZiggs",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "BZZZiggs",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "BZZZiggs",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "BZZZiggs",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "BZZZiggs",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "BZZZiggs",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "BZZZiggs",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "BZZZiggs",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "BZZZiggs",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Short Fuse",
@@ -29980,7 +30581,12 @@
 			"35": 29,
 			"36": 29,
 			"37": 29,
-			"38": 29
+			"38": 29,
+			"39": {
+				"id": 39,
+				"name": "K/DA Kai'Sa Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -32768,7 +33374,99 @@
 				"name": "Arcane Jinx",
 				"chromas": {}
 			},
-			"39": 2
+			"38": {
+				"id": 38,
+				"name": "Battle Cat Jinx",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Battle Cat Jinx",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"39": 2,
+			"40": {
+				"id": 40,
+				"name": "Battle Cat Jinx Prestige Edition",
+				"chromas": {}
+			},
+			"41": 38,
+			"42": 38,
+			"43": 38,
+			"44": 38,
+			"45": 38,
+			"46": 38,
+			"47": 38,
+			"48": 38,
+			"49": 38
 		},
 		"spells": {
 			"p": "Get Excited!",
@@ -34563,7 +35261,7 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
-			}
+					}
 				}
 			},
 			"37": 36,
@@ -34824,6 +35522,11 @@
 						]
 					}
 				}
+			},
+			"21": {
+				"id": 21,
+				"name": "True Damage Qiyana Prestige Edition (2022)",
+				"chromas": {}
 			},
 			"22": 20,
 			"23": 20,
@@ -35254,7 +35957,12 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "Blood Moon Aatrox Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Deathbringer Stance",
@@ -36568,7 +37276,12 @@
 			"34": 28,
 			"35": 28,
 			"36": 28,
-			"37": 28
+			"37": 28,
+			"38": {
+				"id": 38,
+				"name": "Pulsefire Thresh Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Damnation",
@@ -38234,7 +38947,94 @@
 			"20": 13,
 			"21": 13,
 			"22": 13,
-			"23": 13
+			"23": 13,
+			"24": {
+				"id": 24,
+				"name": "Battle Wolf Sylas",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Battle Wolf Sylas",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24,
+			"33": 24
 		},
 		"spells": {
 			"p": "Petricite Burst",
@@ -38424,7 +39224,12 @@
 			"17": 12,
 			"18": 12,
 			"19": 12,
-			"20": 12
+			"20": 12,
+			"21": {
+				"id": 21,
+				"name": "Star Guardian Neeko Prestige Edition (2022)",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Inherent Glamour",
@@ -39082,7 +39887,22 @@
 			"40": 34,
 			"41": 34,
 			"42": 34,
-			"43": 34
+			"43": 34,
+			"44": {
+				"id": 44,
+				"name": "Ashen Knight Pyke",
+				"chromas": {
+					"46": {
+						"id": 46,
+						"name": "Ashen Knight Pyke",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"46": 44
 		},
 		"spells": {
 			"p": "Gift of the Drowned Ones",
