@@ -7,7 +7,7 @@ import { dirCache } from './lib/global.dir.js';
 import initWADInfo from './src/extract/01-initFetch.js';
 import fetchWADs from './src/extract/02-fetchWads.js';
 import parseInfosExtractAll from './src/extract/03-parseInfosExtractAll.js';
-import parseBin from './src/extract/04-parseBIN.js';
+import parseBIN from './src/extract/04-parseBIN.js';
 import parseBNK from './src/extract/05-parseBNK.js';
 import extractAudios from './src/extract/06-extractAudios.js';
 import copyAudios from './src/extract/07-copyAudios.js';
@@ -29,7 +29,7 @@ const resultExtractDefault = await extractWAD(fileWADChampionDefault, infosExtra
 const mapName_Event = {};
 
 for(const binFile of Object.keys(resultExtractDefault).filter(file => file.includes('.bin')).sort((a, b) => a.match(/\d+/)[0] - b.match(/\d+/)[0])) {
-	const arrEvent = parseBin(resolve(dirCache, 'extract', binFile), ~~binFile.match(/\d+/g)[0]);
+	const arrEvent = parseBIN(resolve(dirCache, 'extract', binFile), ~~binFile.match(/\d+/g)[0]);
 
 	if(arrEvent instanceof Array) {
 		for(const event of arrEvent) {

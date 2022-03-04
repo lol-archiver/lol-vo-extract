@@ -5,7 +5,7 @@ import { I, G, D } from '../../lib/global.js';
 import Biffer from '@nuogz/biffer';
 
 
-export default function parseBin(binPath, indexSkin) {
+export default function parseBIN(binPath, indexSkin) {
 	if(!existsSync(binPath)) { return; }
 
 	// G.info('BINParser', `[${_pa.parse(binPath).base}]`);
