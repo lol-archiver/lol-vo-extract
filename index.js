@@ -6,12 +6,12 @@ import { dirCache } from './lib/global.dir.js';
 
 import initWADInfo from './src/extract/01-initFetch.js';
 import fetchWADs from './src/extract/02-fetchWads.js';
-import parseInfosExtractAll from './src/extract/03-generateMapFiles_hash.js';
-import parseBin from './src/extract/05-parseBin.js';
-import parseBNK from './src/extract/06-parseBin.js';
-import extractAudios from './src/extract/07-extractAudios.js';
-import copyAudios from './src/extract/08-copyAudios.js';
-import saveEvents from './src/extract/09-saveEvents.js';
+import parseInfosExtractAll from './src/extract/03-parseInfosExtractAll.js';
+import parseBin from './src/extract/04-parseBIN.js';
+import parseBNK from './src/extract/05-parseBNK.js';
+import extractAudios from './src/extract/06-extractAudios.js';
+import copyAudios from './src/extract/07-copyAudios.js';
+import saveEvents from './src/extract/08-saveEvents.js';
 
 
 const { fileWADChampionDefault, fileWADChampionLocale, wadsNeedFetch } = initWADInfo();
