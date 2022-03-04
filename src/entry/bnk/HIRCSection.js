@@ -1,4 +1,4 @@
-import HIRCEntry from './hircEntry.js';
+import HIRCEntry from './HIRCEntry.js';
 
 
 export default class HIRCSection {

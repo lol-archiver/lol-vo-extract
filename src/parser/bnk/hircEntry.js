@@ -1,11 +1,11 @@
 import { G } from '../../../lib/global.js';
 import Biffer from '@nuogz/biffer';
 
-import HircSound from '../../entry/bnk/HircSound.js';
-import HircAction from '../../entry/bnk/HircAction.js';
-import HircEvent from '../../entry/bnk/HircEvent.js';
-import HircPool from '../../entry/bnk/HircPool.js';
-import HircSwitchContainer from '../../entry/bnk/HircSwitchContainer.js';
+import HIRCSound from '../../entry/bnk/HIRCSound.js';
+import HIRCAction from '../../entry/bnk/HIRCAction.js';
+import HIRCEvent from '../../entry/bnk/HIRCEvent.js';
+import HIRCPool from '../../entry/bnk/HIRCPool.js';
+import HIRCSwitchContainer from '../../entry/bnk/HIRCSwitchContainer.js';
 
 
 export default function parseEntry(type, id, B) {
@@ -15,7 +15,7 @@ export default function parseEntry(type, id, B) {
 	if(type == 2) {
 		const [embedType, audioID, sourceID] = B.unpack('xxxxBLL');
 
-		entry = new HircSound(id, embedType, audioID, sourceID);
+		entry = new HIRCSound(id, embedType, audioID, sourceID);
 
 		if(embedType == 0) {
 			const [fileIndex, fileLength] = B.unpack('LL');
@@ -31,27 +31,27 @@ export default function parseEntry(type, id, B) {
 	}
 	// Event Action
 	else if(type == 3) {
-		const [scope, actionType, hircID, paramCount] = B.unpack('BBLxB');
+		const [scope, actionType, HIRCID, paramCount] = B.unpack('BBLxB');
 
-		entry = new HircAction(id, scope, actionType, hircID, paramCount);
+		entry = new HIRCAction(id, scope, actionType, HIRCID, paramCount);
 
 		entry.scope = scope;
 		entry.actionType = actionType;
-		entry.hircID = hircID;
+		entry.HIRCID = HIRCID;
 
 		// if(paramCount) {
 		// 	// Unused Struct
 		// 	entry.paramTypes = B.unpack(`${paramCount}B`);
 		// 	// entry.params = B.unpack(`${paramCount}L`);
 
-		// 	L('Even Action Param Types: ', id, hircID, entry.paramTypes.join(','));
+		// 	L('Even Action Param Types: ', id, HIRCID, entry.paramTypes.join(','));
 		// }
 	}
 	// Event
 	else if(type == 4) {
 		const [count] = B.unpack('B');
 
-		entry = new HircEvent(id, count);
+		entry = new HIRCEvent(id, count);
 
 		entry.count = count;
 
@@ -61,7 +61,7 @@ export default function parseEntry(type, id, B) {
 	}
 	// Pool
 	else if(type == 5) {
-		entry = new HircPool(id);
+		entry = new HIRCPool(id);
 
 		const b = new Biffer(Buffer.from([...B.target].reverse()));
 
@@ -73,7 +73,7 @@ export default function parseEntry(type, id, B) {
 	else if(type == 6) {
 		G.debug('HIRCEntryParser', 'Need More Switch Container Confirm');
 
-		entry = new HircSwitchContainer(id);
+		entry = new HIRCSwitchContainer(id);
 
 		const b = new Biffer(Buffer.from([...B.target].reverse()));
 

@@ -1,4 +1,4 @@
-export default class HircEvent {
+export default class HIRCEvent {
 	constructor(id, count) {
 		this.id = id;
 

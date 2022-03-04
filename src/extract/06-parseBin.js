@@ -7,12 +7,12 @@ import { G, I } from '../../lib/global.js';
 import Biffer from '@nuogz/biffer';
 import { toHexL } from '../../lib/Tool.js';
 
-import HircSound from '../entry/bnk/HircSound.js';
-import HircEvent from '../entry/bnk/HircEvent.js';
-import HircPool from '../entry/bnk/HircPool.js';
-import HircSwitchContainer from '../entry/bnk/HircSwitchContainer.js';
+import HIRCSound from '../entry/bnk/HIRCSound.js';
+import HIRCEvent from '../entry/bnk/HIRCEvent.js';
+import HIRCPool from '../entry/bnk/HIRCPool.js';
+import HIRCSwitchContainer from '../entry/bnk/HIRCSwitchContainer.js';
 
-import parseHircEntry from '../parser/bnk/hircEntry.js';
+import parseHIRCEntry from '../parser/bnk/HIRCEntry.js';
 
 
 let mapEventID = {};
@@ -34,13 +34,13 @@ const fnv_1 = function(name) {
 	return h;
 };
 
-const parseActionSoundEntry = function(entryParsed, arrEntryAll, hircID) {
+const parseActionSoundEntry = function(entryParsed, arrEntryAll, HIRCID) {
 	const result = [];
 
-	if(entryParsed instanceof HircSound) {
+	if(entryParsed instanceof HIRCSound) {
 		result.push(entryParsed.audioID);
 	}
-	else if(entryParsed instanceof HircPool) {
+	else if(entryParsed instanceof HIRCPool) {
 		const arrEntry = arrEntryAll.filter(entry => entryParsed.soundIDs.includes(entry.id));
 
 		for(const entry of arrEntry) {
@@ -49,7 +49,7 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll, hircID) {
 			}
 		}
 	}
-	else if(entryParsed instanceof HircSwitchContainer) {
+	else if(entryParsed instanceof HIRCSwitchContainer) {
 		const arrEntry = arrEntryAll.filter(entry => entryParsed.arrContainerID.includes(entry.id));
 
 		for(const entry of arrEntry) {
@@ -59,7 +59,7 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll, hircID) {
 		}
 	}
 	else if(!entryParsed) {
-		G.warn('BNKParser', 'unknown ~[action sound entry]', hircID);
+		G.warn('BNKParser', 'unknown ~[action sound entry]', HIRCID);
 	}
 	else {
 		G.warn('BNKParser', 'unknown ~[action sound entry]', entryParsed);
@@ -68,35 +68,35 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll, hircID) {
 	return result;
 };
 
-const getEventFull = function(mapHash_EventName, hircEventID) {
-	let eventFull = mapHash_EventName[hircEventID];
+const getEventFull = function(mapHash_EventName, HIRCEventID) {
+	let eventFull = mapHash_EventName[HIRCEventID];
 
-	while(!eventFull && mapEventID[hircEventID]) {
-		eventFull = mapHash_EventName[hircEventID = mapEventID[hircEventID]];
+	while(!eventFull && mapEventID[HIRCEventID]) {
+		eventFull = mapHash_EventName[HIRCEventID = mapEventID[HIRCEventID]];
 	}
 
 	return eventFull;
 };
 
-export default async function parseBnk(bnkPath, eventNameSet) {
+export default async function parseBNK(bnkPath, eventNameSet) {
 	G.infoU('BNKParser', `parse BNK~{${parse(bnkPath).base}}`, 'parsing...');
 
-	const bnkBiffer = new Biffer(bnkPath);
+	const bifferBNK = new Biffer(bnkPath);
 
 	const arrEntry = [];
 
-	while(!bnkBiffer.isEnd()) {
-		const [magic, sectionSize] = bnkBiffer.unpack('4sL');
+	while(!bifferBNK.isEnd()) {
+		const [magic, sectionSize] = bifferBNK.unpack('4sL');
 
 		if(magic == 'HIRC') {
-			const sectionBiffer = bnkBiffer.sub(sectionSize);
+			const sectionBiffer = bifferBNK.sub(sectionSize);
 
 			const [count] = sectionBiffer.unpack('L');
 
 			for(let i = 0; i < count; i++) {
 				const [type, length, id] = sectionBiffer.unpack('BLL');
 
-				const entry = parseHircEntry(type, id, sectionBiffer.sub(length - 4));
+				const entry = parseHIRCEntry(type, id, sectionBiffer.sub(length - 4));
 
 				if(entry) {
 					arrEntry.push(entry);
@@ -104,7 +104,7 @@ export default async function parseBnk(bnkPath, eventNameSet) {
 			}
 		}
 		else {
-			bnkBiffer.skip(sectionSize);
+			bifferBNK.skip(sectionSize);
 
 			if(magic != 'BKHD') {
 				G.warn('BNKParser', 'unknown ~[BNK magic]', `~{${magic}}`);
@@ -119,26 +119,26 @@ export default async function parseBnk(bnkPath, eventNameSet) {
 		mapHash_EventName[fnv_1(event)] = event;
 	}
 
-	const hircEventArr = arrEntry.filter(entry => entry instanceof HircEvent);
+	const HIRCEventArr = arrEntry.filter(entry => entry instanceof HIRCEvent);
 
-	for(const hircEvent of hircEventArr) {
+	for(const HIRCEvent of HIRCEventArr) {
 		const arrEventAudio = [];
 
-		let eventFull = getEventFull(mapHash_EventName, hircEvent.id);
+		let eventFull = getEventFull(mapHash_EventName, HIRCEvent.id);
 
 		if(!eventFull) {
-			G.warn('BNKParser', 'unknown ~[Hirc Event ID]', `~{${hircEvent.id}}`);
+			G.warn('BNKParser', 'unknown ~[HIRC Event ID]', `~{${HIRCEvent.id}}`);
 
-			eventFull = hircEvent.id;
+			eventFull = HIRCEvent.id;
 		}
 
-		if(hircEvent.count) {
-			for(const actionID of hircEvent.eventActions) {
+		if(HIRCEvent.count) {
+			for(const actionID of HIRCEvent.eventActions) {
 				const action = arrEntry.find(entry => entry.id == actionID);
 
-				const actionSoundEntry = arrEntry.find(entry => entry.id == action.hircID);
+				const actionSoundEntry = arrEntry.find(entry => entry.id == action.HIRCID);
 
-				for(const eventAudio of parseActionSoundEntry(actionSoundEntry, arrEntry, action.hircID)) {
+				for(const eventAudio of parseActionSoundEntry(actionSoundEntry, arrEntry, action.HIRCID)) {
 					arrEventAudio.push(eventAudio);
 				}
 			}
@@ -149,15 +149,15 @@ export default async function parseBnk(bnkPath, eventNameSet) {
 		}
 	}
 
-	const hircsPool = JSON.parse(JSON.stringify(arrEntry.filter(entry => entry instanceof HircPool)))
+	const HIRCsPool = JSON.parse(JSON.stringify(arrEntry.filter(entry => entry instanceof HIRCPool)))
 		.map(p => p.soundIDs = p.soundIDs.map(id => {
 			const entry = arrEntry.find(e => e.id == id);
 
-			if(entry instanceof HircSound) {
+			if(entry instanceof HIRCSound) {
 				const audioID = entry.audioID || 0;
 				return `${audioID}|${toHexL(audioID, 8)}`;
 			}
-			else if(entry instanceof HircPool) {
+			else if(entry instanceof HIRCPool) {
 				return entry.soundIDs.map(sid => {
 					const entrySub = arrEntry.find(e => e.id == sid);
 
@@ -169,7 +169,7 @@ export default async function parseBnk(bnkPath, eventNameSet) {
 
 	writeFileSync(
 		resolve('_text', '_pool', parse(bnkPath).base + '.json'),
-		JSON.stringify(hircsPool, null, '\t')
+		JSON.stringify(HIRCsPool, null, '\t')
 	);
 
 	G.infoD('BNKParser', `parse BNK~{${parse(bnkPath).base}}`, '✔ ');

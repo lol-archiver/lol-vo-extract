@@ -1,4 +1,4 @@
-export default class HircSwitchContainer {
+export default class HIRCSwitchContainer {
 	constructor(id) {
 		this.id = id;
 

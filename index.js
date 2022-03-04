@@ -8,7 +8,7 @@ import initWADInfo from './src/extract/01-initFetch.js';
 import fetchWADs from './src/extract/02-fetchWads.js';
 import parseInfosExtractAll from './src/extract/03-generateMapFiles_hash.js';
 import parseBin from './src/extract/05-parseBin.js';
-import parseBnk from './src/extract/06-parseBin.js';
+import parseBNK from './src/extract/06-parseBin.js';
 import extractAudios from './src/extract/07-extractAudios.js';
 import copyAudios from './src/extract/08-copyAudios.js';
 import saveEvents from './src/extract/09-saveEvents.js';
@@ -45,7 +45,7 @@ const resultExtractLocale = await extractWAD(fileWADChampionLocale, infosExtract
 const mapAudioID_Event = {};
 
 for(let eventFile of Object.keys(resultExtractLocale).filter(file => file.includes('event.bnk'))) {
-	const mapAudioID_EventName = await parseBnk(
+	const mapAudioID_EventName = await parseBNK(
 		resolve(dirCache, 'extract', eventFile),
 		setEventName
 	);

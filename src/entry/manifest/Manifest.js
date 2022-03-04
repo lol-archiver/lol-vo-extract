@@ -1,10 +1,13 @@
 import AS from 'assert';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
+
+import Axios from 'axios';
 
 import Biffer from '@nuogz/biffer';
 
 import { dirCache } from '../../../lib/global.dir.js';
-import { G, TT } from '../../../lib/global.js';
+import { C, G, TT } from '../../../lib/global.js';
 import { toHexL, unzstd } from '../../../lib/Tool.js';
 
 import Bundle from './Bundle.js';
@@ -46,11 +49,32 @@ const parseManifestList = (biffer, Item) => {
 
 
 export default class Manifest {
-	/**
-	 * @type
-	 */
+	static async fetch(id, url, nameFile) {
+		const file = resolve(dirCache, 'manifest', nameFile);
+
+		if(existsSync(file)) {
+			G.debugD(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:cached'));
+
+			return readFileSync(file);
+		}
+
+		G.debugU(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:ing', { url }));
+
+		const { data: bufferManifest } = await Axios.get(url, { responseType: 'arraybuffer', proxy: C.proxy, timeout: 1000 * 60 * 4 });
+
+		writeFileSync(file, bufferManifest);
+
+		G.debugD(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:ok', { size: bufferManifest.length }));
+
+		return bufferManifest;
+	}
+
+
+	/** @type {string} */
 	url;
+	/** @type {number} */
 	version;
+	/** @type {Buffer} */
 	buffer;
 
 	constructor(url, version, buffer) {
@@ -58,6 +82,7 @@ export default class Manifest {
 		this.version = version;
 		this.buffer = buffer;
 	}
+
 
 	parse(bufferRaw) { return this.parseRMAN(bufferRaw).parseBody(); }
 

@@ -1,4 +1,4 @@
-export default class HircSound {
+export default class HIRCSound {
 	constructor(id, embedType, audioID, sourceID) {
 		this.id = id;
 

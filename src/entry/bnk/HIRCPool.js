@@ -1,4 +1,4 @@
-export default class HircPool {
+export default class HIRCPool {
 	constructor(id) {
 		this.id = id;
 

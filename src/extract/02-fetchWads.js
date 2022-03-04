@@ -4,9 +4,7 @@ import joinURL from 'url-join';
 
 import { C, G, TT } from '../../lib/global.js';
 
-import fetchEntry from '../fetcher/entry.js';
-import fetchManifest from '../fetcher/manifest.js';
-
+import Entry from '../entry/manifest/Entry.js';
 import Manifest from '../entry/manifest/Manifest.js';
 
 
@@ -36,7 +34,7 @@ export default async function fetchWADs(wadsNeedFetch) {
 		G.info(TT('where:Main'), TT('fetchWADs:useLocal.do'), TT('fetchWADs:useLocal.ok', { manifest: C.server.manifest }));
 	}
 	else {
-		[urlsManifest, versionLatest] = detectManifest_Version(await fetchEntry());
+		[urlsManifest, versionLatest] = detectManifest_Version(await Entry.fetch());
 
 		G.info(TT('where:Main'), TT('fetchWADs:parseEntry.do'), TT('fetchWADs:parseEntry.ok', { version: versionLatest }),
 			...urlsManifest.map(url => TT('fetchWADs:parseEntry.item', { name: parse(url).name }))
@@ -48,7 +46,7 @@ export default async function fetchWADs(wadsNeedFetch) {
 		const id = parse(url).name;
 
 		return new Manifest(url, versionLatest)
-			.parse(await fetchManifest(id, url, `${versionLatest}-${id}.manifest`));
+			.parse(await Manifest.fetch(id, url, `${versionLatest}-${id}.manifest`));
 	}));
 
 

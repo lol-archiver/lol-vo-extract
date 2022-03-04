@@ -1,9 +1,9 @@
-import HIRCEntry from './hircEntry.js';
+import HIRCEntry from './HIRCEntry.js';
 
 
-export default function HircSection(type) {
-	if(!(this instanceof HircSection)) {
-		return new HircSection(...arguments);
+export default function HIRCSection(type) {
+	if(!(this instanceof HIRCSection)) {
+		return new HIRCSection(...arguments);
 	}
 
 	this.type = type;

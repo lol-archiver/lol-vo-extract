@@ -5,11 +5,12 @@ import Bluebird from 'bluebird';
 import FSX from 'fs-extra';
 import { decompress } from 'node-zstandard';
 
-import { dirCache } from '../../../lib/global.dir.js';
-import { G, TT } from '../../../lib/global.js';
 import Biffer from '@nuogz/biffer';
 
-import fetchBundle from '../../fetcher/bundle.js';
+import { dirCache } from '../../../lib/global.dir.js';
+import { G, TT } from '../../../lib/global.js';
+
+import Bundle from './Bundle.js';
 
 
 const pathCacheZstd = resolve(dirCache, 'zstd');
@@ -55,7 +56,7 @@ export default class File {
 		const promises = [];
 		const counter = { now: 0, max: setIDBundle.size };
 		for(const idBundle of setIDBundle) {
-			promises.push(fetchBundle(idBundle, version, cdn, counter).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
+			promises.push(Bundle.fetch(idBundle, version, cdn, counter).then(([bid, buffer]) => bundleBuffer[bid] = buffer));
 		}
 		await Bluebird.map(promises, r => r, { concurrency: 45 });
 
