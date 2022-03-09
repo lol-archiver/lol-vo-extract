@@ -23,6 +23,7 @@ export default {
 	MoveOrderLong: '移动:长途',
 	MoveOrder: '移动',
 
+	Kill3DFirst: '击杀:首杀',
 	KillGeneral: '击杀:英雄',
 	KillChampion: '击杀:英雄',
 	EndedNearby: '回应',
@@ -41,6 +42,11 @@ export default {
 	KillPenta: '击杀:多杀:五杀',
 	KillQuadra: '击杀:多杀:四杀',
 	KillTriple: '击杀:多杀:三杀',
+
+	Ping2DAssistMe: '信号:协助我',
+	Ping2DDanger: '信号:危险',
+	Ping2DEnemyMissing: '信号:敌人不见了',
+	Ping2DOnMyWay: '信号:正在路上',
 
 	Ally: '友方',
 	Enemy: '敌方',
