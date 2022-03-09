@@ -20,7 +20,7 @@ export default function parseBIN(binPath, indexSkin) {
 	let idSkin;
 	if(bifferBin.find([0xae, 0xf4, 0x77, 0xa9]) > -1) {
 		[idSkin] = bifferBin.unpack('5xL');
-		idSkin = ~~String(idSkin).slice(-3, 0);
+		idSkin = ~~String(idSkin).slice(-3);
 	}
 	else {
 		const subID = parse(binPath).base.match(/\d+/)[0];

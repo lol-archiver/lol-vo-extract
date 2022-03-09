@@ -11,7 +11,7 @@ specifiers:
   eslint: ^8.10.0
   fs-extra: ^10.0.1
   https-proxy-agent: ^5.0.0
-  i18next: ^21.6.12
+  i18next: ^21.6.13
   iconv-lite: ^0.6.3
   moment: ^2.29.1
   node-gzip: ^1.1.2
@@ -29,7 +29,7 @@ dependencies:
   buffer-crc32: 0.2.13
   fs-extra: 10.0.1
   https-proxy-agent: 5.0.0
-  i18next: 21.6.12
+  i18next: 21.6.13
   iconv-lite: 0.6.3
   moment: 2.29.1
   node-gzip: 1.1.2
@@ -85,7 +85,7 @@ packages:
     resolution: {integrity: sha512-Yx3toDoqnaH1eRos47cjFAnxUNmDSVdLzmEmOiwJAaSXTr5vaw1nfJWJdaxSW0I9v5J+PbbVKz+u2yRNMuNVdg==}
     engines: {node: '>=14.18.1'}
     dependencies:
-      i18next: 21.6.12
+      i18next: 21.6.13
     dev: false
 
   /@nuogz/hades/3.5.0:
@@ -93,7 +93,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       log-update: 4.0.0
-      log4js: 6.4.1
+      log4js: 6.4.2
       moment: 2.29.1
       streamroller: 2.2.4
     transitivePeerDependencies:
@@ -249,8 +249,8 @@ packages:
     engines: {node: '>=4.0'}
     dev: false
 
-  /date-format/4.0.3:
-    resolution: {integrity: sha512-7P3FyqDcfeznLZp2b+OMitV9Sz2lUnsT87WaTat9nVwqsBkTzPG3lPLNwW3en6F4pHUiWzr6vb8CLhjdK9bcxQ==}
+  /date-format/4.0.4:
+    resolution: {integrity: sha512-/jyf4rhB17ge328HJuJjAcmRtCsGd+NDeAtahRBTaK6vSPR6MO5HlrAit3Nn7dVjaa6sowW0WXt8yQtLyZQFRg==}
     engines: {node: '>=4.0'}
     dev: false
 
@@ -499,8 +499,8 @@ packages:
       - supports-color
     dev: false
 
-  /i18next/21.6.12:
-    resolution: {integrity: sha512-xlGTPdu2g5PZEUIE6TA1mQ9EIAAv9nMFONzgwAIrKL/KTmYYWufQNGgOmp5Og1PvgUji+6i1whz0rMdsz1qaKw==}
+  /i18next/21.6.13:
+    resolution: {integrity: sha512-MVjNttw+5mIuu2/fwTpSU0EeI7iU/6pnDvGQboCzkILiv0/gD+FLZaF7qSHmUHO4ZkE6xJQ9SlBgGvMHxhC82Q==}
     dependencies:
       '@babel/runtime': 7.17.2
     dev: false
@@ -618,15 +618,15 @@ packages:
       wrap-ansi: 6.2.0
     dev: false
 
-  /log4js/6.4.1:
-    resolution: {integrity: sha512-iUiYnXqAmNKiIZ1XSAitQ4TmNs8CdZYTAWINARF3LjnsLN8tY5m0vRwd6uuWj/yNY0YHxeZodnbmxKFUOM2rMg==}
+  /log4js/6.4.2:
+    resolution: {integrity: sha512-k80cggS2sZQLBwllpT1p06GtfvzMmSdUCkW96f0Hj83rKGJDAu2vZjt9B9ag2vx8Zz1IXzxoLgqvRJCdMKybGg==}
     engines: {node: '>=8.0'}
     dependencies:
-      date-format: 4.0.3
+      date-format: 4.0.4
       debug: 4.3.3
       flatted: 3.2.5
       rfdc: 1.3.0
-      streamroller: 3.0.2
+      streamroller: 3.0.4
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -786,11 +786,11 @@ packages:
       - supports-color
     dev: false
 
-  /streamroller/3.0.2:
-    resolution: {integrity: sha512-ur6y5S5dopOaRXBuRIZ1u6GC5bcEXHRZKgfBjfCglMhmIf+roVCECjvkEYzNQOXIN2/JPnkMPW/8B3CZoKaEPA==}
+  /streamroller/3.0.4:
+    resolution: {integrity: sha512-GI9NzeD+D88UFuIlJkKNDH/IsuR+qIN7Qh8EsmhoRZr9bQoehTraRgwtLUkZbpcAw+hLPfHOypmppz8YyGK68w==}
     engines: {node: '>=8.0'}
     dependencies:
-      date-format: 4.0.3
+      date-format: 4.0.4
       debug: 4.3.3
       fs-extra: 10.0.1
     transitivePeerDependencies:

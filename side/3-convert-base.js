@@ -1,16 +1,23 @@
 import AS from 'assert';
-import { writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
+import { ensureDirSync } from 'fs-extra';
 
 import { extractWAD } from '@nuogz/lol-wad-extract';
 
 import { C } from '../lib/global.js';
+import { dirCache } from '../lib/global.dir.js';
 
 
 const regions = ['default', 'zh_cn'];
 
+
 const dirSelf = dirname(fileURLToPath(import.meta.url));
+
+
+const dirCacheSelf = resolve(dirCache, 'convert-base');
+ensureDirSync(dirCacheSelf);
 
 
 const convert = async (region) => {
@@ -26,7 +33,7 @@ const convert = async (region) => {
 	const championsSummary = JSON.parse(bufferSummary.toString());
 
 	const infoExtract = championsSummary.reduce((acc, { id }) => {
-		acc[`plugins/rcp-be-lol-game-data/global/${region}/v1/champions/${id}.json`] = `buffer|${id}`;
+		acc[`plugins/rcp-be-lol-game-data/global/${region}/v1/champions/${id}.json`] = `file|${id}|${resolve(dirCacheSelf, `${id}.json`)}`;
 
 		return acc;
 	}, {});
@@ -41,8 +48,15 @@ const convert = async (region) => {
 	for(const { id } of championsSummary) {
 		if(id <= 0) { continue; }
 
-		const { name, title, alias: slot, roles, skins: skinsRaw, spells: spellsRaw, passive: passiveRaw } =
-			JSON.parse(buffersJSONChampion[id].toString());
+		let championRaw;
+		try {
+			championRaw = JSON.parse(readFileSync(buffersJSONChampion[id], 'utf8'));
+		}
+		catch(error) {
+			continue;
+		}
+
+		const { name, title, alias: slot, roles, skins: skinsRaw, spells: spellsRaw, passive: passiveRaw } = championRaw;
 
 		const champion = result[id] = {
 			id,
@@ -63,7 +77,7 @@ const convert = async (region) => {
 
 
 		for(const { id, name, chromas = [], questSkinInfo: { tiers = [] } = {} } of skinsRaw) {
-			const idSkin = ~~String(id).slice(-3, 0);
+			const idSkin = ~~String(id).slice(-3);
 
 			const skin = skins[idSkin] = {
 				id: idSkin,
@@ -74,7 +88,7 @@ const convert = async (region) => {
 			};
 
 			for(const { id, name, colors } of chromas) {
-				const idChroma = ~~String(id).slice(-3, 0);
+				const idChroma = ~~String(id).slice(-3);
 
 				AS(!skins[idChroma]);
 				AS(colors.length == 2);
@@ -96,7 +110,7 @@ const convert = async (region) => {
 			}
 
 			for(const { id, name, stage, shortName, colors = [] } of tiers) {
-				const idChroma = ~~String(id).slice(-3, 0);
+				const idChroma = ~~String(id).slice(-3);
 
 				if(idSkin == idChroma) {
 					skin.nameStage = name;

@@ -14,7 +14,7 @@ const isSameTakeConfig = function() {
 	try {
 		const lastTakeConfig = FSX.readJSONSync(resolve(dirCache, 'lastTakeWpk.json'));
 
-		if(C.useWADLevel != 1 && lastTakeConfig &&
+		if(C.sourceWAD != 'fetch' && lastTakeConfig &&
 			lastTakeConfig.slot == I.slot &&
 			lastTakeConfig.lang == C.lang &&
 			lastTakeConfig.format == C.format &&
