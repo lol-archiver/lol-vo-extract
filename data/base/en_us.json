@@ -1999,7 +1999,7 @@
 			"32": 29,
 			"33": {
 				"id": 33,
-				"name": "Coven LeBlanc Prestige Edition",
+				"name": "Prestige Coven LeBlanc",
 				"chromas": {}
 			},
 			"34": 20,
@@ -2988,7 +2988,85 @@
 			"38": 33,
 			"39": 33,
 			"40": 33,
-			"41": 33
+			"41": 33,
+			"42": {
+				"id": 42,
+				"name": "Solar Eclipse Kayle",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Solar Eclipse Kayle",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Solar Eclipse Kayle",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Solar Eclipse Kayle",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Solar Eclipse Kayle",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Solar Eclipse Kayle",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Solar Eclipse Kayle",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Solar Eclipse Kayle",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Solar Eclipse Kayle",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42,
+			"48": 42,
+			"49": 42,
+			"50": 42
 		},
 		"spells": {
 			"p": "Divine Ascent",
@@ -3865,7 +3943,85 @@
 			"16": 13,
 			"17": 13,
 			"18": 13,
-			"19": 13
+			"19": 13,
+			"20": {
+				"id": 20,
+				"name": "Arcana Ryze",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Arcana Ryze",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Arcana Ryze",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Arcana Ryze",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Arcana Ryze",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Arcana Ryze",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Arcana Ryze",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Arcana Ryze",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Arcana Ryze",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20
 		},
 		"spells": {
 			"p": "Arcane Mastery",
@@ -4479,7 +4635,67 @@
 			"39": 34,
 			"40": 34,
 			"41": 34,
-			"42": 34
+			"42": 34,
+			"43": {
+				"id": 43,
+				"name": "Solar Eclipse Sivir",
+				"chromas": {
+					"44": {
+						"id": 44,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"44": 43,
+			"45": 43,
+			"46": 43,
+			"47": 43,
+			"48": 43,
+			"49": 43
 		},
 		"spells": {
 			"p": "Fleet of Foot",
@@ -4607,7 +4823,7 @@
 			},
 			"17": {
 				"id": 17,
-				"name": "Star Guardian Soraka Prestige Edition",
+				"name": "Prestige Star Guardian Soraka",
 				"chromas": {}
 			},
 			"18": {
@@ -4981,7 +5197,7 @@
 			"26": 4,
 			"27": {
 				"id": 27,
-				"name": "Spirit Blossom Teemo Prestige Edition",
+				"name": "Prestige Spirit Blossom Teemo",
 				"chromas": {}
 			},
 			"28": 14,
@@ -6268,7 +6484,7 @@
 			"19": 7,
 			"20": {
 				"id": 20,
-				"name": "Bewitching Miss Fortune Prestige Edition",
+				"name": "Prestige Bewitching Miss Fortune",
 				"chromas": {}
 			},
 			"21": {
@@ -6406,15 +6622,15 @@
 						"id": 39,
 						"name": "Battle Bunny Miss Fortune",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2B7CFF",
+							"#FF930E"
 						]
 					}
 				}
 			},
 			"33": {
 				"id": 33,
-				"name": "Bewitching Miss Fortune Prestige Edition (2022)",
+				"name": "Prestige Bewitching Miss Fortune (2022)",
 				"chromas": {}
 			},
 			"34": 31,
@@ -7154,7 +7370,7 @@
 			},
 			"21": {
 				"id": 21,
-				"name": "Conqueror Jax Prestige Edition",
+				"name": "Prestige Conqueror Jax",
 				"chromas": {}
 			}
 		},
@@ -7569,7 +7785,7 @@
 			"40": 26,
 			"41": {
 				"id": 41,
-				"name": "Bewitching Morgana Prestige Edition",
+				"name": "Prestige Bewitching Morgana",
 				"chromas": {}
 			},
 			"42": 39,
@@ -7901,7 +8117,7 @@
 			},
 			"7": {
 				"id": 7,
-				"name": "K/DA Evelynn Prestige Edition",
+				"name": "Prestige K/DA Evelynn",
 				"chromas": {}
 			},
 			"8": {
@@ -8104,7 +8320,7 @@
 			"30": 24,
 			"31": {
 				"id": 31,
-				"name": "K/DA Evelynn Prestige Edition (2022)",
+				"name": "Prestige K/DA Evelynn (2022)",
 				"chromas": {}
 			}
 		},
@@ -10801,7 +11017,7 @@
 			},
 			"17": {
 				"id": 17,
-				"name": "PROJECT: Irelia Prestige Edition",
+				"name": "Prestige PROJECT: Irelia",
 				"chromas": {}
 			},
 			"18": {
@@ -10962,7 +11178,7 @@
 			"35": 26,
 			"36": {
 				"id": 36,
-				"name": "Project Irelia Prestige Edition (2022)",
+				"name": "Prestige PROJECT: Irelia (2022)",
 				"chromas": {}
 			}
 		},
@@ -11525,7 +11741,85 @@
 					}
 				}
 			},
-			"22": 21
+			"22": 21,
+			"23": {
+				"id": 23,
+				"name": "Gangplank the Betrayer",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"24": 23,
+			"25": 23,
+			"26": 23,
+			"27": 23,
+			"28": 23,
+			"29": 23,
+			"30": 23,
+			"31": 23
 		},
 		"spells": {
 			"p": "Trial by Fire",
@@ -13217,7 +13511,7 @@
 			},
 			"20": {
 				"id": 20,
-				"name": "Arcade Caitlyn Prestige Edition",
+				"name": "Prestige Arcade Caitlyn",
 				"chromas": {}
 			},
 			"21": 11,
@@ -13279,7 +13573,7 @@
 			},
 			"29": {
 				"id": 29,
-				"name": "Arcade Caitlyn Prestige Edition (2022)",
+				"name": "Prestige Arcade Caitlyn (2022)",
 				"chromas": {}
 			}
 		},
@@ -13872,7 +14166,7 @@
 			},
 			"24": {
 				"id": 24,
-				"name": "Dark Star Malphite Prestige Edition",
+				"name": "Prestige Dark Star Malphite",
 				"chromas": {}
 			},
 			"25": {
@@ -16076,7 +16370,7 @@
 			},
 			"22": {
 				"id": 22,
-				"name": "Debonair Brand Prestige Edition",
+				"name": "Prestige Debonair Brand",
 				"chromas": {}
 			},
 			"23": 8,
@@ -16311,7 +16605,7 @@
 			},
 			"28": {
 				"id": 28,
-				"name": "Nightbringer Lee Sin Prestige Edition",
+				"name": "Prestige Nightbringer Lee Sin",
 				"chromas": {}
 			},
 			"29": {
@@ -16400,7 +16694,7 @@
 			"38": 31,
 			"39": {
 				"id": 39,
-				"name": "Nightbringer Lee Sin Prestige Edition (2022)",
+				"name": "Prestige Nightbringer Lee Sin (2022)",
 				"chromas": {}
 			}
 		},
@@ -16511,7 +16805,7 @@
 			},
 			"13": {
 				"id": 13,
-				"name": "Firecracker Vayne Prestige Edition",
+				"name": "Prestige Firecracker Vayne",
 				"chromas": {}
 			},
 			"14": {
@@ -16739,15 +17033,15 @@
 						"id": 43,
 						"name": "Battle Bat Vayne",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2B7CFF",
+							"#FF930E"
 						]
 					}
 				}
 			},
 			"33": {
 				"id": 33,
-				"name": "Firecracker Vayne Prestige Edition (2022)",
+				"name": "Prestige Firecracker Vayne (2022)",
 				"chromas": {}
 			},
 			"34": 12,
@@ -18821,7 +19115,7 @@
 			},
 			"26": {
 				"id": 26,
-				"name": "Ascended Pantheon Prestige Edition",
+				"name": "Prestige Ascended Pantheon",
 				"chromas": {}
 			},
 			"27": 25,
@@ -19002,7 +19296,7 @@
 			},
 			"23": {
 				"id": 23,
-				"name": "PsyOps Ezreal Prestige Edition",
+				"name": "Prestige PsyOps Ezreal",
 				"chromas": {}
 			},
 			"25": {
@@ -19765,7 +20059,7 @@
 			"12": 7,
 			"13": {
 				"id": 13,
-				"name": "K/DA Akali Prestige Edition",
+				"name": "Prestige K/DA Akali",
 				"chromas": {}
 			},
 			"14": {
@@ -20099,7 +20393,7 @@
 			"59": 50,
 			"60": {
 				"id": 60,
-				"name": "K/DA Akali Prestige Edition (2022)",
+				"name": "Prestige K/DA Akali (2022)",
 				"chromas": {}
 			}
 		},
@@ -20492,7 +20786,7 @@
 			},
 			"23": {
 				"id": 23,
-				"name": "Mecha Kingdoms Garen Prestige Edition",
+				"name": "Prestige Mecha Kingdoms Garen",
 				"chromas": {}
 			},
 			"24": {
@@ -20829,7 +21123,7 @@
 			},
 			"23": {
 				"id": 23,
-				"name": "Battle Academia Leona Prestige Edition",
+				"name": "Prestige Battle Academia Leona",
 				"chromas": {}
 			},
 			"24": 21,
@@ -21774,7 +22068,7 @@
 			"21": 6,
 			"22": {
 				"id": 22,
-				"name": "Valiant Sword Riven Prestige Edition",
+				"name": "Prestige Valiant Sword Riven",
 				"chromas": {}
 			},
 			"23": {
@@ -22016,15 +22310,15 @@
 						"id": 54,
 						"name": "Battle Bunny Prime Riven",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2B7CFF",
+							"#FF930E"
 						]
 					}
 				}
 			},
 			"45": {
 				"id": 45,
-				"name": "Valiant Sword Riven Prestige Edition (2022)",
+				"name": "Prestige Valiant Sword Riven (2022)",
 				"chromas": {}
 			},
 			"46": 44,
@@ -22882,7 +23176,7 @@
 			},
 			"16": {
 				"id": 16,
-				"name": "Battle Academia Lux Prestige Edition",
+				"name": "Prestige Battle Academia Lux",
 				"chromas": {}
 			},
 			"17": {
@@ -23070,12 +23364,12 @@
 			"37": 29,
 			"39": {
 				"id": 39,
-				"name": "Battle Academia Lux Prestige Edition (2022)",
+				"name": "Prestige Battle Academia Lux (2022)",
 				"chromas": {}
 			},
 			"40": {
 				"id": 40,
-				"name": "Porcelain Lux Prestige Edition",
+				"name": "Prestige Porcelain Lux",
 				"chromas": {}
 			},
 			"41": 29
@@ -23616,7 +23910,7 @@
 			},
 			"16": {
 				"id": 16,
-				"name": "K/DA Ahri Prestige Edition",
+				"name": "Prestige K/DA Ahri",
 				"chromas": {}
 			},
 			"17": {
@@ -23961,9 +24255,87 @@
 			"64": 42,
 			"65": {
 				"id": 65,
-				"name": "K/DA Ahri Prestige Edition (2022)",
+				"name": "Prestige K/DA Ahri (2022)",
 				"chromas": {}
-			}
+			},
+			"66": {
+				"id": 66,
+				"name": "Arcana Ahri",
+				"chromas": {
+					"67": {
+						"id": 67,
+						"name": "Arcana Ahri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Arcana Ahri",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Arcana Ahri",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Arcana Ahri",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Arcana Ahri",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Arcana Ahri",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Arcana Ahri",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Arcana Ahri",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"67": 66,
+			"68": 66,
+			"69": 66,
+			"70": 66,
+			"71": 66,
+			"72": 66,
+			"73": 66,
+			"74": 66
 		},
 		"spells": {
 			"p": "Essence Theft",
@@ -24440,7 +24812,7 @@
 			},
 			"15": {
 				"id": 15,
-				"name": "Fuzz Fizz Prestige Edition",
+				"name": "Prestige Fuzz Fizz",
 				"chromas": {}
 			},
 			"16": {
@@ -24523,7 +24895,7 @@
 			"24": 16,
 			"25": {
 				"id": 25,
-				"name": "Fuzz Fizz Prestige Edition (2022)",
+				"name": "Prestige Fuzz Fizz (2022)",
 				"chromas": {}
 			}
 		},
@@ -24660,7 +25032,7 @@
 			},
 			"9": {
 				"id": 9,
-				"name": "Duality Dragon Volibear Prestige Edition",
+				"name": "Prestige Duality Dragon Volibear",
 				"chromas": {}
 			},
 			"10": 7,
@@ -25792,7 +26164,85 @@
 			"23": 16,
 			"24": 16,
 			"25": 16,
-			"27": 8
+			"26": {
+				"id": 26,
+				"name": "Solar Eclipse Sejuani",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"27": 8,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26,
+			"35": 26
 		},
 		"spells": {
 			"p": "Fury of the North",
@@ -26219,7 +26669,7 @@
 			},
 			"51": {
 				"id": 51,
-				"name": "Lunar Beast Fiora Prestige Edition",
+				"name": "Prestige Lunar Beast Fiora",
 				"chromas": {}
 			},
 			"52": 50,
@@ -26881,7 +27331,7 @@
 			},
 			"27": {
 				"id": 27,
-				"name": "Space Groove Lulu Prestige Edition",
+				"name": "Prestige Space Groove Lulu",
 				"chromas": {}
 			},
 			"28": 26,
@@ -27400,7 +27850,85 @@
 			"18": 14,
 			"19": 14,
 			"20": 14,
-			"21": 14
+			"21": 14,
+			"22": {
+				"id": 22,
+				"name": "Arcana Hecarim",
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "Arcana Hecarim",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Arcana Hecarim",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Arcana Hecarim",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Arcana Hecarim",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Arcana Hecarim",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Arcana Hecarim",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Arcana Hecarim",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Arcana Hecarim",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"23": 22,
+			"24": 22,
+			"25": 22,
+			"26": 22,
+			"27": 22,
+			"28": 22,
+			"29": 22,
+			"30": 22
 		},
 		"spells": {
 			"p": "Warpath",
@@ -28896,7 +29424,7 @@
 			},
 			"26": {
 				"id": 26,
-				"name": "Battle Queen Diana Prestige Edition",
+				"name": "Prestige Battle Queen Diana",
 				"chromas": {}
 			},
 			"27": {
@@ -29795,7 +30323,7 @@
 			},
 			"9": {
 				"id": 9,
-				"name": "Nightbringer Kayn Prestige Edition",
+				"name": "Prestige Nightbringer Kayn",
 				"chromas": {}
 			},
 			"10": 8,
@@ -29977,7 +30505,7 @@
 			},
 			"19": {
 				"id": 19,
-				"name": "Arcanist Zoe Prestige Edition",
+				"name": "Prestige Arcanist Zoe",
 				"chromas": {}
 			}
 		},
@@ -30104,7 +30632,7 @@
 			},
 			"6": {
 				"id": 6,
-				"name": "Coven Zyra Prestige Edition",
+				"name": "Prestige Coven Zyra",
 				"chromas": {}
 			},
 			"7": {
@@ -30389,7 +30917,7 @@
 			},
 			"15": {
 				"id": 15,
-				"name": "K/DA Kai'Sa Prestige Edition",
+				"name": "Prestige K/DA Kai'Sa",
 				"chromas": {}
 			},
 			"16": {
@@ -30491,7 +31019,7 @@
 			},
 			"27": {
 				"id": 27,
-				"name": "K/DA ALL OUT Kai'Sa Prestige Edition",
+				"name": "Prestige K/DA ALL OUT Kai'Sa",
 				"chromas": {}
 			},
 			"28": 26,
@@ -30584,7 +31112,7 @@
 			"38": 29,
 			"39": {
 				"id": 39,
-				"name": "K/DA Kai'Sa Prestige Edition (2022)",
+				"name": "Prestige K/DA Kai'Sa (2022)",
 				"chromas": {}
 			}
 		},
@@ -31419,7 +31947,7 @@
 			"34": 9,
 			"35": {
 				"id": 35,
-				"name": "True Damage Yasuo Prestige Edition",
+				"name": "Prestige True Damage Yasuo",
 				"chromas": {}
 			},
 			"36": {
@@ -31500,6 +32028,84 @@
 			"42": 36,
 			"43": 36,
 			"44": 36,
+			"45": {
+				"id": 45,
+				"name": "Sea Dog Yasuo",
+				"chromas": {
+					"46": {
+						"id": 46,
+						"name": "Sea Dog Yasuo",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Sea Dog Yasuo",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Sea Dog Yasuo",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Sea Dog Yasuo",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Sea Dog Yasuo",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Sea Dog Yasuo",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Sea Dog Yasuo",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Sea Dog Yasuo",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"46": 45,
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45,
 			"54": {
 				"id": 54,
 				"name": "Truth Dragon Yasuo",
@@ -33446,8 +34052,8 @@
 						"id": 49,
 						"name": "Battle Cat Jinx",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2B7CFF",
+							"#FF930E"
 						]
 					}
 				}
@@ -33455,7 +34061,7 @@
 			"39": 2,
 			"40": {
 				"id": 40,
-				"name": "Battle Cat Jinx Prestige Edition",
+				"name": "Prestige Battle Cat Jinx",
 				"chromas": {}
 			},
 			"41": 38,
@@ -33905,7 +34511,7 @@
 			"8": 1,
 			"9": {
 				"id": 9,
-				"name": "True Damage Senna Prestige Edition",
+				"name": "Prestige True Damage Senna",
 				"chromas": {}
 			},
 			"10": {
@@ -34045,7 +34651,90 @@
 			"22": 16,
 			"23": 16,
 			"24": 16,
-			"25": 16
+			"25": 16,
+			"26": {
+				"id": 26,
+				"name": "Lunar Eclipse Senna",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Lunar Eclipse Senna",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Lunar Eclipse Senna",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Lunar Eclipse Senna",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Lunar Eclipse Senna",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Lunar Eclipse Senna",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Lunar Eclipse Senna",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Lunar Eclipse Senna",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Lunar Eclipse Senna",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"27": {
+				"id": 27,
+				"name": "Prestige Lunar Eclipse Senna",
+				"chromas": {}
+			},
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26,
+			"35": 26
 		},
 		"spells": {
 			"p": "Absolution",
@@ -34249,7 +34938,7 @@
 			},
 			"19": {
 				"id": 19,
-				"name": "Pulsefire Lucian Prestige Edition",
+				"name": "Prestige Pulsefire Lucian",
 				"chromas": {}
 			},
 			"20": 8,
@@ -34649,7 +35338,7 @@
 			"29": 13,
 			"30": {
 				"id": 30,
-				"name": "PROJECT: Zed Prestige Edition",
+				"name": "Prestige PROJECT: Zed",
 				"chromas": {}
 			},
 			"31": {
@@ -35372,7 +36061,7 @@
 			"9": 1,
 			"10": {
 				"id": 10,
-				"name": "True Damage Qiyana Prestige Edition",
+				"name": "Prestige True Damage Qiyana",
 				"chromas": {}
 			},
 			"11": {
@@ -35525,7 +36214,7 @@
 			},
 			"21": {
 				"id": 21,
-				"name": "True Damage Qiyana Prestige Edition (2022)",
+				"name": "Prestige True Damage Qiyana (2022)",
 				"chromas": {}
 			},
 			"22": 20,
@@ -35862,7 +36551,7 @@
 			},
 			"8": {
 				"id": 8,
-				"name": "Blood Moon Aatrox Prestige Edition",
+				"name": "Prestige Blood Moon Aatrox",
 				"chromas": {}
 			},
 			"9": {
@@ -35960,9 +36649,87 @@
 			"19": 11,
 			"20": {
 				"id": 20,
-				"name": "Blood Moon Aatrox Prestige Edition (2022)",
+				"name": "Prestige Blood Moon Aatrox (2022)",
 				"chromas": {}
-			}
+			},
+			"21": {
+				"id": 21,
+				"name": "Lunar Eclipse Aatrox",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21
 		},
 		"spells": {
 			"p": "Deathbringer Stance",
@@ -37088,7 +37855,7 @@
 			},
 			"14": {
 				"id": 14,
-				"name": "Pulsefire Thresh Prestige Edition",
+				"name": "Prestige Pulsefire Thresh",
 				"chromas": {}
 			},
 			"15": {
@@ -37279,7 +38046,7 @@
 			"37": 28,
 			"38": {
 				"id": 38,
-				"name": "Pulsefire Thresh Prestige Edition (2022)",
+				"name": "Prestige Pulsefire Thresh (2022)",
 				"chromas": {}
 			}
 		},
@@ -38381,7 +39148,85 @@
 			"14": 9,
 			"15": 9,
 			"16": 9,
-			"17": 9
+			"17": 9,
+			"18": {
+				"id": 18,
+				"name": "Arcana Rakan",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "Arcana Rakan",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Arcana Rakan",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Arcana Rakan",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Arcana Rakan",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Arcana Rakan",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Arcana Rakan",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Arcana Rakan",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Arcana Rakan",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"19": 18,
+			"20": 18,
+			"21": 18,
+			"22": 18,
+			"23": 18,
+			"24": 18,
+			"25": 18,
+			"26": 18
 		},
 		"spells": {
 			"p": "Fey Feathers",
@@ -38619,10 +39464,88 @@
 			"25": 17,
 			"26": {
 				"id": 26,
-				"name": "Brave Phoenix Xayah Prestige Edition",
+				"name": "Prestige Brave Phoenix Xayah",
 				"chromas": {}
 			},
-			"27": 17
+			"27": 17,
+			"28": {
+				"id": 28,
+				"name": "Arcana Xayah",
+				"chromas": {
+					"29": {
+						"id": 29,
+						"name": "Arcana Xayah",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Arcana Xayah",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Arcana Xayah",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Arcana Xayah",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Arcana Xayah",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Arcana Xayah",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Arcana Xayah",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Arcana Xayah",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"29": 28,
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28
 		},
 		"spells": {
 			"p": "Clean Cuts",
@@ -38936,7 +39859,7 @@
 			},
 			"14": {
 				"id": 14,
-				"name": "PROJECT: Sylas Prestige Edition",
+				"name": "Prestige PROJECT: Sylas",
 				"chromas": {}
 			},
 			"15": 13,
@@ -39020,8 +39943,8 @@
 						"id": 33,
 						"name": "Battle Wolf Sylas",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2B7CFF",
+							"#FF930E"
 						]
 					}
 				}
@@ -39144,7 +40067,7 @@
 			},
 			"11": {
 				"id": 11,
-				"name": "Star Guardian Neeko Prestige Edition",
+				"name": "Prestige Star Guardian Neeko",
 				"chromas": {}
 			},
 			"12": {
@@ -39227,7 +40150,7 @@
 			"20": 12,
 			"21": {
 				"id": 21,
-				"name": "Star Guardian Neeko Prestige Edition (2022)",
+				"name": "Prestige Star Guardian Neeko (2022)",
 				"chromas": {}
 			}
 		},
@@ -39896,8 +40819,8 @@
 						"id": 46,
 						"name": "Ashen Knight Pyke",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9D0606",
+							"#2B263F"
 						]
 					}
 				}
@@ -40408,7 +41331,7 @@
 			},
 			"9": {
 				"id": 9,
-				"name": "Obsidian Dragon Sett Prestige Edition",
+				"name": "Prestige Obsidian Dragon Sett",
 				"chromas": {}
 			},
 			"10": {
