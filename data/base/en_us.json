@@ -599,7 +599,7 @@
 		"spells": {
 			"p": "Berserker Rage",
 			"q": "Undertow",
-			"w": "Vicious Strikes",
+			"w": "Tough It Out",
 			"e": "Reckless Swing",
 			"r": "Ragnarok"
 		}
@@ -2991,70 +2991,70 @@
 			"41": 33,
 			"42": {
 				"id": 42,
-				"name": "Solar Eclipse Kayle",
+				"name": "Sun-Eater Kayle",
 				"chromas": {
 					"43": {
 						"id": 43,
-						"name": "Solar Eclipse Kayle",
+						"name": "Sun-Eater Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"44": {
 						"id": 44,
-						"name": "Solar Eclipse Kayle",
+						"name": "Sun-Eater Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DF9117",
+							"#DF9117"
 						]
 					},
 					"45": {
 						"id": 45,
-						"name": "Solar Eclipse Kayle",
+						"name": "Sun-Eater Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"46": {
 						"id": 46,
-						"name": "Solar Eclipse Kayle",
+						"name": "Sun-Eater Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"47": {
 						"id": 47,
-						"name": "Solar Eclipse Kayle",
+						"name": "Sun-Eater Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"48": {
 						"id": 48,
-						"name": "Solar Eclipse Kayle",
+						"name": "Sun-Eater Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"49": {
 						"id": 49,
-						"name": "Solar Eclipse Kayle",
+						"name": "Sun-Eater Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#C1F2FF",
+							"#C1F2FF"
 						]
 					},
 					"50": {
 						"id": 50,
-						"name": "Solar Eclipse Kayle",
+						"name": "Sun-Eater Kayle",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					}
 				}
@@ -4642,50 +4642,50 @@
 				"chromas": {
 					"44": {
 						"id": 44,
-						"name": "",
+						"name": "Solar Eclipse Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"45": {
 						"id": 45,
-						"name": "",
+						"name": "Solar Eclipse Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"46": {
 						"id": 46,
-						"name": "",
+						"name": "Solar Eclipse Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"47": {
 						"id": 47,
-						"name": "",
+						"name": "Solar Eclipse Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"48": {
 						"id": 48,
-						"name": "",
+						"name": "Solar Eclipse Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"49": {
 						"id": 49,
-						"name": "",
+						"name": "Solar Eclipse Sivir",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -11748,66 +11748,66 @@
 				"chromas": {
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Gangplank the Betrayer",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Gangplank the Betrayer",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Gangplank the Betrayer",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"27": {
 						"id": 27,
-						"name": "",
+						"name": "Gangplank the Betrayer",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Gangplank the Betrayer",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Gangplank the Betrayer",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"30": {
 						"id": 30,
-						"name": "",
+						"name": "Gangplank the Betrayer",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"31": {
 						"id": 31,
-						"name": "",
+						"name": "Gangplank the Betrayer",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -14570,7 +14570,94 @@
 			"33": 29,
 			"34": 29,
 			"35": 29,
-			"36": 29
+			"36": 29,
+			"37": {
+				"id": 37,
+				"name": "High Noon Katarina",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "High Noon Katarina",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37,
+			"46": 37
 		},
 		"spells": {
 			"p": "Voracity",
@@ -19631,7 +19718,94 @@
 			"28": 23,
 			"29": 23,
 			"30": 23,
-			"31": 23
+			"31": 23,
+			"32": {
+				"id": 32,
+				"name": "High Noon Mordekaiser",
+				"chromas": {
+					"33": {
+						"id": 33,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "High Noon Mordekaiser",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"33": 32,
+			"34": 32,
+			"35": 32,
+			"36": 32,
+			"37": 32,
+			"38": 32,
+			"39": 32,
+			"40": 32,
+			"41": 32
 		},
 		"spells": {
 			"p": "Darkness Rise",
@@ -21213,6 +21387,60 @@
 					}
 				}
 			},
+			"34": {
+				"id": 34,
+				"name": "High Noon Leona",
+				"chromas": {
+					"44": {
+						"id": 44,
+						"name": "High Noon Leona",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "High Noon Leona",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "High Noon Leona",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "High Noon Leona",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "High Noon Leona",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "High Noon Leona",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					}
+				}
+			},
 			"35": 33,
 			"36": 33,
 			"37": 33,
@@ -21221,7 +21449,13 @@
 			"40": 33,
 			"41": 33,
 			"42": 33,
-			"43": 33
+			"43": 33,
+			"44": 34,
+			"45": 34,
+			"46": 34,
+			"47": 34,
+			"48": 34,
+			"49": 34
 		},
 		"spells": {
 			"p": "Sunlight",
@@ -21870,7 +22104,99 @@
 			"34": 29,
 			"35": 29,
 			"36": 29,
-			"37": 29
+			"37": 29,
+			"38": {
+				"id": 38,
+				"name": "High Noon Talon",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "High Noon Talon",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "High Noon Talon",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "High Noon Talon",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "High Noon Talon",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "High Noon Talon",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "High Noon Talon",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "High Noon Talon",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "High Noon Talon",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "High Noon Talon",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"39": {
+				"id": 39,
+				"name": "Prestige High Noon Talon",
+				"chromas": {}
+			},
+			"40": 38,
+			"41": 38,
+			"42": 38,
+			"43": 38,
+			"44": 38,
+			"45": 38,
+			"46": 38,
+			"47": 38,
+			"48": 38
 		},
 		"spells": {
 			"p": "Blade's End",
@@ -24689,7 +25015,22 @@
 			"38": 35,
 			"39": 35,
 			"40": 35,
-			"41": 35
+			"41": 35,
+			"42": {
+				"id": 42,
+				"name": "EDG Graves",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "EDG Graves",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"43": 42
 		},
 		"spells": {
 			"p": "New Destiny",
@@ -25681,7 +26022,94 @@
 			"30": 16,
 			"31": 16,
 			"32": 16,
-			"33": 16
+			"33": 16,
+			"34": {
+				"id": 34,
+				"name": "High Noon Varus",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "High Noon Varus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "High Noon Varus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "High Noon Varus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "High Noon Varus",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "High Noon Varus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "High Noon Varus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "High Noon Varus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "High Noon Varus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "High Noon Varus",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"35": 34,
+			"36": 34,
+			"37": 34,
+			"38": 34,
+			"39": 34,
+			"40": 34,
+			"41": 34,
+			"42": 34,
+			"43": 34
 		},
 		"spells": {
 			"p": "Living Vengeance",
@@ -26170,66 +26598,66 @@
 				"chromas": {
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Solar Eclipse Sejuani",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Solar Eclipse Sejuani",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DF9117",
+							"#DF9117"
 						]
 					},
 					"30": {
 						"id": 30,
-						"name": "",
+						"name": "Solar Eclipse Sejuani",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"31": {
 						"id": 31,
-						"name": "",
+						"name": "Solar Eclipse Sejuani",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"32": {
 						"id": 32,
-						"name": "",
+						"name": "Solar Eclipse Sejuani",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"33": {
 						"id": 33,
-						"name": "",
+						"name": "Solar Eclipse Sejuani",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"34": {
 						"id": 34,
-						"name": "",
+						"name": "Solar Eclipse Sejuani",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Solar Eclipse Sejuani",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -30507,7 +30935,22 @@
 				"id": 19,
 				"name": "Prestige Arcanist Zoe",
 				"chromas": {}
-			}
+			},
+			"20": {
+				"id": 20,
+				"name": "EDG Zoe",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "EDG Zoe",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"21": 20
 		},
 		"spells": {
 			"p": "More Sparkles!",
@@ -32036,64 +32479,64 @@
 						"id": 46,
 						"name": "Sea Dog Yasuo",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"47": {
 						"id": 47,
 						"name": "Sea Dog Yasuo",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"48": {
 						"id": 48,
 						"name": "Sea Dog Yasuo",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"49": {
 						"id": 49,
 						"name": "Sea Dog Yasuo",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"50": {
 						"id": 50,
 						"name": "Sea Dog Yasuo",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"51": {
 						"id": 51,
 						"name": "Sea Dog Yasuo",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"52": {
 						"id": 52,
 						"name": "Sea Dog Yasuo",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"53": {
 						"id": 53,
 						"name": "Sea Dog Yasuo",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					}
 				}
@@ -34415,7 +34858,22 @@
 			"15": 10,
 			"16": 10,
 			"17": 10,
-			"18": 10
+			"18": 10,
+			"19": {
+				"id": 19,
+				"name": "EDG Viego",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "EDG Viego",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"20": 19
 		},
 		"spells": {
 			"p": "Sovereign's Domination",
@@ -34660,64 +35118,64 @@
 						"id": 28,
 						"name": "Lunar Eclipse Senna",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"29": {
 						"id": 29,
 						"name": "Lunar Eclipse Senna",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DF9117",
+							"#DF9117"
 						]
 					},
 					"30": {
 						"id": 30,
 						"name": "Lunar Eclipse Senna",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"31": {
 						"id": 31,
 						"name": "Lunar Eclipse Senna",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"32": {
 						"id": 32,
 						"name": "Lunar Eclipse Senna",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"33": {
 						"id": 33,
 						"name": "Lunar Eclipse Senna",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"34": {
 						"id": 34,
 						"name": "Lunar Eclipse Senna",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"35": {
 						"id": 35,
 						"name": "Lunar Eclipse Senna",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					}
 				}
@@ -36658,66 +37116,66 @@
 				"chromas": {
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Lunar Eclipse Aatrox",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Lunar Eclipse Aatrox",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DF9117",
+							"#DF9117"
 						]
 					},
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Lunar Eclipse Aatrox",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Lunar Eclipse Aatrox",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Lunar Eclipse Aatrox",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"27": {
 						"id": 27,
-						"name": "",
+						"name": "Lunar Eclipse Aatrox",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Lunar Eclipse Aatrox",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Lunar Eclipse Aatrox",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#C1F2FF",
+							"#C1F2FF"
 						]
 					}
 				}
@@ -37540,7 +37998,22 @@
 			"33": 28,
 			"34": 28,
 			"35": 28,
-			"36": 28
+			"36": 28,
+			"37": {
+				"id": 37,
+				"name": "EDG Yuumi",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "EDG Yuumi",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"38": 37
 		},
 		"spells": {
 			"p": "Bop 'n' Block",
@@ -40313,7 +40786,22 @@
 			"13": 9,
 			"14": 9,
 			"15": 9,
-			"16": 9
+			"16": 9,
+			"18": {
+				"id": 18,
+				"name": "EDG Aphelios",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "EDG Aphelios",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"19": 18
 		},
 		"spells": {
 			"p": "The Hitman and the Seer",
