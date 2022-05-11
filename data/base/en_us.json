@@ -4281,7 +4281,94 @@
 			"26": 22,
 			"27": 22,
 			"28": 22,
-			"29": 22
+			"29": 22,
+			"30": {
+				"id": 30,
+				"name": "High Noon Sion",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "High Noon Sion",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "High Noon Sion",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "High Noon Sion",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "High Noon Sion",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "High Noon Sion",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "High Noon Sion",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "High Noon Sion",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "High Noon Sion",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "High Noon Sion",
+						"colors": [
+							"#95ECFF",
+							"#C33C3E"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30,
+			"39": 30
 		},
 		"spells": {
 			"p": "Glory in Death",
@@ -8649,7 +8736,94 @@
 			"41": 36,
 			"42": 36,
 			"43": 36,
-			"44": 36
+			"44": 36,
+			"45": {
+				"id": 45,
+				"name": "High Noon Twitch",
+				"chromas": {
+					"46": {
+						"id": 46,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "High Noon Twitch",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"46": 45,
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45,
+			"54": 45
 		},
 		"spells": {
 			"p": "Deadly Venom",
@@ -14643,8 +14817,8 @@
 						"id": 46,
 						"name": "High Noon Katarina",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#95ECFF",
+							"#C33C3E"
 						]
 					}
 				}
@@ -19791,8 +19965,8 @@
 						"id": 41,
 						"name": "High Noon Mordekaiser",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#95ECFF",
+							"#C33C3E"
 						]
 					}
 				}
@@ -21427,8 +21601,8 @@
 						"id": 48,
 						"name": "High Noon Leona",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#95ECFF",
+							"#C33C3E"
 						]
 					},
 					"49": {
@@ -22177,8 +22351,8 @@
 						"id": 48,
 						"name": "High Noon Talon",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#95ECFF",
+							"#C33C3E"
 						]
 					}
 				}
@@ -25024,8 +25198,8 @@
 						"id": 43,
 						"name": "EDG Graves",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#131521",
+							"#9E1517"
 						]
 					}
 				}
@@ -26095,8 +26269,8 @@
 						"id": 43,
 						"name": "High Noon Varus",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#95ECFF",
+							"#C33C3E"
 						]
 					}
 				}
@@ -26372,7 +26546,94 @@
 			"10": 5,
 			"11": 5,
 			"12": 5,
-			"13": 5
+			"13": 5,
+			"14": {
+				"id": 14,
+				"name": "High Noon Viktor",
+				"chromas": {
+					"15": {
+						"id": 15,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "High Noon Viktor",
+						"colors": [
+							"#95ECFF",
+							"#C33C3E"
+						]
+					}
+				}
+			},
+			"15": 14,
+			"16": 14,
+			"17": 14,
+			"18": 14,
+			"19": 14,
+			"20": 14,
+			"21": 14,
+			"22": 14,
+			"23": 14
 		},
 		"spells": {
 			"p": "Glorious Evolution",
@@ -30944,8 +31205,8 @@
 						"id": 21,
 						"name": "EDG Zoe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#131521",
+							"#9E1517"
 						]
 					}
 				}
@@ -34687,7 +34948,94 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "High Noon Tahm Kench",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "High Noon Tahm Kench",
+						"colors": [
+							"#95ECFF",
+							"#C33C3E"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20,
+			"29": 20
 		},
 		"spells": {
 			"p": "An Acquired Taste",
@@ -34867,8 +35215,8 @@
 						"id": 20,
 						"name": "EDG Viego",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#131521",
+							"#9E1517"
 						]
 					}
 				}
@@ -38007,8 +38355,8 @@
 						"id": 38,
 						"name": "EDG Yuumi",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#131521",
+							"#9E1517"
 						]
 					}
 				}
@@ -38201,7 +38549,94 @@
 			"16": 10,
 			"17": 10,
 			"18": 10,
-			"19": 10
+			"19": 10,
+			"20": {
+				"id": 20,
+				"name": "High Noon Samira",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "High Noon Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "High Noon Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "High Noon Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "High Noon Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "High Noon Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "High Noon Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "High Noon Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "High Noon Samira",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "High Noon Samira",
+						"colors": [
+							"#95ECFF",
+							"#C33C3E"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20,
+			"29": 20
 		},
 		"spells": {
 			"p": "Daredevil Impulse",
@@ -40795,8 +41230,8 @@
 						"id": 19,
 						"name": "EDG Aphelios",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#131521",
+							"#9E1517"
 						]
 					}
 				}
