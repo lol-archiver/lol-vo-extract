@@ -4290,64 +4290,64 @@
 						"id": 31,
 						"name": "High Noon Sion",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"32": {
 						"id": 32,
 						"name": "High Noon Sion",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DF9117",
+							"#DF9117"
 						]
 					},
 					"33": {
 						"id": 33,
 						"name": "High Noon Sion",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"34": {
 						"id": 34,
 						"name": "High Noon Sion",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"35": {
 						"id": 35,
 						"name": "High Noon Sion",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"36": {
 						"id": 36,
 						"name": "High Noon Sion",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"37": {
 						"id": 37,
 						"name": "High Noon Sion",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"38": {
 						"id": 38,
 						"name": "High Noon Sion",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"39": {
@@ -8745,72 +8745,72 @@
 						"id": 46,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"47": {
 						"id": 47,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#DF9117",
+							"#DF9117"
 						]
 					},
 					"48": {
 						"id": 48,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"49": {
 						"id": 49,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"50": {
 						"id": 50,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"51": {
 						"id": 51,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"52": {
 						"id": 52,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"53": {
 						"id": 53,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"54": {
 						"id": 54,
 						"name": "High Noon Twitch",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#95ECFF",
+							"#C33C3E"
 						]
 					}
 				}
@@ -26555,64 +26555,64 @@
 						"id": 15,
 						"name": "High Noon Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"16": {
 						"id": 16,
 						"name": "High Noon Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"17": {
 						"id": 17,
 						"name": "High Noon Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"18": {
 						"id": 18,
 						"name": "High Noon Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"19": {
 						"id": 19,
 						"name": "High Noon Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"20": {
 						"id": 20,
 						"name": "High Noon Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"21": {
 						"id": 21,
 						"name": "High Noon Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"22": {
 						"id": 22,
 						"name": "High Noon Viktor",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"23": {
@@ -34957,64 +34957,64 @@
 						"id": 21,
 						"name": "High Noon Tahm Kench",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"22": {
 						"id": 22,
 						"name": "High Noon Tahm Kench",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"23": {
 						"id": 23,
 						"name": "High Noon Tahm Kench",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"24": {
 						"id": 24,
 						"name": "High Noon Tahm Kench",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"25": {
 						"id": 25,
 						"name": "High Noon Tahm Kench",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"26": {
 						"id": 26,
 						"name": "High Noon Tahm Kench",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"27": {
 						"id": 27,
 						"name": "High Noon Tahm Kench",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"28": {
 						"id": 28,
 						"name": "High Noon Tahm Kench",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"29": {
@@ -38558,64 +38558,64 @@
 						"id": 21,
 						"name": "High Noon Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"22": {
 						"id": 22,
 						"name": "High Noon Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"23": {
 						"id": 23,
 						"name": "High Noon Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"24": {
 						"id": 24,
 						"name": "High Noon Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"25": {
 						"id": 25,
 						"name": "High Noon Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"26": {
 						"id": 26,
 						"name": "High Noon Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"27": {
 						"id": 27,
 						"name": "High Noon Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"28": {
 						"id": 28,
 						"name": "High Noon Samira",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"29": {
