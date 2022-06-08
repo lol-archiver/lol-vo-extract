@@ -7089,64 +7089,64 @@
 						"id": 44,
 						"name": "Ocean Song Ashe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"45": {
 						"id": 45,
 						"name": "Ocean Song Ashe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"46": {
 						"id": 46,
 						"name": "Ocean Song Ashe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"47": {
 						"id": 47,
 						"name": "Ocean Song Ashe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"48": {
 						"id": 48,
 						"name": "Ocean Song Ashe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"49": {
 						"id": 49,
 						"name": "Ocean Song Ashe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"50": {
 						"id": 50,
 						"name": "Ocean Song Ashe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"51": {
 						"id": 51,
 						"name": "Ocean Song Ashe",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -13035,7 +13035,16 @@
 			"8": {
 				"id": 8,
 				"name": "Final Boss Veigar",
-				"chromas": {}
+				"chromas": {
+					"42": {
+						"id": 42,
+						"name": "Final Boss Veigar",
+						"colors": [
+							"#9DC2D9",
+							"#7F449C"
+						]
+					}
+				}
 			},
 			"9": {
 				"id": 9,
@@ -13312,7 +13321,8 @@
 			"37": 32,
 			"38": 32,
 			"39": 32,
-			"40": 32
+			"40": 32,
+			"42": 8
 		},
 		"spells": {
 			"p": "Phenomenal Evil Power",
@@ -13827,7 +13837,85 @@
 				"id": 29,
 				"name": "Prestige Arcade Caitlyn (2022)",
 				"chromas": {}
-			}
+			},
+			"30": {
+				"id": 30,
+				"name": "Snow Moon Caitlyn",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Snow Moon Caitlyn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Snow Moon Caitlyn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Snow Moon Caitlyn",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Snow Moon Caitlyn",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Snow Moon Caitlyn",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Snow Moon Caitlyn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Snow Moon Caitlyn",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Snow Moon Caitlyn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30
 		},
 		"spells": {
 			"p": "Headshot",
@@ -18704,64 +18792,64 @@
 						"id": 30,
 						"name": "Ocean Song Nidalee",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"31": {
 						"id": 31,
 						"name": "Ocean Song Nidalee",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"32": {
 						"id": 32,
 						"name": "Ocean Song Nidalee",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"33": {
 						"id": 33,
 						"name": "Ocean Song Nidalee",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"34": {
 						"id": 34,
 						"name": "Ocean Song Nidalee",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"35": {
 						"id": 35,
 						"name": "Ocean Song Nidalee",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"36": {
 						"id": 36,
 						"name": "Ocean Song Nidalee",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"37": {
 						"id": 37,
 						"name": "Ocean Song Nidalee",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -19543,7 +19631,22 @@
 			"32": 25,
 			"33": 25,
 			"34": 25,
-			"35": 25
+			"35": 25,
+			"36": {
+				"id": 36,
+				"name": "Ashen Knights Pantheon",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Ashen Knights Pantheon",
+						"colors": [
+							"#9D0600",
+							"#2B263F"
+						]
+					}
+				}
+			},
+			"37": 36
 		},
 		"spells": {
 			"p": "Mortal Will",
@@ -31175,7 +31278,49 @@
 			"11": 8,
 			"12": 8,
 			"13": 8,
-			"14": 8
+			"14": 8,
+			"15": {
+				"id": 15,
+				"name": "Snow Moon Kayn",
+				"chromas": {
+					"16": {
+						"id": 16,
+						"name": "Snow Moon Kayn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Snow Moon Kayn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Snow Moon Kayn",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Snow Moon Kayn",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					}
+				}
+			},
+			"16": 15,
+			"17": 15,
+			"18": 15,
+			"19": 15
 		},
 		"spells": {
 			"p": "The Darkin Scythe",
@@ -32114,64 +32259,64 @@
 						"id": 16,
 						"name": "Ocean Song Seraphine",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"17": {
 						"id": 17,
 						"name": "Ocean Song Seraphine",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"18": {
 						"id": 18,
 						"name": "Ocean Song Seraphine",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"19": {
 						"id": 19,
 						"name": "Ocean Song Seraphine",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"20": {
 						"id": 20,
 						"name": "Ocean Song Seraphine",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"21": {
 						"id": 21,
 						"name": "Ocean Song Seraphine",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"22": {
 						"id": 22,
 						"name": "Ocean Song Seraphine",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"23": {
 						"id": 23,
 						"name": "Ocean Song Seraphine",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					}
 				}
@@ -33739,64 +33884,64 @@
 						"id": 2,
 						"name": "Battle Boss Bel'Veth",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"3": {
 						"id": 3,
 						"name": "Battle Boss Bel'Veth",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"4": {
 						"id": 4,
 						"name": "Battle Boss Bel'Veth",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"5": {
 						"id": 5,
 						"name": "Battle Boss Bel'Veth",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"6": {
 						"id": 6,
 						"name": "Battle Boss Bel'Veth",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"7": {
 						"id": 7,
 						"name": "Battle Boss Bel'Veth",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"8": {
 						"id": 8,
 						"name": "Battle Boss Bel'Veth",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#C1F2FF",
+							"#C1F2FF"
 						]
 					},
 					"9": {
 						"id": 9,
 						"name": "Battle Boss Bel'Veth",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -34700,64 +34845,64 @@
 						"id": 11,
 						"name": "Ocean Song Zeri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"12": {
 						"id": 12,
 						"name": "Ocean Song Zeri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"13": {
 						"id": 13,
 						"name": "Ocean Song Zeri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"14": {
 						"id": 14,
 						"name": "Ocean Song Zeri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"15": {
 						"id": 15,
 						"name": "Ocean Song Zeri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"16": {
 						"id": 16,
 						"name": "Ocean Song Zeri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"17": {
 						"id": 17,
 						"name": "Ocean Song Zeri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"18": {
 						"id": 18,
 						"name": "Ocean Song Zeri",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -39541,7 +39686,85 @@
 			"14": 10,
 			"15": 10,
 			"16": 10,
-			"17": 10
+			"17": 10,
+			"18": {
+				"id": 18,
+				"name": "Snow Moon Illaoi",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "Snow Moon Illaoi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Snow Moon Illaoi",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Snow Moon Illaoi",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Snow Moon Illaoi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Snow Moon Illaoi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Snow Moon Illaoi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Snow Moon Illaoi",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Snow Moon Illaoi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"19": 18,
+			"20": 18,
+			"21": 18,
+			"22": 18,
+			"23": 18,
+			"24": 18,
+			"25": 18,
+			"26": 18
 		},
 		"spells": {
 			"p": "Prophet of an Elder God",
