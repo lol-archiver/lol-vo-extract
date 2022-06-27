@@ -47,11 +47,14 @@ const takeWpkRaw = function(fileWPK) {
 
 			const [offset, size, nameLength] = bifferWPK.unpack('LLL');
 
-			if(offset && offset < bifferWPK.length) {
+			if(size && offset && offset < bifferWPK.length) {
 				const name = Buffer.from([...bifferWPK.slice(nameLength * 2)].filter(byte => byte)).toString('utf8');
 
 				bifferWPK.seek(offset);
-				writeFileSync(resolve(dirCache, 'audio', fileWPK, 'wem', name), bifferWPK.slice(size));
+
+				if(name) {
+					writeFileSync(resolve(dirCache, 'audio', fileWPK, 'wem', name), bifferWPK.slice(size));
+				}
 			}
 		}
 

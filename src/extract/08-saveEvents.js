@@ -126,6 +126,6 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
 
-		writeFileSync(resolve('_text', `[${I.slot}@${C.server.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${Moment().format('X')}.md`), result.join('\n'));
+		writeFileSync(resolve('@text', `[${I.slot}@${C.server.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${Moment().format('X')}.md`), result.join('\n'));
 	}
 }

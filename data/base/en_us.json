@@ -2639,7 +2639,94 @@
 			"23": 3,
 			"24": 3,
 			"25": 3,
-			"26": 3
+			"26": 3,
+			"27": {
+				"id": 27,
+				"name": "Star Nemesis Fiddlesticks",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Star Nemesis Fiddlesticks",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27,
+			"36": 27
 		},
 		"spells": {
 			"p": "A Harmless Scarecrow",
@@ -10936,7 +11023,94 @@
 			"31": 26,
 			"32": 26,
 			"33": 26,
-			"34": 26
+			"34": 26,
+			"35": {
+				"id": 35,
+				"name": "Star Guardian Sona",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Star Guardian Sona",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35,
+			"44": 35
 		},
 		"spells": {
 			"p": "Power Chord",
@@ -19634,11 +19808,11 @@
 			"35": 25,
 			"36": {
 				"id": 36,
-				"name": "Ashen Knights Pantheon",
+				"name": "Ashen Knight Pantheon",
 				"chromas": {
 					"37": {
 						"id": 37,
-						"name": "Ashen Knights Pantheon",
+						"name": "Ashen Knight Pantheon",
 						"colors": [
 							"#9D0600",
 							"#2B263F"
@@ -26559,7 +26733,7 @@
 		"slot": "Nautilus",
 		"roles": [
 			"tank",
-			"fighter"
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -30686,8 +30860,7 @@
 		"title": "the Dark Sovereign",
 		"slot": "Syndra",
 		"roles": [
-			"mage",
-			"support"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -32119,7 +32292,67 @@
 				"id": 39,
 				"name": "Prestige K/DA Kai'Sa (2022)",
 				"chromas": {}
-			}
+			},
+			"40": {
+				"id": 40,
+				"name": "Star Guardian Kai'Sa",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Star Guardian Kai'Sa",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Star Guardian Kai'Sa",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Star Guardian Kai'Sa",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Star Guardian Kai'Sa",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Star Guardian Kai'Sa",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Star Guardian Kai'Sa",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -37329,7 +37562,99 @@
 			"41": 36,
 			"42": 36,
 			"43": 36,
-			"44": 36
+			"44": 36,
+			"45": {
+				"id": 45,
+				"name": "Star Guardian Ekko",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Star Guardian Ekko",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"46": {
+				"id": 46,
+				"name": "Prestige Star Guardian Ekko",
+				"chromas": {}
+			},
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45,
+			"54": 45,
+			"55": 45
 		},
 		"spells": {
 			"p": "Z-Drive Resonance",
@@ -41893,7 +42218,8 @@
 		"title": "the Iron Maiden",
 		"slot": "Rell",
 		"roles": [
-			"tank"
+			"tank",
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -43628,6 +43954,117 @@
 			"w": "Bailout",
 			"e": "Loyalty Program",
 			"r": "Hostile Takeover"
+		}
+	},
+	"895": {
+		"id": 895,
+		"name": "Nilah",
+		"title": "the Joy Unbound",
+		"slot": "Nilah",
+		"roles": [
+			"fighter",
+			"assassin"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Nilah",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Star Guardian Nilah",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Star Guardian Nilah",
+						"colors": [
+							"#000000",
+							"#000000"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1,
+			"10": 1
+		},
+		"spells": {
+			"p": "Joy Unending",
+			"q": "Formless Blade",
+			"w": "Jubilant Veil",
+			"e": "Slipstream",
+			"r": "Apotheosis"
 		}
 	}
 }

@@ -1,9 +1,9 @@
 node_modules
 
-/_cache
-/_final
-/_text
-/_pool
+/@cache
+/@final
+/@text
+/@pool
 
 /config/config.json
 /config/config.server.json

@@ -32,7 +32,7 @@ export default class Bundle extends ManifestListItem {
 	static async fetch(id, version, cdn, counter) {
 		const bid = ('0000000000000000' + id.toString(16)).slice(-16).toUpperCase();
 
-		const pathBundle = join('./_cache/bundle', `${bid}.bundle`);
+		const pathBundle = join('./@cache/bundle', `${bid}.bundle`);
 
 		let bufferBundle;
 		if(existsSync(pathBundle)) {

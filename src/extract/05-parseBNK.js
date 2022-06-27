@@ -155,20 +155,20 @@ export default async function parseBNK(bnkPath, eventNameSet) {
 
 			if(entry instanceof HIRCSound) {
 				const audioID = entry.audioID || 0;
-				return `${audioID}|${toHexL(audioID, 8)}`;
+				return `SoundID:${id}|${toHexL(id, 8)} AudioID:${audioID}|${toHexL(audioID, 8)}`;
 			}
 			else if(entry instanceof HIRCPool) {
 				return entry.soundIDs.map(sid => {
 					const entrySub = arrEntry.find(e => e.id == sid);
 
 					const audioID = entrySub.audioID || 0;
-					return `${audioID}|${toHexL(audioID, 8)}`;
+					return `EntryID:${id}|${toHexL(id, 8)} SoundID:${sid}|${toHexL(sid, 8)} AudioID:${audioID}|${toHexL(audioID, 8)}`;
 				});
 			}
 		}));
 
 	writeFileSync(
-		resolve('_text', '_pool', parse(bnkPath).base + '.json'),
+		resolve('@pool', `${I.slot}@${I.idsSkin.join(',')}@${parse(bnkPath).base}.json`),
 		JSON.stringify(HIRCsPool, null, '\t')
 	);
 

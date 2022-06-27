@@ -8,7 +8,7 @@ import HIRCPool from '../../entry/bnk/HIRCPool.js';
 import HIRCSwitchContainer from '../../entry/bnk/HIRCSwitchContainer.js';
 
 
-export default function parseEntry(type, id, B) {
+export default function parseHIRCEntry(type, id, B) {
 	let entry;
 
 	// Sound
@@ -68,6 +68,8 @@ export default function parseEntry(type, id, B) {
 		while(b.unpack('>L')[0] == 0xC350) {
 			entry.soundIDs.push(b.unpack('>L')[0]);
 		}
+
+		entry.soundIDs.reverse();
 	}
 	// Switch Container
 	else if(type == 6) {
@@ -80,6 +82,8 @@ export default function parseEntry(type, id, B) {
 		while(b.unpack('LLBB').join('|') == '0|0|1|0') {
 			entry.arrContainerID.push(b.unpack('>L')[0]);
 		}
+
+		entry.arrContainerID.reverse();
 	}
 	// else {
 	// 	// unused Type

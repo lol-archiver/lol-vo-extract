@@ -8,10 +8,10 @@ specifiers:
   axios: ^0.27.2
   bluebird: ^3.7.2
   buffer-crc32: ^0.2.13
-  eslint: ^8.17.0
+  eslint: ^8.18.0
   fs-extra: ^10.1.0
   https-proxy-agent: ^5.0.1
-  i18next: ^21.8.9
+  i18next: ^21.8.10
   iconv-lite: ^0.6.3
   moment: ^2.29.3
   node-gzip: ^1.1.2
@@ -29,7 +29,7 @@ dependencies:
   buffer-crc32: 0.2.13
   fs-extra: 10.1.0
   https-proxy-agent: 5.0.1
-  i18next: 21.8.9
+  i18next: 21.8.10
   iconv-lite: 0.6.3
   moment: 2.29.3
   node-gzip: 1.1.2
@@ -38,7 +38,7 @@ dependencies:
   xxhashjs: 0.2.2
 
 devDependencies:
-  eslint: 8.17.0
+  eslint: 8.18.0
 
 packages:
 
@@ -85,7 +85,7 @@ packages:
     resolution: {integrity: sha512-Yx3toDoqnaH1eRos47cjFAnxUNmDSVdLzmEmOiwJAaSXTr5vaw1nfJWJdaxSW0I9v5J+PbbVKz+u2yRNMuNVdg==}
     engines: {node: '>=14.18.1'}
     dependencies:
-      i18next: 21.8.9
+      i18next: 21.8.10
     dev: false
 
   /@nuogz/hades/3.5.0:
@@ -310,13 +310,13 @@ packages:
       estraverse: 5.3.0
     dev: true
 
-  /eslint-utils/3.0.0_eslint@8.17.0:
+  /eslint-utils/3.0.0_eslint@8.18.0:
     resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==}
     engines: {node: ^10.0.0 || ^12.0.0 || >= 14.0.0}
     peerDependencies:
       eslint: '>=5'
     dependencies:
-      eslint: 8.17.0
+      eslint: 8.18.0
       eslint-visitor-keys: 2.1.0
     dev: true
 
@@ -330,8 +330,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint/8.17.0:
-    resolution: {integrity: sha512-gq0m0BTJfci60Fz4nczYxNAlED+sMcihltndR8t9t1evnU/azx53x3t2UHXC/uRjcbvRw/XctpaNygSTcQD+Iw==}
+  /eslint/8.18.0:
+    resolution: {integrity: sha512-As1EfFMVk7Xc6/CvhssHUjsAQSkpfXvUGMFC3ce8JDe6WvqCgRrLOBQbVpsBFr1X1V+RACOadnzVvcUS5ni2bA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -344,7 +344,7 @@ packages:
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.1.1
-      eslint-utils: 3.0.0_eslint@8.17.0
+      eslint-utils: 3.0.0_eslint@8.18.0
       eslint-visitor-keys: 3.3.0
       espree: 9.3.2
       esquery: 1.4.0
@@ -525,8 +525,8 @@ packages:
       - supports-color
     dev: false
 
-  /i18next/21.8.9:
-    resolution: {integrity: sha512-PY9a/8ADVmnju1tETeglbbVQi+nM5pcJQWm9kvKMTE3GPgHHtpDsHy5HQ/hccz2/xtW7j3vuso23JdQSH0EttA==}
+  /i18next/21.8.10:
+    resolution: {integrity: sha512-7xRb6y4QlSqZRZ3uA5BIEsLuZpmxpzHLizQyKjDDThOcvdfgICOX7aFoBnh4BSWcLtJamTqSweaOuK22A2xqkA==}
     dependencies:
       '@babel/runtime': 7.18.3
     dev: false
@@ -857,7 +857,7 @@ packages:
       has-flag: 4.0.0
 
   /text-table/0.2.0:
-    resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=}
+    resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
 
   /type-check/0.4.0:
@@ -925,7 +925,7 @@ packages:
     dev: false
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
 
   /xxhashjs/0.2.2:

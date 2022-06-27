@@ -52,7 +52,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 				(events_nameSkin['[Bad]'] || (events_nameSkin['[Bad]'] = [])).push('Unmatch');
 			}
 
-			if(!Object.keys(events_nameSkin).length) { continue; }
+			if(!Object.keys(events_nameSkin).length || !existsSync(srcWEM)) { continue; }
 
 			const crcWEM = crc32(readFileSync(srcWEM));
 
