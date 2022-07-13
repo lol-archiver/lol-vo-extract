@@ -1,6 +1,4 @@
 {
-	"npm.packageManager": "pnpm",
-	"eslint.packageManager": "pnpm",
 	"files.trimTrailingWhitespace": true,
 	"javascript.preferences.importModuleSpecifierEnding": "js",
 	"json.schemas": [

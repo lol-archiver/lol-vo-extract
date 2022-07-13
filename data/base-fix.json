@@ -1,0 +1,19 @@
+{
+	"default": {
+		"7.skins.2.chromas.11.colors.1": "#000000||#73BFBE",
+		"32.skins.8.chromas.13.colors.0": "#C1F2E1||#C1F2FF",
+		"41.skins.8.chromas.13.colors.1": "#272100||#27211C",
+		"53.skins.11.chromas.14.colors.1": "#E99117||#DF9117",
+		"98.skins.15.chromas.31.colors.0": "#000000||#162D57",
+		"98.skins.15.chromas.31.colors.1": "#000000||#A50031",
+		"104.skins.5.chromas.8.colors.0": "#E99117||#DF9117",
+		"104.skins.5.chromas.8.colors.1": "#E99117||#DF9117",
+		"201.skins.1.chromas.6.colors.1": "#FFEF59||#FFEE59"
+	},
+	"en_us": {
+		"526.spells.w": "Ferromancy: Crash Down||Ferromancy"
+	},
+	"zh_cn": {
+		"526.spells.w": "驭铁术：轰落||驭铁术"
+	}
+}

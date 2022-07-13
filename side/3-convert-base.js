@@ -1,16 +1,22 @@
 import AS from 'assert';
 import { readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
+
 import { fileURLToPath } from 'url';
-import { ensureDirSync } from 'fs-extra';
+import FX, { ensureDirSync } from 'fs-extra';
 
 import { extractWAD } from '@nuogz/lol-wad-extract';
 
 import { C } from '../lib/global.js';
-import { dirCache } from '../lib/global.dir.js';
+import { dirCache, dirData } from '../lib/global.dir.js';
+import G from '../lib/global.log.js';
 
 
-const regions = ['default', 'zh_cn'];
+
+const regions = {
+	'default': 'en_us',
+	'zh_cn': 'zh_cn'
+};
 
 
 const dirSelf = dirname(fileURLToPath(import.meta.url));
@@ -20,20 +26,23 @@ const dirCacheSelf = resolve(dirCache, 'convert-base');
 ensureDirSync(dirCacheSelf);
 
 
-const convert = async (region) => {
-	const fileAssets = resolve(C.path.dirGameDataRaw, `${region}-assets.wad`);
+const datasFixAll = FX.readJSONSync(resolve(dirData, 'base-fix.json'));
+
+
+const convert = async (regionGame, regionReal) => {
+	const fileAssets = resolve(C.path.dirGameDataRaw, `${regionGame}-assets.wad`);
 
 	const { summary: bufferSummary } = await extractWAD(
 		fileAssets,
 		{
-			[`plugins/rcp-be-lol-game-data/global/${region}/v1/champion-summary.json`]: 'buffer|summary'
+			[`plugins/rcp-be-lol-game-data/global/${regionGame}/v1/champion-summary.json`]: 'buffer|summary'
 		}
 	);
 
 	const championsSummary = JSON.parse(bufferSummary.toString());
 
 	const infoExtract = championsSummary.reduce((acc, { id }) => {
-		acc[`plugins/rcp-be-lol-game-data/global/${region}/v1/champions/${id}.json`] = `file|${id}|${resolve(dirCacheSelf, `${id}.json`)}`;
+		acc[`plugins/rcp-be-lol-game-data/global/${regionGame}/v1/champions/${id}.json`] = `file|${id}|${resolve(dirCacheSelf, `${id}.json`)}`;
 
 		return acc;
 	}, {});
@@ -60,8 +69,8 @@ const convert = async (region) => {
 
 		const champion = result[id] = {
 			id,
-			name: region == 'zh_cn' ? title : name,
-			title: region == 'zh_cn' ? name : title,
+			name: regionGame == 'zh_cn' ? title : name,
+			title: regionGame == 'zh_cn' ? name : title,
 			slot,
 			roles,
 			skins: {},
@@ -144,12 +153,43 @@ const convert = async (region) => {
 
 	// writeFileSync(resolve(dirSelf, '..', 'data', 'base', `${region}-chromaCounts.json`), JSON.stringify(countsChroma, null, '\t'));
 
-	writeFileSync(resolve(dirSelf, '..', 'data', 'base', `${region}-new.json`), JSON.stringify(result, null, '\t')
-		.replace(/ · /g, '·')
-		.replace(/ {2}/g, ' ')
-		.replace(RegExp(Buffer.from([0xc2, 0xa0]).toString(), 'g'), ' ')
-		.replace(/ *",/g, '",')
+
+	const datasFix = Object.assign({}, datasFixAll.default, datasFixAll[regionReal]);
+
+	for(const pathFix in datasFix) {
+		const [strMatch, strReplace] = datasFix[pathFix].split('||');
+		const pathsFix = pathFix.split('.');
+		const keyTarget = pathsFix.pop();
+
+		try {
+			let now = result;
+
+			for(const path of pathsFix) { now = now[path]; }
+
+			if(now[keyTarget] == strMatch) {
+				G.info('convert-base', 'fix data', `✔ ${pathFix}: ~{${strMatch}} ==> ~{${strReplace}}`);
+
+				now[keyTarget] = strReplace;
+			}
+			else {
+				G.warn('convert-base', 'fix data', `✖ ${pathFix}: ~{${strMatch}} changed, now is ~{${now[keyTarget]}}`);
+			}
+		}
+		catch(error) { void 0; }
+	}
+
+
+
+	writeFileSync(
+		resolve(dirSelf, '..', 'data', 'base', `${regionReal}-new.json`),
+		JSON.stringify(result, null, '\t')
+			.replace(/ · /g, '·')
+			.replace(/ {2}/g, ' ')
+			.replace(RegExp(Buffer.from([0xc2, 0xa0]).toString(), 'g'), ' ')
+			.replace(/ *",/g, '",')
 	);
 };
 
-for(const region of regions) { await convert(region); }
+
+
+for(const regionGame in regions) { await convert(regionGame, regions[regionGame]); }

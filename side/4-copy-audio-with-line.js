@@ -1,13 +1,13 @@
 import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
-import { ensureDirSync } from 'fs-extra';
+import { emptyDirSync } from 'fs-extra';
 import { dirFinal } from '../lib/global.dir.js';
 import { C, I } from '../lib/global.js';
 import { pad0 } from '../lib/Tool.js';
 
 
 const dirTarget = resolve(dirFinal, 'LineAudio');
-ensureDirSync(dirTarget);
+emptyDirSync(dirTarget);
 
 const idSkin = I.idsSkin[0];
 
@@ -17,8 +17,7 @@ const pathsAudios = [
 const pathLine = C.path.line;
 
 
-const arrAudioFile = pathsAudios.reduce((acc, pathAudios) => { acc.push(...readdirSync(pathAudios).map(name => resolve(pathAudios, name))); return acc; }, [])
-	;
+const arrAudioFile = pathsAudios.reduce((acc, pathAudios) => { acc.push(...readdirSync(pathAudios).map(name => resolve(pathAudios, name))); return acc; }, []);
 const arrLineText = readFileSync(pathLine, 'UTF8').split('\n').filter(text => text.trim());
 
 let curEvent;
@@ -47,20 +46,20 @@ for(const lineText of arrLineText) {
 		if(file) {
 			copyFileSync(
 				file,
-				resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]]/g, '')}] ${line.replace(/\*/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
+				resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]>]/g, '')}] ${line.replace(/[>]/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
 			);
 		}
 		else if(crc32 == '00000000') {
 			if(curEvent.includes('选用')) {
 				copyFileSync(
 					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'pick.wav'),
-					resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]]/g, '')}] ${line.replace(/\*/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
+					resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]>]/g, '')}] ${line.replace(/[>]/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
 				);
 			}
 			else if(curEvent.includes('禁用')) {
 				copyFileSync(
 					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'ban.wav'),
-					resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]]/g, '')}] ${line.replace(/\*/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
+					resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]>]/g, '')}] ${line.replace(/[>]/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
 				);
 			}
 		}
