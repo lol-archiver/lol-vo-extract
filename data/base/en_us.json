@@ -8054,7 +8054,7 @@
 				"chromas": {
 					"51": {
 						"id": 51,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -8062,7 +8062,7 @@
 					},
 					"52": {
 						"id": 52,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -8070,7 +8070,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#B6E084",
 							"#B6E084"
@@ -8078,7 +8078,7 @@
 					},
 					"54": {
 						"id": 54,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -8086,7 +8086,7 @@
 					},
 					"55": {
 						"id": 55,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -8094,7 +8094,7 @@
 					},
 					"56": {
 						"id": 56,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -8102,7 +8102,7 @@
 					},
 					"57": {
 						"id": 57,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -8110,7 +8110,7 @@
 					},
 					"58": {
 						"id": 58,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#9C68D7",
 							"#9C68D7"
@@ -8118,7 +8118,7 @@
 					},
 					"59": {
 						"id": 59,
-						"name": "",
+						"name": "Star Nemesis Morgana",
 						"colors": [
 							"#5F4AFF",
 							"#B11450"
@@ -21270,7 +21270,7 @@
 				"chromas": {
 					"62": {
 						"id": 62,
-						"name": "",
+						"name": "Star Guardian Akali",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -21278,7 +21278,7 @@
 					},
 					"63": {
 						"id": 63,
-						"name": "",
+						"name": "Star Guardian Akali",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -21286,7 +21286,7 @@
 					},
 					"64": {
 						"id": 64,
-						"name": "",
+						"name": "Star Guardian Akali",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -21294,7 +21294,7 @@
 					},
 					"65": {
 						"id": 65,
-						"name": "",
+						"name": "Star Guardian Akali",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -21302,7 +21302,7 @@
 					},
 					"66": {
 						"id": 66,
-						"name": "",
+						"name": "Star Guardian Akali",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -21310,7 +21310,7 @@
 					},
 					"67": {
 						"id": 67,
-						"name": "",
+						"name": "Star Guardian Akali",
 						"colors": [
 							"#FDA4DA",
 							"#9DE5FF"
@@ -30998,7 +30998,7 @@
 				"chromas": {
 					"15": {
 						"id": 15,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -31006,7 +31006,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -31014,7 +31014,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -31022,7 +31022,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -31030,7 +31030,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -31038,7 +31038,7 @@
 					},
 					"20": {
 						"id": 20,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -31046,7 +31046,7 @@
 					},
 					"21": {
 						"id": 21,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -31054,7 +31054,7 @@
 					},
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -31062,7 +31062,7 @@
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Star Guardian Quinn",
 						"colors": [
 							"#FDA4DA",
 							"#9DE5FF"
@@ -31133,7 +31133,7 @@
 				"chromas": {
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -31141,7 +31141,7 @@
 					},
 					"36": {
 						"id": 36,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -31149,7 +31149,7 @@
 					},
 					"37": {
 						"id": 37,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -31157,7 +31157,7 @@
 					},
 					"38": {
 						"id": 38,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -31165,7 +31165,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -31173,7 +31173,7 @@
 					},
 					"40": {
 						"id": 40,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -31181,7 +31181,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -31189,7 +31189,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -31197,7 +31197,7 @@
 					},
 					"43": {
 						"id": 43,
-						"name": "",
+						"name": "Star Guardian Syndra",
 						"colors": [
 							"#FDA4DA",
 							"#9DE5FF"
@@ -34043,7 +34043,7 @@
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -34051,7 +34051,7 @@
 					},
 					"13": {
 						"id": 13,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -34059,7 +34059,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -34067,7 +34067,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -34075,7 +34075,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -34083,7 +34083,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#9C68D7",
 							"#9C68D7"
@@ -34091,7 +34091,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -34099,7 +34099,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -34107,7 +34107,7 @@
 					},
 					"20": {
 						"id": 20,
-						"name": "",
+						"name": "Star Guardian Taliyah",
 						"colors": [
 							"#FDA4DA",
 							"#9DE5FF"
@@ -35665,7 +35665,7 @@
 				"chromas": {
 					"50": {
 						"id": 50,
-						"name": "",
+						"name": "Star Guardian Jinx",
 						"colors": [
 							"#D02D9F",
 							"#6535B8"
@@ -42725,11 +42725,11 @@
 			"9": 1,
 			"10": {
 				"id": 10,
-				"name": "",
+				"name": "Star Guardian Rell",
 				"chromas": {
 					"11": {
 						"id": 11,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -42737,7 +42737,7 @@
 					},
 					"12": {
 						"id": 12,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -42745,7 +42745,7 @@
 					},
 					"13": {
 						"id": 13,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -42753,7 +42753,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -42761,7 +42761,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -42769,7 +42769,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -42777,7 +42777,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -42785,7 +42785,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -42793,7 +42793,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Star Guardian Rell",
 						"colors": [
 							"#FDA4DA",
 							"#9DE5FF"
