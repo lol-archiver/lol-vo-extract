@@ -8,10 +8,10 @@ specifiers:
   axios: ^0.27.2
   bluebird: ^3.7.2
   buffer-crc32: ^0.2.13
-  eslint: ^8.19.0
+  eslint: ^8.20.0
   fs-extra: ^10.1.0
   https-proxy-agent: ^5.0.1
-  i18next: ^21.8.13
+  i18next: ^21.8.16
   iconv-lite: ^0.6.3
   moment: ^2.29.4
   node-gzip: ^1.1.2
@@ -29,7 +29,7 @@ dependencies:
   buffer-crc32: 0.2.13
   fs-extra: 10.1.0
   https-proxy-agent: 5.0.1
-  i18next: 21.8.13
+  i18next: 21.8.16
   iconv-lite: 0.6.3
   moment: 2.29.4
   node-gzip: 1.1.2
@@ -38,12 +38,12 @@ dependencies:
   xxhashjs: 0.2.2
 
 devDependencies:
-  eslint: 8.19.0
+  eslint: 8.20.0
 
 packages:
 
-  /@babel/runtime/7.18.6:
-    resolution: {integrity: sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==}
+  /@babel/runtime/7.18.9:
+    resolution: {integrity: sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
@@ -55,8 +55,8 @@ packages:
     dependencies:
       ajv: 6.12.6
       debug: 4.3.4
-      espree: 9.3.2
-      globals: 13.16.0
+      espree: 9.3.3
+      globals: 13.17.0
       ignore: 5.2.0
       import-fresh: 3.3.0
       js-yaml: 4.1.0
@@ -85,7 +85,7 @@ packages:
     resolution: {integrity: sha512-Yx3toDoqnaH1eRos47cjFAnxUNmDSVdLzmEmOiwJAaSXTr5vaw1nfJWJdaxSW0I9v5J+PbbVKz+u2yRNMuNVdg==}
     engines: {node: '>=14.18.1'}
     dependencies:
-      i18next: 21.8.13
+      i18next: 21.8.16
     dev: false
 
   /@nuogz/hades/3.5.0:
@@ -93,7 +93,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       log-update: 4.0.0
-      log4js: 6.6.0
+      log4js: 6.6.1
       moment: 2.29.4
       streamroller: 2.2.4
     transitivePeerDependencies:
@@ -114,16 +114,16 @@ packages:
     resolution: {integrity: sha512-lEXMgKPymtAcuiut5ZsCeToCEemzfqk7kRtqtWPy/CuK2G7cP42TNrF/ys1ecDDvJOZ7TJ6JsosoibDW/LwYGw==}
     dev: false
 
-  /acorn-jsx/5.3.2_acorn@8.7.1:
+  /acorn-jsx/5.3.2_acorn@8.8.0:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.7.1
+      acorn: 8.8.0
     dev: true
 
-  /acorn/8.7.1:
-    resolution: {integrity: sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A==}
+  /acorn/8.8.0:
+    resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -259,10 +259,11 @@ packages:
   /date-format/2.1.0:
     resolution: {integrity: sha512-bYQuGLeFxhkxNOF3rcMtiZxvCBAquGzZm6oWA1oZ0g2THUzivaRhv8uOhdr19LmoobSOLoIAxeUK2RdbM8IFTA==}
     engines: {node: '>=4.0'}
+    deprecated: 2.x is no longer supported. Please upgrade to 4.x or higher.
     dev: false
 
-  /date-format/4.0.11:
-    resolution: {integrity: sha512-VS20KRyorrbMCQmpdl2hg5KaOUsda1RbnsJg461FfrcyCUg+pkd0b40BSW4niQyTheww4DBXQnS7HwSrKkipLw==}
+  /date-format/4.0.13:
+    resolution: {integrity: sha512-bnYCwf8Emc3pTD8pXnre+wfnjGtfi5ncMDKy7+cWZXbmRAsdWkOQHrfC1yz/KiwP5thDp2kCHWYWKBX4HP1hoQ==}
     engines: {node: '>=4.0'}
     dev: false
 
@@ -310,13 +311,13 @@ packages:
       estraverse: 5.3.0
     dev: true
 
-  /eslint-utils/3.0.0_eslint@8.19.0:
+  /eslint-utils/3.0.0_eslint@8.20.0:
     resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==}
     engines: {node: ^10.0.0 || ^12.0.0 || >= 14.0.0}
     peerDependencies:
       eslint: '>=5'
     dependencies:
-      eslint: 8.19.0
+      eslint: 8.20.0
       eslint-visitor-keys: 2.1.0
     dev: true
 
@@ -330,8 +331,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint/8.19.0:
-    resolution: {integrity: sha512-SXOPj3x9VKvPe81TjjUJCYlV4oJjQw68Uek+AM0X4p+33dj2HY5bpTZOgnQHcG2eAm1mtCU9uNMnJi7exU/kYw==}
+  /eslint/8.20.0:
+    resolution: {integrity: sha512-d4ixhz5SKCa1D6SCPrivP7yYVi7nyD6A4vs6HIAul9ujBzcEmZVM3/0NN/yu5nKhmO1wjp5xQ46iRfmDGlOviA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -344,16 +345,16 @@ packages:
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.1.1
-      eslint-utils: 3.0.0_eslint@8.19.0
+      eslint-utils: 3.0.0_eslint@8.20.0
       eslint-visitor-keys: 3.3.0
-      espree: 9.3.2
+      espree: 9.3.3
       esquery: 1.4.0
       esutils: 2.0.3
       fast-deep-equal: 3.1.3
       file-entry-cache: 6.0.1
       functional-red-black-tree: 1.0.1
       glob-parent: 6.0.2
-      globals: 13.16.0
+      globals: 13.17.0
       ignore: 5.2.0
       import-fresh: 3.3.0
       imurmurhash: 0.1.4
@@ -374,12 +375,12 @@ packages:
       - supports-color
     dev: true
 
-  /espree/9.3.2:
-    resolution: {integrity: sha512-D211tC7ZwouTIuY5x9XnS0E9sWNChB7IYKX/Xp5eQj3nFXhqmiUDB9q27y76oFl8jTg3pXcQx/bpxMfs3CIZbA==}
+  /espree/9.3.3:
+    resolution: {integrity: sha512-ORs1Rt/uQTqUKjDdGCyrtYxbazf5umATSf/K4qxjmZHORR6HJk+2s/2Pqe+Kk49HHINC/xNIrGfgh8sZcll0ng==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.7.1
-      acorn-jsx: 5.3.2_acorn@8.7.1
+      acorn: 8.8.0
+      acorn-jsx: 5.3.2_acorn@8.8.0
       eslint-visitor-keys: 3.3.0
     dev: true
 
@@ -500,8 +501,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /globals/13.16.0:
-    resolution: {integrity: sha512-A1lrQfpNF+McdPOnnFqY3kSN0AFTy485bTi1bkLk4mVPODIUEcSfhHgRqA+QdXPksrSTTztYXx37NFV+GpGk3Q==}
+  /globals/13.17.0:
+    resolution: {integrity: sha512-1C+6nQRb1GwGMKm2dH/E7enFAMxGTmGI7/dEdhy/DNelv85w9B72t3uc5frtMNXIbzrarJJ/lTCjcaZwbLJmyw==}
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
@@ -525,10 +526,10 @@ packages:
       - supports-color
     dev: false
 
-  /i18next/21.8.13:
-    resolution: {integrity: sha512-DpzwrJq7Y8tjUHxx6ByOkUIjrGYdQI5Mfv4XEI7q2RWdknQ7TaO9bKi8hS/LqYD6pBV5YGxJLReyLkOCxIpouA==}
+  /i18next/21.8.16:
+    resolution: {integrity: sha512-acJLCk38YMfEPjBR/1vS13SFY7rBQLs9E5m1tSRnWc9UW3f+SZszgH+NP1fZRA1+O+CdG2eLGGmuUMJW52EwzQ==}
     dependencies:
-      '@babel/runtime': 7.18.6
+      '@babel/runtime': 7.18.9
     dev: false
 
   /iconv-lite/0.6.3:
@@ -639,15 +640,15 @@ packages:
       wrap-ansi: 6.2.0
     dev: false
 
-  /log4js/6.6.0:
-    resolution: {integrity: sha512-3v8R7fd45UB6THucSht6wN2/7AZEruQbXdjygPZcxt5TA/msO6si9CN5MefUuKXbYnJHTBnYcx4famwcyQd+sA==}
+  /log4js/6.6.1:
+    resolution: {integrity: sha512-J8VYFH2UQq/xucdNu71io4Fo+purYYudyErgBbswWKO0MC6QVOERRomt5su/z6d3RJSmLyTGmXl3Q/XjKCf+/A==}
     engines: {node: '>=8.0'}
     dependencies:
-      date-format: 4.0.11
+      date-format: 4.0.13
       debug: 4.3.4
       flatted: 3.2.6
       rfdc: 1.3.0
-      streamroller: 3.1.1
+      streamroller: 3.1.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -811,6 +812,7 @@ packages:
   /streamroller/2.2.4:
     resolution: {integrity: sha512-OG79qm3AujAM9ImoqgWEY1xG4HX+Lw+yY6qZj9R1K2mhF5bEmQ849wvrb+4vt4jLMLzwXttJlQbOdPOQVRv7DQ==}
     engines: {node: '>=8.0'}
+    deprecated: 2.x is no longer supported. Please upgrade to 3.x or higher.
     dependencies:
       date-format: 2.1.0
       debug: 4.3.4
@@ -819,13 +821,13 @@ packages:
       - supports-color
     dev: false
 
-  /streamroller/3.1.1:
-    resolution: {integrity: sha512-iPhtd9unZ6zKdWgMeYGfSBuqCngyJy1B/GPi/lTpwGpa3bajuX30GjUVd0/Tn/Xhg0mr4DOSENozz9Y06qyonQ==}
+  /streamroller/3.1.2:
+    resolution: {integrity: sha512-wZswqzbgGGsXYIrBYhOE0yP+nQ6XRk7xDcYwuQAGTYXdyAUmvgVFE0YU1g5pvQT0m7GBaQfYcSnlHbapuK0H0A==}
     engines: {node: '>=8.0'}
     dependencies:
-      date-format: 4.0.11
+      date-format: 4.0.13
       debug: 4.3.4
-      fs-extra: 10.1.0
+      fs-extra: 8.1.0
     transitivePeerDependencies:
       - supports-color
     dev: false

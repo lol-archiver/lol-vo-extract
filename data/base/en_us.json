@@ -13583,7 +13583,85 @@
 			"38": 32,
 			"39": 32,
 			"40": 32,
-			"42": 8
+			"41": {
+				"id": 41,
+				"name": "Monster Tamer Veigar",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Monster Tamer Veigar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Monster Tamer Veigar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Monster Tamer Veigar",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Monster Tamer Veigar",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Monster Tamer Veigar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Monster Tamer Veigar",
+						"colors": [
+							"#9F4A25",
+							"#9F4A25"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Monster Tamer Veigar",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Monster Tamer Veigar",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"42": 8,
+			"43": 41,
+			"44": 41,
+			"45": 41,
+			"46": 41,
+			"47": 41,
+			"48": 41,
+			"49": 41,
+			"50": 41
 		},
 		"spells": {
 			"p": "Phenomenal Evil Power",
@@ -23712,7 +23790,85 @@
 			"33": 28,
 			"34": 28,
 			"35": 28,
-			"36": 28
+			"36": 28,
+			"37": {
+				"id": 37,
+				"name": "Zap'Maw",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Zap'Maw",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Zap'Maw",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Zap'Maw",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Zap'Maw",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Zap'Maw",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Zap'Maw",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Zap'Maw",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Zap'Maw",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37
 		},
 		"spells": {
 			"p": "Icathian Surprise",
@@ -28611,7 +28767,85 @@
 			"33": 26,
 			"34": 26,
 			"35": 26,
-			"36": 26
+			"36": 26,
+			"37": {
+				"id": 37,
+				"name": "Monster Tamer Lulu",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Monster Tamer Lulu",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Monster Tamer Lulu",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Monster Tamer Lulu",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Monster Tamer Lulu",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Monster Tamer Lulu",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Monster Tamer Lulu",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Monster Tamer Lulu",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Monster Tamer Lulu",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37
 		},
 		"spells": {
 			"p": "Pix, Faerie Companion",
