@@ -1,5 +1,5 @@
-import { readdirSync, writeFileSync } from 'fs';
-import { resolve } from 'path';
+import { copyFileSync, readdirSync, writeFileSync } from 'fs';
+import { parse, resolve } from 'path';
 import { emptyDirSync, ensureDirSync } from 'fs-extra';
 import Iconv from 'iconv-lite';
 import { dirFinal } from '../lib/global.dir.js';
@@ -9,12 +9,17 @@ import { pad0 } from '../lib/Tool.js';
 
 const dirCWD = resolve(dirFinal, 'Audio2Text');
 const dirAudio = resolve(dirCWD, 'audio');
+const dirAudioSingle = resolve(dirCWD, 'audio-single');
 const dirText = resolve(dirCWD, 'text');
+
 ensureDirSync(dirAudio);
+ensureDirSync(dirAudioSingle);
 ensureDirSync(dirText);
 
 emptyDirSync(dirAudio);
+emptyDirSync(dirAudioSingle);
 emptyDirSync(dirText);
+
 
 const idSkin = I.idsSkin[0];
 const dirSource = resolve(dirFinal, `[${pad0(I.id)}${pad0(idSkin)}]${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}[${I.slot}@${C.server.region}@${C.lang}]`);
@@ -28,19 +33,34 @@ files.forEach(f => {
 	(dicts[event] || (dicts[event] = [])).push(f);
 });
 
-const cmds = ['@echo off', dirSource.substr(0, 2), `cd "${dirSource}"`];
+const cmds = ['@echo off', dirAudioSingle.substr(0, 2), `cd "${dirAudioSingle}"`];
 
-Object.entries(dicts).forEach(([event, inputs]) => {
+
+const mapsFile = [];
+
+Object.entries(dicts).forEach(([event, filesInput], indexDict) => {
 	const passes = ['ffmpeg'];
 
-	inputs.forEach(f => passes.push('-i', `"${f}"`));
+	filesInput.forEach((file, indexFile) => {
+		const fileCopy = `${String(indexDict).padStart(3, '0')}-${String(indexFile).padStart(2, '0')}${parse(file).ext}`;
+
+		copyFileSync(resolve(dirSource, file), resolve(dirAudioSingle, fileCopy));
+
+		passes.push('-i', `"${fileCopy}"`);
+
+		const textMap = `${fileCopy}|${file}`;
+
+		mapsFile.push(textMap);
+		console.log(textMap);
+	});
 
 	passes.push(
 		'-filter_complex',
-		`"${inputs.map((f, i) => `[${i}:0]`).join('')}concat=n=${inputs.length}:v=0:a=1[out]"`,
+		`"${filesInput.map((f, i) => `[${i}:0]`).join('')}concat=n=${filesInput.length}:v=0:a=1[out]"`,
 		'-map',
 		'"[out]"',
-		`%~dp0audio/${event.replace(/&/g, '')}.mp3`,
+		`%~dp0audio/j${String(indexDict).padStart(2, '0')}.mp3`,
+		// `%~dp0audio/${event.replace(/&/g, '')}.mp3`,
 	);
 
 	cmds.push(passes.join(' '));
@@ -48,4 +68,5 @@ Object.entries(dicts).forEach(([event, inputs]) => {
 
 cmds.push('pause');
 
+writeFileSync(resolve(dirAudioSingle, '@map.txt'), mapsFile.join('\n'));
 writeFileSync(resolve(dirCWD, 'concatAudio.bat'), Iconv.encode(cmds.join('\r\n'), 'GBK'));
