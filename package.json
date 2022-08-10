@@ -19,7 +19,7 @@
 		"buffer-crc32": "^0.2.13",
 		"fs-extra": "^10.1.0",
 		"https-proxy-agent": "^5.0.1",
-		"i18next": "^21.8.16",
+		"i18next": "^21.9.0",
 		"iconv-lite": "^0.6.3",
 		"moment": "^2.29.4",
 		"node-gzip": "^1.1.2",

@@ -9,7 +9,7 @@ import { crc32, pad0, toHexL } from '../../lib/Tool.js';
 import { D, en_us } from '../../lib/global.dataBase.js';
 
 
-const findFriendly = function(name, map) {
+const findFriendlyName = (name, map) => {
 	let nameFormat = name.toLowerCase().replace(/[23]d/g, '');
 	const arrTrans = [];
 
@@ -35,15 +35,25 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		mapFriendlyRaw = {};
 	}
 
+
 	const mapFriendly = {};
 
-	for(const skill of 'QWER'.split('')) {
-		mapFriendly[`${I.slot}${skill}`] = `使用:${skill.toUpperCase()}技能:`;
-	}
 
 	for(const raw in mapFriendlyRaw) {
 		mapFriendly[raw] = mapFriendlyRaw[raw];
 	}
+
+	Object.values(D).forEach(champion => {
+		Object.values(champion.skins).filter(skin => typeof skin == 'object').forEach(skin => {
+			mapFriendly[`${champion.slot}Skin${String(skin.id).padStart(2, '0')}`] = `皮肤:${skin.name}`;
+		});
+		mapFriendly[champion.slot] = `英雄:${champion.name}`;
+	});
+
+	for(const key in I.champion.spells) {
+		mapFriendly[`${I.slot}${key.toUpperCase()}`] = `${key == 'p' ? '触发' : '使用'}:${key.toUpperCase()}技能:${I.champion.spells[key]}`;
+	}
+
 
 	const eventMap = {};
 
@@ -105,7 +115,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		const arrEventList = [];
 
 		for(const [eventName, arrAudioInfo] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
-			const eventTitle = `[${findFriendly(eventName, mapFriendly)}]|${eventName}`;
+			const eventTitle = `[${findFriendlyName(eventName, mapFriendly)}]|${eventName}`;
 
 			arrEventList.push(`### ** ${eventTitle}`);
 

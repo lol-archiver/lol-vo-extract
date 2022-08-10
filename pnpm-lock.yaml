@@ -11,7 +11,7 @@ specifiers:
   eslint: ^8.21.0
   fs-extra: ^10.1.0
   https-proxy-agent: ^5.0.1
-  i18next: ^21.8.16
+  i18next: ^21.9.0
   iconv-lite: ^0.6.3
   moment: ^2.29.4
   node-gzip: ^1.1.2
@@ -29,7 +29,7 @@ dependencies:
   buffer-crc32: 0.2.13
   fs-extra: 10.1.0
   https-proxy-agent: 5.0.1
-  i18next: 21.8.16
+  i18next: 21.9.0
   iconv-lite: 0.6.3
   moment: 2.29.4
   node-gzip: 1.1.2
@@ -110,7 +110,7 @@ packages:
     resolution: {integrity: sha512-Yx3toDoqnaH1eRos47cjFAnxUNmDSVdLzmEmOiwJAaSXTr5vaw1nfJWJdaxSW0I9v5J+PbbVKz+u2yRNMuNVdg==}
     engines: {node: '>=14.18.1'}
     dependencies:
-      i18next: 21.8.16
+      i18next: 21.9.0
     dev: false
 
   /@nuogz/hades/3.5.0:
@@ -629,8 +629,8 @@ packages:
       - supports-color
     dev: false
 
-  /i18next/21.8.16:
-    resolution: {integrity: sha512-acJLCk38YMfEPjBR/1vS13SFY7rBQLs9E5m1tSRnWc9UW3f+SZszgH+NP1fZRA1+O+CdG2eLGGmuUMJW52EwzQ==}
+  /i18next/21.9.0:
+    resolution: {integrity: sha512-B+6/yd7rCpJidyPuBaEApUECx7G8Ai6+tqYhrChsY4MmQqJhG7qJ4eT6Lm1OnRhieVelEtfxh4aAQktdNVZtDA==}
     dependencies:
       '@babel/runtime': 7.18.9
     dev: false

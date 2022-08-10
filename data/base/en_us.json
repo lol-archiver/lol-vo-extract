@@ -2820,7 +2820,56 @@
 			"6": {
 				"id": 6,
 				"name": "Aether Wing Kayle",
-				"chromas": {}
+				"chromas": {
+					"51": {
+						"id": 51,
+						"name": "Aether Wing Kayle",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Aether Wing Kayle",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Aether Wing Kayle",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Aether Wing Kayle",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Aether Wing Kayle",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Aether Wing Kayle",
+						"colors": [
+							"#FF70BA",
+							"#464646"
+						]
+					}
+				}
 			},
 			"7": {
 				"id": 7,
@@ -3153,7 +3202,13 @@
 			"47": 42,
 			"48": 42,
 			"49": 42,
-			"50": 42
+			"50": 42,
+			"51": 6,
+			"52": 6,
+			"53": 6,
+			"54": 6,
+			"55": 6,
+			"56": 6
 		},
 		"spells": {
 			"p": "Divine Ascent",
@@ -12070,7 +12125,99 @@
 			"41": 36,
 			"42": 36,
 			"43": 36,
-			"44": 36
+			"44": 36,
+			"45": {
+				"id": 45,
+				"name": "Cyber Halo Janna",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Cyber Halo Janna",
+						"colors": [
+							"#FF70BA",
+							"#464646"
+						]
+					}
+				}
+			},
+			"46": {
+				"id": 46,
+				"name": "Prestige Cyber Halo Janna",
+				"chromas": {}
+			},
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45,
+			"54": 45,
+			"55": 45
 		},
 		"spells": {
 			"p": "Tailwind",
@@ -12171,6 +12318,14 @@
 						"colors": [
 							"#27211C",
 							"#27211C"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Dreadnova Gangplank",
+						"colors": [
+							"#FF70BA",
+							"#464646"
 						]
 					}
 				}
@@ -12332,7 +12487,8 @@
 			"28": 23,
 			"29": 23,
 			"30": 23,
-			"31": 23
+			"31": 23,
+			"32": 8
 		},
 		"spells": {
 			"p": "Trial by Fire",
@@ -18890,7 +19046,94 @@
 			"31": 25,
 			"32": 25,
 			"33": 25,
-			"34": 25
+			"34": 25,
+			"35": {
+				"id": 35,
+				"name": "Armored Titan Nasus",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#85827F",
+							"#85827F"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Armored Titan Nasus",
+						"colors": [
+							"#FF70BA",
+							"#464646"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35,
+			"44": 35
 		},
 		"spells": {
 			"p": "Soul Eater",
@@ -19252,11 +19495,11 @@
 			}
 		},
 		"spells": {
-			"p": "Monkey's Agility",
-			"q": "Tiger Stance",
-			"w": "Turtle Stance",
-			"e": "Bear Stance",
-			"r": "Phoenix Stance"
+			"p": "Bridge Between",
+			"q": "Wilding Claw",
+			"w": "Iron Mantle",
+			"e": "Blazing Stampede",
+			"r": "Wingborne Storm"
 		}
 	},
 	"78": {
@@ -20146,7 +20389,16 @@
 			"21": {
 				"id": 21,
 				"name": "Battle Academia Ezreal",
-				"chromas": {}
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "Battle Academia Ezreal",
+						"colors": [
+							"#ECF9F8",
+							"#6ABBEE"
+						]
+					}
+				}
 			},
 			"22": {
 				"id": 22,
@@ -20217,7 +20469,8 @@
 			"28": 25,
 			"29": 25,
 			"30": 25,
-			"31": 25
+			"31": 25,
+			"32": 21
 		},
 		"spells": {
 			"p": "Rising Spell Force",
@@ -32632,6 +32885,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Bullet Angel Kai'Sa",
+						"colors": [
+							"#FF70BA",
+							"#464646"
+						]
 					}
 				}
 			},
@@ -32907,7 +33168,8 @@
 			"43": 40,
 			"44": 40,
 			"45": 40,
-			"46": 40
+			"46": 40,
+			"47": 1
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -34547,7 +34809,94 @@
 			"17": 11,
 			"18": 11,
 			"19": 11,
-			"20": 2
+			"20": 2,
+			"21": {
+				"id": 21,
+				"name": "Strike Commander Camille",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Strike Commander Camille",
+						"colors": [
+							"#FF70BA",
+							"#464646"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21,
+			"30": 21
 		},
 		"spells": {
 			"p": "Adaptive Defenses",
@@ -37328,7 +37677,94 @@
 			"36": 31,
 			"37": 31,
 			"38": 31,
-			"39": 31
+			"39": 31,
+			"40": {
+				"id": 40,
+				"name": "Strike Paladin Lucian",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Strike Paladin Lucian",
+						"colors": [
+							"#FF70BA",
+							"#464646"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40,
+			"47": 40,
+			"48": 40,
+			"49": 40
 		},
 		"spells": {
 			"p": "Lightslinger",
@@ -44675,6 +45111,14 @@
 							"#27211C",
 							"#27211C"
 						]
+					},
+					"11": {
+						"id": 11,
+						"name": "Admiral Glasc",
+						"colors": [
+							"#FF70BA",
+							"#464646"
+						]
 					}
 				}
 			},
@@ -44685,7 +45129,8 @@
 			"6": 1,
 			"7": 1,
 			"8": 1,
-			"9": 1
+			"9": 1,
+			"11": 1
 		},
 		"spells": {
 			"p": "Leverage",
