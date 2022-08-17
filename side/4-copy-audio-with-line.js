@@ -6,8 +6,13 @@ import { C, I } from '../lib/global.js';
 import { pad0 } from '../lib/Tool.js';
 
 
+
+const safeFileName = name=> name.replace(/:/g, '：').replace(/<(.*?)>/g,'（$1）').replace(/[*[\]<>\\/]|\\n/g, '');
+
+
 const dirTarget = resolve(dirFinal, 'LineAudio');
 emptyDirSync(dirTarget);
+
 
 const idSkin = I.idsSkin[0];
 
@@ -46,26 +51,25 @@ for(const lineText of arrLineText) {
 		if(file) {
 			copyFileSync(
 				file,
-				resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]>]/g, '')}] ${line.replace(/[>]/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
+				resolve(dirTarget, `[${safeFileName(curEvent)}] ${safeFileName(line)}(${crc32}).wav`)
 			);
 		}
 		else if(crc32 == '00000000') {
 			if(curEvent.includes('选用')) {
 				copyFileSync(
 					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'pick.wav'),
-					resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]>]/g, '')}] ${line.replace(/[>]/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
+					resolve(dirTarget, `[${safeFileName(curEvent)}] ${safeFileName(line)}(${crc32}).wav`)
 				);
 			}
 			else if(curEvent.includes('禁用')) {
 				copyFileSync(
 					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'ban.wav'),
-					resolve(dirTarget, `[${curEvent.replace(/:/g, '：').replace(/[*[\]>]/g, '')}] ${line.replace(/[>]/g, '').replace(/\\n/g, '').replace(/[\\/]/g, '')}(${crc32}).wav`)
+					resolve(dirTarget, `[${safeFileName(curEvent)}] ${safeFileName(line)}(${crc32}).wav`)
 				);
 			}
 		}
 		else {
-			// eslint-disable-next-line no-console
-			console.log('can not match: ', lineText);
+			console.log('unmatch: ', lineText);
 		}
 	}
 }

@@ -181,7 +181,7 @@ const convert = async (regionGame, regionReal) => {
 
 
 	writeFileSync(
-		resolve(dirSelf, '..', 'data', 'base', `${regionReal}-new.json`),
+		resolve(dirSelf, '..', 'data', 'base', `${regionReal}.json`),
 		JSON.stringify(result, null, '\t')
 			.replace(/ · /g, '·')
 			.replace(/ {2}/g, ' ')
