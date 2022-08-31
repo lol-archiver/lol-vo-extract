@@ -14801,7 +14801,85 @@
 			"43": 36,
 			"44": 36,
 			"45": 36,
-			"46": 36
+			"46": 36,
+			"47": {
+				"id": 47,
+				"name": "Zenith Games Blitzcrank",
+				"chromas": {
+					"48": {
+						"id": 48,
+						"name": "Zenith Games Blitzcrank",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Zenith Games Blitzcrank",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Zenith Games Blitzcrank",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Zenith Games Blitzcrank",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Zenith Games Blitzcrank",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Zenith Games Blitzcrank",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Zenith Games Blitzcrank",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Zenith Games Blitzcrank",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"48": 47,
+			"49": 47,
+			"50": 47,
+			"51": 47,
+			"52": 47,
+			"53": 47,
+			"54": 47,
+			"55": 47
 		},
 		"spells": {
 			"p": "Mana Barrier",
@@ -17618,7 +17696,85 @@
 				"id": 39,
 				"name": "Prestige Nightbringer Lee Sin (2022)",
 				"chromas": {}
-			}
+			},
+			"41": {
+				"id": 41,
+				"name": "Zenith Games Lee Sin",
+				"chromas": {
+					"42": {
+						"id": 42,
+						"name": "Zenith Games Lee Sin",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Zenith Games Lee Sin",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Zenith Games Lee Sin",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Zenith Games Lee Sin",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Zenith Games Lee Sin",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Zenith Games Lee Sin",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Zenith Games Lee Sin",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Zenith Games Lee Sin",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"42": 41,
+			"43": 41,
+			"44": 41,
+			"45": 41,
+			"46": 41,
+			"47": 41,
+			"48": 41,
+			"49": 41
 		},
 		"spells": {
 			"p": "Flurry",
@@ -30663,7 +30819,85 @@
 				"id": 24,
 				"name": "Arcane Jayce",
 				"chromas": {}
-			}
+			},
+			"25": {
+				"id": 25,
+				"name": "Zenith Games Jayce",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Zenith Games Jayce",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Zenith Games Jayce",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Zenith Games Jayce",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Zenith Games Jayce",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Zenith Games Jayce",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Zenith Games Jayce",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Zenith Games Jayce",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Zenith Games Jayce",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25
 		},
 		"spells": {
 			"p": "Hextech Capacitor",
@@ -37018,7 +37252,85 @@
 					}
 				}
 			},
-			"20": 19
+			"20": 19,
+			"21": {
+				"id": 21,
+				"name": "King Viego",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "King Viego",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "King Viego",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "King Viego",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "King Viego",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "King Viego",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "King Viego",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "King Viego",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "King Viego",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21
 		},
 		"spells": {
 			"p": "Sovereign's Domination",

@@ -187,6 +187,7 @@ const convert = async (regionGame, regionReal) => {
 			.replace(/ {2}/g, ' ')
 			.replace(RegExp(Buffer.from([0xc2, 0xa0]).toString(), 'g'), ' ')
 			.replace(/ *",/g, '",')
+		+ '\n'
 	);
 };
 
