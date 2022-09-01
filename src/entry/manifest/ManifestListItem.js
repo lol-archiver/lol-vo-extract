@@ -1,4 +1,5 @@
-import { TT } from '../../../lib/global.js';
+import { T } from '../../../lib/i18n.js';
+
 
 
 /** @interface */
@@ -7,9 +8,9 @@ export default class ManifestListItem {
 	static nameItem;
 
 	/** @param {import('@nuogz/biffer').default} biffer */
-	static parse = function(biffer) { };
+	static parse = biffer => { };
 
 	constructor() {
-		if(new.target === ManifestListItem) { throw new Error(TT('error:InterfaceClassNewForbidden', { clazz: ManifestListItem.name })); }
+		if(new.target === ManifestListItem) { throw new Error(T('error:InterfaceClassNewForbidden', { clazz: ManifestListItem.name })); }
 	}
 }

@@ -1,9 +1,9 @@
 import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
 import { emptyDirSync } from 'fs-extra';
-import { dirFinal } from '../lib/global.dir.js';
+import { dirFinal } from '../lib/dir.js';
 import { C, I } from '../lib/global.js';
-import { pad0 } from '../lib/Tool.js';
+import { pad0 } from '../lib/utility.js';
 
 
 

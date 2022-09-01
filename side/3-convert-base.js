@@ -8,7 +8,7 @@ import FX, { ensureDirSync } from 'fs-extra';
 import { extractWAD } from '@nuogz/lol-wad-extract';
 
 import { C } from '../lib/global.js';
-import { dirCache, dirData } from '../lib/global.dir.js';
+import { dirCache, dirData } from '../lib/dir.js';
 import G from '../lib/global.log.js';
 
 

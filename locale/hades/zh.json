@@ -1,0 +1,101 @@
+{
+	"translation": {
+		"champion": "英雄",
+		"matchInfo": "匹配 ~[信息]",
+		"1": "1"
+	},
+	"where": {
+		"Process": "进程",
+		"Global": "全局",
+		"Main": "主线",
+		"1": "1"
+	},
+	"error": {
+		"unhandledRejection": "未处理的驳回",
+		"clientFileNotExist": "✖ ~[客户端文件]{{file,hadesValue}}不存在",
+		"InterfaceClassNewForbidden": "✖ 无法创建~[接口类]{{clazz,hadesValue}}的实例",
+		"1": "1"
+	},
+	"matchChampion": {
+		"do": "匹配~[英雄]",
+		"ok": "✔ ~[id]{{id,hadesValue}} ~[slot]{{slot,hadesValue}} ~[名称]{{name,hadesValue}}",
+		"no": "✖ ~[slot]{{slot,hadesValue}}无法匹配"
+	},
+	"matchSkin": {
+		"do": "匹配~[皮肤]",
+		"ok": "✔ ~[id]{{id,hadesValue}} ~[名称]{{name,hadesValue}}",
+		"no": "✖ ~[id]{{id,hadesValue}}无法匹配"
+	},
+	"matchLanguage": {
+		"do": "匹配~[语言]",
+		"ok": "✔ ~[语言]{{lang,hadesValue}}"
+	},
+	"matchServer": {
+		"do": "匹配~[服务器]",
+		"ok": "✔ ~[区域]{{region,hadesValue}} ~[阶段]{{statge,hadesValue}} ~[解决方案]{{solution,hadesValue}} ~[CDN]{{-cdn,hadesValue}} ~[SIE]{{-sie,hadesValue}}"
+	},
+	"initWADInfo": {
+		"do": "初始化WAD信息",
+		"item": "● ~[需要下载的文件]{{name,hadesValue}}"
+	},
+	"fetchWADs": {
+		"do": "下载和合成WAD文件",
+		"useLocal": {
+			"do": "使用已经缓存的~[清单]",
+			"ok": "✔ ~[清单]{{manifest,hadesValue}}"
+		},
+		"parseEntry": {
+			"do": "下载~[清单]",
+			"ok": "✔ 最新~[版本]{{version,hadesValue}}",
+			"item": "● ~[清单]{{name,hadesValue}}"
+		}
+	},
+	"fetchEntry": {
+		"where": "~[入口]下载器",
+		"do": "下载",
+		"ing": "◌ ~[URL]{{-url,hadesValue}}",
+		"ok": "✔ ~[URL]{{-url,hadesValue}}"
+	},
+	"fetchManifest": {
+		"where": "~[清单]下载器",
+		"do": "下载~[清单]{{id,hadesValue}}",
+		"ing": "◌ ~[URL]{{-url,hadesValue}}",
+		"cached": "✔ 发现缓存",
+		"ok": "✔ ~[大小]{{size,hadesValue}}"
+	},
+	"parseManifestList": {
+		"where": "~[清单列表]解析器",
+		"do": "解析{{item,hadesTerm}}",
+		"ing": "◌ {{-progess,hadesValue}}",
+		"ok": "✔ {{-progess,hadesValue}}"
+	},
+	"manifest": {
+		"item": {
+			"bundle": "捆包",
+			"language": "语音",
+			"fileEntry": "文件条目",
+			"manifestListEntry": "清单列表条目",
+			"directory": "文件夹"
+		}
+	},
+	"extractFile": {
+		"where": "~[文件]解压器",
+		"do": "解压 ~[文件]{{file,hadesValue}}",
+		"info": "~[捆包数量]{{size,hadesValue}}",
+		"ing": "◌ ~[捆包数量]{{size,hadesValue}}。已下载所有~[捆包], 解压中..."
+	},
+	"fetchBundle": {
+		"where": "~[捆包]下载器",
+		"do": "下载~[捆包]{{bid,hadesValue}}",
+		"doing": "下载~[捆包]{{bid,hadesValue}}{{-progess,hadesValue}}",
+		"ing": "◌ 下载中...",
+		"cached": "✔ 发现缓存",
+		"ok": "✔ 已下载",
+		"retry": {
+			"contentLengthNotMatch": "✖ content-length不匹配。剩余重试次数{{remains,hadesValue}}",
+			"etagNotMatch": "✖ etag不匹配。剩余重试次数{{remains,hadesValue}}",
+			"error": "✖ 剩余重试次数{{remains,hadesValue}}",
+			"failFinally":"✖ 失败。超过最大重试次数"
+		}
+	}
+}

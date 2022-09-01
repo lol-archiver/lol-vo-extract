@@ -12,62 +12,62 @@
 	},
 	"error": {
 		"unhandledRejection": "Unhandled Rejection",
-		"clientFileNotExist": "✖ ~[Client File]{{file,hv}} doesn't exist",
-		"InterfaceClassNewForbidden": "✖ could not create an instance of ~[Interface Class] {{clazz,hv}}",
+		"clientFileNotExist": "✖ ~[Client File]{{file}} doesn't exist",
+		"InterfaceClassNewForbidden": "✖ could not create an instance of ~[Interface Class] {{clazz}}",
 		"1": "1"
 	},
 	"matchChampion": {
 		"do": "match ~[champion]",
-		"ok": "✔ ~[id]{{id,hv}} ~[slot]{{slot,hv}} ~[name]{{name,hv}}",
-		"no": "✖ ~[slot]{{slot,hv}} not found"
+		"ok": "✔ ~[id]{{id}} ~[slot]{{slot}} ~[name]{{name}}",
+		"no": "✖ ~[slot]{{slot}} not found"
 	},
 	"matchSkin": {
 		"do": "match ~[skin]",
-		"ok": "✔ ~[id]{{id,hv}} ~[name]{{name,hv}}",
-		"no": "✖ ~[id]{{id,hv}} not found"
+		"ok": "✔ ~[id]{{id}} ~[name]{{name}}",
+		"no": "✖ ~[id]{{id}} not found"
 	},
 	"matchLanguage": {
 		"do": "match ~[language]",
-		"ok": "✔ ~[language]{{lang,hv}}"
+		"ok": "✔ ~[language]{{lang}}"
 	},
 	"matchServer": {
 		"do": "match ~[server]",
-		"ok": "✔ ~[region]{{region,hv}} ~[solution]{{solution,hv}} ~[CDN]{{-cdn,hv}} ~[SIE]{{-sie,hv}}"
+		"ok": "✔ ~[region]{{region}} ~[statge]{{statge}} ~[solution]{{solution}} ~[CDN]{{-cdn}} ~[SIE]{{-sie}}"
 	},
 	"initWADInfo": {
 		"do": "init WAD info",
-		"item": "● ~[need-fetch file]{{name,hv}}"
+		"item": "● ~[need-fetch file]{{name}}"
 	},
 	"fetchWADs": {
 		"do": "fetch and extract WAD files",
 		"useLocal": {
 			"do": "use cached ~[manifest]",
-			"ok": "✔ ~[manifest]{{manifest,hv}}"
+			"ok": "✔ ~[manifest]{{manifest}}"
 		},
 		"parseEntry": {
 			"do": "fetch ~[manifest]",
-			"ok": "✔ latest ~[version]{{version,hv}}",
-			"item": "● ~[mainfest]{{name,hv}}"
+			"ok": "✔ latest ~[version]{{version}}",
+			"item": "● ~[mainfest]{{name}}"
 		}
 	},
 	"fetchEntry": {
 		"where": "~[Entry] Fetcher",
 		"do": "fetch",
-		"ing": "◌ ~[URL]{{-url,hv}}",
-		"ok": "✔ ~[URL]{{-url,hv}}"
+		"ing": "◌ ~[URL]{{-url}}",
+		"ok": "✔ ~[URL]{{-url}}"
 	},
 	"fetchManifest": {
 		"where": "~[Manifest] Fetcher",
-		"do": "fetch ~[manifest]{{id,hv}}",
-		"ing": "◌ ~[URL]{{-url,hv}}",
+		"do": "fetch ~[manifest]{{id}}",
+		"ing": "◌ ~[URL]{{-url}}",
 		"cached": "✔ cache found",
-		"ok": "✔ ~[size]{{size,hv}}"
+		"ok": "✔ ~[size]{{size}}"
 	},
 	"parseManifestList": {
 		"where": "~[Mainfest List] Parser",
-		"do": "parse {{item,ht}}",
-		"ing": "◌ {{-progess,hv}}",
-		"ok": "✔ {{-progess,hv}}"
+		"do": "parse {{item}}",
+		"ing": "◌ {{-progess}}",
+		"ok": "✔ {{-progess}}"
 	},
 	"manifest": {
 		"item": {
@@ -80,21 +80,21 @@
 	},
 	"extractFile": {
 		"where": "~[File] Extracter",
-		"do": "extract ~[File]{{file,hv}}",
-		"info": "~[bundle size]{{size,hv}}",
-		"ing": "◌ ~[bundle size]{{size,hv}}. All ~[bundle] fetched, extracting..."
+		"do": "extract ~[File]{{file}}",
+		"info": "~[bundle size]{{size}}",
+		"ing": "◌ ~[bundle size]{{size}}. All ~[bundle] fetched, extracting..."
 	},
 	"fetchBundle": {
 		"where": "~[Bundle] Fetcher",
-		"do": "fetch ~[Bundle]{{bid,hv}}",
-		"doing": "fetch ~[Bundle]{{bid,hv}}{{-progess,hv}}",
+		"do": "fetch ~[Bundle]{{bid}}",
+		"doing": "fetch ~[Bundle]{{bid}}{{-progess}}",
 		"ing": "◌ fetch...",
 		"cached": "✔ cache found",
 		"ok": "✔ fetched",
 		"retry": {
-			"contentLengthNotMatch": "✖ content-length match failed. remains{{remains,hv}}",
-			"etagNotMatch": "✖ etag match failed. remains{{remains,hv}}",
-			"error": "✖ remains{{remains,hv}}",
+			"contentLengthNotMatch": "✖ content-length match failed. remains{{remains}}",
+			"etagNotMatch": "✖ etag match failed. remains{{remains}}",
+			"error": "✖ remains{{remains}}",
 			"failFinally":"✖ failed finally. over max times"
 		}
 	}

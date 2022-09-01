@@ -1,7 +1,7 @@
 {
-	"name": "lol-vo-extact",
+	"name": "@lol-archiver/lol-vo-extact",
 	"version": "1.0.0",
-	"description": "",
+	"description": "league of legends champion voices download, extract and rename with events",
 	"author": "Nuogz",
 	"license": "LGPL-3.0-or-later",
 	"main": "index.js",
@@ -10,16 +10,16 @@
 		"node": ">=14.18.1"
 	},
 	"dependencies": {
-		"@nuogz/biffer": "^1.2.2",
-		"@nuogz/hades": "^3.5.0",
-		"@nuogz/lol-wad-extract": "^1.2.2",
-		"@nuogz/poseidon": "^4.1.0",
+		"@lol-archiver/lol-wad-extract": "^2.0.0",
+		"@nuogz/biffer": "^2.1.0",
+		"@nuogz/i18n": "^1.2.1",
+		"@nuogz/pangu": "^2.5.1",
 		"axios": "^0.27.2",
 		"bluebird": "^3.7.2",
 		"buffer-crc32": "^0.2.13",
 		"fs-extra": "^10.1.0",
 		"https-proxy-agent": "^5.0.1",
-		"i18next": "^21.9.0",
+		"i18next": "^21.9.1",
 		"iconv-lite": "^0.6.3",
 		"moment": "^2.29.4",
 		"node-gzip": "^1.1.2",
@@ -28,6 +28,6 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^8.21.0"
+		"eslint": "^8.23.0"
 	}
 }

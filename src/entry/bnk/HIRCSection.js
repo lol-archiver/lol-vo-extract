@@ -5,7 +5,7 @@ export default class HIRCSection {
 	constructor(type) {
 		this.type = type;
 
-		this.parse = function(B) {
+		this.parse = B => {
 			if(this.type == 'BKHD') {
 				const [version, id, unknown1, unknown2] = B.unpack('LLLxxxxL');
 

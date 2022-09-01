@@ -1,8 +1,12 @@
 import { existsSync } from 'fs';
 import { parse } from 'path';
 
-import { I, G, D } from '../../lib/global.js';
+import { G } from '@nuogz/pangu';
 import Biffer from '@nuogz/biffer';
+
+import { D } from '../../lib/database.js';
+import { I } from '../../lib/info.js';
+
 
 
 export default function parseBIN(binPath, indexSkin) {

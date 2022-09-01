@@ -1,5 +1,5 @@
 # lol-vo-extract
-League of Legends champion voices download, extract with renamed events.
+League of Legends champion voices download, extract and rename with events.
 
 **Most of implementation based on [CDTB](https://github.com/CommunityDragon/CDTB). Sincerely Thanks!**
 
@@ -14,19 +14,15 @@ Some not perfect match as following:
 * Mecha Kingdoms Jax: The event `JaxRelentlessAssault` shows that the trigger of this is to activate the passive `Relentless Assault`. But in the actual game, the trigger is to use the R skill `Grandmaster's Might`.
 
 ## Requirement
-- Node.js 14.X+
-- Package which published on my private NPM BUT NOT published on `npmjs.com`.  
-	You can clone them and install them locally
-	- [@nuogz/hades](https://github.com/zheung/hades)
-	- [@nuogz/poseidon](https://github.com/zheung/poseidon)
+- Node.js 14.18.1+
 
 ## Usage
-The entry file is `index.js`. All extracted files will be stored in `_final` folder:
+The entry file is `index.js`. All extracted files will be stored in `@final` folder:
 ````batch
 cd lol-vo-extract
 node index
 ````
 
 ## Config
-- `lol-vo-extract` uses `config/config.*.json` to determine the behavior of everything. 
-- `config/config.example.*.jsonc` contains all available options and comments.
+- `lol-vo-extract` uses `config/config.*.json` to determine the behavior of everything.
+- `config/schema/*.json` contains all available options and comments.

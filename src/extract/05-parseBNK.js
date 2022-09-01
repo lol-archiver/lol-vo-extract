@@ -1,11 +1,13 @@
 import { writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import FSX from 'fs-extra';
+import { readJSONSync } from '../../lib/fs-extra.js';
 
-import { G, I } from '../../lib/global.js';
+import { G } from '@nuogz/pangu';
 import Biffer from '@nuogz/biffer';
-import { toHexL } from '../../lib/Tool.js';
+
+import { I } from '../../lib/info.js';
+import { toHexL } from '../../lib/utility.js';
 
 import HIRCSound from '../entry/bnk/HIRCSound.js';
 import HIRCEvent from '../entry/bnk/HIRCEvent.js';
@@ -15,13 +17,14 @@ import HIRCSwitchContainer from '../entry/bnk/HIRCSwitchContainer.js';
 import parseHIRCEntry from '../parser/bnk/HIRCEntry.js';
 
 
+
 let mapEventID = {};
 try {
-	mapEventID = FSX.readJSONSync(`../../data/EventIDMap/${I.slot}.json`);
+	mapEventID = readJSONSync(`../../data/EventIDMap/${I.slot}.json`);
 }
 catch(error) { void 0; }
 
-const fnv_1 = function(name) {
+const fnv_1 = name => {
 	let h = 0x811c9dc5n;
 
 	for(const c of name) {
@@ -34,7 +37,7 @@ const fnv_1 = function(name) {
 	return h;
 };
 
-const parseActionSoundEntry = function(entryParsed, arrEntryAll, HIRCID) {
+const parseActionSoundEntry = (entryParsed, arrEntryAll, HIRCID) => {
 	const result = [];
 
 	if(entryParsed instanceof HIRCSound) {
@@ -68,7 +71,7 @@ const parseActionSoundEntry = function(entryParsed, arrEntryAll, HIRCID) {
 	return result;
 };
 
-const getEventFull = function(mapHash_EventName, HIRCEventID) {
+const getEventFull = (mapHash_EventName, HIRCEventID) => {
 	let eventFull = mapHash_EventName[HIRCEventID];
 
 	while(!eventFull && mapEventID[HIRCEventID]) {

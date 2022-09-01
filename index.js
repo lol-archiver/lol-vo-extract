@@ -1,8 +1,10 @@
+import './index.env.js';
+
 import { resolve } from 'path';
 
-import { extractWAD } from '@nuogz/lol-wad-extract';
+import { extractWAD } from '@lol-archiver/lol-wad-extract';
 
-import { dirCache } from './lib/global.dir.js';
+import { dirCache } from './lib/dir.js';
 
 import initWADInfo from './src/extract/01-initFetch.js';
 import fetchWADs from './src/extract/02-fetchWads.js';

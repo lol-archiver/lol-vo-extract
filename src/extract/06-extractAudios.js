@@ -2,17 +2,21 @@ import { execFileSync } from 'child_process';
 import { existsSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-import FSX from 'fs-extra';
+import { emptyDirSync, readJSONSync } from '../../lib/fs-extra.js';
 
-import { dirCache } from '../../lib/global.dir.js';
-import { C, I, G } from '../../lib/global.js';
 import Biffer from '@nuogz/biffer';
 
+import { C, G } from '@nuogz/pangu';
 
-const isSameTakeConfig = function() {
+import { dirCache } from '../../lib/dir.js';
+import { I } from '../../lib/info.js';
+
+
+
+const isSameTakeConfig = () => {
 	let isSameTakeConfig = false;
 	try {
-		const lastTakeConfig = FSX.readJSONSync(resolve(dirCache, 'lastTakeWpk.json'));
+		const lastTakeConfig = readJSONSync(resolve(dirCache, 'lastTakeWpk.json'));
 
 		if(C.sourceWAD != 'fetch' && lastTakeConfig &&
 			lastTakeConfig.slot == I.slot &&
@@ -29,13 +33,13 @@ const isSameTakeConfig = function() {
 	return isSameTakeConfig;
 };
 
-const takeWpkRaw = function(fileWPK) {
+const takeWpkRaw = fileWPK => {
 	try {
 		G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, `extracting...`);
 
 		const bifferWPK = new Biffer(resolve(dirCache, 'extract', fileWPK));
 
-		FSX.emptyDirSync(resolve(dirCache, 'audio', fileWPK, 'wem'));
+		emptyDirSync(resolve(dirCache, 'audio', fileWPK, 'wem'));
 
 		// eslint-disable-next-line no-unused-vars
 		const [magic, version, count] = bifferWPK.unpack('4sLL');
@@ -69,7 +73,7 @@ export default function extractAudios(filesWPK) {
 	if(isSameTakeConfig()) { G.infoD('AudioExtractor', 'same extract config founded', 'skip'); return; }
 
 	for(let fileWPK of filesWPK) {
-		FSX.emptyDirSync(resolve(dirCache, 'audio', fileWPK));
+		emptyDirSync(resolve(dirCache, 'audio', fileWPK));
 
 		takeWpkRaw(fileWPK);
 

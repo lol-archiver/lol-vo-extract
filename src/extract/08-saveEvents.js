@@ -3,10 +3,12 @@ import { resolve } from 'path';
 
 import Moment from 'moment';
 
-import { dirCache } from '../../lib/global.dir.js';
-import { C, I, G } from '../../lib/global.js';
-import { crc32, pad0, toHexL } from '../../lib/Tool.js';
-import { D, en_us } from '../../lib/global.dataBase.js';
+import { C, G } from '@nuogz/pangu';
+
+import { D, en_us } from '../../lib/database.js';
+import { dirCache } from '../../lib/dir.js';
+import { I } from '../../lib/info.js';
+import { crc32, pad0, toHexL } from '../../lib/utility.js';
 
 
 const findFriendlyName = (name, map) => {

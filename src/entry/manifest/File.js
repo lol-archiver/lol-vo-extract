@@ -2,15 +2,18 @@ import { appendFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
 import Bluebird from 'bluebird';
-import FSX from 'fs-extra';
+import { ensureDirSync, removeSync } from '../../../lib/fs-extra.js';
 import { decompress } from 'node-zstandard';
 
 import Biffer from '@nuogz/biffer';
 
-import { dirCache } from '../../../lib/global.dir.js';
-import { G, TT } from '../../../lib/global.js';
+import { G } from '@nuogz/pangu';
+
+import { dirCache } from '../../../lib/dir.js';
+import { T } from '../../../lib/i18n.js';
 
 import Bundle from './Bundle.js';
+
 
 
 const pathCacheZstd = resolve(dirCache, 'zstd');
@@ -49,7 +52,7 @@ export default class File {
 
 		const parseInfo = parse(this.name);
 
-		G.info(TT('extractFile:where'), TT('extractFile:do', { file: parseInfo.base }), TT('extractFile:info', { size: setIDBundle.size }));
+		G.info(T('extractFile:where'), T('extractFile:do', { file: parseInfo.base }), T('extractFile:info', { size: setIDBundle.size }));
 
 		const bundleBuffer = {};
 
@@ -60,11 +63,11 @@ export default class File {
 		}
 		await Bluebird.map(promises, r => r, { concurrency: 45 });
 
-		G.infoU(TT('extractFile:where'), TT('extractFile:do', { file: parseInfo.base }), TT('extractFile:info', { size: setIDBundle.size }));
+		G.infoU(T('extractFile:where'), T('extractFile:do', { file: parseInfo.base }), T('extractFile:info', { size: setIDBundle.size }));
 
-		FSX.ensureDirSync(parse(pathSave).dir);
-		FSX.removeSync(pathSave);
-		FSX.removeSync(pathCacheZstd);
+		ensureDirSync(parse(pathSave).dir);
+		removeSync(pathSave);
+		removeSync(pathCacheZstd);
 
 		for(const chunk of this.fileChunks) {
 			const bid = ('0000000000000000' + chunk.idBundle.toString(16)).slice(-16).toUpperCase();
@@ -79,7 +82,7 @@ export default class File {
 		return new Promise((resolve, reject) => decompress(pathCacheZstd, pathSave, error => {
 			if(error) { reject(error); }
 
-			G.infoD(TT('extractFile:where'), TT('extractFile:do', { file: parseInfo.base }), '✔ ');
+			G.infoD(T('extractFile:where'), T('extractFile:do', { file: parseInfo.base }), '✔ ');
 
 			resolve(pathSave);
 		}));

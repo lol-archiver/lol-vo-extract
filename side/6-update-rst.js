@@ -1,8 +1,9 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-import { dirData } from '../lib/global.dir.js';
-import { rstHash } from '../lib/Tool.js';
+import { dirData } from '../lib/dir.js';
+import { rstHash } from '../lib/utility.js';
+
 
 
 writeFileSync(

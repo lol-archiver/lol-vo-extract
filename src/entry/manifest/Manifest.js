@@ -4,11 +4,12 @@ import { resolve } from 'path';
 
 import Axios from 'axios';
 
+import { C, G } from '@nuogz/pangu';
 import Biffer from '@nuogz/biffer';
 
-import { dirCache } from '../../../lib/global.dir.js';
-import { C, G, TT } from '../../../lib/global.js';
-import { toHexL, unzstd } from '../../../lib/Tool.js';
+import { dirCache } from '../../../lib/dir.js';
+import { T } from '../../../lib/i18n.js';
+import { toHexL, unzstd } from '../../../lib/utility.js';
 
 import Bundle from './Bundle.js';
 import Langauge from './Lang.js';
@@ -29,7 +30,7 @@ const parseManifestList = (biffer, Item) => {
 
 	for(let i = 1; i <= count; i++) {
 		if(i % 1000 == 0 || i == count || i == 1) {
-			G.infoU(TT('parseManifestList:where'), TT('parseManifestList:do', { item: Item.nameItem }), TT('parseManifestList:ing', { progess: `${i}/${count}` }));
+			G.infoU(T('parseManifestList:where'), T('parseManifestList:do', { item: Item.nameItem }), T('parseManifestList:ing', { progess: `${i}/${count}` }));
 		}
 
 		const pos = biffer.tell();
@@ -42,7 +43,7 @@ const parseManifestList = (biffer, Item) => {
 		biffer.seek(pos + 4);
 	}
 
-	G.infoD(TT('parseManifestList:where'), TT('parseManifestList:do', { item: Item.nameItem }), TT('parseManifestList:ok', { progess: `${count}/${count}` }));
+	G.infoD(T('parseManifestList:where'), T('parseManifestList:do', { item: Item.nameItem }), T('parseManifestList:ok', { progess: `${count}/${count}` }));
 
 	return items;
 };
@@ -53,18 +54,18 @@ export default class Manifest {
 		const file = resolve(dirCache, 'manifest', nameFile);
 
 		if(existsSync(file)) {
-			G.debugD(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:cached'));
+			G.debugD(T('fetchManifest:where'), T('fetchManifest:do', { id }), T('fetchManifest:cached'));
 
 			return readFileSync(file);
 		}
 
-		G.debugU(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:ing', { url }));
+		G.debugU(T('fetchManifest:where'), T('fetchManifest:do', { id }), T('fetchManifest:ing', { url }));
 
 		const { data: bufferManifest } = await Axios.get(url, { responseType: 'arraybuffer', proxy: C.proxy, timeout: 1000 * 60 * 4 });
 
 		writeFileSync(file, bufferManifest);
 
-		G.debugD(TT('fetchManifest:where'), TT('fetchManifest:do', { id }), TT('fetchManifest:ok', { size: bufferManifest.length }));
+		G.debugD(T('fetchManifest:where'), T('fetchManifest:do', { id }), T('fetchManifest:ok', { size: bufferManifest.length }));
 
 		return bufferManifest;
 	}

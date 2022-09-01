@@ -1,10 +1,12 @@
-import { TT } from '../../../lib/global.js';
+
+import { T } from '../../../lib/i18n.js';
 
 import ManifestListItem from './ManifestListItem.js';
 
 
+
 export default class ManifestListEntry extends ManifestListItem {
-	static nameItem = TT('manifest:item.manifestListEntry');
+	static nameItem = T('manifest:item.manifestListEntry');
 
 
 	typesKey;

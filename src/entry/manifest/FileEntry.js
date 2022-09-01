@@ -1,11 +1,12 @@
-import { TT } from '../../../lib/global.js';
+import { T } from '../../../lib/i18n.js';
 
 import ManifestListItem from './ManifestListItem.js';
 import ManifestListEntry from './ManifestListEntry.js';
 
 
+
 export default class FileEntry extends ManifestListItem {
-	static nameItem = TT('manifest:item.fileEntry');
+	static nameItem = T('manifest:item.fileEntry');
 
 	static parse(biffer) {
 		const entry = new ManifestListEntry([

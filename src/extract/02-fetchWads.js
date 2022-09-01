@@ -2,10 +2,13 @@ import { parse } from 'path';
 
 import joinURL from 'url-join';
 
-import { C, G, TT } from '../../lib/global.js';
+import { C, G } from '@nuogz/pangu';
+
+import { T } from '../../lib/i18n.js';
 
 import Entry from '../entry/manifest/Entry.js';
 import Manifest from '../entry/manifest/Manifest.js';
+
 
 
 const detectManifest_Version = entry => {
@@ -31,13 +34,13 @@ export default async function fetchWADs(wadsNeedFetch) {
 	if(C.server.manifest) {
 		urlsManifest = [joinURL(C.server.cdn, `channels/public/releases/${C.server.manifest}.manifest`)];
 
-		G.info(TT('where:Main'), TT('fetchWADs:useLocal.do'), TT('fetchWADs:useLocal.ok', { manifest: C.server.manifest }));
+		G.info(T('where:Main'), T('fetchWADs:useLocal.do'), T('fetchWADs:useLocal.ok', { manifest: C.server.manifest }));
 	}
 	else {
 		[urlsManifest, versionLatest] = detectManifest_Version(await Entry.fetch());
 
-		G.info(TT('where:Main'), TT('fetchWADs:parseEntry.do'), TT('fetchWADs:parseEntry.ok', { version: versionLatest }),
-			...urlsManifest.map(url => TT('fetchWADs:parseEntry.item', { name: parse(url).name }))
+		G.info(T('where:Main'), T('fetchWADs:parseEntry.do'), T('fetchWADs:parseEntry.ok', { version: versionLatest }),
+			...urlsManifest.map(url => T('fetchWADs:parseEntry.item', { name: parse(url).name }))
 		);
 	}
 
@@ -65,7 +68,7 @@ export default async function fetchWADs(wadsNeedFetch) {
 	}
 
 
-	G.info(TT('where:Main'), TT('fetchWADs:do'), '✔ ');
+	G.info(T('where:Main'), T('fetchWADs:do'), '✔ ');
 
 	return filesFetched;
 }

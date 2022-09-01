@@ -12,62 +12,62 @@
 	},
 	"error": {
 		"unhandledRejection": "未处理的驳回",
-		"clientFileNotExist": "✖ ~[客户端文件]{{file,hv}}不存在",
-		"InterfaceClassNewForbidden": "✖ 无法创建~[接口类]{{clazz,hv}}的实例",
+		"clientFileNotExist": "✖ ~[客户端文件]{{file}}不存在",
+		"InterfaceClassNewForbidden": "✖ 无法创建~[接口类]{{clazz}}的实例",
 		"1": "1"
 	},
 	"matchChampion": {
 		"do": "匹配~[英雄]",
-		"ok": "✔ ~[id]{{id,hv}} ~[slot]{{slot,hv}} ~[名称]{{name,hv}}",
-		"no": "✖ ~[slot]{{slot,hv}}无法匹配"
+		"ok": "✔ ~[id]{{id}} ~[slot]{{slot}} ~[名称]{{name}}",
+		"no": "✖ ~[slot]{{slot}}无法匹配"
 	},
 	"matchSkin": {
 		"do": "匹配~[皮肤]",
-		"ok": "✔ ~[id]{{id,hv}} ~[名称]{{name,hv}}",
-		"no": "✖ ~[id]{{id,hv}}无法匹配"
+		"ok": "✔ ~[id]{{id}} ~[名称]{{name}}",
+		"no": "✖ ~[id]{{id}}无法匹配"
 	},
 	"matchLanguage": {
 		"do": "匹配~[语言]",
-		"ok": "✔ ~[语言]{{lang,hv}}"
+		"ok": "✔ ~[语言]{{lang}}"
 	},
 	"matchServer": {
 		"do": "匹配~[服务器]",
-		"ok": "✔ ~[区域]{{region,hv}} ~[版本阶段]{{statge,hv}} ~[解决方案]{{solution,hv}} ~[CDN]{{-cdn,hv}} ~[SIE]{{-sie,hv}}"
+		"ok": "✔ ~[区域]{{region}} ~[版本阶段]{{statge}} ~[解决方案]{{solution}} ~[CDN]{{-cdn}} ~[SIE]{{-sie}}"
 	},
 	"initWADInfo": {
 		"do": "初始化WAD信息",
-		"item": "● ~[需要下载的文件]{{name,hv}}"
+		"item": "● ~[需要下载的文件]{{name}}"
 	},
 	"fetchWADs": {
 		"do": "下载和合成WAD文件",
 		"useLocal": {
 			"do": "使用已经缓存的~[清单]",
-			"ok": "✔ ~[清单]{{manifest,hv}}"
+			"ok": "✔ ~[清单]{{manifest}}"
 		},
 		"parseEntry": {
 			"do": "下载~[清单]",
-			"ok": "✔ 最新~[版本]{{version,hv}}",
-			"item": "● ~[清单]{{name,hv}}"
+			"ok": "✔ 最新~[版本]{{version}}",
+			"item": "● ~[清单]{{name}}"
 		}
 	},
 	"fetchEntry": {
 		"where": "~[入口]下载器",
 		"do": "下载",
-		"ing": "◌ ~[URL]{{-url,hv}}",
-		"ok": "✔ ~[URL]{{-url,hv}}"
+		"ing": "◌ ~[URL]{{-url}}",
+		"ok": "✔ ~[URL]{{-url}}"
 	},
 	"fetchManifest": {
 		"where": "~[清单]下载器",
-		"do": "下载~[清单]{{id,hv}}",
-		"ing": "◌ ~[URL]{{-url,hv}}",
+		"do": "下载~[清单]{{id}}",
+		"ing": "◌ ~[URL]{{-url}}",
 		"cached": "✔ 发现缓存",
-		"ok": "✔ ~[大小]{{size,hv}}"
+		"ok": "✔ ~[大小]{{size}}"
 	},
 	"parseManifestList": {
 		"where": "~[清单列表]解析器",
-		"do": "解析{{item,ht}}",
-		"ing": "◌ {{-progess,hv}}",
-		"ok": "✔ {{-progess,hv}}"
+		"do": "解析{{item,hadesTerm}}",
+		"ing": "◌ {{-progess}}",
+		"ok": "✔ {{-progess}}"
 	},
 	"manifest": {
 		"item": {
@@ -80,21 +80,21 @@
 	},
 	"extractFile": {
 		"where": "~[文件]解压器",
-		"do": "解压 ~[文件]{{file,hv}}",
-		"info": "~[捆包数量]{{size,hv}}",
-		"ing": "◌ ~[捆包数量]{{size,hv}}。已下载所有~[捆包], 解压中..."
+		"do": "解压 ~[文件]{{file}}",
+		"info": "~[捆包数量]{{size}}",
+		"ing": "◌ ~[捆包数量]{{size}}。已下载所有~[捆包], 解压中..."
 	},
 	"fetchBundle": {
 		"where": "~[捆包]下载器",
-		"do": "下载~[捆包]{{bid,hv}}",
-		"doing": "下载~[捆包]{{bid,hv}}{{-progess,hv}}",
+		"do": "下载~[捆包]{{bid}}",
+		"doing": "下载~[捆包]{{bid}}{{-progess}}",
 		"ing": "◌ 下载中...",
 		"cached": "✔ 发现缓存",
 		"ok": "✔ 已下载",
 		"retry": {
-			"contentLengthNotMatch": "✖ content-length不匹配。剩余重试次数{{remains,hv}}",
-			"etagNotMatch": "✖ etag不匹配。剩余重试次数{{remains,hv}}",
-			"error": "✖ 剩余重试次数{{remains,hv}}",
+			"contentLengthNotMatch": "✖ content-length不匹配。剩余重试次数{{remains}}",
+			"etagNotMatch": "✖ etag不匹配。剩余重试次数{{remains}}",
+			"error": "✖ 剩余重试次数{{remains}}",
 			"failFinally":"✖ 失败。超过最大重试次数"
 		}
 	}

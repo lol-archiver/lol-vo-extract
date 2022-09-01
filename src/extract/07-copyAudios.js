@@ -1,12 +1,15 @@
 import { appendFileSync, copyFileSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import FSX from 'fs-extra';
+import { ensureDirSync } from '../../lib/fs-extra.js';
 import Moment from 'moment';
 
-import { dirCache, dirFinal } from '../../lib/global.dir.js';
-import { C, I, G } from '../../lib/global.js';
-import { crc32, pad0, toHexL } from '../../lib/Tool.js';
+import { C, G } from '@nuogz/pangu';
+
+import { dirCache, dirFinal } from '../../lib/dir.js';
+import { I } from '../../lib/info.js';
+import { crc32, pad0, toHexL } from '../../lib/utility.js';
+
 
 
 export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
@@ -61,7 +64,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 
 				const pathFolder = resolve(dirFinal, `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.server.region}@${C.lang}]`);
 
-				FSX.ensureDirSync(pathFolder);
+				ensureDirSync(pathFolder);
 
 				const eventsText = events.join('&');
 				const audioText = `[${nameSkin == '[Bad]' ? `${audioID}][${audioIDHex}` : audioIDHex}][${crcWEM}].${C.format}`;

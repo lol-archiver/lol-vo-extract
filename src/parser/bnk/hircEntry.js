@@ -1,4 +1,4 @@
-import { G } from '../../../lib/global.js';
+import { G } from '@nuogz/pangu';
 import Biffer from '@nuogz/biffer';
 
 import HIRCSound from '../../entry/bnk/HIRCSound.js';
@@ -6,6 +6,7 @@ import HIRCAction from '../../entry/bnk/HIRCAction.js';
 import HIRCEvent from '../../entry/bnk/HIRCEvent.js';
 import HIRCPool from '../../entry/bnk/HIRCPool.js';
 import HIRCSwitchContainer from '../../entry/bnk/HIRCSwitchContainer.js';
+
 
 
 export default function parseHIRCEntry(type, id, B) {

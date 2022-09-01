@@ -5,9 +5,12 @@ import { join } from 'path';
 import Axios from 'axios';
 import joinURL from 'url-join';
 
-import { C, G, TT } from '../../../lib/global.js';
+import { C, G } from '@nuogz/pangu';
+
+import { T } from '../../../lib/i18n.js';
 
 import ManifestListItem from './ManifestListItem.js';
+
 
 
 class Chunk {
@@ -37,12 +40,12 @@ export default class Bundle extends ManifestListItem {
 		let bufferBundle;
 		if(existsSync(pathBundle)) {
 			++counter.now;
-			// G.infoU(TT('fetchBundle:where'), TT('fetchBundle:doing', { bid, progess: `${++counter.now}/${counter.max}` }), TT('fetchBundle:cached'));
+			// G.infoU(T('fetchBundle:where'), T('fetchBundle:doing', { bid, progess: `${++counter.now}/${counter.max}` }), T('fetchBundle:cached'));
 
 			bufferBundle = readFileSync(pathBundle);
 		}
 		else {
-			G.infoU(TT('fetchBundle:where'), TT('fetchBundle:doing', { bid, progess: `${counter.now + 1}/${counter.max}` }), TT('fetchBundle:ing'));
+			G.infoU(T('fetchBundle:where'), T('fetchBundle:doing', { bid, progess: `${counter.now + 1}/${counter.max}` }), T('fetchBundle:ing'));
 
 			const bundleURL = joinURL(cdn, `channels/public/bundles/${bid}.bundle`);
 
@@ -54,14 +57,14 @@ export default class Bundle extends ManifestListItem {
 					const { data, headers } = await Axios.get(bundleURL, { responseType: 'arraybuffer', proxy: C.server.proxy, timeout: 1000 * 60 * 4 });
 
 					if(data.length != headers['content-length']) {
-						G.errorU(TT('fetchBundle:where'), TT('fetchBundle:do', { bid }), TT('fetchBundle:retry.contentLengthNotMatch', { remains: timesFetched }));
+						G.errorU(T('fetchBundle:where'), T('fetchBundle:do', { bid }), T('fetchBundle:retry.contentLengthNotMatch', { remains: timesFetched }));
 					}
 					else {
 						const hash = createHash('md5');
 						hash.update(data);
 
 						if(headers.etag.toLowerCase() != `"${hash.digest('hex')}"`.toLowerCase()) {
-							G.errorU(TT('fetchBundle:where'), TT('fetchBundle:do', { bid }), TT('fetchBundle:retry.etagNotMatch', { remains: timesFetched }));
+							G.errorU(T('fetchBundle:where'), T('fetchBundle:do', { bid }), T('fetchBundle:retry.etagNotMatch', { remains: timesFetched }));
 						}
 						else {
 							passFetched = true;
@@ -71,19 +74,19 @@ export default class Bundle extends ManifestListItem {
 					if(passFetched) {
 						bufferBundle = data;
 
-						G.infoU(TT('fetchBundle:where'), TT('fetchBundle:doing', { bid, progess: `${++counter.now}/${counter.max}` }), TT('fetchBundle:ok'));
+						G.infoU(T('fetchBundle:where'), T('fetchBundle:doing', { bid, progess: `${++counter.now}/${counter.max}` }), T('fetchBundle:ok'));
 						writeFileSync(pathBundle, bufferBundle);
 
 						break;
 					}
 				}
 				catch(error) {
-					G.errorU(TT('fetchBundle:where'), TT('fetchBundle:do', { bid }), error, TT('fetchBundle:retry.error', { remains: timesFetched }));
+					G.errorU(T('fetchBundle:where'), T('fetchBundle:do', { bid }), error, T('fetchBundle:retry.error', { remains: timesFetched }));
 				}
 			}
 
 			if(!passFetched) {
-				throw G.error(TT('fetchBundle:where'), TT('fetchBundle:do', { bid }), `failed finally. over max times`);
+				throw G.error(T('fetchBundle:where'), T('fetchBundle:do', { bid }), `failed finally. over max times`);
 			}
 		}
 
@@ -93,7 +96,7 @@ export default class Bundle extends ManifestListItem {
 
 	static Chunk = Chunk;
 
-	static nameItem = TT('manifest:item.bundle');
+	static nameItem = T('manifest:item.bundle');
 
 	static parse(biffer) {
 		const [, sizeHeader, id] = biffer.unpack('llQ');

@@ -2,7 +2,7 @@ import AS from 'assert';
 import { readFileSync, writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import { dirData } from '../lib/global.dir.js';
+import { dirData } from '../lib/dir.js';
 import { C, G } from '../lib/global.js';
 import Biffer from '@nuogz/biffer';
 

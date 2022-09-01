@@ -1,10 +1,12 @@
-import { TT } from '../../../lib/global.js';
+
+import { T } from '../../../lib/i18n.js';
 
 import ManifestListItem from './ManifestListItem.js';
 
 
+
 export default class Langauge extends ManifestListItem {
-	static nameItem = TT('manifest:item.language');
+	static nameItem = T('manifest:item.language');
 
 	static parse(biffer) {
 		biffer.skip(4); // skip offset table offset

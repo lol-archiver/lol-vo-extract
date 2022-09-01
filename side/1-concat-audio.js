@@ -2,9 +2,9 @@ import { copyFileSync, readdirSync, writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 import { emptyDirSync, ensureDirSync } from 'fs-extra';
 import Iconv from 'iconv-lite';
-import { dirFinal } from '../lib/global.dir.js';
+import { dirFinal } from '../lib/dir.js';
 import { C, I } from '../lib/global.js';
-import { pad0 } from '../lib/Tool.js';
+import { pad0 } from '../lib/utility.js';
 
 
 const dirCWD = resolve(dirFinal, 'Audio2Text');
