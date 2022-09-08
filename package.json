@@ -4,11 +4,17 @@
 	"description": "league of legends champion voices download, extract and rename with events",
 	"author": "Nuogz",
 	"license": "LGPL-3.0-or-later",
-	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "github:lol-archiver/lol-vo-extract"
+	},
+	"private": true,
 	"type": "module",
+	"typesSource": [],
 	"engines": {
 		"node": ">=14.18.1"
 	},
+	"main": "./index.js",
 	"dependencies": {
 		"@lol-archiver/lol-wad-extract": "^2.0.0",
 		"@nuogz/biffer": "^2.1.0",
