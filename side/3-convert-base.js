@@ -1,15 +1,16 @@
+import '../index.env.js';
+
 import AS from 'assert';
 import { readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
-
 import { fileURLToPath } from 'url';
-import FX, { ensureDirSync } from 'fs-extra';
 
-import { extractWAD } from '@nuogz/lol-wad-extract';
+import { ensureDirSync, readJSONSync } from '../lib/fs-extra.js';
 
-import { C } from '../lib/global.js';
+import { C, G } from '@nuogz/pangu';
+import { extractWAD } from '@lol-archiver/lol-wad-extract';
+
 import { dirCache, dirData } from '../lib/dir.js';
-import G from '../lib/global.log.js';
 
 
 
@@ -26,7 +27,7 @@ const dirCacheSelf = resolve(dirCache, 'convert-base');
 ensureDirSync(dirCacheSelf);
 
 
-const datasFixAll = FX.readJSONSync(resolve(dirData, 'base-fix.json'));
+const datasFixAll = readJSONSync(resolve(dirData, 'base-fix.json'));
 
 
 const convert = async (regionGame, regionReal) => {

@@ -32,8 +32,5 @@
 			]
 		}
 	},
-	"required": [
-		"name",
-		"level"
-	]
+	"required": []
 }

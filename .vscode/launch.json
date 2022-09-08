@@ -2,92 +2,92 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"type": "pwa-node",
+			"type": "node",
 			"request": "launch",
 			"name": "Extract Audio and Voice",
+			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/index.js",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
+			"program": "${workspaceFolder}/index.js",
 		},
 		{
-			"type": "pwa-node",
+			"type": "node",
 			"request": "launch",
 			"name": "0: Test Local",
+			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/0-local.js",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
+			"program": "${workspaceFolder}/side/0-local.js",
 		},
 		{
-			"type": "pwa-node",
+			"type": "node",
 			"request": "launch",
 			"name": "1: Concat Audio",
+			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/1-concat-audio.js",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
+			"program": "${workspaceFolder}/side/1-concat-audio.js",
 		},
 		{
-			"type": "pwa-node",
+			"type": "node",
 			"request": "launch",
 			"name": "2: Concat Raw Line",
+			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/2-concat-raw-line.js",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
+			"program": "${workspaceFolder}/side/2-concat-raw-line.js",
 		},
 		{
-			"type": "pwa-node",
+			"type": "node",
 			"request": "launch",
 			"name": "3: Convert Data Base",
+			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/3-convert-base.js",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
+			"program": "${workspaceFolder}/side/3-convert-base.js",
 		},
 		{
-			"type": "pwa-node",
+			"type": "node",
 			"request": "launch",
 			"name": "4: Copy Audio with Line",
+			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/4-copy-audio-with-line.js",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
+			"program": "${workspaceFolder}/side/4-copy-audio-with-line.js",
 		},
 		{
-			"type": "pwa-node",
+			"type": "node",
 			"request": "launch",
 			"name": "5: Convert RST",
+			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/5-convert-rst.js",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
+			"program": "${workspaceFolder}/side/5-convert-rst.js",
 		},
 		{
-			"type": "pwa-node",
+			"type": "node",
 			"request": "launch",
 			"name": "6: Update RST",
+			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/side/6-update-rst.js",
 			"runtimeExecutable": "node.exe",
-			"console": "integratedTerminal"
+			"program": "${workspaceFolder}/side/6-update-rst.js",
 		},
 	]
 }

@@ -4,14 +4,13 @@ specifiers:
   '@lol-archiver/lol-wad-extract': ^2.0.0
   '@nuogz/biffer': ^2.1.0
   '@nuogz/i18n': ^1.2.1
-  '@nuogz/pangu': ^2.5.1
+  '@nuogz/pangu': ^3.1.2
   axios: ^0.27.2
   bluebird: ^3.7.2
   buffer-crc32: ^0.2.13
   eslint: ^8.23.0
   fs-extra: ^10.1.0
   https-proxy-agent: ^5.0.1
-  i18next: ^21.9.1
   iconv-lite: ^0.6.3
   moment: ^2.29.4
   node-gzip: ^1.1.2
@@ -23,13 +22,12 @@ dependencies:
   '@lol-archiver/lol-wad-extract': 2.0.0
   '@nuogz/biffer': 2.1.0
   '@nuogz/i18n': 1.2.1
-  '@nuogz/pangu': 2.5.1
+  '@nuogz/pangu': 3.1.2
   axios: 0.27.2
   bluebird: 3.7.2
   buffer-crc32: 0.2.13
   fs-extra: 10.1.0
   https-proxy-agent: 5.0.1
-  i18next: 21.9.1
   iconv-lite: 0.6.3
   moment: 2.29.4
   node-gzip: 1.1.2
@@ -42,8 +40,8 @@ devDependencies:
 
 packages:
 
-  /@babel/runtime/7.18.9:
-    resolution: {integrity: sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==}
+  /@babel/runtime/7.19.0:
+    resolution: {integrity: sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
@@ -128,8 +126,8 @@ packages:
       '@nuogz/i18n': 1.2.1
     dev: false
 
-  /@nuogz/hades/5.0.5:
-    resolution: {integrity: sha512-4/fVbM8iA8Svij+hL5JIoIk5OWmFuAmPUvL5tnlYtzvhWIREQZfnxKl4TnnF+QG7R/5T6WiReo4GWRRQgL4Tbg==}
+  /@nuogz/hades/5.2.0:
+    resolution: {integrity: sha512-Zr0KOQWJm8QzWBB14nTbSt0zwxq0/2+MTNw/ejxlmTocPiXsP6vWa0xCWQxncJh094F1GYd2CBtQmhdCxomLcA==}
     engines: {node: '>=14.18.1'}
     dependencies:
       '@nuogz/i18n': 1.2.1
@@ -146,7 +144,7 @@ packages:
     resolution: {integrity: sha512-iCc9Z/2/qrMfTSpdNUzveAryr7lzw99qfTZ6pOtURTUw1KqeO+0f+EZZqfAkjaM0Vy9ZfhR0KCWs60IfhSVtSQ==}
     engines: {node: '>=14.18.1'}
     dependencies:
-      '@nuogz/utility': 1.3.3
+      '@nuogz/utility': 1.4.0
       i18next: 21.9.1
     dev: false
 
@@ -155,16 +153,14 @@ packages:
     engines: {node: '>=14.18.1'}
     dev: false
 
-  /@nuogz/pangu/2.5.1:
-    resolution: {integrity: sha512-lFy+qwmbzcKLirkzUpC4xkYBucrkou9n5ZLBevdWcDFltuofzv6FIg2jpvcwjImQbCisqcYjBPGrc8H2uTPN7Q==}
+  /@nuogz/pangu/3.1.2:
+    resolution: {integrity: sha512-tGOVSraYHfLov01WHNJrG3ccERp3VUwdXR4+CRVVZSXUrH8rvqQ3r+3VLZgOre4wq5wwyJLueY78bTHgJReXlA==}
     engines: {node: '>=14.18.1'}
-    hasBin: true
     dependencies:
-      '@nuogz/hades': 5.0.5
+      '@nuogz/hades': 5.2.0
       '@nuogz/poseidon': 7.0.3
-      chalk: 5.0.1
+      '@nuogz/utility': 1.4.0
       commander: 9.4.0
-      fs-extra: 10.1.0
       moment: 2.29.4
     transitivePeerDependencies:
       - supports-color
@@ -178,8 +174,8 @@ packages:
       escape-string-regexp: 5.0.0
     dev: false
 
-  /@nuogz/utility/1.3.3:
-    resolution: {integrity: sha512-Cqf5FjaJczUke6OAQpBs+6HP+iiQRILy8tGav0ood1ofx+aBK2ihHDu8gyW0/+XSnB7owyiFeQUb/ASDReovsg==}
+  /@nuogz/utility/1.4.0:
+    resolution: {integrity: sha512-gCZk7tqXrafkrFh3jYwzZX4sKV6obs7NYdG219rzThJRQis+ZgGGHREafmY+zjqqHyEutFL6XL71UzkIkH0ADQ==}
     engines: {node: '>=14.18.1'}
     dependencies:
       '@nuogz/json-bigint': 1.0.0
@@ -689,7 +685,7 @@ packages:
   /i18next/21.9.1:
     resolution: {integrity: sha512-ITbDrAjbRR73spZAiu6+ex5WNlHRr1mY+acDi2ioTHuUiviJqSz269Le1xHAf0QaQ6GgIHResUhQNcxGwa/PhA==}
     dependencies:
-      '@babel/runtime': 7.18.9
+      '@babel/runtime': 7.19.0
     dev: false
 
   /iconv-lite/0.6.3:
