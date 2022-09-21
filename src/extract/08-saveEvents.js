@@ -11,50 +11,73 @@ import { I } from '../../lib/info.js';
 import { crc32, pad0, toHexL } from '../../lib/utility.js';
 
 
-const findFriendlyName = (name, map) => {
+
+const keysUseless = [
+	'_cast',
+	'cast',
+];
+
+const matchFriendlyName = (name, mapsFriendly) => {
 	let nameFormat = name.toLowerCase().replace(/[23]d/g, '');
-	const arrTrans = [];
 
-	for(const raw in map) {
-		if(nameFormat.includes(raw.toLowerCase())) {
-			nameFormat = nameFormat.replace(raw.toLowerCase(), '');
-			if(map[raw].trim()) { arrTrans.push(map[raw].trim()); }
+	const trans = mapsFriendly.reduce((acc, [key, nameFriendly]) => {
+		if(nameFormat.includes(key)) {
+			nameFormat = nameFormat.replace(key, '');
+
+			acc.push(nameFriendly);
 		}
-	}
 
-	return arrTrans.join(':');
+		return acc;
+	}, []).filter(t => t);
+
+	if(nameFormat &&
+		!keysUseless.reduce((acc, key) => acc + nameFormat.includes(key), 0)
+	) { trans.push(''); }
+
+	return trans.join(':');
 };
 
 export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 	G.info('EventSaver', 'save event');
 
-	let mapFriendlyRaw;
+
+	/** @type {Array<[string,string]>} */
+	const mapsFriendly = [];
+
+	for(let i = 1; i < 8; i++) {
+		mapsFriendly.push([I.slot + 'BasicAttack' + i, '普攻']);
+		mapsFriendly.push([I.slot + 'CritAttack' + i, '暴击']);
+	}
+	mapsFriendly.push([I.slot + 'BasicAttack', '普攻']);
+	mapsFriendly.push([I.slot + 'CritAttack', '暴击']);
+
+	for(const key_ in I.champion.spells) {
+		const key = key_.toUpperCase();
+		const textUsage = key == 'P' ? '触发' : '使用';
+		const textSkill = `${textUsage}:${key}技能:${I.champion.spells[key_]}`;
+
+		mapsFriendly.push([`${I.slot}${key}`, textSkill]);
+		mapsFriendly.push([`Spell${key}`, textSkill]);
+	}
 
 	try {
-		mapFriendlyRaw = (await import(`../../data/FriendlyName/${C.lang}.js`)).default;
+		mapsFriendly.push(...(await import(`../../data/FriendlyName/${C.lang}.js`)).default);
 	}
-	catch(error) {
-		mapFriendlyRaw = {};
-	}
+	catch(error) { void 0; }
 
-
-	const mapFriendly = {};
-
-
-	for(const raw in mapFriendlyRaw) {
-		mapFriendly[raw] = mapFriendlyRaw[raw];
-	}
 
 	Object.values(D).forEach(champion => {
 		Object.values(champion.skins).filter(skin => typeof skin == 'object').forEach(skin => {
-			mapFriendly[`${champion.slot}Skin${String(skin.id).padStart(2, '0')}`] = `皮肤:${skin.name}`;
+			mapsFriendly.push([`${champion.slot}Skin${String(skin.id).padStart(2, '0')}`, `皮肤:${skin.name}`]);
 		});
-		mapFriendly[champion.slot] = `英雄:${champion.name}`;
+
+		mapsFriendly.push([champion.slot, `英雄:${champion.name}`]);
 	});
 
-	for(const key in I.champion.spells) {
-		mapFriendly[`${I.slot}${key.toUpperCase()}`] = `${key == 'p' ? '触发' : '使用'}:${key.toUpperCase()}技能:${I.champion.spells[key]}`;
-	}
+	mapsFriendly.forEach(map => (
+		map[0] = map[0].trim().toLowerCase(),
+		map[1] = map[1].trim()
+	));
 
 
 	const eventMap = {};
@@ -117,7 +140,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		const arrEventList = [];
 
 		for(const [eventName, arrAudioInfo] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
-			const eventTitle = `[${findFriendlyName(eventName, mapFriendly)}]|${eventName}`;
+			const eventTitle = `[${matchFriendlyName(eventName, mapsFriendly)}]|${eventName}`;
 
 			arrEventList.push(`### ** ${eventTitle}`);
 

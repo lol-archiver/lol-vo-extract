@@ -14,7 +14,11 @@ import { I } from '../../lib/info.js';
 
 
 const isSameTakeConfig = () => {
+	if(C.forceExtract) { return true; }
+
+
 	let isSameTakeConfig = false;
+
 	try {
 		const lastTakeConfig = readJSONSync(resolve(dirCache, 'lastTakeWpk.json'));
 
@@ -26,9 +30,8 @@ const isSameTakeConfig = () => {
 		) {
 			isSameTakeConfig = true;
 		}
-	} catch(error) {
-		isSameTakeConfig = false;
 	}
+	catch(error) { isSameTakeConfig = false; }
 
 	return isSameTakeConfig;
 };
