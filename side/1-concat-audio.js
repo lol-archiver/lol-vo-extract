@@ -1,10 +1,17 @@
+import '../index.env.js';
+
 import { copyFileSync, readdirSync, writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
+
 import { emptyDirSync, ensureDirSync } from 'fs-extra';
 import Iconv from 'iconv-lite';
+
+import { C } from '@nuogz/pangu';
+
 import { dirFinal } from '../lib/dir.js';
-import { C, I } from '../lib/global.js';
 import { pad0 } from '../lib/utility.js';
+import { I } from '../lib/info.js';
+
 
 
 const dirCWD = resolve(dirFinal, 'Audio2Text');

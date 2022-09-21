@@ -222,11 +222,11 @@
 			"30": 22,
 			"31": {
 				"id": 31,
-				"name": "",
+				"name": "Fright Night Annie",
 				"chromas": {
 					"32": {
 						"id": 32,
-						"name": "",
+						"name": "Fright Night Annie",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -234,7 +234,7 @@
 					},
 					"33": {
 						"id": 33,
-						"name": "",
+						"name": "Fright Night Annie",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -242,7 +242,7 @@
 					},
 					"34": {
 						"id": 34,
-						"name": "",
+						"name": "Fright Night Annie",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -250,7 +250,7 @@
 					},
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Fright Night Annie",
 						"colors": [
 							"#6ABBEE",
 							"#6ABBEE"
@@ -258,7 +258,7 @@
 					},
 					"36": {
 						"id": 36,
-						"name": "",
+						"name": "Fright Night Annie",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -266,7 +266,7 @@
 					},
 					"37": {
 						"id": 37,
-						"name": "",
+						"name": "Fright Night Annie",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -274,7 +274,7 @@
 					},
 					"38": {
 						"id": 38,
-						"name": "",
+						"name": "Fright Night Annie",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -282,7 +282,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Fright Night Annie",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -773,6 +773,14 @@
 							"#5F432B",
 							"#5F432B"
 						]
+					},
+					"29": {
+						"id": 29,
+						"name": "",
+						"colors": [
+							"#0027F8",
+							"#252739"
+						]
 					}
 				}
 			},
@@ -910,7 +918,8 @@
 			"24": 19,
 			"25": 19,
 			"26": 19,
-			"27": 19
+			"27": 19,
+			"29": 6
 		},
 		"spells": {
 			"p": "Colossal Smash",
@@ -1789,11 +1798,11 @@
 			"22": 15,
 			"23": {
 				"id": 23,
-				"name": "",
+				"name": "Fright Night Urgot",
 				"chromas": {
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Fright Night Urgot",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -1801,7 +1810,7 @@
 					},
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Fright Night Urgot",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -1809,7 +1818,7 @@
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Fright Night Urgot",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -1817,7 +1826,7 @@
 					},
 					"27": {
 						"id": 27,
-						"name": "",
+						"name": "Fright Night Urgot",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -1825,7 +1834,7 @@
 					},
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Fright Night Urgot",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -1833,7 +1842,7 @@
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Fright Night Urgot",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -1841,7 +1850,7 @@
 					},
 					"30": {
 						"id": 30,
-						"name": "",
+						"name": "Fright Night Urgot",
 						"colors": [
 							"#9C68D7",
 							"#9C68D7"
@@ -1849,7 +1858,7 @@
 					},
 					"31": {
 						"id": 31,
-						"name": "",
+						"name": "Fright Night Urgot",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -3796,7 +3805,99 @@
 			"48": 42,
 			"49": 42,
 			"50": 42,
-			"51": 42
+			"51": 42,
+			"52": {
+				"id": 52,
+				"name": "Spirit Blossom Master Yi",
+				"chromas": {
+					"80": {
+						"id": 80,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"82": {
+						"id": 82,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"83": {
+						"id": 83,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"84": {
+						"id": 84,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"85": {
+						"id": 85,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"86": {
+						"id": 86,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"87": {
+						"id": 87,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"88": {
+						"id": 88,
+						"name": "Spirit Blossom Master Yi",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"53": {
+				"id": 53,
+				"name": "",
+				"chromas": {}
+			},
+			"80": 52,
+			"81": 52,
+			"82": 52,
+			"83": 52,
+			"84": 52,
+			"85": 52,
+			"86": 52,
+			"87": 52,
+			"88": 52
 		},
 		"spells": {
 			"p": "Double Strike",
@@ -5288,7 +5389,94 @@
 			"23": 18,
 			"24": 18,
 			"25": 18,
-			"26": 18
+			"26": 18,
+			"27": {
+				"id": 27,
+				"name": "Spirit Blossom Soraka",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Spirit Blossom Soraka",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27,
+			"36": 27
 		},
 		"spells": {
 			"p": "Salvation",
@@ -6108,7 +6296,94 @@
 			"47": 41,
 			"48": 41,
 			"49": 41,
-			"50": 41
+			"50": 41,
+			"51": {
+				"id": 51,
+				"name": "Spirit Blossom Tristana",
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Spirit Blossom Tristana",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"52": 51,
+			"53": 51,
+			"54": 51,
+			"55": 51,
+			"56": 51,
+			"57": 51,
+			"58": 51,
+			"59": 51,
+			"60": 51
 		},
 		"spells": {
 			"p": "Draw a Bead",
@@ -8872,7 +9147,94 @@
 				"id": 31,
 				"name": "Prestige K/DA Evelynn (2022)",
 				"chromas": {}
-			}
+			},
+			"32": {
+				"id": 32,
+				"name": "Spirit Blossom Evelynn",
+				"chromas": {
+					"33": {
+						"id": 33,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Spirit Blossom Evelynn",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"33": 32,
+			"34": 32,
+			"35": 32,
+			"36": 32,
+			"37": 32,
+			"38": 32,
+			"39": 32,
+			"40": 32,
+			"41": 32
 		},
 		"spells": {
 			"p": "Demon Shade",
@@ -14076,11 +14438,11 @@
 			"11": 6,
 			"12": {
 				"id": 12,
-				"name": "",
+				"name": "Fright Night Trundle",
 				"chromas": {
 					"13": {
 						"id": 13,
-						"name": "",
+						"name": "Fright Night Trundle",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -14088,7 +14450,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "",
+						"name": "Fright Night Trundle",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -14096,7 +14458,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "",
+						"name": "Fright Night Trundle",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -14104,7 +14466,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "",
+						"name": "Fright Night Trundle",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -14112,7 +14474,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Fright Night Trundle",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -14120,7 +14482,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Fright Night Trundle",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -14128,7 +14490,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Fright Night Trundle",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -14136,7 +14498,7 @@
 					},
 					"20": {
 						"id": 20,
-						"name": "",
+						"name": "Fright Night Trundle",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -14323,6 +14685,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"22": {
+						"id": 22,
+						"name": "",
+						"colors": [
+							"#6ECFCC",
+							"#ECF9F8"
+						]
 					}
 				}
 			},
@@ -14333,7 +14703,8 @@
 			"17": 12,
 			"18": 12,
 			"19": 12,
-			"20": 12
+			"20": 12,
+			"22": 12
 		},
 		"spells": {
 			"p": "Ravenous Flock",
@@ -20606,11 +20977,11 @@
 			"35": 25,
 			"36": {
 				"id": 36,
-				"name": "Ashen Knight Pantheon",
+				"name": "Ashen Conqueror Pantheon",
 				"chromas": {
 					"37": {
 						"id": 37,
-						"name": "Ashen Knight Pantheon",
+						"name": "Ashen Conqueror Pantheon",
 						"colors": [
 							"#9D0600",
 							"#2B263F"
@@ -21484,7 +21855,94 @@
 			"26": 21,
 			"27": 21,
 			"28": 21,
-			"29": 21
+			"29": 21,
+			"30": {
+				"id": 30,
+				"name": "Spirit Blossom Yorick",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Spirit Blossom Yorick",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30,
+			"39": 30
 		},
 		"spells": {
 			"p": "Shepherd of Souls",
@@ -27807,11 +28265,11 @@
 			"17": 9,
 			"18": {
 				"id": 18,
-				"name": "",
+				"name": "Fright Night Nautilus",
 				"chromas": {
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Fright Night Nautilus",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -27819,7 +28277,7 @@
 					},
 					"20": {
 						"id": 20,
-						"name": "",
+						"name": "Fright Night Nautilus",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -27827,7 +28285,7 @@
 					},
 					"21": {
 						"id": 21,
-						"name": "",
+						"name": "Fright Night Nautilus",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -27835,7 +28293,7 @@
 					},
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Fright Night Nautilus",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -27843,7 +28301,7 @@
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Fright Night Nautilus",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -27851,7 +28309,7 @@
 					},
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Fright Night Nautilus",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -27859,7 +28317,7 @@
 					},
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Fright Night Nautilus",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -27867,7 +28325,7 @@
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Fright Night Nautilus",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -29898,11 +30356,11 @@
 			"38": 29,
 			"39": {
 				"id": 39,
-				"name": "",
+				"name": "Fright Night Draven",
 				"chromas": {
 					"40": {
 						"id": 40,
-						"name": "",
+						"name": "Fright Night Draven",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -29910,7 +30368,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "",
+						"name": "Fright Night Draven",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -29918,7 +30376,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "",
+						"name": "Fright Night Draven",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -29926,7 +30384,7 @@
 					},
 					"43": {
 						"id": 43,
-						"name": "",
+						"name": "Fright Night Draven",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -29934,7 +30392,7 @@
 					},
 					"44": {
 						"id": 44,
-						"name": "",
+						"name": "Fright Night Draven",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -29942,7 +30400,7 @@
 					},
 					"45": {
 						"id": 45,
-						"name": "",
+						"name": "Fright Night Draven",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -29950,7 +30408,7 @@
 					},
 					"46": {
 						"id": 46,
-						"name": "",
+						"name": "Fright Night Draven",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -29958,7 +30416,7 @@
 					},
 					"47": {
 						"id": 47,
-						"name": "",
+						"name": "Fright Night Draven",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -30995,7 +31453,94 @@
 			"39": 33,
 			"40": 33,
 			"41": 33,
-			"42": 33
+			"42": 33,
+			"43": {
+				"id": 43,
+				"name": "Spirit Blossom Darius",
+				"chromas": {
+					"44": {
+						"id": 44,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Spirit Blossom Darius",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"44": 43,
+			"45": 43,
+			"46": 43,
+			"47": 43,
+			"48": 43,
+			"49": 43,
+			"50": 43,
+			"51": 43,
+			"52": 43
 		},
 		"spells": {
 			"p": "Hemorrhage",
@@ -32563,7 +33108,94 @@
 			"40": 6,
 			"41": 6,
 			"42": 6,
-			"43": 6
+			"43": 6,
+			"44": {
+				"id": 44,
+				"name": "Spirit Blossom Syndra",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Spirit Blossom Syndra",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44,
+			"53": 44
 		},
 		"spells": {
 			"p": "Transcendent",
@@ -33312,6 +33944,14 @@
 							"#DF9117",
 							"#DF9117"
 						]
+					},
+					"35": {
+						"id": 35,
+						"name": "",
+						"colors": [
+							"#6ECFCC",
+							"#ECF9F8"
+						]
 					}
 				}
 			},
@@ -33418,7 +34058,8 @@
 			"31": 16,
 			"32": 16,
 			"33": 16,
-			"34": 16
+			"34": 16,
+			"35": 7
 		},
 		"spells": {
 			"p": "Garden of Thorns",
@@ -35690,6 +36331,14 @@
 							"#ECF9F8",
 							"#ECF9F8"
 						]
+					},
+					"19": {
+						"id": 19,
+						"name": "",
+						"colors": [
+							"#6ECFCC",
+							"#ECF9F8"
+						]
 					}
 				}
 			},
@@ -35700,7 +36349,8 @@
 			"15": 10,
 			"16": 10,
 			"17": 10,
-			"18": 10
+			"18": 10,
+			"19": 10
 		},
 		"spells": {
 			"p": "Dirty Fighting",
@@ -40691,11 +41341,11 @@
 			"13": 5,
 			"14": {
 				"id": 14,
-				"name": "",
+				"name": "Worlds 2022 Azir",
 				"chromas": {
 					"15": {
 						"id": 15,
-						"name": "",
+						"name": "Worlds 2022 Azir",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -40703,7 +41353,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "",
+						"name": "Worlds 2022 Azir",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -40711,7 +41361,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Worlds 2022 Azir",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -40719,7 +41369,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Worlds 2022 Azir",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -43666,11 +44316,11 @@
 			"33": 24,
 			"34": {
 				"id": 34,
-				"name": "",
+				"name": "Ashen Slayer Sylas",
 				"chromas": {
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Ashen Slayer Sylas",
 						"colors": [
 							"#9D0606",
 							"#2B263F"
@@ -44049,7 +44699,94 @@
 					}
 				}
 			},
-			"19": 18
+			"19": 18,
+			"20": {
+				"id": 20,
+				"name": "Spirit Blossom Aphelios",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Spirit Blossom Aphelios",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20,
+			"29": 20
 		},
 		"spells": {
 			"p": "The Hitman and the Seer",
@@ -45409,7 +46146,67 @@
 			"34": 19,
 			"35": 19,
 			"36": 19,
-			"37": 19
+			"37": 19,
+			"38": {
+				"id": 38,
+				"name": "Spirit Blossom Sett",
+				"chromas": {
+					"39": {
+						"id": 39,
+						"name": "Spirit Blossom Sett",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Spirit Blossom Sett",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Spirit Blossom Sett",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Spirit Blossom Sett",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Spirit Blossom Sett",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Spirit Blossom Sett",
+						"colors": [
+							"#0C0C0F",
+							"#B2D1E4"
+						]
+					}
+				}
+			},
+			"39": 38,
+			"40": 38,
+			"41": 38,
+			"42": 38,
+			"43": 38,
+			"44": 38
 		},
 		"spells": {
 			"p": "Pit Grit",
@@ -45891,11 +46688,11 @@
 			"9": 1,
 			"10": {
 				"id": 10,
-				"name": "",
+				"name": "Fright Night Renata Glasc",
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "",
+						"name": "Fright Night Renata Glasc",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -45903,7 +46700,7 @@
 					},
 					"13": {
 						"id": 13,
-						"name": "",
+						"name": "Fright Night Renata Glasc",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -45911,7 +46708,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "",
+						"name": "Fright Night Renata Glasc",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -45919,7 +46716,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "",
+						"name": "Fright Night Renata Glasc",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -45927,7 +46724,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "",
+						"name": "Fright Night Renata Glasc",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -45935,7 +46732,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Fright Night Renata Glasc",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -45943,7 +46740,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Fright Night Renata Glasc",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -45951,7 +46748,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Fright Night Renata Glasc",
 						"colors": [
 							"#27211C",
 							"#27211C"

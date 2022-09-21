@@ -1,13 +1,19 @@
+import '../index.env.js';
+
 import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
+
 import { emptyDirSync } from 'fs-extra';
+
+import { C } from '@nuogz/pangu';
+
 import { dirFinal } from '../lib/dir.js';
-import { C, I } from '../lib/global.js';
 import { pad0 } from '../lib/utility.js';
+import { I } from '../lib/info.js';
 
 
 
-const safeFileName = name=> name.replace(/:/g, '：').replace(/<(.*?)>/g,'（$1）').replace(/[*[\]<>\\/]|\\n/g, '');
+const safeFileName = name => name.replace(/:/g, '：').replace(/<(.*?)>/g, '（$1）').replace(/[*[\]<>\\/]|\\n/g, '');
 
 
 const dirTarget = resolve(dirFinal, 'LineAudio');
