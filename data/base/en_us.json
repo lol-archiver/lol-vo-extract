@@ -776,7 +776,7 @@
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Birdio",
 						"colors": [
 							"#0027F8",
 							"#252739"
@@ -2254,7 +2254,85 @@
 			"41": 35,
 			"42": 35,
 			"43": 35,
-			"44": 35
+			"44": 35,
+			"45": {
+				"id": 45,
+				"name": "Bewitching LeBlanc",
+				"chromas": {
+					"46": {
+						"id": 46,
+						"name": "Bewitching LeBlanc",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Bewitching LeBlanc",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Bewitching LeBlanc",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Bewitching LeBlanc",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Bewitching LeBlanc",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Bewitching LeBlanc",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Bewitching LeBlanc",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Bewitching LeBlanc",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"46": 45,
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45
 		},
 		"spells": {
 			"p": "Mirror Image",
@@ -3886,7 +3964,7 @@
 			},
 			"53": {
 				"id": 53,
-				"name": "",
+				"name": "Prestige Spirit Blossom Master Yi",
 				"chromas": {}
 			},
 			"80": 52,
@@ -8110,7 +8188,94 @@
 				"id": 21,
 				"name": "Prestige Conqueror Jax",
 				"chromas": {}
-			}
+			},
+			"22": {
+				"id": 22,
+				"name": "Empyrean Jax",
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "",
+						"colors": [
+							"#FF655B",
+							"#95E237"
+						]
+					}
+				}
+			},
+			"23": 22,
+			"24": 22,
+			"25": 22,
+			"26": 22,
+			"27": 22,
+			"28": 22,
+			"29": 22,
+			"30": 22,
+			"31": 22
 		},
 		"spells": {
 			"p": "Relentless Assault",
@@ -10948,7 +11113,85 @@
 			"33": 27,
 			"34": 27,
 			"35": 27,
-			"36": 27
+			"36": 27,
+			"37": {
+				"id": 37,
+				"name": "Bewitching Batnivia",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Bewitching Batnivia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Bewitching Batnivia",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Bewitching Batnivia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Bewitching Batnivia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Bewitching Batnivia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Bewitching Batnivia",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Bewitching Batnivia",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Bewitching Batnivia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37
 		},
 		"spells": {
 			"p": "Rebirth",
@@ -14688,7 +14931,7 @@
 					},
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Crystal Rose Swain",
 						"colors": [
 							"#6ECFCC",
 							"#ECF9F8"
@@ -19181,7 +19424,85 @@
 			"24": 18,
 			"25": 18,
 			"26": 18,
-			"27": 18
+			"27": 18,
+			"28": {
+				"id": 28,
+				"name": "Bewitching Cassiopeia",
+				"chromas": {
+					"29": {
+						"id": 29,
+						"name": "Bewitching Cassiopeia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Bewitching Cassiopeia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Bewitching Cassiopeia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Bewitching Cassiopeia",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Bewitching Cassiopeia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Bewitching Cassiopeia",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Bewitching Cassiopeia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Bewitching Cassiopeia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"29": 28,
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28
 		},
 		"spells": {
 			"p": "Serpentine Grace",
@@ -23709,7 +24030,12 @@
 			"34": 28,
 			"35": 28,
 			"36": 28,
-			"37": 28
+			"37": 28,
+			"38": {
+				"id": 38,
+				"name": "Three Honors Malzahar",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Void Shift",
@@ -25709,7 +26035,94 @@
 				"name": "Prestige Porcelain Lux",
 				"chromas": {}
 			},
-			"41": 29
+			"41": 29,
+			"42": {
+				"id": 42,
+				"name": "Empyrean Lux",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "",
+						"colors": [
+							"#FF655B",
+							"#95E237"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42,
+			"48": 42,
+			"49": 42,
+			"50": 42,
+			"51": 42
 		},
 		"spells": {
 			"p": "Illumination",
@@ -33947,7 +34360,7 @@
 					},
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Crystal Rose Zyra",
 						"colors": [
 							"#6ECFCC",
 							"#ECF9F8"
@@ -35040,7 +35453,94 @@
 			"10": 7,
 			"11": 7,
 			"12": 7,
-			"13": 7
+			"13": 7,
+			"14": {
+				"id": 14,
+				"name": "Empyrean Zac",
+				"chromas": {
+					"15": {
+						"id": 15,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "",
+						"colors": [
+							"#FF655B",
+							"#95E237"
+						]
+					}
+				}
+			},
+			"15": 14,
+			"16": 14,
+			"17": 14,
+			"18": 14,
+			"19": 14,
+			"20": 14,
+			"21": 14,
+			"22": 14,
+			"23": 14
 		},
 		"spells": {
 			"p": "Cell Division",
@@ -36334,7 +36834,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Crystal Rose Akshan",
 						"colors": [
 							"#6ECFCC",
 							"#ECF9F8"
@@ -37035,7 +37535,94 @@
 					}
 				}
 			},
-			"24": 23
+			"24": 23,
+			"25": {
+				"id": 25,
+				"name": "Empyrean Jhin",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "",
+						"colors": [
+							"#C1F2D7",
+							"#C1F2D7"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "",
+						"colors": [
+							"#FF655B",
+							"#95E237"
+						]
+					}
+				}
+			},
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25,
+			"34": 25,
+			"35": 25
 		},
 		"spells": {
 			"p": "Whisper",
@@ -38512,6 +39099,14 @@
 							"#DF9117",
 							"#DF9117"
 						]
+					},
+					"37": {
+						"id": 37,
+						"name": "High Noon Senna",
+						"colors": [
+							"#CFC0A7",
+							"#59C3F2"
+						]
 					}
 				}
 			},
@@ -38689,7 +39284,86 @@
 			"32": 26,
 			"33": 26,
 			"34": 26,
-			"35": 26
+			"35": 26,
+			"36": {
+				"id": 36,
+				"name": "Bewitching Senna",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Bewitching Senna",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Bewitching Senna",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Bewitching Senna",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Bewitching Senna",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Bewitching Senna",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Bewitching Senna",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Bewitching Senna",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Bewitching Senna",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"37": 10,
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36,
+			"45": 36
 		},
 		"spells": {
 			"p": "Absolution",
@@ -39442,7 +40116,94 @@
 			"34": 31,
 			"35": 31,
 			"36": 31,
-			"37": 31
+			"37": 31,
+			"38": {
+				"id": 38,
+				"name": "Empyrean Zed",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "",
+						"colors": [
+							"#FF655B",
+							"#95E237"
+						]
+					}
+				}
+			},
+			"40": 38,
+			"41": 38,
+			"42": 38,
+			"43": 38,
+			"44": 38,
+			"45": 38,
+			"46": 38,
+			"47": 38,
+			"48": 38
 		},
 		"spells": {
 			"p": "Contempt for the Weak",
@@ -44523,7 +45284,85 @@
 				"id": 21,
 				"name": "Prestige Star Guardian Neeko (2022)",
 				"chromas": {}
-			}
+			},
+			"22": {
+				"id": 22,
+				"name": "Bewitching Neeko",
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "Bewitching Neeko",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Bewitching Neeko",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Bewitching Neeko",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Bewitching Neeko",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Bewitching Neeko",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Bewitching Neeko",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Bewitching Neeko",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Bewitching Neeko",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"23": 22,
+			"24": 22,
+			"25": 22,
+			"26": 22,
+			"27": 22,
+			"28": 22,
+			"29": 22,
+			"30": 22
 		},
 		"spells": {
 			"p": "Inherent Glamour",
@@ -45386,7 +46225,67 @@
 					}
 				}
 			},
-			"46": 44
+			"45": {
+				"id": 45,
+				"name": "Empyrean Pyke",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "",
+						"colors": [
+							"#FF655B",
+							"#95E237"
+						]
+					}
+				}
+			},
+			"46": 44,
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45
 		},
 		"spells": {
 			"p": "Gift of the Drowned Ones",
@@ -45487,7 +46386,94 @@
 			"6": 1,
 			"7": 1,
 			"8": 1,
-			"9": 1
+			"9": 1,
+			"10": {
+				"id": 10,
+				"name": "Empyrean Vex",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "",
+						"colors": [
+							"#FF655B",
+							"#95E237"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10,
+			"19": 10
 		},
 		"spells": {
 			"p": "Doom 'n Gloom",
@@ -46163,32 +47149,32 @@
 						"id": 40,
 						"name": "Spirit Blossom Sett",
 						"colors": [
-							"#2DA130",
-							"#2DA130"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"41": {
 						"id": 41,
 						"name": "Spirit Blossom Sett",
 						"colors": [
-							"#E58BA5",
-							"#E58BA5"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"42": {
 						"id": 42,
 						"name": "Spirit Blossom Sett",
 						"colors": [
-							"#9C68D7",
-							"#9C68D7"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"43": {
 						"id": 43,
 						"name": "Spirit Blossom Sett",
 						"colors": [
-							"#2756CE",
-							"#2756CE"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"44": {
@@ -46883,6 +47869,86 @@
 			"w": "Jubilant Veil",
 			"e": "Slipstream",
 			"r": "Apotheosis"
+		}
+	},
+	"897": {
+		"id": 897,
+		"name": "K'Sante",
+		"title": "the Pride of Nazumah",
+		"slot": "KSante",
+		"roles": [
+			"tank",
+			"fighter"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "K'Sante",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Empyrean K'Sante",
+				"chromas": {
+					"3": {
+						"id": 3,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "",
+						"colors": [
+							"#FF655B",
+							"#95E237"
+						]
+					}
+				}
+			},
+			"2": {
+				"id": 2,
+				"name": "Prestige Empyrean K'Sante",
+				"chromas": {}
+			},
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1
+		},
+		"spells": {
+			"p": "Dauntless Instinct",
+			"q": "Ntofo Strikes",
+			"w": "Path Maker",
+			"e": "Footwork",
+			"r": "All Out"
 		}
 	}
 }

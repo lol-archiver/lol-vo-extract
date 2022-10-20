@@ -16,7 +16,7 @@ import { I } from '../lib/info.js';
 const safeFileName = name => name.replace(/:/g, '：').replace(/<(.*?)>/g, '（$1）').replace(/[*[\]<>\\/]|\\n/g, '');
 
 
-const dirTarget = resolve(dirFinal, 'LineAudio');
+const dirTarget = resolve(dirFinal, '@line-audio');
 emptyDirSync(dirTarget);
 
 

@@ -14,7 +14,7 @@ import { I } from '../lib/info.js';
 
 
 
-const dirCWD = resolve(dirFinal, 'Audio2Text');
+const dirCWD = resolve(dirFinal, '@audio-text');
 const dirAudio = resolve(dirCWD, 'audio');
 const dirAudioSingle = resolve(dirCWD, 'audio-single');
 const dirText = resolve(dirCWD, 'text');
@@ -76,4 +76,4 @@ Object.entries(dicts).forEach(([event, filesInput], indexDict) => {
 cmds.push('pause');
 
 writeFileSync(resolve(dirAudioSingle, '@map.txt'), mapsFile.join('\n'));
-writeFileSync(resolve(dirCWD, 'concatAudio.bat'), Iconv.encode(cmds.join('\r\n'), 'GBK'));
+writeFileSync(resolve(dirCWD, 'concat-audio.bat'), Iconv.encode(cmds.join('\r\n'), 'GBK'));

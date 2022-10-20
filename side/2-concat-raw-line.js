@@ -4,7 +4,7 @@ import { ensureDirSync } from 'fs-extra';
 import { dirFinal } from '../lib/dir.js';
 
 
-const dirCWD = resolve(dirFinal, 'Audio2Text');
+const dirCWD = resolve(dirFinal, '@audio-text');
 const dirText = resolve(dirCWD, 'text');
 ensureDirSync(dirText);
 
