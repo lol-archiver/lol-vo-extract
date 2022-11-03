@@ -13,7 +13,7 @@ import { I } from '../lib/info.js';
 
 
 
-const safeFileName = name => name.replace(/:/g, '：').replace(/<(.*?)>/g, '（$1）').replace(/[*[\]<>\\/]|\\n/g, '');
+const safeFileName = name => name.replace(/:/g, '：').replace(/<(.*?)>/g, '（$1）').replace(/["*[\]<>\\/]|\\n/g, '');
 
 
 const dirTarget = resolve(dirFinal, '@line-audio');
@@ -75,7 +75,7 @@ for(const lineText of arrLineText) {
 			}
 		}
 		else {
-			console.log('unmatch: ', lineText);
+			globalThis.console.log('unmatch: ', lineText);
 		}
 	}
 }
