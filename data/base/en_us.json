@@ -1203,7 +1203,7 @@
 				"chromas": {
 					"37": {
 						"id": 37,
-						"name": "",
+						"name": "Space Groove Twisted Fate",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -1211,7 +1211,7 @@
 					},
 					"38": {
 						"id": 38,
-						"name": "",
+						"name": "Space Groove Twisted Fate",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -1219,7 +1219,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Space Groove Twisted Fate",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -1227,7 +1227,7 @@
 					},
 					"40": {
 						"id": 40,
-						"name": "",
+						"name": "Space Groove Twisted Fate",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -1235,7 +1235,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "",
+						"name": "Space Groove Twisted Fate",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -1243,7 +1243,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "",
+						"name": "Space Groove Twisted Fate",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -1251,7 +1251,7 @@
 					},
 					"43": {
 						"id": 43,
-						"name": "",
+						"name": "Space Groove Twisted Fate",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -1259,7 +1259,7 @@
 					},
 					"44": {
 						"id": 44,
-						"name": "",
+						"name": "Space Groove Twisted Fate",
 						"colors": [
 							"#C1F2FF",
 							"#C1F2FF"
@@ -6031,7 +6031,7 @@
 				"chromas": {
 					"48": {
 						"id": 48,
-						"name": "",
+						"name": "Space Groove Teemo",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -6039,7 +6039,7 @@
 					},
 					"49": {
 						"id": 49,
-						"name": "",
+						"name": "Space Groove Teemo",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -6047,7 +6047,7 @@
 					},
 					"50": {
 						"id": 50,
-						"name": "",
+						"name": "Space Groove Teemo",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -6055,7 +6055,7 @@
 					},
 					"51": {
 						"id": 51,
-						"name": "",
+						"name": "Space Groove Teemo",
 						"colors": [
 							"#B6E084",
 							"#B6E084"
@@ -6063,7 +6063,7 @@
 					},
 					"52": {
 						"id": 52,
-						"name": "",
+						"name": "Space Groove Teemo",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -6071,7 +6071,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "",
+						"name": "Space Groove Teemo",
 						"colors": [
 							"#C1F2FF",
 							"#C1F2FF"
@@ -14296,7 +14296,7 @@
 				"chromas": {
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Space Groove Taric",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -14304,7 +14304,7 @@
 					},
 					"20": {
 						"id": 20,
-						"name": "",
+						"name": "Space Groove Taric",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -14312,7 +14312,7 @@
 					},
 					"21": {
 						"id": 21,
-						"name": "",
+						"name": "Space Groove Taric",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -14320,7 +14320,7 @@
 					},
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Space Groove Taric",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -14328,7 +14328,7 @@
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Space Groove Taric",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -14336,7 +14336,7 @@
 					},
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Space Groove Taric",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -14344,7 +14344,7 @@
 					},
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Space Groove Taric",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -14352,7 +14352,7 @@
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Space Groove Taric",
 						"colors": [
 							"#C1F2FF",
 							"#C1F2FF"
@@ -21220,7 +21220,7 @@
 				"chromas": {
 					"21": {
 						"id": 21,
-						"name": "",
+						"name": "Space Groove Gragas",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -21228,7 +21228,7 @@
 					},
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Space Groove Gragas",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -21236,7 +21236,7 @@
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Space Groove Gragas",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -21244,7 +21244,7 @@
 					},
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Space Groove Gragas",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -21252,7 +21252,7 @@
 					},
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Space Groove Gragas",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -21260,7 +21260,7 @@
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Space Groove Gragas",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -21268,7 +21268,7 @@
 					},
 					"27": {
 						"id": 27,
-						"name": "",
+						"name": "Space Groove Gragas",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -21276,7 +21276,7 @@
 					},
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Space Groove Gragas",
 						"colors": [
 							"#C1F2FF",
 							"#C1F2FF"
@@ -29560,7 +29560,7 @@
 				"chromas": {
 					"37": {
 						"id": 37,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#26854C",
 							"#26854C"
@@ -29568,7 +29568,7 @@
 					},
 					"38": {
 						"id": 38,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#65337F",
 							"#65337F"
@@ -29576,7 +29576,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#9D228D",
 							"#9D228D"
@@ -29584,7 +29584,7 @@
 					},
 					"40": {
 						"id": 40,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#B31316",
 							"#B31316"
@@ -29592,7 +29592,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#1D62C8",
 							"#1D62C8"
@@ -29600,7 +29600,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#26854C",
 							"#7BDDA9"
@@ -29608,7 +29608,7 @@
 					},
 					"43": {
 						"id": 43,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#65337F",
 							"#6F587F"
@@ -29616,7 +29616,7 @@
 					},
 					"44": {
 						"id": 44,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#9D228D",
 							"#9D5B92"
@@ -29624,7 +29624,7 @@
 					},
 					"45": {
 						"id": 45,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#B31316",
 							"#B35556"
@@ -29632,7 +29632,7 @@
 					},
 					"46": {
 						"id": 46,
-						"name": "",
+						"name": "Victorious Sejuani",
 						"colors": [
 							"#1D62C8",
 							"#638BC8"
@@ -32932,7 +32932,7 @@
 				"chromas": {
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Space Groove Lissandra",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -32940,7 +32940,7 @@
 					},
 					"36": {
 						"id": 36,
-						"name": "",
+						"name": "Space Groove Lissandra",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -32948,7 +32948,7 @@
 					},
 					"37": {
 						"id": 37,
-						"name": "",
+						"name": "Space Groove Lissandra",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -32956,7 +32956,7 @@
 					},
 					"38": {
 						"id": 38,
-						"name": "",
+						"name": "Space Groove Lissandra",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -32964,7 +32964,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Space Groove Lissandra",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -32972,7 +32972,7 @@
 					},
 					"40": {
 						"id": 40,
-						"name": "",
+						"name": "Space Groove Lissandra",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -32980,7 +32980,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "",
+						"name": "Space Groove Lissandra",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -32988,7 +32988,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "",
+						"name": "Space Groove Lissandra",
 						"colors": [
 							"#C1F2FF",
 							"#C1F2FF"
@@ -40435,7 +40435,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Galaxy Slayer Zed",
 						"colors": [
 							"#E31970",
 							"#1E50BD"
@@ -42461,7 +42461,7 @@
 				"chromas": {
 					"43": {
 						"id": 43,
-						"name": "",
+						"name": "Space Groove Nami",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -42469,7 +42469,7 @@
 					},
 					"44": {
 						"id": 44,
-						"name": "",
+						"name": "Space Groove Nami",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -42477,7 +42477,7 @@
 					},
 					"45": {
 						"id": 45,
-						"name": "",
+						"name": "Space Groove Nami",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -42485,7 +42485,7 @@
 					},
 					"46": {
 						"id": 46,
-						"name": "",
+						"name": "Space Groove Nami",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -42493,7 +42493,7 @@
 					},
 					"47": {
 						"id": 47,
-						"name": "",
+						"name": "Space Groove Nami",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -42501,7 +42501,7 @@
 					},
 					"48": {
 						"id": 48,
-						"name": "",
+						"name": "Space Groove Nami",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -42509,7 +42509,7 @@
 					},
 					"49": {
 						"id": 49,
-						"name": "",
+						"name": "Space Groove Nami",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -42517,7 +42517,7 @@
 					},
 					"50": {
 						"id": 50,
-						"name": "",
+						"name": "Space Groove Nami",
 						"colors": [
 							"#C1F2FF",
 							"#C1F2FF"
@@ -45336,7 +45336,7 @@
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "",
+						"name": "Space Groove Ornn",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -45344,7 +45344,7 @@
 					},
 					"13": {
 						"id": 13,
-						"name": "",
+						"name": "Space Groove Ornn",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -45352,7 +45352,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "",
+						"name": "Space Groove Ornn",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -45360,7 +45360,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "",
+						"name": "Space Groove Ornn",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -45368,7 +45368,7 @@
 					},
 					"16": {
 						"id": 16,
-						"name": "",
+						"name": "Space Groove Ornn",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -45376,7 +45376,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Space Groove Ornn",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -45384,7 +45384,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Space Groove Ornn",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -45392,7 +45392,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Space Groove Ornn",
 						"colors": [
 							"#C1F2FF",
 							"#C1F2FF"
