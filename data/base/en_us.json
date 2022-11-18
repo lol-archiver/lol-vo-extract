@@ -6921,7 +6921,99 @@
 			"41": 35,
 			"42": 35,
 			"43": 35,
-			"44": 35
+			"44": 35,
+			"45": {
+				"id": 45,
+				"name": "Winterblessed Warwick",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#85827F",
+							"#85827F"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Winterblessed Warwick",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"46": {
+				"id": 46,
+				"name": "Prestige Winterblessed Warwick",
+				"chromas": {}
+			},
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45,
+			"54": 45,
+			"55": 45
 		},
 		"spells": {
 			"p": "Eternal Hunger",
@@ -9041,7 +9133,94 @@
 			"10": 6,
 			"11": 6,
 			"12": 6,
-			"13": 6
+			"13": 6,
+			"14": {
+				"id": 14,
+				"name": "Winterblessed Zilean",
+				"chromas": {
+					"15": {
+						"id": 15,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Winterblessed Zilean",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"15": 14,
+			"16": 14,
+			"17": 14,
+			"18": 14,
+			"19": 14,
+			"20": 14,
+			"21": 14,
+			"22": 14,
+			"23": 14
 		},
 		"spells": {
 			"p": "Time In A Bottle",
@@ -11603,7 +11782,94 @@
 			"29": 23,
 			"30": 23,
 			"31": 23,
-			"32": 23
+			"32": 23,
+			"33": {
+				"id": 33,
+				"name": "Winterblessed Shaco",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Winterblessed Shaco",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33,
+			"42": 33
 		},
 		"spells": {
 			"p": "Backstab",
@@ -15163,7 +15429,94 @@
 			"18": 12,
 			"19": 12,
 			"20": 12,
-			"22": 12
+			"21": {
+				"id": 21,
+				"name": "Winterblessed Swain",
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Winterblessed Swain",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"22": 12,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21,
+			"30": 21,
+			"31": 21
 		},
 		"spells": {
 			"p": "Ravenous Flock",
@@ -22206,7 +22559,22 @@
 			"38": 32,
 			"39": 32,
 			"40": 32,
-			"41": 32
+			"41": 32,
+			"42": {
+				"id": 42,
+				"name": "Ashen Graveknight Mordekaiser",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Ashen Graveknight Mordekaiser",
+						"colors": [
+							"#9D0606",
+							"#2B263F"
+						]
+					}
+				}
+			},
+			"43": 42
 		},
 		"spells": {
 			"p": "Darkness Rise",
@@ -33406,7 +33774,67 @@
 			"43": 37,
 			"44": 37,
 			"45": 37,
-			"46": 37
+			"46": 37,
+			"47": {
+				"id": 47,
+				"name": "Winterblessed Diana",
+				"chromas": {
+					"48": {
+						"id": 48,
+						"name": "Winterblessed Diana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Winterblessed Diana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Winterblessed Diana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Winterblessed Diana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Winterblessed Diana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Winterblessed Diana",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"48": 47,
+			"49": 47,
+			"50": 47,
+			"51": 47,
+			"52": 47,
+			"53": 47
 		},
 		"spells": {
 			"p": "Moonsilver Blade",
@@ -34630,7 +35058,94 @@
 					}
 				}
 			},
-			"21": 20
+			"21": 20,
+			"22": {
+				"id": 22,
+				"name": "Winterblessed Zoe",
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Winterblessed Zoe",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"23": 22,
+			"24": 22,
+			"25": 22,
+			"26": 22,
+			"27": 22,
+			"28": 22,
+			"29": 22,
+			"30": 22,
+			"31": 22
 		},
 		"spells": {
 			"p": "More Sparkles!",
