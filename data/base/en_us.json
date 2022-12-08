@@ -919,7 +919,94 @@
 			"25": 19,
 			"26": 19,
 			"27": 19,
-			"29": 6
+			"28": {
+				"id": 28,
+				"name": "Mythmaker Galio",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Mythmaker Galio",
+						"colors": [
+							"#181818",
+							"#DDAA0E"
+						]
+					}
+				}
+			},
+			"29": 6,
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28,
+			"37": 28,
+			"38": 28
 		},
 		"spells": {
 			"p": "Colossal Smash",
@@ -5337,7 +5424,99 @@
 			"46": 43,
 			"47": 43,
 			"48": 43,
-			"49": 43
+			"49": 43,
+			"50": {
+				"id": 50,
+				"name": "Mythmaker Sivir",
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Mythmaker Sivir",
+						"colors": [
+							"#181818",
+							"#DDAA0E"
+						]
+					}
+				}
+			},
+			"51": {
+				"id": 51,
+				"name": "Prestige Mythmaker Sivir",
+				"chromas": {}
+			},
+			"52": 50,
+			"53": 50,
+			"54": 50,
+			"55": 50,
+			"56": 50,
+			"57": 50,
+			"58": 50,
+			"59": 50,
+			"60": 50
 		},
 		"spells": {
 			"p": "Fleet of Foot",
@@ -8039,7 +8218,94 @@
 			"48": 43,
 			"49": 43,
 			"50": 43,
-			"51": 43
+			"51": 43,
+			"52": {
+				"id": 52,
+				"name": "Lunar Empress Ashe",
+				"chromas": {
+					"53": {
+						"id": 53,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Lunar Empress Ashe",
+						"colors": [
+							"#3766D5",
+							"#C6EB6E"
+						]
+					}
+				}
+			},
+			"53": 52,
+			"54": 52,
+			"55": 52,
+			"56": 52,
+			"57": 52,
+			"58": 52,
+			"59": 52,
+			"60": 52,
+			"61": 52
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -8512,7 +8778,7 @@
 			"q": "Leap Strike",
 			"w": "Empower",
 			"e": "Counter Strike",
-			"r": "Grandmaster's Might"
+			"r": "Master-At-Arms"
 		}
 	},
 	"25": {
@@ -12913,7 +13179,67 @@
 				"id": 36,
 				"name": "Prestige PROJECT: Irelia (2022)",
 				"chromas": {}
-			}
+			},
+			"37": {
+				"id": 37,
+				"name": "Mythmaker Irelia",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Mythmaker Irelia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Mythmaker Irelia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Mythmaker Irelia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Mythmaker Irelia",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Mythmaker Irelia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Mythmaker Irelia",
+						"colors": [
+							"#181818",
+							"#DDAA0E"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37
 		},
 		"spells": {
 			"p": "Ionian Fervor",
@@ -16600,7 +16926,94 @@
 			"33": 27,
 			"34": 27,
 			"35": 27,
-			"36": 27
+			"36": 27,
+			"37": {
+				"id": 37,
+				"name": "Lunar Guardian Malphite",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Lunar Guardian Malphite",
+						"colors": [
+							"#3766D5",
+							"#C6EB6E"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37,
+			"46": 37
 		},
 		"spells": {
 			"p": "Granite Shield",
@@ -19099,6 +19512,14 @@
 							"#110A20",
 							"#5C1111"
 						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Storm Dragon Lee Sin",
+						"colors": [
+							"#E3CB3E",
+							"#BD3030"
+						]
 					}
 				}
 			},
@@ -19191,7 +19612,8 @@
 			"46": 41,
 			"47": 41,
 			"48": 41,
-			"49": 41
+			"49": 41,
+			"50": 31
 		},
 		"spells": {
 			"p": "Flurry",
@@ -23956,7 +24378,94 @@
 			"29": 24,
 			"30": 24,
 			"31": 24,
-			"32": 24
+			"32": 24,
+			"33": {
+				"id": 33,
+				"name": "Mythmaker Garen",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Mythmaker Garen",
+						"colors": [
+							"#181818",
+							"#DDAA0E"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33,
+			"42": 33
 		},
 		"spells": {
 			"p": "Perseverance",
@@ -32266,7 +32775,94 @@
 			"65": 60,
 			"66": 60,
 			"67": 60,
-			"68": 60
+			"68": 60,
+			"69": {
+				"id": 69,
+				"name": "Lunar Guardian Kha'Zix",
+				"chromas": {
+					"70": {
+						"id": 70,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"77": {
+						"id": 77,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Lunar Guardian Kha'Zix",
+						"colors": [
+							"#3766D5",
+							"#C6EB6E"
+						]
+					}
+				}
+			},
+			"70": 69,
+			"71": 69,
+			"72": 69,
+			"73": 69,
+			"74": 69,
+			"75": 69,
+			"76": 69,
+			"77": 69,
+			"78": 69
 		},
 		"spells": {
 			"p": "Unseen Threat",
@@ -33294,6 +33890,11 @@
 			"30": 23,
 			"31": 23,
 			"32": 23,
+			"33": {
+				"id": 33,
+				"name": "Prestige Porcelain Lissandra",
+				"chromas": {}
+			},
 			"34": {
 				"id": 34,
 				"name": "Space Groove Lissandra",
@@ -35455,7 +36056,94 @@
 			"32": 16,
 			"33": 16,
 			"34": 16,
-			"35": 7
+			"35": 7,
+			"36": {
+				"id": 36,
+				"name": "Mythmaker Zyra",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Mythmaker Zyra",
+						"colors": [
+							"#181818",
+							"#DDAA0E"
+						]
+					}
+				}
+			},
+			"37": 36,
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36,
+			"45": 36
 		},
 		"spells": {
 			"p": "Garden of Thorns",
@@ -42111,7 +42799,94 @@
 			"26": 20,
 			"27": 20,
 			"28": 20,
-			"29": 20
+			"29": 20,
+			"30": {
+				"id": 30,
+				"name": "Lunar Empress Qiyana",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Lunar Empress Qiyana",
+						"colors": [
+							"#3766D5",
+							"#C6EB6E"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30,
+			"39": 30
 		},
 		"spells": {
 			"p": "Royal Privilege",
@@ -44162,7 +44937,94 @@
 				"id": 38,
 				"name": "Prestige Pulsefire Thresh (2022)",
 				"chromas": {}
-			}
+			},
+			"39": {
+				"id": 39,
+				"name": "Lunar Emperor Thresh",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#85827F",
+							"#85827F"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Lunar Emperor Thresh",
+						"colors": [
+							"#3766D5",
+							"#C6EB6E"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39,
+			"48": 39
 		},
 		"spells": {
 			"p": "Damnation",
