@@ -40,36 +40,42 @@ for(const binFile of Object.keys(resultExtractDefault).filter(file => file.inclu
 	}
 }
 
-const setEventName = new Set(Object.keys(mapName_Event));
+const setNameEvent = new Set(Object.keys(mapName_Event));
 
 const resultExtractLocale = await extractWAD(fileWADChampionLocale, infosExtractRaw);
 
 const mapAudioID_Event = {};
+const mapAudioID_SoundID = {};
 
 for(let eventFile of Object.keys(resultExtractLocale).filter(file => file.includes('event.bnk'))) {
-	const mapAudioID_EventName = await parseBNK(
+	const [mapAudioID_EventName, mapSubAudioID_SoundID] = await parseBNK(
 		resolve(dirCache, 'extract', eventFile),
-		setEventName
+		setNameEvent
 	);
 
-	if(mapAudioID_EventName) {
-		for(const audioID in mapAudioID_EventName) {
-			const setEventName_AudioID = mapAudioID_EventName[audioID];
+	for(const audioID in mapAudioID_EventName) {
+		const setEventName_AudioID = mapAudioID_EventName[audioID];
 
-			for(const eventName of setEventName_AudioID) {
-				const arrEvent_EventName = mapName_Event[eventName];
+		for(const eventName of setEventName_AudioID) {
+			const arrEvent_EventName = mapName_Event[eventName];
 
-				if(arrEvent_EventName) {
-					for(const event of arrEvent_EventName) {
-						(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(event);
-					}
+			if(arrEvent_EventName) {
+				for(const event of arrEvent_EventName) {
+					(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(event);
 				}
-				else {
-					(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(eventName);
-				}
+			}
+			else {
+				(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(eventName);
 			}
 		}
 	}
+
+	for(const audioID in mapSubAudioID_SoundID) {
+		const setSoundID_AudioID = mapSubAudioID_SoundID[audioID];
+
+		(mapAudioID_SoundID[audioID] || (mapAudioID_SoundID[audioID] = [])).push(...setSoundID_AudioID);
+	}
+
 }
 
 const arrAudioPackFile = [
@@ -79,12 +85,12 @@ const arrAudioPackFile = [
 
 
 // extract vocie files from wpk
-extractAudios(arrAudioPackFile);
+// extractAudios(arrAudioPackFile);
 
 
 // copy voice files and rename with events
-copyAudios(mapAudioID_Event, arrAudioPackFile);
+// copyAudios(mapAudioID_Event, arrAudioPackFile);
 
 
 // save event JSON for `lol-vo-lines-dictation`
-saveEvents(mapAudioID_Event, arrAudioPackFile);
+saveEvents(mapAudioID_Event, arrAudioPackFile, mapAudioID_SoundID);

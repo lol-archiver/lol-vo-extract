@@ -115,7 +115,7 @@ export default function parseBIN(binPath, indexSkin) {
 				else if(eventName.startsWith('Play_')) {
 					[eventPoolName, ...eventNameShort] = eventName.replace('Play_', '').split('_');
 				}
-				else if(eventName.startsWith('SetState_')) {
+				else if(eventName.startsWith('SetState_') || eventName.startsWith('Switch_')) {
 					let action;
 					[action, eventPoolName, ...eventNameShort] = eventName.split('_');
 					eventNameShort.unshift(action);

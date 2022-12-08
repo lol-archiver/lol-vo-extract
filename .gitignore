@@ -1,9 +1,12 @@
 node_modules
 
+/test/local
+/test/*.local.js
+
 /@cache
 /@final
 /@text
-/@pool
+/@debug
 
 /config/config.json
 /config/config.server.json

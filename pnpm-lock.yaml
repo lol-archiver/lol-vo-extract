@@ -9,7 +9,7 @@ specifiers:
   bluebird: ^3.7.2
   buffer-crc32: ^0.2.13
   eslint: ^8.27.0
-  fs-extra: ^10.1.0
+  fs-extra: ^11.1.0
   https-proxy-agent: ^5.0.1
   iconv-lite: ^0.6.3
   moment: ^2.29.4
@@ -26,7 +26,7 @@ dependencies:
   axios: 0.27.2
   bluebird: 3.7.2
   buffer-crc32: 0.2.13
-  fs-extra: 10.1.0
+  fs-extra: 11.1.0
   https-proxy-agent: 5.0.1
   iconv-lite: 0.6.3
   moment: 2.29.4
@@ -548,9 +548,9 @@ packages:
       mime-types: 2.1.35
     dev: false
 
-  /fs-extra/10.1.0:
-    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
-    engines: {node: '>=12'}
+  /fs-extra/11.1.0:
+    resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
+    engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.10
       jsonfile: 6.1.0

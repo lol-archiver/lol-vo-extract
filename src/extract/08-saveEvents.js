@@ -1,12 +1,10 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-import Moment from 'moment';
-
 import { C, G } from '@nuogz/pangu';
 
 import { D, en_us } from '../../lib/database.js';
-import { dirCache } from '../../lib/dir.js';
+import { dirCache, dirText } from '../../lib/dir.js';
 import { I } from '../../lib/info.js';
 import { crc32, pad0, toHexL } from '../../lib/utility.js';
 
@@ -37,7 +35,7 @@ const matchFriendlyName = (name, mapsFriendly) => {
 	return trans.join(':');
 };
 
-export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
+export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, mapAudioID_SoundID) {
 	G.info('EventSaver', 'save event');
 
 
@@ -120,7 +118,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 				const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc });
+				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: mapAudioID_SoundID[audioID] || [] });
 			}
 			else if(typeof eventInfo == 'number') {
 				const skinMap = eventMap['[Bad]'] || (eventMap['[Bad]'] = {});
@@ -146,8 +144,8 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 
 			const arrEventText = [];
 
-			for(const { hex, crc32 } of arrAudioInfo) {
-				arrEventText.push(`- >${hex}< \`${hex}|${crc32}\` ***`);
+			for(const { hex, crc32, idsSound } of arrAudioInfo) {
+				arrEventText.push(`- >${hex}< \`${hex}|${crc32}||${idsSound.map(id => toHexL(id, 8)).join('..')}\` ***`);
 			}
 
 			arrEventText.sort();
@@ -161,6 +159,6 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile) {
 		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
 
-		writeFileSync(resolve('@text', `[${I.slot}@${C.server.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${Moment().format('X')}.md`), result.join('\n'));
+		writeFileSync(resolve(dirText, `[${I.slot}@${C.server.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${I.time}.md`), result.join('\n'));
 	}
 }

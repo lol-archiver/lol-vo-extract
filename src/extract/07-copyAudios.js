@@ -2,7 +2,6 @@ import { appendFileSync, copyFileSync, existsSync, readdirSync, readFileSync } f
 import { parse, resolve } from 'path';
 
 import { ensureDirSync } from '../../lib/fs-extra.js';
-import Moment from 'moment';
 
 import { C, G } from '@nuogz/pangu';
 
@@ -60,7 +59,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 			const crcWEM = crc32(readFileSync(srcWEM));
 
 			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
-				const logsTooLong = [`-------${Moment().format('YYYY-MM-DD HH:mm:ss')}-------`];
+				const logsTooLong = [`-------${I.time}-------`];
 
 				const pathFolder = resolve(dirFinal, `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.server.region}@${C.lang}]`);
 
