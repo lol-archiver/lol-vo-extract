@@ -4,7 +4,10 @@ import { resolve } from 'path';
 
 import { extractWAD } from '@lol-archiver/lol-wad-extract';
 
+import { C } from '@nuogz/pangu';
+
 import { dirCache } from './lib/dir.js';
+
 
 import initWADInfo from './src/extract/01-initFetch.js';
 import fetchWADs from './src/extract/02-fetchWads.js';
@@ -14,6 +17,8 @@ import parseBNK from './src/extract/05-parseBNK.js';
 import extractAudios from './src/extract/06-extractAudios.js';
 import copyAudios from './src/extract/07-copyAudios.js';
 import saveEvents from './src/extract/08-saveEvents.js';
+
+
 
 
 const { fileWADChampionDefault, fileWADChampionLocale, wadsNeedFetch } = initWADInfo();
@@ -31,10 +36,10 @@ const resultExtractDefault = await extractWAD(fileWADChampionDefault, infosExtra
 const mapName_Event = {};
 
 for(const binFile of Object.keys(resultExtractDefault).filter(file => file.includes('.bin')).sort((a, b) => a.match(/\d+/)[0] - b.match(/\d+/)[0])) {
-	const arrEvent = parseBIN(resolve(dirCache, 'extract', binFile), ~~binFile.match(/\d+/g)[0]);
+	const events = parseBIN(resolve(dirCache, 'extract', binFile), ~~binFile.match(/\d+/g)[0], C.useSFXLevel);
 
-	if(arrEvent instanceof Array) {
-		for(const event of arrEvent) {
+	if(events instanceof Array) {
+		for(const event of events) {
 			(mapName_Event[event.name] || (mapName_Event[event.name] = [])).push(event);
 		}
 	}

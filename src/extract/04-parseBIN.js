@@ -9,7 +9,7 @@ import { I } from '../../lib/info.js';
 
 
 
-export default function parseBIN(binPath, indexSkin) {
+export default function parseBIN(binPath, indexSkin, useSFXLevel) {
 	if(!existsSync(binPath)) { return; }
 
 	// G.info('BINParser', `[${_pa.parse(binPath).base}]`);
@@ -100,7 +100,7 @@ export default function parseBIN(binPath, indexSkin) {
 		for(let i = 0; i < countEvent; i++) {
 			const eventName = bifferBin.unpackString('H');
 
-			if(eventName.indexOf('_sfx_') == -1) {
+			if(!~eventName.indexOf('_sfx_') || useSFXLevel) {
 				let eventPoolName;
 				let eventNameShort = [];
 
@@ -110,6 +110,14 @@ export default function parseBIN(binPath, indexSkin) {
 				else if(eventName.indexOf('_vo_') > -1) {
 					let action;
 					[action, eventPoolName, ...eventNameShort] = eventName.replace('_vo_', '_').split('_');
+					eventNameShort.unshift(action);
+				}
+				else if(eventName.startsWith('Play_sfx_')) {
+					[eventPoolName, ...eventNameShort] = eventName.replace('Play_sfx_', '').split('_');
+				}
+				else if(eventName.indexOf('_sfx_') > -1) {
+					let action;
+					[action, eventPoolName, ...eventNameShort] = eventName.replace('_sfx_', '_').split('_');
 					eventNameShort.unshift(action);
 				}
 				else if(eventName.startsWith('Play_')) {

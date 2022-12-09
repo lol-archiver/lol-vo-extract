@@ -103,13 +103,30 @@ export const parseHIRCObject = (id, type, B) => {
 	}
 	// Event Action
 	else if(type == 3) {
-		const [scope, actionType, idObject, paramCount] = B.unpack('BBLxB');
-
-		object = new HIRCEventAction(id, scope, actionType, idObject, paramCount);
+		const [scope, actionType, idObject, countParam] = B.unpack('BBLxB');
+		object = new HIRCEventAction(id, scope, actionType, idObject, countParam);
 
 		object.scope = scope;
 		object.actionType = actionType;
 		object.idObject = idObject;
+
+		const params = object.params = [];
+
+		for(let i = 0; i < countParam; i++) {
+			const [type] = B.unpack('B');
+			// 0f --> float
+			const [value] = B.unpack(type == 0x0E || type == 0x0F ? 'L' : 'L');
+
+			params.push({ type, value });
+		}
+
+
+		if(actionType == 0x12 || actionType == 0x19) {
+			const [idGroupSet, idSet] = B.unpack('LL');
+
+			object.idGroupSet = idGroupSet;
+			object.idSet = idSet;
+		}
 	}
 	// Event
 	else if(type == 4) {
@@ -243,6 +260,8 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 
 			for(let i = 0; i < countObject; i++) {
 				const [type, length, id] = bifferSection.unpack('BLL');
+
+				G.trace('BNKParser', `HIRC object ~[${toHexL(id, 8)}]`, `~[position]~{${toHexL(bifferSection.tell() + 10, null, false)}} ~[type]~{${type}} ~[length]~{${length}}`);
 
 				const objectSection = parseHIRCObject(id, type, bifferSection.sub(length - 4));
 
