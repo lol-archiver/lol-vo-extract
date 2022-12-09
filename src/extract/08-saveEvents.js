@@ -6,7 +6,7 @@ import { C, G } from '@nuogz/pangu';
 import { D, en_us } from '../../lib/database.js';
 import { dirCache, dirText } from '../../lib/dir.js';
 import { I } from '../../lib/info.js';
-import { crc32, pad0, toHexL } from '../../lib/utility.js';
+import { crc32, pad0, toHexL8 } from '../../lib/utility.js';
 
 
 
@@ -101,7 +101,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 			crcSrc = [...crcsSrc].join('|');
 		}
 
-		const hex = toHexL(audioID, 8);
+		const hex = toHexL8(audioID);
 
 		const dictEN = en_us;
 
@@ -145,7 +145,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 			const arrEventText = [];
 
 			for(const { hex, crc32, idsSound } of arrAudioInfo) {
-				arrEventText.push(`- >${hex}< \`${hex}|${crc32}||${idsSound.map(id => toHexL(id, 8)).join('..')}\` ***`);
+				arrEventText.push(`- >${hex}< \`${hex}|${crc32}||${idsSound.map(id => toHexL8(id)).join('..')}\` ***`);
 			}
 
 			arrEventText.sort();

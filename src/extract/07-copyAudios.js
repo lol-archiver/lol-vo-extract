@@ -7,7 +7,7 @@ import { C, G } from '@nuogz/pangu';
 
 import { dirCache, dirFinal } from '../../lib/dir.js';
 import { I } from '../../lib/info.js';
-import { crc32, pad0, toHexL } from '../../lib/utility.js';
+import { crc32, pad0, toHexL8 } from '../../lib/utility.js';
 
 
 
@@ -27,7 +27,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 
 		for(let audioFile of readdirSync(pathDir).filter(file => file != 'wem')) {
 			const audioID = parse(audioFile).name;
-			const audioIDHex = toHexL(audioID, 8);
+			const audioIDHex = toHexL8(audioID);
 			const src = resolve(pathDir, `${audioID}.${C.format}`);
 			const srcWEM = resolve(pathDir, 'wem', `${audioID}.wem`);
 

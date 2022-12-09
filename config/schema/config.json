@@ -48,23 +48,28 @@
 			]
 		},
 		"useSFXLevel": {
-			"description": "音效文件提取策略\n0，不提取音效\n1，只用于辅助分析事件\n2、提取音效",
+			"description": "音效文件策略\n0，不使用音效文件\n1，加载音效文件，用于辅助解析\n2、加载并提取音效文件",
 			"type": "integer",
 			"default": 0,
 			"oneOf": [
 				{
 					"const": 0,
-					"description": "WAD文件来源：\n优先使用已缓存的WAD文件。若不存在则下载文件"
+					"description": "音效文件策略：\n不使用音效文件"
 				},
 				{
 					"const": 1,
-					"description": "WAD文件来源：\n优先下载最新的WAD文件"
+					"description": "音效文件策略：\n加载音效文件，用于辅助解析"
 				},
 				{
 					"const": 2,
-					"description": "WAD文件来源：\n优先使用游戏客户端中的文件WAD文件"
+					"description": "音效文件策略：\n加载并提取音效文件"
 				}
 			]
+		},
+		"skipExtract": {
+			"description": "是否跳过提取步骤，只分析结构",
+			"type": "boolean",
+			"default": false
 		},
 		"forceUseBase": {
 			"description": "是否强制解析基础皮肤文件，以辅助分析事件",

@@ -89,12 +89,14 @@ const arrAudioPackFile = [
 ];
 
 
-// extract vocie files from wpk
-// extractAudios(arrAudioPackFile);
+if(!C.skipExtract) {
+	// extract vocie files from wpk
+	extractAudios(arrAudioPackFile);
 
 
-// copy voice files and rename with events
-// copyAudios(mapAudioID_Event, arrAudioPackFile);
+	// copy voice files and rename with events
+	copyAudios(mapAudioID_Event, arrAudioPackFile);
+}
 
 
 // save event JSON for `lol-vo-lines-dictation`
