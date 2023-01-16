@@ -145,8 +145,13 @@ export const parseHIRCObject = (id, type, B) => {
 			if(param.addition == 3) {
 				[param.valueAddition] = B.unpack('B');
 			}
-
-			if(param.addition && param.addition != 3) {
+			else if(param.addition == 2) {
+				param.valueAddition = B.unpack('2Lx');
+			}
+			else if(param.addition == 204) {
+				void 0;
+			}
+			else if(param.addition) {
 				G.warn('BNKParser', 'unknown ~[container param addition]', `~{${param.addition}}`);
 			}
 		}
@@ -176,7 +181,11 @@ export const parseHIRCObject = (id, type, B) => {
 		const [countSound] = B.unpack('L');
 
 		// sound ids (long each)
-		object.idsSound = B.unpack(`${countSound}L`);
+		try {
+			object.idsSound = B.unpack(`${countSound}L`);
+		} catch(error) {
+			debugger;
+		}
 	}
 	// Switch Container
 	else if(type == 6) {
