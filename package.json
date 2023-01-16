@@ -17,8 +17,8 @@
 	"main": "./index.js",
 	"dependencies": {
 		"@lol-archiver/lol-wad-extract": "^2.0.0",
-		"@nuogz/biffer": "^2.1.0",
-		"@nuogz/i18n": "^1.2.1",
+		"@nuogz/biffer": "^2.4.0",
+		"@nuogz/i18n": "^1.3.1",
 		"@nuogz/pangu": "^3.1.2",
 		"axios": "^0.27.2",
 		"bluebird": "^3.7.2",
@@ -33,6 +33,6 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"eslint": "^8.29.0"
+		"eslint": "^8.32.0"
 	}
 }
