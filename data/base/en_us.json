@@ -8778,7 +8778,7 @@
 			"q": "Leap Strike",
 			"w": "Empower",
 			"e": "Counter Strike",
-			"r": "Master-At-Arms"
+			"r": "Grandmaster-at-Arms"
 		}
 	},
 	"25": {
@@ -27680,6 +27680,14 @@
 							"#2E38C4",
 							"#C8003F"
 						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Foxfire Ahri",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
 					}
 				}
 			},
@@ -28256,7 +28264,8 @@
 			"71": 66,
 			"72": 66,
 			"73": 66,
-			"74": 66
+			"74": 66,
+			"75": 3
 		},
 		"spells": {
 			"p": "Essence Theft",
