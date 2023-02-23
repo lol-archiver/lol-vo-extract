@@ -7848,7 +7848,16 @@
 			"8": {
 				"id": 8,
 				"name": "PROJECT: Ashe",
-				"chromas": {}
+				"chromas": {
+					"62": {
+						"id": 62,
+						"name": "PROJECT: Ashe",
+						"colors": [
+							"#DF9117",
+							"#821133"
+						]
+					}
+				}
 			},
 			"9": {
 				"id": 9,
@@ -8305,7 +8314,8 @@
 			"58": 52,
 			"59": 52,
 			"60": 52,
-			"61": 52
+			"61": 52,
+			"62": 8
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -9633,7 +9643,85 @@
 			"15": 10,
 			"16": 10,
 			"17": 10,
-			"18": 10
+			"18": 10,
+			"19": {
+				"id": 19,
+				"name": "Astronaut Singed",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Astronaut Singed",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Astronaut Singed",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Astronaut Singed",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Astronaut Singed",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Astronaut Singed",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Astronaut Singed",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Astronaut Singed",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Astronaut Singed",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"20": 19,
+			"21": 19,
+			"22": 19,
+			"23": 19,
+			"24": 19,
+			"25": 19,
+			"26": 19,
+			"27": 19
 		},
 		"spells": {
 			"p": "Noxious Slipstream",
@@ -11174,7 +11262,85 @@
 			"40": 34,
 			"41": 34,
 			"42": 34,
-			"43": 34
+			"43": 34,
+			"44": {
+				"id": 44,
+				"name": "Heartache Amumu",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Heartache Amumu",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Heartache Amumu",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Heartache Amumu",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Heartache Amumu",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Heartache Amumu",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Heartache Amumu",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Heartache Amumu",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Heartache Amumu",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44
 		},
 		"spells": {
 			"p": "Cursed Touch",
@@ -16153,7 +16319,85 @@
 			"35": 30,
 			"36": 30,
 			"37": 30,
-			"38": 30
+			"38": 30,
+			"39": {
+				"id": 39,
+				"name": "Heartthrob Caitlyn",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Heartthrob Caitlyn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Heartthrob Caitlyn",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Heartthrob Caitlyn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Heartthrob Caitlyn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Heartthrob Caitlyn",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Heartthrob Caitlyn",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Heartthrob Caitlyn",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Heartthrob Caitlyn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39
 		},
 		"spells": {
 			"p": "Headshot",
@@ -24114,7 +24358,85 @@
 					}
 				}
 			},
-			"24": 23
+			"24": 23,
+			"25": {
+				"id": 25,
+				"name": "Astronaut Kennen",
+				"chromas": {
+					"26": {
+						"id": 26,
+						"name": "Astronaut Kennen",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Astronaut Kennen",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Astronaut Kennen",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Astronaut Kennen",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Astronaut Kennen",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Astronaut Kennen",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Astronaut Kennen",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Astronaut Kennen",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"26": 25,
+			"27": 25,
+			"28": 25,
+			"29": 25,
+			"30": 25,
+			"31": 25,
+			"32": 25,
+			"33": 25
 		},
 		"spells": {
 			"p": "Mark of the Storm",
@@ -27474,7 +27796,85 @@
 			"17": 12,
 			"18": 12,
 			"19": 12,
-			"20": 12
+			"20": 12,
+			"21": {
+				"id": 21,
+				"name": "Astronaut Xerath",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "Astronaut Xerath",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Astronaut Xerath",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Astronaut Xerath",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Astronaut Xerath",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Astronaut Xerath",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Astronaut Xerath",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Astronaut Xerath",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Astronaut Xerath",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21
 		},
 		"spells": {
 			"p": "Mana Surge",
@@ -28842,7 +29242,85 @@
 				"id": 25,
 				"name": "Prestige Fuzz Fizz (2022)",
 				"chromas": {}
-			}
+			},
+			"26": {
+				"id": 26,
+				"name": "Astronaut Fizz",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Astronaut Fizz",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Astronaut Fizz",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Astronaut Fizz",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Astronaut Fizz",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Astronaut Fizz",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Astronaut Fizz",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Astronaut Fizz",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Astronaut Fizz",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26
 		},
 		"spells": {
 			"p": "Nimble Fighter",
@@ -35301,11 +35779,11 @@
 			"20": 11
 		},
 		"spells": {
-			"p": "Center of the Universe",
-			"q": "Starsurge",
-			"w": "Celestial Expansion",
-			"e": "Comet of Legend",
-			"r": "Voice of Light"
+			"p": "Cosmic Creator",
+			"q": "Breath of Light",
+			"w": "Astral Flight",
+			"e": "Singularity",
+			"r": "Falling Star / The Skies Descend"
 		}
 	},
 	"141": {
@@ -43147,7 +43625,85 @@
 				"id": 29,
 				"name": "Arcane Vi",
 				"chromas": {}
-			}
+			},
+			"30": {
+				"id": 30,
+				"name": "Heartache Vi",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Heartache Vi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Heartache Vi",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Heartache Vi",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Heartache Vi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Heartache Vi",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Heartache Vi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Heartache Vi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Heartache Vi",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30
 		},
 		"spells": {
 			"p": "Blast Shield",
@@ -45698,7 +46254,85 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "Astronaut Ivern",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Astronaut Ivern",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Astronaut Ivern",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Astronaut Ivern",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Astronaut Ivern",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Astronaut Ivern",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Astronaut Ivern",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Astronaut Ivern",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Astronaut Ivern",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20
 		},
 		"spells": {
 			"p": "Friend of the Forest",
