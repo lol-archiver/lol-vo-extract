@@ -46,6 +46,7 @@ export default [
 	['KillPenta', '击杀:多杀:五杀'],
 	['KillQuadra', '击杀:多杀:四杀'],
 	['KillTriple', '击杀:多杀:三杀'],
+	['KillDouble', '击杀:多杀:双杀'],
 
 	['PingAssistMe', '信号:协助我'],
 	['PingDanger', '信号:危险'],

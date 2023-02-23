@@ -2822,7 +2822,85 @@
 			"35": 30,
 			"36": 30,
 			"37": 30,
-			"38": 30
+			"38": 30,
+			"39": {
+				"id": 39,
+				"name": "Broken Covenant Vladimir",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Broken Covenant Vladimir",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Broken Covenant Vladimir",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Broken Covenant Vladimir",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Broken Covenant Vladimir",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Broken Covenant Vladimir",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Broken Covenant Vladimir",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Broken Covenant Vladimir",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Broken Covenant Vladimir",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39
 		},
 		"spells": {
 			"p": "Crimson Pact",
@@ -7785,7 +7863,90 @@
 			"36": 31,
 			"37": 31,
 			"38": 31,
-			"39": 31
+			"39": 31,
+			"40": {
+				"id": 40,
+				"name": "Broken Covenant Miss Fortune",
+				"chromas": {
+					"42": {
+						"id": 42,
+						"name": "Broken Covenant Miss Fortune",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Broken Covenant Miss Fortune",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Broken Covenant Miss Fortune",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Broken Covenant Miss Fortune",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Broken Covenant Miss Fortune",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Broken Covenant Miss Fortune",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Broken Covenant Miss Fortune",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Broken Covenant Miss Fortune",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"41": {
+				"id": 41,
+				"name": "Prestige Broken Covenant Miss Fortune",
+				"chromas": {}
+			},
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40,
+			"47": 40,
+			"48": 40,
+			"49": 40
 		},
 		"spells": {
 			"p": "Love Tap",
@@ -10895,7 +11056,85 @@
 			"19": 14,
 			"20": 14,
 			"21": 14,
-			"22": 14
+			"22": 14,
+			"23": {
+				"id": 23,
+				"name": "Broken Covenant Cho'Gath",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Broken Covenant Cho'Gath",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Broken Covenant Cho'Gath",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Broken Covenant Cho'Gath",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Broken Covenant Cho'Gath",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Broken Covenant Cho'Gath",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Broken Covenant Cho'Gath",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Broken Covenant Cho'Gath",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Broken Covenant Cho'Gath",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"24": 23,
+			"25": 23,
+			"26": 23,
+			"27": 23,
+			"28": 23,
+			"29": 23,
+			"30": 23,
+			"31": 23
 		},
 		"spells": {
 			"p": "Carnivore",
@@ -17781,7 +18020,85 @@
 				"id": 16,
 				"name": "Hextech Nocturne",
 				"chromas": {}
-			}
+			},
+			"17": {
+				"id": 17,
+				"name": "Broken Covenant Nocturne",
+				"chromas": {
+					"18": {
+						"id": 18,
+						"name": "Broken Covenant Nocturne",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Broken Covenant Nocturne",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Broken Covenant Nocturne",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Broken Covenant Nocturne",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Broken Covenant Nocturne",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Broken Covenant Nocturne",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Broken Covenant Nocturne",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Broken Covenant Nocturne",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"18": 17,
+			"19": 17,
+			"20": 17,
+			"21": 17,
+			"22": 17,
+			"23": 17,
+			"24": 17,
+			"25": 17
 		},
 		"spells": {
 			"p": "Umbra Blades",
@@ -26407,7 +26724,67 @@
 			"51": 44,
 			"52": 44,
 			"53": 44,
-			"54": 44
+			"54": 44,
+			"55": {
+				"id": 55,
+				"name": "Broken Covenant Riven",
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "Broken Covenant Riven",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Broken Covenant Riven",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Broken Covenant Riven",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Broken Covenant Riven",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Broken Covenant Riven",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Broken Covenant Riven",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"57": 55,
+			"58": 55,
+			"59": 55,
+			"60": 55,
+			"61": 55,
+			"62": 55
 		},
 		"spells": {
 			"p": "Runic Blade",
@@ -46923,7 +47300,85 @@
 			"23": 18,
 			"24": 18,
 			"25": 18,
-			"26": 18
+			"26": 18,
+			"27": {
+				"id": 27,
+				"name": "Broken Covenant Rakan",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Broken Covenant Rakan",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Broken Covenant Rakan",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Broken Covenant Rakan",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Broken Covenant Rakan",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Broken Covenant Rakan",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Broken Covenant Rakan",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Broken Covenant Rakan",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Broken Covenant Rakan",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27
 		},
 		"spells": {
 			"p": "Fey Feathers",
@@ -47242,7 +47697,85 @@
 			"33": 28,
 			"34": 28,
 			"35": 28,
-			"36": 28
+			"36": 28,
+			"37": {
+				"id": 37,
+				"name": "Broken Covenant Xayah",
+				"chromas": {
+					"39": {
+						"id": 39,
+						"name": "Broken Covenant Xayah",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Broken Covenant Xayah",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Broken Covenant Xayah",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Broken Covenant Xayah",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Broken Covenant Xayah",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Broken Covenant Xayah",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Broken Covenant Xayah",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Broken Covenant Xayah",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37,
+			"46": 37
 		},
 		"spells": {
 			"p": "Clean Cuts",
