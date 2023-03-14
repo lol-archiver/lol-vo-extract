@@ -99,4 +99,5 @@ export default [
 	['JungleBuff', '生物:野区增益生物'],
 
 	['Buff', '强化'],
+	['Assist', '助攻'],
 ];

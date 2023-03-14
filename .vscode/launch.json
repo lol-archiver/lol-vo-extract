@@ -4,7 +4,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Extract Audio and Voice",
+			"name": "Extract audio and voice",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
@@ -15,7 +15,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "0: Test Local",
+			"name": "0: Test local",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
@@ -26,7 +26,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "1: Concat Audio",
+			"name": "1: Concat audio",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
@@ -37,7 +37,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "2: Concat Raw Line",
+			"name": "2: Combine raw Lines",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
@@ -48,7 +48,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "3: Convert Data Base",
+			"name": "3: Update base data",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
@@ -59,7 +59,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "4: Copy Audio with Line",
+			"name": "4: Copy audio with line",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
@@ -70,7 +70,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "5: Convert RST",
+			"name": "5: Convert rst",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
@@ -81,7 +81,7 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "6: Update RST",
+			"name": "6: Update rst",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"

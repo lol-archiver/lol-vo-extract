@@ -11,6 +11,7 @@ import { C } from '@nuogz/pangu';
 import { dirFinal } from '../lib/dir.js';
 import { pad0 } from '../lib/utility.js';
 import { I } from '../lib/info.js';
+import { spawnSync } from 'child_process';
 
 
 
@@ -58,7 +59,8 @@ Object.entries(dicts).forEach(([event, filesInput], indexDict) => {
 		const textMap = `${fileCopy}|${file}`;
 
 		mapsFile.push(textMap);
-		console.log(textMap);
+
+		// globalThis.console.log(textMap);
 	});
 
 	passes.push(
@@ -77,3 +79,11 @@ cmds.push('pause');
 
 writeFileSync(resolve(dirAudioSingle, '@map.txt'), mapsFile.join('\n'));
 writeFileSync(resolve(dirCWD, 'concat-audio.bat'), Iconv.encode(cmds.join('\r\n'), 'GBK'));
+
+
+const { status, error, stderr, stdout } = spawnSync(resolve(dirCWD, 'concat-audio.bat'), []);
+if(status != 0) { throw (error && error.message) || (stderr && stderr.toString()); }
+
+process.stdout.write(Iconv.decode(stdout, 'GBK'));
+
+spawnSync('explorer', [dirAudio]);

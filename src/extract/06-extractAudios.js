@@ -38,7 +38,7 @@ const isSameTakeConfig = () => {
 
 const takeWpkRaw = fileWPK => {
 	try {
-		G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, `extracting...`);
+		G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{wem}`, `○ extracting...`);
 
 		const bifferWPK = new Biffer(resolve(dirCache, 'extract', fileWPK));
 
@@ -81,7 +81,7 @@ export default function extractAudios(filesWPK) {
 		takeWpkRaw(fileWPK);
 
 		if(C.format == 'wav' || C.format == 'ogg') {
-			G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `extracting...`);
+			G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `○ extracting...`);
 
 			if(existsSync(C.path.rextractorConsole)) {
 				try {

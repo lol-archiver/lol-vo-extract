@@ -12,7 +12,7 @@ import { crc32, pad0, toHexL8 } from '../../lib/utility.js';
 
 
 export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
-	G.infoU('AudioCopier', 'copy audio', 'coping...');
+	G.infoU('AudioCopier', 'copy audio', '○ coping...');
 
 	for(const audioPackFile of arrAudioPackFile) {
 		const copyWhileEmpty = audioPackFile.startsWith('sfx') ? (C.useSFXLevel >= 2 ? true : false) : true;

@@ -15127,7 +15127,67 @@
 			"50": 44,
 			"51": 44,
 			"52": 44,
-			"53": 44
+			"53": 44,
+			"54": {
+				"id": 54,
+				"name": "Faerie Queen Karma",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Faerie Queen Karma",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Faerie Queen Karma",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Faerie Queen Karma",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Faerie Queen Karma",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Faerie Queen Karma",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Faerie Queen Karma",
+						"colors": [
+							"#866EFF",
+							"#8AE1E8"
+						]
+					}
+				}
+			},
+			"55": 54,
+			"56": 54,
+			"57": 54,
+			"58": 54,
+			"59": 54,
+			"60": 54
 		},
 		"spells": {
 			"p": "Gathering Fire",
@@ -17883,7 +17943,99 @@
 			"43": 37,
 			"44": 37,
 			"45": 37,
-			"46": 37
+			"46": 37,
+			"47": {
+				"id": 47,
+				"name": "Faerie Court Katarina",
+				"chromas": {
+					"49": {
+						"id": 49,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Faerie Court Katarina",
+						"colors": [
+							"#866EFF",
+							"#8AE1E8"
+						]
+					}
+				}
+			},
+			"48": {
+				"id": 48,
+				"name": "Prestige Faerie Court Katarina",
+				"chromas": {}
+			},
+			"49": 47,
+			"50": 47,
+			"51": 47,
+			"52": 47,
+			"53": 47,
+			"54": 47,
+			"55": 47,
+			"56": 47,
+			"57": 47
 		},
 		"spells": {
 			"p": "Voracity",
@@ -23182,7 +23334,94 @@
 			"29": 25,
 			"30": 25,
 			"31": 25,
-			"32": 21
+			"32": 21,
+			"33": {
+				"id": 33,
+				"name": "Faerie Court Ezreal",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Faerie Court Ezreal",
+						"colors": [
+							"#866EFF",
+							"#8AE1E8"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33,
+			"42": 33
 		},
 		"spells": {
 			"p": "Rising Spell Force",
@@ -26773,8 +27012,8 @@
 						"id": 62,
 						"name": "Broken Covenant Riven",
 						"colors": [
-							"#ECF9F8",
-							"#ECF9F8"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					}
 				}
@@ -27586,7 +27825,17 @@
 			"45": 40,
 			"46": 40,
 			"47": 40,
-			"48": 40
+			"48": 40,
+			"49": {
+				"id": 49,
+				"name": "Ashen Guardian Shen",
+				"chromas": {}
+			},
+			"50": {
+				"id": 50,
+				"name": "Ashen Guardian Shen",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Ki Barrier",
@@ -31904,7 +32153,94 @@
 			"65": 60,
 			"66": 60,
 			"67": 60,
-			"68": 60
+			"68": 60,
+			"69": {
+				"id": 69,
+				"name": "Faerie Court Fiora",
+				"chromas": {
+					"70": {
+						"id": 70,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"77": {
+						"id": 77,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Faerie Court Fiora",
+						"colors": [
+							"#866EFF",
+							"#8AE1E8"
+						]
+					}
+				}
+			},
+			"70": 69,
+			"71": 69,
+			"72": 69,
+			"73": 69,
+			"74": 69,
+			"75": 69,
+			"76": 69,
+			"77": 69,
+			"78": 69
 		},
 		"spells": {
 			"p": "Duelist's Dance",
@@ -37596,7 +37932,94 @@
 			"20": 14,
 			"21": 14,
 			"22": 14,
-			"23": 14
+			"23": 14,
+			"24": {
+				"id": 24,
+				"name": "Faerie Court Seraphine",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Faerie Court Seraphine",
+						"colors": [
+							"#866EFF",
+							"#8AE1E8"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24,
+			"33": 24
 		},
 		"spells": {
 			"p": "Stage Presence",
@@ -45287,7 +45710,7 @@
 			"38": 37
 		},
 		"spells": {
-			"p": "Bop 'n' Block",
+			"p": "Feline Friendship",
 			"q": "Prowling Projectile",
 			"w": "You and Me!",
 			"e": "Zoomies",
@@ -46835,7 +47258,94 @@
 			"10": 5,
 			"11": 5,
 			"12": 5,
-			"13": 5
+			"13": 5,
+			"14": {
+				"id": 14,
+				"name": "Faerie Court Kalista",
+				"chromas": {
+					"15": {
+						"id": 15,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Faerie Court Kalista",
+						"colors": [
+							"#866EFF",
+							"#8AE1E8"
+						]
+					}
+				}
+			},
+			"15": 14,
+			"16": 14,
+			"17": 14,
+			"18": 14,
+			"19": 14,
+			"20": 14,
+			"21": 14,
+			"22": 14,
+			"23": 14
 		},
 		"spells": {
 			"p": "Martial Poise",
@@ -51140,6 +51650,116 @@
 			"w": "Path Maker",
 			"e": "Footwork",
 			"r": "All Out"
+		}
+	},
+	"902": {
+		"id": 902,
+		"name": "Milio",
+		"title": "The Gentle Flame",
+		"slot": "Milio",
+		"roles": [
+			"support"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Milio",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Faerie Court Milio",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Faerie Court Milio",
+						"colors": [
+							"#866EFF",
+							"#8AE1E8"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1,
+			"10": 1
+		},
+		"spells": {
+			"p": "Fired Up!",
+			"q": "Ultra Mega Fire Kick",
+			"w": "Cozy Campfire",
+			"e": "Warm Hugs",
+			"r": "Breath of Life"
 		}
 	}
 }
