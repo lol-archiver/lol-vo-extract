@@ -8536,7 +8536,22 @@
 			"59": 52,
 			"60": 52,
 			"61": 52,
-			"62": 8
+			"62": 8,
+			"63": {
+				"id": 63,
+				"name": "DRX Ashe",
+				"chromas": {
+					"64": {
+						"id": 64,
+						"name": "DRX Ashe",
+						"colors": [
+							"#E4E489",
+							"#195FC8"
+						]
+					}
+				}
+			},
+			"64": 63
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -9512,7 +9527,85 @@
 			"56": 50,
 			"57": 50,
 			"58": 50,
-			"59": 50
+			"59": 50,
+			"60": {
+				"id": 60,
+				"name": "Snow Moon Morgana",
+				"chromas": {
+					"61": {
+						"id": 61,
+						"name": "Snow Moon Morgana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Snow Moon Morgana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Snow Moon Morgana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Snow Moon Morgana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Snow Moon Morgana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Snow Moon Morgana",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Snow Moon Morgana",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Snow Moon Morgana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"61": 60,
+			"62": 60,
+			"63": 60,
+			"64": 60,
+			"65": 60,
+			"66": 60,
+			"67": 60,
+			"68": 60
 		},
 		"spells": {
 			"p": "Soul Siphon",
@@ -10924,7 +11017,85 @@
 			"22": 17,
 			"23": 17,
 			"24": 17,
-			"25": 17
+			"25": 17,
+			"26": {
+				"id": 26,
+				"name": "Elderwood Karthus",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26
 		},
 		"spells": {
 			"p": "Death Defied",
@@ -12239,7 +12410,85 @@
 			"42": 37,
 			"43": 37,
 			"44": 37,
-			"45": 37
+			"45": 37,
+			"46": {
+				"id": 46,
+				"name": "Victorious Anivia",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "",
+						"colors": [
+							"#764D43",
+							"#764D43"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "",
+						"colors": [
+							"#AAB5BA",
+							"#AAB5BA"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "",
+						"colors": [
+							"#D9C445",
+							"#D9C445"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "",
+						"colors": [
+							"#65337F",
+							"#65337F"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "",
+						"colors": [
+							"#9D228D",
+							"#9D228D"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "",
+						"colors": [
+							"#B31316",
+							"#B31316"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "",
+						"colors": [
+							"#1D62C8",
+							"#1D62C8"
+						]
+					}
+				}
+			},
+			"47": 46,
+			"48": 46,
+			"49": 46,
+			"50": 46,
+			"51": 46,
+			"52": 46,
+			"53": 46,
+			"54": 46
 		},
 		"spells": {
 			"p": "Rebirth",
@@ -16756,7 +17005,22 @@
 			"44": 39,
 			"45": 39,
 			"46": 39,
-			"47": 39
+			"47": 39,
+			"48": {
+				"id": 48,
+				"name": "DRX Caitlyn",
+				"chromas": {
+					"49": {
+						"id": 49,
+						"name": "DRX Caitlyn",
+						"colors": [
+							"#E4E489",
+							"#195FC8"
+						]
+					}
+				}
+			},
+			"49": 48
 		},
 		"spells": {
 			"p": "Headshot",
@@ -18589,7 +18853,22 @@
 			"29": 24,
 			"30": 24,
 			"31": 24,
-			"32": 24
+			"32": 24,
+			"33": {
+				"id": 33,
+				"name": "DRX Maokai",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "DRX Maokai",
+						"colors": [
+							"#E4E489",
+							"#195FC8"
+						]
+					}
+				}
+			},
+			"34": 33
 		},
 		"spells": {
 			"p": "Sap Magic",
@@ -19735,7 +20014,85 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"29": {
+				"id": 29,
+				"name": "Star Guardian Orianna",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29
 		},
 		"spells": {
 			"p": "Clockwork Windup",
@@ -19867,7 +20224,85 @@
 			"12": 7,
 			"13": 7,
 			"14": 7,
-			"15": 7
+			"15": 7,
+			"16": {
+				"id": 16,
+				"name": "Elderwood Wukong",
+				"chromas": {
+					"17": {
+						"id": 17,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"17": 16,
+			"18": 16,
+			"19": 16,
+			"20": 16,
+			"21": 16,
+			"22": 16,
+			"23": 16,
+			"24": 16
 		},
 		"spells": {
 			"p": "Stone Skin",
@@ -22735,7 +23170,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "",
+						"name": "Inkshadow Udyr",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -22743,7 +23178,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "",
+						"name": "Inkshadow Udyr",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -22751,7 +23186,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "",
+						"name": "Inkshadow Udyr",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -22759,7 +23194,7 @@
 					},
 					"10": {
 						"id": 10,
-						"name": "",
+						"name": "Inkshadow Udyr",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -22767,7 +23202,7 @@
 					},
 					"11": {
 						"id": 11,
-						"name": "",
+						"name": "Inkshadow Udyr",
 						"colors": [
 							"#B5CED6",
 							"#33D889"
@@ -25208,7 +25643,22 @@
 			"64": 61,
 			"65": 61,
 			"66": 61,
-			"67": 61
+			"67": 61,
+			"68": {
+				"id": 68,
+				"name": "DRX Akali",
+				"chromas": {
+					"69": {
+						"id": 69,
+						"name": "DRX Akali",
+						"colors": [
+							"#E4E489",
+							"#195FC8"
+						]
+					}
+				}
+			},
+			"69": 68
 		},
 		"spells": {
 			"p": "Assassin's Mark",
@@ -26259,7 +26709,22 @@
 			"46": 34,
 			"47": 34,
 			"48": 34,
-			"49": 34
+			"49": 34,
+			"50": {
+				"id": 50,
+				"name": "Crystalis Motus Leona",
+				"chromas": {
+					"51": {
+						"id": 51,
+						"name": "Crystalis Motus Leona",
+						"colors": [
+							"#AAD4EB",
+							"#23211D"
+						]
+					}
+				}
+			},
+			"51": 50
 		},
 		"spells": {
 			"p": "Sunlight",
@@ -27914,7 +28379,85 @@
 			"42": 37,
 			"43": 37,
 			"44": 37,
-			"45": 37
+			"45": 37,
+			"46": {
+				"id": 46,
+				"name": "Shan Hai Scrolls Kog'Maw",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Shan Hai Scrolls Kog'Maw",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Shan Hai Scrolls Kog'Maw",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Shan Hai Scrolls Kog'Maw",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Shan Hai Scrolls Kog'Maw",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Shan Hai Scrolls Kog'Maw",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Shan Hai Scrolls Kog'Maw",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Shan Hai Scrolls Kog'Maw",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Shan Hai Scrolls Kog'Maw",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"47": 46,
+			"48": 46,
+			"49": 46,
+			"50": 46,
+			"51": 46,
+			"52": 46,
+			"53": 46,
+			"54": 46
 		},
 		"spells": {
 			"p": "Icathian Surprise",
@@ -29806,7 +30349,85 @@
 			"72": 66,
 			"73": 66,
 			"74": 66,
-			"75": 3
+			"75": 3,
+			"76": {
+				"id": 76,
+				"name": "Snow Moon Ahri",
+				"chromas": {
+					"77": {
+						"id": 77,
+						"name": "Snow Moon Ahri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Snow Moon Ahri",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"79": {
+						"id": 79,
+						"name": "Snow Moon Ahri",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"80": {
+						"id": 80,
+						"name": "Snow Moon Ahri",
+						"colors": [
+							"#9F4A25",
+							"#9F4A25"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "Snow Moon Ahri",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"82": {
+						"id": 82,
+						"name": "Snow Moon Ahri",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"83": {
+						"id": 83,
+						"name": "Snow Moon Ahri",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"84": {
+						"id": 84,
+						"name": "Snow Moon Ahri",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"77": 76,
+			"78": 76,
+			"79": 76,
+			"80": 76,
+			"81": 76,
+			"82": 76,
+			"83": 76,
+			"84": 76
 		},
 		"spells": {
 			"p": "Essence Theft",
@@ -31419,7 +32040,85 @@
 			"40": 34,
 			"41": 34,
 			"42": 34,
-			"43": 34
+			"43": 34,
+			"44": {
+				"id": 44,
+				"name": "Snow Moon Varus",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Snow Moon Varus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Snow Moon Varus",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Snow Moon Varus",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Snow Moon Varus",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Snow Moon Varus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Snow Moon Varus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Snow Moon Varus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Snow Moon Varus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44
 		},
 		"spells": {
 			"p": "Living Vengeance",
@@ -37098,7 +37797,7 @@
 				"chromas": {
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -37106,7 +37805,7 @@
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -37114,7 +37813,7 @@
 					},
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -37122,7 +37821,7 @@
 					},
 					"25": {
 						"id": 25,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -37130,7 +37829,7 @@
 					},
 					"26": {
 						"id": 26,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -37138,7 +37837,7 @@
 					},
 					"27": {
 						"id": 27,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -37146,7 +37845,7 @@
 					},
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -37154,7 +37853,7 @@
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -37162,7 +37861,7 @@
 					},
 					"30": {
 						"id": 30,
-						"name": "",
+						"name": "Inkshadow Aurelion Sol",
 						"colors": [
 							"#B5CED6",
 							"#33D889"
@@ -38414,7 +39113,7 @@
 				"chromas": {
 					"49": {
 						"id": 49,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -38422,7 +39121,7 @@
 					},
 					"50": {
 						"id": 50,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -38430,7 +39129,7 @@
 					},
 					"51": {
 						"id": 51,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#9F4A25",
 							"#9F4A25"
@@ -38438,7 +39137,7 @@
 					},
 					"52": {
 						"id": 52,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -38446,7 +39145,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -38454,7 +39153,7 @@
 					},
 					"54": {
 						"id": 54,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -38462,7 +39161,7 @@
 					},
 					"55": {
 						"id": 55,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#9C68D7",
 							"#9C68D7"
@@ -38470,7 +39169,7 @@
 					},
 					"56": {
 						"id": 56,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -38478,7 +39177,7 @@
 					},
 					"57": {
 						"id": 57,
-						"name": "",
+						"name": "Inkshadow Kai'Sa",
 						"colors": [
 							"#B5CED6",
 							"#33D889"
@@ -38795,7 +39494,85 @@
 			"30": 24,
 			"31": 24,
 			"32": 24,
-			"33": 24
+			"33": 24,
+			"34": {
+				"id": 34,
+				"name": "Star Guardian Seraphine",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"35": 34,
+			"36": 34,
+			"37": 34,
+			"38": 34,
+			"39": 34,
+			"40": 34,
+			"41": 34,
+			"42": 34
 		},
 		"spells": {
 			"p": "Stage Presence",
@@ -41726,6 +42503,20 @@
 					}
 				}
 			},
+			"23": {
+				"id": 23,
+				"name": "DRX Kindred",
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "DRX Kindred",
+						"colors": [
+							"#E4E489",
+							"#195FC8"
+						]
+					}
+				}
+			},
 			"24": 22,
 			"25": 22,
 			"26": 22,
@@ -41733,7 +42524,8 @@
 			"28": 22,
 			"29": 22,
 			"30": 22,
-			"31": 22
+			"31": 22,
+			"32": 23
 		},
 		"spells": {
 			"p": "Mark of the Kindred",
@@ -42606,7 +43398,85 @@
 			"26": 20,
 			"27": 20,
 			"28": 20,
-			"29": 20
+			"29": 20,
+			"30": {
+				"id": 30,
+				"name": "Shan Hai Scrolls Tahm Kench",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Shan Hai Scrolls Tahm Kench",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Shan Hai Scrolls Tahm Kench",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Shan Hai Scrolls Tahm Kench",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Shan Hai Scrolls Tahm Kench",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Shan Hai Scrolls Tahm Kench",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Shan Hai Scrolls Tahm Kench",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Shan Hai Scrolls Tahm Kench",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Shan Hai Scrolls Tahm Kench",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30
 		},
 		"spells": {
 			"p": "An Acquired Taste",
@@ -43400,6 +44270,14 @@
 							"#E58BA5",
 							"#E58BA5"
 						]
+					},
+					"50": {
+						"id": 50,
+						"name": "High Noon Lucian",
+						"colors": [
+							"#CFC0A7",
+							"#59C3F2"
+						]
 					}
 				}
 			},
@@ -43703,7 +44581,8 @@
 			"46": 40,
 			"47": 40,
 			"48": 40,
-			"49": 40
+			"49": 40,
+			"50": 8
 		},
 		"spells": {
 			"p": "Lightslinger",
@@ -45789,7 +46668,27 @@
 			"26": 21,
 			"27": 21,
 			"28": 21,
-			"29": 21
+			"29": 21,
+			"30": {
+				"id": 30,
+				"name": "DRX Aatrox",
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "DRX Aatrox",
+						"colors": [
+							"#E4E489",
+							"#195FC8"
+						]
+					}
+				}
+			},
+			"31": {
+				"id": 31,
+				"name": "Prestige DRX Aatrox",
+				"chromas": {}
+			},
+			"32": 30
 		},
 		"spells": {
 			"p": "Deathbringer Stance",
@@ -48689,7 +49588,85 @@
 			"22": 17,
 			"23": 17,
 			"24": 17,
-			"25": 17
+			"25": 17,
+			"26": {
+				"id": 26,
+				"name": "Shan Hai Scrolls Bard",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Shan Hai Scrolls Bard",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Shan Hai Scrolls Bard",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Shan Hai Scrolls Bard",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Shan Hai Scrolls Bard",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Shan Hai Scrolls Bard",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Shan Hai Scrolls Bard",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Shan Hai Scrolls Bard",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Shan Hai Scrolls Bard",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26
 		},
 		"spells": {
 			"p": "Traveler's Call",
@@ -50632,7 +51609,7 @@
 			"p": "Break the Mold",
 			"q": "Shattering Strike",
 			"w": "Ferromancy",
-			"e": "Attract and Repel",
+			"e": "Full Tilt",
 			"r": "Magnet Storm"
 		}
 	},
@@ -51610,7 +52587,7 @@
 				"chromas": {
 					"36": {
 						"id": 36,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -51618,7 +52595,7 @@
 					},
 					"37": {
 						"id": 37,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -51626,7 +52603,7 @@
 					},
 					"38": {
 						"id": 38,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -51634,7 +52611,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -51642,7 +52619,7 @@
 					},
 					"40": {
 						"id": 40,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -51650,7 +52627,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -51658,7 +52635,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -51666,7 +52643,7 @@
 					},
 					"43": {
 						"id": 43,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -51674,7 +52651,7 @@
 					},
 					"44": {
 						"id": 44,
-						"name": "",
+						"name": "Inkshadow Yone",
 						"colors": [
 							"#B5CED6",
 							"#33D889"
@@ -52271,7 +53248,85 @@
 			"15": 10,
 			"16": 10,
 			"17": 10,
-			"18": 10
+			"18": 10,
+			"19": {
+				"id": 19,
+				"name": "Shan Hai Scrolls Lillia",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Shan Hai Scrolls Lillia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Shan Hai Scrolls Lillia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Shan Hai Scrolls Lillia",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Shan Hai Scrolls Lillia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Shan Hai Scrolls Lillia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Shan Hai Scrolls Lillia",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Shan Hai Scrolls Lillia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Shan Hai Scrolls Lillia",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"20": 19,
+			"21": 19,
+			"22": 19,
+			"23": 19,
+			"24": 19,
+			"25": 19,
+			"26": 19,
+			"27": 19
 		},
 		"spells": {
 			"p": "Dream-Laden Bough",
