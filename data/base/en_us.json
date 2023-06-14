@@ -4218,7 +4218,67 @@
 			"85": 52,
 			"86": 52,
 			"87": 52,
-			"88": 52
+			"88": 52,
+			"89": {
+				"id": 89,
+				"name": "Inkshadow Master Yi",
+				"chromas": {
+					"90": {
+						"id": 90,
+						"name": "Inkshadow Master Yi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"91": {
+						"id": 91,
+						"name": "Inkshadow Master Yi",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"92": {
+						"id": 92,
+						"name": "Inkshadow Master Yi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"93": {
+						"id": 93,
+						"name": "Inkshadow Master Yi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"94": {
+						"id": 94,
+						"name": "Inkshadow Master Yi",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"95": {
+						"id": 95,
+						"name": "Inkshadow Master Yi",
+						"colors": [
+							"#B5CED6",
+							"#33D889"
+						]
+					}
+				}
+			},
+			"90": 89,
+			"91": 89,
+			"92": 89,
+			"93": 89,
+			"94": 89,
+			"95": 89
 		},
 		"spells": {
 			"p": "Double Strike",
@@ -18796,7 +18856,85 @@
 			"29": 26,
 			"30": 26,
 			"31": 26,
-			"32": 26
+			"32": 26,
+			"33": {
+				"id": 33,
+				"name": "Dawnbringer Renekton",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Dawnbringer Renekton",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Dawnbringer Renekton",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Dawnbringer Renekton",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Dawnbringer Renekton",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Dawnbringer Renekton",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Dawnbringer Renekton",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Dawnbringer Renekton",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Dawnbringer Renekton",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33
 		},
 		"spells": {
 			"p": "Reign of Anger",
@@ -19074,7 +19212,85 @@
 			"31": 30,
 			"32": 30,
 			"33": 30,
-			"34": 30
+			"34": 30,
+			"35": {
+				"id": 35,
+				"name": "Nightbringer Jarvan IV",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Nightbringer Jarvan IV",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Nightbringer Jarvan IV",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Nightbringer Jarvan IV",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Nightbringer Jarvan IV",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Nightbringer Jarvan IV",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Nightbringer Jarvan IV",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Nightbringer Jarvan IV",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Nightbringer Jarvan IV",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35
 		},
 		"spells": {
 			"p": "Martial Cadence",
@@ -20683,7 +20899,85 @@
 			"40": 32,
 			"41": 32,
 			"42": 32,
-			"43": 32
+			"43": 32,
+			"44": {
+				"id": 44,
+				"name": "Dawnbringer Vayne",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Dawnbringer Vayne",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Dawnbringer Vayne",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Dawnbringer Vayne",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Dawnbringer Vayne",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Dawnbringer Vayne",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Dawnbringer Vayne",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Dawnbringer Vayne",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Dawnbringer Vayne",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44
 		},
 		"spells": {
 			"p": "Night Hunter",
@@ -21919,7 +22213,85 @@
 			"41": 35,
 			"42": 35,
 			"43": 35,
-			"44": 35
+			"44": 35,
+			"45": {
+				"id": 45,
+				"name": "Nightbringer Nasus",
+				"chromas": {
+					"46": {
+						"id": 46,
+						"name": "Nightbringer Nasus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Nightbringer Nasus",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Nightbringer Nasus",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Nightbringer Nasus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Nightbringer Nasus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Nightbringer Nasus",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Nightbringer Nasus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Nightbringer Nasus",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"46": 45,
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45
 		},
 		"spells": {
 			"p": "Soul Eater",
@@ -22229,7 +22601,85 @@
 			"34": 29,
 			"35": 29,
 			"36": 29,
-			"37": 29
+			"37": 29,
+			"39": {
+				"id": 39,
+				"name": "Kittalee",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Kittalee",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Kittalee",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Kittalee",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Kittalee",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Kittalee",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Kittalee",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Kittalee",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Kittalee",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39
 		},
 		"spells": {
 			"p": "Prowl",
@@ -22278,7 +22728,58 @@
 				"id": 5,
 				"name": "Dragon Oracle Udyr",
 				"chromas": {}
-			}
+			},
+			"6": {
+				"id": 6,
+				"name": "Inkshadow Udyr",
+				"chromas": {
+					"7": {
+						"id": 7,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "",
+						"colors": [
+							"#B5CED6",
+							"#33D889"
+						]
+					}
+				}
+			},
+			"7": 6,
+			"8": 6,
+			"9": 6,
+			"10": 6,
+			"11": 6
 		},
 		"spells": {
 			"p": "Bridge Between",
@@ -26675,6 +27176,14 @@
 							"#6FFDFF",
 							"#2377FF"
 						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Dawnbringer Riven",
+						"colors": [
+							"#8C1517",
+							"#2E2630"
+						]
 					}
 				}
 			},
@@ -27018,6 +27527,7 @@
 					}
 				}
 			},
+			"56": 16,
 			"57": 55,
 			"58": 55,
 			"59": 55,
@@ -27829,13 +28339,18 @@
 			"49": {
 				"id": 49,
 				"name": "Ashen Guardian Shen",
-				"chromas": {}
+				"chromas": {
+					"50": {
+						"id": 50,
+						"name": "Ashen Guardian Shen",
+						"colors": [
+							"#9D0606",
+							"#2B263F"
+						]
+					}
+				}
 			},
-			"50": {
-				"id": 50,
-				"name": "Ashen Guardian Shen",
-				"chromas": {}
-			}
+			"50": 49
 		},
 		"spells": {
 			"p": "Ki Barrier",
@@ -30092,7 +30607,94 @@
 			"15": 7,
 			"16": 7,
 			"17": 7,
-			"18": 7
+			"18": 7,
+			"19": {
+				"id": 19,
+				"name": "Inkshadow Volibear",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Inkshadow Volibear",
+						"colors": [
+							"#B5CED6",
+							"#33D889"
+						]
+					}
+				}
+			},
+			"20": 19,
+			"21": 19,
+			"22": 19,
+			"23": 19,
+			"24": 19,
+			"25": 19,
+			"26": 19,
+			"27": 19,
+			"28": 19
 		},
 		"spells": {
 			"p": "The Relentless Storm",
@@ -36489,7 +37091,94 @@
 			"17": 11,
 			"18": 11,
 			"19": 11,
-			"20": 11
+			"20": 11,
+			"21": {
+				"id": 21,
+				"name": "Inkshadow Aurelion Sol",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "",
+						"colors": [
+							"#B5CED6",
+							"#33D889"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21,
+			"30": 21
 		},
 		"spells": {
 			"p": "Cosmic Creator",
@@ -37718,7 +38407,94 @@
 			"44": 40,
 			"45": 40,
 			"46": 40,
-			"47": 1
+			"47": 1,
+			"48": {
+				"id": 48,
+				"name": "Inkshadow Kai'Sa",
+				"chromas": {
+					"49": {
+						"id": 49,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "",
+						"colors": [
+							"#9F4A25",
+							"#9F4A25"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "",
+						"colors": [
+							"#B5CED6",
+							"#33D889"
+						]
+					}
+				}
+			},
+			"49": 48,
+			"50": 48,
+			"51": 48,
+			"52": 48,
+			"53": 48,
+			"54": 48,
+			"55": 48,
+			"56": 48,
+			"57": 48
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -38976,7 +39752,108 @@
 				"id": 55,
 				"name": "Dream Dragon Yasuo",
 				"chromas": {}
-			}
+			},
+			"56": {
+				"id": 56,
+				"name": "Inkshadow Yasuo",
+				"chromas": {
+					"58": {
+						"id": 58,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#B5CED6",
+							"#33D889"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Inkshadow Yasuo",
+						"colors": [
+							"#B4CECD",
+							"#D55049"
+						]
+					}
+				}
+			},
+			"57": {
+				"id": 57,
+				"name": "Prestige Inkshadow Yasuo",
+				"chromas": {}
+			},
+			"58": 56,
+			"59": 56,
+			"60": 56,
+			"61": 56,
+			"62": 56,
+			"63": 56,
+			"64": 56,
+			"65": 56,
+			"66": 56,
+			"67": 56
 		},
 		"spells": {
 			"p": "Way of the Wanderer",
@@ -40778,7 +41655,85 @@
 			"18": 12,
 			"19": 12,
 			"20": 12,
-			"21": 12
+			"21": 12,
+			"22": {
+				"id": 22,
+				"name": "Woof and Lamb Kindred",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Woof and Lamb Kindred",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Woof and Lamb Kindred",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Woof and Lamb Kindred",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Woof and Lamb Kindred",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Woof and Lamb Kindred",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Woof and Lamb Kindred",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Woof and Lamb Kindred",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Woof and Lamb Kindred",
+						"colors": [
+							"#85827F",
+							"#85827F"
+						]
+					}
+				}
+			},
+			"24": 22,
+			"25": 22,
+			"26": 22,
+			"27": 22,
+			"28": 22,
+			"29": 22,
+			"30": 22,
+			"31": 22
 		},
 		"spells": {
 			"p": "Mark of the Kindred",
@@ -43337,7 +44292,85 @@
 			"14": 9,
 			"15": 9,
 			"16": 9,
-			"17": 9
+			"17": 9,
+			"18": {
+				"id": 18,
+				"name": "Kibble-Head Kled",
+				"chromas": {
+					"19": {
+						"id": 19,
+						"name": "Kibble-Head Kled",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Kibble-Head Kled",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Kibble-Head Kled",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Kibble-Head Kled",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Kibble-Head Kled",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Kibble-Head Kled",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Kibble-Head Kled",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Kibble-Head Kled",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"19": 18,
+			"20": 18,
+			"21": 18,
+			"22": 18,
+			"23": 18,
+			"24": 18,
+			"25": 18,
+			"26": 18
 		},
 		"spells": {
 			"p": "Skaarl, the Cowardly Lizard",
@@ -45707,7 +46740,85 @@
 					}
 				}
 			},
-			"38": 37
+			"38": 37,
+			"39": {
+				"id": 39,
+				"name": "Shiba Yuumi",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Shiba Yuumi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Shiba Yuumi",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Shiba Yuumi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Shiba Yuumi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Shiba Yuumi",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Shiba Yuumi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Shiba Yuumi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Shiba Yuumi",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39
 		},
 		"spells": {
 			"p": "Feline Friendship",
@@ -50492,7 +51603,94 @@
 			"31": 26,
 			"32": 26,
 			"33": 26,
-			"34": 26
+			"34": 26,
+			"35": {
+				"id": 35,
+				"name": "Inkshadow Yone",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "",
+						"colors": [
+							"#B5CED6",
+							"#33D889"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35,
+			"44": 35
 		},
 		"spells": {
 			"p": "Way of the Hunter",

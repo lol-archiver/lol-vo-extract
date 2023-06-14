@@ -15,13 +15,17 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "0: Test local",
+			"name": "0: Launch Current File",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/0-local.js",
+			"cwd": "${workspaceRoot}",
+			"program": "${fileDirname}/${fileBasename}",
+			"args": [
+				"${workspaceRoot}"
+			],
 		},
 		{
 			"type": "node",
