@@ -11024,7 +11024,7 @@
 				"chromas": {
 					"27": {
 						"id": 27,
-						"name": "",
+						"name": "Elderwood Karthus",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -11032,7 +11032,7 @@
 					},
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Elderwood Karthus",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -11040,7 +11040,7 @@
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Elderwood Karthus",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -11048,7 +11048,7 @@
 					},
 					"30": {
 						"id": 30,
-						"name": "",
+						"name": "Elderwood Karthus",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -11056,7 +11056,7 @@
 					},
 					"31": {
 						"id": 31,
-						"name": "",
+						"name": "Elderwood Karthus",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -11064,7 +11064,7 @@
 					},
 					"32": {
 						"id": 32,
-						"name": "",
+						"name": "Elderwood Karthus",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -11072,7 +11072,7 @@
 					},
 					"33": {
 						"id": 33,
-						"name": "",
+						"name": "Elderwood Karthus",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -11080,7 +11080,7 @@
 					},
 					"34": {
 						"id": 34,
-						"name": "",
+						"name": "Elderwood Karthus",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -12417,7 +12417,7 @@
 				"chromas": {
 					"47": {
 						"id": 47,
-						"name": "",
+						"name": "Victorious Anivia",
 						"colors": [
 							"#764D43",
 							"#764D43"
@@ -12425,7 +12425,7 @@
 					},
 					"48": {
 						"id": 48,
-						"name": "",
+						"name": "Victorious Anivia",
 						"colors": [
 							"#AAB5BA",
 							"#AAB5BA"
@@ -12433,7 +12433,7 @@
 					},
 					"49": {
 						"id": 49,
-						"name": "",
+						"name": "Victorious Anivia",
 						"colors": [
 							"#D9C445",
 							"#D9C445"
@@ -12441,7 +12441,7 @@
 					},
 					"50": {
 						"id": 50,
-						"name": "",
+						"name": "Victorious Anivia",
 						"colors": [
 							"#26854C",
 							"#26854C"
@@ -12449,7 +12449,7 @@
 					},
 					"51": {
 						"id": 51,
-						"name": "",
+						"name": "Victorious Anivia",
 						"colors": [
 							"#65337F",
 							"#65337F"
@@ -12457,7 +12457,7 @@
 					},
 					"52": {
 						"id": 52,
-						"name": "",
+						"name": "Victorious Anivia",
 						"colors": [
 							"#9D228D",
 							"#9D228D"
@@ -12465,7 +12465,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "",
+						"name": "Victorious Anivia",
 						"colors": [
 							"#B31316",
 							"#B31316"
@@ -12473,7 +12473,7 @@
 					},
 					"54": {
 						"id": 54,
-						"name": "",
+						"name": "Victorious Anivia",
 						"colors": [
 							"#1D62C8",
 							"#1D62C8"
@@ -20021,7 +20021,7 @@
 				"chromas": {
 					"30": {
 						"id": 30,
-						"name": "",
+						"name": "Star Guardian Orianna",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -20029,7 +20029,7 @@
 					},
 					"31": {
 						"id": 31,
-						"name": "",
+						"name": "Star Guardian Orianna",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -20037,7 +20037,7 @@
 					},
 					"32": {
 						"id": 32,
-						"name": "",
+						"name": "Star Guardian Orianna",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -20045,7 +20045,7 @@
 					},
 					"33": {
 						"id": 33,
-						"name": "",
+						"name": "Star Guardian Orianna",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -20053,7 +20053,7 @@
 					},
 					"34": {
 						"id": 34,
-						"name": "",
+						"name": "Star Guardian Orianna",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -20061,7 +20061,7 @@
 					},
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Star Guardian Orianna",
 						"colors": [
 							"#9C68D7",
 							"#9C68D7"
@@ -20069,7 +20069,7 @@
 					},
 					"36": {
 						"id": 36,
-						"name": "",
+						"name": "Star Guardian Orianna",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -20077,10 +20077,10 @@
 					},
 					"37": {
 						"id": 37,
-						"name": "",
+						"name": "Star Guardian Orianna",
 						"colors": [
-							"#ECF9F8",
-							"#ECF9F8"
+							"#C1F2D7",
+							"#C1F2D7"
 						]
 					}
 				}
@@ -20231,7 +20231,7 @@
 				"chromas": {
 					"17": {
 						"id": 17,
-						"name": "",
+						"name": "Elderwood Wukong",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -20239,7 +20239,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "",
+						"name": "Elderwood Wukong",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -20247,7 +20247,7 @@
 					},
 					"19": {
 						"id": 19,
-						"name": "",
+						"name": "Elderwood Wukong",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -20255,7 +20255,7 @@
 					},
 					"20": {
 						"id": 20,
-						"name": "",
+						"name": "Elderwood Wukong",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -20263,7 +20263,7 @@
 					},
 					"21": {
 						"id": 21,
-						"name": "",
+						"name": "Elderwood Wukong",
 						"colors": [
 							"#6ABBEE",
 							"#6ABBEE"
@@ -20271,7 +20271,7 @@
 					},
 					"22": {
 						"id": 22,
-						"name": "",
+						"name": "Elderwood Wukong",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -20279,7 +20279,7 @@
 					},
 					"23": {
 						"id": 23,
-						"name": "",
+						"name": "Elderwood Wukong",
 						"colors": [
 							"#9C68D7",
 							"#9C68D7"
@@ -20287,7 +20287,7 @@
 					},
 					"24": {
 						"id": 24,
-						"name": "",
+						"name": "Elderwood Wukong",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -39501,7 +39501,7 @@
 				"chromas": {
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Star Guardian Seraphine",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -39509,7 +39509,7 @@
 					},
 					"36": {
 						"id": 36,
-						"name": "",
+						"name": "Star Guardian Seraphine",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -39517,7 +39517,7 @@
 					},
 					"37": {
 						"id": 37,
-						"name": "",
+						"name": "Star Guardian Seraphine",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -39525,7 +39525,7 @@
 					},
 					"38": {
 						"id": 38,
-						"name": "",
+						"name": "Star Guardian Seraphine",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -39533,7 +39533,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Star Guardian Seraphine",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -39541,7 +39541,7 @@
 					},
 					"40": {
 						"id": 40,
-						"name": "",
+						"name": "Star Guardian Seraphine",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -39549,7 +39549,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "",
+						"name": "Star Guardian Seraphine",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -39557,7 +39557,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "",
+						"name": "Star Guardian Seraphine",
 						"colors": [
 							"#C1F2FF",
 							"#C1F2FF"
@@ -43423,8 +43423,8 @@
 						"id": 33,
 						"name": "Shan Hai Scrolls Tahm Kench",
 						"colors": [
-							"#27211C",
-							"#27211C"
+							"#85827F",
+							"#85827F"
 						]
 					},
 					"34": {
@@ -43463,8 +43463,8 @@
 						"id": 38,
 						"name": "Shan Hai Scrolls Tahm Kench",
 						"colors": [
-							"#ECF9F8",
-							"#ECF9F8"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					}
 				}
