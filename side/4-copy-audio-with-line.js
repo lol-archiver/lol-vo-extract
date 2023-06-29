@@ -7,7 +7,7 @@ import { emptyDirSync } from 'fs-extra';
 
 import { C } from '@nuogz/pangu';
 
-import { dirFinal } from '../lib/dir.js';
+import { dirFinal, dirTextAudio } from '../lib/dir.js';
 import { pad0 } from '../lib/utility.js';
 import { I } from '../lib/info.js';
 
@@ -16,7 +16,7 @@ import { I } from '../lib/info.js';
 const safeFileName = name => name.replace(/:/g, '：').replace(/<(.*?)>/g, '（$1）').replace(/["*[\]<>\\/]|\\n/g, '');
 
 
-const dirTarget = resolve(dirFinal, '@line-audio');
+const dirTarget = resolve(dirTextAudio, '@line-audio');
 emptyDirSync(dirTarget);
 
 

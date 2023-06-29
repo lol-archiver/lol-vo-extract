@@ -8,14 +8,14 @@ import Iconv from 'iconv-lite';
 
 import { C } from '@nuogz/pangu';
 
-import { dirFinal } from '../lib/dir.js';
+import { dirFinal, dirTextAudio } from '../lib/dir.js';
 import { pad0 } from '../lib/utility.js';
 import { I } from '../lib/info.js';
 import { spawnSync } from 'child_process';
 
 
 
-const dirCWD = resolve(dirFinal, '@audio-text');
+const dirCWD = resolve(dirTextAudio);
 const dirAudio = resolve(dirCWD, 'audio');
 const dirAudioSingle = resolve(dirCWD, 'audio-single');
 const dirText = resolve(dirCWD, 'text');
