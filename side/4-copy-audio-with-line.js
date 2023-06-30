@@ -60,7 +60,7 @@ for(const lineText of arrLineText) {
 				resolve(dirTarget, `[${safeFileName(curEvent)}] ${safeFileName(line)}(${crc32}).wav`)
 			);
 		}
-		else if(crc32 == '00000000') {
+		else if(crc32 == '00000000' || crc32 == '00000001') {
 			if(curEvent.includes('选用')) {
 				copyFileSync(
 					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'pick.wav'),
