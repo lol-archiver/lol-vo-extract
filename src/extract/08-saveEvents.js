@@ -107,18 +107,32 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {
-				const slot = `[${pad0(I.id)}${pad0(eventInfo.index)}]`;
+				if(eventInfo.index) {
+					const slot = `[${pad0(I.id)}${pad0(eventInfo.index)}]`;
 
-				const dChampion = D[I.id];
-				const dSkinCN = dChampion.skins[eventInfo.index];
-				const dSkinEN = dictEN[I.id].skins[eventInfo.index];
+					const dChampion = D[I.id];
+					const dSkinCN = dChampion.skins[eventInfo.index];
+					const dSkinEN = dictEN[I.id].skins[eventInfo.index];
 
-				const skin = `${slot}${eventInfo.skinName.replace(/:/g, '')}` +
-					`||${slot} ${dChampion.slot}:${dChampion.name}` + (eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);
+					const skin = `${slot}${eventInfo.skinName.replace(/:/g, '')}` +
+						`||${slot} ${dChampion.slot}:${dChampion.name}` + (eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);
 
-				const skinMap = eventMap[skin] || (eventMap[skin] = {});
+					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-				(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: mapAudioID_SoundID[audioID] || [] });
+					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: mapAudioID_SoundID[audioID] || [] });
+				}
+				else {
+					const slot = `[${pad0(I.id)}]`;
+
+					const dChampion = D[I.id];
+
+					const skin = `${slot}${eventInfo.skinName.replace(/:/g, '')}` +
+						`||${slot} ${dChampion.slot}:${dChampion.name}`;
+
+					const skinMap = eventMap[skin] || (eventMap[skin] = {});
+
+					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: mapAudioID_SoundID[audioID] || [] });
+				}
 			}
 			else if(typeof eventInfo == 'number') {
 				const skinMap = eventMap['[Bad]'] || (eventMap['[Bad]'] = {});

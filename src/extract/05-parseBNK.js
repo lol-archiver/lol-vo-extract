@@ -115,6 +115,9 @@ export const parseHIRCObject = (id, type, B) => {
 		if(count) {
 			object.idsAction = B.unpack(`${count}L`);
 		}
+		else {
+			object.idsAction = [];
+		}
 	}
 	// Container
 	else if(type == 5) {

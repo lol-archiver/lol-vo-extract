@@ -66,7 +66,7 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 				ensureDirSync(pathFolder);
 
 				const eventsText = events.join('&');
-				const audioText = `[${nameSkin == '[Bad]' ? `${audioID}][${audioIDHex}` : audioIDHex}][${crcWEM}].${C.format}`;
+				const audioText = `${nameSkin == '[Bad]' ? `[${audioID}][${audioIDHex}]` : `[${audioIDHex}]`}[${crcWEM}].${C.format}`;
 
 				try {
 					if(eventsText.length > 128) { throw 'eventsText.length > 128'; }
