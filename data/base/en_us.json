@@ -10384,7 +10384,94 @@
 			"38": 32,
 			"39": 32,
 			"40": 32,
-			"41": 32
+			"41": 32,
+			"42": {
+				"id": 42,
+				"name": "Soul Fighter Evelynn",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Soul Fighter Evelynn",
+						"colors": [
+							"#C8D0CE",
+							"#AF65D1"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42,
+			"48": 42,
+			"49": 42,
+			"50": 42,
+			"51": 42
 		},
 		"spells": {
 			"p": "Demon Shade",
@@ -12849,7 +12936,99 @@
 			"39": 33,
 			"40": 33,
 			"41": 33,
-			"42": 33
+			"42": 33,
+			"43": {
+				"id": 43,
+				"name": "Soul Fighter Shaco",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Soul Fighter Shaco",
+						"colors": [
+							"#C8D0CE",
+							"#AF65D1"
+						]
+					}
+				}
+			},
+			"44": {
+				"id": 44,
+				"name": "Prestige Soul Fighter Shaco",
+				"chromas": {}
+			},
+			"45": 43,
+			"46": 43,
+			"47": 43,
+			"48": 43,
+			"49": 43,
+			"50": 43,
+			"51": 43,
+			"52": 43,
+			"53": 43
 		},
 		"spells": {
 			"p": "Backstab",
@@ -42330,7 +42509,94 @@
 			"32": 25,
 			"33": 25,
 			"34": 25,
-			"35": 25
+			"35": 25,
+			"36": {
+				"id": 36,
+				"name": "Soul Fighter Jhin",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Soul Fighter Jhin",
+						"colors": [
+							"#C8D0CE",
+							"#AF65D1"
+						]
+					}
+				}
+			},
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36,
+			"45": 36,
+			"46": 36
 		},
 		"spells": {
 			"p": "Whisper",
@@ -43836,7 +44102,67 @@
 			"26": 21,
 			"27": 21,
 			"28": 21,
-			"29": 21
+			"29": 21,
+			"30": {
+				"id": 30,
+				"name": "Soul Fighter Viego",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Soul Fighter Viego",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Soul Fighter Viego",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Soul Fighter Viego",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Soul Fighter Viego",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Soul Fighter Viego",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Soul Fighter Viego",
+						"colors": [
+							"#C8D0CE",
+							"#AF65D1"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30
 		},
 		"spells": {
 			"p": "Sovereign's Domination",
@@ -53873,7 +54199,94 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "Soul Fighter Gwen",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Soul Fighter Gwen",
+						"colors": [
+							"#C8D0CE",
+							"#AF65D1"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20,
+			"29": 20
 		},
 		"spells": {
 			"p": "A Thousand Cuts",
