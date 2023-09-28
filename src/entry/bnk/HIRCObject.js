@@ -49,6 +49,10 @@ export class HIRCObject {
 	 * @type {number}
 	 */
 	type;
+	/**
+	 * @type {string}
+	 */
+	typeName;
 
 
 
@@ -57,7 +61,7 @@ export class HIRCObject {
 		this.type = type;
 	}
 
-	toString() { return `${this.__proto__.constructor.name}:${showID(this.id)}`; }
+	toString() { return `${this.typeName ?? this.__proto__.constructor.name}:${showID(this.id)}`; }
 }
 
 

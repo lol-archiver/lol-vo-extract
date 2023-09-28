@@ -184,12 +184,14 @@ export const parseHIRCObject = (id, type, B) => {
 		}
 
 
-		const [d1, d2, d3, d4, d5, d6, d7, d8] = B.unpack('BBBBBBBB');
+		const [d1, d2] = B.unpack('BB');
 		// d1 may be a unknown boolean
 		if(d1 > 1) { G.debug('BNKParser', 'match undetect data ~[1.bool]', `~{${d1}}`); }
 		// d2 should be a byte parameter
 		// if d2 > 0, 1 byte following parameter
 		if(d2 > 0) { B.unpack('B'); }
+
+		const [d3, d4, d5, d6, d7, d8] = B.unpack('BBBBBB');
 		// d3 may be a unknown boolean
 		if(d3 > 1) { G.debug('BNKParser', 'match undetect data ~[3.bool]', `~{${d3}}`); }
 		// d4 may be a unknown boolean
@@ -205,6 +207,8 @@ export const parseHIRCObject = (id, type, B) => {
 
 
 		if(type == 5) {
+			object.typeName = 'Random/Sequence Container';
+
 			const textUndetectLong = [...B.slice(23)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
 
 			if(textUndetectLong !=
@@ -218,6 +222,8 @@ export const parseHIRCObject = (id, type, B) => {
 			if(h2 != 18) { G.debug('BNKParser', 'match undetect data ~[5.h2]', `~{${h2}}`); }
 		}
 		else if(type == 6) {
+			object.typeName = 'Switch Container';
+
 			const textUndetectLong = [...B.slice(6)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
 
 			if(textUndetectLong !=
@@ -228,6 +234,8 @@ export const parseHIRCObject = (id, type, B) => {
 			[object.idGroup, object.idSwitchDefault] = B.unpack('LLx');
 		}
 		else if(type == 9) {
+			object.typeName = 'Blend Container';
+
 			const textUndetectLong = [...B.slice(5)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
 
 			if(textUndetectLong !=
