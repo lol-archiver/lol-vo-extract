@@ -49,7 +49,31 @@ const fnv_1 = name => {
 
 // 7: Actor Mixer
 // 14: Attenuation
-const typesUnused = [7, 14];
+// 17: Motion FX
+const typesUnused = [7, 14, 17];
+
+
+const formats$typeParamAdditional = {
+	[0x00]: 'f',
+	[0x02]: 'f',
+	[0x03]: 'f',
+	[0x05]: 'f',
+	[0x06]: 'f',
+	[0x07]: 'I',
+	[0x08]: 'f',
+	[0x0B]: 'f',
+	[0x0C]: 'f',
+	[0x0D]: 'f',
+	[0x12]: 'f',
+	[0x13]: 'f',
+	[0x14]: 'f',
+	[0x15]: 'f',
+	[0x16]: 'f',
+	[0x17]: 'f',
+	[0x18]: 'f',
+	[0x46]: 'I',// not sure
+};
+
 
 /**
  * @param {number} id
@@ -119,146 +143,128 @@ export const parseHIRCObject = (id, type, B) => {
 			object.idsAction = [];
 		}
 	}
-	// Container
-	else if(type == 5) {
+	// Containers
+	else if([5, 6, 9].includes(type)) {
 		object = new HIRCContainer(id);
 
-		// unknown bytes * 3
-		// unknown id * 2 (long)
-		B.skip(3 + 4 + 4);
 
-		// 00
-		// the number of unknown params (byte);
-		const [countParams] = B.unpack('xB');
+		// override parent settings or not
+		// number of effects
+		const [overrided, countEffects] = B.unpack('BB');
 
-		// unknown param values (byte each)
-		object.params = countParams ? B.unpack(`${countParams}B`).map(type => ({ type })) : [];
+		if(overrided) {
+			// bypassed effect mask
+			B.skip(1);
 
-		// 00 00
-		// unknown param struct each:
-		// value (short)
-		// 00
-		// iguess additional value (byte)
-		// iguess additional value==3 + 1 byte
-		B.skip(2);
-		for(let index = 0; index < countParams; index++) {
-			const param = object.params[index];
-			[param.value, param.addition] = B.unpack('HxB');
-
-			if(param.addition == 3) {
-				[param.valueAddition] = B.unpack('B');
-			}
-			else if(param.addition == 2) {
-				param.valueAddition = B.unpack('2Lx');
-			}
-			else if(param.addition == 204) {
-				void 0;
-			}
-			else if(param.addition) {
-				G.warn('BNKParser', 'unknown ~[container param addition]', `~{${param.addition}}`);
+			for(let index = 0; index < countEffects; index++) {
+				B.skip(0
+					+ 1 // effect index
+					+ 4 // effect id
+					+ 2 // 00 00
+				);
 			}
 		}
 
-		// 00 00
-		// unknown id * 2 (long)
-		// 00
-		// unknown id * 2 (long)
-		// unknown id * 2 (long)
-		// 00 00
-		// unknown short + 00
-		// unknown short + 00
-		B.skip(
-			2 +
-			4 + 4 +
-			1 +
-			4 + 4 +
-			4 + 4 +
-			2 +
-			2 + 1 +
-			2 + 1
+		B.skip(0
+			+ 1 // 00
+			+ 4 // output bus id
+			+ 4 // parent object id
+			+ 1 // undetect, 00, or override parent settings, or activate offset priority at max distance
 		);
 
 
-		// 00
-		// the number of sound id (long)
+		// number of additional parameter
+		const [countParams] = B.unpack('B');
+
+		// types of each additional parameter
+		object.params = B.unpack(`${countParams}B`).map(type => ({ type }));
+
+		for(const param of object.params) {
+			[param.value] = B.unpack(formats$typeParamAdditional[param.type]);
+		}
+
+
+		const [d1, d2, d3, d4, d5, d6, d7, d8] = B.unpack('BBBBBBBB');
+		// d1 may be a unknown boolean
+		if(d1 > 1) { G.debug('BNKParser', 'match undetect data ~[1.bool]', `~{${d1}}`); }
+		// d2 should be a byte parameter
+		// if d2 > 0, 1 byte following parameter
+		if(d2 > 0) { B.unpack('B'); }
+		// d3 may be a unknown boolean
+		if(d3 > 1) { G.debug('BNKParser', 'match undetect data ~[3.bool]', `~{${d3}}`); }
+		// d4 may be a unknown boolean
+		if(d4 > 1) { G.debug('BNKParser', 'match undetect data ~[4.bool]', `~{${d4}}`); }
+		// d5 may be a unknown boolean
+		if(d5 > 1) { G.debug('BNKParser', 'match undetect data ~[5.bool]', `~{${d5}}`); }
+		// d6 may be a unknown boolean
+		if(d6 > 1) { G.debug('BNKParser', 'match undetect data ~[6.bool]', `~{${d6}}`); }
+		// d7 may be a unknown boolean
+		if(d7 > 1) { G.debug('BNKParser', 'match undetect data ~[7.bool]', `~{${d7}}`); }
+		// d8 may be a unknown boolean
+		if(d8 > 1) { G.debug('BNKParser', 'match undetect data ~[8.bool]', `~{${d8}}`); }
+
+
+		if(type == 5) {
+			const textUndetectLong = [...B.slice(23)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+
+			if(textUndetectLong !=
+				'00 00 00 00 00 01 00 00 00 00 00 00 00 7A 44 00 00 00 00 00 00 00 00') {
+				G.debug('BNKParser', 'match undetect data ~[5.long]', '✖', textUndetectLong);
+			}
+
+
+			const [h1, h2] = B.unpack('>xxHH');
+			if(h1 > 1) { G.debug('BNKParser', 'match undetect data ~[5.h1]', `~{${h1}}`); }
+			if(h2 != 18) { G.debug('BNKParser', 'match undetect data ~[5.h2]', `~{${h2}}`); }
+		}
+		else if(type == 6) {
+			const textUndetectLong = [...B.slice(6)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+
+			if(textUndetectLong !=
+				'00 00 00 00 00 00') {
+				G.debug('BNKParser', 'match undetect data ~[6.long]', '✖', textUndetectLong);
+			}
+
+			[object.idGroup, object.idSwitchDefault] = B.unpack('LLx');
+		}
+		else if(type == 9) {
+			const textUndetectLong = [...B.slice(5)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+
+			if(textUndetectLong !=
+				'00 00 00 00 00') {
+				G.debug('BNKParser', 'match undetect data ~[9.long]', '✖', textUndetectLong);
+			}
+		}
+
+
+		// number of sound id
 		const [countSound] = B.unpack('L');
 
-		// sound ids (long each)
+		// each sound ids
 		try {
 			object.idsSound = B.unpack(`${countSound}L`);
-		} catch(error) {
-			debugger;
 		}
-	}
-	// Switch Container
-	else if(type == 6) {
-		object = new HIRCSwitchContainer(id);
-
-		// unknown bytes * 3
-		// unknown id * 2 (long)
-		B.skip(3 + 4 + 4);
-
-		// 00
-		// the number of unknown params (byte);
-		const [countParams] = B.unpack('xB');
-
-		// unknown param values (byte each)
-		object.params = countParams ? B.unpack(`${countParams}B`).map(type => ({ type })) : [];
-
-		// 00 00
-		// unknown param struct each:
-		// value (short)
-		// 00
-		// iguess additional value (byte)
-		// iguess additional value==3 + 1 byte
-		B.skip(2);
-		for(let index = 0; index < countParams; index++) {
-			const param = object.params[index];
-			[param.value, param.addition] = B.unpack('HxB');
-
-			if(param.addition == 3) {
-				[param.valueAddition] = B.unpack('B');
-			}
-
-			if(param.addition && param.addition != 3) {
-				G.warn('BNKParser', 'unknown ~[switch container param addition]', `~{${param.addition}}`);
-			}
+		catch(error) {
+			G.error('BNKParser', 'unpack container sound ids', error);
 		}
 
-		// 00 00
-		// unknown id * 2 (long)
-		// 00 00
-		B.skip(2 + 4 + 4 + 2);
 
+		if(type == 6) {
+			// number of switch
+			const [countSwitch] = B.unpack('L');
 
-		// group id (long)
-		// default switch id (long)
-		[object.idGroup, object.idSwitchDefault] = B.unpack('LL');
+			// each switch
+			object.switches = [];
+			for(let index = 0; index < countSwitch; index++) {
+				// number of sound
+				const [id, countSoundSwitch] = B.unpack(`LL`);
 
+				// each sound ids
+				const sw = new HIRCSwitch(id, B.unpack(`${countSoundSwitch}L`));
 
-		// 00
-		// the number of sound id (long)
-		const [countSound] = B.unpack('xL');
-
-		// sound ids (long each)
-		object.idsSound = B.unpack(`${countSound}L`);
-
-
-		// the number of switch (long)
-		const [countSwitch] = B.unpack('L');
-
-		// switch
-		object.switches = [];
-		for(let index = 0; index < countSwitch; index++) {
-			// id (long)
-			// the number of sound (long)
-			const [id, countSoundSwitch] = B.unpack(`LL`);
-
-			// sound ids (long each)
-			const sw = new HIRCSwitch(id, B.unpack(`${countSoundSwitch}L`));
-
-			object.switches.push(sw);
-			objectsExtra.push(sw);
+				object.switches.push(sw);
+				objectsExtra.push(sw);
+			}
 		}
 	}
 	else if(!typesUnused.includes(type)) {

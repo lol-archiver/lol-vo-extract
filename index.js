@@ -96,8 +96,8 @@ if(!C.skipExtract) {
 
 	// copy voice files and rename with events
 	copyAudios(mapAudioID_Event, arrAudioPackFile);
+
+
+	// save event JSON for `lol-vo-lines-dictation`
+	saveEvents(mapAudioID_Event, arrAudioPackFile, mapAudioID_SoundID);
 }
-
-
-// save event JSON for `lol-vo-lines-dictation`
-saveEvents(mapAudioID_Event, arrAudioPackFile, mapAudioID_SoundID);
