@@ -11,7 +11,7 @@ import { dirCache } from './lib/dir.js';
 
 import initWADInfo from './src/extract/01-initFetch.js';
 import fetchWADs from './src/extract/02-fetchWads.js';
-import parseInfosExtractAll from './src/extract/03-parseInfosExtractAll.js';
+import parseExtractInfo from './src/extract/03-parseInfosExtractAll.js';
 import parseBIN from './src/extract/04-parseBIN.js';
 import parseBNK from './src/extract/05-parseBNK.js';
 import extractAudios from './src/extract/06-extractAudios.js';
@@ -27,77 +27,76 @@ const { fileWADChampionDefault, fileWADChampionLocale, wadsNeedFetch } = initWAD
 await fetchWADs(wadsNeedFetch);
 
 
-const infosExtractRaw = parseInfosExtractAll();
+const infosExtract$pathInWAD = parseExtractInfo();
 
 
-const resultExtractDefault = await extractWAD(fileWADChampionDefault, infosExtractRaw);
+const filesExtractedDefault$name = await extractWAD(fileWADChampionDefault, infosExtract$pathInWAD);
 
 
-const mapName_Event = {};
+const eventsAll$nameEvent = {};
 
-for(const binFile of Object.keys(resultExtractDefault).filter(file => file.includes('.bin')).sort((a, b) => a.match(/\d+/)[0] - b.match(/\d+/)[0])) {
+for(const binFile of Object.keys(filesExtractedDefault$name).filter(file => file.includes('.bin')).sort((a, b) => a.match(/\d+/)[0] - b.match(/\d+/)[0])) {
 	const events = parseBIN(resolve(dirCache, 'extract', binFile), ~~binFile.match(/\d+/g)[0], C.useSFXLevel);
 
 	if(events instanceof Array) {
 		for(const event of events) {
-			(mapName_Event[event.name] || (mapName_Event[event.name] = [])).push(event);
+			(eventsAll$nameEvent[event.name] || (eventsAll$nameEvent[event.name] = [])).push(event);
 		}
 	}
 }
 
-const setNameEvent = new Set(Object.keys(mapName_Event));
+const namesEvent = new Set(Object.keys(eventsAll$nameEvent));
 
-const resultExtractLocale = await extractWAD(fileWADChampionLocale, infosExtractRaw);
+const filesExtractedLocale$name = await extractWAD(fileWADChampionLocale, infosExtract$pathInWAD);
 
-const mapAudioID_Event = {};
-const mapAudioID_SoundID = {};
+const eventsAll$idAudio = {};
+const idsSoundAll$idAudio = {};
 
-for(let eventFile of Object.keys(resultExtractLocale).filter(file => file.includes('event.bnk'))) {
-	const [mapAudioID_EventName, mapSubAudioID_SoundID] = await parseBNK(
+for(const eventFile of Object.keys(filesExtractedLocale$name).filter(file => file.includes('event.bnk'))) {
+	const [namesEventAllBNK$idAudio, idsSoundAllBNK$idAudio] = await parseBNK(
 		resolve(dirCache, 'extract', eventFile),
-		setNameEvent
+		namesEvent,
 	);
 
-	for(const audioID in mapAudioID_EventName) {
-		const setEventName_AudioID = mapAudioID_EventName[audioID];
+	for(const idAudio in namesEventAllBNK$idAudio) {
+		const namesEventBNK = namesEventAllBNK$idAudio[idAudio];
 
-		for(const eventName of setEventName_AudioID) {
-			const arrEvent_EventName = mapName_Event[eventName];
+		for(const nameEvent of namesEventBNK) {
+			const events = eventsAll$nameEvent[nameEvent];
 
-			if(arrEvent_EventName) {
-				for(const event of arrEvent_EventName) {
-					(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(event);
+			if(events) {
+				for(const event of events) {
+					(eventsAll$idAudio[idAudio] || (eventsAll$idAudio[idAudio] = [])).push(event);
 				}
 			}
 			else {
-				(mapAudioID_Event[audioID] || (mapAudioID_Event[audioID] = [])).push(eventName);
+				(eventsAll$idAudio[idAudio] || (eventsAll$idAudio[idAudio] = [])).push(nameEvent);
 			}
 		}
 	}
 
-	for(const audioID in mapSubAudioID_SoundID) {
-		const setSoundID_AudioID = mapSubAudioID_SoundID[audioID];
+	for(const idAudio in idsSoundAllBNK$idAudio) {
+		const idsSoundBNK = idsSoundAllBNK$idAudio[idAudio];
 
-		(mapAudioID_SoundID[audioID] || (mapAudioID_SoundID[audioID] = [])).push(...setSoundID_AudioID);
+		(idsSoundAll$idAudio[idAudio] || (idsSoundAll$idAudio[idAudio] = [])).push(...idsSoundBNK);
 	}
-
 }
 
-const arrAudioPackFile = [
-	...Object.keys(resultExtractLocale).filter(file => file.includes('audio.')),
-	...Object.keys(resultExtractDefault).filter(file => file.includes('audio.')),
+const namesFileSoundBank = [
+	...Object.keys(filesExtractedLocale$name).filter(file => file.includes('audio.')),
+	...Object.keys(filesExtractedDefault$name).filter(file => file.includes('audio.')),
 ];
 
 
 if(!C.skipExtract) {
 	// extract vocie files from wpk
-	extractAudios(arrAudioPackFile);
+	extractAudios(namesFileSoundBank);
 
 
 	// copy voice files and rename with events
-	copyAudios(mapAudioID_Event, arrAudioPackFile);
+	copyAudios(eventsAll$idAudio, namesFileSoundBank, idsSoundAll$idAudio, infosExtract$pathInWAD);
 
 
 	// save event JSON for `lol-vo-lines-dictation`
-	saveEvents(mapAudioID_Event, arrAudioPackFile, mapAudioID_SoundID);
+	saveEvents(eventsAll$idAudio, namesFileSoundBank, idsSoundAll$idAudio, infosExtract$pathInWAD);
 }

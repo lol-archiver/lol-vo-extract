@@ -61,7 +61,7 @@ export class HIRCObject {
 		this.type = type;
 	}
 
-	toString() { return `${this.typeName ?? this.__proto__.constructor.name}:${showID(this.id)}`; }
+	toString() { return `${this.typeName ?? this.__proto__.constructor.name}:${showID(this.id)}${this.overrided?' override':''}`; }
 }
 
 

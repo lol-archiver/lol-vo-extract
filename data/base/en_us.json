@@ -2206,7 +2206,16 @@
 			"19": {
 				"id": 19,
 				"name": "iG LeBlanc",
-				"chromas": {}
+				"chromas": {
+					"54": {
+						"id": 54,
+						"name": "iG LeBlanc",
+						"colors": [
+							"#FF1515",
+							"#E8CD6B"
+						]
+					}
+				}
 			},
 			"20": {
 				"id": 20,
@@ -2296,11 +2305,11 @@
 			"28": 20,
 			"29": {
 				"id": 29,
-				"name": "Championship LeBlanc",
+				"name": "Worlds 2020 LeBlanc",
 				"chromas": {
 					"30": {
 						"id": 30,
-						"name": "Championship LeBlanc",
+						"name": "Worlds 2020 LeBlanc",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -2308,7 +2317,7 @@
 					},
 					"31": {
 						"id": 31,
-						"name": "Championship LeBlanc",
+						"name": "Worlds 2020 LeBlanc",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -2316,7 +2325,7 @@
 					},
 					"32": {
 						"id": 32,
-						"name": "Championship LeBlanc",
+						"name": "Worlds 2020 LeBlanc",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -2497,7 +2506,8 @@
 			"50": 45,
 			"51": 45,
 			"52": 45,
-			"53": 45
+			"53": 45,
+			"54": 19
 		},
 		"spells": {
 			"p": "Mirror Image",
@@ -4729,11 +4739,11 @@
 			},
 			"11": {
 				"id": 11,
-				"name": "Championship Ryze",
+				"name": "Worlds 2019 Ryze",
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "Championship Ryze",
+						"name": "Worlds 2019 Ryze",
 						"colors": [
 							"#FFC948",
 							"#FFC948"
@@ -8376,11 +8386,11 @@
 			},
 			"9": {
 				"id": 9,
-				"name": "Championship Ashe",
+				"name": "Worlds 2017 Ashe",
 				"chromas": {
 					"10": {
 						"id": 10,
-						"name": "Championship Ashe",
+						"name": "Worlds 2017 Ashe",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -9311,7 +9321,12 @@
 			"28": 22,
 			"29": 22,
 			"30": 22,
-			"31": 22
+			"31": 22,
+			"32": {
+				"id": 32,
+				"name": "Neo PAX Jax",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Relentless Assault",
@@ -18346,6 +18361,14 @@
 							"#0C0C0F",
 							"#9B1520"
 						]
+					},
+					"47": {
+						"id": 47,
+						"name": "FPX Malphite",
+						"colors": [
+							"#FF1515",
+							"#E8CD6B"
+						]
 					}
 				}
 			},
@@ -18523,7 +18546,8 @@
 			"43": 37,
 			"44": 37,
 			"45": 37,
-			"46": 37
+			"46": 37,
+			"47": 25
 		},
 		"spells": {
 			"p": "Granite Shield",
@@ -19856,7 +19880,58 @@
 			"38": 33,
 			"39": 33,
 			"40": 33,
-			"41": 33
+			"41": 33,
+			"42": {
+				"id": 42,
+				"name": "Worlds 2023 Renekton",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Worlds 2023 Renekton",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Worlds 2023 Renekton",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Worlds 2023 Renekton",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Worlds 2023 Renekton",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Worlds 2023 Renekton",
+						"colors": [
+							"#BF15C5",
+							"#0C2CBD"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42
 		},
 		"spells": {
 			"p": "Reign of Anger",
@@ -20417,7 +20492,94 @@
 			"20": 15,
 			"21": 15,
 			"22": 15,
-			"23": 15
+			"23": 15,
+			"24": {
+				"id": 24,
+				"name": "Coven Elise",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Coven Elise",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Coven Elise",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Coven Elise",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Coven Elise",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Coven Elise",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Coven Elise",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Coven Elise",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Coven Elise",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Coven Elise",
+						"colors": [
+							"#429184",
+							"#942861"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24,
+			"33": 24
 		},
 		"spells": {
 			"p": "Spider Queen",
@@ -21784,7 +21946,24 @@
 			"10": {
 				"id": 10,
 				"name": "Soulstealer Vayne",
-				"chromas": {}
+				"chromas": {
+					"53": {
+						"id": 53,
+						"name": "Soulstealer Vayne",
+						"colors": [
+							"#DCCE74",
+							"#17151A"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Soulstealer Vayne",
+						"colors": [
+							"#FF1515",
+							"#E8CD6B"
+						]
+					}
+				}
 			},
 			"11": {
 				"id": 11,
@@ -22133,7 +22312,9 @@
 			"49": 44,
 			"50": 44,
 			"51": 44,
-			"52": 44
+			"52": 44,
+			"53": 10,
+			"54": 10
 		},
 		"spells": {
 			"p": "Night Hunter",
@@ -23835,7 +24016,94 @@
 			"44": 39,
 			"45": 39,
 			"46": 39,
-			"47": 39
+			"47": 39,
+			"48": {
+				"id": 48,
+				"name": "La Ilusión Nidalee",
+				"chromas": {
+					"49": {
+						"id": 49,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "La Ilusión Nidalee",
+						"colors": [
+							"#EE3B93",
+							"#055939"
+						]
+					}
+				}
+			},
+			"49": 48,
+			"50": 48,
+			"51": 48,
+			"52": 48,
+			"53": 48,
+			"54": 48,
+			"55": 48,
+			"56": 48,
+			"57": 48
 		},
 		"spells": {
 			"p": "Prowl",
@@ -25453,7 +25721,94 @@
 					}
 				}
 			},
-			"43": 42
+			"43": 42,
+			"44": {
+				"id": 44,
+				"name": "Old God Mordekaiser",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Old God Mordekaiser",
+						"colors": [
+							"#429184",
+							"#942861"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44,
+			"53": 44
 		},
 		"spells": {
 			"p": "Darkness Rise",
@@ -26379,7 +26734,108 @@
 					}
 				}
 			},
-			"69": 68
+			"69": 68,
+			"70": {
+				"id": 70,
+				"name": "Coven Akali",
+				"chromas": {
+					"72": {
+						"id": 72,
+						"name": "Coven Akali",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Coven Akali",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Coven Akali",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Coven Akali",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Coven Akali",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"77": {
+						"id": 77,
+						"name": "Coven Akali",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Coven Akali",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"79": {
+						"id": 79,
+						"name": "Coven Akali",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"80": {
+						"id": 80,
+						"name": "Coven Akali",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "Coven Akali",
+						"colors": [
+							"#429184",
+							"#942861"
+						]
+					}
+				}
+			},
+			"71": {
+				"id": 71,
+				"name": "Prestige Coven Akali",
+				"chromas": {}
+			},
+			"72": 70,
+			"73": 70,
+			"74": 70,
+			"75": 70,
+			"76": 70,
+			"77": 70,
+			"78": 70,
+			"79": 70,
+			"80": 70,
+			"81": 70
 		},
 		"spells": {
 			"p": "Assassin's Mark",
@@ -28298,7 +28754,7 @@
 			},
 			"4": {
 				"id": 4,
-				"name": "Championship Riven",
+				"name": "Worlds 2012 Riven",
 				"chromas": {}
 			},
 			"5": {
@@ -28331,11 +28787,11 @@
 			},
 			"7": {
 				"id": 7,
-				"name": "Championship Riven 2016",
+				"name": "Worlds 2016 Riven",
 				"chromas": {
 					"19": {
 						"id": 19,
-						"name": "Championship Riven 2016",
+						"name": "Worlds 2016 Riven",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -30413,11 +30869,11 @@
 			},
 			"5": {
 				"id": 5,
-				"name": "Championship Shyvana",
+				"name": "Worlds 2014 Shyvana",
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Championship Shyvana",
+						"name": "Worlds 2014 Shyvana",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -33636,7 +34092,16 @@
 			"5": {
 				"id": 5,
 				"name": "Poro Rider Sejuani",
-				"chromas": {}
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Poro Rider Sejuani",
+						"colors": [
+							"#FF1515",
+							"#E8CD6B"
+						]
+					}
+				}
 			},
 			"6": {
 				"id": 6,
@@ -33982,7 +34447,8 @@
 			"43": 36,
 			"44": 36,
 			"45": 36,
-			"46": 36
+			"46": 36,
+			"47": 5
 		},
 		"spells": {
 			"p": "Fury of the North",
@@ -34264,7 +34730,16 @@
 			"31": {
 				"id": 31,
 				"name": "iG Fiora",
-				"chromas": {}
+				"chromas": {
+					"79": {
+						"id": 79,
+						"name": "iG Fiora",
+						"colors": [
+							"#FF1515",
+							"#E8CD6B"
+						]
+					}
+				}
 			},
 			"40": 4,
 			"41": {
@@ -34583,7 +35058,8 @@
 			"75": 69,
 			"76": 69,
 			"77": 69,
-			"78": 69
+			"78": 69,
+			"79": 31
 		},
 		"spells": {
 			"p": "Duelist's Dance",
@@ -34857,7 +35333,94 @@
 			"29": 24,
 			"30": 24,
 			"31": 24,
-			"32": 24
+			"32": 24,
+			"33": {
+				"id": 33,
+				"name": "La Ilusión Ziggs",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "La Ilusión Ziggs",
+						"colors": [
+							"#EE3B93",
+							"#055939"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33,
+			"42": 33
 		},
 		"spells": {
 			"p": "Short Fuse",
@@ -35654,7 +36217,94 @@
 			"44": 39,
 			"45": 39,
 			"46": 39,
-			"47": 39
+			"47": 39,
+			"48": {
+				"id": 48,
+				"name": "La Ilusión Draven",
+				"chromas": {
+					"49": {
+						"id": 49,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "La Ilusión Draven",
+						"colors": [
+							"#EE3B93",
+							"#055939"
+						]
+					}
+				}
+			},
+			"49": 48,
+			"50": 48,
+			"51": 48,
+			"52": 48,
+			"53": 48,
+			"54": 48,
+			"55": 48,
+			"56": 48,
+			"57": 48
 		},
 		"spells": {
 			"p": "League of Draven",
@@ -36012,11 +36662,11 @@
 			"10": 1,
 			"11": {
 				"id": 11,
-				"name": "Championship Kha'Zix",
+				"name": "Worlds 2018 Kha'Zix",
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -36024,7 +36674,7 @@
 					},
 					"13": {
 						"id": 13,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#2756CE",
 							"#FFEE59"
@@ -36032,7 +36682,7 @@
 					},
 					"14": {
 						"id": 14,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#D33528",
 							"#898989"
@@ -36040,7 +36690,7 @@
 					},
 					"15": {
 						"id": 15,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#DF9117",
 							"#27211C"
@@ -36048,7 +36698,7 @@
 					},
 					"17": {
 						"id": 17,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#D33528",
 							"#27211C"
@@ -36056,7 +36706,7 @@
 					},
 					"18": {
 						"id": 18,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#27211C",
 							"#DF9117"
@@ -36064,7 +36714,7 @@
 					},
 					"22": {
 						"id": 22,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#27211C",
 							"#FFEE59"
@@ -36072,7 +36722,7 @@
 					},
 					"23": {
 						"id": 23,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#DF9117",
 							"#27211C"
@@ -36080,7 +36730,7 @@
 					},
 					"24": {
 						"id": 24,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#55C2F4",
 							"#3291EA"
@@ -36088,7 +36738,7 @@
 					},
 					"25": {
 						"id": 25,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#FFEE59",
 							"#27211C"
@@ -36096,7 +36746,7 @@
 					},
 					"28": {
 						"id": 28,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#27211C",
 							"#9F4A25"
@@ -36104,7 +36754,7 @@
 					},
 					"30": {
 						"id": 30,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#D33528",
 							"#2D2D4B"
@@ -36112,7 +36762,7 @@
 					},
 					"31": {
 						"id": 31,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#2756CE",
 							"#749DA8"
@@ -36120,7 +36770,7 @@
 					},
 					"35": {
 						"id": 35,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#D3234C",
 							"#634292"
@@ -36128,7 +36778,7 @@
 					},
 					"37": {
 						"id": 37,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#DB1DEC",
 							"#54209B"
@@ -36136,7 +36786,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#8D92B7",
 							"#27211C"
@@ -36144,7 +36794,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#27211C",
 							"#D33528"
@@ -36152,7 +36802,7 @@
 					},
 					"43": {
 						"id": 43,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#ECF9F8",
 							"#27211C"
@@ -36160,7 +36810,7 @@
 					},
 					"46": {
 						"id": 46,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#C48D5F",
 							"#27211C"
@@ -36168,7 +36818,7 @@
 					},
 					"47": {
 						"id": 47,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#D33528",
 							"#ECF9F8"
@@ -36176,7 +36826,7 @@
 					},
 					"48": {
 						"id": 48,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#ECF9F8",
 							"#6ABBEE"
@@ -36184,7 +36834,7 @@
 					},
 					"51": {
 						"id": 51,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#243A55",
 							"#ECF9F8"
@@ -36192,7 +36842,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#28A173",
 							"#9CB1B5"
@@ -36200,7 +36850,7 @@
 					},
 					"54": {
 						"id": 54,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#2756CE",
 							"#27211C"
@@ -36208,7 +36858,7 @@
 					},
 					"59": {
 						"id": 59,
-						"name": "Championship Kha'Zix",
+						"name": "Worlds 2018 Kha'Zix",
 						"colors": [
 							"#D33528",
 							"#27211C"
@@ -38657,7 +39307,94 @@
 			"50": 44,
 			"51": 44,
 			"52": 44,
-			"53": 44
+			"53": 44,
+			"54": {
+				"id": 54,
+				"name": "Coven Syndra",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Coven Syndra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Coven Syndra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Coven Syndra",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Coven Syndra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Coven Syndra",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Coven Syndra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Coven Syndra",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Coven Syndra",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Coven Syndra",
+						"colors": [
+							"#429184",
+							"#942861"
+						]
+					}
+				}
+			},
+			"55": 54,
+			"56": 54,
+			"57": 54,
+			"58": 54,
+			"59": 54,
+			"60": 54,
+			"61": 54,
+			"62": 54,
+			"63": 54
 		},
 		"spells": {
 			"p": "Transcendent",
@@ -39295,6 +40032,14 @@
 							"#131521",
 							"#9E1517"
 						]
+					},
+					"32": {
+						"id": 32,
+						"name": "EDG Zoe",
+						"colors": [
+							"#FF1515",
+							"#E8CD6B"
+						]
 					}
 				}
 			},
@@ -39385,7 +40130,8 @@
 			"28": 22,
 			"29": 22,
 			"30": 22,
-			"31": 22
+			"31": 22,
+			"32": 20
 		},
 		"spells": {
 			"p": "More Sparkles!",
@@ -39983,7 +40729,16 @@
 			"16": {
 				"id": 16,
 				"name": "iG Kai'Sa",
-				"chromas": {}
+				"chromas": {
+					"58": {
+						"id": 58,
+						"name": "iG Kai'Sa",
+						"colors": [
+							"#FF1500",
+							"#E8CD6B"
+						]
+					}
+				}
 			},
 			"17": {
 				"id": 17,
@@ -40322,7 +41077,8 @@
 			"54": 48,
 			"55": 48,
 			"56": 48,
-			"57": 48
+			"57": 48,
+			"58": 16
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -40966,7 +41722,94 @@
 			"27": 22,
 			"28": 22,
 			"29": 22,
-			"30": 22
+			"30": 22,
+			"31": {
+				"id": 31,
+				"name": "La Ilusión Gnar",
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "La Ilusión Gnar",
+						"colors": [
+							"#EE3B93",
+							"#055939"
+						]
+					}
+				}
+			},
+			"32": 31,
+			"33": 31,
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31,
+			"38": 31,
+			"39": 31,
+			"40": 31
 		},
 		"spells": {
 			"p": "Rage Gene",
@@ -44884,6 +45727,7 @@
 		"title": "the Restrained Hunger",
 		"slot": "Briar",
 		"roles": [
+			"fighter",
 			"assassin"
 		],
 		"skins": {
@@ -45909,6 +46753,14 @@
 							"#CFC0A7",
 							"#59C3F2"
 						]
+					},
+					"51": {
+						"id": 51,
+						"name": "High Noon Lucian",
+						"colors": [
+							"#FF1502",
+							"#E8CD6B"
+						]
 					}
 				}
 			},
@@ -46213,7 +47065,8 @@
 			"47": 40,
 			"48": 40,
 			"49": 40,
-			"50": 8
+			"50": 8,
+			"51": 8
 		},
 		"spells": {
 			"p": "Lightslinger",
@@ -46318,11 +47171,11 @@
 			"9": 1,
 			"10": {
 				"id": 10,
-				"name": "Championship Zed",
+				"name": "Worlds 2016 Zed",
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "Championship Zed",
+						"name": "Worlds 2016 Zed",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -47794,7 +48647,94 @@
 			"36": 30,
 			"37": 30,
 			"38": 30,
-			"39": 30
+			"39": 30,
+			"40": {
+				"id": 40,
+				"name": "La Ilusión Qiyana",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "La Ilusión Qiyana",
+						"colors": [
+							"#EE3B93",
+							"#055939"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40,
+			"47": 40,
+			"48": 40,
+			"49": 40
 		},
 		"spells": {
 			"p": "Royal Privilege",
@@ -48833,7 +49773,67 @@
 			"47": 41,
 			"48": 41,
 			"49": 41,
-			"50": 41
+			"50": 41,
+			"51": {
+				"id": 51,
+				"name": "Coven Nami",
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Coven Nami",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Coven Nami",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Coven Nami",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Coven Nami",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Coven Nami",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Coven Nami",
+						"colors": [
+							"#429184",
+							"#942861"
+						]
+					}
+				}
+			},
+			"52": 51,
+			"53": 51,
+			"54": 51,
+			"55": 51,
+			"56": 51,
+			"57": 51
 		},
 		"spells": {
 			"p": "Surging Tides",
@@ -49345,6 +50345,14 @@
 							"#131521",
 							"#9E1517"
 						]
+					},
+					"48": {
+						"id": 48,
+						"name": "EDG Yuumi",
+						"colors": [
+							"#FF1515",
+							"#E8CD6B"
+						]
 					}
 				}
 			},
@@ -49426,7 +50434,8 @@
 			"44": 39,
 			"45": 39,
 			"46": 39,
-			"47": 39
+			"47": 39,
+			"48": 37
 		},
 		"spells": {
 			"p": "Feline Friendship",
@@ -49738,11 +50747,11 @@
 			},
 			"2": {
 				"id": 2,
-				"name": "Championship Thresh",
+				"name": "Worlds 2013 Thresh",
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "Championship Thresh",
+						"name": "Worlds 2013 Thresh",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -50887,11 +51896,11 @@
 			},
 			"2": {
 				"id": 2,
-				"name": "Championship Kalista",
+				"name": "Worlds 2015 Kalista",
 				"chromas": {
 					"4": {
 						"id": 4,
-						"name": "Championship Kalista",
+						"name": "Worlds 2015 Kalista",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -51690,7 +52699,12 @@
 			"32": 27,
 			"33": 27,
 			"34": 27,
-			"35": 27
+			"35": 27,
+			"36": {
+				"id": 36,
+				"name": "Redeemed Star Guardian Rakan",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Fey Feathers",
@@ -52079,6 +53093,11 @@
 						]
 					}
 				}
+			},
+			"38": {
+				"id": 38,
+				"name": "Redeemed Star Guardian Xayah",
+				"chromas": {}
 			},
 			"39": 37,
 			"40": 37,
@@ -54711,6 +55730,14 @@
 							"#FFEE59",
 							"#FFEE59"
 						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Obsidian Dragon Sett",
+						"colors": [
+							"#FF1515",
+							"#E8CD6B"
+						]
 					}
 				}
 			},
@@ -55039,7 +56066,8 @@
 			"51": 45,
 			"52": 45,
 			"53": 45,
-			"54": 45
+			"54": 45,
+			"55": 8
 		},
 		"spells": {
 			"p": "Pit Grit",
@@ -55762,7 +56790,99 @@
 			"16": 10,
 			"17": 10,
 			"18": 10,
-			"19": 10
+			"19": 10,
+			"20": {
+				"id": 20,
+				"name": "La Ilusión Renata Glasc",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "La Ilusión Renata Glasc",
+						"colors": [
+							"#EE3B93",
+							"#055939"
+						]
+					}
+				}
+			},
+			"21": {
+				"id": 21,
+				"name": "Prestige La Ilusión Renata Glasc",
+				"chromas": {}
+			},
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20,
+			"29": 20,
+			"30": 20
 		},
 		"spells": {
 			"p": "Leverage",
@@ -55873,7 +56993,94 @@
 			"7": 1,
 			"8": 1,
 			"9": 1,
-			"10": 1
+			"10": 1,
+			"11": {
+				"id": 11,
+				"name": "Coven Nilah",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Coven Nilah",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Coven Nilah",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Coven Nilah",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Coven Nilah",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Coven Nilah",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Coven Nilah",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Coven Nilah",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Coven Nilah",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Coven Nilah",
+						"colors": [
+							"#429184",
+							"#942861"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11,
+			"20": 11
 		},
 		"spells": {
 			"p": "Joy Unending",

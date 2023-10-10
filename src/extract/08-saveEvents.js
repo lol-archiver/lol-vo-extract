@@ -35,7 +35,7 @@ const matchFriendlyName = (name, mapsFriendly) => {
 	return trans.join(':');
 };
 
-export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, mapAudioID_SoundID) {
+export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, idsSoundAll$idAudio, infosExtract$pathInWAD) {
 	G.info('EventSaver', 'save event');
 
 
@@ -52,7 +52,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 	for(const key_ in I.champion.spells) {
 		const key = key_.toUpperCase();
 		const textUsage = key == 'P' ? '触发' : '使用';
-		const textSkill = `${textUsage}:${key}技能:${I.champion.spells[key_]}`;
+		const textSkill = `${textUsage}:${key}${I.champion.spells[key_]}`;
 
 		mapsFriendly.push([`${I.slot}${key}`, textSkill]);
 		mapsFriendly.push([`Spell${key}`, textSkill]);
@@ -80,8 +80,8 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 
 	const eventMap = {};
 
-	for(const [audioID, eventInfos] of Object.entries(mapAudioID_Event)) {
-		let crcsSrc = arrAudioPackFile
+	for(const [audioID, eventInfos] of Object.entries(eventsAll$idAudio)) {
+		let crcsSrc = namesFileSoundBank
 			.map(file => resolve(dirCache, 'audio', file, 'wem', `${audioID}.wem`))
 			.filter(src => existsSync(src))
 			.map(src => crc32(readFileSync(src)));
@@ -91,7 +91,7 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 		let crcSrc;
 
 		if(!crcsSrc.size) {
-			crcSrc = 'NOFILE';
+			crcSrc = 'NONEFILE';
 		}
 		else {
 			if(crcsSrc.size > 1) {
@@ -108,34 +108,34 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {
 				if(eventInfo.index) {
-					const slot = `[${pad0(I.id)}${pad0(eventInfo.index)}]`;
+					const slot = `${pad0(I.id)}${pad0(eventInfo.index)}`;
 
 					const dChampion = D[I.id];
 					const dSkinCN = dChampion.skins[eventInfo.index];
 					const dSkinEN = dictEN[I.id].skins[eventInfo.index];
 
-					const skin = `${slot}${eventInfo.skinName.replace(/:/g, '')}` +
-						`||${slot} ${dChampion.slot}:${dChampion.name}` + (eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);
+					const skin = `${slot}@${eventInfo.skinName.replace(/:/g, '')}` +
+						`||[${slot}] ${dChampion.slot}:${dChampion.name}` + (eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);
 
 					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: mapAudioID_SoundID[audioID] || [] });
+					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: idsSoundAll$idAudio[audioID] || [] });
 				}
 				else {
-					const slot = `[${pad0(I.id)}]`;
+					const slot = `${pad0(I.id)}`;
 
 					const dChampion = D[I.id];
 
-					const skin = `${slot}${eventInfo.skinName.replace(/:/g, '')}` +
-						`||${slot} ${dChampion.slot}:${dChampion.name}`;
+					const skin = `${slot}@${eventInfo.skinName.replace(/:/g, '')}` +
+						`||[${slot}] ${dChampion.slot}:${dChampion.name}`;
 
 					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: mapAudioID_SoundID[audioID] || [] });
+					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: idsSoundAll$idAudio[audioID] || [] });
 				}
 			}
 			else if(typeof eventInfo == 'number') {
-				const skinMap = eventMap['[Bad]'] || (eventMap['[Bad]'] = {});
+				const skinMap = eventMap['[未知]'] || (eventMap['[未知]'] = {});
 
 				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ hex, crc32: crcSrc });
 			}
@@ -159,12 +159,12 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 			const arrEventText = [];
 
 			for(const { hex, crc32, idsSound } of arrAudioInfo) {
-				arrEventText.push(`- >${hex}< \`${hex}|${crc32}||${idsSound.map(id => toHexL8(id)).join('..')}\` ***`);
+				arrEventText.push(`- \`${idsSound.map(id => toHexL8(id)).join('.')}|${hex}|${crc32}\` ***`);
 			}
 
 			arrEventText.sort();
 
-			arrEventText.forEach(text => arrEventList.push(text.replace(/>.*< /g, '')));
+			arrEventText.forEach(text => arrEventList.push(text));
 
 			arrEventList.push('');
 		}
@@ -173,6 +173,9 @@ export default async function saveEvents(mapAudioID_Event, arrAudioPackFile, map
 		result.push('## Lines:台词');
 		arrEventList.forEach(text => result.push(text));
 
-		writeFileSync(resolve(dirText, `[${I.slot}@${C.server.region}@${C.lang}]${skin.replace(/[:"]/g, '')}@${I.time}.md`), result.join('\n'));
+		const lang = !C.saveWithShort ? C.lang : C.lang.split('_')[0];
+		const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
+
+		writeFileSync(resolve(dirText, `${skin.replace(/[:"]/g, '') ?? I.slot}@${I.time}@${region}@${lang}.md`), result.join('\n'));
 	}
 }

@@ -36,14 +36,14 @@ const convert = async (regionGame, regionReal) => {
 	const { summary: bufferSummary } = await extractWAD(
 		fileAssets,
 		{
-			[`plugins/rcp-be-lol-game-data/global/${regionGame}/v1/champion-summary.json`]: 'buffer|summary'
+			[`plugins/rcp-be-lol-game-data/global/${regionGame}/v1/champion-summary.json`]: { type: 'buffer', key: 'summary' }
 		}
 	);
 
 	const championsSummary = JSON.parse(bufferSummary.toString());
 
 	const infoExtract = championsSummary.reduce((acc, { id }) => {
-		acc[`plugins/rcp-be-lol-game-data/global/${regionGame}/v1/champions/${id}.json`] = `file|${id}|${resolve(dirCacheSelf, `${id}.json`)}`;
+		acc[`plugins/rcp-be-lol-game-data/global/${regionGame}/v1/champions/${id}.json`] = { type: 'file', key: id, fileTarget: resolve(dirCacheSelf, `${id}.json`) };
 
 		return acc;
 	}, {});

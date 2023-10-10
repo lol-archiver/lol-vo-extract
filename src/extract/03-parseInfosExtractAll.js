@@ -8,41 +8,48 @@ import { pad0 } from '../../lib/utility.js';
 
 
 
-const genPathSoundBank = (usage, language, champion, index, type, format, version = '2016') => {
-	return `assets/sounds/wwise${version}/${usage}/${usage == 'vo' ? `${language}/` : ''}characters/${I.slot}/skins/${index}/${I.slot}_${index}_${usage}_${type}.${format}`;
-};
+const parseSoundBankPath = (usage, language, champion, target, type, format, version = '2016') =>
+	`assets/sounds/wwise${version}/${usage}/${usage == 'vo' ? `${language}/` : ''}characters/${I.slot}/skins/${target}/${I.slot}_${target}_${usage}_${type}.${format}`;
 
-const genArrPathSoundBank = (usage, language, champion, index, version = '2016') => {
-	return [
-		[genPathSoundBank(usage, language, champion, index, 'audio', 'wpk', version), `${usage}_${index}_audio.wpk`],
-		[genPathSoundBank(usage, language, champion, index, 'audio', 'bnk', version), `${usage}_${index}_audio.bnk`],
-		[genPathSoundBank(usage, language, champion, index, 'events', 'bnk', version), `${usage}_${index}_event.bnk`],
-	];
-};
+const parseSoundBankPaths = (usage, language, champion, target, index, version = '2016') => [
+	[parseSoundBankPath(usage, language, champion, target, 'audio', 'wpk', version), `${usage}_${target}_audio.wpk`, index],
+	[parseSoundBankPath(usage, language, champion, target, 'audio', 'bnk', version), `${usage}_${target}_audio.bnk`, index],
+	[parseSoundBankPath(usage, language, champion, target, 'events', 'bnk', version), `${usage}_${target}_event.bnk`, index],
+];
 
-export default function parseInfosExtractAll() {
+export default function parseExtractInfo() {
 	G.info('HashGenerator', 'generate a name map to in-wad files, indexed by path-hashes');
 
-	const infosExtractRaw = {};
+	const infosExtract$pathInWAD = {};
 
 	const usages = C.useSFXLevel ? ['vo', 'sfx'] : ['vo'];
 
-	const infoFiles = [];
+	const infosSoundBank = [];
 	for(const usage of usages) {
 		for(const i of I.idsSkin) {
-			infosExtractRaw[`data/characters/${I.slot}/skins/skin${i}.bin`] = `file|${`skin${i}.bin`}|${resolve(dirCache, 'extract', `skin${i}.bin`)}`;
+			infosExtract$pathInWAD[`data/characters/${I.slot}/skins/skin${i}.bin`] = {
+				index: i,
+				type: 'file',
+				key: `skin${i}.bin`,
+				fileTarget: resolve(dirCache, 'extract', `skin${i}.bin`),
+			};
 
-			infoFiles.push(...genArrPathSoundBank(usage, C.lang, I.slot, `skin${pad0(i, 2)}`));
+			infosSoundBank.push(...parseSoundBankPaths(usage, C.lang, I.slot, `skin${pad0(i, 2)}`, i));
 		}
 
 		if(I.idsSkin.includes(0) || C.forceUseBase) {
-			infoFiles.push(...genArrPathSoundBank(usage, C.lang, I.slot, 'base'));
+			infosSoundBank.push(...parseSoundBankPaths(usage, C.lang, I.slot, 'base', 0));
 		}
 	}
 
-	for(const [pathSoundBank, nameFile] of infoFiles) {
-		infosExtractRaw[pathSoundBank] = `file|${nameFile}|${resolve(dirCache, 'extract', nameFile)}`;
+	for(const [pathSoundBank, nameFile, index] of infosSoundBank) {
+		infosExtract$pathInWAD[pathSoundBank] = {
+			index,
+			type: 'file',
+			key: nameFile,
+			fileTarget: resolve(dirCache, 'extract', nameFile),
+		};
 	}
 
-	return infosExtractRaw;
+	return infosExtract$pathInWAD;
 }

@@ -10,14 +10,18 @@ import { I } from '../../lib/info.js';
 import { crc32, pad0, toHexL8 } from '../../lib/utility.js';
 
 
+const lang = !C.saveWithShort ? C.lang : C.lang.split('_')[0];
+const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
 
-export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
+
+
+export default function copyAudios(eventsAll$idAudio, namesFileSoundBank, idsSoundAll$idAudio, infosExtract$pathInWAD) {
 	G.infoU('AudioCopier', 'copy audio', '○ coping...');
 
-	for(const audioPackFile of arrAudioPackFile) {
-		const copyWhileEmpty = audioPackFile.startsWith('sfx') ? (C.useSFXLevel >= 2 ? true : false) : true;
+	for(const nameFileSoundBank of namesFileSoundBank) {
+		const copyWhileEmpty = nameFileSoundBank.startsWith('sfx') ? (C.useSFXLevel >= 2 ? true : false) : true;
 
-		const pathDir = resolve(dirCache, 'audio', audioPackFile);
+		const pathDir = resolve(dirCache, 'audio', nameFileSoundBank);
 
 		if(!existsSync(pathDir)) {
 			G.warn('AudioCopier', 'copy audio', `path~{${pathDir}} not exists`);
@@ -26,47 +30,52 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 		}
 
 		for(let audioFile of readdirSync(pathDir).filter(file => file != 'wem')) {
-			const audioID = parse(audioFile).name;
-			const audioIDHex = toHexL8(audioID);
-			const src = resolve(pathDir, `${audioID}.${C.format}`);
-			const srcWEM = resolve(pathDir, 'wem', `${audioID}.wem`);
+			const idAudio = parse(audioFile).name;
+			const hexIDAudio = toHexL8(idAudio);
+			const src = resolve(pathDir, `${idAudio}.${C.format}`);
+			const srcWEM = resolve(pathDir, 'wem', `${idAudio}.wem`);
 
-			const events_nameSkin = {};
-			const events_audioID = mapAudioID_Event[audioID] || [];
+			const events$nameSkin = {};
+			const eventsAudio$idAudio = eventsAll$idAudio[idAudio] || [];
 
-			for(const eventInfo of events_audioID) {
+			const indexFileAudio = Object.values(infosExtract$pathInWAD).find(info => info.key == nameFileSoundBank)?.index ?? '';
+
+			for(const eventAudio of eventsAudio$idAudio) {
 				let nameSkin;
 				let event;
 
-				if(typeof eventInfo == 'object') {
-					nameSkin = `[${pad0(I.id)}${pad0(eventInfo.index)}]${eventInfo.skinName.replace(/[:"]/g, '')}`;
-					event = eventInfo.short;
+				if(typeof eventAudio == 'object') {
+					nameSkin = `${pad0(I.id)}${pad0(eventAudio.index)}@${eventAudio.skinName.replace(/[:"]/g, '') || I.slot}@${region}`;
+					event = eventAudio.short;
 				}
-				else if(typeof eventInfo == 'number') {
-					nameSkin = '[Bad]';
-					event = eventInfo;
+				else if(typeof eventAudio == 'number') {
+					nameSkin = `${pad0(I.id)}${indexFileAudio}@unknown@${region}@${lang}`;
+					event = eventAudio;
 				}
 
-				(events_nameSkin[nameSkin] || (events_nameSkin[nameSkin] = [])).push(event);
+				(events$nameSkin[nameSkin] || (events$nameSkin[nameSkin] = [])).push(event);
 			}
 
-			if(!events_audioID.length && copyWhileEmpty) {
-				(events_nameSkin['[Bad]'] || (events_nameSkin['[Bad]'] = [])).push('Unmatch');
+			if(!eventsAudio$idAudio.length && copyWhileEmpty) {
+				const nameSkin = `${pad0(I.id)}${indexFileAudio}@unmatch@${region}@${lang}`;
+
+				(events$nameSkin[nameSkin] || (events$nameSkin[nameSkin] = [])).push('Unmatch');
 			}
 
-			if(!Object.keys(events_nameSkin).length || !existsSync(srcWEM)) { continue; }
+			if(!Object.keys(events$nameSkin).length || !existsSync(srcWEM)) { continue; }
 
 			const crcWEM = crc32(readFileSync(srcWEM));
 
-			for(const [nameSkin, events] of Object.entries(events_nameSkin)) {
+			for(const [nameSkin, events] of Object.entries(events$nameSkin)) {
 				const logsTooLong = [`-------${I.time}-------`];
 
-				const pathFolder = resolve(dirFinal, `${nameSkin.replace(/[:"]/g, '')}[${I.slot}@${C.server.region}@${C.lang}]`);
+				const pathFolder = resolve(dirFinal, nameSkin);
 
 				ensureDirSync(pathFolder);
 
 				const eventsText = events.join('&');
-				const audioText = `${nameSkin == '[Bad]' ? `[${audioID}][${audioIDHex}]` : `[${audioIDHex}]`}[${crcWEM}].${C.format}`;
+				const audioText =
+					`[${idsSoundAll$idAudio[idAudio].map(id => toHexL8(id)).join('.')}][${hexIDAudio}][${crcWEM}].${C.format}`;
 
 				try {
 					if(eventsText.length > 128) { throw 'eventsText.length > 128'; }
@@ -78,14 +87,14 @@ export default function copyAudios(mapAudioID_Event, arrAudioPackFile) {
 				} catch(error) {
 					copyFileSync(
 						src,
-						resolve(pathFolder, `_EventsTooLong${audioText}`),
+						resolve(pathFolder, `@LongEvent${audioText}`),
 					);
 
-					logsTooLong.push(`[${audioIDHex}] ==> ${events.sort().join(' | ')}`);
+					logsTooLong.push(`[${hexIDAudio}] ==> ${events.sort().join(' | ')}`);
 				}
 
 				if(logsTooLong.length > 1) {
-					appendFileSync(resolve(pathFolder, '_EventsTooLong.txt'), '\n' + logsTooLong.join('\n'));
+					appendFileSync(resolve(pathFolder, '@LongEvent.txt'), '\n' + logsTooLong.join('\n'));
 				}
 			}
 		}

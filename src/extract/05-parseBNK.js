@@ -1,4 +1,4 @@
-import { writeFileSync } from 'fs';
+import { appendFileSync, writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
 import { readJSONSync } from '../../lib/fs-extra.js';
@@ -8,7 +8,7 @@ import Biffer from '@nuogz/biffer';
 
 import { dirDebug } from '../../lib/dir.js';
 import { I } from '../../lib/info.js';
-import { toHexL8, showID } from '../../lib/utility.js';
+import { toHexL8, showID, toBufferHex } from '../../lib/utility.js';
 
 import { HIRCSound, HIRCEventAction, HIRCEvent, HIRCContainer, HIRCSwitchContainer, HIRCObject, HIRCSwitch } from '../entry/bnk/HIRCObject.js';
 
@@ -71,6 +71,7 @@ const formats$typeParamAdditional = {
 	[0x16]: 'f',
 	[0x17]: 'f',
 	[0x18]: 'f',
+	[0x3B]: 'I',// not sure
 	[0x46]: 'I',// not sure
 };
 
@@ -152,7 +153,9 @@ export const parseHIRCObject = (id, type, B) => {
 		// number of effects
 		const [overrided, countEffects] = B.unpack('BB');
 
-		if(overrided) {
+		object.overrided = ~~overrided;
+
+		if(countEffects) {
 			// bypassed effect mask
 			B.skip(1);
 
@@ -180,6 +183,10 @@ export const parseHIRCObject = (id, type, B) => {
 		object.params = B.unpack(`${countParams}B`).map(type => ({ type }));
 
 		for(const param of object.params) {
+			if(!formats$typeParamAdditional[param.type]) {
+				G.debug('BNKParser', 'unknown ~[additional param type]', `~{${param.type}}`);
+			}
+
 			[param.value] = B.unpack(formats$typeParamAdditional[param.type]);
 		}
 
@@ -193,53 +200,63 @@ export const parseHIRCObject = (id, type, B) => {
 
 		const [d3, d4, d5, d6, d7, d8] = B.unpack('BBBBBB');
 		// d3 may be a unknown boolean
-		if(d3 > 1) { G.debug('BNKParser', 'match undetect data ~[3.bool]', `~{${d3}}`); }
+		if(d3 > 1) { G.debug('BNKParser', 'match undetect data ~[d3.bool]', `~{${d3}}`); }
 		// d4 may be a unknown boolean
-		if(d4 > 1) { G.debug('BNKParser', 'match undetect data ~[4.bool]', `~{${d4}}`); }
+		if(d4 > 1) { G.debug('BNKParser', 'match undetect data ~[d4.bool]', `~{${d4}}`); }
 		// d5 may be a unknown boolean
-		if(d5 > 1) { G.debug('BNKParser', 'match undetect data ~[5.bool]', `~{${d5}}`); }
+		if(d5 > 1) { G.debug('BNKParser', 'match undetect data ~[d5.bool]', `~{${d5}}`); }
 		// d6 may be a unknown boolean
-		if(d6 > 1) { G.debug('BNKParser', 'match undetect data ~[6.bool]', `~{${d6}}`); }
+		if(d6 > 1) { G.debug('BNKParser', 'match undetect data ~[d6.bool]', `~{${d6}}`); }
 		// d7 may be a unknown boolean
-		if(d7 > 1) { G.debug('BNKParser', 'match undetect data ~[7.bool]', `~{${d7}}`); }
+		if(d7 > 1) { G.debug('BNKParser', 'match undetect data ~[d7.bool]', `~{${d7}}`); }
 		// d8 may be a unknown boolean
-		if(d8 > 1) { G.debug('BNKParser', 'match undetect data ~[8.bool]', `~{${d8}}`); }
+		if(![0, 1, 2].includes(d8)) { G.debug('BNKParser', 'match undetect data ~[d8.byte]', `~{${d8}}`); }
 
 
 		if(type == 5) {
-			object.typeName = 'Random/Sequence Container';
 
-			const textUndetectLong = [...B.slice(23)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+
+
+			const [d9] = B.unpack('B');
+			if(![0, 8].includes(d9)) { G.debug('BNKParser', 'match undetect data ~[5.d9.byte]', `~{${d9}}`); }
+
+
+			const textUndetectLong = toBufferHex(B.slice(22));
 
 			if(textUndetectLong !=
-				'00 00 00 00 00 01 00 00 00 00 00 00 00 7A 44 00 00 00 00 00 00 00 00') {
-				G.debug('BNKParser', 'match undetect data ~[5.long]', '✖', textUndetectLong);
+				'00 00 00 00 01 00 00 00 00 00 00 00 7A 44 00 00 00 00 00 00 00 00') {
+				G.debug('BNKParser', 'match undetect data ~[5.long]', '✖', d8, textUndetectLong);
 			}
 
 
 			const [h1, h2] = B.unpack('>xxHH');
 			if(h1 > 1) { G.debug('BNKParser', 'match undetect data ~[5.h1]', `~{${h1}}`); }
-			if(h2 != 18) { G.debug('BNKParser', 'match undetect data ~[5.h2]', `~{${h2}}`); }
+			if(![18, 274, 282].includes(h2)) { G.debug('BNKParser', 'match undetect data ~[5.h2]', `~{${h2}}`); }
+
+			object.typeName = h1 == 0 ? 'Sequence Container' : 'Random Container';
 		}
 		else if(type == 6) {
 			object.typeName = 'Switch Container';
 
-			const textUndetectLong = [...B.slice(6)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+			const [d9] = B.unpack('B');
+			if(![0, 8].includes(d9)) { G.debug('BNKParser', 'match undetect data ~[6.d9.byte]', `~{${d9}}`); }
 
-			if(textUndetectLong !=
-				'00 00 00 00 00 00') {
+
+			const textUndetectLong = toBufferHex(B.slice(5));
+
+			if(textUndetectLong != '00 00 00 00 00') {
 				G.debug('BNKParser', 'match undetect data ~[6.long]', '✖', textUndetectLong);
 			}
+
 
 			[object.idGroup, object.idSwitchDefault] = B.unpack('LLx');
 		}
 		else if(type == 9) {
 			object.typeName = 'Blend Container';
 
-			const textUndetectLong = [...B.slice(5)].map(b => b.toString(16).padStart(2, '0').toUpperCase()).join(' ');
+			const textUndetectLong = toBufferHex(B.slice(5));
 
-			if(textUndetectLong !=
-				'00 00 00 00 00') {
+			if(textUndetectLong != '00 00 00 00 00') {
 				G.debug('BNKParser', 'match undetect data ~[9.long]', '✖', textUndetectLong);
 			}
 		}
@@ -247,6 +264,8 @@ export const parseHIRCObject = (id, type, B) => {
 
 		// number of sound id
 		const [countSound] = B.unpack('L');
+
+		if(countSound > 1 && type == 5) { object.typeName += ` ${countSound}`; }
 
 		// each sound ids
 		try {
@@ -257,7 +276,21 @@ export const parseHIRCObject = (id, type, B) => {
 		}
 
 
-		if(type == 6) {
+		if(type == 5) {
+			object.idsSoundUnorder = object.idsSound;
+
+
+			const [countSoundOrder] = B.unpack('H');
+
+			object.idsSound = [];
+			for(let index = 0; index < countSoundOrder; index++) {
+				object.idsSound.push(B.unpack(`L`)[0]);
+
+				const textUndetectLong = toBufferHex(B.slice(4));
+				if(textUndetectLong != '50 C3 00 00') { G.debug('BNKParser', 'match undetect data ~[t5.interval]', '✖', textUndetectLong); }
+			}
+		}
+		else if(type == 6) {
 			// number of switch
 			const [countSwitch] = B.unpack('L');
 
@@ -389,6 +422,7 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 	const bifferBNK = new Biffer(fileBNK);
 
 	const objects = [];
+	const linesHexDump = [];
 
 	while(!bifferBNK.isEnd()) {
 		const [magicSection, sizeSection] = bifferBNK.unpack('4sL');
@@ -403,11 +437,19 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 
 				G.trace('BNKParser', `HIRC object ~[${toHexL8(id)}]`, `~[position]~{${toHexL8(bifferSection.tell() + 10, null, false)}} ~[type]~{${type}} ~[length]~{${length}}`);
 
-				const [objectSection, objectsExtra] = parseHIRCObject(id, type, bifferSection.sub(length - 4));
+				const B = bifferSection.sub(length - 4);
+
+				const [objectSection, objectsExtra] = parseHIRCObject(id, type, B);
 
 				if(objectSection) { objects.push(objectSection); }
 
 				objects.push(...objectsExtra);
+
+
+				const idsHexObjectDump = C.debug?.idsHexObjectDump ?? [];
+				if(idsHexObjectDump.includes(toHexL8(id)) || idsHexObjectDump.includes(id) || idsHexObjectDump.includes('*')) {
+					linesHexDump.push(`${toHexL8(id)} [${String(type).padStart(2, '0')}]${objectSection ? objectSection.toString() : ''}\n${toBufferHex(B)}`);
+				}
 			}
 		}
 		else {
@@ -420,12 +462,28 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 	}
 
 
+	if(linesHexDump.length) {
+		writeFileSync(
+			resolve(dirDebug, 'hex', `${I.slot}@${C.server.region}@${C.lang}@${I.time}@hex.txt`),
+			linesHexDump.join('\n'),
+		);
+	}
+
 
 	const mapHash_EventName = {};
-	const mapAudioID_EventName = {};
+	const namesEventAll$idAudio = {};
+	const mapAudioIDHex_EventName = {};
 
 	for(const event of setNameEvent) {
 		mapHash_EventName[fnv_1(event)] = event;
+		mapAudioIDHex_EventName[toHexL8(fnv_1(event))] = event;
+	}
+
+	if(linesHexDump.length) {
+		appendFileSync(
+			resolve(dirDebug, 'hex', `${I.slot}@${C.server.region}@${C.lang}@${I.time}@hex.txt`),
+			JSON.stringify(mapAudioIDHex_EventName, null, '\t') + '\n',
+		);
 	}
 
 	const objectsEvent = objects.filter(object => object instanceof HIRCEvent);
@@ -454,14 +512,14 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 		}
 
 		for(const audioID of eventsAudio) {
-			(mapAudioID_EventName[audioID] || (mapAudioID_EventName[audioID] = new Set())).add(eventFull);
+			(namesEventAll$idAudio[audioID] || (namesEventAll$idAudio[audioID] = new Set())).add(eventFull);
 		}
 	}
 
-	const mapAudioID_SoundID = {};
+	const idsSoundAll$idAudio = {};
 
 	objects.filter(object => object instanceof HIRCSound).forEach(sound =>
-		(mapAudioID_SoundID[sound.audioID] || (mapAudioID_SoundID[sound.audioID] = new Set())).add(sound.id)
+		(idsSoundAll$idAudio[sound.audioID] || (idsSoundAll$idAudio[sound.audioID] = new Set())).add(sound.id)
 	);
 
 
@@ -490,17 +548,20 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 	// );
 
 
-	const textsTree = [];
-	for(const object of objects.filter(object => object instanceof HIRCEvent)) {
-		parseTree(object, object.id, objects, textsTree);
+	if(!C.debug?.skipDumpObjectTree) {
+		const textsTree = [];
+		for(const object of objects.filter(object => object instanceof HIRCEvent)) {
+			parseTree(object, object.id, objects, textsTree);
+		}
+
+		writeFileSync(
+			resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@tree.txt`),
+			textsTree.join('\n')
+		);
 	}
-	writeFileSync(
-		resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@tree.txt`),
-		textsTree.join('\n')
-	);
 
 
 	G.infoD('BNKParser', `parse BNK~{${parse(fileBNK).base}}`, '✔ ');
 
-	return [mapAudioID_EventName, mapAudioID_SoundID];
+	return [namesEventAll$idAudio, idsSoundAll$idAudio];
 }
