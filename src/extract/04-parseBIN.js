@@ -123,14 +123,16 @@ export default function parseBIN(binPath, indexSkin, useSFXLevel) {
 				else if(eventName.startsWith('Play_')) {
 					[eventPoolName, ...eventNameShort] = eventName.replace('Play_', '').split('_');
 				}
-				else if(eventName.startsWith('SetState_') || eventName.startsWith('Switch_')) {
+				else if(eventName.startsWith('SetState_') || eventName.startsWith('Switch_') || eventName.startsWith('Set_Switch_')) {
 					let action;
-					[action, eventPoolName, ...eventNameShort] = eventName.split('_');
+					[action, eventPoolName, ...eventNameShort] = eventName.replace('Set_Switch_', 'SetSwitch_').split('_');
 					eventNameShort.unshift(action);
 				}
 				else {
-					G.info('BINParser', `parse [event-name]`, `[Unkown]~{${eventName}}`);
+					G.warn('BINParser', `parse ~[event name]`, `unkown prefix event ~{${eventName}}`);
 				}
+
+				if(!eventNameShort.length) { G.warn('BINParser', `parse ~[event name]`, `empty short event with ~{${eventName}}`); }
 
 				setEventPoolName.add(eventPoolName);
 

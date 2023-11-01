@@ -1,17 +1,16 @@
 import '../index.env.js';
+import { C } from '@nuogz/pangu';
 
+import { spawnSync } from 'child_process';
 import { copyFileSync, readdirSync, writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
 import { emptyDirSync, ensureDirSync } from 'fs-extra';
 import Iconv from 'iconv-lite';
 
-import { C } from '@nuogz/pangu';
-
 import { dirFinal, dirTextAudio } from '../lib/dir.js';
 import { pad0 } from '../lib/utility.js';
 import { I } from '../lib/info.js';
-import { spawnSync } from 'child_process';
 
 
 
@@ -34,7 +33,8 @@ copyFileSync(resolve(dirCWD, 'e.wav'), fileEmpty);
 
 
 const idSkin = I.idsSkin[0];
-const dirSource = resolve(dirFinal, `[${pad0(I.id)}${pad0(idSkin)}]${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}[${I.slot}@${C.server.region}@${C.lang}]`);
+const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
+const dirSource = resolve(dirFinal, `${pad0(I.id)}${pad0(idSkin)}@${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}@${region}`);
 const files = readdirSync(dirSource).filter(file => file.endsWith('.wav'));
 
 const dicts = {};

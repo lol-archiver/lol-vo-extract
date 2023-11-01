@@ -193,45 +193,42 @@ export const parseHIRCObject = (id, type, B) => {
 
 		const [d1, d2] = B.unpack('BB');
 		// d1 may be a unknown boolean
-		if(d1 > 1) { G.debug('BNKParser', 'match undetect data ~[1.bool]', `~{${d1}}`); }
+		if(d1 > 0) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d1.bool]`, `~{${d1}}`); }
 		// d2 should be a byte parameter
 		// if d2 > 0, 1 byte following parameter
 		if(d2 > 0) { B.unpack('B'); }
 
 		const [d3, d4, d5, d6, d7, d8] = B.unpack('BBBBBB');
 		// d3 may be a unknown boolean
-		if(d3 > 1) { G.debug('BNKParser', 'match undetect data ~[d3.bool]', `~{${d3}}`); }
-		// d4 may be a unknown boolean
-		if(d4 > 1) { G.debug('BNKParser', 'match undetect data ~[d4.bool]', `~{${d4}}`); }
+		if(d3 > 1) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d3.bool]`, `~{${d3}}`); }
+		// d4 may be a unknown byte
+		if(![0, 1, 4,9,16,17,20].includes(d4)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d4.bool]`, `~{${d4}}`); }
 		// d5 may be a unknown boolean
-		if(d5 > 1) { G.debug('BNKParser', 'match undetect data ~[d5.bool]', `~{${d5}}`); }
-		// d6 may be a unknown boolean
-		if(d6 > 1) { G.debug('BNKParser', 'match undetect data ~[d6.bool]', `~{${d6}}`); }
+		if(d5 > 1) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d5.bool]`, `~{${d5}}`); }
+		// d6 may be a unknown byte
+		if(![0, 1, 2, 50].includes(d6)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d6.bool]`, `~{${d6}}`); }
 		// d7 may be a unknown boolean
-		if(d7 > 1) { G.debug('BNKParser', 'match undetect data ~[d7.bool]', `~{${d7}}`); }
+		if(d7 > 1) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d7.bool]`, `~{${d7}}`); }
 		// d8 may be a unknown boolean
-		if(![0, 1, 2].includes(d8)) { G.debug('BNKParser', 'match undetect data ~[d8.byte]', `~{${d8}}`); }
+		if(![0, 1, 2].includes(d8)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d8.byte]`, `~{${d8}}`); }
 
 
 		if(type == 5) {
-
-
-
 			const [d9] = B.unpack('B');
-			if(![0, 8].includes(d9)) { G.debug('BNKParser', 'match undetect data ~[5.d9.byte]', `~{${d9}}`); }
+			if(![0, 8].includes(d9)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.d9.byte]`, `~{${d9}}`); }
 
 
 			const textUndetectLong = toBufferHex(B.slice(22));
 
 			if(textUndetectLong !=
 				'00 00 00 00 01 00 00 00 00 00 00 00 7A 44 00 00 00 00 00 00 00 00') {
-				G.debug('BNKParser', 'match undetect data ~[5.long]', '✖', d8, textUndetectLong);
+				G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.long]`, '✖', d8, textUndetectLong);
 			}
 
 
 			const [h1, h2] = B.unpack('>xxHH');
-			if(h1 > 1) { G.debug('BNKParser', 'match undetect data ~[5.h1]', `~{${h1}}`); }
-			if(![18, 274, 282].includes(h2)) { G.debug('BNKParser', 'match undetect data ~[5.h2]', `~{${h2}}`); }
+			if(h1 > 1) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.h1]`, `~{${h1}}`); }
+			if(![18, 274, 282].includes(h2)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.h2]`, `~{${h2}}`); }
 
 			object.typeName = h1 == 0 ? 'Sequence Container' : 'Random Container';
 		}
@@ -239,13 +236,13 @@ export const parseHIRCObject = (id, type, B) => {
 			object.typeName = 'Switch Container';
 
 			const [d9] = B.unpack('B');
-			if(![0, 8].includes(d9)) { G.debug('BNKParser', 'match undetect data ~[6.d9.byte]', `~{${d9}}`); }
+			if(![0, 8].includes(d9)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t6.d9.byte]`, `~{${d9}}`); }
 
 
 			const textUndetectLong = toBufferHex(B.slice(5));
 
 			if(textUndetectLong != '00 00 00 00 00') {
-				G.debug('BNKParser', 'match undetect data ~[6.long]', '✖', textUndetectLong);
+				G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t6.long]`, '✖', textUndetectLong);
 			}
 
 
@@ -257,7 +254,7 @@ export const parseHIRCObject = (id, type, B) => {
 			const textUndetectLong = toBufferHex(B.slice(5));
 
 			if(textUndetectLong != '00 00 00 00 00') {
-				G.debug('BNKParser', 'match undetect data ~[9.long]', '✖', textUndetectLong);
+				G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t9.long]`, '✖', textUndetectLong);
 			}
 		}
 
@@ -287,7 +284,7 @@ export const parseHIRCObject = (id, type, B) => {
 				object.idsSound.push(B.unpack(`L`)[0]);
 
 				const textUndetectLong = toBufferHex(B.slice(4));
-				if(textUndetectLong != '50 C3 00 00') { G.debug('BNKParser', 'match undetect data ~[t5.interval]', '✖', textUndetectLong); }
+				if(textUndetectLong != '50 C3 00 00') { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.interval]`, '✖', textUndetectLong); }
 			}
 		}
 		else if(type == 6) {

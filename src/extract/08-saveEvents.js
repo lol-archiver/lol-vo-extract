@@ -107,7 +107,7 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 
 		for(const eventInfo of eventInfos) {
 			if(typeof eventInfo == 'object') {
-				if(eventInfo.index) {
+				if(eventInfo.index || eventInfo.index === 0) {
 					const slot = `${pad0(I.id)}${pad0(eventInfo.index)}`;
 
 					const dChampion = D[I.id];

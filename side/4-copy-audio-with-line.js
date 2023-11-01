@@ -1,11 +1,10 @@
 import '../index.env.js';
+import { C } from '@nuogz/pangu';
 
 import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
 
 import { emptyDirSync } from 'fs-extra';
-
-import { C } from '@nuogz/pangu';
 
 import { dirFinal, dirTextAudio } from '../lib/dir.js';
 import { pad0 } from '../lib/utility.js';
@@ -21,9 +20,10 @@ emptyDirSync(dirTarget);
 
 
 const idSkin = I.idsSkin[0];
+const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
 
 const pathsAudios = [
-	resolve(dirFinal, `[${pad0(I.id)}${pad0(I.idsSkin[0])}]${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}[${I.slot}@${C.server.region}@${C.lang}]`),
+	resolve(dirFinal, `${pad0(I.id)}${pad0(I.idsSkin[0])}@${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}@${region}`),
 ];
 const pathLine = C.path.line;
 
