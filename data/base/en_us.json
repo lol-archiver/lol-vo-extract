@@ -22518,7 +22518,85 @@
 			"19": 13,
 			"20": 13,
 			"21": 13,
-			"22": 13
+			"22": 13,
+			"23": {
+				"id": 23,
+				"name": "Cafe Cuties Rumble",
+				"chromas": {
+					"24": {
+						"id": 24,
+						"name": "Cafe Cuties Rumble",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Cafe Cuties Rumble",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Cafe Cuties Rumble",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Cafe Cuties Rumble",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Cafe Cuties Rumble",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Cafe Cuties Rumble",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Cafe Cuties Rumble",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Cafe Cuties Rumble",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"24": 23,
+			"25": 23,
+			"26": 23,
+			"27": 23,
+			"28": 23,
+			"29": 23,
+			"30": 23,
+			"31": 23
 		},
 		"spells": {
 			"p": "Junkyard Titan",
@@ -24474,7 +24552,85 @@
 			"29": 24,
 			"30": 24,
 			"31": 24,
-			"32": 24
+			"32": 24,
+			"33": {
+				"id": 33,
+				"name": "Cafe Cuties Poppy",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Cafe Cuties Poppy",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Cafe Cuties Poppy",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Cafe Cuties Poppy",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Cafe Cuties Poppy",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Cafe Cuties Poppy",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Cafe Cuties Poppy",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Cafe Cuties Poppy",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Cafe Cuties Poppy",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33
 		},
 		"spells": {
 			"p": "Iron Ambassador",
@@ -25346,7 +25502,94 @@
 			"39": 33,
 			"40": 33,
 			"41": 33,
-			"42": 33
+			"42": 33,
+			"43": {
+				"id": 43,
+				"name": "HEARTSTEEL Ezreal",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "HEARTSTEEL Ezreal",
+						"colors": [
+							"#CDE9EF",
+							"#E9628F"
+						]
+					}
+				}
+			},
+			"45": 43,
+			"46": 43,
+			"47": 43,
+			"48": 43,
+			"49": 43,
+			"50": 43,
+			"51": 43,
+			"52": 43,
+			"53": 43
 		},
 		"spells": {
 			"p": "Rising Spell Force",
@@ -28787,11 +29030,11 @@
 			},
 			"7": {
 				"id": 7,
-				"name": "Worlds 2016 Riven",
+				"name": "Reignited Worlds 2012 Riven",
 				"chromas": {
 					"19": {
 						"id": 19,
-						"name": "Worlds 2016 Riven",
+						"name": "Reignited Worlds 2012 Riven",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -35810,7 +36053,85 @@
 			"42": 37,
 			"43": 37,
 			"44": 37,
-			"45": 37
+			"45": 37,
+			"46": {
+				"id": 46,
+				"name": "Cafe Cuties Lulu",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Cafe Cuties Lulu",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Cafe Cuties Lulu",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Cafe Cuties Lulu",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Cafe Cuties Lulu",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Cafe Cuties Lulu",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Cafe Cuties Lulu",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Cafe Cuties Lulu",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Cafe Cuties Lulu",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"47": 46,
+			"48": 46,
+			"49": 46,
+			"50": 46,
+			"51": 46,
+			"52": 46,
+			"53": 46,
+			"54": 46
 		},
 		"spells": {
 			"p": "Pix, Faerie Companion",
@@ -39843,7 +40164,58 @@
 			"16": 15,
 			"17": 15,
 			"18": 15,
-			"19": 15
+			"19": 15,
+			"20": {
+				"id": 20,
+				"name": "HEARTSTEEL Kayn",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "HEARTSTEEL Kayn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "HEARTSTEEL Kayn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "HEARTSTEEL Kayn",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "HEARTSTEEL Kayn",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "HEARTSTEEL Kayn",
+						"colors": [
+							"#CDE9EF",
+							"#E9628F"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20
 		},
 		"spells": {
 			"p": "The Darkin Scythe",
@@ -45374,7 +45746,85 @@
 			"47": 38,
 			"48": 38,
 			"49": 38,
-			"50": 4
+			"50": 4,
+			"51": {
+				"id": 51,
+				"name": "Cafe Cuties Jinx",
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Cafe Cuties Jinx",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Cafe Cuties Jinx",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Cafe Cuties Jinx",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Cafe Cuties Jinx",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Cafe Cuties Jinx",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Cafe Cuties Jinx",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Cafe Cuties Jinx",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Cafe Cuties Jinx",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"52": 51,
+			"53": 51,
+			"54": 51,
+			"55": 51,
+			"56": 51,
+			"57": 51,
+			"58": 51,
+			"59": 51
 		},
 		"spells": {
 			"p": "Get Excited!",
@@ -48296,7 +48746,12 @@
 			"52": 45,
 			"53": 45,
 			"54": 45,
-			"55": 45
+			"55": 45,
+			"56": {
+				"id": 56,
+				"name": "Breakout True Damage Ekko",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Z-Drive Resonance",
@@ -54225,7 +54680,94 @@
 			"26": 20,
 			"27": 20,
 			"28": 20,
-			"29": 20
+			"29": 20,
+			"30": {
+				"id": 30,
+				"name": "HEARTSTEEL Aphelios",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "HEARTSTEEL Aphelios",
+						"colors": [
+							"#CDE9EF",
+							"#E9628F"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30,
+			"39": 30
 		},
 		"spells": {
 			"p": "The Hitman and the Seer",
@@ -55570,7 +56112,99 @@
 			"41": 35,
 			"42": 35,
 			"43": 35,
-			"44": 35
+			"44": 35,
+			"45": {
+				"id": 45,
+				"name": "HEARTSTEEL Yone",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "HEARTSTEEL Yone",
+						"colors": [
+							"#CDE9EF",
+							"#E9628F"
+						]
+					}
+				}
+			},
+			"46": {
+				"id": 46,
+				"name": "Prestige HEARTSTEEL Yone",
+				"chromas": {}
+			},
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45,
+			"54": 45,
+			"56": 45
 		},
 		"spells": {
 			"p": "Way of the Hunter",
@@ -56067,7 +56701,94 @@
 			"52": 45,
 			"53": 45,
 			"54": 45,
-			"55": 8
+			"55": 8,
+			"56": {
+				"id": 56,
+				"name": "HEARTSTEEL Sett",
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "HEARTSTEEL Sett",
+						"colors": [
+							"#E1F0F5",
+							"#E9628F"
+						]
+					}
+				}
+			},
+			"57": 56,
+			"58": 56,
+			"59": 56,
+			"60": 56,
+			"61": 56,
+			"62": 56,
+			"63": 56,
+			"64": 56,
+			"65": 56
 		},
 		"spells": {
 			"p": "Pit Grit",
@@ -57160,7 +57881,94 @@
 			"4": 1,
 			"5": 1,
 			"6": 1,
-			"7": 1
+			"7": 1,
+			"8": {
+				"id": 8,
+				"name": "HEARTSTEEL K'Sante",
+				"chromas": {
+					"9": {
+						"id": 9,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "HEARTSTEEL K'Sante",
+						"colors": [
+							"#CDE9EF",
+							"#E9628F"
+						]
+					}
+				}
+			},
+			"9": 8,
+			"10": 8,
+			"11": 8,
+			"12": 8,
+			"13": 8,
+			"14": 8,
+			"15": 8,
+			"16": 8,
+			"17": 8
 		},
 		"spells": {
 			"p": "Dauntless Instinct",
