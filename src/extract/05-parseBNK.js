@@ -67,7 +67,7 @@ const fnv_1 = name => {
 // 7: Actor Mixer
 // 14: Attenuation
 // 17: Motion FX
-const typesUnused = [7, 14, 17];
+const typesObjectHIRCSkip = [7, 14, 17];
 
 
 const formats$idBundleProp = {
@@ -157,20 +157,33 @@ export const parseHIRCObject = (id, type, B) => {
 
 	// Sound
 	if(type == 2) {
-		const [embedType, audioID, sourceID] = B.unpack('xxxxBII');
+		const [
+			// 0000 0000 0000 0000 0000 0000 0000 1111 = type
+			// 0000 0000 0000 0000 0011 1111 1111 0000 = company
+			idPlugin,
+			typeStream,
+			idAudio,
+			sizeMediaInMemory,
+			// 0000 0001 = specificedLanguage
+			// 0000 0010 = prefetched
+			// 0000 1000 = nonCachable
+			// 1000 0000 = hasSource
+			bitsSource,
+		] = B.unpack('IBIIB');
 
-		object = new HIRCSound(id, embedType, audioID, sourceID);
+		const sound = object = new HIRCSound(id, typeStream, idAudio);
 
-		if(embedType == 0) {
-			const [fileIndex, fileLength] = B.unpack('II');
+		sound.idPlugin = idPlugin;
+		sound.sizeMediaInMemory = sizeMediaInMemory;
+		sound.bitsSource = bitsSource;
 
-			object.fileIndex = fileIndex;
-			object.fileLength = fileLength;
+
+		const typePlugin = idPlugin & 0x0F;
+		const hasParam = typePlugin == 2;
+
+		if(hasParam) {
+			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `~[Sound] object include Plugin Prarams`, 'time to handle it!');
 		}
-
-		const [soundType] = B.unpack('I');
-
-		object.soundType = soundType;
 	}
 	// Event Action
 	else if(type == 3) {
@@ -260,7 +273,7 @@ export const parseHIRCObject = (id, type, B) => {
 
 		for(const bundleProp of container.bundlesProp) {
 			if(!formats$idBundleProp[bundleProp.id]) {
-				G.warnD('parseBNK', 'unknown ~[prop bundle id]', `~{${bundleProp.id}}`);
+				G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, 'unknown ~[Prop Bundle ID]', `~{${bundleProp.id}}`);
 			}
 
 			[bundleProp.value] = B.unpack(formats$idBundleProp[bundleProp.id]);
@@ -362,19 +375,19 @@ export const parseHIRCObject = (id, type, B) => {
 
 		const [sizePropsState] = B.unpack('B');
 		if(sizePropsState) {
-			G.warnD('parseBNK', `~[sizePropsState] is ${sizePropsState}`, 'time to handle it!');
+			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `found ~[sizePropsState] is ${sizePropsState}`, 'time to handle it!');
 			container.propsState = [];
 		}
 
 		const [sizeChunksState] = B.unpack('B');
 		if(sizeChunksState) {
-			G.warnD('parseBNK', `~[sizeChunksState] is ${sizeChunksState}`, 'time to handle it!');
+			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `found ~[sizeChunksState] is ${sizeChunksState}`, 'time to handle it!');
 			container.chunksState = [];
 		}
 
 		const [sizeRTPC] = B.unpack('H');
 		if(sizeRTPC) {
-			G.warnD('parseBNK', `~[sizeRTPC] is ${sizeRTPC}`, 'time to handle it!');
+			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `found ~[sizeRTPC] is ${sizeRTPC}`, 'time to handle it!');
 			container.rtpcs = [];
 		}
 
@@ -427,7 +440,7 @@ export const parseHIRCObject = (id, type, B) => {
 			object.typeName = 'Switch Container';
 		}
 		else if(type == 9) {
-			G.warnD('parseBNK', `found ~[layer container]`, 'time to handle it!');
+			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `found ~[Layer Container]`, 'time to handle it!');
 		}
 
 
@@ -463,8 +476,8 @@ export const parseHIRCObject = (id, type, B) => {
 			}
 		}
 	}
-	else if(!typesUnused.includes(type)) {
-		G.errorD('HIRCObjectParser', `unknown HIRC Object Type: ${type} ${id}`);
+	else if(!typesObjectHIRCSkip.includes(type)) {
+		G.errorD(`parse ~[HIRC Object]~{${showID(id)}}`, `unhandled ~[HIRC Object]`, `type~{${type}}`);
 
 		object = new HIRCObject(id, type);
 	}
@@ -484,7 +497,7 @@ const parseActionSoundObject = (objectParsed, objectsAll, idHIRC) => {
 	const result = [];
 
 	if(objectParsed instanceof HIRCSound) {
-		result.push(objectParsed.audioID);
+		result.push(objectParsed.idAudio);
 	}
 	else if(objectParsed instanceof HIRCContainer) {
 		const objects = objectsAll.filter(object => objectParsed.idsSound.includes(object.id));
@@ -517,10 +530,10 @@ const parseActionSoundObject = (objectParsed, objectsAll, idHIRC) => {
 		}
 	}
 	else if(!objectParsed && idHIRC) {
-		G.warnD('parseBNK', 'unknown ~[action object id]', `~{${showID(idHIRC)}}`);
+		G.warnD('parseActionSoundObject', 'unknown ~[Action Object ID]', `~{${showID(idHIRC)}}`);
 	}
 	else if(objectParsed) {
-		G.warnD('parseBNK', 'unknown ~[action sound object]', objectParsed);
+		G.warnD('parseActionSoundObject', 'unknown ~[Action sound Object]', objectParsed);
 	}
 
 	return result;
@@ -588,10 +601,10 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 
 			const [countObject] = bifferSection.unpack('I');
 
-			for(let i = 0; i < countObject; i++) {
+			for(let index = 0; index < countObject; index++) {
 				const [type, length, id] = bifferSection.unpack('BII');
 
-				G.traceD('parseBNK', `HIRC object ~[${toHexL8(id)}]`, `~[position]~{${toHexL8(bifferSection.tell() + 10, null, false)}} ~[type]~{${type}} ~[length]~{${length}}`);
+				G.traceD(`parse ~[HIRC Object]~{${showID(id)}}`, '~[HIRC Header]', `~[Position]~{${toHexL8(bifferSection.tell() + 10, null, false)}} ~[Type]~{${type}} ~[Length]~{${length}}`);
 
 				const B = bifferSection.sub(length - 4);
 
@@ -621,19 +634,19 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 			] = bifferBNK.unpack('IIIII');
 
 			if(version != 134) {
-				G.warnD('parseBNK', 'unexpected ~[bank version]', `~{${version}}`);
+				G.errorD('parseBNK', 'unexpected ~[Bank Version]', `~{${version}}`);
 
-				throw Error(`unexpected ~[bank version]~{${version}}`);
+				throw Error(`unexpected ~[Bank Version]~{${version}}`);
 			}
 
 			bifferBNK.skip(sizeSection - Biffer.calc('IIIII'));
 
-			G.debugD('parseBNK', 'Bank Header', `~[Version]~{${version}} ~[Bank ID]~{${toHexL8(idBank)}} ~[Project ID]~{${toHexL8(idProject)}}`);
+			G.debugD('parseBNK', '~[Bank Header]', `~[Version]~{${version}} ~[Bank ID]~{${toHexL8(idBank)}} ~[Project ID]~{${toHexL8(idProject)}}`);
 		}
 		else {
 			bifferBNK.skip(sizeSection);
 
-			G.warnD('parseBNK', 'unknown ~[BNK section tag]', `~{${tagSection}}`);
+			G.warnD('parseBNK', 'unhandled ~[Bank Section Tag]', `~{${tagSection}}`);
 		}
 	}
 
@@ -671,7 +684,7 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 		let eventFull = getEventFull(mapHash_EventName, objectEvent.id);
 
 		if(!eventFull) {
-			G.warnD('parseBNK', 'unknown ~[HIRC Event ID]', `~{${objectEvent.id}}`);
+			G.warnD('parseBNK', 'unmatched ~[HIRC Event ID]', `~{${objectEvent.id}}`);
 
 			eventFull = objectEvent.id;
 		}
@@ -688,15 +701,15 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 			}
 		}
 
-		for(const audioID of eventsAudio) {
-			(namesEventAll$idAudio[audioID] || (namesEventAll$idAudio[audioID] = new Set())).add(eventFull);
+		for(const idAudio of eventsAudio) {
+			(namesEventAll$idAudio[idAudio] || (namesEventAll$idAudio[idAudio] = new Set())).add(eventFull);
 		}
 	}
 
 	const idsSoundAll$idAudio = {};
 
 	objects.filter(object => object instanceof HIRCSound).forEach(sound =>
-		(idsSoundAll$idAudio[sound.audioID] || (idsSoundAll$idAudio[sound.audioID] = new Set())).add(sound.id)
+		(idsSoundAll$idAudio[sound.idAudio] || (idsSoundAll$idAudio[sound.idAudio] = new Set())).add(sound.id)
 	);
 
 
@@ -704,7 +717,7 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 
 	// const textsSoundAudio = [];
 	// objects.filter(object => object instanceof HIRCSound).forEach(object =>
-	// 	textsSoundAudio.push(`${showID(object.id)} --> ${showID(object.audioID)}`)
+	// 	textsSoundAudio.push(`${showID(object.id)} --> ${showID(object.idAudio)}`)
 	// );
 
 	// writeFileSync(
@@ -738,7 +751,7 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 	}
 
 
-	G.infoD('parseBNK', `parse BNK~{${parse(fileBNK).base}}`, '✔ ');
+	G.infoD('parseBNK', `parse ~{${parse(fileBNK).base}}`, '✔ ');
 
 	return [namesEventAll$idAudio, idsSoundAll$idAudio];
 }

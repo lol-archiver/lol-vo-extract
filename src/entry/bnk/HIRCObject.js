@@ -66,21 +66,15 @@ export class HIRCObject {
 
 
 export class HIRCSound extends HIRCObject {
-	constructor(id, embedType, audioID, sourceID) {
+	constructor(id, typeStream, idAudio) {
 		super(id, 2);
 
 
-		this.embedType = embedType;
-		this.audioID = audioID;
-		this.sourceID = sourceID;
-
-		this.fileIndex = null;
-		this.fileLength = null;
-
-		this.soundType = null;
+		this.typeStream = typeStream;
+		this.idAudio = idAudio;
 	}
 
-	toString() { return `${super.toString()} --> audio:${showID(this.audioID)}`; }
+	toString() { return `${super.toString()} --> audio:${showID(this.idAudio)}`; }
 }
 
 export class HIRCEventAction extends HIRCObject {

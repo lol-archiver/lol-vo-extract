@@ -80,9 +80,9 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 
 	const eventMap = {};
 
-	for(const [audioID, eventInfos] of Object.entries(eventsAll$idAudio)) {
+	for(const [idAudio, eventInfos] of Object.entries(eventsAll$idAudio)) {
 		let crcsSrc = namesFileSoundBank
-			.map(file => resolve(dirCache, 'audio', file, 'wem', `${audioID}.wem`))
+			.map(file => resolve(dirCache, 'audio', file, 'wem', `${idAudio}.wem`))
 			.filter(src => existsSync(src))
 			.map(src => crc32(readFileSync(src)));
 
@@ -95,13 +95,13 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 		}
 		else {
 			if(crcsSrc.size > 1) {
-				G.warn('EventSaver', 'save event', `found multi extract audio file ~{${audioID}}`);
+				G.warn('EventSaver', 'save event', `found multi extract audio file ~{${idAudio}}`);
 			}
 
 			crcSrc = [...crcsSrc].join('|');
 		}
 
-		const hex = toHexL8(audioID);
+		const hex = toHexL8(idAudio);
 
 		const dictEN = en_us;
 
@@ -119,7 +119,7 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 
 					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: idsSoundAll$idAudio[audioID] || [] });
+					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: idsSoundAll$idAudio[idAudio] || [] });
 				}
 				else {
 					const slot = `${pad0(I.id)}`;
@@ -131,7 +131,7 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 
 					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: idsSoundAll$idAudio[audioID] || [] });
+					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: idsSoundAll$idAudio[idAudio] || [] });
 				}
 			}
 			else if(typeof eventInfo == 'number') {
