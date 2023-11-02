@@ -1,9 +1,8 @@
+import { C, G } from '@nuogz/pangu';
+
 import { appendFileSync, writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import { readJSONSync } from '../../lib/fs-extra.js';
-
-import { C, G } from '@nuogz/pangu';
 import Biffer from '@nuogz/biffer';
 
 import { dirDebug } from '../../lib/dir.js';
@@ -11,24 +10,6 @@ import { I } from '../../lib/info.js';
 import { toHexL8, showID, toBufferHex } from '../../lib/utility.js';
 
 import { HIRCSound, HIRCEventAction, HIRCEvent, HIRCContainer, HIRCSwitchContainer, HIRCObject, HIRCSwitch } from '../entry/bnk/HIRCObject.js';
-
-
-
-let mapEventID = {};
-try {
-	mapEventID = readJSONSync(`../../data/EventIDMap/${I.slot}.json`);
-}
-catch(error) { void 0; }
-
-const getEventFull = (mapHash_EventName, HIRCEventID) => {
-	let eventFull = mapHash_EventName[HIRCEventID];
-
-	while(!eventFull && mapEventID[HIRCEventID]) {
-		eventFull = mapHash_EventName[HIRCEventID = mapEventID[HIRCEventID]];
-	}
-
-	return eventFull;
-};
 
 
 
@@ -681,7 +662,7 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 	for(const objectEvent of objectsEvent) {
 		const eventsAudio = [];
 
-		let eventFull = getEventFull(mapHash_EventName, objectEvent.id);
+		let eventFull = mapHash_EventName[objectEvent.id];
 
 		if(!eventFull) {
 			G.warnD('parseBNK', 'unmatched ~[HIRC Event ID]', `~{${objectEvent.id}}`);

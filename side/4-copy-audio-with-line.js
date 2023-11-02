@@ -4,78 +4,79 @@ import { C } from '@nuogz/pangu';
 import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
 
+import Filenamify from 'filenamify';
 import { emptyDirSync } from 'fs-extra';
 
 import { dirFinal, dirTextAudio } from '../lib/dir.js';
-import { pad0 } from '../lib/utility.js';
+
 import { I } from '../lib/info.js';
 
 
 
-const safeFileName = name => name.replace(/:/g, '：').replace(/<(.*?)>/g, '（$1）').replace(/["*[\]<>\\/]|\\n/g, '');
+// const safeFileName = name => name.replace(/:/g, '：').replace(/<(.*?)>/g, '（$1）').replace(/["*[\]<>\\/]|\\n/g, '');
 
 
 const dirTarget = resolve(dirTextAudio, '@line-audio');
 emptyDirSync(dirTarget);
 
 
-const idSkin = I.idsSkin[0];
+const idFull = I.id0Full;
 const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
 
-const pathsAudios = [
-	resolve(dirFinal, `${pad0(I.id)}${pad0(I.idsSkin[0])}@${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}@${region}`),
+const idMatch = `${idFull}@`;
+const regionMatch = `@${region}`;
+
+
+const fileLine = readdirSync(resolve(C.path.dirLines, 'dication')).find(dirent => dirent.startsWith(idMatch));
+const dirsAudio = [
+	resolve(dirFinal, readdirSync(resolve(dirFinal)).find(dirent => dirent.startsWith(idMatch) && dirent.includes(regionMatch))),
 ];
-const pathLine = C.path.line;
 
 
-const arrAudioFile = pathsAudios.reduce((acc, pathAudios) => { acc.push(...readdirSync(pathAudios).map(name => resolve(pathAudios, name))); return acc; }, []);
-const arrLineText = readFileSync(pathLine, 'UTF8').split('\n').filter(text => text.trim());
+const filesAudio = dirsAudio.map(dirAudio => readdirSync(dirAudio).map(file => resolve(dirAudio, file))).flat();
+const textsLine = readFileSync(fileLine, 'utf-8').split('\n').filter(text => text.trim());
 
-let curEvent;
-let isLineStart = false;
 
-for(const lineText of arrLineText) {
-	if(!isLineStart) {
-		if(lineText == '## Lines:台词') {
-			isLineStart = true;
-		}
+let eventNow;
+let startedLine = false;
+for(const textLine of textsLine) {
+	if(!startedLine) {
+		if(textLine == '## Lines:台词') { startedLine = true; }
 
 		continue;
 	}
 
-	if(lineText.startsWith('### **')) {
-		const [event] = lineText.replace('### ', '').replace(/\*\*/g, '').trim().split(' | ');
 
-		curEvent = event;
+	if(textLine.startsWith('### **')) {
+		[eventNow] = textLine.replace('### ', '').replace(/\*\*/g, '').trim().split(' | ');
 	}
 	else {
-		const [crc32_, line] = lineText.replace('- `', '').split('` ');
-		const [crc32] = crc32_.split('|');
+		const [ids, line] = textLine.replace('- `', '').split('` ');
+		const [idSound] = ids.split('|');
 
-		const file = arrAudioFile.find(fileName => fileName.includes(crc32));
 
-		if(file) {
-			copyFileSync(
-				file,
-				resolve(dirTarget, `[${safeFileName(curEvent)}] ${safeFileName(line)}(${crc32}).wav`)
-			);
-		}
-		else if(crc32 == '00000000' || crc32 == '00000001') {
-			if(curEvent.includes('选用')) {
-				copyFileSync(
-					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'pick.wav'),
-					resolve(dirTarget, `[${safeFileName(curEvent)}] ${safeFileName(line)}(${crc32}).wav`)
-				);
+		let fileSource;
+		const fileAudio = filesAudio.find(fileName => fileName.includes(`[${idSound}]`));
+
+		if(fileAudio) { fileSource = fileAudio; }
+		else if(idSound == '00000000' || idSound == '00000001') {
+			if(eventNow == '选用') {
+				fileSource = resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'pick.wav');
 			}
-			else if(curEvent.includes('禁用')) {
-				copyFileSync(
-					resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'ban.wav'),
-					resolve(dirTarget, `[${safeFileName(curEvent)}] ${safeFileName(line)}(${crc32}).wav`)
-				);
+			else if(eventNow == '禁用') {
+				fileSource = resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'ban.wav');
 			}
 		}
 		else {
-			globalThis.console.log('unmatch: ', lineText);
+			globalThis.console.warn('unmatch: ', eventNow, line);
+		}
+
+
+		if(fileSource) {
+			copyFileSync(
+				fileSource,
+				resolve(dirTarget, Filenamify(`[${eventNow}] ${line}(${idSound}).wav`))
+			);
 		}
 	}
 }

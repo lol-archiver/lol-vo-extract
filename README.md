@@ -9,7 +9,7 @@ League of Legends champion voices download, extract and rename with events.
 - Sometimes the literal and actual trigger are different!
 
 Some not perfect match as following:
-* Lux: Not all events from `skin*.BIN` and `_event.bnk` can match. Need to match manually through `data/EventIDMap/Lux.json`;
+* (outdated/fixed) Lux: Not all events from `skin*.BIN` and `_event.bnk` can match. Need to match manually through `data/EventIDMap/Lux.json`;
 * Twist Fate: `VO` and `SFX` are not independent of each other. Need to increase `sfxLevel`.
 * Mecha Kingdoms Jax: The event `JaxRelentlessAssault` shows that the trigger of this is to activate the passive `Relentless Assault`. But in the actual game, the trigger is to use the R skill `Grandmaster's Might`.
 

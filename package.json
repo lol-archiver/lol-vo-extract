@@ -23,6 +23,7 @@
 		"axios": "^0.27.2",
 		"bluebird": "^3.7.2",
 		"buffer-crc32": "^0.2.13",
+		"filenamify": "^6.0.0",
 		"fs-extra": "^11.1.0",
 		"https-proxy-agent": "^5.0.1",
 		"iconv-lite": "^0.6.3",
