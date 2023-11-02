@@ -147,7 +147,7 @@ export default function parseBIN(binPath, indexSkin, useSFXLevel) {
 		}
 	}
 
-	if(setEventPoolName.size > 1) { G.info('BINParser', '[EventPool]', `${[...setEventPoolName].join(', ')}`); }
+	if(setEventPoolName.size > 1) { G.info('BINParser', '~[Event Pool]', `${[...setEventPoolName].join(', ')}`); }
 
 	return arrEvent;
 }

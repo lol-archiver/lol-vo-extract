@@ -46,6 +46,23 @@ const fnv_1 = name => {
 };
 
 
+// /** @param {Biffer} B */
+// const unpackVar = B => {
+// 	let [cur] = B.unpack('B');
+// 	let value = (cur & 0x7F);
+
+// 	let max = 0;
+// 	while(cur & 0x80 && max < 10) {
+// 		cur = B.unpack('B');
+// 		value = (value << 7) | (cur & 0x7F);
+// 		max += 1;
+// 	}
+
+// 	if(max >= 10) { throw 'unexpected variable loop count'; }
+
+// 	return value;
+// };
+
 
 // 7: Actor Mixer
 // 14: Attenuation
@@ -53,26 +70,79 @@ const fnv_1 = name => {
 const typesUnused = [7, 14, 17];
 
 
-const formats$typeParamAdditional = {
-	[0x00]: 'f',
-	[0x02]: 'f',
-	[0x03]: 'f',
-	[0x05]: 'f',
-	[0x06]: 'f',
-	[0x07]: 'I',
-	[0x08]: 'f',
-	[0x0B]: 'f',
-	[0x0C]: 'f',
-	[0x0D]: 'f',
-	[0x12]: 'f',
-	[0x13]: 'f',
-	[0x14]: 'f',
-	[0x15]: 'f',
-	[0x16]: 'f',
-	[0x17]: 'f',
-	[0x18]: 'f',
-	[0x3B]: 'I',// not sure
-	[0x46]: 'I',// not sure
+const formats$idBundleProp = {
+	[0x00]: 'f', // Volume
+	[0x01]: 'f', // *LFE
+	[0x02]: 'f', // Pitch
+	[0x03]: 'f', // LPF (Low-pass Filter)
+	[0x04]: 'f', // *HPF (High-pass Filter)
+	[0x05]: 'f', // Bus Volume
+	[0x06]: 'f', // Make Up Gain
+	[0x07]: 'I', // Priority
+	[0x08]: 'f', // Priority Distance Offset
+	[0x09]: 'f', // *Feedback Volume (removed)
+	[0x0A]: 'f', // *Feedback LPF (removed)
+	[0x0B]: 'f', // Mute Ratio
+	[0x0C]: 'f', // PAN_LR
+	[0x0D]: 'f', // PAN_FR
+	[0x0E]: 'f', // *Center PCT
+	[0x0F]: 'f', // *Delay Time
+	[0x10]: 'f', // *Transition Time
+	[0x11]: 'f', // *Probability
+	[0x12]: 'f', // *Dialogue Mode
+	[0x13]: 'f', // User Aux Send Volume 0
+	[0x14]: 'f', // User Aux Send Volume 1
+	[0x15]: 'f', // User Aux Send Volume 2
+	[0x16]: 'f', // User Aux Send Volume 3
+	[0x17]: 'f', // Game Aux Send Volume
+	[0x18]: 'f', // Output Bus Volume
+	[0x19]: 'f', // *Output Bus HPF
+	[0x1A]: 'f', // *Output Bus LPF
+	[0x1B]: 'f', // *HDR Bus Threshold
+	[0x1C]: 'f', // *HDR Bus Ratio
+	[0x1D]: 'f', // *HDR Bus Release Time
+	[0x1E]: 'f', // *HDR Bus Game Param
+	[0x1F]: 'f', // *HDR Bus Game Param Min
+	[0x20]: 'f', // *HDR Bus Game Param Max
+	[0x21]: 'f', // *HDR Active Range
+	[0x22]: 'f', // *Loop Start
+	[0x23]: 'f', // *Loop End
+	[0x24]: 'f', // *Trim In Time
+	[0x25]: 'f', // *Trim Out Time
+	[0x26]: 'f', // *Fade In Time
+	[0x27]: 'f', // *Fade Out Time
+	[0x28]: 'f', // *Fade In Curve
+	[0x29]: 'f', // *Fade Out Curve
+	[0x2A]: 'f', // *Loop Crossfade Duration
+	[0x2B]: 'f', // *Crossfade Up Curve
+	[0x2C]: 'f', // *Crossfade Down Curve
+	[0x2D]: 'f', // *MIDI Tracking Root Note
+	[0x2E]: 'f', // *MIDI Play On Note Type
+	[0x2F]: 'f', // *MIDI Transposition
+	[0x30]: 'f', // *MIDI Velocity Offset
+	[0x31]: 'f', // *MIDI Key Range Min
+	[0x32]: 'f', // *MIDI Key Range Max
+	[0x33]: 'f', // *MIDI Velocity Range Min
+	[0x34]: 'f', // *MIDI Velocity Range Max
+	[0x35]: 'f', // *MIDI Channel Mask
+	[0x36]: 'f', // *Playback Speed
+	[0x37]: 'f', // *Midi Tempo Source
+	[0x38]: 'f', // *Midi Target Node
+	[0x39]: 'I', // *Attached Plugin Effect ID
+	[0x3A]: 'f', // *Loop
+	[0x3B]: 'f', // *Initial Delay
+	[0x3C]: 'f', // *User Aux Send LPF 0
+	[0x3D]: 'f', // *User Aux Send LPF 1
+	[0x3E]: 'f', // *User Aux Send LPF 2
+	[0x3F]: 'f', // *User Aux Send LPF 3
+	[0x40]: 'f', // *User Aux Send HPF 0
+	[0x41]: 'f', // *User Aux Send HPF 1
+	[0x42]: 'f', // *User Aux Send HPF 2
+	[0x43]: 'f', // *User Aux Send HPF 3
+	[0x44]: 'f', // *Game Aux Send LPF
+	[0x45]: 'f', // *Game Aux Send HPF
+	[0x46]: 'I', // *Attenuation ID
+	[0x47]: 'f', // *Positioning Type Blend
 };
 
 
@@ -87,24 +157,24 @@ export const parseHIRCObject = (id, type, B) => {
 
 	// Sound
 	if(type == 2) {
-		const [embedType, audioID, sourceID] = B.unpack('xxxxBLL');
+		const [embedType, audioID, sourceID] = B.unpack('xxxxBII');
 
 		object = new HIRCSound(id, embedType, audioID, sourceID);
 
 		if(embedType == 0) {
-			const [fileIndex, fileLength] = B.unpack('LL');
+			const [fileIndex, fileLength] = B.unpack('II');
 
 			object.fileIndex = fileIndex;
 			object.fileLength = fileLength;
 		}
 
-		const [soundType] = B.unpack('L');
+		const [soundType] = B.unpack('I');
 
 		object.soundType = soundType;
 	}
 	// Event Action
 	else if(type == 3) {
-		const [scope, actionType, idObject, countParam] = B.unpack('BBLxB');
+		const [scope, actionType, idObject, countParam] = B.unpack('BBIxB');
 		object = new HIRCEventAction(id, scope, actionType, idObject, countParam);
 
 		object.scope = scope;
@@ -116,14 +186,14 @@ export const parseHIRCObject = (id, type, B) => {
 		for(let i = 0; i < countParam; i++) {
 			const [type] = B.unpack('B');
 			// 0f --> float
-			const [value] = B.unpack(type == 0x0E || type == 0x0F ? 'L' : 'L');
+			const [value] = B.unpack(type == 0x0E || type == 0x0F ? 'I' : 'I');
 
 			params.push({ type, value });
 		}
 
 
 		if(actionType == 0x12 || actionType == 0x19) {
-			const [idGroup, idCondition] = B.unpack('xLL');
+			const [idGroup, idCondition] = B.unpack('xII');
 
 			object.idGroup = idGroup;
 			object.idCondition = idCondition;
@@ -138,7 +208,7 @@ export const parseHIRCObject = (id, type, B) => {
 		object.count = count;
 
 		if(count) {
-			object.idsAction = B.unpack(`${count}L`);
+			object.idsAction = B.unpack(`${count}I`);
 		}
 		else {
 			object.idsAction = [];
@@ -146,159 +216,247 @@ export const parseHIRCObject = (id, type, B) => {
 	}
 	// Containers
 	else if([5, 6, 9].includes(type)) {
-		object = new HIRCContainer(id);
+		const container = object = new HIRCContainer(id);
 
 
-		// override parent settings or not
-		// number of effects
-		const [overrided, countEffects] = B.unpack('BB');
+		const [overridedParentEffect, sizeEffects] = B.unpack('BB');
 
-		object.overrided = ~~overrided;
+		container.overridedParentEffect = Boolean(overridedParentEffect);
 
-		if(countEffects) {
-			// bypassed effect mask
-			B.skip(1);
+		if(sizeEffects) {
+			// 0000 0001 = bypass effect 0
+			// 0000 0010 = bypass effect 1
+			// 0000 0100 = bypass effect 2
+			// 0000 1000 = bypass effect 3
+			// 0001 0000 = bypass all
+			container.bitsBypassEffect = B.unpack('B');
 
-			for(let index = 0; index < countEffects; index++) {
-				B.skip(0
-					+ 1 // effect index
-					+ 4 // effect id
-					+ 2 // 00 00
-				);
+			container.effects = [];
+			for(let index = 0; index < sizeEffects; index++) {
+				const [index, idEffect, sharedSet, rendered] = B.unpack('BIBB');
+
+				container.effects.push({ index, idEffect, sharedSet: Boolean(sharedSet), rendered: Boolean(rendered), });
 			}
 		}
 
-		B.skip(0
-			+ 1 // 00
-			+ 4 // output bus id
-			+ 4 // parent object id
-			+ 1 // undetect, 00, or override parent settings, or activate offset priority at max distance
-		);
+
+		const [overridedAttachmentParams, idBusOverride, idParent, bitsSettings] = B.unpack('BIIB');
+
+		container.overridedAttachmentParams = Boolean(overridedAttachmentParams);
+		container.idBusOverride = idBusOverride;
+		container.idParent = idParent;
+		// 0000 0001 = prioritizedOverrideParent
+		// 0000 0010 = prioritizedApplyDistFactor
+		// 0000 0100 = overridedMIDIEventsBehavior
+		// 0000 1000 = overridedMIDINoteTracking
+		// 0001 0000 = enabledMIDINoteTracking
+		// 0010 0000 = breakedMIDILoopOnNoteOff
+		container.bitsSettings = bitsSettings;
 
 
-		// number of additional parameter
-		const [countParams] = B.unpack('B');
+		const [sizeBundlesProp] = B.unpack('B');
 
-		// types of each additional parameter
-		object.params = B.unpack(`${countParams}B`).map(type => ({ type }));
+		container.bundlesProp = B.unpack(`${sizeBundlesProp}B`).map(id => ({ id }));
 
-		for(const param of object.params) {
-			if(!formats$typeParamAdditional[param.type]) {
-				G.debug('BNKParser', 'unknown ~[additional param type]', `~{${param.type}}`);
+		for(const bundleProp of container.bundlesProp) {
+			if(!formats$idBundleProp[bundleProp.id]) {
+				G.warnD('parseBNK', 'unknown ~[prop bundle id]', `~{${bundleProp.id}}`);
 			}
 
-			[param.value] = B.unpack(formats$typeParamAdditional[param.type]);
+			[bundleProp.value] = B.unpack(formats$idBundleProp[bundleProp.id]);
 		}
 
 
-		const [d1, d2] = B.unpack('BB');
-		// d1 may be a unknown boolean
-		if(d1 > 0) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d1.bool]`, `~{${d1}}`); }
-		// d2 should be a byte parameter
-		// if d2 > 0, 1 byte following parameter
-		if(d2 > 0) { B.unpack('B'); }
+		const [sizeBundlesPropRanged] = B.unpack('B');
 
-		const [d3, d4, d5, d6, d7, d8] = B.unpack('BBBBBB');
-		// d3 may be a unknown boolean
-		if(d3 > 1) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d3.bool]`, `~{${d3}}`); }
-		// d4 may be a unknown byte
-		if(![0, 1, 4,9,16,17,20].includes(d4)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d4.bool]`, `~{${d4}}`); }
-		// d5 may be a unknown boolean
-		if(d5 > 1) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d5.bool]`, `~{${d5}}`); }
-		// d6 may be a unknown byte
-		if(![0, 1, 2, 50].includes(d6)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d6.bool]`, `~{${d6}}`); }
-		// d7 may be a unknown boolean
-		if(d7 > 1) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d7.bool]`, `~{${d7}}`); }
-		// d8 may be a unknown boolean
-		if(![0, 1, 2].includes(d8)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[d8.byte]`, `~{${d8}}`); }
+		container.bundlesPropRanged = B.unpack(`${sizeBundlesPropRanged}B`).map(id => ({ id }));
+
+		for(const bundleProp of container.bundlesPropRanged) {
+			[bundleProp.min, bundleProp.max] = B.unpack('ff');
+		}
+
+
+		// 0000 0001 = hasPositioningInfoOverrideParent
+		// 0000 0010 = hasListenerRelativeRouting
+		// 0000 1100 = Panner Type: 0, Direct Speaker Assignment,; 1, Balance Fade Height; 2, Steering Panner
+		// 0110 0000 = 3DPosition Type: 0, Emitter; 1, Emitter With Automation; 2, Listener With Automation
+		[container.positioning] = B.unpack('B');
+		const hasPositioning = (container.positioning >> 0) & 1;
+		const has3D = (container.positioning >> 1) & 1;
+
+		if(hasPositioning && has3D) {
+			// 0000 0011 = Spatialization Mode: 0, None; 1, Position Only; 2, Position And Orientation
+			// 0000 0100 = enabledAttenuation
+			// 0000 1000 = holdedEmitterPosAndOrient
+			// 0001 0000 = holdedListenerOrient
+			// 0100 0000 = is not looping?
+			[container.bits3D] = B.unpack('B');
+
+			const type3DPosition = (container.positioning >> 5) & 3;
+			const hasAutomation = type3DPosition != 0; //#(3d == 1 or 3d != 1 and 3d == 2)
+
+			if(hasAutomation) {
+				// 0x0 = Step Sequence
+				// 0x1 = Step Random
+				// 0x2 = Continuous Sequence
+				// 0x3 = Continuous Random
+				// 0x4 = Step Sequence Pick New Path
+				// 0x5 = Step Random Pick New Path
+				[container.modePath] = B.unpack('B');
+
+				[container.timeTransition] = B.unpack('i');
+
+				const sizeVertices = B.unpack('I');
+				container.vertices = [];
+				for(let index = 0; index < sizeVertices; index++) {
+					const [x, y, z, duration] = B.unpack('fffi');
+
+					container.vertices.push({ x, y, z, duration });
+				}
+
+				const sizeItemsPlayList = B.unpack('I');
+				container.itemsPlayList = [];
+				for(let index = 0; index < sizeItemsPlayList; index++) {
+					const [offsetVertices, sizeVertices] = B.unpack('II');
+
+					container.itemsPlayList.push({ offsetVertices, sizeVertices });
+				}
+
+				container.paramsAutomation = [];
+				for(let index = 0; index < sizeItemsPlayList; index++) {
+					const [xRange, yRange, zRange] = B.unpack('ff');
+
+					container.paramsAutomation.push({ xRange, yRange, zRange });
+				}
+			}
+		}
+
+
+		// 0000 0100 = overridedUserAuxSends
+		// 0000 1000 = hasAux
+		// 0001 0000 = overridedReflectionsAuxBus
+		[container.bitsAux] = B.unpack('B');
+
+		const hasAux = (container.bitsAux >> 3) & 1;
+		if(hasAux) {
+			container.idsAux = B.unpack('IIII');
+		}
+
+
+		[
+			// 0000 0001 = Killed Newest
+			// 0000 0010 = UseedVirtualBehavior
+			// 0000 1000 = Ignore Parent Max Num Instance
+			// 0001 0000 = Is Voices Option Override Parent
+			container.bitsAdvSettings,
+			container.behaviorVirtualQueue,
+			container.sizeInstanceMax,
+			container.behaviorBelowThreshold,
+			// 0000 0001 = overridedHdrEnvelope
+			// 0000 0010 = overridedAnalysis
+			// 0000 0100 = normalizedLoudness
+			// 0000 1000 = enabledEnvelope
+			container.bitsAdvSettings2
+		] = B.unpack('BBHBB');
+
+
+		const [sizePropsState] = B.unpack('B');
+		if(sizePropsState) {
+			G.warnD('parseBNK', `~[sizePropsState] is ${sizePropsState}`, 'time to handle it!');
+			container.propsState = [];
+		}
+
+		const [sizeChunksState] = B.unpack('B');
+		if(sizeChunksState) {
+			G.warnD('parseBNK', `~[sizeChunksState] is ${sizeChunksState}`, 'time to handle it!');
+			container.chunksState = [];
+		}
+
+		const [sizeRTPC] = B.unpack('H');
+		if(sizeRTPC) {
+			G.warnD('parseBNK', `~[sizeRTPC] is ${sizeRTPC}`, 'time to handle it!');
+			container.rtpcs = [];
+		}
 
 
 		if(type == 5) {
-			const [d9] = B.unpack('B');
-			if(![0, 8].includes(d9)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.d9.byte]`, `~{${d9}}`); }
+			[
+				container.countLoop,
+				container.modLoopMin,
+				container.modLoopMax,
+				container.timeTransition,
+				container.modTimeTransitionMin,
+				container.modTimeTransitionMax,
+				container.countRepeatAvoid,
+				// 0x0: "Disabled",
+				// 0x1: "CrossFadeAmp",
+				// 0x2: "CrossFadePower",
+				// 0x3: "Delay",
+				// 0x4: "SampleAccurate",
+				// 0x5: "TriggerRate",
+				container.modeTransition,
+				// 0x0: "Normal",
+				// 0x1: "Shuffle",
+				container.modeRandom,
+				// 0x0: "Random",
+				// 0x1: "Sequence",
+				container.mode,
+				// 0000 0001 = isUsingWeight
+				// 0000 0010 = resetedPlayListAtEachPlay
+				// 0000 0100 = isRestartBackward
+				// 0000 1000 = isContinuous
+				// 0001 0000 = isGlobal
+				container.bitsParam
+			] = B.unpack('HHHfffHBBBB');
 
 
-			const textUndetectLong = toBufferHex(B.slice(22));
-
-			if(textUndetectLong !=
-				'00 00 00 00 01 00 00 00 00 00 00 00 7A 44 00 00 00 00 00 00 00 00') {
-				G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.long]`, '✖', d8, textUndetectLong);
-			}
-
-
-			const [h1, h2] = B.unpack('>xxHH');
-			if(h1 > 1) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.h1]`, `~{${h1}}`); }
-			if(![18, 274, 282].includes(h2)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.h2]`, `~{${h2}}`); }
-
-			object.typeName = h1 == 0 ? 'Sequence Container' : 'Random Container';
+			container.typeName = container.mode == 0 ? 'Sequence Container' : 'Random Container';
 		}
 		else if(type == 6) {
+
+			[
+				// 0x0: "Switch",
+				// 0x1: "State",
+				container.typeGroup,
+				container.idGroup,
+				container.idSwitchDefault,
+				container.validatedContinuous,
+			] = B.unpack('BIIB');
+
+
 			object.typeName = 'Switch Container';
-
-			const [d9] = B.unpack('B');
-			if(![0, 8].includes(d9)) { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t6.d9.byte]`, `~{${d9}}`); }
-
-
-			const textUndetectLong = toBufferHex(B.slice(5));
-
-			if(textUndetectLong != '00 00 00 00 00') {
-				G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t6.long]`, '✖', textUndetectLong);
-			}
-
-
-			[object.idGroup, object.idSwitchDefault] = B.unpack('LLx');
 		}
 		else if(type == 9) {
-			object.typeName = 'Blend Container';
-
-			const textUndetectLong = toBufferHex(B.slice(5));
-
-			if(textUndetectLong != '00 00 00 00 00') {
-				G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t9.long]`, '✖', textUndetectLong);
-			}
+			G.warnD('parseBNK', `found ~[layer container]`, 'time to handle it!');
 		}
 
 
-		// number of sound id
-		const [countSound] = B.unpack('L');
+		const [sizeChildren] = B.unpack('I');
+		object.idsSound = B.unpack(`${sizeChildren}I`);
 
-		if(countSound > 1 && type == 5) { object.typeName += ` ${countSound}`; }
-
-		// each sound ids
-		try {
-			object.idsSound = B.unpack(`${countSound}L`);
-		}
-		catch(error) {
-			G.error('BNKParser', 'unpack container sound ids', error);
-		}
+		if(sizeChildren > 1 && type == 5) { object.typeName += ` ${sizeChildren}`; }
 
 
 		if(type == 5) {
-			object.idsSoundUnorder = object.idsSound;
+			object.idsChildren = object.idsSound;
 
-
-			const [countSoundOrder] = B.unpack('H');
+			const [sizePlayList] = B.unpack('H');
 
 			object.idsSound = [];
-			for(let index = 0; index < countSoundOrder; index++) {
-				object.idsSound.push(B.unpack(`L`)[0]);
-
-				const textUndetectLong = toBufferHex(B.slice(4));
-				if(textUndetectLong != '50 C3 00 00') { G.debug('BNKParser', `~[${toHexL8(id)}] match undetect data ~[t5.interval]`, '✖', textUndetectLong); }
+			object.weightsSound = [];
+			for(let index = 0; index < sizePlayList; index++) {
+				object.idsSound.push(B.unpack(`I`)[0]);
+				object.weightsSound.push(B.unpack(`I`)[0]);
 			}
 		}
 		else if(type == 6) {
-			// number of switch
-			const [countSwitch] = B.unpack('L');
+			const [sizeSwitches] = B.unpack('I');
 
-			// each switch
 			object.switches = [];
-			for(let index = 0; index < countSwitch; index++) {
-				// number of sound
-				const [id, countSoundSwitch] = B.unpack(`LL`);
+			for(let index = 0; index < sizeSwitches; index++) {
+				const [id, sizeSwitch] = B.unpack(`II`);
 
-				// each sound ids
-				const sw = new HIRCSwitch(id, B.unpack(`${countSoundSwitch}L`));
+				const sw = new HIRCSwitch(id, B.unpack(`${sizeSwitch}I`));
 
 				object.switches.push(sw);
 				objectsExtra.push(sw);
@@ -306,7 +464,7 @@ export const parseHIRCObject = (id, type, B) => {
 		}
 	}
 	else if(!typesUnused.includes(type)) {
-		G.error('HIRCObjectParser', `unknown HIRC Object Type: ${type} ${id}`);
+		G.errorD('HIRCObjectParser', `unknown HIRC Object Type: ${type} ${id}`);
 
 		object = new HIRCObject(id, type);
 	}
@@ -359,10 +517,10 @@ const parseActionSoundObject = (objectParsed, objectsAll, idHIRC) => {
 		}
 	}
 	else if(!objectParsed && idHIRC) {
-		G.warn('BNKParser', 'unknown ~[action object id]', `~{${showID(idHIRC)}}`);
+		G.warnD('parseBNK', 'unknown ~[action object id]', `~{${showID(idHIRC)}}`);
 	}
 	else if(objectParsed) {
-		G.warn('BNKParser', 'unknown ~[action sound object]', objectParsed);
+		G.warnD('parseBNK', 'unknown ~[action sound object]', objectParsed);
 	}
 
 	return result;
@@ -414,7 +572,7 @@ const parseTree = (object, id, objects, texts, level = 0) => {
  * @param {Set<string>} setNameEvent
  */
 export default async function parseBNK(fileBNK, setNameEvent) {
-	G.infoU('BNKParser', `parse BNK~{${parse(fileBNK).base}}`, 'parsing...');
+	G.infoU('parseBNK', `parse ~{${parse(fileBNK).base}}`, '○ parsing...');
 
 	const bifferBNK = new Biffer(fileBNK);
 
@@ -422,17 +580,18 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 	const linesHexDump = [];
 
 	while(!bifferBNK.isEnd()) {
-		const [magicSection, sizeSection] = bifferBNK.unpack('4sL');
+		const [tagSection, sizeSection] = bifferBNK.unpack('4sI');
 
-		if(magicSection == 'HIRC') {
+		// Hierarchy
+		if(tagSection == 'HIRC') {
 			const bifferSection = bifferBNK.sub(sizeSection);
 
-			const [countObject] = bifferSection.unpack('L');
+			const [countObject] = bifferSection.unpack('I');
 
 			for(let i = 0; i < countObject; i++) {
-				const [type, length, id] = bifferSection.unpack('BLL');
+				const [type, length, id] = bifferSection.unpack('BII');
 
-				G.trace('BNKParser', `HIRC object ~[${toHexL8(id)}]`, `~[position]~{${toHexL8(bifferSection.tell() + 10, null, false)}} ~[type]~{${type}} ~[length]~{${length}}`);
+				G.traceD('parseBNK', `HIRC object ~[${toHexL8(id)}]`, `~[position]~{${toHexL8(bifferSection.tell() + 10, null, false)}} ~[type]~{${type}} ~[length]~{${length}}`);
 
 				const B = bifferSection.sub(length - 4);
 
@@ -449,14 +608,35 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 				}
 			}
 		}
+		// Bank Header
+		else if(tagSection == 'BKHD') {
+			const [
+				version,
+				idBank,
+				/* idLanguage */,
+				// 0000 0000 0000 0000 1111 1111 1111 1111 = unused
+				// 1111 1111 1111 1111 0000 0000 0000 0000 = allocatedDevice
+				/* bitsValuesAlt */,
+				idProject
+			] = bifferBNK.unpack('IIIII');
+
+			if(version != 134) {
+				G.warnD('parseBNK', 'unexpected ~[bank version]', `~{${version}}`);
+
+				throw Error(`unexpected ~[bank version]~{${version}}`);
+			}
+
+			bifferBNK.skip(sizeSection - Biffer.calc('IIIII'));
+
+			G.debugD('parseBNK', 'Bank Header', `~[Version]~{${version}} ~[Bank ID]~{${toHexL8(idBank)}} ~[Project ID]~{${toHexL8(idProject)}}`);
+		}
 		else {
 			bifferBNK.skip(sizeSection);
 
-			if(magicSection != 'BKHD') {
-				G.warn('BNKParser', 'unknown ~[BNK section magic]', `~{${magicSection}}`);
-			}
+			G.warnD('parseBNK', 'unknown ~[BNK section tag]', `~{${tagSection}}`);
 		}
 	}
+
 
 
 	if(linesHexDump.length) {
@@ -491,7 +671,7 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 		let eventFull = getEventFull(mapHash_EventName, objectEvent.id);
 
 		if(!eventFull) {
-			G.warn('BNKParser', 'unknown ~[HIRC Event ID]', `~{${objectEvent.id}}`);
+			G.warnD('parseBNK', 'unknown ~[HIRC Event ID]', `~{${objectEvent.id}}`);
 
 			eventFull = objectEvent.id;
 		}
@@ -558,7 +738,7 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 	}
 
 
-	G.infoD('BNKParser', `parse BNK~{${parse(fileBNK).base}}`, '✔ ');
+	G.infoD('parseBNK', `parse BNK~{${parse(fileBNK).base}}`, '✔ ');
 
 	return [namesEventAll$idAudio, idsSoundAll$idAudio];
 }
