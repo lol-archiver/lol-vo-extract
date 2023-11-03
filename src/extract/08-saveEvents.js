@@ -59,7 +59,7 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 	}
 
 	try {
-		mapsFriendly.push(...(await import(`../../data/FriendlyName/${C.lang}.js`)).default);
+		mapsFriendly.push(...(await import(`../../data/friendly-name/${C.lang}.js`)).default);
 	}
 	catch(error) { void 0; }
 
@@ -88,20 +88,8 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 
 		crcsSrc = new Set(crcsSrc);
 
-		let crcSrc;
 
-		if(!crcsSrc.size) {
-			crcSrc = 'NONEFILE';
-		}
-		else {
-			if(crcsSrc.size > 1) {
-				G.warn('EventSaver', 'save event', `found multi extract audio file ~{${idAudio}}`);
-			}
-
-			crcSrc = [...crcsSrc].join('|');
-		}
-
-		const hex = toHexL8(idAudio);
+		const idAudioHex = toHexL8(idAudio);
 
 		const dictEN = en_us;
 
@@ -119,7 +107,7 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 
 					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: idsSoundAll$idAudio[idAudio] || [] });
+					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ idAudioHex, idsSound: idsSoundAll$idAudio[idAudio] || [] });
 				}
 				else {
 					const slot = `${pad0(I.id)}`;
@@ -131,13 +119,13 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 
 					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ hex, crc32: crcSrc, idsSound: idsSoundAll$idAudio[idAudio] || [] });
+					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ idAudioHex, idsSound: idsSoundAll$idAudio[idAudio] || [] });
 				}
 			}
 			else if(typeof eventInfo == 'number') {
 				const skinMap = eventMap['[未知]'] || (eventMap['[未知]'] = {});
 
-				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ hex, crc32: crcSrc });
+				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ idAudioHex, });
 			}
 		}
 	}
@@ -158,8 +146,8 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 
 			const arrEventText = [];
 
-			for(const { hex, crc32, idsSound } of arrAudioInfo) {
-				arrEventText.push(`- \`${idsSound.map(id => toHexL8(id)).join('.')}|${hex}|${crc32}\` ***`);
+			for(const { idAudioHex, idsSound } of arrAudioInfo) {
+				arrEventText.push(`- \`${idsSound.map(id => toHexL8(id)).join('.')}|${idAudioHex}\` ***`);
 			}
 
 			arrEventText.sort();
