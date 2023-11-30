@@ -297,7 +297,94 @@
 			"36": 31,
 			"37": 31,
 			"38": 31,
-			"39": 31
+			"39": 31,
+			"40": {
+				"id": 40,
+				"name": "Winterblessed Annie",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Winterblessed Annie",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40,
+			"47": 40,
+			"48": 40,
+			"49": 40
 		},
 		"spells": {
 			"p": "Pyromania",
@@ -8855,7 +8942,22 @@
 					}
 				}
 			},
-			"64": 63
+			"64": 63,
+			"65": {
+				"id": 65,
+				"name": "Crystalis Motus Ashe",
+				"chromas": {
+					"66": {
+						"id": 66,
+						"name": "Crystalis Motus Ashe",
+						"colors": [
+							"#AAD4EB",
+							"#23211D"
+						]
+					}
+				}
+			},
+			"66": 65
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -16818,7 +16920,85 @@
 			"47": 41,
 			"48": 41,
 			"49": 41,
-			"50": 41
+			"50": 41,
+			"51": {
+				"id": 51,
+				"name": "King Beegar",
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "King Beegar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "King Beegar",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "King Beegar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "King Beegar",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "King Beegar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "King Beegar",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "King Beegar",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "King Beegar",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"52": 51,
+			"53": 51,
+			"54": 51,
+			"55": 51,
+			"56": 51,
+			"57": 51,
+			"58": 51,
+			"59": 51
 		},
 		"spells": {
 			"p": "Phenomenal Evil Power",
@@ -18147,7 +18327,85 @@
 			"52": 47,
 			"53": 47,
 			"54": 47,
-			"55": 47
+			"55": 47,
+			"56": {
+				"id": 56,
+				"name": "Beezcrank",
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "Beezcrank",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Beezcrank",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Beezcrank",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Beezcrank",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Beezcrank",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Beezcrank",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Beezcrank",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Beezcrank",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"57": 56,
+			"58": 56,
+			"59": 56,
+			"60": 56,
+			"61": 56,
+			"62": 56,
+			"63": 56,
+			"64": 56
 		},
 		"spells": {
 			"p": "Mana Barrier",
@@ -36882,7 +37140,94 @@
 			"27": 22,
 			"28": 22,
 			"29": 22,
-			"30": 22
+			"30": 22,
+			"31": {
+				"id": 31,
+				"name": "Winterblessed Hecarim",
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Winterblessed Hecarim",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"32": 31,
+			"33": 31,
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31,
+			"38": 31,
+			"39": 31,
+			"40": 31
 		},
 		"spells": {
 			"p": "Warpath",
@@ -43150,7 +43495,85 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "Bee'Koz",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Bee'Koz",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Bee'Koz",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Bee'Koz",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Bee'Koz",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Bee'Koz",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Bee'Koz",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Bee'Koz",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Bee'Koz",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20
 		},
 		"spells": {
 			"p": "Organic Deconstruction",
@@ -43632,7 +44055,108 @@
 			"27": 21,
 			"28": 21,
 			"29": 21,
-			"30": 21
+			"30": 21,
+			"31": {
+				"id": 31,
+				"name": "Winterblessed Camille",
+				"chromas": {
+					"33": {
+						"id": 33,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Winterblessed Camille",
+						"colors": [
+							"#AF4C68",
+							"#4C84A0"
+						]
+					}
+				}
+			},
+			"32": {
+				"id": 32,
+				"name": "Prestige Winterblessed Camille",
+				"chromas": {}
+			},
+			"33": 31,
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31,
+			"38": 31,
+			"39": 31,
+			"40": 31,
+			"41": 31,
+			"42": 31
 		},
 		"spells": {
 			"p": "Adaptive Defenses",
@@ -47071,7 +47595,67 @@
 			"52": 46,
 			"53": 46,
 			"54": 46,
-			"55": 46
+			"55": 46,
+			"56": {
+				"id": 56,
+				"name": "Winterblessed Senna",
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "Winterblessed Senna",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Winterblessed Senna",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Winterblessed Senna",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Winterblessed Senna",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Winterblessed Senna",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Winterblessed Senna",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"57": 56,
+			"58": 56,
+			"59": 56,
+			"60": 56,
+			"61": 56,
+			"62": 56
 		},
 		"spells": {
 			"p": "Absolution",
@@ -47516,7 +48100,94 @@
 			"48": 40,
 			"49": 40,
 			"50": 8,
-			"51": 8
+			"51": 8,
+			"52": {
+				"id": 52,
+				"name": "Winterblessed Lucian",
+				"chromas": {
+					"53": {
+						"id": 53,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Winterblessed Lucian",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"53": 52,
+			"54": 52,
+			"55": 52,
+			"56": 52,
+			"57": 52,
+			"58": 52,
+			"59": 52,
+			"60": 52,
+			"61": 52
 		},
 		"spells": {
 			"p": "Lightslinger",
@@ -51577,7 +52248,94 @@
 			"45": 39,
 			"46": 39,
 			"47": 39,
-			"48": 39
+			"48": 39,
+			"49": {
+				"id": 49,
+				"name": "Winterblessed Thresh",
+				"chromas": {
+					"50": {
+						"id": 50,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Winterblessed Thresh",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"50": 49,
+			"51": 49,
+			"52": 49,
+			"53": 49,
+			"54": 49,
+			"55": 49,
+			"56": 49,
+			"57": 49,
+			"58": 49
 		},
 		"spells": {
 			"p": "Damnation",
@@ -54066,7 +54824,94 @@
 					}
 				}
 			},
-			"35": 34
+			"35": 34,
+			"36": {
+				"id": 36,
+				"name": "Winterblessed Sylas",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Winterblessed Sylas",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"37": 36,
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36,
+			"45": 36
 		},
 		"spells": {
 			"p": "Petricite Burst",
@@ -58086,6 +58931,116 @@
 			"w": "Cozy Campfire",
 			"e": "Warm Hugs",
 			"r": "Breath of Life"
+		}
+	},
+	"910": {
+		"id": 910,
+		"name": "Hwei",
+		"title": "the Visionary",
+		"slot": "Hwei",
+		"roles": [
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Hwei",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Winterblessed Hwei",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Winterblessed Hwei",
+						"colors": [
+							"#BF2020",
+							"#368B25"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1,
+			"10": 1
+		},
+		"spells": {
+			"p": "Signature of the Visionary",
+			"q": "Subject: Disaster",
+			"w": "Subject: Serenity",
+			"e": "Subject: Torment",
+			"r": "Spiraling Despair"
 		}
 	},
 	"950": {

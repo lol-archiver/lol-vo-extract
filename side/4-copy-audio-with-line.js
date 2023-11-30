@@ -27,14 +27,14 @@ const idMatch = `${idFull}@`;
 const regionMatch = `@${region}`;
 
 
-const fileLine = readdirSync(resolve(C.path.dirLines, 'dication')).find(dirent => dirent.startsWith(idMatch));
+const fileLine = readdirSync(resolve(C.path.dirLines, 'dictation')).find(dirent => dirent.startsWith(idMatch) && !dirent.includes('.bak.'));
 const dirsAudio = [
 	resolve(dirFinal, readdirSync(resolve(dirFinal)).find(dirent => dirent.startsWith(idMatch) && dirent.includes(regionMatch))),
 ];
 
 
 const filesAudio = dirsAudio.map(dirAudio => readdirSync(dirAudio).map(file => resolve(dirAudio, file))).flat();
-const textsLine = readFileSync(fileLine, 'utf-8').split('\n').filter(text => text.trim());
+const textsLine = readFileSync(resolve(C.path.dirLines, 'dictation', fileLine), 'utf-8').split('\n').filter(text => text.trim());
 
 
 let eventNow;

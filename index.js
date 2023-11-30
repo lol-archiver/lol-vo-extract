@@ -58,6 +58,7 @@ for(const eventFile of Object.keys(filesExtractedLocale$name).filter(file => fil
 		namesEvent,
 	);
 
+
 	for(const idAudio in namesEventAllBNK$idAudio) {
 		const namesEventBNK = namesEventAllBNK$idAudio[idAudio];
 
