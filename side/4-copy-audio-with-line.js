@@ -25,11 +25,12 @@ const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d
 
 const idMatch = `${idFull}@`;
 const regionMatch = `@${region}`;
+const langMatch = `@${C.lang.split('_')[0]}`;
 
 
 const fileLine = readdirSync(resolve(C.path.dirLines, 'dictation')).find(dirent => dirent.startsWith(idMatch) && !dirent.includes('.bak.'));
 const dirsAudio = [
-	resolve(dirFinal, readdirSync(resolve(dirFinal)).find(dirent => dirent.startsWith(idMatch) && dirent.includes(regionMatch))),
+	resolve(dirFinal, readdirSync(resolve(dirFinal)).find(dirent => dirent.startsWith(idMatch) && dirent.includes(regionMatch) && dirent.includes(langMatch))),
 ];
 
 
@@ -46,6 +47,8 @@ for(const textLine of textsLine) {
 		continue;
 	}
 
+	if(textLine.startsWith('<!--')) { continue; }
+
 
 	if(textLine.startsWith('### **')) {
 		[eventNow] = textLine.replace('### ', '').replace(/\*\*/g, '').trim().split(' | ');
@@ -60,10 +63,10 @@ for(const textLine of textsLine) {
 
 		if(fileAudio) { fileSource = fileAudio; }
 		else if(idSound == '00000000' || idSound == '00000001') {
-			if(eventNow == '选用') {
+			if(eventNow.includes('[选用]')) {
 				fileSource = resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'pick.wav');
 			}
-			else if(eventNow == '禁用') {
+			else if(eventNow.includes('[禁用]')) {
 				fileSource = resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'ban.wav');
 			}
 		}

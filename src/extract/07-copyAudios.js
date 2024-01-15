@@ -45,7 +45,7 @@ export default function copyAudios(eventsAll$idAudio, namesFileSoundBank, idsSou
 				let event;
 
 				if(typeof eventAudio == 'object') {
-					nameSkin = `${pad0(I.id)}${pad0(eventAudio.index)}@${eventAudio.skinName.replace(/[:"]/g, '') || I.slot}@${region}`;
+					nameSkin = `${pad0(I.id)}${pad0(eventAudio.index)}@${eventAudio.skinName.replace(/[:"]/g, '') || I.slot}@${region}@${lang}`;
 					event = eventAudio.short;
 				}
 				else if(typeof eventAudio == 'number') {

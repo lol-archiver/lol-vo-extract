@@ -4453,7 +4453,94 @@
 			"92": 89,
 			"93": 89,
 			"94": 89,
-			"95": 89
+			"95": 89,
+			"96": {
+				"id": 96,
+				"name": "Heavenscale Master Yi",
+				"chromas": {
+					"97": {
+						"id": 97,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"98": {
+						"id": 98,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"99": {
+						"id": 99,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"100": {
+						"id": 100,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"101": {
+						"id": 101,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"102": {
+						"id": 102,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"103": {
+						"id": 103,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"104": {
+						"id": 104,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#DFA6DF",
+							"#E0D7D7"
+						]
+					},
+					"105": {
+						"id": 105,
+						"name": "Heavenscale Master Yi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"97": 96,
+			"98": 96,
+			"99": 96,
+			"100": 96,
+			"101": 96,
+			"102": 96,
+			"103": 96,
+			"104": 96,
+			"105": 96
 		},
 		"spells": {
 			"p": "Double Strike",
@@ -5907,7 +5994,85 @@
 			"57": 50,
 			"58": 50,
 			"59": 50,
-			"60": 50
+			"60": 50,
+			"61": {
+				"id": 61,
+				"name": "Primal Ambush Sivir",
+				"chromas": {
+					"62": {
+						"id": 62,
+						"name": "Primal Ambush Sivir",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Primal Ambush Sivir",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Primal Ambush Sivir",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Primal Ambush Sivir",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Primal Ambush Sivir",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Primal Ambush Sivir",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Primal Ambush Sivir",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Primal Ambush Sivir",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"62": 61,
+			"63": 61,
+			"64": 61,
+			"65": 61,
+			"66": 61,
+			"67": 61,
+			"68": 61,
+			"69": 61
 		},
 		"spells": {
 			"p": "Fleet of Foot",
@@ -13734,6 +13899,14 @@
 							"#FFEE59",
 							"#FFEE59"
 						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Guqin Sona",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
 					}
 				}
 			},
@@ -14148,7 +14321,8 @@
 			"51": 45,
 			"52": 45,
 			"53": 45,
-			"54": 45
+			"54": 45,
+			"55": 4
 		},
 		"spells": {
 			"p": "Power Chord",
@@ -14340,7 +14514,85 @@
 			"20": 15,
 			"21": 15,
 			"22": 15,
-			"23": 15
+			"23": 15,
+			"24": {
+				"id": 24,
+				"name": "Dragonmancer Kassadin",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Dragonmancer Kassadin",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Dragonmancer Kassadin",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Dragonmancer Kassadin",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Dragonmancer Kassadin",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Dragonmancer Kassadin",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Dragonmancer Kassadin",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Dragonmancer Kassadin",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Dragonmancer Kassadin",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Void Stone",
@@ -15182,7 +15434,94 @@
 			"52": 45,
 			"53": 45,
 			"54": 45,
-			"55": 45
+			"55": 45,
+			"56": {
+				"id": 56,
+				"name": "Heavenscale Janna",
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Heavenscale Janna",
+						"colors": [
+							"#DFA6DF",
+							"#E0D7D7"
+						]
+					}
+				}
+			},
+			"57": 56,
+			"58": 56,
+			"59": 56,
+			"60": 56,
+			"61": 56,
+			"62": 56,
+			"63": 56,
+			"64": 56,
+			"65": 56
 		},
 		"spells": {
 			"p": "Tailwind",
@@ -15513,6 +15852,14 @@
 							"#FFEE59",
 							"#FFEE59"
 						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Dragonwing Corki",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
 					}
 				}
 			},
@@ -15746,7 +16093,8 @@
 			"31": 26,
 			"32": 26,
 			"33": 26,
-			"34": 26
+			"34": 26,
+			"35": 6
 		},
 		"spells": {
 			"p": "Hextech Munitions",
@@ -21193,7 +21541,16 @@
 			"3": {
 				"id": 3,
 				"name": "Jade Dragon Wukong",
-				"chromas": {}
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Jade Dragon Wukong",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					}
+				}
 			},
 			"4": {
 				"id": 4,
@@ -21365,7 +21722,8 @@
 			"21": 16,
 			"22": 16,
 			"23": 16,
-			"24": 16
+			"24": 16,
+			"25": 3
 		},
 		"spells": {
 			"p": "Stone Skin",
@@ -21758,7 +22116,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Dragon Fist Lee Sin Duel",
+						"name": "Dragon Fist Lee Sin",
 						"colors": [
 							"#201F20",
 							"#F9CD16"
@@ -21766,7 +22124,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Dragon Fist Lee Sin Duel",
+						"name": "Dragon Fist Lee Sin",
 						"colors": [
 							"#516DA4",
 							"#BFE7E8"
@@ -21774,7 +22132,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Dragon Fist Lee Sin Duel",
+						"name": "Dragon Fist Lee Sin",
 						"colors": [
 							"#F6E669",
 							"#3B3A41"
@@ -21818,6 +22176,14 @@
 						"colors": [
 							"#2756CE",
 							"#2756CE"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Dragon Fist Lee Sin",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
 						]
 					}
 				}
@@ -22118,7 +22484,73 @@
 			"47": 41,
 			"48": 41,
 			"49": 41,
-			"50": 31
+			"50": 31,
+			"51": {
+				"id": 51,
+				"name": "Heavenscale Lee Sin",
+				"chromas": {
+					"54": {
+						"id": 54,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "",
+						"colors": [
+							"#DFA6DF",
+							"#E0D7D7"
+						]
+					}
+				}
+			},
+			"52": {
+				"id": 52,
+				"name": "Divine Heavenscale Lee Sin",
+				"chromas": {}
+			},
+			"53": 3,
+			"54": 51,
+			"55": 51,
+			"56": 51,
+			"57": 51,
+			"58": 51,
+			"59": 51
 		},
 		"spells": {
 			"p": "Flurry",
@@ -22572,7 +23004,85 @@
 			"51": 44,
 			"52": 44,
 			"53": 10,
-			"54": 10
+			"54": 10,
+			"55": {
+				"id": 55,
+				"name": "Dragonmancer Vayne",
+				"chromas": {
+					"56": {
+						"id": 56,
+						"name": "Dragonmancer Vayne",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Dragonmancer Vayne",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Dragonmancer Vayne",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Dragonmancer Vayne",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Dragonmancer Vayne",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Dragonmancer Vayne",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Dragonmancer Vayne",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Dragonmancer Vayne",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"56": 55,
+			"57": 55,
+			"58": 55,
+			"59": 55,
+			"60": 55,
+			"61": 55,
+			"62": 55,
+			"63": 55
 		},
 		"spells": {
 			"p": "Night Hunter",
@@ -25839,6 +26349,92 @@
 					}
 				}
 			},
+			"44": {
+				"id": 44,
+				"name": "Heavenscale Ezreal",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#DFA6DF",
+							"#E0D7D7"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Heavenscale Ezreal",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
 			"45": 43,
 			"46": 43,
 			"47": 43,
@@ -25847,7 +26443,22 @@
 			"50": 43,
 			"51": 43,
 			"52": 43,
-			"53": 43
+			"53": 43,
+			"54": {
+				"id": 54,
+				"name": "Prestige Heavenscale Ezreal",
+				"chromas": {}
+			},
+			"55": 44,
+			"56": 44,
+			"57": 44,
+			"58": 44,
+			"59": 44,
+			"60": 44,
+			"61": 44,
+			"62": 44,
+			"63": 44,
+			"64": 44
 		},
 		"spells": {
 			"p": "Rising Spell Force",
@@ -28813,6 +29424,14 @@
 							"#2756CE",
 							"#2756CE"
 						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Dragonblade Talon",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
 					}
 				}
 			},
@@ -29148,7 +29767,86 @@
 			"45": 38,
 			"46": 38,
 			"47": 38,
-			"48": 38
+			"48": 38,
+			"49": {
+				"id": 49,
+				"name": "Primal Ambush Talon",
+				"chromas": {
+					"51": {
+						"id": 51,
+						"name": "Primal Ambush Talon",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Primal Ambush Talon",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Primal Ambush Talon",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Primal Ambush Talon",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Primal Ambush Talon",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Primal Ambush Talon",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Primal Ambush Talon",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Primal Ambush Talon",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"50": 3,
+			"51": 49,
+			"52": 49,
+			"53": 49,
+			"54": 49,
+			"55": 49,
+			"56": 49,
+			"57": 49,
+			"58": 49
 		},
 		"spells": {
 			"p": "Blade's End",
@@ -29676,7 +30374,85 @@
 			"59": 55,
 			"60": 55,
 			"61": 55,
-			"62": 55
+			"62": 55,
+			"63": {
+				"id": 63,
+				"name": "Primal Ambush Riven",
+				"chromas": {
+					"64": {
+						"id": 64,
+						"name": "Primal Ambush Riven",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Primal Ambush Riven",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Primal Ambush Riven",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Primal Ambush Riven",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Primal Ambush Riven",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Primal Ambush Riven",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Primal Ambush Riven",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Primal Ambush Riven",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"64": 63,
+			"65": 63,
+			"66": 63,
+			"67": 63,
+			"68": 63,
+			"69": 63,
+			"70": 63,
+			"71": 63
 		},
 		"spells": {
 			"p": "Runic Blade",
@@ -35560,7 +36336,85 @@
 			"76": 69,
 			"77": 69,
 			"78": 69,
-			"79": 31
+			"79": 31,
+			"80": {
+				"id": 80,
+				"name": "Dragonmancer Fiora",
+				"chromas": {
+					"81": {
+						"id": 81,
+						"name": "Dragonmancer Fiora",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"82": {
+						"id": 82,
+						"name": "Dragonmancer Fiora",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"83": {
+						"id": 83,
+						"name": "Dragonmancer Fiora",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"84": {
+						"id": 84,
+						"name": "Dragonmancer Fiora",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"85": {
+						"id": 85,
+						"name": "Dragonmancer Fiora",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"86": {
+						"id": 86,
+						"name": "Dragonmancer Fiora",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"87": {
+						"id": 87,
+						"name": "Dragonmancer Fiora",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"88": {
+						"id": 88,
+						"name": "Dragonmancer Fiora",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"81": 80,
+			"82": 80,
+			"83": 80,
+			"84": 80,
+			"85": 80,
+			"86": 80,
+			"87": 80,
+			"88": 80
 		},
 		"spells": {
 			"p": "Duelist's Dance",
@@ -39303,7 +40157,94 @@
 			"50": 47,
 			"51": 47,
 			"52": 47,
-			"53": 47
+			"53": 47,
+			"54": {
+				"id": 54,
+				"name": "Heavenscale Diana",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Heavenscale Diana",
+						"colors": [
+							"#DFA6DF",
+							"#E0D7D7"
+						]
+					}
+				}
+			},
+			"55": 54,
+			"56": 54,
+			"57": 54,
+			"58": 54,
+			"59": 54,
+			"60": 54,
+			"61": 54,
+			"62": 54,
+			"63": 54
 		},
 		"spells": {
 			"p": "Moonsilver Blade",
@@ -41795,7 +42736,94 @@
 			"55": 48,
 			"56": 48,
 			"57": 48,
-			"58": 16
+			"58": 16,
+			"59": {
+				"id": 59,
+				"name": "Heavenscale Kai'Sa",
+				"chromas": {
+					"60": {
+						"id": 60,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#85827F",
+							"#85827F"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#DFA6DF",
+							"#E0D7D7"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Heavenscale Kai'Sa",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"60": 59,
+			"61": 59,
+			"62": 59,
+			"63": 59,
+			"64": 59,
+			"65": 59,
+			"66": 59,
+			"67": 59,
+			"68": 59
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -43319,7 +44347,85 @@
 			"64": 56,
 			"65": 56,
 			"66": 56,
-			"67": 56
+			"67": 56,
+			"68": {
+				"id": 68,
+				"name": "Foreseen Yasuo",
+				"chromas": {
+					"69": {
+						"id": 69,
+						"name": "Foreseen Yasuo",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Foreseen Yasuo",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Foreseen Yasuo",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Foreseen Yasuo",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Foreseen Yasuo",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Foreseen Yasuo",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Foreseen Yasuo",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Foreseen Yasuo",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"69": 68,
+			"70": 68,
+			"71": 68,
+			"72": 68,
+			"73": 68,
+			"74": 68,
+			"75": 68,
+			"76": 68
 		},
 		"spells": {
 			"p": "Way of the Wanderer",
@@ -44345,7 +45451,12 @@
 			"16": 10,
 			"17": 10,
 			"18": 10,
-			"19": 10
+			"19": 10,
+			"20": {
+				"id": 20,
+				"name": "Three Honors Akshan",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Dirty Fighting",
@@ -50190,7 +51301,85 @@
 			"35": 30,
 			"36": 30,
 			"37": 30,
-			"38": 30
+			"38": 30,
+			"39": {
+				"id": 39,
+				"name": "Primal Ambush Vi",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Primal Ambush Vi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Primal Ambush Vi",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Primal Ambush Vi",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Primal Ambush Vi",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Primal Ambush Vi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Primal Ambush Vi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Primal Ambush Vi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Primal Ambush Vi",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39
 		},
 		"spells": {
 			"p": "Blast Shield",
@@ -53917,7 +55106,90 @@
 				"id": 36,
 				"name": "Redeemed Star Guardian Rakan",
 				"chromas": {}
-			}
+			},
+			"37": {
+				"id": 37,
+				"name": "Dragonmancer Rakan",
+				"chromas": {
+					"39": {
+						"id": 39,
+						"name": "Dragonmancer Rakan",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Dragonmancer Rakan",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Dragonmancer Rakan",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Dragonmancer Rakan",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Dragonmancer Rakan",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Dragonmancer Rakan",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Dragonmancer Rakan",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Dragonmancer Rakan",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"38": {
+				"id": 38,
+				"name": "Prestige Dragonmancer Rakan",
+				"chromas": {}
+			},
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37,
+			"46": 37
 		},
 		"spells": {
 			"p": "Fey Feathers",
@@ -58821,6 +60093,116 @@
 			"w": "Path Maker",
 			"e": "Footwork",
 			"r": "All Out"
+		}
+	},
+	"901": {
+		"id": 901,
+		"name": "Smolder",
+		"title": "the Fiery Fledgling",
+		"slot": "Smolder",
+		"roles": [
+			"marksman"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Smolder",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Heavenscale Smolder",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "",
+						"colors": [
+							"#DFA6DF",
+							"#E0D7D7"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1,
+			"10": 1
+		},
+		"spells": {
+			"p": "Dragon Practice",
+			"q": "Super Scorcher Breath",
+			"w": "Achooo!",
+			"e": "Flap, Flap, Flap",
+			"r": "MMOOOMMMM!"
 		}
 	},
 	"902": {
