@@ -612,15 +612,17 @@ export default async function parseBNK(fileBNK, setNameEvent) {
 				// 1111 1111 1111 1111 0000 0000 0000 0000 = allocatedDevice
 				/* bitsValuesAlt */,
 				idProject
-			] = bifferBNK.unpack('IIIII');
+			] = bifferBNK.unpack('5L');
+
+			const gap = sizeSection - Biffer.calc('5L');
+			if(gap > 0) { bifferBNK.skip(gap); }
+
 
 			if(version != 134) {
 				G.errorD('parseBNK', 'unexpected ~[Bank Version]', `~{${version}}`);
 
 				throw Error(`unexpected ~[Bank Version]~{${version}}`);
 			}
-
-			bifferBNK.skip(sizeSection - Biffer.calc('IIIII'));
 
 			G.debugD('parseBNK', '~[Bank Header]', `~[Version]~{${version}} ~[Bank ID]~{${toHexL8(idBank)}} ~[Project ID]~{${toHexL8(idProject)}}`);
 		}

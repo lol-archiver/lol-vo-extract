@@ -50,8 +50,10 @@ export default [
 
 	['PingAssistMe', '信号:协助我'],
 	['PingDanger', '信号:危险'],
+	['PingMissing', '信号:敌人不见了'],
 	['PingEnemyMissing', '信号:敌人不见了'],
 	['PingOnMyWay', '信号:正在路上'],
+	['PingCaution', '信号:谨慎行事'],
 
 	['Ally', '友方'],
 	['Enemy', '敌方'],
@@ -89,6 +91,7 @@ export default [
 
 	['Baron', '生物:纳什男爵'],
 	['ElderDragon', '生物:远古巨龙'],
+	['ElementalDragon', '生物:元素亚龙'],
 	['Dragon', '生物:龙'],
 	['Herald', '生物:峡谷先锋'],
 	['Krug', '生物:远古石甲虫'],
@@ -97,6 +100,8 @@ export default [
 	['Murkwolf', '生物:暗影狼'],
 	['RiftScuttler', '生物:峡谷迅捷蟹'],
 	['JungleBuff', '生物:野区增益生物'],
+	['BlueSentinel', '生物:苍蓝雕纹魔像'],
+	['RedBrambleback', '生物:绯红印记树怪'],
 
 	['Buff', '强化'],
 	['Assist', '助攻'],

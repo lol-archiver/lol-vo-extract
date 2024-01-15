@@ -65,6 +65,10 @@ const extractWEM = file => {
 						idProject
 					] = bifferWPK.unpack('5L');
 
+					const gap = sizeSection - Biffer.calc('5L');
+					if(gap > 0) { bifferWPK.skip(gap); }
+
+
 					if(version != 134) {
 						G.errorD('AudioExtractor', `~[${file}] unexpected ~[Bank Version]`, `~{${version}}`);
 
