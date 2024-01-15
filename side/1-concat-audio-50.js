@@ -34,7 +34,7 @@ copyFileSync(resolve(dirCWD, 'e.wav'), fileEmpty);
 
 const idSkin = I.idsSkin[0];
 const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
-const dirSource = resolve(dirFinal, `${pad0(I.id)}${pad0(idSkin)}@${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}@${region}`);
+const dirSource = resolve(dirFinal, `${pad0(I.id)}${pad0(idSkin)}@${idSkin == 0 ? `${I.champion.title} ${I.champion.name}` : I.champion.skins[idSkin].name}@${region}@${C.lang.split('_')[0]}`);
 const files = readdirSync(dirSource).filter(file => file.endsWith('.wav'));
 
 const dicts = {};
