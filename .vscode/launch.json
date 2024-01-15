@@ -30,13 +30,13 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "1: Concat audio",
+			"name": "1: Concat audio every 50",
 			"console": "integratedTerminal",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/2-concat-audio.js",
+			"program": "${workspaceFolder}/side/1-concat-audio-50.js",
 		},
 		{
 			"type": "node",
