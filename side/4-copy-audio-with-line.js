@@ -54,8 +54,15 @@ for(const textLine of textsLine) {
 		[eventNow] = textLine.replace('### ', '').replace(/\*\*/g, '').trim().split(' | ');
 	}
 	else {
-		const [ids, line] = textLine.replace('- `', '').split('` ');
-		const [idSound] = ids.split('|');
+		const [, rawMeta, line] = textLine.match(/^- `(.*?)(?<!\\)` (.*)$/) ?? [];
+		const [idSound, /* idAudio */, ...rawExtras] = rawMeta.trim().split(/(?<!\\)\|/);
+		const extras = rawExtras.map(raw => {
+			const [type, rawParams = ''] = raw.split(/(?<!\\):/);
+
+			return { type, params: rawParams.split(/(?<!\\),/) };
+		});
+		if(extras.find(e => e.type == 'ignore')) { continue; }
+
 
 
 		let fileSource;
@@ -78,7 +85,7 @@ for(const textLine of textsLine) {
 		if(fileSource) {
 			copyFileSync(
 				fileSource,
-				resolve(dirTarget, Filenamify(`[${eventNow}] ${line}(${idSound}).wav`))
+				resolve(dirTarget, Filenamify(`${eventNow} ${line}(${idSound}).wav`))
 			);
 		}
 	}
