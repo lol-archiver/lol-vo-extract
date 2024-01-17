@@ -5,7 +5,7 @@ import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
 
 import Filenamify from 'filenamify';
-import { emptyDirSync } from 'fs-extra';
+import { emptyDirSync } from 'fs-extra/esm';
 
 import { dirFinal, dirTextAudio } from '../lib/dir.js';
 

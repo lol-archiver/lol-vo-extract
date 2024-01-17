@@ -1,7 +1,7 @@
 import { appendFileSync, copyFileSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import { ensureDirSync } from '../../lib/fs-extra.js';
+import { ensureDirSync } from 'fs-extra/esm';
 
 import { C, G } from '@nuogz/pangu';
 

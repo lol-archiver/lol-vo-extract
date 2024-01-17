@@ -2,7 +2,7 @@ import { execFileSync } from 'child_process';
 import { existsSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-import { emptyDirSync, readJSONSync } from '../../lib/fs-extra.js';
+import { emptyDirSync, readJSONSync } from 'fs-extra/esm';
 
 import Biffer from '@nuogz/biffer';
 

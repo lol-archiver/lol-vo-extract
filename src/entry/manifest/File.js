@@ -2,7 +2,7 @@ import { appendFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
 import Bluebird from 'bluebird';
-import { ensureDirSync, removeSync } from '../../../lib/fs-extra.js';
+import { ensureDirSync, removeSync } from 'fs-extra/esm';
 import { decompress } from 'node-zstandard';
 
 import Biffer from '@nuogz/biffer';

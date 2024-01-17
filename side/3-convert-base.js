@@ -5,7 +5,7 @@ import { readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
-import { ensureDirSync, readJSONSync } from '../lib/fs-extra.js';
+import { ensureDirSync, readJSONSync } from 'fs-extra/esm';
 
 import { C, G } from '@nuogz/pangu';
 import { extractWAD } from '@lol-archiver/lol-wad-extract';

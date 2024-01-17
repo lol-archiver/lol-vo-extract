@@ -3,7 +3,7 @@ import '../index.env.js';
 import { copyFileSync, readdirSync, writeFileSync } from 'fs';
 import { parse, resolve } from 'path';
 
-import { emptyDirSync, ensureDirSync } from 'fs-extra';
+import { emptyDirSync, ensureDirSync } from 'fs-extra/esm';
 import Iconv from 'iconv-lite';
 
 import { C } from '@nuogz/pangu';

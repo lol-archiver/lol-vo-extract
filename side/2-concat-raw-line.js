@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
-import { ensureDirSync } from 'fs-extra';
+import { ensureDirSync } from 'fs-extra/esm';
 import { dirTextAudio } from '../lib/dir.js';
 
 
