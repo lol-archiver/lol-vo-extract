@@ -368,8 +368,44 @@ export const parseHIRCObject = (id, type, B) => {
 
 		const [sizeRTPC] = B.unpack('H');
 		if(sizeRTPC) {
-			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `found ~[sizeRTPC] is ${sizeRTPC}`, 'time to handle it!');
 			container.rtpcs = [];
+
+			for(let index = 0; index < sizeRTPC; index++) {
+				const [idRTPC, type, accum] = B.unpack('LBB');
+
+
+				let [cur] = B.unpack('B');
+				let idParam = (cur & 0x7F);
+				let max = 0;
+
+				while((cur & 0x80) && max < 10) {
+					[cur] = B.unpack('B');
+					idParam = (idParam << 7) | (cur & 0x7F);
+					max += 1;
+				}
+				if(max >= 10) { throw `unexpected variable loop count: ${max}`; }
+
+				const [idCurveRTPC, scaling, sizeGraphPoint] = B.unpack('LBH');
+
+				const pointsGraph = [];
+
+				for(let index = 0; index < sizeGraphPoint; index++) {
+					const [from, to, interp] = B.unpack('ffL');
+
+					pointsGraph.push({ from, to, interp });
+				}
+
+
+				container.rtpcs.push({
+					id: idRTPC,
+					type,
+					accum,
+					idParam,
+					idCurveRTPC,
+					scaling,
+					pointsGraph,
+				});
+			}
 		}
 
 

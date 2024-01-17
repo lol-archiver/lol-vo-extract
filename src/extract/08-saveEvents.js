@@ -103,7 +103,8 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 					const dSkinEN = dictEN[I.id].skins[eventInfo.index];
 
 					const skin = `${slot}@${eventInfo.skinName.replace(/:/g, '')}` +
-						`||[${slot}] ${dChampion.slot}:${dChampion.name}` + (eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);
+						`||[${slot}] ${dChampion.slot}:${dChampion.name}` +
+						(eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);
 
 					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 

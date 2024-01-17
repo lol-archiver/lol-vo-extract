@@ -22491,7 +22491,7 @@
 				"chromas": {
 					"54": {
 						"id": 54,
-						"name": "",
+						"name": "Heavenscale Lee Sin",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -22499,7 +22499,7 @@
 					},
 					"55": {
 						"id": 55,
-						"name": "",
+						"name": "Heavenscale Lee Sin",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -22507,7 +22507,7 @@
 					},
 					"56": {
 						"id": 56,
-						"name": "",
+						"name": "Heavenscale Lee Sin",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -22515,7 +22515,7 @@
 					},
 					"57": {
 						"id": 57,
-						"name": "",
+						"name": "Heavenscale Lee Sin",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -22523,7 +22523,7 @@
 					},
 					"58": {
 						"id": 58,
-						"name": "",
+						"name": "Heavenscale Lee Sin",
 						"colors": [
 							"#6ABBEE",
 							"#6ABBEE"
@@ -22531,7 +22531,7 @@
 					},
 					"59": {
 						"id": 59,
-						"name": "",
+						"name": "Heavenscale Lee Sin",
 						"colors": [
 							"#DFA6DF",
 							"#E0D7D7"
@@ -26405,8 +26405,8 @@
 						"id": 61,
 						"name": "Heavenscale Ezreal",
 						"colors": [
-							"#ECF9F8",
-							"#ECF9F8"
+							"#ECEAD3",
+							"#DC7515"
 						]
 					},
 					"62": {
@@ -60115,7 +60115,7 @@
 				"chromas": {
 					"2": {
 						"id": 2,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -60123,7 +60123,7 @@
 					},
 					"3": {
 						"id": 3,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -60131,7 +60131,7 @@
 					},
 					"4": {
 						"id": 4,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#B6E084",
 							"#B6E084"
@@ -60139,7 +60139,7 @@
 					},
 					"5": {
 						"id": 5,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#6ABBEE",
 							"#6ABBEE"
@@ -60147,7 +60147,7 @@
 					},
 					"6": {
 						"id": 6,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -60155,7 +60155,7 @@
 					},
 					"7": {
 						"id": 7,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -60163,7 +60163,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#9C68D7",
 							"#9C68D7"
@@ -60171,7 +60171,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -60179,7 +60179,7 @@
 					},
 					"10": {
 						"id": 10,
-						"name": "",
+						"name": "Heavenscale Smolder",
 						"colors": [
 							"#DFA6DF",
 							"#E0D7D7"
