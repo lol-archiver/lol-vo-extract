@@ -95,7 +95,12 @@
 			"contentLengthNotMatch": "✖ content-length不匹配。剩余重试次数{{remains}}",
 			"etagNotMatch": "✖ etag不匹配。剩余重试次数{{remains}}",
 			"error": "✖ 剩余重试次数{{remains}}",
-			"failFinally":"✖ 失败。超过最大重试次数"
+			"failFinally": "✖ 失败。超过最大重试次数"
 		}
+	},
+	"match": {
+		"unmatchEvent": "未知事件",
+		"unmatchSkin": "未知皮肤",
+		"unknownSlot": "未知归属"
 	}
 }

@@ -1,12 +1,13 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs';
-import { resolve } from 'path';
-
 import { C, G } from '@nuogz/pangu';
 
-import { D, en_us } from '../../lib/database.js';
-import { dirCache, dirText } from '../../lib/dir.js';
+import { writeFileSync } from 'fs';
+import { resolve } from 'path';
+
+import { dirText } from '../../lib/dir.js';
+import { T } from '../../lib/i18n.js';
+import { pad0, toHexL8 } from '../../lib/utility.js';
 import { I } from '../../lib/info.js';
-import { crc32, pad0, toHexL8 } from '../../lib/utility.js';
+import { D, en_us } from '../../lib/database.js';
 
 
 
@@ -81,53 +82,31 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 	const eventMap = {};
 
 	for(const [idAudio, eventInfos] of Object.entries(eventsAll$idAudio)) {
-		let crcsSrc = namesFileSoundBank
-			.map(file => resolve(dirCache, 'audio', file, 'wem', `${idAudio}.wem`))
-			.filter(src => existsSync(src))
-			.map(src => crc32(readFileSync(src)));
-
-		crcsSrc = new Set(crcsSrc);
-
-
 		const idAudioHex = toHexL8(idAudio);
 
 		const dictEN = en_us;
 
 		for(const eventInfo of eventInfos) {
-			if(typeof eventInfo == 'object') {
-				if(eventInfo.index || eventInfo.index === 0) {
-					const slot = `${pad0(I.id)}${pad0(eventInfo.index)}`;
+			const idSkin = eventInfo?.index || eventInfo?.index === 0 ? eventInfo.index : I.idsSkin?.[0];
+			const statusMatch = typeof eventInfo == 'number' ? `(${T('match:unmatchEvent')})` : !(eventInfo?.index || eventInfo?.index === 0) ? `(${T('match:unmatchSkin')})` : '';
 
-					const dChampion = D[I.id];
-					const dSkinCN = dChampion.skins[eventInfo.index];
-					const dSkinEN = dictEN[I.id].skins[eventInfo.index];
 
-					const skin = `${slot}@${eventInfo.skinName.replace(/:/g, '')}` +
-						`||[${slot}] ${dChampion.slot}:${dChampion.name}` +
-						(eventInfo.index == 0 ? '' : ` ==> ${dSkinEN.name}:${dSkinCN.name}`);
+			const dChampion = D[I.id];
+			const dSkin = dChampion.skins[idSkin];
+			const dSkinFallback = dictEN[I.id].skins[idSkin];
 
-					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ idAudioHex, idsSound: idsSoundAll$idAudio[idAudio] || [] });
-				}
-				else {
-					const slot = `${pad0(I.id)}`;
+			const slot = `${pad0(I.id)}${pad0(idSkin)}`;
 
-					const dChampion = D[I.id];
+			const prefixFile = `${slot}@${statusMatch}${(eventInfo?.skinName ?? dSkin?.name)?.replace(/[:"]/g, '')}`;
+			const titleFile = `[${slot}]${statusMatch} ${dChampion.slot}:${dChampion.name}${idSkin == 0 ? '' : ` ==> ${dSkinFallback.name}:${dSkin.name}`}`;
 
-					const skin = `${slot}@${eventInfo.skinName.replace(/:/g, '')}` +
-						`||[${slot}] ${dChampion.slot}:${dChampion.name}`;
+			const keySkin = `${prefixFile}||${titleFile}`;
+			const keyEvent = eventInfo?.short ?? eventInfo?.name ?? eventInfo;
 
-					const skinMap = eventMap[skin] || (eventMap[skin] = {});
 
-					(skinMap[eventInfo.short] || (skinMap[eventInfo.short] = [])).push({ idAudioHex, idsSound: idsSoundAll$idAudio[idAudio] || [] });
-				}
-			}
-			else if(typeof eventInfo == 'number') {
-				const skinMap = eventMap['[未知]'] || (eventMap['[未知]'] = {});
-
-				(skinMap[eventInfo] || (skinMap[eventInfo] = [])).push({ idAudioHex, });
-			}
+			const skinMap = eventMap[keySkin] || (eventMap[keySkin] = {});
+			(skinMap[keyEvent] || (skinMap[keyEvent] = [])).push({ idAudioHex, idsSound: idsSoundAll$idAudio[idAudio] || [] });
 		}
 	}
 

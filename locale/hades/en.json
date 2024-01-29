@@ -95,7 +95,12 @@
 			"contentLengthNotMatch": "✖ content-length match failed. remains{{remains,hadesValue}}",
 			"etagNotMatch": "✖ etag match failed. remains{{remains,hadesValue}}",
 			"error": "✖ remains{{remains,hadesValue}}",
-			"failFinally":"✖ failed finally. over max times"
+			"failFinally": "✖ failed finally. over max times"
 		}
+	},
+	"match": {
+		"unmatchEvent": "unmatch event",
+		"unmatchSkin": "unmatch skin",
+		"unknownSlot": "unknown slot"
 	}
 }
