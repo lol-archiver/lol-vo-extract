@@ -75,7 +75,9 @@ export default function copyAudios(eventsAll$idAudio, namesFileSoundBank, idsSou
 
 				const eventsText = events.join('&');
 				const audioText =
-					`[${idsSoundAll$idAudio[idAudio].slice(0, 4).map(id => toHexL8(id)).join('.')}${idsSoundAll$idAudio[idAudio].length > 4 ? '.more' : ''}][${hexIDAudio}][${crcWEM}].${C.format}`;
+					idsSoundAll$idAudio[idAudio]
+						? `[${idsSoundAll$idAudio[idAudio].slice(0, 4).map(id => toHexL8(id)).join('.')}${idsSoundAll$idAudio[idAudio].length > 4 ? '.more' : ''}][${hexIDAudio}][${crcWEM}].${C.format}`
+						: `[sound-not-found][${hexIDAudio}][${crcWEM}].${C.format}`;
 
 				try {
 					if(eventsText.length > 128) { throw 'eventsText.length > 128'; }

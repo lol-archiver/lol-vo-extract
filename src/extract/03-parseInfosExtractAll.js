@@ -34,11 +34,11 @@ export default function parseExtractInfo() {
 				fileTarget: resolve(dirCache, 'extract', `skin${i}.bin`),
 			};
 
-			infosSoundBank.push(...parseSoundBankPaths(usage, C.lang, I.slot, `skin${pad0(i, 2)}`, i));
+			infosSoundBank.push(...parseSoundBankPaths(usage, C.langPathVO || C.lang, I.slot, `skin${pad0(i, 2)}`, i));
 		}
 
 		if(I.idsSkin.includes(0) || C.forceUseBase) {
-			infosSoundBank.push(...parseSoundBankPaths(usage, C.lang, I.slot, 'base', 0));
+			infosSoundBank.push(...parseSoundBankPaths(usage, C.langPathVO || C.lang, I.slot, 'base', 0));
 		}
 	}
 

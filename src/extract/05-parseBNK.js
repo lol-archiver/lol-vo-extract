@@ -27,28 +27,30 @@ const fnv_1 = name => {
 };
 
 
-// /** @param {Biffer} B */
-// const unpackVar = B => {
-// 	let [cur] = B.unpack('B');
-// 	let value = (cur & 0x7F);
+/** @param {Biffer} B */
+const unpackVar = B => {
+	let [cur] = B.unpack('B');
+	let value = (cur & 0x7F);
 
-// 	let max = 0;
-// 	while(cur & 0x80 && max < 10) {
-// 		cur = B.unpack('B');
-// 		value = (value << 7) | (cur & 0x7F);
-// 		max += 1;
-// 	}
+	let max = 0;
+	while(cur & 0x80 && max < 10) {
+		cur = B.unpack('B');
+		value = (value << 7) | (cur & 0x7F);
+		max += 1;
+	}
 
-// 	if(max >= 10) { throw 'unexpected variable loop count'; }
-
-// 	return value;
-// };
+	if(max >= 10) { throw 'unexpected variable loop count'; }
 
 
+	return value;
+};
+
+
+// 1: State
 // 7: Actor Mixer
 // 14: Attenuation
 // 17: Motion FX
-const typesObjectHIRCSkip = [7, 14, 17];
+const typesObjectHIRCSkip = [1, 7, 14, 17];
 
 
 const formats$idBundleProp = {
@@ -356,14 +358,35 @@ export const parseHIRCObject = (id, type, B) => {
 
 		const [sizePropsState] = B.unpack('B');
 		if(sizePropsState) {
-			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `found ~[sizePropsState] is ${sizePropsState}`, 'time to handle it!');
 			container.propsState = [];
+
+			for(let indexPropState = 0; indexPropState < sizePropsState; indexPropState++) {
+				const id = unpackVar(B);
+
+				const [typeAccum, dbIn] = B.unpack('BB');
+
+				container.propsState.push({ id, typeAccum, dbIn });
+			}
 		}
 
 		const [sizeChunksState] = B.unpack('B');
 		if(sizeChunksState) {
-			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `found ~[sizeChunksState] is ${sizeChunksState}`, 'time to handle it!');
 			container.chunksState = [];
+
+			for(let indexChunkState = 0; indexChunkState < sizeChunksState; indexChunkState++) {
+				const [id, typeSyncState] = B.unpack('LB');
+
+				const states = [];
+				const sizeStates = unpackVar(B);
+				for(let indexState = 0; indexState < sizeStates; indexState++) {
+					const [id, idInstanceState] = B.unpack('LL');
+
+					states.push({ id, idInstanceState });
+				}
+
+
+				container.chunksState.push({ id, typeSyncState, states });
+			}
 		}
 
 		const [sizeRTPC] = B.unpack('H');
@@ -373,17 +396,7 @@ export const parseHIRCObject = (id, type, B) => {
 			for(let index = 0; index < sizeRTPC; index++) {
 				const [idRTPC, type, accum] = B.unpack('LBB');
 
-
-				let [cur] = B.unpack('B');
-				let idParam = (cur & 0x7F);
-				let max = 0;
-
-				while((cur & 0x80) && max < 10) {
-					[cur] = B.unpack('B');
-					idParam = (idParam << 7) | (cur & 0x7F);
-					max += 1;
-				}
-				if(max >= 10) { throw `unexpected variable loop count: ${max}`; }
+				const idParam = unpackVar(B);
 
 				const [idCurveRTPC, scaling, sizeGraphPoint] = B.unpack('LBH');
 

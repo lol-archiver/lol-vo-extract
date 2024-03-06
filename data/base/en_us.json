@@ -8562,7 +8562,94 @@
 			"46": 40,
 			"47": 40,
 			"48": 40,
-			"49": 40
+			"49": 40,
+			"50": {
+				"id": 50,
+				"name": "Porcelain Miss Fortune",
+				"chromas": {
+					"51": {
+						"id": 51,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Porcelain Miss Fortune",
+						"colors": [
+							"#3AC8B1",
+							"#B0412A"
+						]
+					}
+				}
+			},
+			"51": 50,
+			"52": 50,
+			"53": 50,
+			"54": 50,
+			"55": 50,
+			"56": 50,
+			"57": 50,
+			"58": 50,
+			"59": 50
 		},
 		"spells": {
 			"p": "Love Tap",
@@ -9338,7 +9425,94 @@
 			"23": 18,
 			"24": 18,
 			"25": 18,
-			"26": 18
+			"26": 18,
+			"27": {
+				"id": 27,
+				"name": "Victorious Tryndamere",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#764D43",
+							"#764D43"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#AAB5BA",
+							"#AAB5BA"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#D9C445",
+							"#D9C445"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#55CDE5",
+							"#55CDE5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#65337F",
+							"#65337F"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#9D228D",
+							"#9D228D"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#B31316",
+							"#B31316"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Victorious Tryndamere",
+						"colors": [
+							"#1D62C8",
+							"#1D62C8"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27,
+			"36": 27
 		},
 		"spells": {
 			"p": "Battle Fury",
@@ -9593,7 +9767,85 @@
 				"id": 32,
 				"name": "Neo PAX Jax",
 				"chromas": {}
-			}
+			},
+			"33": {
+				"id": 33,
+				"name": "PROJECT: Jax",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "PROJECT: Jax",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "PROJECT: Jax",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "PROJECT: Jax",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "PROJECT: Jax",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "PROJECT: Jax",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "PROJECT: Jax",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "PROJECT: Jax",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "PROJECT: Jax",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33
 		},
 		"spells": {
 			"p": "Relentless Assault",
@@ -10181,7 +10433,94 @@
 			"65": 60,
 			"66": 60,
 			"67": 60,
-			"68": 60
+			"68": 60,
+			"70": {
+				"id": 70,
+				"name": "Porcelain Morgana",
+				"chromas": {
+					"71": {
+						"id": 71,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"77": {
+						"id": 77,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"79": {
+						"id": 79,
+						"name": "Porcelain Morgana",
+						"colors": [
+							"#3AC8B1",
+							"#B0412A"
+						]
+					}
+				}
+			},
+			"71": 70,
+			"72": 70,
+			"73": 70,
+			"74": 70,
+			"75": 70,
+			"76": 70,
+			"77": 70,
+			"78": 70,
+			"79": 70
 		},
 		"spells": {
 			"p": "Soul Siphon",
@@ -11047,7 +11386,108 @@
 			"48": 42,
 			"49": 42,
 			"50": 42,
-			"51": 42
+			"51": 42,
+			"52": {
+				"id": 52,
+				"name": "High Noon Evelynn",
+				"chromas": {
+					"54": {
+						"id": 54,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#A8BFF1",
+							"#CD5867"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "High Noon Evelynn",
+						"colors": [
+							"#D9C542",
+							"#0B731C"
+						]
+					}
+				}
+			},
+			"53": {
+				"id": 53,
+				"name": "Prestige High Noon Evelynn",
+				"chromas": {}
+			},
+			"54": 52,
+			"55": 52,
+			"56": 52,
+			"57": 52,
+			"58": 52,
+			"59": 52,
+			"60": 52,
+			"61": 52,
+			"62": 52,
+			"63": 52
 		},
 		"spells": {
 			"p": "Demon Shade",
@@ -14965,7 +15405,94 @@
 			"41": 37,
 			"42": 37,
 			"43": 37,
-			"44": 6
+			"44": 6,
+			"45": {
+				"id": 45,
+				"name": "Porcelain Irelia",
+				"chromas": {
+					"46": {
+						"id": 46,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Porcelain Irelia",
+						"colors": [
+							"#3AC8B1",
+							"#B0412A"
+						]
+					}
+				}
+			},
+			"46": 45,
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45,
+			"54": 45
 		},
 		"spells": {
 			"p": "Ionian Fervor",
@@ -15792,7 +16319,85 @@
 			"29": 23,
 			"30": 23,
 			"31": 23,
-			"32": 8
+			"32": 8,
+			"33": {
+				"id": 33,
+				"name": "PROJECT: Gangplank",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "PROJECT: Gangplank",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "PROJECT: Gangplank",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "PROJECT: Gangplank",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "PROJECT: Gangplank",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "PROJECT: Gangplank",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "PROJECT: Gangplank",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "PROJECT: Gangplank",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "PROJECT: Gangplank",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33
 		},
 		"spells": {
 			"p": "Trial by Fire",
@@ -25628,7 +26233,94 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"29": {
+				"id": 29,
+				"name": "",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "",
+						"colors": [
+							"#A8BFF1",
+							"#CD5867"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29,
+			"38": 29
 		},
 		"spells": {
 			"p": "Happy Hour",
@@ -33415,7 +34107,94 @@
 					}
 				}
 			},
-			"43": 42
+			"43": 42,
+			"45": {
+				"id": 45,
+				"name": "Porcelain Graves",
+				"chromas": {
+					"46": {
+						"id": 46,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Porcelain Graves",
+						"colors": [
+							"#3AC8B1",
+							"#B0412A"
+						]
+					}
+				}
+			},
+			"46": 45,
+			"47": 45,
+			"48": 45,
+			"49": 45,
+			"50": 45,
+			"51": 45,
+			"52": 45,
+			"53": 45,
+			"54": 45
 		},
 		"spells": {
 			"p": "New Destiny",
@@ -38575,7 +39354,22 @@
 			"75": 69,
 			"76": 69,
 			"77": 69,
-			"78": 69
+			"78": 69,
+			"79": {
+				"id": 79,
+				"name": "Crystalis Indomitus Kha'zix",
+				"chromas": {
+					"80": {
+						"id": 80,
+						"name": "Crystalis Indomitus Kha'zix",
+						"colors": [
+							"#469FFC",
+							"#8DDC26"
+						]
+					}
+				}
+			},
+			"80": 79
 		},
 		"spells": {
 			"p": "Unseen Threat",
@@ -39029,7 +39823,94 @@
 			"50": 43,
 			"51": 43,
 			"52": 43,
-			"53": 4
+			"53": 4,
+			"54": {
+				"id": 54,
+				"name": "Porcelain Darius",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Porcelain Darius",
+						"colors": [
+							"#3AC8B1",
+							"#B0412A"
+						]
+					}
+				}
+			},
+			"55": 54,
+			"56": 54,
+			"57": 54,
+			"58": 54,
+			"59": 54,
+			"60": 54,
+			"61": 54,
+			"62": 54,
+			"63": 54
 		},
 		"spells": {
 			"p": "Hemorrhage",
@@ -41272,7 +42153,67 @@
 			"27": 21,
 			"28": 21,
 			"29": 21,
-			"30": 21
+			"30": 21,
+			"31": {
+				"id": 31,
+				"name": "Porcelain Protector Aurelion Sol",
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "Porcelain Protector Aurelion Sol",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Porcelain Protector Aurelion Sol",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Porcelain Protector Aurelion Sol",
+						"colors": [
+							"#3AC8B1",
+							"#B0412A"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Porcelain Protector Aurelion Sol",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Porcelain Protector Aurelion Sol",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Porcelain Protector Aurelion Sol",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					}
+				}
+			},
+			"32": 31,
+			"33": 31,
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31
 		},
 		"spells": {
 			"p": "Cosmic Creator",
@@ -46689,7 +47630,12 @@
 			"29": 22,
 			"30": 22,
 			"31": 22,
-			"32": 23
+			"32": 23,
+			"33": {
+				"id": 33,
+				"name": "Prestige Porcelain Kindred",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Mark of the Kindred",
@@ -57073,7 +58019,94 @@
 			"16": 10,
 			"17": 10,
 			"18": 10,
-			"19": 10
+			"19": 10,
+			"20": {
+				"id": 20,
+				"name": "High Noon Rell",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "High Noon Rell",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "High Noon Rell",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "High Noon Rell",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "High Noon Rell",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "High Noon Rell",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "High Noon Rell",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "High Noon Rell",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "High Noon Rell",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "High Noon Rell",
+						"colors": [
+							"#A8BFF1",
+							"#CD5867"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20,
+			"29": 20
 		},
 		"spells": {
 			"p": "Break the Mold",
@@ -58321,7 +59354,72 @@
 			"52": 45,
 			"53": 45,
 			"54": 45,
-			"56": 45
+			"55": {
+				"id": 55,
+				"name": "High Noon Yone",
+				"chromas": {
+					"59": {
+						"id": 59,
+						"name": "High Noon Yone",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "High Noon Yone",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "High Noon Yone",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "High Noon Yone",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "High Noon Yone",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "High Noon Yone",
+						"colors": [
+							"#9DB3E1",
+							"#CD5867"
+						]
+					}
+				}
+			},
+			"56": 45,
+			"58": {
+				"id": 58,
+				"name": "Peacemaker High Noon Yone",
+				"chromas": {}
+			},
+			"59": 55,
+			"60": 55,
+			"61": 55,
+			"62": 55,
+			"63": 55,
+			"64": 55
 		},
 		"spells": {
 			"p": "Way of the Hunter",
@@ -60525,7 +61623,85 @@
 			"7": 1,
 			"8": 1,
 			"9": 1,
-			"10": 1
+			"10": 1,
+			"11": {
+				"id": 11,
+				"name": "PROJECT: Naafiri",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "PROJECT: Naafiri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "PROJECT: Naafiri",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "PROJECT: Naafiri",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "PROJECT: Naafiri",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "PROJECT: Naafiri",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "PROJECT: Naafiri",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "PROJECT: Naafiri",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "PROJECT: Naafiri",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "We Are More",
