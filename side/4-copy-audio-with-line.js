@@ -64,6 +64,12 @@ for(const textLine of textsLine) {
 		if(extras.find(e => e.type == 'ignore')) { continue; }
 
 
+		let condNow = '';
+		let condExtra = extras.find(e => e.type == 'cond');
+		if(condExtra) {
+			condNow = condExtra.params[0];
+		}
+
 
 		let fileSource;
 		const fileAudio = filesAudio.find(fileName => fileName.includes(`[${idSound}]`));
@@ -78,14 +84,14 @@ for(const textLine of textsLine) {
 			}
 		}
 		else {
-			globalThis.console.warn('unmatch: ', eventNow, line);
+			globalThis.console.warn('unmatch: ', eventNow + condNow, line);
 		}
 
 
 		if(fileSource) {
 			copyFileSync(
 				fileSource,
-				resolve(dirTarget, Filenamify(`${eventNow} ${line}(${idSound}).wav`))
+				resolve(dirTarget, Filenamify(`${eventNow}${condNow ? `[子条件：${condNow}]` : ''} ${line}(${idSound}).wav`))
 			);
 		}
 	}
