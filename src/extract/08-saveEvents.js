@@ -17,7 +17,7 @@ const keysUseless = [
 ];
 
 const matchFriendlyName = (name, mapsFriendly) => {
-	let nameFormat = name.toLowerCase().replace(/[23]d/g, '');
+	let nameFormat = name.toLowerCase().replace(/[235]d/g, '');
 
 	const trans = mapsFriendly.reduce((acc, [key, nameFriendly]) => {
 		if(nameFormat.includes(key)) {

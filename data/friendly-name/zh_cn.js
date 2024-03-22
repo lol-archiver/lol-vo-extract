@@ -89,6 +89,7 @@ export default [
 	['Vastaya', '种族:瓦斯塔亚'],
 	['Yordle', '种族:约德尔人'],
 
+	['Neutral', '野怪'],
 	['Baron', '生物:纳什男爵'],
 	['ElderDragon', '生物:远古巨龙'],
 	['ElementalDragon', '生物:元素亚龙'],
