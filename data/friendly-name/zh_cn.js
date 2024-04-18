@@ -22,7 +22,7 @@ export default [
 	['LongMove', '移动:长途'],
 	['MoveOrderLong', '移动:长途'],
 	['MoveOrder', '移动'],
-	['LevelUp', '等级提升'],
+	['LevelUp', '升级技能'],
 	['ShopOpen', '打开:商店'],
 
 	['KillFirst', '击杀:首杀'],
@@ -37,6 +37,7 @@ export default [
 	['Passive', '被动'],
 	['TurnFrom', '背向'],
 	['RankOne', '初次'],
+	['Health', '血量'],
 	['General', ''],
 	['UseItem', '使用:道具'],
 
