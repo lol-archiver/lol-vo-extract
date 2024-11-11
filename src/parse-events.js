@@ -4,8 +4,8 @@ import { parse as parsePath } from 'path';
 
 import { T, TS } from '../lib/i18n.js';
 
-import parseBIN from './extract/04-parseBIN.js';
-import parseBNK from './extract/05-parseBNK.js';
+import parseBIN from './parse-bin.js';
+import parseBNK from './parse-bnk.js';
 
 
 

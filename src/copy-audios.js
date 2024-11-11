@@ -6,7 +6,7 @@ import { parse as parsePath, resolve as resolvePath } from 'path';
 import { ensureDirSync } from 'fs-extra/esm';
 
 
-import { crc32, pad0, showID, toHexL8 } from '../../lib/utility.js';
+import { crc32, pad0, showID, toHexL8 } from '../lib/utility.js';
 
 
 
@@ -14,7 +14,7 @@ import { crc32, pad0, showID, toHexL8 } from '../../lib/utility.js';
  * @param {string[]} filesBank
  * @param {Object<string, Set>} events$idAudio
  * @param {Object<string, Set>} idsSound$idAudio
- * @param {import('../../bases.d.ts').ExtractConfig} E
+ * @param {import('../bases.js').ExtractConfig} E
  */
 export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$idAudio, E) {
 	G.infoU('AudioCopier', 'copy audio', '○ coping...');

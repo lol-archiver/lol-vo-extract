@@ -1,7 +1,7 @@
 import { parse as parsePath, resolve } from 'path';
 
-import { pad0 } from '../../lib/utility.js';
-import { LEVEL_SOUND_EFFECT } from '../../lib/constant.js';
+import { pad0 } from '../lib/utility.js';
+import { LEVEL_SOUND_EFFECT } from '../lib/constant.js';
 
 
 /** @param {number} id */
@@ -36,7 +36,7 @@ const parseSoundBankPaths = (usage, language, slotChampion, idSkin, version = '2
 
 
 /**
- * @param {import('../../bases.d.ts').ExtractConfig} E
+ * @param {import('../bases.js').ExtractConfig} E
  * @returns {import('@lol-archiver/lol-wad-extract').ExtractConfig[]}
  */
 export default function parseGameFilesNeed(E) {

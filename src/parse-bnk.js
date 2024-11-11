@@ -5,10 +5,10 @@ import { parse as parsePath, resolve } from 'path';
 
 import Biffer from '@nuogz/biffer';
 
-import { T, TS } from '../../lib/i18n.js';
-import { toHexL8, showID, toBufferHex, TLogError, StackError } from '../../lib/utility.js';
+import { T, TS } from '../lib/i18n.js';
+import { toHexL8, showID, toBufferHex, TLogError, StackError } from '../lib/utility.js';
 
-import { HIRCSound, HIRCEventAction, HIRCEvent, HIRCContainer, HIRCSwitchContainer, HIRCObject, HIRCSwitch } from '../entry/bnk/HIRCObject.js';
+import { HIRCSound, HIRCEventAction, HIRCEvent, HIRCContainer, HIRCSwitchContainer, HIRCObject, HIRCSwitch } from './entry/bnk/HIRCObject.js';
 
 
 
@@ -137,7 +137,7 @@ const formats$idBundleProp = {
  * @param {number} idSection
  * @param {number} typeSection
  * @param {Biffer} B
- * @param {import('../../bases.d.ts').Melinoe} GG
+ * @param {import('../bases.js').Melinoe} GG
  */
 export const parseHIRCObject = (idSection, typeSection, B, GG) => {
 	let object;
@@ -622,7 +622,7 @@ const joinTree = (object, id, objects, texts, level = 0) => {
 
 
 /**
- * @param {import('../../bases.d.ts').ExtractConfig} E
+ * @param {import('../bases.js').ExtractConfig} E
  * @param {string} file
  * @param {Set<string>} eventsAll
  */

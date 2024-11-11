@@ -8,8 +8,8 @@ import Biffer from '@nuogz/biffer';
 
 import { G } from '@nuogz/pangu';
 
-import { T, TS } from '../../lib/i18n.js';
-import { TLogError, toHexL8 } from '../../lib/utility.js';
+import { T, TS } from '../lib/i18n.js';
+import { TLogError, toHexL8 } from '../lib/utility.js';
 
 
 
@@ -134,7 +134,7 @@ const extractWEM = (file, dirExtract) => {
 
 /**
  * @param {string[]} filesBank
- * @param {import('../../bases.d.ts').ExtractConfig} E
+ * @param {import('../bases.js').ExtractConfig} E
  */
 export default function extractAudios(filesBank, E) {
 	for(const fileBank of filesBank) {

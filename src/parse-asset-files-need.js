@@ -1,12 +1,12 @@
 import { existsSync } from 'fs';
 import { resolve } from 'path';
 
-import { SOURCE_WAD as SOURCE_ASSET } from '../../lib/constant.js';
-import { TLogError } from '../../lib/utility.js';
+import { SOURCE_WAD as SOURCE_ASSET } from '../lib/constant.js';
+import { TLogError } from '../lib/utility.js';
 
 
 
-/** @param {import('../../bases.d.ts').ExtractConfig} E */
+/** @param {import('../bases.js').ExtractConfig} E */
 export default function parseAssetFilesNeed(E) {
 	const namePackMain = `${E.slot}.wad.client`.toLowerCase();
 	const namePackLang = `${E.slot}.${E.lang}.wad.client`.toLowerCase();

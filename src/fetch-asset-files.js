@@ -4,10 +4,10 @@ import joinURL from 'url-join';
 
 import { C, G } from '@nuogz/pangu';
 
-import { T } from '../../lib/i18n.js';
+import { T } from '../lib/i18n.js';
 
-import Entry from '../entry/manifest/Entry.js';
-import Manifest from '../entry/manifest/Manifest.js';
+import Entry from './entry/manifest/Entry.js';
+import Manifest from './entry/manifest/Manifest.js';
 
 
 
@@ -53,7 +53,7 @@ export default async function fetchWADs(wadsNeedFetch) {
 	}));
 
 
-	/** @type {import('../entry/manifest/File.js').default[]} */
+	/** @type {import('./entry/manifest/File.js').default[]} */
 	const files = manifests.reduce((acc, manifest) => acc.concat(Object.values(manifest.files)), []);
 
 	const filesFetched = [];

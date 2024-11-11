@@ -1,8 +1,8 @@
 import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-import { toHexL8, pad0 } from '../../lib/utility.js';
-import { champions$lang } from '../../lib/database.js';
+import { toHexL8, pad0 } from '../lib/utility.js';
+import { champions$lang } from '../lib/database.js';
 
 
 
@@ -35,7 +35,7 @@ const matchFriendlyName = (name, mapsFriendly) => {
 /**
  * @param {Object<string, string[]>} events$idAudio
  * @param {Object<string, Set<number>>} idsSound$idAudio
- * @param {import('../../bases.d.ts').ExtractConfig} E
+ * @param {import('../bases.js').ExtractConfig} E
  */
 export default async function saveDictation(events$idAudio, idsSound$idAudio, E) {
 	// G.info('EventSaver', 'save event');

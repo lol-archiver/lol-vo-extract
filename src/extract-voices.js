@@ -1,16 +1,17 @@
 import { G } from '@nuogz/pangu';
 
+import { parse as parsePath } from 'path';
+
 import { extractWAD } from '@lol-archiver/lol-wad-extract';
 
 import { T, TS } from '../lib/i18n.js';
 
-import parseAssetFilesNeed from './extract/01-initFetch.js';
-import parseGameFilesNeed from './extract/03-parseInfosExtractAll.js';
+import parseAssetFilesNeed from './parse-asset-files-need.js';
+import parseGameFilesNeed from './parse-game-files-need.js';
 import parseEvents from './parse-events.js';
-import copyAudios$fileBank from './extract/07-copyAudios.js';
-import saveDictation from './extract/08-saveEvents.js';
-import { parse as parsePath } from 'path';
-import extractAudios from './extract/06-extractAudios.js';
+import extractAudios from './extract-audios.js';
+import copyAudios$fileBank from './copy-audios.js';
+import saveDictation from './save-dictation.js';
 
 
 
