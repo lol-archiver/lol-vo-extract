@@ -1,18 +1,21 @@
-import { C, G } from '@nuogz/pangu';
+import { G } from '@nuogz/pangu';
 
 import { appendFileSync, writeFileSync } from 'fs';
-import { parse, resolve } from 'path';
+import { parse as parsePath, resolve } from 'path';
 
 import Biffer from '@nuogz/biffer';
 
-import { dirDebug } from '../../lib/dir.js';
-import { I } from '../../lib/info.js';
-import { toHexL8, showID, toBufferHex } from '../../lib/utility.js';
+import { T, TS } from '../../lib/i18n.js';
+import { toHexL8, showID, toBufferHex, TLogError, StackError } from '../../lib/utility.js';
 
 import { HIRCSound, HIRCEventAction, HIRCEvent, HIRCContainer, HIRCSwitchContainer, HIRCObject, HIRCSwitch } from '../entry/bnk/HIRCObject.js';
 
 
 
+/**
+ * @param {string} name
+ * @returns {bigint}
+ */
 const fnv_1 = name => {
 	let h = 0x811c9dc5n;
 
@@ -28,7 +31,7 @@ const fnv_1 = name => {
 
 
 /** @param {Biffer} B */
-const unpackVar = B => {
+const unpackVariableNumber = B => {
 	let [cur] = B.unpack('B');
 	let value = (cur & 0x7F);
 
@@ -39,7 +42,7 @@ const unpackVar = B => {
 		max += 1;
 	}
 
-	if(max >= 10) { throw 'unexpected variable loop count'; }
+	if(max >= 10) { throw TLogError('unpack-variablenumber', 'unexpected-loop'); }
 
 
 	return value;
@@ -49,8 +52,9 @@ const unpackVar = B => {
 // 1: State
 // 7: Actor Mixer
 // 14: Attenuation
+// 16: Fx Share Set
 // 17: Motion FX
-const typesObjectHIRCSkip = [1, 7, 14, 17];
+const typesObjectHIRCSkip = [1, 7, 14,16, 17];
 
 
 const formats$idBundleProp = {
@@ -130,16 +134,17 @@ const formats$idBundleProp = {
 
 
 /**
- * @param {number} id
- * @param {number} type
+ * @param {number} idSection
+ * @param {number} typeSection
  * @param {Biffer} B
+ * @param {import('../../bases.d.ts').Melinoe} GG
  */
-export const parseHIRCObject = (id, type, B) => {
+export const parseHIRCObject = (idSection, typeSection, B, GG) => {
 	let object;
 	const objectsExtra = [];
 
 	// Sound
-	if(type == 2) {
+	if(typeSection == 2) {
 		const [
 			// 0000 0000 0000 0000 0000 0000 0000 1111 = type
 			// 0000 0000 0000 0000 0011 1111 1111 0000 = company
@@ -154,7 +159,7 @@ export const parseHIRCObject = (id, type, B) => {
 			bitsSource,
 		] = B.unpack('IBIIB');
 
-		const sound = object = new HIRCSound(id, typeStream, idAudio);
+		const sound = object = new HIRCSound(idSection, typeStream, idAudio);
 
 		sound.idPlugin = idPlugin;
 		sound.sizeMediaInMemory = sizeMediaInMemory;
@@ -164,14 +169,13 @@ export const parseHIRCObject = (id, type, B) => {
 		const typePlugin = idPlugin & 0x0F;
 		const hasParam = typePlugin == 2;
 
-		if(hasParam) {
-			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `~[Sound] object include Plugin Prarams`, 'time to handle it!');
-		}
+
+		if(hasParam) { GG.warnD(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection) }, '! Found a ~[HIRCSound] includes plugin-params. Time to parse it!')); }
 	}
 	// Event Action
-	else if(type == 3) {
+	else if(typeSection == 3) {
 		const [scope, actionType, idObject, countParam] = B.unpack('BBIxB');
-		object = new HIRCEventAction(id, scope, actionType, idObject, countParam);
+		object = new HIRCEventAction(idSection, scope, actionType, idObject, countParam);
 
 		object.scope = scope;
 		object.actionType = actionType;
@@ -196,10 +200,10 @@ export const parseHIRCObject = (id, type, B) => {
 		}
 	}
 	// Event
-	else if(type == 4) {
+	else if(typeSection == 4) {
 		const [count] = B.unpack('B');
 
-		object = new HIRCEvent(id, count);
+		object = new HIRCEvent(idSection, count);
 
 		object.count = count;
 
@@ -211,8 +215,8 @@ export const parseHIRCObject = (id, type, B) => {
 		}
 	}
 	// Containers
-	else if([5, 6, 9].includes(type)) {
-		const container = object = new HIRCContainer(id);
+	else if([5, 6, 9].includes(typeSection)) {
+		const container = object = new HIRCContainer(idSection);
 
 
 		const [overridedParentEffect, sizeEffects] = B.unpack('BB');
@@ -228,10 +232,10 @@ export const parseHIRCObject = (id, type, B) => {
 			container.bitsBypassEffect = B.unpack('B');
 
 			container.effects = [];
-			for(let index = 0; index < sizeEffects; index++) {
+			for(let indexEffect = 0; indexEffect < sizeEffects; indexEffect++) {
 				const [index, idEffect, sharedSet, rendered] = B.unpack('BIBB');
 
-				container.effects.push({ index, idEffect, sharedSet: Boolean(sharedSet), rendered: Boolean(rendered), });
+				container.effects.push({ index, idEffect, sharedSet: Boolean(sharedSet), rendered: Boolean(rendered) });
 			}
 		}
 
@@ -256,7 +260,7 @@ export const parseHIRCObject = (id, type, B) => {
 
 		for(const bundleProp of container.bundlesProp) {
 			if(!formats$idBundleProp[bundleProp.id]) {
-				G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, 'unknown ~[Prop Bundle ID]', `~{${bundleProp.id}}`);
+				GG.warnD(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection), idBunlde: bundleProp.id }, 'unknown-prop-bundle'));
 			}
 
 			[bundleProp.value] = B.unpack(formats$idBundleProp[bundleProp.id]);
@@ -313,9 +317,9 @@ export const parseHIRCObject = (id, type, B) => {
 				const sizeItemsPlayList = B.unpack('I');
 				container.itemsPlayList = [];
 				for(let index = 0; index < sizeItemsPlayList; index++) {
-					const [offsetVertices, sizeVertices] = B.unpack('II');
+					const [offsetVertices, sizeVerticesPlayList] = B.unpack('II');
 
-					container.itemsPlayList.push({ offsetVertices, sizeVertices });
+					container.itemsPlayList.push({ offsetVertices, sizeVertices: sizeVerticesPlayList });
 				}
 
 				container.paramsAutomation = [];
@@ -361,7 +365,7 @@ export const parseHIRCObject = (id, type, B) => {
 			container.propsState = [];
 
 			for(let indexPropState = 0; indexPropState < sizePropsState; indexPropState++) {
-				const id = unpackVar(B);
+				const id = unpackVariableNumber(B);
 
 				const [typeAccum, dbIn] = B.unpack('BB');
 
@@ -377,11 +381,11 @@ export const parseHIRCObject = (id, type, B) => {
 				const [id, typeSyncState] = B.unpack('LB');
 
 				const states = [];
-				const sizeStates = unpackVar(B);
+				const sizeStates = unpackVariableNumber(B);
 				for(let indexState = 0; indexState < sizeStates; indexState++) {
-					const [id, idInstanceState] = B.unpack('LL');
+					const [idState, idInstanceState] = B.unpack('LL');
 
-					states.push({ id, idInstanceState });
+					states.push({ id: idState, idInstanceState });
 				}
 
 
@@ -396,13 +400,13 @@ export const parseHIRCObject = (id, type, B) => {
 			for(let index = 0; index < sizeRTPC; index++) {
 				const [idRTPC, type, accum] = B.unpack('LBB');
 
-				const idParam = unpackVar(B);
+				const idParam = unpackVariableNumber(B);
 
 				const [idCurveRTPC, scaling, sizeGraphPoint] = B.unpack('LBH');
 
 				const pointsGraph = [];
 
-				for(let index = 0; index < sizeGraphPoint; index++) {
+				for(let indexGraphPoint = 0; indexGraphPoint < sizeGraphPoint; indexGraphPoint++) {
 					const [from, to, interp] = B.unpack('ffL');
 
 					pointsGraph.push({ from, to, interp });
@@ -422,7 +426,7 @@ export const parseHIRCObject = (id, type, B) => {
 		}
 
 
-		if(type == 5) {
+		if(typeSection == 5) {
 			[
 				container.countLoop,
 				container.modLoopMin,
@@ -453,10 +457,9 @@ export const parseHIRCObject = (id, type, B) => {
 			] = B.unpack('HHHfffHBBBB');
 
 
-			container.typeName = container.mode == 0 ? 'Sequence Container' : 'Random Container';
+			container.typeName = container.mode == 0 ? 'Random Container' : 'Sequence Container';
 		}
-		else if(type == 6) {
-
+		else if(typeSection == 6) {
 			[
 				// 0x0: "Switch",
 				// 0x1: "State",
@@ -469,18 +472,18 @@ export const parseHIRCObject = (id, type, B) => {
 
 			object.typeName = 'Switch Container';
 		}
-		else if(type == 9) {
-			G.warnD(`parse ~[HIRC Object]~{${showID(id)}}`, `found ~[Layer Container]`, 'time to handle it!');
+		else if(typeSection == 9) {
+			object.typeName = 'Layer Container';
 		}
 
 
 		const [sizeChildren] = B.unpack('I');
 		object.idsSound = B.unpack(`${sizeChildren}I`);
 
-		if(sizeChildren > 1 && type == 5) { object.typeName += ` ${sizeChildren}`; }
+		if(sizeChildren > 1 && typeSection == 5) { object.typeName += ` ${sizeChildren}`; }
 
 
-		if(type == 5) {
+		if(typeSection == 5) {
 			object.idsChildren = object.idsSound;
 
 			const [sizePlayList] = B.unpack('H');
@@ -492,7 +495,7 @@ export const parseHIRCObject = (id, type, B) => {
 				object.weightsSound.push(B.unpack(`I`)[0]);
 			}
 		}
-		else if(type == 6) {
+		else if(typeSection == 6) {
 			const [sizeSwitches] = B.unpack('I');
 
 			object.switches = [];
@@ -505,11 +508,24 @@ export const parseHIRCObject = (id, type, B) => {
 				objectsExtra.push(sw);
 			}
 		}
-	}
-	else if(!typesObjectHIRCSkip.includes(type)) {
-		G.errorD(`parse ~[HIRC Object]~{${showID(id)}}`, `unhandled ~[HIRC Object]`, `type~{${type}}`);
+		else if(typeSection == 9) {
+			const [sizeLayers] = B.unpack('I');
 
-		object = new HIRCObject(id, type);
+			if(sizeLayers) {
+				GG.warnD(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection) }, '! Found a ~[Layer]. Time to parse it!'));
+			}
+
+			// object.layers = [];
+
+			// for(let index = 0; index < sizeLayers; index++) { }
+
+			// [object.isContinuous] = B.unpack('B');
+		}
+	}
+	else if(!typesObjectHIRCSkip.includes(typeSection)) {
+		GG.warnD(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection), type: typeSection }, 'unparsed-type'));
+
+		object = new HIRCObject(idSection, typeSection);
 	}
 
 
@@ -520,22 +536,21 @@ export const parseHIRCObject = (id, type, B) => {
 /**
  * @param {HIRCObject} objectParsed
  * @param {HIRCObject[]} objectsAll
- * @param {number} idHIRC
- * @returns {number{}}
+ * @param {HIRCEventAction} action
+ * @param {import('@nuogz/pangu').Melinoe} GG
+ * @returns {number[]}
  */
-const parseActionSoundObject = (objectParsed, objectsAll, idHIRC) => {
-	const result = [];
+const groupActionChildAudioIDs = (objectParsed, objectsAll, action, GG) => {
+	const idsAudio = [];
 
 	if(objectParsed instanceof HIRCSound) {
-		result.push(objectParsed.idAudio);
+		idsAudio.push(objectParsed.idAudio);
 	}
 	else if(objectParsed instanceof HIRCContainer) {
 		const objects = objectsAll.filter(object => objectParsed.idsSound.includes(object.id));
 
 		for(const object of objects) {
-			for(const eventAudio of parseActionSoundObject(object, objectsAll)) {
-				result.push(eventAudio);
-			}
+			idsAudio.push(...groupActionChildAudioIDs(object, objectsAll, action, GG));
 		}
 	}
 	else if(objectParsed instanceof HIRCSwitchContainer) {
@@ -545,33 +560,29 @@ const parseActionSoundObject = (objectParsed, objectsAll, idHIRC) => {
 		])];
 
 		for(const object of objects) {
-			for(const eventAudio of parseActionSoundObject(object, objectsAll)) {
-				result.push(eventAudio);
-			}
+			idsAudio.push(...groupActionChildAudioIDs(object, objectsAll, action, GG));
 		}
 	}
 	else if(objectParsed instanceof HIRCSwitch) {
 		const objects = objectsAll.filter(object => objectParsed.idsSound.includes(object.id));
 
 		for(const object of objects) {
-			for(const eventAudio of parseActionSoundObject(object, objectsAll)) {
-				result.push(eventAudio);
-			}
+			idsAudio.push(...groupActionChildAudioIDs(object, objectsAll, action, GG));
 		}
 	}
-	else if(!objectParsed && idHIRC) {
-		G.warnD('parseActionSoundObject', 'unknown ~[Action Object ID]', `~{${showID(idHIRC)}}`);
+	else if(!objectParsed) {
+		GG.warnD(...TS('parse-bnk:group-ids-audio-action', { idAction: showID(action.id), idObject: showID(action.idObject) }, 'unknown-action-object'));
 	}
 	else if(objectParsed) {
-		G.warnD('parseActionSoundObject', 'unknown ~[Action sound Object]', objectParsed);
+		GG.warnD(...TS('parse-bnk:group-ids-audio-action', { idAction: showID(action.id), idObject: showID(action.idObject), clazz: Object.getPrototypeOf(objectParsed).constructor.name }, 'unknown-action-object-type'));
 	}
 
-	return result;
+	return idsAudio;
 };
 
 
 
-const parseTree = (object, id, objects, texts, level = 0) => {
+const joinTree = (object, id, objects, texts, level = 0) => {
 	if(!object) {
 		if(id) { return texts.push(`${'\t'.repeat(level)}UnknownObject:${showID(id)}`); }
 
@@ -583,13 +594,13 @@ const parseTree = (object, id, objects, texts, level = 0) => {
 
 	if(object instanceof HIRCEvent) {
 		for(const idAction of object.idsAction) {
-			parseTree(objects.find(o => o.id == idAction), idAction, objects, texts, level + 1);
+			joinTree(objects.find(o => o.id == idAction), idAction, objects, texts, level + 1);
 		}
 
 		texts.push('');
 	}
 	else if(object instanceof HIRCEventAction) {
-		parseTree(objects.find(o => o.id == object.idObject), object.idObject, objects, texts, level + 1);
+		joinTree(objects.find(o => o.id == object.idObject), object.idObject, objects, texts, level + 1);
 	}
 	else if(
 		object instanceof HIRCContainer ||
@@ -603,7 +614,7 @@ const parseTree = (object, id, objects, texts, level = 0) => {
 		for(const idSound of object.idsSound) {
 			const objectChild = objects.find(e => e.id == idSound);
 
-			parseTree(objectChild, idSound, objects, texts, level + 1);
+			joinTree(objectChild, idSound, objects, texts, level + 1);
 		}
 	}
 };
@@ -611,179 +622,187 @@ const parseTree = (object, id, objects, texts, level = 0) => {
 
 
 /**
- * @param {string} fileBNK
- * @param {Set<string>} setNameEvent
+ * @param {import('../../bases.d.ts').ExtractConfig} E
+ * @param {string} file
+ * @param {Set<string>} eventsAll
  */
-export default async function parseBNK(fileBNK, setNameEvent) {
-	G.infoU('parseBNK', `parse ~{${parse(fileBNK).base}}`, '○ parsing...');
+export default async function parseBNK(E, file, eventsAll) {
+	let bifferBNK;
+	try {
+		bifferBNK = new Biffer(file);
 
-	const bifferBNK = new Biffer(fileBNK);
+		const GG = G.where(T('parse-bnk:where', { name: parsePath(file).base }));
 
-	const objects = [];
-	const linesHexDump = [];
+		/** @type {HIRCObject[]} */
+		const objects = [];
+		const linesHexDump = [];
 
-	while(!bifferBNK.isEnd()) {
-		const [tagSection, sizeSection] = bifferBNK.unpack('4sI');
+		while(!bifferBNK.isEnd()) {
+			const [tagSection, sizeSection] = bifferBNK.unpack('4sI');
 
-		// Hierarchy
-		if(tagSection == 'HIRC') {
-			const bifferSection = bifferBNK.sub(sizeSection);
+			// Hierarchy
+			if(tagSection == 'HIRC') {
+				const bifferSection = bifferBNK.sub(sizeSection);
 
-			const [countObject] = bifferSection.unpack('I');
+				const [sizeObject] = bifferSection.unpack('I');
 
-			for(let index = 0; index < countObject; index++) {
-				const [type, length, id] = bifferSection.unpack('BII');
+				for(let index = 0; index < sizeObject; index++) {
+					const [type, length, id] = bifferSection.unpack('BII');
 
-				G.traceD(`parse ~[HIRC Object]~{${showID(id)}}`, '~[HIRC Header]', `~[Position]~{${toHexL8(bifferSection.tell() + 10, null, false)}} ~[Type]~{${type}} ~[Length]~{${length}}`);
+					GG.traceD(...TS(`parse-bnk:parse-hirc`, { id: showID(id), type, pos: bifferSection.tell() - 10, length }, 'header'));
 
-				const B = bifferSection.sub(length - 4);
+					const B = bifferSection.sub(length - 4);
 
-				const [objectSection, objectsExtra] = parseHIRCObject(id, type, B);
+					const [objectSection, objectsExtra] = parseHIRCObject(id, type, B, GG);
 
-				if(objectSection) { objects.push(objectSection); }
+					if(objectSection) { objects.push(objectSection); }
 
-				objects.push(...objectsExtra);
+					objects.push(...objectsExtra);
 
 
-				const idsHexObjectDump = C.debug?.idsHexObjectDump ?? [];
-				if(idsHexObjectDump.includes(toHexL8(id)) || idsHexObjectDump.includes(id) || idsHexObjectDump.includes('*')) {
-					linesHexDump.push(`${toHexL8(id)} [${String(type).padStart(2, '0')}]${objectSection ? objectSection.toString() : ''}\n${toBufferHex(B)}`);
+					const idsHexObjectDump = E.idsHexEventTreeDump ?? [];
+					if(idsHexObjectDump.includes(toHexL8(id)) || idsHexObjectDump.includes(id) || idsHexObjectDump.includes('*')) {
+						linesHexDump.push(`${toHexL8(id)} [${String(type).padStart(2, '0')}]${objectSection ? objectSection.toString() : ''}\n${toBufferHex(B)}`);
+					}
 				}
 			}
-		}
-		// Bank Header
-		else if(tagSection == 'BKHD') {
-			const [
-				version,
-				idBank,
+			// Bank Header
+			else if(tagSection == 'BKHD') {
+				const [
+					version,
+					idBank,
 				/* idLanguage */,
 				// 0000 0000 0000 0000 1111 1111 1111 1111 = unused
 				// 1111 1111 1111 1111 0000 0000 0000 0000 = allocatedDevice
 				/* bitsValuesAlt */,
-				idProject
-			] = bifferBNK.unpack('5L');
+					idProject
+				] = bifferBNK.unpack('5L');
 
-			const gap = sizeSection - Biffer.calc('5L');
-			if(gap > 0) { bifferBNK.skip(gap); }
+				const gap = sizeSection - Biffer.calc('5L');
+				if(gap > 0) { bifferBNK.skip(gap); }
 
+				if(version != 134) {
+					throw StackError(TLogError(`parse-bnk:parse-bkhd`, { id: showID(idBank), version }, 'unexpected-version'), GG.where);
+				}
 
-			if(version != 134) {
-				G.errorD('parseBNK', 'unexpected ~[Bank Version]', `~{${version}}`);
-
-				throw Error(`unexpected ~[Bank Version]~{${version}}`);
+				GG.debugD(...TS('parse-bnk:parse-bkhd', { id: showID(idBank), version, idProject: toHexL8(idProject) }, 'header'));
 			}
+			else {
+				bifferBNK.skip(sizeSection);
 
-			G.debugD('parseBNK', '~[Bank Header]', `~[Version]~{${version}} ~[Bank ID]~{${toHexL8(idBank)}} ~[Project ID]~{${toHexL8(idProject)}}`);
-		}
-		else {
-			bifferBNK.skip(sizeSection);
-
-			G.warnD('parseBNK', 'unhandled ~[Bank Section Tag]', `~{${tagSection}}`);
-		}
-	}
-
-
-
-	if(linesHexDump.length) {
-		writeFileSync(
-			resolve(dirDebug, 'hex', `${I.slot}@${C.server.region}@${C.lang}@${I.time}@hex.txt`),
-			linesHexDump.join('\n'),
-		);
-	}
-
-
-	const mapHash_EventName = {};
-	const namesEventAll$idAudio = {};
-	const mapAudioIDHex_EventName = {};
-
-	for(const event of setNameEvent) {
-		mapHash_EventName[fnv_1(event)] = event;
-		mapAudioIDHex_EventName[toHexL8(fnv_1(event))] = event;
-	}
-
-	if(linesHexDump.length) {
-		appendFileSync(
-			resolve(dirDebug, 'hex', `${I.slot}@${C.server.region}@${C.lang}@${I.time}@hex.txt`),
-			JSON.stringify(mapAudioIDHex_EventName, null, '\t') + '\n',
-		);
-	}
-
-	const objectsEvent = objects.filter(object => object instanceof HIRCEvent);
-
-	for(const objectEvent of objectsEvent) {
-		const eventsAudio = [];
-
-		let eventFull = mapHash_EventName[objectEvent.id];
-
-		if(!eventFull) {
-			G.warnD('parseBNK', 'unmatched ~[HIRC Event ID]', `~{${objectEvent.id}}`);
-
-			eventFull = objectEvent.id;
-		}
-
-		objectEvent.eventFull = eventFull;
-
-		for(const actionID of objectEvent.idsAction) {
-			const action = objects.find(object => object.id == actionID);
-
-			const actionSoundObject = objects.find(object => object.id == action.idObject);
-
-			for(const eventAudio of parseActionSoundObject(actionSoundObject, objects, action.idObject)) {
-				eventsAudio.push(eventAudio);
+				GG.warnD(...TS('parse-bnk.what', { tag: tagSection }, 'unhandled-section'));
 			}
 		}
 
-		for(const idAudio of eventsAudio) {
-			(namesEventAll$idAudio[idAudio] || (namesEventAll$idAudio[idAudio] = new Set())).add(eventFull);
-		}
-	}
-
-	const idsSoundAll$idAudio = {};
-
-	objects.filter(object => object instanceof HIRCSound).forEach(sound =>
-		(idsSoundAll$idAudio[sound.idAudio] || (idsSoundAll$idAudio[sound.idAudio] = new Set())).add(sound.id)
-	);
 
 
-	// extract debug info
-
-	// const textsSoundAudio = [];
-	// objects.filter(object => object instanceof HIRCSound).forEach(object =>
-	// 	textsSoundAudio.push(`${showID(object.id)} --> ${showID(object.idAudio)}`)
-	// );
-
-	// writeFileSync(
-	// 	resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@sound.txt`),
-	// 	textsSoundAudio.join('\n')
-	// );
-
-
-	// const textsEvent = [];
-	// objects.filter(object => object instanceof HIRCEvent)
-	// 	.forEach(object =>
-	// 		textsEvent.push(showID(object.id))
-	// 	);
-
-	// writeFileSync(
-	// 	resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@event.txt`),
-	// 	textsEvent.join('\n')
-	// );
-
-
-	if(!C.debug?.skipDumpObjectTree) {
-		const textsTree = [];
-		for(const object of objects.filter(object => object instanceof HIRCEvent)) {
-			parseTree(object, object.id, objects, textsTree);
+		if(linesHexDump.length) {
+			writeFileSync(
+				resolve(E.dirExportDebug, 'hex', `${E.slot}@${E.regionCDN}@${E.lang}@${E.timeExtract.format('HHmmss')}@hex.txt`),
+				linesHexDump.join('\n'),
+			);
 		}
 
-		writeFileSync(
-			resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@tree.txt`),
-			textsTree.join('\n')
-		);
+
+		const events$hash = {};
+		const events$idAudio = {};
+		const events$hashHex = {};
+
+		for(const event of eventsAll) {
+			events$hash[fnv_1(event)] = event;
+			events$hashHex[toHexL8(fnv_1(event))] = event;
+		}
+
+		if(linesHexDump.length) {
+			appendFileSync(
+				resolve(E.dirExportDebug, 'hex', `${E.slot}@${E.regionCDN}@${E.lang}@${E.timeExtract.format('HHmmss')}@hex.json`),
+				JSON.stringify(events$hashHex, null, '\t') + '\n',
+			);
+		}
+
+		const objectsEvent = objects.filter(object => object instanceof HIRCEvent);
+
+		for(const objectEvent of objectsEvent) {
+			const event = events$hash[objectEvent.id] ?? objectEvent.id;
+
+			if(typeof event != 'string') {
+				GG.warnD(...TS('parse-bnk:group-ids', { event }, 'unknown-event-name'));
+
+				objectEvent.event = `unknown-name:${event}`;
+			}
+			else {
+				objectEvent.event = event;
+			}
+
+
+
+			const idsAudioChild = [];
+			for(const actionID of objectEvent.idsAction) {
+				/** @type {HIRCEventAction} */
+				const action = objects.find(object => object.id == actionID);
+
+				const objectAction = objects.find(object => object.id == action.idObject);
+
+				idsAudioChild.push(...groupActionChildAudioIDs(objectAction, objects, action, GG));
+			}
+
+
+			for(const idAudio of idsAudioChild) {
+				(events$idAudio[idAudio] || (events$idAudio[idAudio] = new Set())).add(event);
+			}
+		}
+
+
+		const idsSound$idAudio = {};
+
+		for(const sound of objects.filter(object => object instanceof HIRCSound)) {
+			(idsSound$idAudio[sound.idAudio] || (idsSound$idAudio[sound.idAudio] = new Set())).add(sound.id);
+		}
+
+
+		// extract debug info
+
+		// const textsSoundAudio = [];
+		// objects.filter(object => object instanceof HIRCSound).forEach(object =>
+		// 	textsSoundAudio.push(`${showID(object.id)} --> ${showID(object.idAudio)}`)
+		// );
+
+		// writeFileSync(
+		// 	resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@sound.txt`),
+		// 	textsSoundAudio.join('\n')
+		// );
+
+
+		// const textsEvent = [];
+		// objects.filter(object => object instanceof HIRCEvent)
+		// 	.forEach(object =>
+		// 		textsEvent.push(showID(object.id))
+		// 	);
+
+		// writeFileSync(
+		// 	resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@event.txt`),
+		// 	textsEvent.join('\n')
+		// );
+
+
+		if(E.dumpEventTree) {
+			const textsTree = [];
+			for(const object of objects.filter(object => object instanceof HIRCEvent)) {
+				joinTree(object, object.id, objects, textsTree);
+			}
+
+			if(textsTree.length) {
+				writeFileSync(
+					resolve(E.dirExportDebug, `[${E.slot}@${E.regionCDN}@${E.lang}]@${parsePath(file).base}@${E.timeExtract.format('HHmmss')}@tree.txt`),
+					textsTree.join('\n')
+				);
+			}
+		}
+
+
+		return [events$idAudio, idsSound$idAudio];
 	}
-
-
-	G.infoD('parseBNK', `parse ~{${parse(fileBNK).base}}`, '✔ ');
-
-	return [namesEventAll$idAudio, idsSoundAll$idAudio];
+	finally {
+		bifferBNK.close();
+	}
 }

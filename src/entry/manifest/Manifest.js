@@ -108,7 +108,8 @@ export default class Manifest {
 
 		this.buffer = unzstd(
 			bifferRaw.slice(length),
-			resolve(dirCache, 'manifest', `${this.version}-${toHexL(this.id, 0, false)}-body.manifest`)
+			resolve(dirCache, 'manifest', `${this.version}-${toHexL(this.id, 0, false)}-body.manifest`),
+			// TODO
 		);
 
 		return this;
@@ -177,8 +178,8 @@ export default class Manifest {
 				name = `${dirName}/${name}`;
 			}
 
-			const languages = (idsLanguage || []).map(id => this.languages[id]);
-			const fileChunks = (idsChunk || []).map(id => this.chunks[id]);
+			const languages = (idsLanguage || []).map(idLangauge => this.languages[idLangauge]);
+			const fileChunks = (idsChunk || []).map(idChunk => this.chunks[idChunk]);
 
 			files[name] = new File(id, name, sizeFile, link, languages, fileChunks, this.version);
 		}

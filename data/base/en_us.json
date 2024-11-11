@@ -5,7 +5,8 @@
 		"title": "the Dark Child",
 		"slot": "Annie",
 		"roles": [
-			"mage"
+			"mage",
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -384,7 +385,85 @@
 			"46": 40,
 			"47": 40,
 			"48": 40,
-			"49": 40
+			"49": 40,
+			"50": {
+				"id": 50,
+				"name": "Battle Princess Annie",
+				"chromas": {
+					"51": {
+						"id": 51,
+						"name": "Battle Princess Annie",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Battle Princess Annie",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Battle Princess Annie",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Battle Princess Annie",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Battle Princess Annie",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Battle Princess Annie",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Battle Princess Annie",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Battle Princess Annie",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"51": 50,
+			"52": 50,
+			"53": 50,
+			"54": 50,
+			"55": 50,
+			"56": 50,
+			"57": 50,
+			"58": 50
 		},
 		"spells": {
 			"p": "Pyromania",
@@ -759,7 +838,85 @@
 			"40": 35,
 			"41": 35,
 			"42": 35,
-			"43": 35
+			"43": 35,
+			"44": {
+				"id": 44,
+				"name": "Infernal Olaf",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Infernal Olaf",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Infernal Olaf",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Infernal Olaf",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Infernal Olaf",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Infernal Olaf",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Infernal Olaf",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Infernal Olaf",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Infernal Olaf",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44
 		},
 		"spells": {
 			"p": "Berserker Rage",
@@ -1109,7 +1266,8 @@
 		"title": "the Card Master",
 		"slot": "TwistedFate",
 		"roles": [
-			"mage"
+			"mage",
+			"marksman"
 		],
 		"skins": {
 			"0": {
@@ -1465,7 +1623,7 @@
 		"slot": "XinZhao",
 		"roles": [
 			"fighter",
-			"assassin"
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -2594,7 +2752,31 @@
 			"51": 45,
 			"52": 45,
 			"53": 45,
-			"54": 19
+			"54": 19,
+			"55": {
+				"id": 55,
+				"name": "Risen Legend LeBlanc",
+				"chromas": {
+					"56": {
+						"id": 56,
+						"name": "Risen Legend LeBlanc",
+						"colors": [
+							"#059849",
+							"#C89600"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Risen Legend LeBlanc",
+						"colors": [
+							"#64DCC8",
+							"#E446F7"
+						]
+					}
+				}
+			},
+			"56": 55,
+			"57": 55
 		},
 		"spells": {
 			"p": "Mirror Image",
@@ -2610,7 +2792,8 @@
 		"title": "the Crimson Reaper",
 		"slot": "Vladimir",
 		"roles": [
-			"mage"
+			"mage",
+			"fighter"
 		],
 		"skins": {
 			"0": {
@@ -3403,8 +3586,8 @@
 		"title": "the Righteous",
 		"slot": "Kayle",
 		"roles": [
-			"fighter",
-			"support"
+			"mage",
+			"marksman"
 		],
 		"skins": {
 			"0": {
@@ -5031,8 +5214,7 @@
 		"title": "the Rune Mage",
 		"slot": "Ryze",
 		"roles": [
-			"mage",
-			"fighter"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -5088,7 +5270,16 @@
 			"10": {
 				"id": 10,
 				"name": "SKT T1 Ryze",
-				"chromas": {}
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "SKT T1 Ryze",
+						"colors": [
+							"#64DCC8",
+							"#E446F7"
+						]
+					}
+				}
 			},
 			"11": {
 				"id": 11,
@@ -5242,7 +5433,8 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"30": 10
 		},
 		"spells": {
 			"p": "Arcane Mastery",
@@ -6251,7 +6443,12 @@
 			"66": 61,
 			"67": 61,
 			"68": 61,
-			"69": 61
+			"69": 61,
+			"70": {
+				"id": 70,
+				"name": "Ann-Sivir-sary",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Fleet of Foot",
@@ -6606,7 +6803,85 @@
 			"40": 37,
 			"41": 37,
 			"42": 37,
-			"43": 37
+			"43": 37,
+			"44": {
+				"id": 44,
+				"name": "Faerie Court Soraka",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Faerie Court Soraka",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Faerie Court Soraka",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Faerie Court Soraka",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Faerie Court Soraka",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Faerie Court Soraka",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Faerie Court Soraka",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Faerie Court Soraka",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Faerie Court Soraka",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44
 		},
 		"spells": {
 			"p": "Salvation",
@@ -6623,7 +6898,7 @@
 		"slot": "Teemo",
 		"roles": [
 			"marksman",
-			"assassin"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -7573,7 +7848,85 @@
 			"57": 51,
 			"58": 51,
 			"59": 51,
-			"60": 51
+			"60": 51,
+			"61": {
+				"id": 61,
+				"name": "Faerie Court Tristana",
+				"chromas": {
+					"62": {
+						"id": 62,
+						"name": "Faerie Court Tristana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Faerie Court Tristana",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Faerie Court Tristana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Faerie Court Tristana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Faerie Court Tristana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Faerie Court Tristana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Faerie Court Tristana",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Faerie Court Tristana",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					}
+				}
+			},
+			"62": 61,
+			"63": 61,
+			"64": 61,
+			"65": 61,
+			"66": 61,
+			"67": 61,
+			"68": 61,
+			"69": 61
 		},
 		"spells": {
 			"p": "Draw a Bead",
@@ -8004,7 +8357,7 @@
 		"slot": "Nunu",
 		"roles": [
 			"tank",
-			"fighter"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -8358,7 +8711,94 @@
 			"40": 35,
 			"41": 35,
 			"42": 35,
-			"43": 35
+			"43": 35,
+			"44": {
+				"id": 44,
+				"name": "Fright Night Nunu & Willump",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Fright Night Nunu & Willump",
+						"colors": [
+							"#68B856",
+							"#B69017"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44,
+			"53": 44
 		},
 		"spells": {
 			"p": "Call of the Freljord",
@@ -8374,7 +8814,8 @@
 		"title": "the Bounty Hunter",
 		"slot": "MissFortune",
 		"roles": [
-			"marksman"
+			"marksman",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -8648,6 +9089,11 @@
 					}
 				}
 			},
+			"32": {
+				"id": 32,
+				"name": "Admiral Battle Bunny Miss Fortune",
+				"chromas": {}
+			},
 			"33": {
 				"id": 33,
 				"name": "Prestige Bewitching Miss Fortune (2022)",
@@ -8828,7 +9274,85 @@
 			"56": 50,
 			"57": 50,
 			"58": 50,
-			"59": 50
+			"59": 50,
+			"60": {
+				"id": 60,
+				"name": "Battle Queen Miss Fortune",
+				"chromas": {
+					"61": {
+						"id": 61,
+						"name": "Battle Queen Miss Fortune",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Battle Queen Miss Fortune",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Battle Queen Miss Fortune",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Battle Queen Miss Fortune",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Battle Queen Miss Fortune",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Battle Queen Miss Fortune",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Battle Queen Miss Fortune",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Battle Queen Miss Fortune",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"61": 60,
+			"62": 60,
+			"63": 60,
+			"64": 60,
+			"65": 60,
+			"66": 60,
+			"67": 60,
+			"68": 60
 		},
 		"spells": {
 			"p": "Love Tap",
@@ -9388,7 +9912,85 @@
 					}
 				}
 			},
-			"66": 65
+			"66": 65,
+			"67": {
+				"id": 67,
+				"name": "Infernal Ashe",
+				"chromas": {
+					"68": {
+						"id": 68,
+						"name": "Infernal Ashe",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Infernal Ashe",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Infernal Ashe",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Infernal Ashe",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Infernal Ashe",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Infernal Ashe",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Infernal Ashe",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Infernal Ashe",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"68": 67,
+			"69": 67,
+			"70": 67,
+			"71": 67,
+			"72": 67,
+			"73": 67,
+			"74": 67,
+			"75": 67
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -9707,8 +10309,7 @@
 		"title": "Grandmaster at Arms",
 		"slot": "Jax",
 		"roles": [
-			"fighter",
-			"assassin"
+			"fighter"
 		],
 		"skins": {
 			"0": {
@@ -10921,7 +11522,7 @@
 		"slot": "Singed",
 		"roles": [
 			"tank",
-			"fighter"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -11129,7 +11730,12 @@
 			"24": 19,
 			"25": 19,
 			"26": 19,
-			"27": 19
+			"27": 19,
+			"28": {
+				"id": 28,
+				"name": "Arcane Shimmer Lab Singed",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Noxious Slipstream",
@@ -12820,7 +13426,7 @@
 		"slot": "Amumu",
 		"roles": [
 			"tank",
-			"mage"
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -13264,8 +13870,7 @@
 		"title": "the Armordillo",
 		"slot": "Rammus",
 		"roles": [
-			"tank",
-			"fighter"
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -13553,8 +14158,7 @@
 		"title": "the Cryophoenix",
 		"slot": "Anivia",
 		"roles": [
-			"mage",
-			"support"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -14457,7 +15061,94 @@
 			"50": 43,
 			"51": 43,
 			"52": 43,
-			"53": 43
+			"53": 43,
+			"54": {
+				"id": 54,
+				"name": "Fright Night Shaco",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Fright Night Shaco",
+						"colors": [
+							"#68B856",
+							"#B69017"
+						]
+					}
+				}
+			},
+			"55": 54,
+			"56": 54,
+			"57": 54,
+			"58": 54,
+			"59": 54,
+			"60": 54,
+			"61": 54,
+			"62": 54,
+			"63": 54
 		},
 		"spells": {
 			"p": "Backstab",
@@ -14473,8 +15164,8 @@
 		"title": "the Madman of Zaun",
 		"slot": "DrMundo",
 		"roles": [
-			"fighter",
-			"tank"
+			"tank",
+			"fighter"
 		],
 		"skins": {
 			"0": {
@@ -15175,7 +15866,94 @@
 			"52": 45,
 			"53": 45,
 			"54": 45,
-			"55": 4
+			"55": 4,
+			"56": {
+				"id": 56,
+				"name": "Victorious Sona",
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "Victorious Sona",
+						"colors": [
+							"#764D43",
+							"#764D43"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Victorious Sona",
+						"colors": [
+							"#AAB5BA",
+							"#AAB5BA"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Victorious Sona",
+						"colors": [
+							"#D9C445",
+							"#D9C445"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Victorious Sona",
+						"colors": [
+							"#55CDE5",
+							"#55CDE5"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Victorious Sona",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Victorious Sona",
+						"colors": [
+							"#65337F",
+							"#65337F"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Victorious Sona",
+						"colors": [
+							"#9D228D",
+							"#9D228D"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Victorious Sona",
+						"colors": [
+							"#B31316",
+							"#B31316"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Victorious Sona",
+						"colors": [
+							"#1D62C8",
+							"#1D62C8"
+						]
+					}
+				}
+			},
+			"57": 56,
+			"58": 56,
+			"59": 56,
+			"60": 56,
+			"61": 56,
+			"62": 56,
+			"63": 56,
+			"64": 56,
+			"65": 56
 		},
 		"spells": {
 			"p": "Power Chord",
@@ -16826,7 +17604,8 @@
 		"title": "the Daring Bombardier",
 		"slot": "Corki",
 		"roles": [
-			"marksman"
+			"marksman",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -17622,7 +18401,85 @@
 			"57": 54,
 			"58": 54,
 			"59": 54,
-			"60": 54
+			"60": 54,
+			"61": {
+				"id": 61,
+				"name": "Infernal Karma",
+				"chromas": {
+					"62": {
+						"id": 62,
+						"name": "Infernal Karma",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Infernal Karma",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Infernal Karma",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Infernal Karma",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Infernal Karma",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Infernal Karma",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Infernal Karma",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Infernal Karma",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"62": 61,
+			"63": 61,
+			"64": 61,
+			"65": 61,
+			"66": 61,
+			"67": 61,
+			"68": 61,
+			"69": 61
 		},
 		"spells": {
 			"p": "Gathering Fire",
@@ -17639,7 +18496,7 @@
 		"slot": "Taric",
 		"roles": [
 			"support",
-			"fighter"
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -18364,7 +19221,67 @@
 			"56": 51,
 			"57": 51,
 			"58": 51,
-			"59": 51
+			"59": 51,
+			"60": {
+				"id": 60,
+				"name": "Fright Night Veigar",
+				"chromas": {
+					"61": {
+						"id": 61,
+						"name": "Fright Night Veigar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Fright Night Veigar",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Fright Night Veigar",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Fright Night Veigar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Fright Night Veigar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Fright Night Veigar",
+						"colors": [
+							"#68B856",
+							"#B69017"
+						]
+					}
+				}
+			},
+			"61": 60,
+			"62": 60,
+			"63": 60,
+			"64": 60,
+			"65": 60,
+			"66": 60
 		},
 		"spells": {
 			"p": "Phenomenal Evil Power",
@@ -18542,7 +19459,85 @@
 			"17": 12,
 			"18": 12,
 			"19": 12,
-			"20": 12
+			"20": 12,
+			"21": {
+				"id": 21,
+				"name": "Esports Fan Trundle",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "Esports Fan Trundle",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Esports Fan Trundle",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Esports Fan Trundle",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Esports Fan Trundle",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Esports Fan Trundle",
+						"colors": [
+							"#9F4A25",
+							"#9F4A25"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Esports Fan Trundle",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Esports Fan Trundle",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Esports Fan Trundle",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21
 		},
 		"spells": {
 			"p": "King's Tribute",
@@ -18559,7 +19554,7 @@
 		"slot": "Swain",
 		"roles": [
 			"mage",
-			"fighter"
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -18820,7 +19815,90 @@
 			"28": 21,
 			"29": 21,
 			"30": 21,
-			"31": 21
+			"31": 21,
+			"32": {
+				"id": 32,
+				"name": "Chosen of the Wolf Swain",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Chosen of the Wolf Swain",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Chosen of the Wolf Swain",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Chosen of the Wolf Swain",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Chosen of the Wolf Swain",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Chosen of the Wolf Swain",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Chosen of the Wolf Swain",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Chosen of the Wolf Swain",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Chosen of the Wolf Swain",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"33": {
+				"id": 33,
+				"name": "Prestige Chosen of the Wolf Swain",
+				"chromas": {}
+			},
+			"34": 32,
+			"35": 32,
+			"36": 32,
+			"37": 32,
+			"38": 32,
+			"39": 32,
+			"40": 32,
+			"41": 32
 		},
 		"spells": {
 			"p": "Ravenous Flock",
@@ -19224,7 +20302,37 @@
 					}
 				}
 			},
-			"49": 48
+			"49": 48,
+			"50": {
+				"id": 50,
+				"name": "Arcane Commander Caitlyn",
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Arcane Commander Caitlyn",
+						"colors": [
+							"#BBD6EF",
+							"#4649F7"
+						]
+					}
+				}
+			},
+			"51": {
+				"id": 51,
+				"name": "Prestige Arcane Commander Caitlyn",
+				"chromas": {
+					"53": {
+						"id": 53,
+						"name": "Prestige Arcane Commander Caitlyn",
+						"colors": [
+							"#464AF7",
+							"#FAFDC4"
+						]
+					}
+				}
+			},
+			"52": 50,
+			"53": 51
 		},
 		"spells": {
 			"p": "Headshot",
@@ -19241,7 +20349,7 @@
 		"slot": "Blitzcrank",
 		"roles": [
 			"tank",
-			"fighter"
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -19788,7 +20896,7 @@
 		"slot": "Malphite",
 		"roles": [
 			"tank",
-			"fighter"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -20650,7 +21758,85 @@
 			"54": 47,
 			"55": 47,
 			"56": 47,
-			"57": 47
+			"57": 47,
+			"59": {
+				"id": 59,
+				"name": "Chosen of the Wolf Katarina",
+				"chromas": {
+					"61": {
+						"id": 61,
+						"name": "Chosen of the Wolf Katarina",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Chosen of the Wolf Katarina",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Chosen of the Wolf Katarina",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Chosen of the Wolf Katarina",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Chosen of the Wolf Katarina",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Chosen of the Wolf Katarina",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Chosen of the Wolf Katarina",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Chosen of the Wolf Katarina",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"61": 59,
+			"62": 59,
+			"63": 59,
+			"64": 59,
+			"65": 59,
+			"66": 59,
+			"67": 59,
+			"68": 59
 		},
 		"spells": {
 			"p": "Voracity",
@@ -20666,8 +21852,8 @@
 		"title": "the Eternal Nightmare",
 		"slot": "Nocturne",
 		"roles": [
-			"assassin",
-			"fighter"
+			"fighter",
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -20969,7 +22155,7 @@
 		"slot": "Maokai",
 		"roles": [
 			"tank",
-			"mage"
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -21658,8 +22844,8 @@
 		"title": "the Exemplar of Demacia",
 		"slot": "JarvanIV",
 		"roles": [
-			"tank",
-			"fighter"
+			"fighter",
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -22014,8 +23200,8 @@
 		"title": "the Spider Queen",
 		"slot": "Elise",
 		"roles": [
-			"mage",
-			"fighter"
+			"assassin",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -22608,7 +23794,22 @@
 			"34": 29,
 			"35": 29,
 			"36": 29,
-			"37": 29
+			"37": 29,
+			"38": {
+				"id": 38,
+				"name": "T1 Orianna",
+				"chromas": {
+					"39": {
+						"id": 39,
+						"name": "T1 Orianna",
+						"colors": [
+							"#AE1F1F",
+							"#DF4F1A"
+						]
+					}
+				}
+			},
+			"39": 38
 		},
 		"spells": {
 			"p": "Clockwork Windup",
@@ -22844,7 +24045,8 @@
 		"title": "the Burning Vengeance",
 		"slot": "Brand",
 		"roles": [
-			"mage"
+			"mage",
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -23377,6 +24579,22 @@
 							"#5F432B",
 							"#5F432B"
 						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Dragon Fist Lee Sin",
+						"colors": [
+							"#AA48C8",
+							"#451D22"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Dragon Fist Lee Sin",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
 					}
 				}
 			},
@@ -23815,7 +25033,24 @@
 			"64": 4,
 			"65": 4,
 			"66": 4,
-			"67": 4
+			"67": 4,
+			"68": {
+				"id": 68,
+				"name": "T1 Lee Sin",
+				"chromas": {
+					"69": {
+						"id": 69,
+						"name": "T1 Lee Sin",
+						"colors": [
+							"#AE1F1F",
+							"#DF4F1A"
+						]
+					}
+				}
+			},
+			"69": 68,
+			"70": 3,
+			"71": 3
 		},
 		"spells": {
 			"p": "Flurry",
@@ -24964,8 +26199,8 @@
 		"title": "the Primordial Sovereign",
 		"slot": "Skarner",
 		"roles": [
-			"fighter",
-			"tank"
+			"tank",
+			"fighter"
 		],
 		"skins": {
 			"0": {
@@ -26980,7 +28215,85 @@
 			"35": 29,
 			"36": 29,
 			"37": 29,
-			"38": 29
+			"38": 29,
+			"39": {
+				"id": 39,
+				"name": "Music Fan Gragas",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Music Fan Gragas",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Music Fan Gragas",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Music Fan Gragas",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Music Fan Gragas",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Music Fan Gragas",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Music Fan Gragas",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Music Fan Gragas",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Music Fan Gragas",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39
 		},
 		"spells": {
 			"p": "Happy Hour",
@@ -27293,7 +28606,85 @@
 					}
 				}
 			},
-			"37": 36
+			"37": 36,
+			"38": {
+				"id": 38,
+				"name": "Chosen of the Wolf Pantheon",
+				"chromas": {
+					"39": {
+						"id": 39,
+						"name": "Chosen of the Wolf Pantheon",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Chosen of the Wolf Pantheon",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Chosen of the Wolf Pantheon",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Chosen of the Wolf Pantheon",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Chosen of the Wolf Pantheon",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Chosen of the Wolf Pantheon",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Chosen of the Wolf Pantheon",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Chosen of the Wolf Pantheon",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"39": 38,
+			"40": 38,
+			"41": 38,
+			"42": 38,
+			"43": 38,
+			"44": 38,
+			"45": 38,
+			"46": 38
 		},
 		"spells": {
 			"p": "Mortal Will",
@@ -27826,7 +29217,8 @@
 		"title": "the Iron Revenant",
 		"slot": "Mordekaiser",
 		"roles": [
-			"fighter"
+			"fighter",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -28623,7 +30015,94 @@
 			"36": 30,
 			"37": 30,
 			"38": 30,
-			"39": 30
+			"39": 30,
+			"40": {
+				"id": 40,
+				"name": "Dark Star Yorick",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Dark Star Yorick",
+						"colors": [
+							"#D02E47",
+							"#7931BD"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40,
+			"47": 40,
+			"48": 40,
+			"49": 40
 		},
 		"spells": {
 			"p": "Shepherd of Souls",
@@ -29402,8 +30881,7 @@
 		"title": "the Heart of the Tempest",
 		"slot": "Kennen",
 		"roles": [
-			"mage",
-			"marksman"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -30022,7 +31500,12 @@
 			"39": 33,
 			"40": 33,
 			"41": 33,
-			"42": 33
+			"42": 33,
+			"44": {
+				"id": 44,
+				"name": "Fallen God-King Garen",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Perseverance",
@@ -30452,7 +31935,108 @@
 					}
 				}
 			},
-			"51": 50
+			"51": 50,
+			"52": {
+				"id": 52,
+				"name": "Battle Lion Leona",
+				"chromas": {
+					"54": {
+						"id": 54,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#FE4BA7",
+							"#74649C"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Battle Lion Leona",
+						"colors": [
+							"#F6A630",
+							"#1C61B4"
+						]
+					}
+				}
+			},
+			"53": {
+				"id": 53,
+				"name": "Prestige Battle Lion Leona",
+				"chromas": {}
+			},
+			"54": 52,
+			"55": 52,
+			"56": 52,
+			"57": 52,
+			"58": 52,
+			"59": 52,
+			"60": 52,
+			"61": 52,
+			"62": 52,
+			"63": 52
 		},
 		"spells": {
 			"p": "Sunlight",
@@ -30468,8 +32052,7 @@
 		"title": "the Prophet of the Void",
 		"slot": "Malzahar",
 		"roles": [
-			"mage",
-			"assassin"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -32437,7 +34020,94 @@
 			"51": 46,
 			"52": 46,
 			"53": 46,
-			"54": 46
+			"54": 46,
+			"55": {
+				"id": 55,
+				"name": "Victorious Kog'Maw",
+				"chromas": {
+					"56": {
+						"id": 56,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#764D43",
+							"#764D43"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#AAB5BA",
+							"#AAB5BA"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#D9C445",
+							"#D9C445"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#55CDE5",
+							"#55CDE5"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#65337F",
+							"#65337F"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#9D228D",
+							"#9D228D"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#B31316",
+							"#B31316"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Victorious Kog'Maw",
+						"colors": [
+							"#1D62C8",
+							"#1D62C8"
+						]
+					}
+				}
+			},
+			"56": 55,
+			"57": 55,
+			"58": 55,
+			"59": 55,
+			"60": 55,
+			"61": 55,
+			"62": 55,
+			"63": 55,
+			"64": 55
 		},
 		"spells": {
 			"p": "Icathian Surprise",
@@ -33366,7 +35036,85 @@
 			"57": 38,
 			"58": 38,
 			"59": 38,
-			"60": 38
+			"60": 38,
+			"61": {
+				"id": 61,
+				"name": "Faerie Court Lux",
+				"chromas": {
+					"62": {
+						"id": 62,
+						"name": "Faerie Court Lux",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Faerie Court Lux",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Faerie Court Lux",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Faerie Court Lux",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Faerie Court Lux",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Faerie Court Lux",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Faerie Court Lux",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Faerie Court Lux",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"62": 61,
+			"63": 61,
+			"64": 61,
+			"65": 61,
+			"66": 61,
+			"67": 61,
+			"68": 61,
+			"69": 61
 		},
 		"spells": {
 			"p": "Illumination",
@@ -33382,7 +35130,8 @@
 		"title": "the Magus Ascendant",
 		"slot": "Xerath",
 		"roles": [
-			"mage"
+			"mage",
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -33625,7 +35374,22 @@
 			"26": 21,
 			"27": 21,
 			"28": 21,
-			"29": 21
+			"29": 21,
+			"30": {
+				"id": 30,
+				"name": "Crystalis Indomitus Xerath",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Crystalis Indomitus Xerath",
+						"colors": [
+							"#239DE9",
+							"#22D389"
+						]
+					}
+				}
+			},
+			"31": 30
 		},
 		"spells": {
 			"p": "Mana Surge",
@@ -33642,7 +35406,7 @@
 		"slot": "Shyvana",
 		"roles": [
 			"fighter",
-			"tank"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -34572,7 +36336,21 @@
 			"81": 76,
 			"82": 76,
 			"83": 76,
-			"84": 76
+			"84": 76,
+			"85": {
+				"id": 85,
+				"name": "Risen Legend Ahri",
+				"nameStage": "Risen Legend Ahri",
+				"chromas": {
+					"86": {
+						"id": 86,
+						"name": "Immortalized Legend Ahri",
+						"stage": 2
+					}
+				},
+				"stage": 1
+			},
+			"86": 85
 		},
 		"spells": {
 			"p": "Essence Theft",
@@ -35314,7 +37092,85 @@
 			"31": 26,
 			"32": 26,
 			"33": 26,
-			"34": 26
+			"34": 26,
+			"35": {
+				"id": 35,
+				"name": "Rain Shepherd Fizz",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Rain Shepherd Fizz",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Rain Shepherd Fizz",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Rain Shepherd Fizz",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Rain Shepherd Fizz",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Rain Shepherd Fizz",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Rain Shepherd Fizz",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Rain Shepherd Fizz",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Rain Shepherd Fizz",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35
 		},
 		"spells": {
 			"p": "Nimble Fighter",
@@ -36477,8 +38333,8 @@
 						"id": 59,
 						"name": "Empyrean Varus",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E14940",
+							"#83E584"
 						]
 					}
 				}
@@ -36786,7 +38642,22 @@
 			"32": 27,
 			"33": 27,
 			"34": 27,
-			"35": 27
+			"35": 27,
+			"36": {
+				"id": 36,
+				"name": "Crystalis Indomitus Nautilus",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Crystalis Indomitus Nautilus",
+						"colors": [
+							"#469FFC",
+							"#8DDC26"
+						]
+					}
+				}
+			},
+			"37": 36
 		},
 		"spells": {
 			"p": "Staggering Blow",
@@ -37010,8 +38881,7 @@
 		"title": "Fury of the North",
 		"slot": "Sejuani",
 		"roles": [
-			"tank",
-			"fighter"
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -38087,7 +39957,85 @@
 			"85": 80,
 			"86": 80,
 			"87": 80,
-			"88": 80
+			"88": 80,
+			"89": {
+				"id": 89,
+				"name": "Battle Queen Fiora",
+				"chromas": {
+					"90": {
+						"id": 90,
+						"name": "Battle Queen Fiora",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"91": {
+						"id": 91,
+						"name": "Battle Queen Fiora",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"92": {
+						"id": 92,
+						"name": "Battle Queen Fiora",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"93": {
+						"id": 93,
+						"name": "Battle Queen Fiora",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"94": {
+						"id": 94,
+						"name": "Battle Queen Fiora",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"95": {
+						"id": 95,
+						"name": "Battle Queen Fiora",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"96": {
+						"id": 96,
+						"name": "Battle Queen Fiora",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"97": {
+						"id": 97,
+						"name": "Battle Queen Fiora",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"90": 89,
+			"91": 89,
+			"92": 89,
+			"93": 89,
+			"94": 89,
+			"95": 89,
+			"96": 89,
+			"97": 89
 		},
 		"spells": {
 			"p": "Duelist's Dance",
@@ -40804,7 +42752,12 @@
 			"60": 54,
 			"61": 54,
 			"62": 54,
-			"63": 54
+			"63": 54,
+			"64": {
+				"id": 64,
+				"name": "Divine God-King Darius",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Hemorrhage",
@@ -40820,8 +42773,8 @@
 		"title": "the Defender of Tomorrow",
 		"slot": "Jayce",
 		"roles": [
-			"fighter",
-			"marksman"
+			"marksman",
+			"fighter"
 		],
 		"skins": {
 			"0": {
@@ -41096,7 +43049,27 @@
 			"30": 25,
 			"31": 25,
 			"32": 25,
-			"33": 25
+			"33": 25,
+			"34": {
+				"id": 34,
+				"name": "T1 Jayce",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "T1 Jayce",
+						"colors": [
+							"#AE1F1F",
+							"#DF4F1A"
+						]
+					}
+				}
+			},
+			"36": {
+				"id": 36,
+				"name": "Prestige T1 Jayce",
+				"chromas": {}
+			},
+			"37": 34
 		},
 		"spells": {
 			"p": "Hextech Capacitor",
@@ -41486,7 +43459,7 @@
 		"slot": "Diana",
 		"roles": [
 			"fighter",
-			"mage"
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -42019,7 +43992,99 @@
 			"60": 54,
 			"61": 54,
 			"62": 54,
-			"63": 54
+			"63": 54,
+			"64": {
+				"id": 64,
+				"name": "Dark Cosmic Diana",
+				"chromas": {
+					"66": {
+						"id": 66,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Dark Cosmic Diana",
+						"colors": [
+							"#D02E47",
+							"#7931BD"
+						]
+					}
+				}
+			},
+			"65": {
+				"id": 65,
+				"name": "Prestige Dark Cosmic Diana",
+				"chromas": {}
+			},
+			"66": 64,
+			"67": 64,
+			"68": 64,
+			"69": 64,
+			"70": 64,
+			"71": 64,
+			"72": 64,
+			"73": 64,
+			"74": 64
 		},
 		"spells": {
 			"p": "Moonsilver Blade",
@@ -42275,7 +44340,16 @@
 			"5": {
 				"id": 5,
 				"name": "SKT T1 Syndra",
-				"chromas": {}
+				"chromas": {
+					"64": {
+						"id": 64,
+						"name": "SKT T1 Syndra",
+						"colors": [
+							"#64DCC8",
+							"#E446F7"
+						]
+					}
+				}
 			},
 			"6": {
 				"id": 6,
@@ -42776,7 +44850,8 @@
 			"60": 54,
 			"61": 54,
 			"62": 54,
-			"63": 54
+			"63": 54,
+			"64": 5
 		},
 		"spells": {
 			"p": "Transcendent",
@@ -43352,8 +45427,7 @@
 		"title": "the Aspect of Twilight",
 		"slot": "Zoe",
 		"roles": [
-			"mage",
-			"support"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -43624,7 +45698,94 @@
 			"29": 22,
 			"30": 22,
 			"31": 22,
-			"32": 20
+			"32": 20,
+			"33": {
+				"id": 33,
+				"name": "Dark Star Zoe",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Dark Star Zoe",
+						"colors": [
+							"#D02E47",
+							"#7931BD"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33,
+			"42": 33
 		},
 		"spells": {
 			"p": "More Sparkles!",
@@ -44193,7 +46354,8 @@
 		"title": "Daughter of the Void",
 		"slot": "Kaisa",
 		"roles": [
-			"marksman"
+			"marksman",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -44736,7 +46898,94 @@
 			"65": 59,
 			"66": 59,
 			"67": 59,
-			"68": 59
+			"68": 59,
+			"69": {
+				"id": 69,
+				"name": "Dark Star Kai'Sa",
+				"chromas": {
+					"72": {
+						"id": 72,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"77": {
+						"id": 77,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"79": {
+						"id": 79,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"80": {
+						"id": 80,
+						"name": "Dark Star Kai'Sa",
+						"colors": [
+							"#D02E47",
+							"#7931BD"
+						]
+					}
+				}
+			},
+			"72": 69,
+			"73": 69,
+			"74": 69,
+			"75": 69,
+			"76": 69,
+			"77": 69,
+			"78": 69,
+			"79": 69,
+			"80": 69
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -44752,8 +47001,8 @@
 		"title": "the Starry-Eyed Songstress",
 		"slot": "Seraphine",
 		"roles": [
-			"mage",
-			"support"
+			"support",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -45115,7 +47364,67 @@
 			"39": 34,
 			"40": 34,
 			"41": 34,
-			"42": 34
+			"42": 34,
+			"43": {
+				"id": 43,
+				"name": "Battle Dove Seraphine",
+				"chromas": {
+					"44": {
+						"id": 44,
+						"name": "Battle Dove Seraphine",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Battle Dove Seraphine",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Battle Dove Seraphine",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Battle Dove Seraphine",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Battle Dove Seraphine",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Battle Dove Seraphine",
+						"colors": [
+							"#F6A630",
+							"#1C61B4"
+						]
+					}
+				}
+			},
+			"44": 43,
+			"45": 43,
+			"46": 43,
+			"47": 43,
+			"48": 43,
+			"49": 43
 		},
 		"spells": {
 			"p": "Stage Presence",
@@ -46416,7 +48725,99 @@
 			"73": 68,
 			"74": 68,
 			"75": 68,
-			"76": 68
+			"76": 68,
+			"77": {
+				"id": 77,
+				"name": "Battle Wolf Yasuo",
+				"chromas": {
+					"78": {
+						"id": 78,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"79": {
+						"id": 79,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"80": {
+						"id": 80,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"82": {
+						"id": 82,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"83": {
+						"id": 83,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"84": {
+						"id": 84,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"85": {
+						"id": 85,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"86": {
+						"id": 86,
+						"name": "Battle Wolf Yasuo",
+						"colors": [
+							"#F6A630",
+							"#1C61B4"
+						]
+					}
+				}
+			},
+			"78": 77,
+			"79": 77,
+			"80": 77,
+			"81": 77,
+			"82": 77,
+			"83": 77,
+			"84": 77,
+			"85": 77,
+			"86": 77,
+			"87": {
+				"id": 87,
+				"name": "Genesis Nightbringer Yasuo",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Way of the Wanderer",
@@ -46432,7 +48833,8 @@
 		"title": "the Eye of the Void",
 		"slot": "Velkoz",
 		"roles": [
-			"mage"
+			"mage",
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -46892,7 +49294,7 @@
 		"slot": "Camille",
 		"roles": [
 			"fighter",
-			"tank"
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -47626,7 +50028,94 @@
 			"15": 10,
 			"16": 10,
 			"17": 10,
-			"18": 10
+			"18": 10,
+			"19": {
+				"id": 19,
+				"name": "Primordian Bel'Veth",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Primordian Bel'Veth",
+						"colors": [
+							"#3BE98B",
+							"#BABA9B"
+						]
+					}
+				}
+			},
+			"20": 19,
+			"21": 19,
+			"22": 19,
+			"23": 19,
+			"24": 19,
+			"25": 19,
+			"26": 19,
+			"27": 19,
+			"28": 19
 		},
 		"spells": {
 			"p": "Death in Lavender",
@@ -47642,8 +50131,8 @@
 		"title": "the Heart of the Freljord",
 		"slot": "Braum",
 		"roles": [
-			"support",
-			"tank"
+			"tank",
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -48685,7 +51174,85 @@
 				"id": 33,
 				"name": "Prestige Porcelain Kindred",
 				"chromas": {}
-			}
+			},
+			"34": {
+				"id": 34,
+				"name": "Chosen of the Wolf Kindred",
+				"chromas": {
+					"35": {
+						"id": 35,
+						"name": "Chosen of the Wolf Kindred",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Chosen of the Wolf Kindred",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Chosen of the Wolf Kindred",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Chosen of the Wolf Kindred",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Chosen of the Wolf Kindred",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Chosen of the Wolf Kindred",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Chosen of the Wolf Kindred",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Chosen of the Wolf Kindred",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"35": 34,
+			"36": 34,
+			"37": 34,
+			"38": 34,
+			"39": 34,
+			"40": 34,
+			"41": 34,
+			"42": 34
 		},
 		"spells": {
 			"p": "Mark of the Kindred",
@@ -48942,7 +51509,108 @@
 			"24": 19,
 			"25": 19,
 			"26": 19,
-			"27": 19
+			"27": 19,
+			"28": {
+				"id": 28,
+				"name": "Fright Night Zeri",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#3F95B1",
+							"#8655B3"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Fright Night Zeri",
+						"colors": [
+							"#68B856",
+							"#B69017"
+						]
+					}
+				}
+			},
+			"29": {
+				"id": 29,
+				"name": "Prestige Fright Night Zeri",
+				"chromas": {}
+			},
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28,
+			"37": 28,
+			"38": 28,
+			"39": 28
 		},
 		"spells": {
 			"p": "Living Battery",
@@ -49455,7 +52123,22 @@
 			"56": 51,
 			"57": 51,
 			"58": 51,
-			"59": 51
+			"59": 51,
+			"62": {
+				"id": 62,
+				"name": "T1 Jinx",
+				"chromas": {
+					"63": {
+						"id": 63,
+						"name": "T1 Jinx",
+						"colors": [
+							"#AE1F1F",
+							"#DF4F1A"
+						]
+					}
+				}
+			},
+			"63": 62
 		},
 		"spells": {
 			"p": "Get Excited!",
@@ -49471,8 +52154,8 @@
 		"title": "The River King",
 		"slot": "TahmKench",
 		"roles": [
-			"support",
-			"tank"
+			"tank",
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -49894,7 +52577,94 @@
 			"6": 1,
 			"7": 1,
 			"8": 1,
-			"9": 1
+			"9": 1,
+			"10": {
+				"id": 10,
+				"name": "Primordian Briar",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "Primordian Briar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "Primordian Briar",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Primordian Briar",
+						"colors": [
+							"#6ABBEE",
+							"#6ABBEE"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Primordian Briar",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Primordian Briar",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Primordian Briar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Primordian Briar",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Primordian Briar",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Primordian Briar",
+						"colors": [
+							"#3BE98B",
+							"#BABA9B"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10,
+			"17": 10,
+			"18": 10,
+			"19": 10
 		},
 		"spells": {
 			"p": "Crimson Curse",
@@ -49910,8 +52680,8 @@
 		"title": "The Ruined King",
 		"slot": "Viego",
 		"roles": [
-			"assassin",
-			"fighter"
+			"fighter",
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -50218,7 +52988,58 @@
 			"33": 30,
 			"34": 30,
 			"35": 30,
-			"36": 30
+			"36": 30,
+			"37": {
+				"id": 37,
+				"name": "Worlds 2024 Viego",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Worlds 2024 Viego",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Worlds 2024 Viego",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Worlds 2024 Viego",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Worlds 2024 Viego",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Worlds 2024 Viego",
+						"colors": [
+							"#B2C6D7",
+							"#B9916B"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37
 		},
 		"spells": {
 			"p": "Sovereign's Domination",
@@ -50234,8 +53055,8 @@
 		"title": "the Redeemer",
 		"slot": "Senna",
 		"roles": [
-			"marksman",
-			"support"
+			"support",
+			"marksman"
 		],
 		"skins": {
 			"0": {
@@ -50778,7 +53599,8 @@
 		"title": "the Purifier",
 		"slot": "Lucian",
 		"roles": [
-			"marksman"
+			"marksman",
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -51375,7 +54197,16 @@
 			"2": {
 				"id": 2,
 				"name": "SKT T1 Zed",
-				"chromas": {}
+				"chromas": {
+					"67": {
+						"id": 67,
+						"name": "SKT T1 Zed",
+						"colors": [
+							"#64DCC8",
+							"#E446F7"
+						]
+					}
+				}
 			},
 			"3": {
 				"id": 3,
@@ -51872,7 +54703,8 @@
 			"63": 58,
 			"64": 58,
 			"65": 58,
-			"66": 58
+			"66": 58,
+			"67": 2
 		},
 		"spells": {
 			"p": "Contempt for the Weak",
@@ -51888,8 +54720,7 @@
 		"title": "the Cantankerous Cavalier",
 		"slot": "Kled",
 		"roles": [
-			"fighter",
-			"tank"
+			"fighter"
 		],
 		"skins": {
 			"0": {
@@ -52134,7 +54965,7 @@
 		"slot": "Ekko",
 		"roles": [
 			"assassin",
-			"fighter"
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -52623,8 +55454,7 @@
 		"title": "Empress of the Elements",
 		"slot": "Qiyana",
 		"roles": [
-			"assassin",
-			"fighter"
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -53453,7 +56283,12 @@
 			"44": 39,
 			"45": 39,
 			"46": 39,
-			"47": 39
+			"47": 39,
+			"48": {
+				"id": 48,
+				"name": "Arcane Brawler Vi",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Blast Shield",
@@ -53469,8 +56304,7 @@
 		"title": "the Darkin Blade",
 		"slot": "Aatrox",
 		"roles": [
-			"fighter",
-			"tank"
+			"fighter"
 		],
 		"skins": {
 			"0": {
@@ -53726,7 +56560,67 @@
 				"name": "Prestige DRX Aatrox",
 				"chromas": {}
 			},
-			"32": 30
+			"32": 30,
+			"33": {
+				"id": 33,
+				"name": "Primordian Aatrox",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Primordian Aatrox",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Primordian Aatrox",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Primordian Aatrox",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Primordian Aatrox",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Primordian Aatrox",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Primordian Aatrox",
+						"colors": [
+							"#3BE98B",
+							"#BABA9B"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33
 		},
 		"spells": {
 			"p": "Deathbringer Stance",
@@ -54386,7 +57280,85 @@
 			"15": 14,
 			"16": 14,
 			"17": 14,
-			"18": 14
+			"18": 14,
+			"19": {
+				"id": 19,
+				"name": "Attorney Azir",
+				"chromas": {
+					"20": {
+						"id": 20,
+						"name": "Attorney Azir",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"21": {
+						"id": 21,
+						"name": "Attorney Azir",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Attorney Azir",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Attorney Azir",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Attorney Azir",
+						"colors": [
+							"#9F4A25",
+							"#9F4A25"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Attorney Azir",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Attorney Azir",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Attorney Azir",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"20": 19,
+			"21": 19,
+			"22": 19,
+			"23": 19,
+			"24": 19,
+			"25": 19,
+			"26": 19,
+			"27": 19
 		},
 		"spells": {
 			"p": "Shurima's Legacy",
@@ -54824,7 +57796,108 @@
 			"45": 39,
 			"46": 39,
 			"47": 39,
-			"48": 37
+			"48": 37,
+			"49": {
+				"id": 49,
+				"name": "Cyber Cat Yuumi",
+				"chromas": {
+					"51": {
+						"id": 51,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#F6A630",
+							"#1C61B4"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Cyber Cat Yuumi",
+						"colors": [
+							"#FE4BA7",
+							"#74649C"
+						]
+					}
+				}
+			},
+			"50": {
+				"id": 50,
+				"name": "Prestige Cyber Cat Yuumi",
+				"chromas": {}
+			},
+			"51": 49,
+			"52": 49,
+			"53": 49,
+			"54": 49,
+			"55": 49,
+			"56": 49,
+			"57": 49,
+			"58": 49,
+			"59": 49,
+			"60": 49
 		},
 		"spells": {
 			"p": "Feline Friendship",
@@ -54840,7 +57913,8 @@
 		"title": "the Desert Rose",
 		"slot": "Samira",
 		"roles": [
-			"marksman"
+			"marksman",
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -55121,7 +58195,7 @@
 		"slot": "Thresh",
 		"roles": [
 			"support",
-			"fighter"
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -55598,7 +58672,85 @@
 			"55": 49,
 			"56": 49,
 			"57": 49,
-			"58": 49
+			"58": 49,
+			"59": {
+				"id": 59,
+				"name": "Janitor Thresh",
+				"chromas": {
+					"60": {
+						"id": 60,
+						"name": "Janitor Thresh",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Janitor Thresh",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Janitor Thresh",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Janitor Thresh",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Janitor Thresh",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Janitor Thresh",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Janitor Thresh",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Janitor Thresh",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					}
+				}
+			},
+			"60": 59,
+			"61": 59,
+			"62": 59,
+			"63": 59,
+			"64": 59,
+			"65": 59,
+			"66": 59,
+			"67": 59
 		},
 		"spells": {
 			"p": "Damnation",
@@ -55843,7 +58995,94 @@
 			"23": 18,
 			"24": 18,
 			"25": 18,
-			"26": 18
+			"26": 18,
+			"27": {
+				"id": 27,
+				"name": "Battle Bear Illaoi",
+				"chromas": {
+					"28": {
+						"id": 28,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Battle Bear Illaoi",
+						"colors": [
+							"#F6A630",
+							"#1C61B4"
+						]
+					}
+				}
+			},
+			"28": 27,
+			"29": 27,
+			"30": 27,
+			"31": 27,
+			"32": 27,
+			"33": 27,
+			"34": 27,
+			"35": 27,
+			"36": 27
 		},
 		"spells": {
 			"p": "Prophet of an Elder God",
@@ -55859,7 +59098,8 @@
 		"title": "the Void Burrower",
 		"slot": "RekSai",
 		"roles": [
-			"fighter"
+			"fighter",
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -56078,7 +59318,94 @@
 			"22": 17,
 			"23": 17,
 			"24": 17,
-			"25": 17
+			"25": 17,
+			"26": {
+				"id": 26,
+				"name": "Primordian Rek'Sai",
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Primordian Rek'Sai",
+						"colors": [
+							"#3BE98B",
+							"#BABA9B"
+						]
+					}
+				}
+			},
+			"27": 26,
+			"28": 26,
+			"29": 26,
+			"30": 26,
+			"31": 26,
+			"32": 26,
+			"33": 26,
+			"34": 26,
+			"35": 26
 		},
 		"spells": {
 			"p": "Fury of the Xer'Sai",
@@ -56865,7 +60192,22 @@
 			"31": 26,
 			"32": 26,
 			"33": 26,
-			"34": 26
+			"34": 26,
+			"35": {
+				"id": 35,
+				"name": "T1 Bard",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "T1 Bard",
+						"colors": [
+							"#AE1F1F",
+							"#DF4F1A"
+						]
+					}
+				}
+			},
+			"36": 35
 		},
 		"spells": {
 			"p": "Traveler's Call",
@@ -57665,7 +61007,94 @@
 			"43": 37,
 			"44": 37,
 			"45": 37,
-			"46": 37
+			"46": 37,
+			"47": {
+				"id": 47,
+				"name": "Battle Bat Xayah",
+				"chromas": {
+					"48": {
+						"id": 48,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#C1F2FF",
+							"#C1F2FF"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Battle Bat Xayah",
+						"colors": [
+							"#F6A630",
+							"#1C61B4"
+						]
+					}
+				}
+			},
+			"48": 47,
+			"49": 47,
+			"50": 47,
+			"51": 47,
+			"52": 47,
+			"53": 47,
+			"54": 47,
+			"55": 47,
+			"56": 47
 		},
 		"spells": {
 			"p": "Clean Cuts",
@@ -57681,8 +61110,7 @@
 		"title": "The Fire below the Mountain",
 		"slot": "Ornn",
 		"roles": [
-			"tank",
-			"fighter"
+			"tank"
 		],
 		"skins": {
 			"0": {
@@ -58335,7 +61763,67 @@
 			"42": 36,
 			"43": 36,
 			"44": 36,
-			"45": 36
+			"45": 36,
+			"46": {
+				"id": 46,
+				"name": "Dark Star Sylas",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Dark Star Sylas",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Dark Star Sylas",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Dark Star Sylas",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Dark Star Sylas",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Dark Star Sylas",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Dark Star Sylas",
+						"colors": [
+							"#D02E47",
+							"#7931BD"
+						]
+					}
+				}
+			},
+			"47": 46,
+			"48": 46,
+			"49": 46,
+			"50": 46,
+			"51": 46,
+			"52": 46
 		},
 		"spells": {
 			"p": "Petricite Burst",
@@ -58686,7 +62174,85 @@
 			"36": 31,
 			"37": 31,
 			"38": 31,
-			"39": 31
+			"39": 31,
+			"40": {
+				"id": 40,
+				"name": "Cosplayer Neeko",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Cosplayer Neeko",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Cosplayer Neeko",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Cosplayer Neeko",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Cosplayer Neeko",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Cosplayer Neeko",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Cosplayer Neeko",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Cosplayer Neeko",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Cosplayer Neeko",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40,
+			"47": 40,
+			"48": 40
 		},
 		"spells": {
 			"p": "Inherent Glamour",
@@ -59875,7 +63441,94 @@
 			"60": 53,
 			"61": 53,
 			"62": 53,
-			"63": 53
+			"63": 53,
+			"64": {
+				"id": 64,
+				"name": "Fright Night Pyke",
+				"chromas": {
+					"65": {
+						"id": 65,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Fright Night Pyke",
+						"colors": [
+							"#68B856",
+							"#B69017"
+						]
+					}
+				}
+			},
+			"65": 64,
+			"66": 64,
+			"67": 64,
+			"68": 64,
+			"69": 64,
+			"70": 64,
+			"71": 64,
+			"72": 64,
+			"73": 64
 		},
 		"spells": {
 			"p": "Gift of the Drowned Ones",
@@ -60079,8 +63732,8 @@
 		"title": "the Unforgotten",
 		"slot": "Yone",
 		"roles": [
-			"assassin",
-			"fighter"
+			"fighter",
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -60633,6 +64286,90 @@
 			"w": "Spirit Cleave",
 			"e": "Soul Unbound",
 			"r": "Fate Sealed"
+		}
+	},
+	"799": {
+		"id": 799,
+		"name": "Ambessa",
+		"title": "Matriarch of War",
+		"slot": "Ambessa",
+		"roles": [
+			"fighter",
+			"assassin"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Ambessa",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Chosen of the Wolf Ambessa",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Chosen of the Wolf Ambessa",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Chosen of the Wolf Ambessa",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Chosen of the Wolf Ambessa",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Chosen of the Wolf Ambessa",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Chosen of the Wolf Ambessa",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Chosen of the Wolf Ambessa",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1
+		},
+		"spells": {
+			"p": "Drakehound's Step",
+			"q": "Cunning Sweep / Sundering Slam",
+			"w": "Repudiation",
+			"e": "Lacerate",
+			"r": "Public Execution"
 		}
 	},
 	"875": {
@@ -61467,7 +65204,85 @@
 			"24": 19,
 			"25": 19,
 			"26": 19,
-			"27": 19
+			"27": 19,
+			"28": {
+				"id": 28,
+				"name": "Faerie Court Lillia",
+				"chromas": {
+					"29": {
+						"id": 29,
+						"name": "Faerie Court Lillia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Faerie Court Lillia",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Faerie Court Lillia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Faerie Court Lillia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Faerie Court Lillia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Faerie Court Lillia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Faerie Court Lillia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Faerie Court Lillia",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					}
+				}
+			},
+			"29": 28,
+			"30": 28,
+			"31": 28,
+			"32": 28,
+			"33": 28,
+			"34": 28,
+			"35": 28,
+			"36": 28
 		},
 		"spells": {
 			"p": "Dream-Laden Bough",
@@ -61483,8 +65298,7 @@
 		"title": "The Hallowed Seamstress",
 		"slot": "Gwen",
 		"roles": [
-			"fighter",
-			"assassin"
+			"fighter"
 		],
 		"skins": {
 			"0": {
@@ -61743,7 +65557,85 @@
 			"26": 20,
 			"27": 20,
 			"28": 20,
-			"29": 20
+			"29": 20,
+			"30": {
+				"id": 30,
+				"name": "Battle Queen Gwen",
+				"chromas": {
+					"31": {
+						"id": 31,
+						"name": "Battle Queen Gwen",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Battle Queen Gwen",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Battle Queen Gwen",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Battle Queen Gwen",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Battle Queen Gwen",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Battle Queen Gwen",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Battle Queen Gwen",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Battle Queen Gwen",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"31": 30,
+			"32": 30,
+			"33": 30,
+			"34": 30,
+			"35": 30,
+			"36": 30,
+			"37": 30,
+			"38": 30
 		},
 		"spells": {
 			"p": "A Thousand Cuts",
@@ -62032,6 +65924,117 @@
 			"w": "Bailout",
 			"e": "Loyalty Program",
 			"r": "Hostile Takeover"
+		}
+	},
+	"893": {
+		"id": 893,
+		"name": "Aurora",
+		"title": "the Witch Between Worlds",
+		"slot": "Aurora",
+		"roles": [
+			"mage",
+			"assassin"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Aurora",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Battle Bunny Aurora",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "Battle Bunny Aurora",
+						"colors": [
+							"#F6A630",
+							"#1C61B4"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1,
+			"10": 1
+		},
+		"spells": {
+			"p": "Spirit Abjuration",
+			"q": "Twofold Hex",
+			"w": "Across the Veil",
+			"e": "The Weirding",
+			"r": "Between Worlds"
 		}
 	},
 	"895": {
@@ -62405,7 +66408,8 @@
 		"title": "the Fiery Fledgling",
 		"slot": "Smolder",
 		"roles": [
-			"marksman"
+			"marksman",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -62515,7 +66519,8 @@
 		"title": "The Gentle Flame",
 		"slot": "Milio",
 		"roles": [
-			"support"
+			"support",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -62609,7 +66614,85 @@
 			"7": 1,
 			"8": 1,
 			"9": 1,
-			"10": 1
+			"10": 1,
+			"11": {
+				"id": 11,
+				"name": "Rain Shepherd Milio",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Rain Shepherd Milio",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Rain Shepherd Milio",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Rain Shepherd Milio",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Rain Shepherd Milio",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Rain Shepherd Milio",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Rain Shepherd Milio",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Rain Shepherd Milio",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Rain Shepherd Milio",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "Fired Up!",
@@ -62625,7 +66708,8 @@
 		"title": "the Visionary",
 		"slot": "Hwei",
 		"roles": [
-			"mage"
+			"mage",
+			"support"
 		],
 		"skins": {
 			"0": {
@@ -62735,7 +66819,8 @@
 		"title": "the Hound of a Hundred Bites",
 		"slot": "Naafiri",
 		"roles": [
-			"assassin"
+			"assassin",
+			"fighter"
 		],
 		"skins": {
 			"0": {

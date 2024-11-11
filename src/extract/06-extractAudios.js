@@ -1,57 +1,42 @@
 import { execFileSync } from 'child_process';
-import { existsSync, writeFileSync } from 'fs';
-import { resolve } from 'path';
+import { existsSync, writeFileSync, readdirSync } from 'fs';
+import { parse as parsePath, resolve as resolvePath } from 'path';
 
-import { emptyDirSync, readJSONSync } from 'fs-extra/esm';
+import { emptyDirSync } from 'fs-extra/esm';
 
 import Biffer from '@nuogz/biffer';
 
-import { C, G } from '@nuogz/pangu';
+import { G } from '@nuogz/pangu';
 
-import { dirCache } from '../../lib/dir.js';
-import { I } from '../../lib/info.js';
-import { toHexL8 } from '../../lib/utility.js';
-
+import { T, TS } from '../../lib/i18n.js';
+import { TLogError, toHexL8 } from '../../lib/utility.js';
 
 
-const isSameTakeConfig = () => {
-	if(C.forceExtract) { return true; }
+
+const GG = G.where(T('extract-audio:where'));
 
 
-	let isSameTakeConfig = false;
+/**
+ * @param {string} file
+ * @param {string} dirExtract
+ */
+const extractWEM = (file, dirExtract) => {
+	const base = parsePath(file).base;
 
 	try {
-		const lastTakeConfig = readJSONSync(resolve(dirCache, 'lastTakeWpk.json'));
+		GG.infoU(...TS('extract-audio:extract-wem', { name: base }, '...'));
 
-		if(C.sourceWAD != 'fetch' && lastTakeConfig &&
-			lastTakeConfig.slot == I.slot &&
-			lastTakeConfig.lang == C.lang &&
-			lastTakeConfig.format == C.format &&
-			lastTakeConfig.detect.sort().join(',') == I.idsSkin.sort().join(',')
-		) {
-			isSameTakeConfig = true;
-		}
-	}
-	catch(error) { isSameTakeConfig = false; }
 
-	return isSameTakeConfig;
-};
+		const bifferBank = new Biffer(file);
+		const [magic] = bifferBank.unpack('4s');
 
-const extractWEM = file => {
-	try {
-		G.infoU('AudioExtractor', `extract ~{${file}} to ~{wem}`, `○ extracting...`);
-
-		emptyDirSync(resolve(dirCache, 'audio', file, 'wem'));
-
-		const bifferWPK = new Biffer(resolve(dirCache, 'extract', file));
-		const [magic] = bifferWPK.unpack('4s');
-
+		// bnk file
 		if(magic != 'r3d2') {
-			bifferWPK.seek(0);
+			bifferBank.seek(0);
 
 			let indexData;
-			while(!bifferWPK.isEnd()) {
-				const [tagSection, sizeSection] = bifferWPK.unpack('4sL');
+			while(!bifferBank.isEnd()) {
+				const [tagSection, sizeSection] = bifferBank.unpack('4sL');
 
 				// Bank Header
 				if(tagSection == 'BKHD') {
@@ -63,28 +48,28 @@ const extractWEM = file => {
 						// 1111 1111 1111 1111 0000 0000 0000 0000 = allocatedDevice
 						/* bitsValuesAlt */,
 						idProject
-					] = bifferWPK.unpack('5L');
+					] = bifferBank.unpack('5L');
 
 					const gap = sizeSection - Biffer.calc('5L');
-					if(gap > 0) { bifferWPK.skip(gap); }
+					if(gap > 0) { bifferBank.skip(gap); }
 
 
 					if(version != 134) {
-						G.errorD('AudioExtractor', `~[${file}] unexpected ~[Bank Version]`, `~{${version}}`);
+						G.errorD('AudioExtractor', `~[${base}] unexpected ~[Bank Version]`, `~{${version}}`);
 
 						throw Error(`unexpected ~[Bank Version]~{${version}}`);
 					}
 
-					G.debugD('AudioExtractor', `~[${file}] ~[Bank Header]`, `~[Version]~{${version}} ~[Bank ID]~{${toHexL8(idBank)}} ~[Project ID]~{${toHexL8(idProject)}}`);
+					G.debugD('AudioExtractor', `~[${base}] ~[Bank Header]`, `~[Version]~{${version}} ~[Bank ID]~{${toHexL8(idBank)}} ~[Project ID]~{${toHexL8(idProject)}}`);
 				}
 				else if(tagSection == 'DIDX') {
 					if(indexData) {
-						G.errorD('AudioExtractor', `~[${file}] unexpected ~[Data Index]`, `data index more than one`);
+						G.errorD('AudioExtractor', `~[${base}] unexpected ~[Data Index]`, `data index more than one`);
 
 						throw Error(`unexpected ~[Data Index] length`);
 					}
 
-					const bifferDIDX = bifferWPK.sub(sizeSection);
+					const bifferDIDX = bifferBank.sub(sizeSection);
 
 					const headers = [];
 					while(!bifferDIDX.isEnd()) {
@@ -95,89 +80,105 @@ const extractWEM = file => {
 
 					indexData = { tag: 'DIDX', headers };
 
-					G.debugD('AudioExtractor', `~[${file}] ~[Data Index]`, `~[Size]~{${headers.length}}`);
+					G.debugD('AudioExtractor', `~[${base}] ~[Data Index]`, `~[Size]~{${headers.length}}`);
 				}
 				else if(tagSection == 'DATA') {
-					const bifferDATA = bifferWPK.sub(sizeSection);
+					const bifferDATA = bifferBank.sub(sizeSection);
 
 					if(!indexData) { continue; }
 
 					for(const { id, offset, size } of indexData.headers) {
 						bifferDATA.seek(offset);
 
-						writeFileSync(resolve(dirCache, 'audio', file, 'wem', `${id}.wem`), bifferDATA.slice(size));
+						writeFileSync(resolvePath(dirExtract, `${id}.wem`), bifferDATA.slice(size));
 					}
 				}
 				else {
-					bifferWPK.skip(sizeSection);
+					bifferBank.skip(sizeSection);
 
-					G.warnD('AudioExtractor', `~[${file}] unhandled ~[Bank Section Tag]~{${tagSection}}`, `~[Size]~{${sizeSection}}`);
+					G.warnD('AudioExtractor', `~[${base}] unhandled ~[Bank Section Tag]~{${tagSection}}`, `~[Size]~{${sizeSection}}`);
 				}
 			}
 		}
+		// wpk file
 		else {
-			const [version, count] = bifferWPK.unpack('LL');
-			if(version != 1) { G.warnD('AudioExtractor', `~[${file}] unhandled ~[Wwise Package Version]~{${version}}`, `~[Version]~{${version}}`); }
+			const [version, count] = bifferBank.unpack('LL');
+			if(version != 1) { G.warnD('AudioExtractor', `~[${base}] unhandled ~[Wwise Package Version]~{${version}}`, `~[Version]~{${version}}`); }
 
 
-			const offsetsData = bifferWPK.unpack(`${count}L`);
+			const offsetsData = bifferBank.unpack(`${count}L`);
 			for(const offsetData of offsetsData) {
-				bifferWPK.seek(offsetData);
+				bifferBank.seek(offsetData);
 
-				const [offset, size, nameLength] = bifferWPK.unpack('LLL');
+				const [offset, size, nameLength] = bifferBank.unpack('LLL');
 
-				if(size && offset && offset < bifferWPK.length) {
-					const name = Buffer.from([...bifferWPK.slice(nameLength * 2)].filter(byte => byte)).toString('utf8');
+				if(size && offset && offset < bifferBank.length) {
+					const name = Buffer.from([...bifferBank.slice(nameLength * 2)].filter(byte => byte)).toString('utf8');
 
-					bifferWPK.seek(offset);
+					bifferBank.seek(offset);
 
 					if(name) {
-						writeFileSync(resolve(dirCache, 'audio', file, 'wem', name), bifferWPK.slice(size));
+						writeFileSync(resolvePath(dirExtract, name), bifferBank.slice(size));
 					}
 				}
 			}
 		}
 
-		G.infoD('AudioExtractor', `extract ~{${file}} to ~{wem}`, `✔ `);
+		GG.infoD(...TS('extract-audio:extract-wem', { name: base }, '✔'));
 	}
 	catch(error) {
-		G.errorD('AudioExtractor', `extract ~{${file}} to ~{wem}`, error);
+		throw TLogError('extract-audio:extract-wem', {}, error);
 	}
 };
 
-export default function extractAudios(filesWPK) {
-	if(isSameTakeConfig()) { G.infoD('AudioExtractor', 'same extract config founded', 'skip'); return; }
 
-	for(let fileWPK of filesWPK) {
-		emptyDirSync(resolve(dirCache, 'audio', fileWPK));
+/**
+ * @param {string[]} filesBank
+ * @param {import('../../bases.d.ts').ExtractConfig} E
+ */
+export default function extractAudios(filesBank, E) {
+	for(const fileBank of filesBank) {
+		const pathParsedBank = parsePath(fileBank);
+		const baseBank = pathParsedBank.base;
 
-		extractWEM(fileWPK);
+		const dirCacheAudioWEM = resolvePath(E.dirCacheAudio, `[wem]${baseBank}`);
+		const dirCacheAudioWAV = resolvePath(E.dirCacheAudio, `[wav]${baseBank}`);
+		const countCacheAudioWEM = existsSync(dirCacheAudioWEM) ? readdirSync(dirCacheAudioWEM).length : 0;
+		const countCacheAudioWAV = existsSync(dirCacheAudioWAV) ? readdirSync(dirCacheAudioWAV).length : 0;
 
-		if(C.format == 'wav' || C.format == 'ogg') {
-			G.infoU('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `○ extracting...`);
+		if(!E.forceExtractFile && countCacheAudioWEM == countCacheAudioWAV && countCacheAudioWEM > 0) { return GG.infoD(...TS('extract-audio.', 'check-cache', 'skip-found-cache')); }
 
-			if(existsSync(C.path.rextractorConsole)) {
+
+		emptyDirSync(dirCacheAudioWEM);
+		emptyDirSync(dirCacheAudioWAV);
+
+
+		GG.infoU(...TS('extract-audio:extract-wem', { name: baseBank }, '...'));
+
+		extractWEM(fileBank, dirCacheAudioWEM);
+
+		GG.infoD(...TS('extract-audio:extract-wem', { name: baseBank }, '✔'));
+
+
+		GG.infoU(...TS('extract-audio:extract', { format: E.format, name: baseBank }, '...'));
+
+		if(E.format == 'wav' || E.format == 'ogg') {
+			if(existsSync(E.fileRExtractorConsole)) {
 				try {
-					execFileSync(C.path.rextractorConsole, [
-						resolve(dirCache, 'extract', fileWPK),
-						resolve(dirCache, 'audio', fileWPK),
-						`/sf:${C.format}`
-					], { timeout: 1000 * 60 * 10 });
+					execFileSync(E.fileRExtractorConsole, [fileBank, dirCacheAudioWAV, `/sf:${E.format}`], { timeout: 1000 * 60 * 10 });
 				}
 				catch(error) {
-					G.errorD('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `exec ~[Rextractor]`, error);
+					GG.errorD(T('extract-audio:exectue-rextractor', { format: E.format, name: baseBank }), error);
 				}
 			}
 			else {
-				G.errorD('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `~[Rextractor] not exists`, `path~{${C.path.rextractorConsole}}`);
+				GG.errorD(...TS('extract-audio:extract', { format: E.format, name: baseBank, path: E.fileRExtractorConsole }, 'unknown-rextractor'));
 			}
 
-			G.infoD('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, '✔ ');
+			GG.infoD(...TS('extract-audio:extract', { format: E.format, name: baseBank }, '✔'));
 		}
 		else {
-			G.error('AudioExtractor', `extract ~{${fileWPK}} to ~{${C.format}}`, `unknown format~{${C.format}}`, 'skip');
+			GG.warnD(...TS('extract-audio:extract', { format: E.format, name: baseBank }, 'skip-unknown-format'));
 		}
 	}
-
-	writeFileSync(resolve(dirCache, 'lastTakeWpk.json'), JSON.stringify({ slot: I.slot, lang: C.lang, format: C.format, detect: I.idsSkin }));
 }

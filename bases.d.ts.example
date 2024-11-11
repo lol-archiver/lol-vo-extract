@@ -1,0 +1,5 @@
+// export type * from './bases.zh-cn.d.ts';
+// export type * from './bases.en-us.d.ts';
+
+
+export { Melinoe } from './node_modules/@nuogz/pangu/node_modules/@nuogz/hades/types/index.js';

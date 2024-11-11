@@ -61,7 +61,7 @@ export class HIRCObject {
 		this.type = type;
 	}
 
-	toString() { return `${this.typeName ?? this.__proto__.constructor.name}:${showID(this.id)}${this.overrided?' override':''}`; }
+	toString() { return `${this.typeName ?? Object.getPrototypeOf(this).constructor.name}:${showID(this.id)}${this.overrided?' override':''}`; }
 }
 
 
@@ -109,7 +109,7 @@ export class HIRCEvent extends HIRCObject {
 		this.idsAction = null;
 	}
 
-	toString() { return `${super.toString()} --> name:${this.eventFull}`; }
+	toString() { return `${super.toString()} --> name:${this.event}`; }
 }
 
 export class HIRCContainer extends HIRCObject {

@@ -1,103 +1,97 @@
+import { G } from '@nuogz/pangu';
+
 import { appendFileSync, copyFileSync, existsSync, readdirSync, readFileSync } from 'fs';
-import { parse, resolve } from 'path';
+import { parse as parsePath, resolve as resolvePath } from 'path';
 
 import { ensureDirSync } from 'fs-extra/esm';
 
-import { C, G } from '@nuogz/pangu';
 
-import { dirCache, dirFinal } from '../../lib/dir.js';
-import { T } from '../../lib/i18n.js';
 import { crc32, pad0, showID, toHexL8 } from '../../lib/utility.js';
-import { I } from '../../lib/info.js';
-import { D } from '../../lib/database.js';
-
-
-const lang = !C.saveWithShort ? C.lang : C.lang.split('_')[0];
-const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
 
 
 
-export default function copyAudios(eventsAll$idAudio, namesFileSoundBank, idsSoundAll$idAudio, infosExtract$pathInWAD) {
+/**
+ * @param {string[]} filesBank
+ * @param {Object<string, Set>} events$idAudio
+ * @param {Object<string, Set>} idsSound$idAudio
+ * @param {import('../../bases.d.ts').ExtractConfig} E
+ */
+export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$idAudio, E) {
 	G.infoU('AudioCopier', 'copy audio', '○ coping...');
 
-	for(const nameFileSoundBank of namesFileSoundBank) {
-		const copyWhileEmpty = nameFileSoundBank.startsWith('sfx') ? (C.useSFXLevel >= 2 ? true : false) : true;
+	for(const fileBank of filesBank) {
+		const pathParsedBank = parsePath(fileBank);
+		const baseBank = pathParsedBank.base;
 
-		const pathDir = resolve(dirCache, 'audio', nameFileSoundBank);
 
-		if(!existsSync(pathDir)) {
-			G.warn('AudioCopier', 'copy audio', `path~{${pathDir}} not exists`);
+		const willCopy = baseBank.includes('sfx') ? (E.levelSoundEffect == 'extract' ? true : false) : true;
+
+		const dirCacheAudioWAV = resolvePath(E.dirCacheAudio, `[wav]${baseBank}`);
+		const dirCacheAudioWEM = resolvePath(E.dirCacheAudio, `[wem]${baseBank}`);
+
+		if(!existsSync(dirCacheAudioWAV)) {
+			G.warn('AudioCopier', 'copy audio', `path~{${dirCacheAudioWAV}} not exists`);
+
+			continue;
+		}
+		if(!existsSync(dirCacheAudioWEM)) {
+			G.warn('AudioCopier', 'copy audio', `path~{${dirCacheAudioWEM}} not exists`);
 
 			continue;
 		}
 
-		for(let audioFile of readdirSync(pathDir).filter(file => file != 'wem')) {
-			const idAudio = parse(audioFile).name;
+		for(const fileAudio of readdirSync(dirCacheAudioWAV)) {
+			const idAudio = parsePath(fileAudio).name;
 			const hexIDAudio = toHexL8(idAudio);
-			const src = resolve(pathDir, `${idAudio}.${C.format}`);
-			const srcWEM = resolve(pathDir, 'wem', `${idAudio}.wem`);
 
-			const events$nameSkin = {};
-			const eventsAudio$idAudio = eventsAll$idAudio[idAudio] || [];
+			const srcWAV = resolvePath(dirCacheAudioWAV, `${idAudio}.${E.format}`);
+			const srcWEM = resolvePath(dirCacheAudioWEM, `${idAudio}.wem`);
 
-			const indexFileAudio = Object.values(infosExtract$pathInWAD).find(info => info.key == nameFileSoundBank)?.index ?? I.idsSkin?.[0];
-			const dChampion = D[I.id];
+			const events = [...events$idAudio[idAudio]].map(event => event.toLowerCase()
+				.replace(/^play_vo_/, '')
+				.replace(new RegExp(`^${E.champion?.slot}${E.skin?.id ? `skin${pad0(E.skin.id, 2)}` : ''}_`.toLowerCase()), '')
+			);
+			if(!events.length && willCopy) { events.push('unmatch-event'); }
 
-			for(const eventAudio of eventsAudio$idAudio) {
-				const idSkin = (eventAudio?.index || eventAudio?.index === 0 ? eventAudio.index : indexFileAudio);
-				const statusMatch = typeof eventAudio == 'number' ? `(${T('match:unmatchEvent')})` : !(eventAudio?.index || eventAudio?.index === 0) ? `(${T('match:unmatchSkin')})` : '';
-
-				const dSkin = dChampion.skins[idSkin];
-
-				const nameSkin = `${pad0(I.id)}${pad0(idSkin)}@${statusMatch}${(eventAudio?.skinName ?? dSkin?.name)?.replace(/[:"]/g, '')}@${region}@${lang}`;
-
-				(events$nameSkin[nameSkin] || (events$nameSkin[nameSkin] = [])).push(eventAudio?.short ?? eventAudio?.name ?? eventAudio);
-			}
-
-			if(!eventsAudio$idAudio.length && copyWhileEmpty) {
-				const nameSkin = `${pad0(I.id)}${pad0(indexFileAudio)}@(${T('match:unknownSlot')})@${region}@${lang}`;
-
-				(events$nameSkin[nameSkin] || (events$nameSkin[nameSkin] = [])).push('UnknownSlot');
-			}
-
-			if(!Object.keys(events$nameSkin).length) { G.warn('AudioCopier', `~[Audio File]~{${showID(idAudio)}} can't match anything`, '✖ Skip'); continue; }
 
 			const existedWEM = existsSync(srcWEM);
 			if(!existedWEM) { G.warn('AudioCopier', `~[Audio File]~{${showID(idAudio)}} does not have ~[source WEM]`, '✖'); }
-			const crcWEM = existedWEM ? crc32(readFileSync(srcWEM)) : 'wem-not-exist';
+			const crcWEM = existedWEM ? crc32(readFileSync(srcWEM)) : 'no-wem';
 
-			for(const [nameSkin, events] of Object.entries(events$nameSkin)) {
-				const logsTooLong = [`-------${I.time}-------`];
 
-				const pathFolder = resolve(dirFinal, nameSkin);
+			const logsTooLong = [`-------${E.timeExtract.format()}-------`];
 
-				ensureDirSync(pathFolder);
+			const dirExportVoice = resolvePath(E.dirExportVoice, E.nameDirExport);
+			ensureDirSync(dirExportVoice);
 
-				const eventsText = events.join('&');
-				const audioText =
-					idsSoundAll$idAudio[idAudio]
-						? `[${idsSoundAll$idAudio[idAudio].slice(0, 4).map(id => toHexL8(id)).join('.')}${idsSoundAll$idAudio[idAudio].length > 4 ? '.more' : ''}][${hexIDAudio}][${crcWEM}].${C.format}`
-						: `[sound-not-found][${hexIDAudio}][${crcWEM}].${C.format}`;
 
-				try {
-					if(eventsText.length > 128) { throw 'eventsText.length > 128'; }
+			const eventsText = events.join('&');
+			const idsSound = [...idsSound$idAudio[idAudio]];
+			const audioText = (idsSound
+				? `[${idsSound.slice(0, 4).map(id => toHexL8(id)).join('.')}${idsSound.length > 4 ? '.more' : ''}]`
+				: `[no-sound]`)
+				+ `[${hexIDAudio}][${crcWEM}].${E.format}`;
 
-					copyFileSync(
-						src,
-						resolve(pathFolder, `${eventsText}${audioText}`),
-					);
-				} catch(error) {
-					copyFileSync(
-						src,
-						resolve(pathFolder, `@LongEvent${audioText}`),
-					);
 
-					logsTooLong.push(`[${hexIDAudio}] ==> ${events.sort().join(' | ')}`);
-				}
+			try {
+				if(eventsText.length > 128) { throw 'eventsText.length > 128'; }
 
-				if(logsTooLong.length > 1) {
-					appendFileSync(resolve(pathFolder, '@LongEvent.txt'), '\n' + logsTooLong.join('\n'));
-				}
+				copyFileSync(
+					srcWAV,
+					resolvePath(dirExportVoice, `${eventsText}${audioText}`),
+				);
+			}
+			catch {
+				copyFileSync(
+					srcWAV,
+					resolvePath(dirExportVoice, `@long-event${audioText}`),
+				);
+
+				logsTooLong.push(`[${hexIDAudio}] ==> ${events.sort().join(' | ')}`);
+			}
+
+			if(logsTooLong.length > 1) {
+				appendFileSync(resolvePath(dirExportVoice, '@long-event.txt'), '\n' + logsTooLong.join('\n'));
 			}
 		}
 	}

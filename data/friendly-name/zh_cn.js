@@ -40,6 +40,7 @@ export default [
 	['Health', '血量'],
 	['General', ''],
 	['UseItem', '使用:道具'],
+	['Purchase', '购买:道具'],
 
 	['KillingSpree', '连杀:大杀特杀'],
 

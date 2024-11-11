@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v2.1.0 - 2024.11.11 18
+* refactor!: huge refactor config design!!!
+* refactor!: renew all codes
+* refactor!: clean some files (wip)
+* deps: bump up dependencies
+* docs: add types with i18n (wip)
+* chore: update base data
+* chore: renew develop environments
+
+
 ## v2.0.1 - 2022.09.08.11
 * update base data
 * update dependencies

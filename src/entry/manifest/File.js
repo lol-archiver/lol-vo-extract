@@ -79,12 +79,12 @@ export default class File {
 			appendFileSync(pathCacheZstd, parser.slice(chunk.sizeCompressed));
 		}
 
-		return new Promise((resolve, reject) => decompress(pathCacheZstd, pathSave, error => {
-			if(error) { reject(error); }
+		return new Promise((resolver, rejecter) => decompress(pathCacheZstd, pathSave, error => {
+			if(error) { rejecter(error); }
 
 			G.infoD(T('extractFile:where'), T('extractFile:do', { file: parseInfo.base }), '✔ ');
 
-			resolve(pathSave);
+			resolver(pathSave);
 		}));
 	}
 }

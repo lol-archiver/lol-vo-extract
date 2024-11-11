@@ -1,98 +1,133 @@
-import '../index.env.js';
-import { C } from '@nuogz/pangu';
+import '@nuogz/pangu/index.js?i18n&config&day&log=copy-audio-with-line&log.willOutputConsoleError=true';
+import { C, G, dirWorking } from '@nuogz/pangu';
 
+import { spawnSync } from 'child_process';
 import { copyFileSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
 
 import Filenamify from 'filenamify';
 import { emptyDirSync } from 'fs-extra/esm';
 
-import { dirFinal, dirTextAudio } from '../lib/dir.js';
+import { T, TS } from '../lib/i18n.js';
 
-import { I } from '../lib/info.js';
-
-
-
-// const safeFileName = name => name.replace(/:/g, '：').replace(/<(.*?)>/g, '（$1）').replace(/["*[\]<>\\/]|\\n/g, '');
+import parseRuncom from '../src/parse-runcom.js';
+import { pad0 } from '../lib/utility.js';
+import parseExtractConfig from '../src/parse-extract-config.js';
 
 
-const dirTarget = resolve(dirTextAudio, '@line-audio');
-emptyDirSync(dirTarget);
+
+const GG = G.where(T('where:main'));
 
 
-const idFull = I.id0Full;
-const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
-
-const idMatch = `${idFull}@`;
-const regionMatch = `@${region}`;
-const langMatch = `@${C.lang.split('_')[0]}`;
+/** @param {import('../bases.d.ts').ExtractConfig} E */
+const copyAudioWithLine = E => {
+	const dirTarget = resolve(dirWorking, '@3side', '@line-audio');
+	emptyDirSync(dirTarget);
 
 
-const fileLine = readdirSync(resolve(C.path.dirLines, 'dictation')).find(dirent => dirent.startsWith(idMatch) && !dirent.includes('.bak.'));
-const dirsAudio = [
-	resolve(dirFinal, readdirSync(resolve(dirFinal)).find(dirent => dirent.startsWith(idMatch) && dirent.includes(regionMatch) && dirent.includes(langMatch))),
-];
+	const region = (!E.saveWithShort ? E.regionCDN : E.regionCDN.replace(/\d+$/, '')).toLowerCase();
+
+	const slotMatch = E.mode == 'skin' ? `${pad0(E.champion.id)}${pad0(E.skin.id)}@` : `${E.slot}@`;
+	const regionMatch = E.mode == 'skin' ? `@${region}` : '';
+	const langMatch = `@${E.lang.split('_')[0]}`;
 
 
-const filesAudio = dirsAudio.map(dirAudio => readdirSync(dirAudio).map(file => resolve(dirAudio, file))).flat();
-const textsLine = readFileSync(resolve(C.path.dirLines, 'dictation', fileLine), 'utf-8').split('\n').filter(text => text.trim());
+	const fileLine = readdirSync(E.dirDictations).find(dirent => dirent.includes(slotMatch) && !dirent.includes('.bak.'));
+	const dirsAudio = [resolve(E.dirExportVoice,
+		readdirSync(resolve(E.dirExportVoice)).find(dirent =>
+			dirent.startsWith(slotMatch) &&
+			dirent.includes(regionMatch) &&
+			dirent.includes(langMatch))),
+	];
 
 
-let eventNow;
-let startedLine = false;
-for(const textLine of textsLine) {
-	if(!startedLine) {
-		if(textLine == '## Lines:台词') { startedLine = true; }
-
-		continue;
-	}
-
-	if(textLine.startsWith('<!--')) { continue; }
+	const filesAudio = dirsAudio.map(dirAudio => readdirSync(dirAudio).map(file => resolve(dirAudio, file))).flat();
+	const textsLine = readFileSync(resolve(E.dirDictations, fileLine), 'utf-8').split('\n').filter(text => text.trim());
 
 
-	if(textLine.startsWith('### **')) {
-		[eventNow] = textLine.replace('### ', '').replace(/\*\*/g, '').trim().split(' | ');
-	}
-	else {
-		const [, rawMeta, line] = textLine.match(/^- `(.*?)(?<!\\)` (.*)$/) ?? [];
-		const [idSound, /* idAudio */, ...rawExtras] = rawMeta.trim().split(/(?<!\\)\|/);
-		const extras = rawExtras.map(raw => {
-			const [type, rawParams = ''] = raw.split(/(?<!\\):/);
+	let eventNow;
+	let startedLine = false;
+	for(const textLine of textsLine) {
+		if(!startedLine) {
+			if(textLine == '## Lines:台词') { startedLine = true; }
 
-			return { type, params: rawParams.split(/(?<!\\),/) };
-		});
-		if(extras.find(e => e.type == 'ignore')) { continue; }
-
-
-		let condNow = '';
-		let condExtra = extras.find(e => e.type == 'cond');
-		if(condExtra) {
-			condNow = condExtra.params[0];
+			continue;
 		}
 
+		if(textLine.startsWith('<!--')) { continue; }
 
-		let fileSource;
-		const fileAudio = filesAudio.find(fileName => fileName.includes(`[${idSound}]`));
 
-		if(fileAudio) { fileSource = fileAudio; }
-		else if(idSound == '00000000' || idSound == '00000001') {
-			if(eventNow.includes('[选用]')) {
-				fileSource = resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'pick.wav');
-			}
-			else if(eventNow.includes('[禁用]')) {
-				fileSource = resolve(C.path.dirAutogen, 'reso', 'voice', String(I.champion.id), 'ban.wav');
-			}
+		if(textLine.startsWith('### **')) {
+			[eventNow] = textLine.replace('### ', '').replace(/\*\*/g, '').trim().split(' | ');
 		}
 		else {
-			globalThis.console.warn('unmatch: ', eventNow + condNow, line);
-		}
+			const [, rawMeta, line] = textLine.match(/^- `(.*?)(?<!\\)` (.*)$/) ?? [];
+			const [idSound, /* idAudio */, ...rawExtras] = rawMeta.trim().split(/(?<!\\)\|/);
+			const extras = rawExtras.map(raw => {
+				const [type, rawParams = ''] = raw.split(/(?<!\\):/);
+
+				return { type, params: rawParams.split(/(?<!\\),/) };
+			});
+			if(extras.find(e => e.type == 'ignore')) { continue; }
 
 
-		if(fileSource) {
-			copyFileSync(
-				fileSource,
-				resolve(dirTarget, Filenamify(`${eventNow}${condNow ? `[子条件：${condNow}]` : ''} ${line}(${idSound}).wav`))
-			);
+			let condNow = '';
+			let condExtra = extras.find(e => e.type == 'cond');
+			if(condExtra) {
+				condNow = condExtra.params[0];
+			}
+
+			const idSoundFirst = idSound.split('.')[0];
+
+			let fileSource;
+			const fileAudio = filesAudio.find(fileName => fileName.includes(`${idSoundFirst}`));
+
+			if(fileAudio) { fileSource = fileAudio; }
+			else if(idSoundFirst == '00000000' || idSoundFirst == '00000001') {
+				if(eventNow.includes('[选用]')) {
+					fileSource = resolve(E.dirAutogen, 'reso', 'project', String(E.champion.slot), 'voice-pick.wav');
+				}
+				else if(eventNow.includes('[禁用]')) {
+					fileSource = resolve(E.dirAutogen, 'reso', 'project', String(E.champion.slot), 'voice-ban.wav');
+				}
+			}
+			else {
+				globalThis.console.warn('unmatch: ', eventNow + condNow, line);
+			}
+
+
+			if(fileSource) {
+				copyFileSync(
+					fileSource,
+					resolve(dirTarget, Filenamify(`${eventNow}${condNow ? `[子条件：${condNow}]` : ''} ${line}(${idSoundFirst}).wav`))
+				);
+			}
 		}
 	}
+
+
+
+	spawnSync('explorer', [dirTarget]);
+};
+
+
+
+try {
+	const runcoms = parseRuncom(C.runcom);
+	const configsExtract = parseExtractConfig(runcoms);
+	const configExtract = configsExtract[0];
+
+
+	if(configExtract.mode == 'skin') {
+		GG.info(...TS('execute-config', { config: configExtract }, 'info-skin'));
+	}
+	else {
+		GG.info(...TS('execute-config', { config: configExtract }, 'info-specify'));
+	}
+
+
+	await copyAudioWithLine(configExtract);
+}
+catch(error) {
+	GG.error('复制[语音]', error);
 }

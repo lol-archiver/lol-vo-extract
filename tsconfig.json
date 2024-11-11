@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "nodenext",
+		"module": "nodenext",
+		"target": "esnext",
+		"experimentalDecorators": true,
+		"strict": true,
+		"allowJs": true,
+		"jsx": "preserve",
+		"declaration": true,
+		"declarationDir": "./types",
+		"emitDeclarationOnly": true
+	},
+	"include": [
+		"configs.d.ts",
+		"bases.d.ts",
+		"bases.zh-cn.d.ts",
+		"**/*.js"
+	],
+	"exclude": [
+		"eslint.config.js",
+		"node_modules",
+		"test"
+	]
+}

@@ -1,59 +1,30 @@
 import { existsSync } from 'fs';
 import { resolve } from 'path';
 
-import { C, G } from '@nuogz/pangu';
-
-import { T } from '../../lib/i18n.js';
-import { I } from '../../lib/info.js';
-import { SOURCE_WAD } from '../../lib/constant.js';
-import { dirCache } from '../../lib/dir.js';
+import { SOURCE_WAD as SOURCE_ASSET } from '../../lib/constant.js';
+import { TLogError } from '../../lib/utility.js';
 
 
 
-const isSourceFromClient = C.sourceWAD == SOURCE_WAD.CLIENT;
-const isSourceFromFetch = C.sourceWAD == SOURCE_WAD.FETCH;
+/** @param {import('../../bases.d.ts').ExtractConfig} E */
+export default function parseAssetFilesNeed(E) {
+	const namePackMain = `${E.slot}.wad.client`.toLowerCase();
+	const namePackLang = `${E.slot}.${E.lang}.wad.client`.toLowerCase();
 
 
-const dirCacheAsset = resolve(dirCache, 'asset');
+	const filesNeed = [
+		{ name: namePackMain, type: 'champion-main', path: resolve(E.dirGameClient, 'game', 'data', 'final', 'champions', namePackMain), existing: false },
+		{ name: namePackLang, type: 'champion-lang', path: resolve(E.dirGameClient, 'game', 'data', 'final', 'champions', namePackLang), existing: false },
+	];
 
+	for(const file of filesNeed) {
+		file.existing = existsSync(file.path);
 
-const detectNeedFetch = ({ file }) => {
-	const isExist = existsSync(file);
-
-	if(isSourceFromClient && !isExist) {
-		throw Error(T('error:clientFileNotExist', { file }));
+		if(E.sourceAsset == SOURCE_ASSET.CLIENT && !file.existing) {
+			throw TLogError('parse-asset-files-need', { path: file.path }, 'unknown-file');
+		}
 	}
 
-	return isSourceFromFetch || !isExist;
-};
 
-
-
-export default function initWADInfo() {
-	const nameWADChampionDefault = `${I.slot}.wad.client`.toLowerCase();
-	const fileWADChampionDefault = resolve(
-		isSourceFromClient ? C.path.dirGameVoice : dirCacheAsset,
-		nameWADChampionDefault
-	);
-
-	const nameWADChampionLocale = `${I.slot}.${C.lang}.wad.client`.toLowerCase();
-	const fileWADChampionLocale = resolve(
-		isSourceFromClient ? C.path.dirGameVoice : dirCacheAsset,
-		nameWADChampionLocale
-	);
-
-
-	try {
-		const wadsNeedFetch = [
-			{ name: nameWADChampionDefault, file: fileWADChampionDefault },
-			{ name: nameWADChampionLocale, file: fileWADChampionLocale },
-		].filter(detectNeedFetch);
-
-		G.info(T('where:Main'), T('initWADInfo:do'), '✔ ', ...wadsNeedFetch.map(({ name }) => T('initWADInfo:item', { name })));
-
-		return { fileWADChampionDefault, fileWADChampionLocale, wadsNeedFetch };
-	}
-	catch(error) {
-		G.fatalE(2, T('where:Main'), T('initWADInfo:do'), error);
-	}
+	return filesNeed;
 }

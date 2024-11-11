@@ -1,106 +1,89 @@
 {
-	"translation": {
-		"champion": "英雄",
-		"matchInfo": "匹配 ~[信息]",
-		"1": "1"
-	},
 	"where": {
-		"Process": "进程",
-		"Global": "全局",
-		"Main": "主线",
-		"1": "1"
+		"main": "主线",
+		"extract-voices": "提取~[语音]"
 	},
-	"error": {
-		"unhandledRejection": "未处理的驳回",
-		"clientFileNotExist": "✖ ~[客户端文件]{{file}}不存在",
-		"InterfaceClassNewForbidden": "✖ 无法创建~[接口类]{{clazz}}的实例",
-		"1": "1"
+	"verify-runcoms": {
+		"what": "检查~[运行命令组]{{v,value}}",
+		"invalid-type": "✖ 无效的~[类型]{{v,valueTypeof}}。预期类型：Array"
 	},
-	"matchChampion": {
-		"do": "匹配~[英雄]",
-		"ok": "✔ ~[id]{{id}} ~[slot]{{slot}} ~[名称]{{name}}",
-		"no": "✖ ~[slot]{{slot}}无法匹配"
+	"parse-runcom": {
+		"what": "解析~[运行命令]{{rc,value}}",
+		"invalid-type": "✖ 无效的~[类型]{{rc,valueTypeof}}。预期类型：string",
+		"invalid-format": "✖ 无效的~[格式]",
+		"unknown-base-config": "✖ 未知~[基础配置]{{-key,valueType}}",
+		"unknown-champion": "✖ 未知~[英雄]{{-slot,valueType}}",
+		"unknown-skin": "✖ 未知~[皮肤]{{-id,valueType}}"
 	},
-	"matchSkin": {
-		"do": "匹配~[皮肤]",
-		"ok": "✔ ~[id]{{id}} ~[名称]{{name}}",
-		"no": "✖ ~[id]{{id}}无法匹配"
+	"execute-config": {
+		"what": "执行~[运行配置]",
+		"info-skin": "~[模式]{{config.mode,value}} ~[档案]{{config.profile,value}} ~[slot]{{config.slot,value}} ~[皮肤id]{{config.,value}} ~[英雄]{{config.champion.name,value}} ~[皮肤]{{config.skin.name,value}}",
+		"info-specify": "~[模式]{{config.mode,value}} ~[档案]{{config.profile,value}} ~[slot]{{config.slot,value}} ~[标题]{{config.title,value}} "
 	},
-	"matchLanguage": {
-		"do": "匹配~[语言]",
-		"ok": "✔ ~[语言]{{lang}}"
+	"parse-asset-files-need": {
+		"what": "解析需要的~[资源文件]",
+		"unknown-file": "✖ 未知~[文件]{{-path,value}}",
+		"file": "--> ~[文件]{{name,value}}"
 	},
-	"matchServer": {
-		"do": "匹配~[服务器]",
-		"ok": "✔ ~[区域]{{region}} ~[版本阶段]{{statge}} ~[解决方案]{{solution}} ~[CDN]{{-cdn}} ~[SIE]{{-sie}}"
+	"parse-game-files-need": {
+		"what": "解析需要的~[游戏文件]",
+		"unknown-file": "✖ 未知~[文件]{{-path,value}}",
+		"file": "--> ~[文件]{{name,value}} 提取结果{{saved,value}}"
 	},
-	"initWADInfo": {
-		"do": "初始化WAD信息",
-		"item": "● ~[需要下载的文件]{{name}}"
-	},
-	"fetchWADs": {
-		"do": "下载和合成WAD文件",
-		"useLocal": {
-			"do": "使用已经缓存的~[清单]",
-			"ok": "✔ ~[清单]{{manifest}}"
+	"parse-event": {
+		"what": "解析~[事件]",
+		"where": "解析~[事件]",
+		"parse-bin": {
+			"what": "解析~[BIN文件]{{name,value}}"
 		},
-		"parseEntry": {
-			"do": "下载~[清单]",
-			"ok": "✔ 最新~[版本]{{version}}",
-			"item": "● ~[清单]{{name}}"
+		"parse-bnk": {
+			"what": "解析~[BNK文件]{{name,value}}"
 		}
 	},
-	"fetchEntry": {
-		"where": "~[入口]下载器",
-		"do": "下载",
-		"ing": "◌ ~[URL]{{-url}}",
-		"ok": "✔ ~[URL]{{-url}}"
-	},
-	"fetchManifest": {
-		"where": "~[清单]下载器",
-		"do": "下载~[清单]{{id}}",
-		"ing": "◌ ~[URL]{{-url}}",
-		"cached": "✔ 发现缓存",
-		"ok": "✔ ~[大小]{{size}}"
-	},
-	"parseManifestList": {
-		"where": "~[清单列表]解析器",
-		"do": "解析{{item,hadesTerm}}",
-		"ing": "◌ {{-progess}}",
-		"ok": "✔ {{-progess}}"
-	},
-	"manifest": {
-		"item": {
-			"bundle": "捆包",
-			"language": "语音",
-			"fileEntry": "文件条目",
-			"manifestListEntry": "清单列表条目",
-			"directory": "文件夹"
+	"parse-bnk": {
+		"where": "解析~[BNK文件]{{name,value}}",
+		"what": "解析~[Bank节段]",
+		"unhandled-section": "未处理的~[Bank节段]{{tag,value}}",
+		"parse-hirc": {
+			"what": "解析~[HICR对象]{{id,value}}",
+			"header": "✔ ~[类型]{{type,value}} ~[位置]{{pos,value}} ~[大小]{{length,value}}",
+			"unknown-prop-bundle": "未知~[属性包ID]{{idBundle,value}}",
+			"unparsed-type": "未处理的~[类型]{{type,value}}"
+		},
+		"parse-bkhd": {
+			"what": "解析~[BKHD对象]{{id,value}}",
+			"unexpected-version": "意料之外的~[Bank版本]{{version,value}}",
+			"header": "✔ ~[版本]{{version,value}} ~[项目ID]{{idProject,value}}"
+		},
+		"group-ids": {
+			"what": "整理~[事件]",
+			"unknown-event-name": "未知~[事件]名{{event,value}}"
+		},
+		"group-ids-audio-action": {
+			"what": "整理~[动作]{{idAction,value}}的子声音",
+			"unknown-action-object": "未知~[动作对象]{{idObject,value}}",
+			"unknown-action-object-type": "未知~[动作对象]{{idObject,value}}类{{clazz,value}}"
 		}
 	},
-	"extractFile": {
-		"where": "~[文件]解压器",
-		"do": "解压 ~[文件]{{file}}",
-		"info": "~[捆包数量]{{size}}",
-		"ing": "◌ ~[捆包数量]{{size}}。已下载所有~[捆包], 解压中..."
+	"extract-audio": {
+		"where": "提取~[音频]",
+		"extract-wem": {
+			"what": "从~[文件]{{name,value}}中提取~[wem文件]"
+		},
+		"extract": {
+			"what": "从~[文件]{{name,value}}中提取~[{{format}}文件]"
+		},
+		"exectue-rextractor": "运行~[Rextractor]",
+		"check-cache": "检查~[缓存]",
+		"skip-found-cache": "✔ 发现~[缓存]，跳过提取...",
+		"skip-unknown-format": "未知提取~[格式]，跳过提取...",
+		"unknown-rextractor": "未知~[Rextractor]{{path,value}}"
 	},
-	"fetchBundle": {
-		"where": "~[捆包]下载器",
-		"do": "下载~[捆包]{{bid}}",
-		"doing": "下载~[捆包]{{bid}}{{-progess}}",
-		"ing": "◌ 下载中...",
-		"cached": "✔ 发现缓存",
-		"ok": "✔ 已下载",
-		"retry": {
-			"contentLengthNotMatch": "✖ content-length不匹配。剩余重试次数{{remains}}",
-			"etagNotMatch": "✖ etag不匹配。剩余重试次数{{remains}}",
-			"error": "✖ 剩余重试次数{{remains}}",
-			"failFinally": "✖ 失败。超过最大重试次数"
-		}
+	"unpack-variable-number": {
+		"what": "解出~[可变数字]",
+		"unexpected-loop": "意料之外的可变次数"
 	},
-	"match": {
-		"unmatchEvent": "未知事件",
-		"unmatchSkin": "未知皮肤",
-		"unknownSlot": "未知归属"
+	"copy-audios": {
+		"unknown-event": "未知事件"
 	}
 }

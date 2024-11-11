@@ -1,13 +1,8 @@
-import { C, G } from '@nuogz/pangu';
-
 import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-import { dirText } from '../../lib/dir.js';
-import { T } from '../../lib/i18n.js';
-import { pad0, toHexL8 } from '../../lib/utility.js';
-import { I } from '../../lib/info.js';
-import { D, en_us } from '../../lib/database.js';
+import { toHexL8, pad0 } from '../../lib/utility.js';
+import { champions$lang } from '../../lib/database.js';
 
 
 
@@ -36,36 +31,44 @@ const matchFriendlyName = (name, mapsFriendly) => {
 	return trans.join(':');
 };
 
-export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, idsSoundAll$idAudio, infosExtract$pathInWAD) {
-	G.info('EventSaver', 'save event');
+
+/**
+ * @param {Object<string, string[]>} events$idAudio
+ * @param {Object<string, Set<number>>} idsSound$idAudio
+ * @param {import('../../bases.d.ts').ExtractConfig} E
+ */
+export default async function saveDictation(events$idAudio, idsSound$idAudio, E) {
+	// G.info('EventSaver', 'save event');
 
 
 	/** @type {Array<[string,string]>} */
 	const mapsFriendly = [];
 
-	for(let i = 1; i < 8; i++) {
-		mapsFriendly.push([I.slot + 'BasicAttack' + i, '普攻']);
-		mapsFriendly.push([I.slot + 'CritAttack' + i, '暴击']);
-	}
-	mapsFriendly.push([I.slot + 'BasicAttack', '普攻']);
-	mapsFriendly.push([I.slot + 'CritAttack', '暴击']);
+	if(E.mode == 'skin') {
+		for(let i = 1; i < 8; i++) {
+			mapsFriendly.push([E.slot + 'BasicAttack' + i, '普攻']);
+			mapsFriendly.push([E.slot + 'CritAttack' + i, '暴击']);
+		}
+		mapsFriendly.push([E.slot + 'BasicAttack', '普攻']);
+		mapsFriendly.push([E.slot + 'CritAttack', '暴击']);
 
-	for(const key_ in I.champion.spells) {
-		const key = key_.toUpperCase();
-		const textUsage = key == 'P' ? '触发' : '使用';
-		const textSkill = `${textUsage}:${key}${I.champion.spells[key_]}`;
+		for(const key in E.champion.spells) {
+			const keyUppser = key.toUpperCase();
+			const textUsage = keyUppser == 'P' ? '触发' : '使用';
+			const textSkill = `${textUsage}:${keyUppser}${E.champion.spells[key]}`;
 
-		mapsFriendly.push([`${I.slot}${key}`, textSkill]);
-		mapsFriendly.push([`Spell${key}`, textSkill]);
+			mapsFriendly.push([`${E.slot}${keyUppser}`, textSkill]);
+			mapsFriendly.push([`Spell${keyUppser}`, textSkill]);
+		}
 	}
 
 	try {
-		mapsFriendly.push(...(await import(`../../data/friendly-name/${C.lang}.js`)).default);
+		mapsFriendly.push(...(await import(`../../data/friendly-name/${E.lang}.js`)).default);
 	}
-	catch(error) { void 0; }
+	catch { void 0; }
 
 
-	Object.values(D).forEach(champion => {
+	Object.values(champions$lang[E.lang]).forEach(champion => {
 		Object.values(champion.skins).filter(skin => typeof skin == 'object').forEach(skin => {
 			mapsFriendly.push([`${champion.slot}Skin${String(skin.id).padStart(2, '0')}`, `皮肤:${skin.name}`]);
 		});
@@ -79,71 +82,49 @@ export default async function saveEvents(eventsAll$idAudio, namesFileSoundBank, 
 	));
 
 
-	const eventMap = {};
 
-	for(const [idAudio, eventInfos] of Object.entries(eventsAll$idAudio)) {
+	const skinMap = {};
+	for(const [idAudio, events] of Object.entries(events$idAudio)) {
 		const idAudioHex = toHexL8(idAudio);
 
-		const dictEN = en_us;
-
-		for(const eventInfo of eventInfos) {
-			const idSkin = eventInfo?.index || eventInfo?.index === 0 ? eventInfo.index : I.idsSkin?.[0];
-			const statusMatch = typeof eventInfo == 'number' ? `(${T('match:unmatchEvent')})` : !(eventInfo?.index || eventInfo?.index === 0) ? `(${T('match:unmatchSkin')})` : '';
-
-
-			const dChampion = D[I.id];
-			const dSkin = dChampion.skins[idSkin];
-			const dSkinFallback = dictEN[I.id].skins[idSkin];
-
-
-			const slot = `${pad0(I.id)}${pad0(idSkin)}`;
-
-			const prefixFile = `${slot}@${statusMatch}${(eventInfo?.skinName ?? dSkin?.name)?.replace(/[:"]/g, '')}`;
-			const titleFile = `[${slot}]${statusMatch} ${dChampion.slot}:${dChampion.name}${idSkin == 0 ? '' : ` ==> ${dSkinFallback.name}:${dSkin.name}`}`;
-
-			const keySkin = `${prefixFile}||${titleFile}`;
-			const keyEvent = eventInfo?.short ?? eventInfo?.name ?? eventInfo;
-
-
-			const skinMap = eventMap[keySkin] || (eventMap[keySkin] = {});
-			(skinMap[keyEvent] || (skinMap[keyEvent] = [])).push({ idAudioHex, idsSound: idsSoundAll$idAudio[idAudio] || [] });
+		for(const event of events) {
+			(skinMap[event] || (skinMap[event] = [])).push({ idAudioHex, idsSound: idsSound$idAudio[idAudio] || [] });
 		}
 	}
 
-	for(const [skin_, skinMap] of Object.entries(eventMap)) {
-		const [skin, head] = skin_.split('||');
-		const result = [];
 
-		result.push(`# ${head}`);
+	const result = [`# ${E.titleFile}`];
 
-		const arrCatalog = ['## Catalog:目录'];
-		const arrEventList = [];
 
-		for(const [eventName, arrAudioInfo] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
-			const eventTitle = `[${matchFriendlyName(eventName, mapsFriendly)}]|${eventName}`;
+	const arrCatalog = ['## Catalog:目录'];
+	const arrEventList = [];
 
-			arrEventList.push(`### ** ${eventTitle}`);
+	for(const [eventName, arrAudioInfo] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
+		const eventShort = eventName.toLowerCase()
+			.replace(/^play_vo_/, '')
+			.replace(new RegExp(`^${E.champion?.slot}${E.skin?.id ? `skin${pad0(E.skin.id, 2)}` : ''}_`.toLowerCase()), '');
 
-			const arrEventText = [];
+		const eventTitle = `[${matchFriendlyName(eventShort, mapsFriendly)}]|${eventShort}`;
 
-			for(const { idAudioHex, idsSound } of arrAudioInfo) {
-				arrEventText.push(`- \`${idsSound.map(id => toHexL8(id)).join('.')}|${idAudioHex}\` ***`);
-			}
+		arrEventList.push(`### ** ${eventTitle}`);
 
-			arrEventText.sort();
+		const arrEventText = [];
 
-			arrEventText.forEach(text => arrEventList.push(text));
-
-			arrEventList.push('');
+		for(const { idAudioHex, idsSound } of arrAudioInfo) {
+			arrEventText.push(`- \`${[...idsSound].map(id => toHexL8(id)).join('.')}|${idAudioHex}\` ***`);
 		}
 
-		arrCatalog.forEach(text => result.push(text));
-		result.push('## Lines:台词');
-		arrEventList.forEach(text => result.push(text));
+		arrEventText.sort();
 
-		const lang = !C.saveWithShort ? C.lang : C.lang.split('_')[0];
-		const region = (!C.saveWithShort ? C.server.region : C.server.region.replace(/\d+$/, '')).toLowerCase();
+		arrEventText.forEach(text => arrEventList.push(text));
 
-		writeFileSync(resolve(dirText, `${skin.replace(/[:"]/g, '') ?? I.slot}@${I.time}@${region}@${lang}.md`), result.join('\n'));
+		arrEventList.push('');
 	}
+
+	arrCatalog.forEach(text => result.push(text));
+	result.push('## Lines:台词');
+	arrEventList.forEach(text => result.push(text));
+
+
+	writeFileSync(resolve(E.dirExportDict, `${E.nameFile}.md`), result.join('\n'));
 }
