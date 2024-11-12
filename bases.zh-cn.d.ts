@@ -227,6 +227,8 @@ export type ExtractConfig = {
 
 	/** 是否跳过提取语音文件 */
 	readonly skipExtract: boolean;
+	/** 是否跳过保存听写文件 */
+	readonly skipSaveDictation: boolean;
 	/** 是否用更简短的名称来导出内容 */
 	readonly saveWithShort: boolean;
 	/** 是否无视提取缓存，强制提取音频 */

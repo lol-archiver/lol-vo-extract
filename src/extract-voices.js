@@ -70,8 +70,9 @@ export default async function extractVoices(E = {}) {
 
 		// copy voice files and rename with events
 		copyAudios$fileBank(filesWPK, events$idAudio, idsSound$idAudio, E);
+	}
 
-
+	if(!E.skipSaveDictation) {
 		// save event JSON for `lol-vo-lines-dictation`
 		saveDictation(events$idAudio, idsSound$idAudio, E);
 	}

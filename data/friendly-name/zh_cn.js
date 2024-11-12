@@ -22,8 +22,10 @@ export default [
 	['LongMove', '移动:长途'],
 	['MoveOrderLong', '移动:长途'],
 	['MoveOrder', '移动'],
+	['RankUP', '等级提升'],
 	['LevelUp', '升级技能'],
 	['ShopOpen', '打开:商店'],
+
 
 	['KillFirst', '击杀:首杀'],
 	['KillTurret', '击杀:建筑:防御塔'],
