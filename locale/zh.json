@@ -17,7 +17,7 @@
 	},
 	"execute-config": {
 		"what": "执行~[运行配置]",
-		"info-skin": "~[模式]{{config.mode,value}} ~[档案]{{config.profile,value}} ~[slot]{{config.slot,value}} ~[皮肤id]{{config.,value}} ~[英雄]{{config.champion.name,value}} ~[皮肤]{{config.skin.name,value}}",
+		"info-skin": "~[模式]{{config.mode,value}} ~[档案]{{config.profile,value}} ~[英雄ID]{{config.champion.id,value}} ~[皮肤ID]{{config.skin.id,value}} ~[英雄]{{config.champion.name,value}} ~[皮肤]{{config.skin.name,value}}",
 		"info-specify": "~[模式]{{config.mode,value}} ~[档案]{{config.profile,value}} ~[slot]{{config.slot,value}} ~[标题]{{config.title,value}} "
 	},
 	"parse-asset-files-need": {

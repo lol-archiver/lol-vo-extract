@@ -43064,6 +43064,11 @@
 					}
 				}
 			},
+			"35": {
+				"id": 35,
+				"name": "Arcane Survivor Jayce",
+				"chromas": {}
+			},
 			"36": {
 				"id": 36,
 				"name": "Prestige T1 Jayce",

@@ -25,11 +25,12 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 
 
 		const willCopy = baseBank.includes('sfx') ? (E.levelSoundEffect == 'extract' ? true : false) : true;
+		const willCopyWEM = E.format == 'wem';
 
 		const dirCacheAudioWAV = resolvePath(E.dirCacheAudio, `[wav]${baseBank}`);
 		const dirCacheAudioWEM = resolvePath(E.dirCacheAudio, `[wem]${baseBank}`);
 
-		if(!existsSync(dirCacheAudioWAV)) {
+		if(!willCopyWEM && !existsSync(dirCacheAudioWAV)) {
 			G.warn('AudioCopier', 'copy audio', `path~{${dirCacheAudioWAV}} not exists`);
 
 			continue;
@@ -40,11 +41,11 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 			continue;
 		}
 
-		for(const fileAudio of readdirSync(dirCacheAudioWAV)) {
+		for(const fileAudio of readdirSync(willCopyWEM ? dirCacheAudioWEM : dirCacheAudioWAV)) {
 			const idAudio = parsePath(fileAudio).name;
 			const hexIDAudio = toHexL8(idAudio);
 
-			const srcWAV = resolvePath(dirCacheAudioWAV, `${idAudio}.${E.format}`);
+			const srcAudio = resolvePath(willCopyWEM ? dirCacheAudioWEM : dirCacheAudioWAV, `${idAudio}.${E.format}`);
 			const srcWEM = resolvePath(dirCacheAudioWEM, `${idAudio}.wem`);
 
 			const events = [...events$idAudio[idAudio]].map(event => event.toLowerCase()
@@ -56,7 +57,9 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 
 			const existedWEM = existsSync(srcWEM);
 			if(!existedWEM) { G.warn('AudioCopier', `~[Audio File]~{${showID(idAudio)}} does not have ~[source WEM]`, '✖'); }
-			const crcWEM = existedWEM ? crc32(readFileSync(srcWEM)) : 'no-wem';
+			const partHashWEM = E.noWEMHash$ExportAudio ? ''
+				: existedWEM ? `[${crc32(readFileSync(srcWEM))}]`
+					: '[no-wem]';
 
 
 			const logsTooLong = [`-------${E.timeExtract.format()}-------`];
@@ -70,20 +73,20 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 			const audioText = (idsSound
 				? `[${idsSound.slice(0, 4).map(id => toHexL8(id)).join('.')}${idsSound.length > 4 ? '.more' : ''}]`
 				: `[no-sound]`)
-				+ `[${hexIDAudio}][${crcWEM}].${E.format}`;
+				+ `[${hexIDAudio}]${partHashWEM}.${E.format}`;
 
 
 			try {
 				if(eventsText.length > 128) { throw 'eventsText.length > 128'; }
 
 				copyFileSync(
-					srcWAV,
+					E.format == 'wem' ? srcWEM : srcAudio,
 					resolvePath(dirExportVoice, `${eventsText}${audioText}`),
 				);
 			}
 			catch {
 				copyFileSync(
-					srcWAV,
+					E.format == 'wem' ? srcWEM : srcAudio,
 					resolvePath(dirExportVoice, `@long-event${audioText}`),
 				);
 

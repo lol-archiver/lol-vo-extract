@@ -144,9 +144,17 @@ export default function extractAudios(filesBank, E) {
 		const dirCacheAudioWEM = resolvePath(E.dirCacheAudio, `[wem]${baseBank}`);
 		const dirCacheAudioWAV = resolvePath(E.dirCacheAudio, `[wav]${baseBank}`);
 		const countCacheAudioWEM = existsSync(dirCacheAudioWEM) ? readdirSync(dirCacheAudioWEM).length : 0;
-		const countCacheAudioWAV = existsSync(dirCacheAudioWAV) ? readdirSync(dirCacheAudioWAV).length : 0;
+		const countCacheAudioWAV = existsSync(dirCacheAudioWAV) ? readdirSync(dirCacheAudioWAV).filter(f => f.endsWith('.wav')).length : 0;
+		const countCacheAudioOGG = existsSync(dirCacheAudioWAV) ? readdirSync(dirCacheAudioWAV).filter(f => f.endsWith('.ogg')).length : 0;
 
-		if(!E.forceExtractFile && countCacheAudioWEM == countCacheAudioWAV && countCacheAudioWEM > 0) { return GG.infoD(...TS('extract-audio.', 'check-cache', 'skip-found-cache')); }
+		if(
+			!E.forceExtractFile
+			&& (false
+				|| (E.format == 'wem' && countCacheAudioWEM > 0)
+				|| (E.format == 'wav' && countCacheAudioWEM > 0 && countCacheAudioWEM == countCacheAudioWAV)
+				|| (E.format == 'ogg' && countCacheAudioWEM > 0 && countCacheAudioWEM == countCacheAudioOGG)
+			)
+		) { return GG.infoD(...TS('extract-audio.', 'check-cache', 'skip-found-cache')); }
 
 
 		emptyDirSync(dirCacheAudioWEM);
@@ -177,7 +185,7 @@ export default function extractAudios(filesBank, E) {
 
 			GG.infoD(...TS('extract-audio:extract', { format: E.format, name: baseBank }, '✔'));
 		}
-		else {
+		else if(E.format != 'wem') {
 			GG.warnD(...TS('extract-audio:extract', { format: E.format, name: baseBank }, 'skip-unknown-format'));
 		}
 	}
