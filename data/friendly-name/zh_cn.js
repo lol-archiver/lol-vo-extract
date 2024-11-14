@@ -22,8 +22,8 @@ export default [
 	['LongMove', '移动:长途'],
 	['MoveOrderLong', '移动:长途'],
 	['MoveOrder', '移动'],
-	['RankUP', '等级提升'],
-	['LevelUp', '升级技能'],
+	['RankUP', '升级技能'],
+	['LevelUp', '等级提升'],
 	['ShopOpen', '打开:商店'],
 
 

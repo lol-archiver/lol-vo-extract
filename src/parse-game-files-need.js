@@ -46,11 +46,11 @@ export default function parseGameFilesNeed(E) {
 	const configsExtract = [
 		{
 			fileInpack: `data/characters/${E.champion.slot}/skins/root.bin`,
-			fileSave: resolve(E.dirCacheUnpack, `root.bin`),
+			fileSave: resolve(E.dirCacheGame, `root.bin`),
 		},
 		{
 			fileInpack: `data/characters/${E.champion.slot}/skins/skin${E.skin.id}.bin`,
-			fileSave: resolve(E.dirCacheUnpack, `skin${E.skin.id}.bin`),
+			fileSave: resolve(E.dirCacheGame, `skin${E.skin.id}.bin`),
 		},
 	];
 
@@ -69,7 +69,7 @@ export default function parseGameFilesNeed(E) {
 	for(const fileInpack of filesInpackNeed) {
 		configsExtract.push({
 			fileInpack,
-			fileSave: resolve(E.dirCacheUnpack, parsePath(fileInpack).base),
+			fileSave: resolve(E.dirCacheGame, parsePath(fileInpack).base),
 		});
 	}
 

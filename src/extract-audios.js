@@ -1,5 +1,5 @@
 import { execFileSync } from 'child_process';
-import { existsSync, writeFileSync, readdirSync } from 'fs';
+import { existsSync, writeFileSync, readdirSync, renameSync } from 'fs';
 import { parse as parsePath, resolve as resolvePath } from 'path';
 
 import { emptyDirSync } from 'fs-extra/esm';
@@ -170,7 +170,31 @@ export default function extractAudios(filesBank, E) {
 
 		GG.infoU(...TS('extract-audio:extract', { format: E.format, name: baseBank }, '...'));
 
-		if(E.format == 'wav' || E.format == 'ogg') {
+		if(E.format == 'wav') {
+			if(existsSync(E.fileVGMStreamCLI)) {
+				const filesCacheAudioWEMNew = readdirSync(dirCacheAudioWEM);
+
+				try {
+					execFileSync(E.fileVGMStreamCLI, ['-o', resolvePath(dirCacheAudioWAV, '?f.wav'), ...filesCacheAudioWEMNew], { cwd: dirCacheAudioWEM, timeout: 1000 * 60 * 10 });
+
+					for(const file of readdirSync(dirCacheAudioWAV)) {
+						renameSync(
+							resolvePath(dirCacheAudioWAV, file),
+							resolvePath(dirCacheAudioWAV, file.replace(/\.wem\.wav$/, '.wav')),
+						);
+					}
+				}
+				catch(error) {
+					GG.errorD(T('extract-audio:exectue-rextractor', { format: E.format, name: baseBank }), error);
+				}
+			}
+			else {
+				GG.errorD(...TS('extract-audio:extract', { format: E.format, name: baseBank, path: E.fileRExtractorConsole }, 'unknown-rextractor'));
+			}
+
+			GG.infoD(...TS('extract-audio:extract', { format: E.format, name: baseBank }, '✔'));
+		}
+		else if(E.format == 'ogg') {
 			if(existsSync(E.fileRExtractorConsole)) {
 				try {
 					execFileSync(E.fileRExtractorConsole, [fileBank, dirCacheAudioWAV, `/sf:${E.format}`], { timeout: 1000 * 60 * 10 });

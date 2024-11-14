@@ -248,6 +248,8 @@ export type ExtractConfig = {
 	readonly fileZSTD: string;
 	/** Ravioli Game Tools里的RExtractor Console程序路径 */
 	readonly fileRextractorConsole: string;
+	/** VGMStream里的VGMStreamCLI程序路径 */
+	readonly fileVGMStreamCLI: string;
 	/**
 	 * 游戏客户端目录。可能的值：
 	 * - `{ExtractConfig.dirGameVoice}`
@@ -314,9 +316,9 @@ export type ExtractConfig = {
 	readonly dirCacheAsset: string;
 	/**
 	 * Unpack缓存目录，存放从资源文件中提取的游戏文件。可能的值：
-	 * - `{缓存目录}/2-unpack`
+	 * - `{缓存目录}/2-game`
 	 */
-	readonly dirCacheUnpack: string;
+	readonly dirCacheGame: string;
 	/**
 	 * Audio缓存目录，存放从游戏文件中提取的音频文件。可能的值：
 	 * - `{缓存目录}/3-unpack/{输出名称}`

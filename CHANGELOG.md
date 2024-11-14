@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## v2.3.0 - 2024.11.14 17
+* feat: now when extracting audio in `wav` format, `VGMStream` is used instead of `RExtractor` to convert `wem` files directly to `wav` files.
+  * This one change can greatly improve the overall extraction speed!!!
+  * still use `RExtractor` to convert audio to ogg format
+  * new config `fileVGMStreamCLI`
+* feat: console will output a split line while a runcom finished
+* refactor: adjust the name of event tree dump file
+* refactor: rename dynamic config `dirCacheUnpack` to `dirCacheGame`
+* refactor: rename the default value of `dirCacheGame` to `2-game` from `2-unpack`
+* fix: fix `data/friendly-name/zh_cn.js`
+* fix: fix the bug that dynamic config `titleFile` show skin name as undefined
+
+
 ## v2.2.0 - 2024.11.14 09
 * feat: new option `skipSaveDictation`
 * refactor!: redesigned loading logic for config profile

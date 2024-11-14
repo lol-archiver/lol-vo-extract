@@ -71,7 +71,7 @@ export default function parseExtractConfig(runcoms) {
 	return runcoms.map(runcom => {
 		const profile = runcom.profile ?? profilesRawUser?.$profile ?? profilesRawDefault?.$profile;
 
-		/** @type {import('./bases.d.ts').ExtractConfig} */
+		/** @type {import('../bases.d.ts').ExtractConfig} */
 		const E = Object.assign({}, profiles[profile], runcom);
 
 
@@ -97,7 +97,7 @@ export default function parseExtractConfig(runcoms) {
 
 			E.slotFile = `${idFull}@${E.slot}@${region}@${lang}@${timeExtract.format('YYMMww')}`;
 			E.nameFile = `${idFull}@${(skin?.name)?.replace(/[:"]/g, '')}@${region}@${lang}@${timeExtract.format('DDHHmmss')}`;
-			E.titleFile = `[${idFull}] ${champion.slot}:${champion.name} ==> ${skin.id == 0 ? `${championFallback.title}:${champion.title}` : `${skinFallback.title}:${skin.title}`}`;
+			E.titleFile = `[${idFull}] ${champion.slot}:${champion.name} ==> ${skin.id == 0 ? `${championFallback.title}:${champion.title}` : `${skinFallback.name}:${skin.name}`}`;
 			E.nameDirExport = `${idFull}@${(skin?.name)?.replace(/[:"]/g, '')}@${region}@${lang}`;
 		}
 		else {
@@ -116,7 +116,7 @@ export default function parseExtractConfig(runcoms) {
 		E.dirCache = E.dirCache ?? resolvePath(dirWorking, 'cache'); ensureDirSync(E.dirCache);
 
 		E.dirCacheAsset = resolvePath(E.dirCache, '1-asset'); ensureDirSync(E.dirCacheAsset);
-		E.dirCacheUnpack = resolvePath(E.dirCache, '2-unpack'); ensureDirSync(E.dirCacheUnpack);
+		E.dirCacheGame = resolvePath(E.dirCache, '2-game'); ensureDirSync(E.dirCacheGame);
 		E.dirCacheAudio = resolvePath(E.dirCache, '3-audio', E.slotFile); ensureDirSync(E.dirCacheAudio);
 
 

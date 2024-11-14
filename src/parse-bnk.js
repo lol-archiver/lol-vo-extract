@@ -54,7 +54,7 @@ const unpackVariableNumber = B => {
 // 14: Attenuation
 // 16: Fx Share Set
 // 17: Motion FX
-const typesObjectHIRCSkip = [1, 7, 14,16, 17];
+const typesObjectHIRCSkip = [1, 7, 14, 16, 17];
 
 
 const formats$idBundleProp = {
@@ -792,8 +792,11 @@ export default async function parseBNK(E, file, eventsAll) {
 			}
 
 			if(textsTree.length) {
+				const lang = !E.saveWithShort ? E.lang : E.lang.split('_')[0];
+				const region = (!E.saveWithShort ? E.regionCDN : E.regionCDN.replace(/\d+$/, '')).toLowerCase();
+
 				writeFileSync(
-					resolve(E.dirExportDebug, `[${E.slot}@${E.regionCDN}@${E.lang}]@${parsePath(file).base}@${E.timeExtract.format('HHmmss')}@tree.txt`),
+					resolve(E.dirExportDebug, `event-tree@${parsePath(file).base}@${region}@${lang}@${E.slot}@${E.timeExtract.format('HHmmss')}.txt`),
 					textsTree.join('\n')
 				);
 			}

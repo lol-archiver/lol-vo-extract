@@ -28,6 +28,8 @@ try {
 		}
 
 		await extractVoices(configExtract);
+
+		globalThis.console.log('\n===================== next runcom =====================\n');
 	}
 }
 catch(error) {
