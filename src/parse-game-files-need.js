@@ -59,10 +59,10 @@ export default function parseGameFilesNeed(E) {
 		? ['vo', 'sfx'] : ['vo'];
 	const filesInpackNeed = [];
 	for(const usage of usages) {
-		filesInpackNeed.push(...parseSoundBankPaths(usage, E.langInGame || E.lang, E.champion.slot, E.skin.id));
+		filesInpackNeed.push(...parseSoundBankPaths(usage, E.langInGame == '{lang}' ? E.lang : E.langInGame || 'en_us', E.champion.slot, E.skin.id));
 
 		if(E.skin.id > 0 && E.useBaseSkinFiles) {
-			filesInpackNeed.push(...parseSoundBankPaths(usage, E.langInGame || E.lang, E.champion.slot, 0));
+			filesInpackNeed.push(...parseSoundBankPaths(usage, E.langInGame == '{lang}' ? E.lang : E.langInGame || 'en_us', E.champion.slot, 0));
 		}
 	}
 

@@ -1,0 +1,22 @@
+{
+	"pbe": {
+		"regionCDN": "PBE1",
+		"statgeCDN": "release",
+		"solutionCDN": "game",
+		"cdnCDN": "https://lol.secure.dyn.riotcdn.net",
+		"sieCDN": "https://sieve.services.riotcdn.net",
+		"proxyCDN": false
+	},
+	"pbe-zh": {
+		"$base": "pbe",
+		"lang": "zh_cn"
+	},
+	"pbe-en": {
+		"$base": "pbe",
+		"lang": "en_us"
+	},
+	"cn": {
+		"lang": "zh_cn",
+		"regionCDN": "CN1"
+	}
+}

@@ -168,7 +168,7 @@ export type ExtractConfig = {
 
 	/**
 	 * 提取语言，影响皮肤模式游戏文件匹配和程序日志输出
-	 * - 默认：zh_cn
+	 * - 默认值：zh_cn
 	 * #### 皮肤模式
 	 * 影响皮肤模式游戏文件匹配，和最终提取出的语音的语音
 	 * #### 指定模式
@@ -179,6 +179,8 @@ export type ExtractConfig = {
 	readonly lang: 'zh_cn' | 'en_us' | string;
 	/**
 	 * 游戏文件路径中的语言
+	 * - 默认值：en_us
+	 * - 特殊值：`{lang}` = 同一配置中的`lang`的值
 	 * #### 皮肤模式
 	 * 在旧版本的客户端中，多语言游戏文件的路径中的语言，往往与客户端语音相同，且有被打包在对应的多语言文件。
 	 * 而新版本的客户端中，部分多语言游戏文件的路径中的语言，尽管扔被打包在对应的多语言文件，但游戏文件的路径被固定`en_us`。
@@ -192,7 +194,7 @@ export type ExtractConfig = {
 	readonly langInGame?: 'en_us' | 'zh_cn' | string;
 	/**
 	 * 提取音频格式
-	 * - 默认：wav
+	 * - 默认值：wav
 	 * - `wav`，使用`Ravioli Game Tool`转换的格式
 	 * - `ogg`，使用`Ravioli Game Tool`转换的格式
 	 * - `wem`，资源文件中打包的原始格式
@@ -201,7 +203,7 @@ export type ExtractConfig = {
 
 	/**
 	 * 资源文件来源
-	 * - 默认：client
+	 * - 默认值：client
 	 * #### 皮肤模式
 	 * - `client`，从指定的客户端中资源文件
 	 * - `cache`，从指定的CDN中下载资源文件。如果有下载缓存优先使用缓存

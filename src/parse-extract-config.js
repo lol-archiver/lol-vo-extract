@@ -16,6 +16,37 @@ Day.extend(pluginAdvancedFormat);
 
 
 
+const assignProfileBase = (profile, profiles, target = {}) => {
+	if(!profile) { profile = {}; }
+
+	if(profile?.$base) {
+		for(const base of profile.$base.split('+')) {
+			assignProfileBase(profiles[base], profiles, target);
+		}
+	}
+
+	Object.assign(target, profile);
+	delete target.$base;
+
+	return target;
+};
+
+const calcProfileLevel = (key, profiles) => {
+	const profile = profiles[key];
+	if(!profile) { return 0; }
+
+
+	let level = 1;
+
+	const keysBase = profile.$base?.split('+') ?? [];
+	for(const keyBase of keysBase) {
+		level += calcProfileLevel(keyBase, profiles);
+	}
+
+
+	return level;
+};
+
 /**
  * @param {import('../bases.d.ts').RuncomConfig[]} runcoms
  * @returns {import('../bases.d.ts').ExtractConfig[]}
@@ -23,11 +54,25 @@ Day.extend(pluginAdvancedFormat);
 export default function parseExtractConfig(runcoms) {
 	const timeExtract = Day();
 
+
+	const profilesRawDefault = C.default;
+	const profilesRawUser = C.user ?? {};
+
+	const keysProfile = [...new Set([Object.keys(profilesRawDefault), Object.keys(profilesRawUser)].flat())].filter(key => !key.startsWith('$'));
+
+	const profiles = {};
+	for(const key of keysProfile) { profiles[key] = Object.assign({}, profilesRawDefault[key], profilesRawUser[key]); }
+
+	keysProfile.sort((a, b) => calcProfileLevel(a, profiles) - calcProfileLevel(b, profiles));
+
+	for(const key of keysProfile) { profiles[key] = assignProfileBase(profiles[key], profiles); }
+
+
 	return runcoms.map(runcom => {
-		const profile = runcom.profile ?? C.user?.$?.profile ?? C.default?.$?.profile;
+		const profile = runcom.profile ?? profilesRawUser?.$profile ?? profilesRawDefault?.$profile;
 
 		/** @type {import('./bases.d.ts').ExtractConfig} */
-		const E = Object.assign({}, C.default.$, C.default[profile], C.user.$, C.user[profile], runcom);
+		const E = Object.assign({}, profiles[profile], runcom);
 
 
 		E.lang = E.lang ?? 'zh_cn';

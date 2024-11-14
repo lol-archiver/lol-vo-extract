@@ -4,6 +4,9 @@ node_modules
 /side/0-*
 /@*
 /config/config.*
+!/config/config.default.json
+!/config/config.user.json.example
+!/config/config.runcom.json.example
 /log/*
 /cache
 /debug

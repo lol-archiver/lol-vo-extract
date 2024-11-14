@@ -1,0 +1,27 @@
+{
+	"$profile": "pbe-zh",
+	"common": {
+		"forceExtractFile": false,
+		"skipExtract": false,
+		"dumpEventTree": true,
+		"saveWithShort": true,
+		"sourceResource": "client",
+		"levelSoundEffect": "no",
+		"forceUseBaseSkinFiles": false,
+		"format": "wav",
+		"fileZSTD": "../zstd.exe",
+		"fileRExtractorConsole": "../RExtractorConsole.exe",
+		"dirDictations": "../lol-vo-lines-dictation/dictation",
+		"dirAutogen": "../lol-vo-aeproject-autogen"
+	},
+	"pbe": {
+		"$base": "common",
+		"dirGameClient": "../Riot Games/League of Legends (PBE)",
+		"dirGameDataPlugin": "../Riot Games/League of Legends (PBE)/Plugins/rcp-be-lol-game-data"
+	},
+	"cn": {
+		"$base": "common",
+		"dirGameClient": "../WeGameApps/英雄联盟",
+		"dirGameDataPlugin": "../WeGameApps/英雄联盟/LeagueClient/Plugins/rcp-be-lol-game-data"
+	}
+}

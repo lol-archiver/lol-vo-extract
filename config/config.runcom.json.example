@@ -1,0 +1,14 @@
+[
+	"morgana|0",
+	"morgana|0||pbe-en",
+	"-morgana|0||cn",
+	{
+		"rc": "-bridge-of-progress-shopkeeper|Bridge of Progress's Shopkeeper Voices|pbe-zh",
+		"filesGame": [
+			"../bridge-of-progress/map12.bin",
+			"../bridge-of-progress/npc_map12_crepe_vo_audio.wpk",
+			"../bridge-of-progress/npc_map12_crepe_vo_audio.bnk",
+			"../bridge-of-progress/npc_map12_crepe_vo_events.bnk"
+		]
+	}
+]
