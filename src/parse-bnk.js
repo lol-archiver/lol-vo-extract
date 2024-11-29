@@ -8,7 +8,7 @@ import Biffer from '@nuogz/biffer';
 import { T, TS } from '../lib/i18n.js';
 import { toHexL8, showID, toBufferHex, TLogError, StackError } from '../lib/utility.js';
 
-import { HIRCSound, HIRCEventAction, HIRCEvent, HIRCContainer, HIRCSwitchContainer, HIRCObject, HIRCSwitch } from './entry/bnk/HIRCObject.js';
+import { HIRCSound, HIRCEventAction, HIRCEvent, HIRCContainer, HIRCObject, HIRCSwitch } from './entry/bnk/HIRCObject.js';
 
 
 
@@ -216,8 +216,7 @@ export const parseHIRCObject = (idSection, typeSection, B, GG) => {
 	}
 	// Containers
 	else if([5, 6, 9].includes(typeSection)) {
-		const container = object = new HIRCContainer(idSection);
-
+		const container = object = new HIRCContainer(idSection, typeSection);
 
 		const [overridedParentEffect, sizeEffects] = B.unpack('BB');
 
@@ -547,16 +546,9 @@ const groupActionChildAudioIDs = (objectParsed, objectsAll, action, GG) => {
 		idsAudio.push(objectParsed.idAudio);
 	}
 	else if(objectParsed instanceof HIRCContainer) {
-		const objects = objectsAll.filter(object => objectParsed.idsSound.includes(object.id));
-
-		for(const object of objects) {
-			idsAudio.push(...groupActionChildAudioIDs(object, objectsAll, action, GG));
-		}
-	}
-	else if(objectParsed instanceof HIRCSwitchContainer) {
 		const objects = [...new Set([
 			...objectsAll.filter(object => objectParsed.idsSound.includes(object.id)),
-			...objectParsed.switches,
+			...objectParsed.switches ?? [],
 		])];
 
 		for(const object of objects) {
@@ -604,11 +596,11 @@ const joinTree = (object, id, objects, texts, level = 0) => {
 	}
 	else if(
 		object instanceof HIRCContainer ||
-		object instanceof HIRCSwitchContainer ||
 		object instanceof HIRCSwitch
 	) {
-		if(object instanceof HIRCSwitchContainer) {
-			object.switches.forEach(sw => texts.push(`${'\t'.repeat(level + 1)}${sw.toString()}`));
+		// Switch Conatiner
+		if(object.type == 6) {
+			object.switches.filter(sw => sw.idsSound?.length).forEach(sw => texts.push(`${'\t'.repeat(level + 1)}${sw.toString()}`));
 		}
 
 		for(const idSound of object.idsSound) {

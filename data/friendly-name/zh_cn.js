@@ -28,7 +28,7 @@ export default [
 
 
 	['KillFirst', '击杀:首杀'],
-	['KillTurret', '击杀:建筑:防御塔'],
+	['KillTurret', '摧毁:建筑:防御塔'],
 	['KillGeneral', '击杀:英雄'],
 	['KillChampion', '击杀:英雄'],
 	['EndedNearby', '回应'],

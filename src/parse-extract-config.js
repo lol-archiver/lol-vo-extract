@@ -72,7 +72,7 @@ export default function parseExtractConfig(runcoms) {
 		const profile = runcom.profile ?? profilesRawUser?.$profile ?? profilesRawDefault?.$profile;
 
 		/** @type {import('../bases.d.ts').ExtractConfig} */
-		const E = Object.assign({}, profiles[profile], runcom);
+		const E = Object.assign({ profile }, profiles[profile], runcom);
 
 
 		E.lang = E.lang ?? 'zh_cn';
@@ -95,16 +95,16 @@ export default function parseExtractConfig(runcoms) {
 			const idFull = `${pad0(champion.id)}${pad0(skin.id)}`;
 
 
-			E.slotFile = `${idFull}@${E.slot}@${region}@${lang}@${timeExtract.format('YYMMww')}`;
-			E.nameFile = `${idFull}@${(skin?.name)?.replace(/[:"]/g, '')}@${region}@${lang}@${timeExtract.format('DDHHmmss')}`;
-			E.titleFile = `[${idFull}] ${champion.slot}:${champion.name} ==> ${skin.id == 0 ? `${championFallback.title}:${champion.title}` : `${skinFallback.name}:${skin.name}`}`;
-			E.nameDirExport = `${idFull}@${(skin?.name)?.replace(/[:"]/g, '')}@${region}@${lang}`;
+			E.nameDirCache = `${idFull}@${E.slot}@${region}@${lang}@${timeExtract.format('YYMMww')}`;
+			E.nameDirVoiceExport = `${idFull}@${skin.id == 0 ? `${champion.title} ${champion.name}` : `${skin.name}`?.replace(/[:"]/g, '')}@${region}@${lang}`;
+			E.nameFileDictation = `${E.nameDirVoiceExport}@${timeExtract.format('DDHHmmss')}`;
+			E.titleFileDictation = `[${idFull}] ${champion.slot}:${champion.name} ==> ${skin.id == 0 ? `${championFallback.title}:${champion.title}` : `${skinFallback.name}:${skin.name}`}`;
 		}
 		else {
-			E.slotFile = `${E.slot}@${timeExtract.format('YYMMww')}`;
-			E.nameFile = `${E.slot}@${E.title}@${timeExtract.format('HHmmss')}`;
-			E.titleFile = `[${E.slot}] ${E.title}`;
-			E.nameDirExport = `${E.slot}@${E.title}@${lang}`;
+			E.nameDirCache = `${E.slot}@${timeExtract.format('YYMMww')}`;
+			E.nameFileDictation = `${E.slot}@${E.title}@${timeExtract.format('HHmmss')}`;
+			E.titleFileDictation = `[${E.slot}] ${E.title}`;
+			E.nameDirVoiceExport = `${E.slot}@${E.title}@${lang}`;
 		}
 
 
@@ -117,7 +117,7 @@ export default function parseExtractConfig(runcoms) {
 
 		E.dirCacheAsset = resolvePath(E.dirCache, '1-asset'); ensureDirSync(E.dirCacheAsset);
 		E.dirCacheGame = resolvePath(E.dirCache, '2-game'); ensureDirSync(E.dirCacheGame);
-		E.dirCacheAudio = resolvePath(E.dirCache, '3-audio', E.slotFile); ensureDirSync(E.dirCacheAudio);
+		E.dirCacheAudio = resolvePath(E.dirCache, '3-audio', E.nameDirCache); ensureDirSync(E.dirCacheAudio);
 
 
 		E.timeExtract = timeExtract;

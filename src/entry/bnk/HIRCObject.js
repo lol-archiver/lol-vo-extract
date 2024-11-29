@@ -61,7 +61,7 @@ export class HIRCObject {
 		this.type = type;
 	}
 
-	toString() { return `${this.typeName ?? Object.getPrototypeOf(this).constructor.name}:${showID(this.id)}${this.overrided?' override':''}`; }
+	toString() { return `${this.typeName ?? Object.getPrototypeOf(this).constructor.name}:${showID(this.id)}${this.overrided ? ' override' : ''}`; }
 }
 
 
@@ -113,23 +113,19 @@ export class HIRCEvent extends HIRCObject {
 }
 
 export class HIRCContainer extends HIRCObject {
-	constructor(id) {
-		super(id, 5);
+	/** @type {number[]} */
+	idsSound = [];
+	/** @type {HIRCSwitch[]} */
+	switches;
 
-		this.idsSound = [];
+	constructor(id, type) {
+		super(id, type);
+
+		// Switch Container
+		if(type == 6) {
+			this.switches = [];
+		}
 	}
-
-	// toString() { return `${super.toString()} --> sounds:${this.idsSound.map(id => showID(id)).join(',')}`; }
-}
-
-export class HIRCSwitchContainer extends HIRCObject {
-	constructor(id) {
-		super(id, 6);
-
-		this.idsSound = [];
-	}
-
-	// toString() { return `${super.toString()} --> sounds:${this.idsSound.map(id => showID(id)).join(',')}`; }
 }
 
 

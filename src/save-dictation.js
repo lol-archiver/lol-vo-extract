@@ -63,7 +63,7 @@ export default async function saveDictation(events$idAudio, idsSound$idAudio, E)
 	}
 
 	try {
-		mapsFriendly.push(...(await import(`../../data/friendly-name/${E.lang}.js`)).default);
+		mapsFriendly.push(...(await import(`../data/friendly-name/${E.lang}.js`)).default);
 	}
 	catch { void 0; }
 
@@ -93,16 +93,16 @@ export default async function saveDictation(events$idAudio, idsSound$idAudio, E)
 	}
 
 
-	const result = [`# ${E.titleFile}`];
+	const result = [`# ${E.titleFileDictation}`];
 
 
 	const arrCatalog = ['## Catalog:目录'];
 	const arrEventList = [];
 
 	for(const [eventName, arrAudioInfo] of Object.entries(skinMap).sort(([a], [b]) => a > b ? 1 : -1)) {
-		const eventShort = eventName.toLowerCase()
-			.replace(/^play_vo_/, '')
-			.replace(new RegExp(`^${E.champion?.slot}${E.skin?.id ? `skin${pad0(E.skin.id, 2)}` : ''}_`.toLowerCase()), '');
+		const eventShort = eventName
+			.replace(/^play_vo_/i, '')
+			.replace(new RegExp(`^${E.champion?.slot}${E.skin?.id ? `skin${pad0(E.skin.id, 2)}` : ''}_`, 'i'), '');
 
 		const eventTitle = `[${matchFriendlyName(eventShort, mapsFriendly)}]|${eventShort}`;
 
@@ -126,5 +126,5 @@ export default async function saveDictation(events$idAudio, idsSound$idAudio, E)
 	arrEventList.forEach(text => result.push(text));
 
 
-	writeFileSync(resolve(E.dirExportDict, `${E.nameFile}.md`), result.join('\n'));
+	writeFileSync(resolve(E.dirExportDict, `${E.nameFileDictation}.md`), result.join('\n'));
 }

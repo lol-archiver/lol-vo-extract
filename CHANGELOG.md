@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v2.3.1 - 2024.11.29 16
+* refactor: rename dynamic config `slotFile` to `nameDirCache`
+* refactor: rename dynamic config `nameFile` to `nameFileDictation`
+* refactor: rename dynamic config `titleFile` to `titleFileDictation`
+* refactor: rename dynamic config `nameDirExport` to `nameDirVoiceExport`
+* revert: now event-related export texts are case-sensitive
+* refactor: `HIRCSwitchContainer` has been removed and replaced with `HICRContainer`
+* refactor: side script `concat-audio-50` now supports the generation of multiple runcom
+  * update the file name format of output audios
+* fix: fix `Switches` in `Switch Container` not being shown when dumping event-tree.
+* fix: fix wrong import path for `friendly-name` file
+* chore: tweak `friendly-name` file
+* chore: update base data
+* deps: bump up dependencies
+
+
 ## v2.3.0 - 2024.11.14 17
 * feat: now when extracting audio in `wav` format, `VGMStream` is used instead of `RExtractor` to convert `wem` files directly to `wav` files.
   * This one change can greatly improve the overall extraction speed!!!

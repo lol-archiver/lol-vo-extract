@@ -48,9 +48,9 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 			const srcAudio = resolvePath(willCopyWEM ? dirCacheAudioWEM : dirCacheAudioWAV, `${idAudio}.${E.format}`);
 			const srcWEM = resolvePath(dirCacheAudioWEM, `${idAudio}.wem`);
 
-			const events = [...events$idAudio[idAudio]].map(event => event.toLowerCase()
-				.replace(/^play_vo_/, '')
-				.replace(new RegExp(`^${E.champion?.slot}${E.skin?.id ? `skin${pad0(E.skin.id, 2)}` : ''}_`.toLowerCase()), '')
+			const events = [...events$idAudio[idAudio]].map(event => event
+				.replace(/^play_vo_/i, '')
+				.replace(new RegExp(`^${E.champion?.slot}${E.skin?.id ? `skin${pad0(E.skin.id, 2)}` : ''}_`, 'i'), '')
 			);
 			if(!events.length && willCopy) { events.push('unmatch-event'); }
 
@@ -64,7 +64,7 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 
 			const logsTooLong = [`-------${E.timeExtract.format()}-------`];
 
-			const dirExportVoice = resolvePath(E.dirExportVoice, E.nameDirExport);
+			const dirExportVoice = resolvePath(E.dirExportVoice, E.nameDirVoiceExport);
 			ensureDirSync(dirExportVoice);
 
 

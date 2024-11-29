@@ -22,7 +22,7 @@ const concatAudioEvery50 = E => {
 	const dirSideData = resolve(dirWorking, '@3side');
 
 	const dirAudioConcat = resolve(dirSideData, 'audio-concat');
-	emptyDirSync(dirAudioConcat);
+	// emptyDirSync(dirAudioConcat);
 	const dirAudioSingle = resolve(dirSideData, 'audio-single');
 	emptyDirSync(dirAudioSingle);
 	const dirAudioText = resolve(dirSideData, 'audio-text');
@@ -34,7 +34,7 @@ const concatAudioEvery50 = E => {
 	copyFileSync(resolve(dirSideData, 'e.wav'), fileAudioEmpty);
 
 
-	const dirExportVoice = resolve(E.dirExportVoice, E.nameDirExport);
+	const dirExportVoice = resolve(E.dirExportVoice, E.nameDirVoiceExport);
 	const files = readdirSync(dirExportVoice).filter(file => file.endsWith('.wav'));
 
 	const dicts = {};
@@ -74,7 +74,7 @@ const concatAudioEvery50 = E => {
 			`"${[...Array(filesInput.length * 2 - 1)].map((f, i) => `[${i}:0]`).join('')}concat=n=${filesInput.length * 2 - 1}:v=0:a=1[out]"`,
 			'-map',
 			'"[out]"',
-			`%~dp0audio-concat\\concat-${String(indexDict).padStart(2, '0')}.mp3`,
+			`%~dp0audio-concat\\concat-${E.slot + (E.skin?.id !== undefined ? String(E.skin?.id).padStart(3, '0') : '')}-${String(indexDict).padStart(2, '0')}.mp3`,
 		);
 
 		cmds.push(passes.join(' '));
@@ -98,18 +98,19 @@ const concatAudioEvery50 = E => {
 try {
 	const runcoms = parseRuncom(C.runcom);
 	const configsExtract = parseExtractConfig(runcoms);
-	const configExtract = configsExtract[0];
 
+	for(const configExtract of configsExtract) {
+		if(configExtract.mode == 'skin') {
+			GG.info(...TS('execute-config', { config: configExtract }, 'info-skin'));
+		}
+		else {
+			GG.info(...TS('execute-config', { config: configExtract }, 'info-specify'));
+		}
 
-	if(configExtract.mode == 'skin') {
-		GG.info(...TS('execute-config', { config: configExtract }, 'info-skin'));
+		await concatAudioEvery50(configExtract);
+
+		globalThis.console.log('\n===================== next runcom =====================\n');
 	}
-	else {
-		GG.info(...TS('execute-config', { config: configExtract }, 'info-specify'));
-	}
-
-
-	await concatAudioEvery50(configExtract);
 }
 catch(error) {
 	GG.error('合并[语音]', error);

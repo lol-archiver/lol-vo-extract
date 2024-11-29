@@ -8340,7 +8340,22 @@
 			"52": 45,
 			"53": 45,
 			"54": 45,
-			"55": 45
+			"55": 45,
+			"56": {
+				"id": 56,
+				"name": "Arcane Vander Warwick",
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "Arcane Vander Warwick",
+						"colors": [
+							"#BCD6EF",
+							"#474AF7"
+						]
+					}
+				}
+			},
+			"57": 56
 		},
 		"spells": {
 			"p": "Eternal Hunger",
@@ -20124,7 +20139,7 @@
 			"27": 22,
 			"28": {
 				"id": 28,
-				"name": "Arcane Caitlyn",
+				"name": "Arcane Enforcer Caitlyn",
 				"chromas": {}
 			},
 			"29": {
@@ -26515,7 +26530,22 @@
 			"29": 24,
 			"30": 24,
 			"31": 24,
-			"32": 24
+			"32": 24,
+			"33": {
+				"id": 33,
+				"name": "Arcane Professor Heimerdinger",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Arcane Professor Heimerdinger",
+						"colors": [
+							"#BCD6EF",
+							"#474AF7"
+						]
+					}
+				}
+			},
+			"34": 33
 		},
 		"spells": {
 			"p": "Hextech Affinity",
@@ -38670,7 +38700,7 @@
 	"112": {
 		"id": 112,
 		"name": "Viktor",
-		"title": "the Machine Herald",
+		"title": "the Herald of the Arcane",
 		"slot": "Viktor",
 		"roles": [
 			"mage"
@@ -38865,14 +38895,19 @@
 			"20": 14,
 			"21": 14,
 			"22": 14,
-			"23": 14
+			"23": 14,
+			"24": {
+				"id": 24,
+				"name": "Arcane Savior Viktor",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Glorious Evolution",
 			"q": "Siphon Power",
 			"w": "Gravity Field",
-			"e": "Death Ray",
-			"r": "Chaos Storm"
+			"e": "Hextech Ray",
+			"r": "Arcane Storm"
 		}
 	},
 	"113": {
@@ -42969,7 +43004,7 @@
 			"23": 15,
 			"24": {
 				"id": 24,
-				"name": "Arcane Jayce",
+				"name": "Arcane Inventor Jayce",
 				"chromas": {}
 			},
 			"25": {
@@ -51954,7 +51989,7 @@
 			"36": 29,
 			"37": {
 				"id": 37,
-				"name": "Arcane Jinx",
+				"name": "Arcane Enemy Jinx",
 				"chromas": {}
 			},
 			"38": {
@@ -52129,6 +52164,11 @@
 			"57": 51,
 			"58": 51,
 			"59": 51,
+			"60": {
+				"id": 60,
+				"name": "Arcane Fractured Jinx",
+				"chromas": {}
+			},
 			"62": {
 				"id": 62,
 				"name": "T1 Jinx",
@@ -55271,11 +55311,11 @@
 			"35": 28,
 			"36": {
 				"id": 36,
-				"name": "Firelight Ekko",
+				"name": "Arcane Firelight Ekko",
 				"chromas": {
 					"37": {
 						"id": 37,
-						"name": "Firelight Ekko",
+						"name": "Arcane Firelight Ekko",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -55283,7 +55323,7 @@
 					},
 					"38": {
 						"id": 38,
-						"name": "Firelight Ekko",
+						"name": "Arcane Firelight Ekko",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -55291,7 +55331,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "Firelight Ekko",
+						"name": "Arcane Firelight Ekko",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -55299,7 +55339,7 @@
 					},
 					"40": {
 						"id": 40,
-						"name": "Firelight Ekko",
+						"name": "Arcane Firelight Ekko",
 						"colors": [
 							"#6ABBEE",
 							"#6ABBEE"
@@ -55307,7 +55347,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "Firelight Ekko",
+						"name": "Arcane Firelight Ekko",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -55315,7 +55355,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "Firelight Ekko",
+						"name": "Arcane Firelight Ekko",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -55323,7 +55363,7 @@
 					},
 					"43": {
 						"id": 43,
-						"name": "Firelight Ekko",
+						"name": "Arcane Firelight Ekko",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -55331,7 +55371,7 @@
 					},
 					"44": {
 						"id": 44,
-						"name": "Firelight Ekko",
+						"name": "Arcane Firelight Ekko",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -55443,7 +55483,22 @@
 				"id": 56,
 				"name": "Breakout True Damage Ekko",
 				"chromas": {}
-			}
+			},
+			"57": {
+				"id": 57,
+				"name": "Arcane Last Stand Ekko",
+				"chromas": {
+					"58": {
+						"id": 58,
+						"name": "Arcane Last Stand Ekko",
+						"colors": [
+							"#BCD6EF",
+							"#474AF7"
+						]
+					}
+				}
+			},
+			"58": 57
 		},
 		"spells": {
 			"p": "Z-Drive Resonance",
@@ -56130,7 +56185,7 @@
 			"28": 20,
 			"29": {
 				"id": 29,
-				"name": "Arcane Vi",
+				"name": "Arcane Undercity Vi",
 				"chromas": {}
 			},
 			"30": {

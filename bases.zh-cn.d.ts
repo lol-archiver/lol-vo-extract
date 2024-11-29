@@ -300,14 +300,14 @@ export type ExtractConfig = {
 	/** 是否使用代理 */
 	readonly proxyCDN: boolean;
 } & {
-	/** 输出标识 */
-	readonly slotFile: string;
-	/** 输出名称 */
-	readonly nameFile: string;
-	/** 输出标题 */
-	readonly titleFile: string;
-	/** 语音输出目录名 */
-	readonly nameDirExport: string;
+	/** 语音目录缓存名称 */
+	readonly nameDirCache: string;
+	/** 语音目录输出名称 */
+	readonly nameDirVoiceExport: string;
+	/** 听写文件输出名称 */
+	readonly nameFileDictation: string;
+	/** 听写文件输出标题 */
+	readonly titleFileDictation: string;
 
 	/**
 	 * Asset缓存目录，存放下载的资源文件。可能的值：
