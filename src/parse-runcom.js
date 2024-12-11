@@ -27,8 +27,8 @@ export default function parseRuncom(rawsRuncom = []) {
 
 	for(const rawRuncom of rawsRuncom) {
 		const typeRawRuncom = typeof rawRuncom;
-		if(typeRawRuncom != 'string' && !(rawRuncom && typeRawRuncom == 'object')) { throw TLogError('parse-runcom', { rc: rawRuncom }, 'invalid-type'); }
-		if((rawRuncom.rc || rawRuncom)?.startsWith('-')) { continue; }
+		if(typeRawRuncom != 'string' && !(rawRuncom instanceof Array)) { throw TLogError('parse-runcom', { rc: rawRuncom }, 'invalid-type'); }
+		if((typeRawRuncom == 'string' ? rawRuncom : rawRuncom[0])?.startsWith('-')) { continue; }
 
 
 		/** @type {import('../bases.d.ts').RuncomConfig} */
@@ -51,12 +51,12 @@ export default function parseRuncom(rawsRuncom = []) {
 			if(profile) { runcom.profile = profile; }
 		}
 		else {
-			const [slot, title, profile] = rawRuncom.rc.split('|');
+			const [slot, title, profile] = rawRuncom[0].split('|');
 
 			runcom.slot = slot;
 			runcom.title = title;
 			if(profile) { runcom.profile = profile; }
-			runcom.filesGame = rawRuncom.filesGame ?? [];
+			runcom.filesGame = rawRuncom.slice(1) ?? [];
 		}
 
 		runcoms.push(runcom);

@@ -235,8 +235,12 @@ export type ExtractConfig = {
 	readonly saveWithShort: boolean;
 	/** 是否无视提取缓存，强制提取音频 */
 	readonly forceExtractFile: boolean;
-	/** 导出的文件名是否不包括对应wem文件的哈希 */
-	readonly noWEMHash$ExportAudio: boolean;
+	/** 导出的文件名是否包含对应的wem文件哈希（用于横向对比） */
+	readonly noWEMHashInExportFileName: boolean;
+	/** 导出的文件名是否包含对应的Audio ID（用于横向对比） */
+	readonly noAudioIDInExportFileName: boolean;
+	/** 导出的文件名是否包含对应的服务器（用于横向对比） */
+	readonly noRegionInExportFileName: boolean;
 
 	/** 是否转存语音事件树 */
 	readonly dumpEventTree: boolean,

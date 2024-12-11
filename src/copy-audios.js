@@ -57,7 +57,8 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 
 			const existedWEM = existsSync(srcWEM);
 			if(!existedWEM) { G.warn('AudioCopier', `~[Audio File]~{${showID(idAudio)}} does not have ~[source WEM]`, '✖'); }
-			const partHashWEM = E.noWEMHash$ExportAudio ? ''
+			const partHexIDAudio = E.noAudioIDInExportFileName ? '' : `[${hexIDAudio}]`;
+			const partHashWEM = E.noWEMHashInExportFileName ? ''
 				: existedWEM ? `[${crc32(readFileSync(srcWEM))}]`
 					: '[no-wem]';
 
@@ -73,7 +74,7 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 			const audioText = (idsSound
 				? `[${idsSound.slice(0, 4).map(id => toHexL8(id)).join('.')}${idsSound.length > 4 ? '.more' : ''}]`
 				: `[no-sound]`)
-				+ `[${hexIDAudio}]${partHashWEM}.${E.format}`;
+				+ `${partHexIDAudio}${partHashWEM}.${E.format}`;
 
 
 			try {

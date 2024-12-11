@@ -95,8 +95,8 @@ export default function parseExtractConfig(runcoms) {
 			const idFull = `${pad0(champion.id)}${pad0(skin.id)}`;
 
 
-			E.nameDirCache = `${idFull}@${E.slot}@${region}@${lang}@${timeExtract.format('YYMMww')}`;
-			E.nameDirVoiceExport = `${idFull}@${skin.id == 0 ? `${champion.title} ${champion.name}` : `${skin.name}`?.replace(/[:"]/g, '')}@${region}@${lang}`;
+			E.nameDirCache = `${idFull}@${E.slot}${E.noRegionInExportFileName ? '' : `@${region}`}@${lang}@${timeExtract.format('YYMMww')}`;
+			E.nameDirVoiceExport = `${idFull}@${skin.id == 0 ? `${champion.title} ${champion.name}` : `${skin.name}`?.replace(/[:"]/g, '')}${E.noRegionInExportFileName ? '' : `@${region}`}@${lang}`;
 			E.nameFileDictation = `${E.nameDirVoiceExport}@${timeExtract.format('DDHHmmss')}`;
 			E.titleFileDictation = `[${idFull}] ${champion.slot}:${champion.name} ==> ${skin.id == 0 ? `${championFallback.title}:${champion.title}` : `${skinFallback.name}:${skin.name}`}`;
 		}

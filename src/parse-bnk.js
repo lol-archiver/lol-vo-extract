@@ -788,7 +788,7 @@ export default async function parseBNK(E, file, eventsAll) {
 				const region = (!E.saveWithShort ? E.regionCDN : E.regionCDN.replace(/\d+$/, '')).toLowerCase();
 
 				writeFileSync(
-					resolve(E.dirExportDebug, `event-tree@${parsePath(file).base}@${region}@${lang}@${E.slot}@${E.timeExtract.format('HHmmss')}.txt`),
+					resolve(E.dirExportDebug, `event-tree@${parsePath(file).base}${E.noRegionInExportFileName ? '' : `@${region}`}@${lang}@${E.slot}@${E.timeExtract.format('HHmmss')}.txt`),
 					textsTree.join('\n')
 				);
 			}

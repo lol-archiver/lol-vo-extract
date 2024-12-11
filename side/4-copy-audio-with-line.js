@@ -85,10 +85,10 @@ const copyAudioWithLine = E => {
 			if(fileAudio) { fileSource = fileAudio; }
 			else if(idSoundFirst == '00000000' || idSoundFirst == '00000001') {
 				if(eventNow.includes('[选用]')) {
-					fileSource = resolve(E.dirAutogen, 'reso', 'project', String(E.champion.slot), 'voice-pick.wav');
+					fileSource = resolve(E.dirAutogen, 'resource', 'project', `${String(E.champion.id)}-${E.champion.slot.toLowerCase()}`, 'voice-pick.wav');
 				}
 				else if(eventNow.includes('[禁用]')) {
-					fileSource = resolve(E.dirAutogen, 'reso', 'project', String(E.champion.slot), 'voice-ban.wav');
+					fileSource = resolve(E.dirAutogen, 'resource', 'project', `${String(E.champion.id)}-${E.champion.slot.toLowerCase()}`, 'voice-ban.wav');
 				}
 			}
 			else {

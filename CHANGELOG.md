@@ -1,6 +1,19 @@
 # CHANGELOG
 
-## v2.3.1 - 2024.11.29 16
+## v2.5.0 - 2024.12.11 14
+* refactor(config)!: **specify** mode runcom's type changed from `Object` to `Array`
+  * the structure within the array is `[rc, ...files]`
+  * `runcom[0]` is the former `runcom.rc`
+  * `runcom[1+]` is the former `runcom.file`
+* feat(config): new config `noAudioIDInExportFileName`
+* feat(config): new config `noRegionInExportFileName`
+* refactor(config): rename config `noWEMHashInExportFileName` to `noWEMHash$ExportAudio`
+* fix(side): fix wrong pick/ban voice matching in side script `copy-audio-with-line`
+* chore: update base data
+* deps: bump up dependencies
+
+
+## v2.4.0 - 2024.11.29 16
 * refactor: rename dynamic config `slotFile` to `nameDirCache`
 * refactor: rename dynamic config `nameFile` to `nameFileDictation`
 * refactor: rename dynamic config `titleFile` to `titleFileDictation`
