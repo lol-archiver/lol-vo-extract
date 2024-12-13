@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.6.0 - 2024.12.13 15
+* feat: support `.jsonc` config file.
+* chore: update base data
+* chore: tweat side script `concat-audio-50`
+* deps: bump up dependencies
+
+
 ## v2.5.0 - 2024.12.11 14
 * refactor(config)!: **specify** mode runcom's type changed from `Object` to `Array`
   * the structure within the array is `[rc, ...files]`

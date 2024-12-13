@@ -74,7 +74,7 @@ const concatAudioEvery50 = E => {
 			`"${[...Array(filesInput.length * 2 - 1)].map((f, i) => `[${i}:0]`).join('')}concat=n=${filesInput.length * 2 - 1}:v=0:a=1[out]"`,
 			'-map',
 			'"[out]"',
-			`%~dp0audio-concat\\concat-${E.slot + (E.skin?.id !== undefined ? String(E.skin?.id).padStart(3, '0') : '')}-${String(indexDict).padStart(2, '0')}.mp3`,
+			`%~dp0audio-concat\\audio-concat@${E.slot + (E.skin?.id !== undefined ? String(E.skin?.id).padStart(3, '0') : '')}-${String(indexDict).padStart(2, '0')}.mp3`,
 		);
 
 		cmds.push(passes.join(' '));
@@ -84,10 +84,10 @@ const concatAudioEvery50 = E => {
 	cmds.push('pause');
 
 	writeFileSync(resolve(dirAudioSingle, '@audio-map.txt'), mapsFile.join('\n'));
-	writeFileSync(resolve(dirSideData, 'concat-audio.bat'), Iconv.encode(cmds.join('\r\n'), 'GBK'));
+	writeFileSync(resolve(dirSideData, 'audio-concat.bat'), Iconv.encode(cmds.join('\r\n'), 'GBK'));
 
 
-	const { status, error, stderr, stdout } = spawnSync('cmd', ['/c', resolve(dirSideData, 'concat-audio.bat')]);
+	const { status, error, stderr, stdout } = spawnSync('cmd', ['/c', resolve(dirSideData, 'audio-concat.bat')]);
 	if(status != 0) { throw (error && error.message) || (stderr && stderr.toString()); }
 
 	process.stdout.write(Iconv.decode(stdout, 'GBK'));
