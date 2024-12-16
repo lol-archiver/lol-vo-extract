@@ -1,7 +1,7 @@
 # lol-vo-extract
 League of Legends champion voices ~~download~~, extract and save with events.
 
-**Most of implementation based on [CDTB](https://github.com/CommunityDragon/CDTB). Sincerely Thanks!**
+**Most implementations are refactored from [CDTB](https://github.com/CommunityDragon/CDTB). Sincerely Thanks!**
 
 **Thanks to [wwiser](https://github.com/bnnm/wwiser)'s code, I fixed quite a few latent bugs regarding parsing the bnk/wpk format. Previously I could only set up parsed files by analyzing/guessing binary patterns. this led to a further increase in the event match rate.**
 
@@ -29,7 +29,7 @@ But I think it is still necessary to keep the following ATTENTION. After all, I'
 - Ravioli Game Tools (required if extract format is `ogg`)
 
 ## Usage
-This program is a **`config-file-base`** program. All behavior is specified and adjusted through the configuration files.
+This program is a **`config-file-base`** node.js program. No command line. All behavior is specified and adjusted through the configuration files.
 
 The entry file is **`index.js`**. Audio files will be stored in `@1voice`, and dictation files will be stored in `@2dict` by default:
 ````batch
@@ -40,4 +40,4 @@ node index
 ## Config
 `config.runcom.json` and `config.user.json` are required.
 - see example in `config.runcom.json.example`, `config.user.json.example`
-- definitions is on `ExtractConfig` in `bases.d.ts` (english version still w.i.p current) 
+- definitions is on `ExtractConfig` in `bases.${lang}.d.ts` (english version still w.i.p) 
