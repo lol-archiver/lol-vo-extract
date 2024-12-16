@@ -5,10 +5,13 @@ import { parse as parsePath, resolve as resolvePath } from 'path';
 
 import { ensureDirSync } from 'fs-extra/esm';
 
+import { T, TS } from '../lib/i18n.js';
 
 import { crc32, pad0, showID, toHexL8 } from '../lib/utility.js';
 
 
+
+const GG = G.where(T('save-audios:where'));
 
 /**
  * @param {string[]} filesBank
@@ -17,8 +20,6 @@ import { crc32, pad0, showID, toHexL8 } from '../lib/utility.js';
  * @param {import('../bases.js').ExtractConfig} E
  */
 export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$idAudio, E) {
-	G.infoU('AudioCopier', 'copy audio', '○ coping...');
-
 	for(const fileBank of filesBank) {
 		const pathParsedBank = parsePath(fileBank);
 		const baseBank = pathParsedBank.base;
@@ -31,12 +32,12 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 		const dirCacheAudioWEM = resolvePath(E.dirCacheAudio, `[wem]${baseBank}`);
 
 		if(!willCopyWEM && !existsSync(dirCacheAudioWAV)) {
-			G.warn('AudioCopier', 'copy audio', `path~{${dirCacheAudioWAV}} not exists`);
+			GG.warnD(...TS('save-audios:exist-dir', { name: 'WAV', path: dirCacheAudioWAV }, 'not-exist'));
 
 			continue;
 		}
 		if(!existsSync(dirCacheAudioWEM)) {
-			G.warn('AudioCopier', 'copy audio', `path~{${dirCacheAudioWEM}} not exists`);
+			GG.warnD(...TS('save-audios:exist-dir', { name: 'WEM', path: dirCacheAudioWEM }, 'not-exist'));
 
 			continue;
 		}
@@ -48,7 +49,7 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 			const srcAudio = resolvePath(willCopyWEM ? dirCacheAudioWEM : dirCacheAudioWAV, `${idAudio}.${E.format}`);
 			const srcWEM = resolvePath(dirCacheAudioWEM, `${idAudio}.wem`);
 
-			const events = [...events$idAudio[idAudio]].map(event => event
+			const events = [...events$idAudio[idAudio]].map(event => String(event)
 				.replace(/^play_vo_/i, '')
 				.replace(new RegExp(`^${E.champion?.slot}${E.skin?.id ? `skin${pad0(E.skin.id, 2)}` : ''}_`, 'i'), '')
 			);
@@ -56,7 +57,8 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 
 
 			const existedWEM = existsSync(srcWEM);
-			if(!existedWEM) { G.warn('AudioCopier', `~[Audio File]~{${showID(idAudio)}} does not have ~[source WEM]`, '✖'); }
+			if(!existedWEM) { GG.warnD(...TS('save-audios:exist-wem-source', { id: showID(idAudio) }, 'not-exist')); }
+
 			const partHexIDAudio = E.noAudioIDInExportFileName ? '' : `[${hexIDAudio}]`;
 			const partHashWEM = E.noWEMHashInExportFileName ? ''
 				: existedWEM ? `[${crc32(readFileSync(srcWEM))}]`
@@ -99,6 +101,4 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 			}
 		}
 	}
-
-	G.infoD('AudioCopier', 'copy audio', '✔ ');
 }

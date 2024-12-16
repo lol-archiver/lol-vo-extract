@@ -37,7 +37,7 @@ export default async function parseEvents(E, filesUnpacked) {
 	const idsSound$idAudio = {};
 
 	for(const file of filesUnpacked.filter(file => file.endsWith('.bnk'))) {
-		GG.infoD(...TS('parse-event:parse-bnk', { name: parsePath(file).base }, '...'));
+		GG.infoU(...TS('parse-event:parse-bnk', { name: parsePath(file).base }, '...'));
 
 		const [eventsBNK$idAudio, idsSoundBNK$idAudio] = await parseBNK(E, file, events);
 

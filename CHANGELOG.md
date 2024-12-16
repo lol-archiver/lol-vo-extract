@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v2.7.0 - 2024.12.16 15
+* feat: support for extracting game files from asset files in **specify** mode
+  * `config/config.runcom.jsonc.example` has been updated;
+* refactor: rename `save-audios` from `copy-audios`
+  * update related zh-cn locales
+* refactor: finish refactoring log outputs for `save-audios` and `save-dictaion`
+* fix: fixed incorrectly calling string-type functions on number-type Event ID
+* deps: bump up dependencies
+
+
 ## v2.6.0 - 2024.12.13 15
 * feat: support `.jsonc` config file.
 * chore: update base data

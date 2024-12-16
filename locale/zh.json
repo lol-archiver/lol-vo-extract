@@ -83,7 +83,20 @@
 		"what": "解出~[可变数字]",
 		"unexpected-loop": "意料之外的可变次数"
 	},
-	"copy-audios": {
-		"unknown-event": "未知事件"
+	"save-audios": {
+		"what": "保存~[音频]",
+		"where": "保存~[音频]",
+		"exist-dir": {
+			"what":"存在~[{{name}}目录]{{-path,value}}",
+			"not-exist": "✖"
+		},
+		"exist-wem-source": {
+			"what":"存在~[源WEM文件]{{-id,value}}",
+			"not-exist": "✖"
+		}
+	},
+	"save-dictation": {
+		"what": "保存~[听写]",
+		"where": "保存~[听写]"
 	}
 }

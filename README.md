@@ -1,5 +1,5 @@
 # lol-vo-extract
-League of Legends champion voices ~~download~~, extract and copy with events.
+League of Legends champion voices ~~download~~, extract and save with events.
 
 **Most of implementation based on [CDTB](https://github.com/CommunityDragon/CDTB). Sincerely Thanks!**
 

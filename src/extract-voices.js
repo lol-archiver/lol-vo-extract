@@ -1,6 +1,6 @@
 import { G } from '@nuogz/pangu';
 
-import { parse as parsePath } from 'path';
+import { parse as parsePath, resolve as resolvePath } from 'path';
 
 import { extractWAD } from '@lol-archiver/lol-wad-extract';
 
@@ -10,7 +10,7 @@ import parseAssetFilesNeed from './parse-asset-files-need.js';
 import parseGameFilesNeed from './parse-game-files-need.js';
 import parseEvents from './parse-events.js';
 import extractAudios from './extract-audios.js';
-import copyAudios$fileBank from './copy-audios.js';
+import saveAudios$fileBank from './copy-audios.js';
 import saveDictation from './save-dictation.js';
 
 
@@ -20,9 +20,42 @@ const GG = G.where(T('where:extract-voices'));
 
 /** @param {import('../bases.js').ExtractConfig} E */
 export default async function extractVoices(E = {}) {
-	let filesUnpacked = [];
+	/** @type {string[]} */
+	const filesUnpacked = [];
 	if(E.filesGame?.length) {
-		filesUnpacked = E.filesGame;
+		const filesGame = [...E.filesGame];
+
+		let dirBaseWAD;
+		if(filesGame[0].startsWith('@')) { dirBaseWAD = filesGame.shift().replace(/^@/, ''); }
+
+
+		filesUnpacked.push(...filesGame.filter(file => !file.includes('|')));
+
+		const resultsLogExtract = [];
+		for(const file of filesGame.filter(file => file.includes('|'))) {
+			const [fileWAD, fileInpack] = file.split('|');
+			const nameFileInpack = parsePath(fileInpack).base;
+
+			const [configExtract] = await extractWAD(
+				dirBaseWAD ? resolvePath(dirBaseWAD, fileWAD) : fileWAD,
+				[{
+					fileInpack,
+					fileSave: resolvePath(E.dirCacheGame, nameFileInpack),
+				}]
+			);
+
+
+			if(configExtract?.fileSave) {
+				filesUnpacked.push(configExtract.fileSave);
+
+				resultsLogExtract.push({ name: nameFileInpack, saved: '✔' });
+			}
+			else {
+				resultsLogExtract.push({ name: nameFileInpack, saved: '✖' });
+			}
+		}
+
+		GG.infoD(...TS('parse-game-files-need', '✔', ...resultsLogExtract.map(result => ['file', result])));
 	}
 	else {
 		GG.infoU(...TS('parse-asset-files-need', '...'));
@@ -40,10 +73,10 @@ export default async function extractVoices(E = {}) {
 
 		const configsExtractRaw = parseGameFilesNeed(E);
 
-		filesUnpacked = [
+		filesUnpacked.push([
 			...await extractWAD(filesNeed.find(file => file.type == 'champion-main').path, configsExtractRaw),
 			...await extractWAD(filesNeed.find(file => file.type == 'champion-lang').path, configsExtractRaw),
-		].map(({ fileSave }) => fileSave);
+		].map(({ fileSave }) => fileSave));
 
 
 		GG.infoD(...TS('parse-game-files-need', '✔', ...configsExtractRaw.map(({ fileInpack, fileSave }) =>
@@ -68,12 +101,20 @@ export default async function extractVoices(E = {}) {
 		extractAudios(filesWPK, E);
 
 
-		// copy voice files and rename with events
-		copyAudios$fileBank(filesWPK, events$idAudio, idsSound$idAudio, E);
+		GG.infoU(...TS('save-audios', '...'));
+
+		// save voice files and rename with events
+		saveAudios$fileBank(filesWPK, events$idAudio, idsSound$idAudio, E);
+
+		GG.infoD(...TS('save-audios', '✔'));
 	}
 
 	if(!E.skipSaveDictation) {
+		GG.infoU(...TS('save-dictation', '...'));
+
 		// save event JSON for `lol-vo-lines-dictation`
 		saveDictation(events$idAudio, idsSound$idAudio, E);
+
+		GG.infoD(...TS('save-dictation', '✔'));
 	}
 }

@@ -1,12 +1,27 @@
 [
-	"morgana|0",
-	"morgana|0||pbe-en",
+	// skipped runcom with starts with '-'
 	"-morgana|0||cn",
+	// skipped runcom as comments (json with comments is support)
+	// "morgana|0||cn",
+	// example 1: [skin mode]extract Base Morgana using default profile (specified by $profile)
+	"morgana|0",
+	// example 2: [skin mode]extract Base Morgana using `pbe-en` profile with custom export title `Mooor`
+	"morgana|0|Moooor|pbe-en",
+	// example 3: [specify mode]Extract by specifying needed game files
 	[
-		"-bridge-of-progress-shopkeeper|Bridge of Progress's Shopkeeper Voices|pbe-zh",
-		"../bridge-of-progress/map12.bin",
-		"../bridge-of-progress/npc_map12_crepe_vo_audio.wpk",
-		"../bridge-of-progress/npc_map12_crepe_vo_audio.bnk",
-		"../bridge-of-progress/npc_map12_crepe_vo_events.bnk"
+		"bridge-of-progress-shopkeeper|Bridge of Progress's Shopkeeper Voices|pbe-zh",
+		"d:/bridge-of-progress/map12.bin",
+		"d:/bridge-of-progress/npc_map12_crepe_vo_audio.wpk",
+		"d:/bridge-of-progress/npc_map12_crepe_vo_audio.bnk",
+		"d:/bridge-of-progress/npc_map12_crepe_vo_events.bnk"
+	],
+	// example 4: [specify mode]Extract by specifying needed asset files and needed paths to game files in asset files
+	[
+		"summoners-rift-atakhan|Summoners Rift Atakhan Voices|pbe-en",
+		"@e:/league-of-legends/shipping",
+		"map11.wad.client|data/maps/shipping/map11/map11.bin",
+		"map11.zh_cn.wad.client|assets/sounds/wwise2016/vo/en_us/shared/npc_map11_atakhan_vo_audio.wpk",
+		"map11.zh_cn.wad.client|assets/sounds/wwise2016/vo/en_us/shared/npc_map11_atakhan_vo_audio.bnk",
+		"map11.zh_cn.wad.client|assets/sounds/wwise2016/vo/en_us/shared/npc_map11_atakhan_vo_events.bnk"
 	]
 ]

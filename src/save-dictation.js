@@ -38,9 +38,6 @@ const matchFriendlyName = (name, mapsFriendly) => {
  * @param {import('../bases.js').ExtractConfig} E
  */
 export default async function saveDictation(events$idAudio, idsSound$idAudio, E) {
-	// G.info('EventSaver', 'save event');
-
-
 	/** @type {Array<[string,string]>} */
 	const mapsFriendly = [];
 
