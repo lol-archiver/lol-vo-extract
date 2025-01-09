@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.7.1 - 2025.01.09 15
+* chore: update base data
+* fix: fixed incorrectly deconstructed unpacked files
+* deps: bump up dependencies
+
+
 ## v2.7.0 - 2024.12.16 15
 * feat: support for extracting game files from asset files in **specify** mode
   * `config/config.runcom.jsonc.example` has been updated;

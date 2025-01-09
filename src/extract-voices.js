@@ -73,10 +73,10 @@ export default async function extractVoices(E = {}) {
 
 		const configsExtractRaw = parseGameFilesNeed(E);
 
-		filesUnpacked.push([
-			...await extractWAD(filesNeed.find(file => file.type == 'champion-main').path, configsExtractRaw),
-			...await extractWAD(filesNeed.find(file => file.type == 'champion-lang').path, configsExtractRaw),
-		].map(({ fileSave }) => fileSave));
+		filesUnpacked.push(...[
+			await extractWAD(filesNeed.find(file => file.type == 'champion-main').path, configsExtractRaw),
+			await extractWAD(filesNeed.find(file => file.type == 'champion-lang').path, configsExtractRaw),
+		].flat().map(({ fileSave }) => fileSave));
 
 
 		GG.infoD(...TS('parse-game-files-need', '✔', ...configsExtractRaw.map(({ fileInpack, fileSave }) =>
