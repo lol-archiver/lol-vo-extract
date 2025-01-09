@@ -4,6 +4,8 @@
 * chore: update base data
 * fix: fixed incorrectly deconstructed unpacked files
 * deps: bump up dependencies
+* refactor: move file config.runcom.json.example to config.runcom.jsonc.example
+* docs: update readme
 
 
 ## v2.7.0 - 2024.12.16 15
