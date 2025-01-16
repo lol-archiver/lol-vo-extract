@@ -2,7 +2,7 @@ import '@nuogz/pangu/index.js?i18n&config&day&log=copy-audio-with-line&log.willO
 import { C, G, dirWorking } from '@nuogz/pangu';
 
 import { spawnSync } from 'child_process';
-import { copyFileSync, readdirSync, readFileSync } from 'fs';
+import { copyFileSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { resolve } from 'path';
 
 import Filenamify from 'filenamify';
@@ -96,11 +96,14 @@ const copyAudioWithLine = E => {
 			}
 
 
-			if(fileSource) {
+			if(existsSync(fileSource)) {
 				copyFileSync(
 					fileSource,
 					resolve(dirTarget, Filenamify(`${eventNow}${condNow ? `[子条件：${condNow}]` : ''} ${line}(${idSoundFirst}).wav`))
 				);
+			}
+			else {
+				globalThis.console.warn('source file not found: ', eventNow + condNow, line);
 			}
 		}
 	}

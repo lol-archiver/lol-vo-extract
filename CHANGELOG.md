@@ -1,10 +1,17 @@
 # CHANGELOG
 
+## v2.7.2 - 2025.01.16 09
+* feat: support for manually adding event names via `config.event-manual.json`
+* feat(script): improve script `copy-audio-with-line`
+* chore: update base data
+* chore: bump up dependencies
+
+
 ## v2.7.1 - 2025.01.09 15
 * chore: update base data
 * fix: fixed incorrectly deconstructed unpacked files
 * deps: bump up dependencies
-* refactor: move file config.runcom.json.example to config.runcom.jsonc.example
+* refactor: move file `config.runcom.json.example` to `config.runcom.jsonc.example`
 * docs: update readme
 
 
@@ -21,7 +28,7 @@
 ## v2.6.0 - 2024.12.13 15
 * feat: support `.jsonc` config file.
 * chore: update base data
-* chore: tweat side script `concat-audio-50`
+* chore: tweak side script `concat-audio-50`
 * deps: bump up dependencies
 
 

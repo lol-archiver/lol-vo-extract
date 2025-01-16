@@ -5,8 +5,7 @@ node_modules
 /@*
 /config/config.*
 !/config/config.default.json
-!/config/config.user.json.example
-!/config/config.runcom.jsonc.example
+!/config/*.example
 /log/*
 /cache
 /debug

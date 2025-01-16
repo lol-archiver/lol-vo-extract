@@ -7,5 +7,6 @@ declare module '@nuogz/poseidon' {
 		readonly user: {
 			readonly [key:string] : import('./bases.d.ts').ExtractConfig;
 		};
+		readonly 'event-manual': string[];
 	}
 }

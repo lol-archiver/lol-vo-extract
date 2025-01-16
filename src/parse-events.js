@@ -1,4 +1,4 @@
-import { G } from '@nuogz/pangu';
+import { C, G } from '@nuogz/pangu';
 
 import { parse as parsePath } from 'path';
 
@@ -21,7 +21,7 @@ export default async function parseEvents(E, filesUnpacked) {
 	for(const file of filesUnpacked.filter(file => file.endsWith('.bin'))) {
 		GG.infoU(...TS('parse-event:parse-bin', { name: parsePath(file).base }, '...'));
 
-		const eventsBIN = parseBIN(file);
+		const eventsBIN = parseBIN(file).concat(C['event-manual'] ?? []);
 
 		for(const event of eventsBIN) {
 			events.add(event);
