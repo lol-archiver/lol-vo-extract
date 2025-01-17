@@ -96,7 +96,9 @@ const extractWEM = (file, dirExtract) => {
 				else {
 					bifferBank.skip(sizeSection);
 
-					G.warnD('AudioExtractor', `~[${base}] unhandled ~[Bank Section Tag]~{${tagSection}}`, `~[Size]~{${sizeSection}}`);
+					if(!['HIRC'].includes(tagSection)) {
+						G.warnD('AudioExtractor', `~[${base}] unhandled ~[Bank Section Tag]~{${tagSection}}`, `~[Size]~{${sizeSection}}`);
+					}
 				}
 			}
 		}
@@ -171,25 +173,27 @@ export default function extractAudios(filesBank, E) {
 		GG.infoU(...TS('extract-audio:extract', { format: E.format, name: baseBank }, '...'));
 
 		if(E.format == 'wav') {
-			if(existsSync(E.fileVGMStreamCLI)) {
-				const filesCacheAudioWEMNew = readdirSync(dirCacheAudioWEM);
+			const filesCacheAudioWEMNew = readdirSync(dirCacheAudioWEM);
 
-				try {
-					execFileSync(E.fileVGMStreamCLI, ['-o', resolvePath(dirCacheAudioWAV, '?f.wav'), ...filesCacheAudioWEMNew], { cwd: dirCacheAudioWEM, timeout: 1000 * 60 * 10 });
+			if(filesCacheAudioWEMNew.length) {
+				if(existsSync(E.fileVGMStreamCLI)) {
+					try {
+						execFileSync(E.fileVGMStreamCLI, ['-o', resolvePath(dirCacheAudioWAV, '?f.wav'), ...filesCacheAudioWEMNew], { cwd: dirCacheAudioWEM, timeout: 1000 * 60 * 10 });
 
-					for(const file of readdirSync(dirCacheAudioWAV)) {
-						renameSync(
-							resolvePath(dirCacheAudioWAV, file),
-							resolvePath(dirCacheAudioWAV, file.replace(/\.wem\.wav$/, '.wav')),
-						);
+						for(const file of readdirSync(dirCacheAudioWAV)) {
+							renameSync(
+								resolvePath(dirCacheAudioWAV, file),
+								resolvePath(dirCacheAudioWAV, file.replace(/\.wem\.wav$/, '.wav')),
+							);
+						}
+					}
+					catch(error) {
+						GG.errorD(T('extract-audio:exectue-rextractor', { format: E.format, name: baseBank }), error);
 					}
 				}
-				catch(error) {
-					GG.errorD(T('extract-audio:exectue-rextractor', { format: E.format, name: baseBank }), error);
+				else {
+					GG.errorD(...TS('extract-audio:extract', { format: E.format, name: baseBank, path: E.fileRExtractorConsole }, 'unknown-rextractor'));
 				}
-			}
-			else {
-				GG.errorD(...TS('extract-audio:extract', { format: E.format, name: baseBank, path: E.fileRExtractorConsole }, 'unknown-rextractor'));
 			}
 
 			GG.infoD(...TS('extract-audio:extract', { format: E.format, name: baseBank }, '✔'));

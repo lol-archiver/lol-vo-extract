@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.7.3 - 2025.01.17 11
+* feat: now will try to extract the audio file from bnk files
+  * just like before
+  * finally confirmed that bnk files can store audio files too, via `Arcane Fractured Jinx`'s file!
+* chore: update base data
+
+
 ## v2.7.2 - 2025.01.16 09
 * feat: support for manually adding event names via `config.event-manual.json`
 * feat(script): improve script `copy-audio-with-line`

@@ -36,7 +36,7 @@
 				"<node_internals>/**"
 			],
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/1-concat-audio-50.js",
+			"program": "${workspaceFolder}/script/1-concat-audio-50.js",
 		},
 		{
 			"type": "node",
@@ -47,7 +47,7 @@
 				"<node_internals>/**"
 			],
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/2-concat-raw-line.js",
+			"program": "${workspaceFolder}/script/2-concat-raw-line.js",
 		},
 		{
 			"type": "node",
@@ -58,7 +58,7 @@
 				"<node_internals>/**"
 			],
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/3-convert-base.js",
+			"program": "${workspaceFolder}/script/3-convert-base.js",
 		},
 		{
 			"type": "node",
@@ -69,7 +69,7 @@
 				"<node_internals>/**"
 			],
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/4-copy-audio-with-line.js",
+			"program": "${workspaceFolder}/script/4-copy-audio-with-line.js",
 		},
 		{
 			"type": "node",
@@ -80,7 +80,7 @@
 				"<node_internals>/**"
 			],
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/5-convert-rst.js",
+			"program": "${workspaceFolder}/script/5-convert-rst.js",
 		},
 		{
 			"type": "node",
@@ -91,7 +91,7 @@
 				"<node_internals>/**"
 			],
 			"runtimeExecutable": "node.exe",
-			"program": "${workspaceFolder}/side/6-update-rst.js",
+			"program": "${workspaceFolder}/script/6-update-rst.js",
 		},
 	]
 }

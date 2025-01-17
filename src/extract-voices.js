@@ -94,7 +94,7 @@ export default async function extractVoices(E = {}) {
 
 
 	if(!E.skipExtract) {
-		const filesWPK = filesUnpacked.filter(file => file.endsWith('.wpk'));
+		const filesWPK = filesUnpacked.filter(file => file.endsWith('.wpk') || file.endsWith('.bnk'));
 
 
 		// extract vocie files from wpk

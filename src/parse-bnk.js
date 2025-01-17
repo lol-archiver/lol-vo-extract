@@ -682,7 +682,9 @@ export default async function parseBNK(E, file, eventsAll) {
 			else {
 				bifferBNK.skip(sizeSection);
 
-				GG.warnD(...TS('parse-bnk.what', { tag: tagSection }, 'unhandled-section'));
+				if(!['DIDX', 'DATA'].includes(tagSection)) {
+					GG.warnD(...TS('parse-bnk.what', { tag: tagSection }, 'unhandled-section'));
+				}
 			}
 		}
 
