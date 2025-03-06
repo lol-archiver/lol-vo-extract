@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.7.4 - 2025.03.06 14
+* fix: fixed some cases where the reference value is empty in extreme situations
+* chore: update base data
+* chore: bump up dependencies
+
+
 ## v2.7.3 - 2025.01.17 11
 * feat: now will try to extract the audio file from bnk files
   * just like before

@@ -49,7 +49,7 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 			const srcAudio = resolvePath(willCopyWEM ? dirCacheAudioWEM : dirCacheAudioWAV, `${idAudio}.${E.format}`);
 			const srcWEM = resolvePath(dirCacheAudioWEM, `${idAudio}.wem`);
 
-			const events = [...events$idAudio[idAudio]].map(event => String(event)
+			const events = [...events$idAudio[idAudio] ?? []].map(event => String(event)
 				.replace(/^play_vo_/i, '')
 				.replace(new RegExp(`^${E.champion?.slot}${E.skin?.id ? `skin${pad0(E.skin.id, 2)}` : ''}_`, 'i'), '')
 			);
@@ -72,7 +72,7 @@ export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$
 
 
 			const eventsText = events.join('&');
-			const idsSound = [...idsSound$idAudio[idAudio]];
+			const idsSound = [...idsSound$idAudio[idAudio] ?? []];
 			const audioText = (idsSound
 				? `[${idsSound.slice(0, 4).map(id => toHexL8(id)).join('.')}${idsSound.length > 4 ? '.more' : ''}]`
 				: `[no-sound]`)
