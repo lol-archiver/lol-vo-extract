@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.7.5 - 2025.03.14 17
+* refactor(parse-bin): improve recognition data for searching event arrays
+* chore: update base data
+* chore: bump up dependencies
+
+
 ## v2.7.4 - 2025.03.06 14
 * fix: fixed some cases where the reference value is empty in extreme situations
 * chore: update base data

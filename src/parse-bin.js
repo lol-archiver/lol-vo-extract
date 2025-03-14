@@ -14,7 +14,7 @@ export default function parseBIN(file) {
 		const events = [];
 
 		while(true) {
-			if(bifferBin.find([0x84, 0xE3, 0xD8, 0x12]) == -1) { break; }
+			if(bifferBin.find([0x84, 0xE3, 0xD8, 0x12, 0x80, 0x10]) == -1) { break; }
 
 			const [, , , , sizeEvent] = bifferBin.unpack('LBBLL');
 
