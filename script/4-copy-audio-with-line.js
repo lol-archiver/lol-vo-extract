@@ -85,10 +85,10 @@ const copyAudioWithLine = E => {
 			if(fileAudio) { fileSource = fileAudio; }
 			else if(idSoundFirst == '00000000' || idSoundFirst == '00000001') {
 				if(eventNow.includes('[选用]')) {
-					fileSource = resolve(E.dirAutogen, 'resource', 'project', `${String(E.champion.id)}-${E.champion.slot.toLowerCase()}`, 'voice-pick.wav');
+					fileSource = resolve(E.dirAutogen, 'resource', 'project', `${String(E.champion.id).padStart(3, '0')}-${E.champion.slot.toLowerCase()}`, 'voice-pick.wav');
 				}
 				else if(eventNow.includes('[禁用]')) {
-					fileSource = resolve(E.dirAutogen, 'resource', 'project', `${String(E.champion.id)}-${E.champion.slot.toLowerCase()}`, 'voice-ban.wav');
+					fileSource = resolve(E.dirAutogen, 'resource', 'project', `${String(E.champion.id).padStart(3, '0')}-${E.champion.slot.toLowerCase()}`, 'voice-ban.wav');
 				}
 			}
 			else {
@@ -99,7 +99,7 @@ const copyAudioWithLine = E => {
 			if(existsSync(fileSource)) {
 				copyFileSync(
 					fileSource,
-					resolve(dirTarget, Filenamify(`${eventNow}${condNow ? `[子条件：${condNow}]` : ''} ${line}(${idSoundFirst}).wav`))
+					resolve(dirTarget, Filenamify(`${eventNow}${condNow ? `[子条件：${condNow}]` : ''} ${line.replace(/\\/g, '')}(${idSoundFirst}).wav`))
 				);
 			}
 			else {

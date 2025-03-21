@@ -2292,7 +2292,85 @@
 			"28": 23,
 			"29": 23,
 			"30": 23,
-			"31": 23
+			"31": 23,
+			"32": {
+				"id": 32,
+				"name": "Urgot the Clogfather",
+				"chromas": {
+					"33": {
+						"id": 33,
+						"name": "Urgot the Clogfather",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Urgot the Clogfather",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Urgot the Clogfather",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Urgot the Clogfather",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Urgot the Clogfather",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Urgot the Clogfather",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Urgot the Clogfather",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Urgot the Clogfather",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"33": 32,
+			"34": 32,
+			"35": 32,
+			"36": 32,
+			"37": 32,
+			"38": 32,
+			"39": 32,
+			"40": 32
 		},
 		"spells": {
 			"p": "Echoing Flames",
@@ -15356,7 +15434,67 @@
 			"60": 54,
 			"61": 54,
 			"62": 54,
-			"63": 54
+			"63": 54,
+			"64": {
+				"id": 64,
+				"name": "Cat-in-the-Box Shaco",
+				"chromas": {
+					"65": {
+						"id": 65,
+						"name": "Cat-in-the-Box Shaco",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Cat-in-the-Box Shaco",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Cat-in-the-Box Shaco",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Cat-in-the-Box Shaco",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Cat-in-the-Box Shaco",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Cat-in-the-Box Shaco",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"65": 64,
+			"66": 64,
+			"67": 64,
+			"68": 64,
+			"69": 64,
+			"70": 64
 		},
 		"spells": {
 			"p": "Backstab",
@@ -21487,7 +21625,85 @@
 			"44": 37,
 			"45": 37,
 			"46": 37,
-			"47": 25
+			"47": 25,
+			"48": {
+				"id": 48,
+				"name": "Pool Party Malphite",
+				"chromas": {
+					"49": {
+						"id": 49,
+						"name": "Pool Party Malphite",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Pool Party Malphite",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Pool Party Malphite",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Pool Party Malphite",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Pool Party Malphite",
+						"colors": [
+							"#5F432B",
+							"#5F432B"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Pool Party Malphite",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Pool Party Malphite",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Pool Party Malphite",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"49": 48,
+			"50": 48,
+			"51": 48,
+			"52": 48,
+			"53": 48,
+			"54": 48,
+			"55": 48,
+			"56": 48
 		},
 		"spells": {
 			"p": "Granite Shield",
@@ -31913,6 +32129,11 @@
 			"40": 33,
 			"41": 33,
 			"42": 33,
+			"43": {
+				"id": 43,
+				"name": "Pengu Garen",
+				"chromas": {}
+			},
 			"44": {
 				"id": 44,
 				"name": "Fallen God-King Garen",
@@ -51217,7 +51438,85 @@
 			"38": 33,
 			"39": 33,
 			"40": 33,
-			"41": 33
+			"41": 33,
+			"42": {
+				"id": 42,
+				"name": "Grill Master Braum",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Grill Master Braum",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Grill Master Braum",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Grill Master Braum",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Grill Master Braum",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Grill Master Braum",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Grill Master Braum",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Grill Master Braum",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Grill Master Braum",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42,
+			"48": 42,
+			"49": 42,
+			"50": 42
 		},
 		"spells": {
 			"p": "Concussive Blows",
@@ -68387,7 +68686,85 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "Glizzy Naafiri",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Glizzy Naafiri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Glizzy Naafiri",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Glizzy Naafiri",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Glizzy Naafiri",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Glizzy Naafiri",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Glizzy Naafiri",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Glizzy Naafiri",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Glizzy Naafiri",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20
 		},
 		"spells": {
 			"p": "We Are More",
