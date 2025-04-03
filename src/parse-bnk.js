@@ -136,10 +136,11 @@ const formats$idBundleProp = {
 /**
  * @param {number} idSection
  * @param {number} typeSection
+ * @param {number} version
  * @param {Biffer} B
  * @param {import('../bases.js').Melinoe} GG
  */
-export const parseHIRCObject = (idSection, typeSection, B, GG) => {
+export const parseHIRCObject = (idSection, typeSection, version, B, GG) => {
 	let object;
 	const objectsExtra = [];
 
@@ -235,6 +236,19 @@ export const parseHIRCObject = (idSection, typeSection, B, GG) => {
 				const [index, idEffect, sharedSet, rendered] = B.unpack('BIBB');
 
 				container.effects.push({ index, idEffect, sharedSet: Boolean(sharedSet), rendered: Boolean(rendered) });
+			}
+		}
+
+		if(version > 136) {
+			const [/* overridedParentMetadata */, sizeEffectChunk] = B.unpack('BB');
+
+			if(sizeEffectChunk) {
+				container.chunksEffect = [];
+				for(let indexEffect = 0; indexEffect < sizeEffectChunk; indexEffect++) {
+					const [index, idEffect, sharedSet] = B.unpack('BIB');
+
+					container.effects.push({ index, idEffect, sharedSet: Boolean(sharedSet) });
+				}
 			}
 		}
 
@@ -341,6 +355,10 @@ export const parseHIRCObject = (idSection, typeSection, B, GG) => {
 			container.idsAux = B.unpack('IIII');
 		}
 
+		if(version > 135) {
+			[container.idBusAuxReflections] = B.unpack('I');
+		}
+
 
 		[
 			// 0000 0001 = Killed Newest
@@ -377,12 +395,12 @@ export const parseHIRCObject = (idSection, typeSection, B, GG) => {
 			container.chunksState = [];
 
 			for(let indexChunkState = 0; indexChunkState < sizeChunksState; indexChunkState++) {
-				const [id, typeSyncState] = B.unpack('LB');
+				const [id, typeSyncState] = B.unpack('IB');
 
 				const states = [];
 				const sizeStates = unpackVariableNumber(B);
 				for(let indexState = 0; indexState < sizeStates; indexState++) {
-					const [idState, idInstanceState] = B.unpack('LL');
+					const [idState, idInstanceState] = B.unpack('II');
 
 					states.push({ id: idState, idInstanceState });
 				}
@@ -392,36 +410,41 @@ export const parseHIRCObject = (idSection, typeSection, B, GG) => {
 			}
 		}
 
-		const [sizeRTPC] = B.unpack('H');
-		if(sizeRTPC) {
-			container.rtpcs = [];
+		if(version <= 141) {
+			const [sizeRTPC] = B.unpack('H');
+			if(sizeRTPC) {
+				container.rtpcs = [];
 
-			for(let index = 0; index < sizeRTPC; index++) {
-				const [idRTPC, type, accum] = B.unpack('LBB');
+				for(let index = 0; index < sizeRTPC; index++) {
+					const [idRTPC, type, accum] = B.unpack('IBB');
 
-				const idParam = unpackVariableNumber(B);
+					const idParam = unpackVariableNumber(B);
 
-				const [idCurveRTPC, scaling, sizeGraphPoint] = B.unpack('LBH');
+					const [idCurveRTPC, scaling, sizeGraphPoint] = B.unpack('IBH');
 
-				const pointsGraph = [];
+					const pointsGraph = [];
 
-				for(let indexGraphPoint = 0; indexGraphPoint < sizeGraphPoint; indexGraphPoint++) {
-					const [from, to, interp] = B.unpack('ffL');
+					for(let indexGraphPoint = 0; indexGraphPoint < sizeGraphPoint; indexGraphPoint++) {
+						const [from, to, interp] = B.unpack('ffI');
 
-					pointsGraph.push({ from, to, interp });
+						pointsGraph.push({ from, to, interp });
+					}
+
+
+					container.rtpcs.push({
+						id: idRTPC,
+						type,
+						accum,
+						idParam,
+						idCurveRTPC,
+						scaling,
+						pointsGraph,
+					});
 				}
-
-
-				container.rtpcs.push({
-					id: idRTPC,
-					type,
-					accum,
-					idParam,
-					idCurveRTPC,
-					scaling,
-					pointsGraph,
-				});
 			}
+		}
+		else {
+			/* const [sizeCurves] = */ B.unpack('H');
 		}
 
 
@@ -474,7 +497,6 @@ export const parseHIRCObject = (idSection, typeSection, B, GG) => {
 		else if(typeSection == 9) {
 			object.typeName = 'Layer Container';
 		}
-
 
 		const [sizeChildren] = B.unpack('I');
 		object.idsSound = B.unpack(`${sizeChildren}I`);
@@ -612,6 +634,7 @@ const joinTree = (object, id, objects, texts, level = 0) => {
 };
 
 
+const versionsSupport = [134, 145];
 
 /**
  * @param {import('../bases.js').ExtractConfig} E
@@ -629,6 +652,8 @@ export default async function parseBNK(E, file, eventsAll) {
 		const objects = [];
 		const linesHexDump = [];
 
+		let versionBank;
+
 		while(!bifferBNK.isEnd()) {
 			const [tagSection, sizeSection] = bifferBNK.unpack('4sI');
 
@@ -645,7 +670,7 @@ export default async function parseBNK(E, file, eventsAll) {
 
 					const B = bifferSection.sub(length - 4);
 
-					const [objectSection, objectsExtra] = parseHIRCObject(id, type, B, GG);
+					const [objectSection, objectsExtra] = parseHIRCObject(id, type, versionBank, B, GG);
 
 					if(objectSection) { objects.push(objectSection); }
 
@@ -664,18 +689,26 @@ export default async function parseBNK(E, file, eventsAll) {
 					version,
 					idBank,
 				/* idLanguage */,
-				// 0000 0000 0000 0000 1111 1111 1111 1111 = unused
+				// 0000 0000 0000 0000 1111 1111 1111 1111 = unused(<=134) alignment(>134)
 				// 1111 1111 1111 1111 0000 0000 0000 0000 = allocatedDevice
 				/* bitsValuesAlt */,
 					idProject
 				] = bifferBNK.unpack('5L');
 
-				const gap = sizeSection - Biffer.calc('5L');
+				versionBank = version;
+
+				if(version > 141) {
+					/* const [typeBank, hashBank] = */ bifferBNK.unpack('LQQ');
+				}
+
+				const gap = version <= 141 ? sizeSection - Biffer.calc('5L') :
+					sizeSection - Biffer.calc('5L') - Biffer.calc('L') - Biffer.calc('4L');
 				if(gap > 0) { bifferBNK.skip(gap); }
 
-				if(version != 134) {
+				if(!versionsSupport.includes(version)) {
 					throw StackError(TLogError(`parse-bnk:parse-bkhd`, { id: showID(idBank), version }, 'unexpected-version'), GG.where);
 				}
+
 
 				GG.debugD(...TS('parse-bnk:parse-bkhd', { id: showID(idBank), version, idProject: toHexL8(idProject) }, 'header'));
 			}

@@ -1,5 +1,3 @@
-/* eslint-disable quote-props */
-
 export default {
 	mapFake: {
 		'180c3016': 'Aatrox',

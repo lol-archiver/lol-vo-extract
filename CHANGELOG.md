@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.7.6 - 2025.04.03 10
+* improve(parse-bnk, extract-audios): since the game starts with `Wwise 145`, the program is minimally compatible with `Wwise 145`.
+* chore: update base data
+* chore: bump up dependencies
+
+
 ## v2.7.5 - 2025.03.14 17
 * refactor(parse-bin): improve recognition data for searching event arrays
 * chore: update base data

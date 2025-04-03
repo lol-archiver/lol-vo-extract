@@ -12,9 +12,11 @@ import { T, TS } from '../lib/i18n.js';
 import { TLogError, toHexL8 } from '../lib/utility.js';
 
 
-
 const GG = G.where(T('extract-audio:where'));
 
+
+
+const versionsSupport = [134, 145];
 
 /**
  * @param {string} file
@@ -44,17 +46,22 @@ const extractWEM = (file, dirExtract) => {
 						version,
 						idBank,
 						/* idLanguage */,
-						// 0000 0000 0000 0000 1111 1111 1111 1111 = unused
+						// 0000 0000 0000 0000 1111 1111 1111 1111 = unused(<=134) alignment(>134)
 						// 1111 1111 1111 1111 0000 0000 0000 0000 = allocatedDevice
 						/* bitsValuesAlt */,
 						idProject
 					] = bifferBank.unpack('5L');
 
-					const gap = sizeSection - Biffer.calc('5L');
+					if(version > 141) {
+						/* const [typeBank, hashBank] = */ bifferBank.unpack('LQQ');
+					}
+
+					const gap = version <= 141 ? sizeSection - Biffer.calc('5L') :
+						sizeSection - Biffer.calc('5L') - Biffer.calc('L') - Biffer.calc('4L');
 					if(gap > 0) { bifferBank.skip(gap); }
 
 
-					if(version != 134) {
+					if(!versionsSupport.includes(version)) {
 						G.errorD('AudioExtractor', `~[${base}] unexpected ~[Bank Version]`, `~{${version}}`);
 
 						throw Error(`unexpected ~[Bank Version]~{${version}}`);
@@ -129,7 +136,7 @@ const extractWEM = (file, dirExtract) => {
 		GG.infoD(...TS('extract-audio:extract-wem', { name: base }, '✔'));
 	}
 	catch(error) {
-		throw TLogError('extract-audio:extract-wem', {}, error);
+		throw TLogError('extract-audio:extract-wem', { name: base }, error.message ?? error?.toString?.() ?? String(error));
 	}
 };
 
