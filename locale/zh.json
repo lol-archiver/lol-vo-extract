@@ -61,8 +61,8 @@
 		},
 		"group-ids-audio-action": {
 			"what": "整理~[动作]{{idAction,value}}的子声音",
-			"unknown-action-object": "未知~[动作对象]{{idObject,value}}",
-			"unknown-action-object-type": "未知~[动作对象]{{idObject,value}}类{{clazz,value}}"
+			"unknown-action-object": "未知~[动作目标]{{idTarget,value}}",
+			"unknown-action-object-type": "未知~[动作目标]{{idTarget,value}}类{{clazz,value}}"
 		}
 	},
 	"extract-audio": {

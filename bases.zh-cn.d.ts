@@ -242,11 +242,6 @@ export type ExtractConfig = {
 	/** 导出的文件名是否包含对应的服务器（用于横向对比） */
 	readonly noRegionInExportFileName: boolean;
 
-	/** 是否转存语音事件树 */
-	readonly dumpEventTree: boolean,
-	/** 需要单独转存语音事件树节点 */
-	readonly idsHexEventTreeDump: [],
-
 
 	/** zstd压缩程序路径 */
 	readonly fileZSTD: string;
@@ -265,11 +260,6 @@ export type ExtractConfig = {
 	 * - `{项目目录}/@cache`
 	 */
 	readonly dirCache?: string;
-	/**
-	 * 调试文件导出目录，存放提取时保存的调试文件，可能的值：
-	 * - `{项目目录}/debug`
-	 */
-	readonly dirExportDebug?: string;
 	/**
 	 * 语音文件导出目录，存放已匹配事件的语音文件。可能的值：
 	 * - `{ExtractConfig.dirExportVoice}`

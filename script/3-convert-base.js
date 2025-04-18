@@ -14,9 +14,8 @@ import { T } from '../lib/i18n.js';
 import parseRuncom from '../src/parse-runcom.js';
 import parseExtractConfig from '../src/parse-extract-config.js';
 
-
-
 const GG = G.where(T('where:main'));
+
 
 
 const regions = {

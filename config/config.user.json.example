@@ -3,7 +3,6 @@
 	"common": {
 		"forceExtractFile": false,
 		"skipExtract": false,
-		"dumpEventTree": true,
 		"saveWithShort": true,
 		"sourceResource": "client",
 		"levelSoundEffect": "no",

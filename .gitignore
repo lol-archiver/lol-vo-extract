@@ -8,5 +8,4 @@ node_modules
 !/config/*.example
 /log/*
 /cache
-/debug
 /bases.d.ts

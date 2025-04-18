@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v2.8.0 - 2025.04.18 15
+* refactor: refactor the contents of the export dictation file
+  * it shows the logical structure of for each event now
+  * also improve the friendly matching of event titles
+* refactor!: remove config `dumpEventTree`
+  * since the logical structure of events was migrated from the dump event tree function
+* refactor!: remove config `idsHexEventTreeDump`
+  * thanks to `bnnm/wwiser`, reading wwise files is now free of byte-by-byte speculation. this feature is rarely used anymore
+* refactor!: remove config `dirExportDebug`
+  * setting up a debug directory is no longer necessary since the two debug functions were removed
+* refactor: reorganize the code for HIRCObject and its derived objects. made it more standardized
+* refactor: streamline all unnecessary parsing for a negligible speed increase
+  * also improve the parse logic and part of the dictionary to be closer to `bnnm/wwiser`
+* chore: adjust some code styles
+* chore: update base data
+* chore: bump up dependencies
+
+
 ## v2.7.6 - 2025.04.03 10
 * improve(parse-bnk, extract-audios): since the game starts with `Wwise 145`, the program is minimally compatible with `Wwise 145`.
 * chore: update base data

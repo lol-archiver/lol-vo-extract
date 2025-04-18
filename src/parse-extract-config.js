@@ -108,7 +108,6 @@ export default function parseExtractConfig(runcoms) {
 		}
 
 
-		E.dirExportDebug = E.dirExportDebug ?? resolvePath(dirWorking, 'debug'); ensureDirSync(E.dirExportDebug);
 		E.dirExportVoice = E.dirExportVoice ?? resolvePath(dirWorking, '@1voice'); ensureDirSync(E.dirExportVoice);
 		E.dirExportDict = E.dirExportDict ?? resolvePath(dirWorking, '@2dict'); ensureDirSync(E.dirExportDict);
 

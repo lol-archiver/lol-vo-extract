@@ -13,9 +13,8 @@ import extractAudios from './extract-audios.js';
 import saveAudios$fileBank from './copy-audios.js';
 import saveDictation from './save-dictation.js';
 
-
-
 const GG = G.where(T('where:extract-voices'));
+
 
 
 /** @param {import('../bases.js').ExtractConfig} E */
@@ -87,7 +86,7 @@ export default async function extractVoices(E = {}) {
 
 	GG.infoU(...TS('parse-event', '...'));
 
-	const [events$idAudio, idsSound$idAudio] = await parseEvents(E, filesUnpacked);
+	const objectsBNKAll = await parseEvents(E, filesUnpacked);
 
 	GG.infoD(...TS('parse-event', '✔'));
 
@@ -104,7 +103,7 @@ export default async function extractVoices(E = {}) {
 		GG.infoU(...TS('save-audios', '...'));
 
 		// save voice files and rename with events
-		saveAudios$fileBank(filesWPK, events$idAudio, idsSound$idAudio, E);
+		saveAudios$fileBank(filesWPK, objectsBNKAll, E);
 
 		GG.infoD(...TS('save-audios', '✔'));
 	}
@@ -113,7 +112,7 @@ export default async function extractVoices(E = {}) {
 		GG.infoU(...TS('save-dictation', '...'));
 
 		// save event JSON for `lol-vo-lines-dictation`
-		saveDictation(events$idAudio, idsSound$idAudio, E);
+		saveDictation(objectsBNKAll, E);
 
 		GG.infoD(...TS('save-dictation', '✔'));
 	}

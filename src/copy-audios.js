@@ -9,17 +9,87 @@ import { T, TS } from '../lib/i18n.js';
 
 import { crc32, pad0, showID, toHexL8 } from '../lib/utility.js';
 
-
+import { HIRCContainer, HIRCEvent, HIRCSound, HIRCSwitch } from './entry/bnk/HIRCObject.js';
 
 const GG = G.where(T('save-audios:where'));
 
+
+
+/**
+ * @param {import('./entry/bnk/HIRCObject.js').HIRCObject} objectParsed
+ * @param {import('./entry/bnk/HIRCObject.js').HIRCObject[]} objectsAll
+ * @param {import('./entry/bnk/HIRCObject.js').HIRCAction} action
+ * @returns {number[]}
+ */
+const groupActionChildAudioIDs = (objectParsed, objectsAll, action) => {
+	const idsAudio = [];
+
+	if(objectParsed instanceof HIRCSound) {
+		idsAudio.push(objectParsed.idAudio);
+	}
+	else if(objectParsed instanceof HIRCContainer) {
+		const objects = [...new Set([
+			...objectsAll.filter(object => objectParsed.idsChildren.includes(object.id)),
+			...objectParsed.switches ?? [],
+		])];
+
+		for(const object of objects) {
+			idsAudio.push(...groupActionChildAudioIDs(object, objectsAll, action, GG));
+		}
+	}
+	else if(objectParsed instanceof HIRCSwitch) {
+		const objects = objectsAll.filter(object => objectParsed.idsChildren.includes(object.id));
+
+		for(const object of objects) {
+			idsAudio.push(...groupActionChildAudioIDs(object, objectsAll, action, GG));
+		}
+	}
+	else if(!objectParsed) {
+		GG.warnD(...TS('parse-bnk:group-ids-audio-action', { idAction: showID(action.id), idTarget: showID(action.idTarget) }, 'unknown-action-object'));
+	}
+	else if(objectParsed) {
+		GG.warnD(...TS('parse-bnk:group-ids-audio-action', { idAction: showID(action.id), idTarget: showID(action.idTarget), clazz: Object.getPrototypeOf(objectParsed).constructor.name }, 'unknown-action-object-type'));
+	}
+
+	return idsAudio;
+};
+
+
 /**
  * @param {string[]} filesBank
- * @param {Object<string, Set>} events$idAudio
- * @param {Object<string, Set>} idsSound$idAudio
+ * @param {import('./entry/bnk/HIRCObject.js').HIRCObject[]} objectsBNKAll
  * @param {import('../bases.js').ExtractConfig} E
  */
-export default function copyAudios$fileBank(filesBank, events$idAudio, idsSound$idAudio, E) {
+export default function copyAudios$fileBank(filesBank, objectsBNKAll, E) {
+	/** @type {Object<string, Set>} */
+	const events$idAudio = {};
+	for(const event of objectsBNKAll.filter(object => object instanceof HIRCEvent)) {
+		const idsAudioChild = [];
+		for(const actionID of event.idsAction) {
+			/** @type {HIRCAction} */
+			const action = objectsBNKAll.find(object => object.id == actionID);
+
+			const objectAction = objectsBNKAll.find(object => object.id == action.idTarget);
+
+			idsAudioChild.push(...groupActionChildAudioIDs(objectAction, objectsBNKAll, action));
+		}
+
+
+		for(const idAudio of idsAudioChild) {
+			(events$idAudio[idAudio] || (events$idAudio[idAudio] = new Set())).add(event.name);
+		}
+	}
+
+
+	/** @type {Object<string, Set>} */
+	const idsSound$idAudio = {};
+	for(const sound of objectsBNKAll.filter(object => object instanceof HIRCSound)) {
+		(idsSound$idAudio[sound.idAudio] || (idsSound$idAudio[sound.idAudio] = new Set())).add(sound.id);
+	}
+
+
+
+
 	for(const fileBank of filesBank) {
 		const pathParsedBank = parsePath(fileBank);
 		const baseBank = pathParsedBank.base;

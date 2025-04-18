@@ -1618,11 +1618,11 @@
 			"44": 36,
 			"45": {
 				"id": 45,
-				"name": "",
+				"name": "Victorious Twisted Fate",
 				"chromas": {
 					"46": {
 						"id": 46,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#764D43",
 							"#764D43"
@@ -1630,7 +1630,7 @@
 					},
 					"47": {
 						"id": 47,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#AAB5BA",
 							"#AAB5BA"
@@ -1638,7 +1638,7 @@
 					},
 					"48": {
 						"id": 48,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#D9C445",
 							"#D9C445"
@@ -1646,7 +1646,7 @@
 					},
 					"49": {
 						"id": 49,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#55CDE5",
 							"#55CDE5"
@@ -1654,7 +1654,7 @@
 					},
 					"50": {
 						"id": 50,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#26854C",
 							"#26854C"
@@ -1662,7 +1662,7 @@
 					},
 					"51": {
 						"id": 51,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#65337F",
 							"#65337F"
@@ -1670,7 +1670,7 @@
 					},
 					"52": {
 						"id": 52,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#9D228D",
 							"#9D228D"
@@ -1678,7 +1678,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#B31316",
 							"#B31316"
@@ -1686,7 +1686,7 @@
 					},
 					"54": {
 						"id": 54,
-						"name": "",
+						"name": "Victorious Twisted Fate",
 						"colors": [
 							"#1D62C8",
 							"#1D62C8"
@@ -10285,7 +10285,67 @@
 			"72": 67,
 			"73": 67,
 			"74": 67,
-			"75": 67
+			"75": 67,
+			"76": {
+				"id": 76,
+				"name": "Spirit Blossom Ashe",
+				"chromas": {
+					"77": {
+						"id": 77,
+						"name": "Spirit Blossom Ashe",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Spirit Blossom Ashe",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"79": {
+						"id": 79,
+						"name": "Spirit Blossom Ashe",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"80": {
+						"id": 80,
+						"name": "Spirit Blossom Ashe",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "Spirit Blossom Ashe",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"82": {
+						"id": 82,
+						"name": "Spirit Blossom Ashe",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"77": 76,
+			"78": 76,
+			"79": 76,
+			"80": 76,
+			"81": 76,
+			"82": 76
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -13059,7 +13119,12 @@
 			"60": 55,
 			"61": 55,
 			"62": 55,
-			"63": 55
+			"63": 55,
+			"64": {
+				"id": 64,
+				"name": "Pool Party Twitch",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Deadly Venom",
@@ -17116,7 +17181,67 @@
 			"51": 45,
 			"52": 45,
 			"53": 45,
-			"54": 45
+			"54": 45,
+			"55": {
+				"id": 55,
+				"name": "Spirit Blossom Irelia",
+				"chromas": {
+					"56": {
+						"id": 56,
+						"name": "Spirit Blossom Irelia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Spirit Blossom Irelia",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Spirit Blossom Irelia",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Spirit Blossom Irelia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Spirit Blossom Irelia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Spirit Blossom Irelia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"56": 55,
+			"57": 55,
+			"58": 55,
+			"59": 55,
+			"60": 55,
+			"61": 55
 		},
 		"spells": {
 			"p": "Ionian Fervor",
@@ -19156,7 +19281,7 @@
 				"chromas": {
 					"28": {
 						"id": 28,
-						"name": "",
+						"name": "Fatebreaker Taric",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -19164,7 +19289,7 @@
 					},
 					"29": {
 						"id": 29,
-						"name": "",
+						"name": "Fatebreaker Taric",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -19172,7 +19297,7 @@
 					},
 					"30": {
 						"id": 30,
-						"name": "",
+						"name": "Fatebreaker Taric",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -19180,7 +19305,7 @@
 					},
 					"31": {
 						"id": 31,
-						"name": "",
+						"name": "Fatebreaker Taric",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -19188,7 +19313,7 @@
 					},
 					"32": {
 						"id": 32,
-						"name": "",
+						"name": "Fatebreaker Taric",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -19196,7 +19321,7 @@
 					},
 					"33": {
 						"id": 33,
-						"name": "",
+						"name": "Fatebreaker Taric",
 						"colors": [
 							"#9C68D7",
 							"#9C68D7"
@@ -19204,7 +19329,7 @@
 					},
 					"34": {
 						"id": 34,
-						"name": "",
+						"name": "Fatebreaker Taric",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -19212,7 +19337,7 @@
 					},
 					"35": {
 						"id": 35,
-						"name": "",
+						"name": "Fatebreaker Taric",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -27697,7 +27822,7 @@
 				"chromas": {
 					"55": {
 						"id": 55,
-						"name": "",
+						"name": "Fatemaker Nasus",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -27705,7 +27830,7 @@
 					},
 					"56": {
 						"id": 56,
-						"name": "",
+						"name": "Fatemaker Nasus",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -27713,7 +27838,7 @@
 					},
 					"57": {
 						"id": 57,
-						"name": "",
+						"name": "Fatemaker Nasus",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -27721,7 +27846,7 @@
 					},
 					"58": {
 						"id": 58,
-						"name": "",
+						"name": "Fatemaker Nasus",
 						"colors": [
 							"#73BFBE",
 							"#73BFBE"
@@ -27729,7 +27854,7 @@
 					},
 					"59": {
 						"id": 59,
-						"name": "",
+						"name": "Fatemaker Nasus",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -27737,7 +27862,7 @@
 					},
 					"60": {
 						"id": 60,
-						"name": "",
+						"name": "Fatemaker Nasus",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -27745,7 +27870,7 @@
 					},
 					"61": {
 						"id": 61,
-						"name": "",
+						"name": "Fatemaker Nasus",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -27753,7 +27878,7 @@
 					},
 					"62": {
 						"id": 62,
-						"name": "",
+						"name": "Fatemaker Nasus",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -29092,7 +29217,7 @@
 		"spells": {
 			"p": "Happy Hour",
 			"q": "Barrel Roll",
-			"w": "Drunken Rage",
+			"w": "Raucous Rage",
 			"e": "Body Slam",
 			"r": "Explosive Cask"
 		}
@@ -33346,7 +33471,7 @@
 				"chromas": {
 					"50": {
 						"id": 50,
-						"name": "",
+						"name": "Fatebreaker Malzahar",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -33354,7 +33479,7 @@
 					},
 					"51": {
 						"id": 51,
-						"name": "",
+						"name": "Fatebreaker Malzahar",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -33362,7 +33487,7 @@
 					},
 					"52": {
 						"id": 52,
-						"name": "",
+						"name": "Fatebreaker Malzahar",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -33370,7 +33495,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "",
+						"name": "Fatebreaker Malzahar",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -33378,7 +33503,7 @@
 					},
 					"54": {
 						"id": 54,
-						"name": "",
+						"name": "Fatebreaker Malzahar",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -33386,7 +33511,7 @@
 					},
 					"55": {
 						"id": 55,
-						"name": "",
+						"name": "Fatebreaker Malzahar",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -33394,7 +33519,7 @@
 					},
 					"56": {
 						"id": 56,
-						"name": "",
+						"name": "Fatebreaker Malzahar",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -33402,7 +33527,7 @@
 					},
 					"57": {
 						"id": 57,
-						"name": "",
+						"name": "Fatebreaker Malzahar",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -36102,7 +36227,22 @@
 			"66": 61,
 			"67": 61,
 			"68": 61,
-			"69": 61
+			"69": 61,
+			"70": {
+				"id": 70,
+				"name": "Prestige Spirit Blossom Lux",
+				"chromas": {
+					"71": {
+						"id": 71,
+						"name": "Prestige Spirit Blossom Lux",
+						"colors": [
+							"#FF9AC7",
+							"#5ADADC"
+						]
+					}
+				}
+			},
+			"71": 70
 		},
 		"spells": {
 			"p": "Illumination",
@@ -39332,7 +39472,85 @@
 			"56": 53,
 			"57": 53,
 			"58": 53,
-			"59": 53
+			"59": 53,
+			"60": {
+				"id": 60,
+				"name": "Spirit Blossom Varus",
+				"chromas": {
+					"61": {
+						"id": 61,
+						"name": "Spirit Blossom Varus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Spirit Blossom Varus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Spirit Blossom Varus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Spirit Blossom Varus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Spirit Blossom Varus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Spirit Blossom Varus",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Spirit Blossom Varus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Spirit Blossom Varus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"61": 60,
+			"62": 60,
+			"63": 60,
+			"64": 60,
+			"65": 60,
+			"66": 60,
+			"67": 60,
+			"68": 60
 		},
 		"spells": {
 			"p": "Living Vengeance",
@@ -47567,7 +47785,85 @@
 			"61": 55,
 			"62": 55,
 			"63": 55,
-			"65": 36
+			"64": {
+				"id": 64,
+				"name": "Spirit Blossom Zyra",
+				"chromas": {
+					"66": {
+						"id": 66,
+						"name": "Spirit Blossom Zyra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Spirit Blossom Zyra",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Spirit Blossom Zyra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Spirit Blossom Zyra",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Spirit Blossom Zyra",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Spirit Blossom Zyra",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Spirit Blossom Zyra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Spirit Blossom Zyra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"65": 36,
+			"66": 64,
+			"67": 64,
+			"68": 64,
+			"69": 64,
+			"70": 64,
+			"71": 64,
+			"72": 64,
+			"73": 64
 		},
 		"spells": {
 			"p": "Garden of Thorns",
@@ -61391,7 +61687,12 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"30": {
+				"id": 30,
+				"name": "Spirit Blossom Ivern",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Friend of the Forest",
@@ -61930,7 +62231,85 @@
 					}
 				}
 			},
-			"36": 35
+			"36": 35,
+			"37": {
+				"id": 37,
+				"name": "Spirit Blossom Bard",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Spirit Blossom Bard",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Spirit Blossom Bard",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Spirit Blossom Bard",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Spirit Blossom Bard",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Spirit Blossom Bard",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Spirit Blossom Bard",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Spirit Blossom Bard",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Spirit Blossom Bard",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37
 		},
 		"spells": {
 			"p": "Traveler's Call",

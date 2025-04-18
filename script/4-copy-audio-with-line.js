@@ -14,9 +14,8 @@ import parseRuncom from '../src/parse-runcom.js';
 import { pad0 } from '../lib/utility.js';
 import parseExtractConfig from '../src/parse-extract-config.js';
 
-
-
 const GG = G.where(T('where:main'));
+
 
 
 /** @param {import('../bases.d.ts').ExtractConfig} E */

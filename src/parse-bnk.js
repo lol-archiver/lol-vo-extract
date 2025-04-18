@@ -1,14 +1,13 @@
 import { G } from '@nuogz/pangu';
 
-import { appendFileSync, writeFileSync } from 'fs';
-import { parse as parsePath, resolve } from 'path';
+import { parse as parsePath } from 'path';
 
 import Biffer from '@nuogz/biffer';
 
 import { T, TS } from '../lib/i18n.js';
-import { toHexL8, showID, toBufferHex, TLogError, StackError } from '../lib/utility.js';
+import { toHexL8, showID, TLogError, StackError } from '../lib/utility.js';
 
-import { HIRCSound, HIRCEventAction, HIRCEvent, HIRCContainer, HIRCObject, HIRCSwitch } from './entry/bnk/HIRCObject.js';
+import { HIRCSound, HIRCAction, HIRCEvent, HIRCObject, HIRCSwitch, HIRCPlayContainer, HIRCSwitchContainer, HIRCLayerContainer } from './entry/bnk/HIRCObject.js';
 
 
 
@@ -48,500 +47,445 @@ const unpackVariableNumber = B => {
 	return value;
 };
 
+/** @param {Biffer} B */
+const unpackUnionNumber = B => {
+	let [value] = B.unpack('I');
+	if(value > 0x10000000) {
+		B.skip(-4);
 
-// 1: State
-// 7: Actor Mixer
-// 14: Attenuation
-// 16: Fx Share Set
-// 17: Motion FX
-const typesObjectHIRCSkip = [1, 7, 14, 16, 17];
+		[value] = B.unpack('f');
+	}
 
-
-const formats$idBundleProp = {
-	[0x00]: 'f', // Volume
-	[0x01]: 'f', // *LFE
-	[0x02]: 'f', // Pitch
-	[0x03]: 'f', // LPF (Low-pass Filter)
-	[0x04]: 'f', // *HPF (High-pass Filter)
-	[0x05]: 'f', // Bus Volume
-	[0x06]: 'f', // Make Up Gain
-	[0x07]: 'I', // Priority
-	[0x08]: 'f', // Priority Distance Offset
-	[0x09]: 'f', // *Feedback Volume (removed)
-	[0x0A]: 'f', // *Feedback LPF (removed)
-	[0x0B]: 'f', // Mute Ratio
-	[0x0C]: 'f', // PAN_LR
-	[0x0D]: 'f', // PAN_FR
-	[0x0E]: 'f', // *Center PCT
-	[0x0F]: 'f', // *Delay Time
-	[0x10]: 'f', // *Transition Time
-	[0x11]: 'f', // *Probability
-	[0x12]: 'f', // *Dialogue Mode
-	[0x13]: 'f', // User Aux Send Volume 0
-	[0x14]: 'f', // User Aux Send Volume 1
-	[0x15]: 'f', // User Aux Send Volume 2
-	[0x16]: 'f', // User Aux Send Volume 3
-	[0x17]: 'f', // Game Aux Send Volume
-	[0x18]: 'f', // Output Bus Volume
-	[0x19]: 'f', // *Output Bus HPF
-	[0x1A]: 'f', // *Output Bus LPF
-	[0x1B]: 'f', // *HDR Bus Threshold
-	[0x1C]: 'f', // *HDR Bus Ratio
-	[0x1D]: 'f', // *HDR Bus Release Time
-	[0x1E]: 'f', // *HDR Bus Game Param
-	[0x1F]: 'f', // *HDR Bus Game Param Min
-	[0x20]: 'f', // *HDR Bus Game Param Max
-	[0x21]: 'f', // *HDR Active Range
-	[0x22]: 'f', // *Loop Start
-	[0x23]: 'f', // *Loop End
-	[0x24]: 'f', // *Trim In Time
-	[0x25]: 'f', // *Trim Out Time
-	[0x26]: 'f', // *Fade In Time
-	[0x27]: 'f', // *Fade Out Time
-	[0x28]: 'f', // *Fade In Curve
-	[0x29]: 'f', // *Fade Out Curve
-	[0x2A]: 'f', // *Loop Crossfade Duration
-	[0x2B]: 'f', // *Crossfade Up Curve
-	[0x2C]: 'f', // *Crossfade Down Curve
-	[0x2D]: 'f', // *MIDI Tracking Root Note
-	[0x2E]: 'f', // *MIDI Play On Note Type
-	[0x2F]: 'f', // *MIDI Transposition
-	[0x30]: 'f', // *MIDI Velocity Offset
-	[0x31]: 'f', // *MIDI Key Range Min
-	[0x32]: 'f', // *MIDI Key Range Max
-	[0x33]: 'f', // *MIDI Velocity Range Min
-	[0x34]: 'f', // *MIDI Velocity Range Max
-	[0x35]: 'f', // *MIDI Channel Mask
-	[0x36]: 'f', // *Playback Speed
-	[0x37]: 'f', // *Midi Tempo Source
-	[0x38]: 'f', // *Midi Target Node
-	[0x39]: 'I', // *Attached Plugin Effect ID
-	[0x3A]: 'f', // *Loop
-	[0x3B]: 'f', // *Initial Delay
-	[0x3C]: 'f', // *User Aux Send LPF 0
-	[0x3D]: 'f', // *User Aux Send LPF 1
-	[0x3E]: 'f', // *User Aux Send LPF 2
-	[0x3F]: 'f', // *User Aux Send LPF 3
-	[0x40]: 'f', // *User Aux Send HPF 0
-	[0x41]: 'f', // *User Aux Send HPF 1
-	[0x42]: 'f', // *User Aux Send HPF 2
-	[0x43]: 'f', // *User Aux Send HPF 3
-	[0x44]: 'f', // *Game Aux Send LPF
-	[0x45]: 'f', // *Game Aux Send HPF
-	[0x46]: 'I', // *Attenuation ID
-	[0x47]: 'f', // *Positioning Type Blend
+	return value;
 };
 
+/** @param {Biffer} B */
+const unpackProps = B => {
+	const params = [];
+
+	const sizeProps = B.unpack('B');
+	for(let i = 0; i < sizeProps; i++) {
+		const [type] = B.unpack('B');
+
+		params.push({ type });
+	}
+	for(let i = 0; i < sizeProps; i++) {
+		params[i].value = unpackUnionNumber(B);
+	}
+
+	return params;
+};
+
+/** @param {Biffer} B */
+const unpackPropsRanged = B => {
+	const params = [];
+
+	const sizeProps = B.unpack('B');
+	for(let i = 0; i < sizeProps; i++) {
+		const [type] = B.unpack('B');
+
+		params.push({ type });
+	}
+	for(let i = 0; i < sizeProps; i++) {
+		params[i].min = unpackUnionNumber(B);
+		params[i].max = unpackUnionNumber(B);
+	}
+
+	return params;
+};
+
+
+/** @param {Biffer} B */
+const unapckPlayActionParams = (B, version) => {
+	const [/* bitsVector */, idBank] = B.unpack('BI');
+
+	if(version >= 144) {
+		const [typeBank] = B.unpack('I');
+		return { idBank, typeBank };
+	}
+	else {
+		return { idBank };
+	}
+};
+/** @param {Biffer} B */
+const unapckSetStateActionParams = B => {
+	const [idGroup, idState] = B.unpack('II');
+
+	return { idGroup, idState };
+};
+/** @param {Biffer} B */
+const unapckSetSwitchActionParams = B => {
+	const [idGroup, idState] = B.unpack('II');
+
+	return { idGroup, idState };
+};
+
+
+const unapckersAction$typeBaseAction = {
+	Stop: null, // Active + Stop.Specific
+	Pause: null, // Active + Pause.Specific
+	Resume: null, // Active + Resume.Specific
+	Play: unapckPlayActionParams, // Play
+	PlayAndContinue: unapckPlayActionParams, // Play
+	Mute: null, // SetValue
+	SetAkProp: null, // SetValue + SetAkProp.Specific
+	UseState: null, // Action
+	SetState: unapckSetStateActionParams, // SetState
+	SetGameParameter: null, // SetValue + SetGameParameter.Specific
+	Event: null, // Action
+	Duck: null, // Action
+	SetSwitch: unapckSetSwitchActionParams, // SetSwitch
+	SetFX: null, // SetFX
+	BypassFX: null, // BypassFX
+	Break: null, // Action
+	Trigger: null, // Action
+	Seek: null, // Seek
+	Release: null, // Release
+	PlayEvent: null, // PlayEvent
+	ResetPlaylist: null, // Active + ResetPlaylist.Specific
+	PlayEventUnknown: unapckPlayActionParams, // Play
+};
+const unapckersAction$typeAction = {
+	0x01: unapckersAction$typeBaseAction.Stop,
+	0x02: unapckersAction$typeBaseAction.Pause,
+	0x03: unapckersAction$typeBaseAction.Resume,
+	0x04: unapckersAction$typeBaseAction.Play,
+	0x05: unapckersAction$typeBaseAction.PlayAndContinue,
+	0x06: unapckersAction$typeBaseAction.Mute,
+	0x07: unapckersAction$typeBaseAction.Mute,
+	0x08: unapckersAction$typeBaseAction.SetAkProp,
+	0x09: unapckersAction$typeBaseAction.SetAkProp,
+	0x0A: unapckersAction$typeBaseAction.SetAkProp,
+	0x0B: unapckersAction$typeBaseAction.SetAkProp,
+	0x0C: unapckersAction$typeBaseAction.SetAkProp,
+	0x0D: unapckersAction$typeBaseAction.SetAkProp,
+	0x0E: unapckersAction$typeBaseAction.SetAkProp,
+	0x0F: unapckersAction$typeBaseAction.SetAkProp,
+	0x10: unapckersAction$typeBaseAction.UseState,
+	0x11: unapckersAction$typeBaseAction.UseState,
+	0x12: unapckersAction$typeBaseAction.SetState,
+	0x13: unapckersAction$typeBaseAction.SetGameParameter,
+	0x14: unapckersAction$typeBaseAction.SetGameParameter,
+	0x15: unapckersAction$typeBaseAction.Event,
+	0x16: unapckersAction$typeBaseAction.Event,
+	0x17: unapckersAction$typeBaseAction.Event,
+	0x19: unapckersAction$typeBaseAction.SetSwitch,
+	0x1A: unapckersAction$typeBaseAction.BypassFX,
+	0x1B: unapckersAction$typeBaseAction.BypassFX,
+	0x1C: unapckersAction$typeBaseAction.Break,
+	0x1D: unapckersAction$typeBaseAction.Trigger,
+	0x1E: unapckersAction$typeBaseAction.Seek,
+	0x1F: unapckersAction$typeBaseAction.Release,
+	0x20: unapckersAction$typeBaseAction.SetAkProp,
+	0x21: unapckersAction$typeBaseAction.PlayEvent,
+	0x22: unapckersAction$typeBaseAction.ResetPlaylist,
+	0x23: unapckersAction$typeBaseAction.PlayEventUnknown,
+	0x30: unapckersAction$typeBaseAction.SetAkProp,
+	0x31: unapckersAction$typeBaseAction.SetFX,
+	0x32: unapckersAction$typeBaseAction.SetFX,
+	0x33: unapckersAction$typeBaseAction.BypassFX,
+	0x34: unapckersAction$typeBaseAction.BypassFX,
+	0x35: unapckersAction$typeBaseAction.BypassFX,
+	0x36: unapckersAction$typeBaseAction.BypassFX,
+	0x37: unapckersAction$typeBaseAction.BypassFX,
+};
+
+
+
+/**
+ * @param {number} idSection
+ * @param {Biffer} B
+ * @param {import('../bases.js').Zagreus} GGG
+ */
+const parseHIRCSound = (idSection, B, GGG) => {
+	const [
+		typePlugin,
+		typeStream,
+		idSource,
+	] = B.unpack('HxxBI');
+
+
+	if(typeStream != 2) { GGG.warnD(`! A ~[HIRCSound] not streaming. Check it!`); }
+	if(typePlugin == 2) { GGG.warnD(`! A ~[HIRCSound] use source plguin. It may include params. Check it!`); }
+
+
+	return new HIRCSound(idSection, idSource);
+};
+/**
+ * @param {number} idSection
+ * @param {number} version
+ * @param {number[]} idsBank
+ * @param {Biffer} B
+ * @param {import('../bases.js').Zagreus} GGG
+ */
+const parseHIRCAction = (idSection, version, idsBank, B, GGG) => {
+	const [
+		scope,
+		typeAction,
+		idTarget
+	] = B.unpack('BBIx');
+
+	const action = new HIRCAction(idSection, scope, typeAction, idTarget);
+
+
+	action.props.push(...unpackProps(B));
+	action.propsRanged.push(...unpackPropsRanged(B));
+
+	const paramsAction = unapckersAction$typeAction[typeAction]?.(B, version);
+	Object.assign(action, paramsAction ?? {});
+
+
+	if(action.idBank && !idsBank.includes(action.idBank)) { GGG.warnD(`! Found an unknown ~[Bank]~{${showID(action.idBank)}}!`); }
+
+
+	return action;
+};
+/**
+ * @param {number} idSection
+ * @param {Biffer} B
+ * @param {import('../bases.js').Zagreus} GGG
+ */
+const parseHIRCEvent = (idSection, B, GGG) => {
+	const [count] = B.unpack('B');
+
+	const event = new HIRCEvent(idSection);
+
+	event.idsAction.push(...B.unpack(`${count}I`));
+
+
+	return event;
+};
+
+
+/**
+ * @param {HIRCPlayContainer|HIRCSwitchContainer|HIRCLayerContainer} container
+ * @param {number} version
+ * @param {Biffer} B
+ */
+const parseHIRCContainerHeader = (container, version, B) => {
+	const [sizeEffects] = B.unpack('xB');
+
+	if(sizeEffects) {
+		B.unpack('x');
+
+		for(let indexEffect = 0; indexEffect < sizeEffects; indexEffect++) { B.unpack('x4xxx'); }
+	}
+
+	if(version > 136) {
+		const [sizeEffectChunk] = B.unpack('xB');
+
+		if(sizeEffectChunk) {
+			for(let indexEffect = 0; indexEffect < sizeEffectChunk; indexEffect++) { B.unpack('x4xx'); }
+		}
+	}
+
+	B.unpack('x4x4xx');
+
+
+	container.props.push(...unpackProps(B));
+	container.propsRanged.push(...unpackPropsRanged(B));
+
+
+	const [positioning] = B.unpack('B');
+	const hasPositioning = (positioning >> 0) & 1;
+	const has3D = (positioning >> 1) & 1;
+
+	if(hasPositioning && has3D) {
+		B.unpack('x');
+
+		const type3DPosition = (positioning >> 5) & 3;
+		const hasAutomation = type3DPosition != 0;
+
+		if(hasAutomation) {
+			B.unpack('x4x');
+
+			const [sizeVertices] = B.unpack('I');
+			for(let index = 0; index < sizeVertices; index++) { B.unpack('4x4x4x4x'); }
+
+			const [sizeItemsPlayList] = B.unpack('I');
+			for(let index = 0; index < sizeItemsPlayList; index++) { B.unpack('4x4x'); }
+
+			for(let index = 0; index < sizeItemsPlayList; index++) { B.unpack('4x4x'); }
+		}
+	}
+
+
+	const [bitsAux] = B.unpack('B');
+
+	const hasAux = (bitsAux >> 3) & 1;
+	if(hasAux) { B.unpack('4x4x4x4x'); }
+
+	if(version > 135) { B.unpack('4x'); }
+
+
+	B.unpack('xx2xxx');
+
+
+	const [sizePropsState] = B.unpack('B');
+	if(sizePropsState) {
+		for(let indexPropState = 0; indexPropState < sizePropsState; indexPropState++) {
+			unpackVariableNumber(B);
+
+			B.unpack('xx');
+		}
+	}
+
+	const [sizeChunksState] = B.unpack('B');
+	if(sizeChunksState) {
+		for(let indexChunkState = 0; indexChunkState < sizeChunksState; indexChunkState++) {
+			B.unpack('4xx');
+
+			const sizeStates = unpackVariableNumber(B);
+			for(let indexState = 0; indexState < sizeStates; indexState++) {
+				B.unpack('4x4x');
+			}
+		}
+	}
+
+	if(version <= 141) {
+		const [sizeRTPC] = B.unpack('H');
+		if(sizeRTPC) {
+			for(let index = 0; index < sizeRTPC; index++) {
+				B.unpack('4xxx');
+
+				unpackVariableNumber(B);
+
+				const [sizeGraphPoint] = B.unpack('4xxH');
+				for(let indexGraphPoint = 0; indexGraphPoint < sizeGraphPoint; indexGraphPoint++) {
+					B.unpack('4x4x4x');
+				}
+			}
+		}
+	}
+	else {
+		B.unpack('2x');
+	}
+};
+/**
+ * @param {number} idSection
+ * @param {number} version
+ * @param {Biffer} B
+ * @param {import('../bases.js').Zagreus} GGG
+ */
+const parseHIRCPlayContainer = (idSection, version, B, GGG) => {
+	const container = new HIRCPlayContainer(idSection);
+
+
+	parseHIRCContainerHeader(container, version, B);
+
+
+	[container.mode] = B.unpack('2x2x2x4x4x4x2xxxBx');
+
+
+	const [sizeChildren] = B.unpack('I');
+	container.idsChildren = B.unpack(`${sizeChildren}I`);
+
+
+	const [sizeSound] = B.unpack('H');
+	for(let index = 0; index < sizeSound; index++) {
+		container.idsSound.push(B.unpack(`I`)[0]);
+		container.weightsSound.push(B.unpack(`I`)[0]);
+	}
+
+	return container;
+};
+/**
+ * @param {number} idSection
+ * @param {number} version
+ * @param {HIRCObject[]} objectsExtra
+ * @param {Biffer} B
+ * @param {import('../bases.js').Zagreus} GGG
+ */
+const parseHIRCSwitchContainer = (idSection, version, objectsExtra, B, GGG) => {
+	const container = new HIRCSwitchContainer(idSection);
+
+	parseHIRCContainerHeader(container, version, B);
+
+
+	[
+		container.typeGroup,
+		container.idGroup,
+		container.idSwitchDefault,
+	] = B.unpack('BIIx');
+
+
+	const [sizeChildren] = B.unpack('I');
+	container.idsChildren = B.unpack(`${sizeChildren}I`);
+
+
+	const [sizeSwitches] = B.unpack('I');
+	for(let index = 0; index < sizeSwitches; index++) {
+		const [id, sizeSwitch] = B.unpack(`II`);
+
+		const sw = new HIRCSwitch(id, B.unpack(`${sizeSwitch}I`));
+
+		container.switches.push(sw);
+		objectsExtra.push(sw);
+	}
+
+	return container;
+};
+/**
+ * @param {number} idSection
+ * @param {Biffer} B
+ * @param {import('../bases.js').Zagreus} GGG
+ */
+const parseHIRCLayerContainer = (idSection, version, B, GGG) => {
+	const container = new HIRCLayerContainer(idSection);
+
+	parseHIRCContainerHeader(container, version, B);
+
+
+	const [sizeChildren] = B.unpack('I');
+	container.idsChildren = B.unpack(`${sizeChildren}I`);
+
+
+	const [sizeLayers] = B.unpack('I');
+	if(sizeLayers) { GGG.warnD('! Found a ~[Layer]. Check it!'); }
+
+	return container;
+};
+
+
+
+// 0x01(01): State
+// 0x07(07): Actor Mixer
+// 0x0E(14): Attenuation
+// 0x10(16): Fx Share Set
+// 0x11(17): Fx Custom
+const typesObjectHIRCSkip = [1, 7, 14, 16, 17];
 
 /**
  * @param {number} idSection
  * @param {number} typeSection
  * @param {number} version
+ * @param {number[]} idsBank
  * @param {Biffer} B
  * @param {import('../bases.js').Melinoe} GG
  */
-export const parseHIRCObject = (idSection, typeSection, version, B, GG) => {
+export const parseHIRCObject = (idSection, typeSection, version, idsBank, B, GG) => {
+	const GGG = GG.what(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection) }));
+
+
 	let object;
 	const objectsExtra = [];
-
-	// Sound
 	if(typeSection == 2) {
-		const [
-			// 0000 0000 0000 0000 0000 0000 0000 1111 = type
-			// 0000 0000 0000 0000 0011 1111 1111 0000 = company
-			idPlugin,
-			typeStream,
-			idAudio,
-			sizeMediaInMemory,
-			// 0000 0001 = specificedLanguage
-			// 0000 0010 = prefetched
-			// 0000 1000 = nonCachable
-			// 1000 0000 = hasSource
-			bitsSource,
-		] = B.unpack('IBIIB');
-
-		const sound = object = new HIRCSound(idSection, typeStream, idAudio);
-
-		sound.idPlugin = idPlugin;
-		sound.sizeMediaInMemory = sizeMediaInMemory;
-		sound.bitsSource = bitsSource;
-
-
-		const typePlugin = idPlugin & 0x0F;
-		const hasParam = typePlugin == 2;
-
-
-		if(hasParam) { GG.warnD(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection) }, '! Found a ~[HIRCSound] includes plugin-params. Time to parse it!')); }
+		object = parseHIRCSound(idSection, B, GGG);
 	}
-	// Event Action
 	else if(typeSection == 3) {
-		const [scope, actionType, idObject, countParam] = B.unpack('BBIxB');
-		object = new HIRCEventAction(idSection, scope, actionType, idObject, countParam);
-
-		object.scope = scope;
-		object.actionType = actionType;
-		object.idObject = idObject;
-
-		const params = object.params = [];
-
-		for(let i = 0; i < countParam; i++) {
-			const [type] = B.unpack('B');
-			// 0f --> float
-			const [value] = B.unpack(type == 0x0E || type == 0x0F ? 'I' : 'I');
-
-			params.push({ type, value });
-		}
-
-
-		if(actionType == 0x12 || actionType == 0x19) {
-			const [idGroup, idCondition] = B.unpack('xII');
-
-			object.idGroup = idGroup;
-			object.idCondition = idCondition;
-		}
+		object = parseHIRCAction(idSection, version, idsBank, B, GGG);
 	}
-	// Event
 	else if(typeSection == 4) {
-		const [count] = B.unpack('B');
-
-		object = new HIRCEvent(idSection, count);
-
-		object.count = count;
-
-		if(count) {
-			object.idsAction = B.unpack(`${count}I`);
-		}
-		else {
-			object.idsAction = [];
-		}
+		object = parseHIRCEvent(idSection, B, GGG);
 	}
-	// Containers
-	else if([5, 6, 9].includes(typeSection)) {
-		const container = object = new HIRCContainer(idSection, typeSection);
-
-		const [overridedParentEffect, sizeEffects] = B.unpack('BB');
-
-		container.overridedParentEffect = Boolean(overridedParentEffect);
-
-		if(sizeEffects) {
-			// 0000 0001 = bypass effect 0
-			// 0000 0010 = bypass effect 1
-			// 0000 0100 = bypass effect 2
-			// 0000 1000 = bypass effect 3
-			// 0001 0000 = bypass all
-			container.bitsBypassEffect = B.unpack('B');
-
-			container.effects = [];
-			for(let indexEffect = 0; indexEffect < sizeEffects; indexEffect++) {
-				const [index, idEffect, sharedSet, rendered] = B.unpack('BIBB');
-
-				container.effects.push({ index, idEffect, sharedSet: Boolean(sharedSet), rendered: Boolean(rendered) });
-			}
-		}
-
-		if(version > 136) {
-			const [/* overridedParentMetadata */, sizeEffectChunk] = B.unpack('BB');
-
-			if(sizeEffectChunk) {
-				container.chunksEffect = [];
-				for(let indexEffect = 0; indexEffect < sizeEffectChunk; indexEffect++) {
-					const [index, idEffect, sharedSet] = B.unpack('BIB');
-
-					container.effects.push({ index, idEffect, sharedSet: Boolean(sharedSet) });
-				}
-			}
-		}
-
-
-		const [overridedAttachmentParams, idBusOverride, idParent, bitsSettings] = B.unpack('BIIB');
-
-		container.overridedAttachmentParams = Boolean(overridedAttachmentParams);
-		container.idBusOverride = idBusOverride;
-		container.idParent = idParent;
-		// 0000 0001 = prioritizedOverrideParent
-		// 0000 0010 = prioritizedApplyDistFactor
-		// 0000 0100 = overridedMIDIEventsBehavior
-		// 0000 1000 = overridedMIDINoteTracking
-		// 0001 0000 = enabledMIDINoteTracking
-		// 0010 0000 = breakedMIDILoopOnNoteOff
-		container.bitsSettings = bitsSettings;
-
-
-		const [sizeBundlesProp] = B.unpack('B');
-
-		container.bundlesProp = B.unpack(`${sizeBundlesProp}B`).map(id => ({ id }));
-
-		for(const bundleProp of container.bundlesProp) {
-			if(!formats$idBundleProp[bundleProp.id]) {
-				GG.warnD(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection), idBunlde: bundleProp.id }, 'unknown-prop-bundle'));
-			}
-
-			[bundleProp.value] = B.unpack(formats$idBundleProp[bundleProp.id]);
-		}
-
-
-		const [sizeBundlesPropRanged] = B.unpack('B');
-
-		container.bundlesPropRanged = B.unpack(`${sizeBundlesPropRanged}B`).map(id => ({ id }));
-
-		for(const bundleProp of container.bundlesPropRanged) {
-			[bundleProp.min, bundleProp.max] = B.unpack('ff');
-		}
-
-
-		// 0000 0001 = hasPositioningInfoOverrideParent
-		// 0000 0010 = hasListenerRelativeRouting
-		// 0000 1100 = Panner Type: 0, Direct Speaker Assignment,; 1, Balance Fade Height; 2, Steering Panner
-		// 0110 0000 = 3DPosition Type: 0, Emitter; 1, Emitter With Automation; 2, Listener With Automation
-		[container.positioning] = B.unpack('B');
-		const hasPositioning = (container.positioning >> 0) & 1;
-		const has3D = (container.positioning >> 1) & 1;
-
-		if(hasPositioning && has3D) {
-			// 0000 0011 = Spatialization Mode: 0, None; 1, Position Only; 2, Position And Orientation
-			// 0000 0100 = enabledAttenuation
-			// 0000 1000 = holdedEmitterPosAndOrient
-			// 0001 0000 = holdedListenerOrient
-			// 0100 0000 = is not looping?
-			[container.bits3D] = B.unpack('B');
-
-			const type3DPosition = (container.positioning >> 5) & 3;
-			const hasAutomation = type3DPosition != 0; //#(3d == 1 or 3d != 1 and 3d == 2)
-
-			if(hasAutomation) {
-				// 0x0 = Step Sequence
-				// 0x1 = Step Random
-				// 0x2 = Continuous Sequence
-				// 0x3 = Continuous Random
-				// 0x4 = Step Sequence Pick New Path
-				// 0x5 = Step Random Pick New Path
-				[container.modePath] = B.unpack('B');
-
-				[container.timeTransition] = B.unpack('i');
-
-				const sizeVertices = B.unpack('I');
-				container.vertices = [];
-				for(let index = 0; index < sizeVertices; index++) {
-					const [x, y, z, duration] = B.unpack('fffi');
-
-					container.vertices.push({ x, y, z, duration });
-				}
-
-				const sizeItemsPlayList = B.unpack('I');
-				container.itemsPlayList = [];
-				for(let index = 0; index < sizeItemsPlayList; index++) {
-					const [offsetVertices, sizeVerticesPlayList] = B.unpack('II');
-
-					container.itemsPlayList.push({ offsetVertices, sizeVertices: sizeVerticesPlayList });
-				}
-
-				container.paramsAutomation = [];
-				for(let index = 0; index < sizeItemsPlayList; index++) {
-					const [xRange, yRange, zRange] = B.unpack('ff');
-
-					container.paramsAutomation.push({ xRange, yRange, zRange });
-				}
-			}
-		}
-
-
-		// 0000 0100 = overridedUserAuxSends
-		// 0000 1000 = hasAux
-		// 0001 0000 = overridedReflectionsAuxBus
-		[container.bitsAux] = B.unpack('B');
-
-		const hasAux = (container.bitsAux >> 3) & 1;
-		if(hasAux) {
-			container.idsAux = B.unpack('IIII');
-		}
-
-		if(version > 135) {
-			[container.idBusAuxReflections] = B.unpack('I');
-		}
-
-
-		[
-			// 0000 0001 = Killed Newest
-			// 0000 0010 = UseedVirtualBehavior
-			// 0000 1000 = Ignore Parent Max Num Instance
-			// 0001 0000 = Is Voices Option Override Parent
-			container.bitsAdvSettings,
-			container.behaviorVirtualQueue,
-			container.sizeInstanceMax,
-			container.behaviorBelowThreshold,
-			// 0000 0001 = overridedHdrEnvelope
-			// 0000 0010 = overridedAnalysis
-			// 0000 0100 = normalizedLoudness
-			// 0000 1000 = enabledEnvelope
-			container.bitsAdvSettings2
-		] = B.unpack('BBHBB');
-
-
-		const [sizePropsState] = B.unpack('B');
-		if(sizePropsState) {
-			container.propsState = [];
-
-			for(let indexPropState = 0; indexPropState < sizePropsState; indexPropState++) {
-				const id = unpackVariableNumber(B);
-
-				const [typeAccum, dbIn] = B.unpack('BB');
-
-				container.propsState.push({ id, typeAccum, dbIn });
-			}
-		}
-
-		const [sizeChunksState] = B.unpack('B');
-		if(sizeChunksState) {
-			container.chunksState = [];
-
-			for(let indexChunkState = 0; indexChunkState < sizeChunksState; indexChunkState++) {
-				const [id, typeSyncState] = B.unpack('IB');
-
-				const states = [];
-				const sizeStates = unpackVariableNumber(B);
-				for(let indexState = 0; indexState < sizeStates; indexState++) {
-					const [idState, idInstanceState] = B.unpack('II');
-
-					states.push({ id: idState, idInstanceState });
-				}
-
-
-				container.chunksState.push({ id, typeSyncState, states });
-			}
-		}
-
-		if(version <= 141) {
-			const [sizeRTPC] = B.unpack('H');
-			if(sizeRTPC) {
-				container.rtpcs = [];
-
-				for(let index = 0; index < sizeRTPC; index++) {
-					const [idRTPC, type, accum] = B.unpack('IBB');
-
-					const idParam = unpackVariableNumber(B);
-
-					const [idCurveRTPC, scaling, sizeGraphPoint] = B.unpack('IBH');
-
-					const pointsGraph = [];
-
-					for(let indexGraphPoint = 0; indexGraphPoint < sizeGraphPoint; indexGraphPoint++) {
-						const [from, to, interp] = B.unpack('ffI');
-
-						pointsGraph.push({ from, to, interp });
-					}
-
-
-					container.rtpcs.push({
-						id: idRTPC,
-						type,
-						accum,
-						idParam,
-						idCurveRTPC,
-						scaling,
-						pointsGraph,
-					});
-				}
-			}
-		}
-		else {
-			/* const [sizeCurves] = */ B.unpack('H');
-		}
-
-
-		if(typeSection == 5) {
-			[
-				container.countLoop,
-				container.modLoopMin,
-				container.modLoopMax,
-				container.timeTransition,
-				container.modTimeTransitionMin,
-				container.modTimeTransitionMax,
-				container.countRepeatAvoid,
-				// 0x0: "Disabled",
-				// 0x1: "CrossFadeAmp",
-				// 0x2: "CrossFadePower",
-				// 0x3: "Delay",
-				// 0x4: "SampleAccurate",
-				// 0x5: "TriggerRate",
-				container.modeTransition,
-				// 0x0: "Normal",
-				// 0x1: "Shuffle",
-				container.modeRandom,
-				// 0x0: "Random",
-				// 0x1: "Sequence",
-				container.mode,
-				// 0000 0001 = isUsingWeight
-				// 0000 0010 = resetedPlayListAtEachPlay
-				// 0000 0100 = isRestartBackward
-				// 0000 1000 = isContinuous
-				// 0001 0000 = isGlobal
-				container.bitsParam
-			] = B.unpack('HHHfffHBBBB');
-
-
-			container.typeName = container.mode == 0 ? 'Random Container' : 'Sequence Container';
-		}
-		else if(typeSection == 6) {
-			[
-				// 0x0: "Switch",
-				// 0x1: "State",
-				container.typeGroup,
-				container.idGroup,
-				container.idSwitchDefault,
-				container.validatedContinuous,
-			] = B.unpack('BIIB');
-
-
-			object.typeName = 'Switch Container';
-		}
-		else if(typeSection == 9) {
-			object.typeName = 'Layer Container';
-		}
-
-		const [sizeChildren] = B.unpack('I');
-		object.idsSound = B.unpack(`${sizeChildren}I`);
-
-		if(sizeChildren > 1 && typeSection == 5) { object.typeName += ` ${sizeChildren}`; }
-
-
-		if(typeSection == 5) {
-			object.idsChildren = object.idsSound;
-
-			const [sizePlayList] = B.unpack('H');
-
-			object.idsSound = [];
-			object.weightsSound = [];
-			for(let index = 0; index < sizePlayList; index++) {
-				object.idsSound.push(B.unpack(`I`)[0]);
-				object.weightsSound.push(B.unpack(`I`)[0]);
-			}
-		}
-		else if(typeSection == 6) {
-			const [sizeSwitches] = B.unpack('I');
-
-			object.switches = [];
-			for(let index = 0; index < sizeSwitches; index++) {
-				const [id, sizeSwitch] = B.unpack(`II`);
-
-				const sw = new HIRCSwitch(id, B.unpack(`${sizeSwitch}I`));
-
-				object.switches.push(sw);
-				objectsExtra.push(sw);
-			}
-		}
-		else if(typeSection == 9) {
-			const [sizeLayers] = B.unpack('I');
-
-			if(sizeLayers) {
-				GG.warnD(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection) }, '! Found a ~[Layer]. Time to parse it!'));
-			}
-
-			// object.layers = [];
-
-			// for(let index = 0; index < sizeLayers; index++) { }
-
-			// [object.isContinuous] = B.unpack('B');
-		}
+	else if(typeSection == 5) {
+		object = parseHIRCPlayContainer(idSection, version, B, GGG);
+	}
+	else if(typeSection == 6) {
+		object = parseHIRCSwitchContainer(idSection, version, objectsExtra, B, GGG);
+	}
+	else if(typeSection == 9) {
+		object = parseHIRCLayerContainer(idSection, version, B, GGG);
 	}
 	else if(!typesObjectHIRCSkip.includes(typeSection)) {
 		GG.warnD(...TS(`parse-bnk:parse-hirc`, { id: showID(idSection), type: typeSection }, 'unparsed-type'));
@@ -554,84 +498,8 @@ export const parseHIRCObject = (idSection, typeSection, version, B, GG) => {
 };
 
 
-/**
- * @param {HIRCObject} objectParsed
- * @param {HIRCObject[]} objectsAll
- * @param {HIRCEventAction} action
- * @param {import('@nuogz/pangu').Melinoe} GG
- * @returns {number[]}
- */
-const groupActionChildAudioIDs = (objectParsed, objectsAll, action, GG) => {
-	const idsAudio = [];
-
-	if(objectParsed instanceof HIRCSound) {
-		idsAudio.push(objectParsed.idAudio);
-	}
-	else if(objectParsed instanceof HIRCContainer) {
-		const objects = [...new Set([
-			...objectsAll.filter(object => objectParsed.idsSound.includes(object.id)),
-			...objectParsed.switches ?? [],
-		])];
-
-		for(const object of objects) {
-			idsAudio.push(...groupActionChildAudioIDs(object, objectsAll, action, GG));
-		}
-	}
-	else if(objectParsed instanceof HIRCSwitch) {
-		const objects = objectsAll.filter(object => objectParsed.idsSound.includes(object.id));
-
-		for(const object of objects) {
-			idsAudio.push(...groupActionChildAudioIDs(object, objectsAll, action, GG));
-		}
-	}
-	else if(!objectParsed) {
-		GG.warnD(...TS('parse-bnk:group-ids-audio-action', { idAction: showID(action.id), idObject: showID(action.idObject) }, 'unknown-action-object'));
-	}
-	else if(objectParsed) {
-		GG.warnD(...TS('parse-bnk:group-ids-audio-action', { idAction: showID(action.id), idObject: showID(action.idObject), clazz: Object.getPrototypeOf(objectParsed).constructor.name }, 'unknown-action-object-type'));
-	}
-
-	return idsAudio;
-};
 
 
-
-const joinTree = (object, id, objects, texts, level = 0) => {
-	if(!object) {
-		if(id) { return texts.push(`${'\t'.repeat(level)}UnknownObject:${showID(id)}`); }
-
-		return;
-	}
-
-	texts.push(`${'\t'.repeat(level)}${object.toString()}`);
-
-
-	if(object instanceof HIRCEvent) {
-		for(const idAction of object.idsAction) {
-			joinTree(objects.find(o => o.id == idAction), idAction, objects, texts, level + 1);
-		}
-
-		texts.push('');
-	}
-	else if(object instanceof HIRCEventAction) {
-		joinTree(objects.find(o => o.id == object.idObject), object.idObject, objects, texts, level + 1);
-	}
-	else if(
-		object instanceof HIRCContainer ||
-		object instanceof HIRCSwitch
-	) {
-		// Switch Conatiner
-		if(object.type == 6) {
-			object.switches.filter(sw => sw.idsSound?.length).forEach(sw => texts.push(`${'\t'.repeat(level + 1)}${sw.toString()}`));
-		}
-
-		for(const idSound of object.idsSound) {
-			const objectChild = objects.find(e => e.id == idSound);
-
-			joinTree(objectChild, idSound, objects, texts, level + 1);
-		}
-	}
-};
 
 
 const versionsSupport = [134, 145];
@@ -639,9 +507,9 @@ const versionsSupport = [134, 145];
 /**
  * @param {import('../bases.js').ExtractConfig} E
  * @param {string} file
- * @param {Set<string>} eventsAll
+ * @param {Set<string>} literalsEvent
  */
-export default async function parseBNK(E, file, eventsAll) {
+export default async function parseBNK(E, file, literalsEvent) {
 	let bifferBNK;
 	try {
 		bifferBNK = new Biffer(file);
@@ -650,8 +518,10 @@ export default async function parseBNK(E, file, eventsAll) {
 
 		/** @type {HIRCObject[]} */
 		const objects = [];
-		const linesHexDump = [];
+		/** @type {number[]} */
+		const idsBank = [];
 
+		/** @type {number} */
 		let versionBank;
 
 		while(!bifferBNK.isEnd()) {
@@ -670,17 +540,11 @@ export default async function parseBNK(E, file, eventsAll) {
 
 					const B = bifferSection.sub(length - 4);
 
-					const [objectSection, objectsExtra] = parseHIRCObject(id, type, versionBank, B, GG);
+					const [objectSection, objectsExtra] = parseHIRCObject(id, type, versionBank, idsBank, B, GG);
 
 					if(objectSection) { objects.push(objectSection); }
 
 					objects.push(...objectsExtra);
-
-
-					const idsHexObjectDump = E.idsHexEventTreeDump ?? [];
-					if(idsHexObjectDump.includes(toHexL8(id)) || idsHexObjectDump.includes(id) || idsHexObjectDump.includes('*')) {
-						linesHexDump.push(`${toHexL8(id)} [${String(type).padStart(2, '0')}]${objectSection ? objectSection.toString() : ''}\n${toBufferHex(B)}`);
-					}
 				}
 			}
 			// Bank Header
@@ -688,18 +552,13 @@ export default async function parseBNK(E, file, eventsAll) {
 				const [
 					version,
 					idBank,
-				/* idLanguage */,
-				// 0000 0000 0000 0000 1111 1111 1111 1111 = unused(<=134) alignment(>134)
-				// 1111 1111 1111 1111 0000 0000 0000 0000 = allocatedDevice
-				/* bitsValuesAlt */,
 					idProject
-				] = bifferBNK.unpack('5L');
+				] = bifferBNK.unpack('II4x4xI');
 
+				idsBank.push(idBank);
 				versionBank = version;
 
-				if(version > 141) {
-					/* const [typeBank, hashBank] = */ bifferBNK.unpack('LQQ');
-				}
+				if(version > 141) { bifferBNK.unpack('4x8x8x'); }
 
 				const gap = version <= 141 ? sizeSection - Biffer.calc('5L') :
 					sizeSection - Biffer.calc('5L') - Biffer.calc('L') - Biffer.calc('4L');
@@ -721,116 +580,27 @@ export default async function parseBNK(E, file, eventsAll) {
 			}
 		}
 
-
-
-		if(linesHexDump.length) {
-			writeFileSync(
-				resolve(E.dirExportDebug, 'hex', `${E.slot}@${E.regionCDN}@${E.lang}@${E.timeExtract.format('HHmmss')}@hex.txt`),
-				linesHexDump.join('\n'),
-			);
+		/** @type {Object<string, string>} */
+		const literalsEvent$hash = {};
+		for(const literalEvent of literalsEvent) {
+			literalsEvent$hash[fnv_1(literalEvent)] = literalEvent;
 		}
 
 
-		const events$hash = {};
-		const events$idAudio = {};
-		const events$hashHex = {};
+		for(const event of objects.filter(object => object instanceof HIRCEvent)) {
+			const literalEvent = literalsEvent$hash[event.id] ?? event.id;
 
-		for(const event of eventsAll) {
-			events$hash[fnv_1(event)] = event;
-			events$hashHex[toHexL8(fnv_1(event))] = event;
-		}
+			if(typeof literalEvent != 'string') {
+				GG.warnD(...TS('parse-bnk:group-ids', { event: literalEvent }, 'unknown-event-name'));
 
-		if(linesHexDump.length) {
-			appendFileSync(
-				resolve(E.dirExportDebug, 'hex', `${E.slot}@${E.regionCDN}@${E.lang}@${E.timeExtract.format('HHmmss')}@hex.json`),
-				JSON.stringify(events$hashHex, null, '\t') + '\n',
-			);
-		}
-
-		const objectsEvent = objects.filter(object => object instanceof HIRCEvent);
-
-		for(const objectEvent of objectsEvent) {
-			const event = events$hash[objectEvent.id] ?? objectEvent.id;
-
-			if(typeof event != 'string') {
-				GG.warnD(...TS('parse-bnk:group-ids', { event }, 'unknown-event-name'));
-
-				objectEvent.event = `unknown-name:${event}`;
+				event.name = `unknown-${literalEvent}`;
 			}
 			else {
-				objectEvent.event = event;
-			}
-
-
-
-			const idsAudioChild = [];
-			for(const actionID of objectEvent.idsAction) {
-				/** @type {HIRCEventAction} */
-				const action = objects.find(object => object.id == actionID);
-
-				const objectAction = objects.find(object => object.id == action.idObject);
-
-				idsAudioChild.push(...groupActionChildAudioIDs(objectAction, objects, action, GG));
-			}
-
-
-			for(const idAudio of idsAudioChild) {
-				(events$idAudio[idAudio] || (events$idAudio[idAudio] = new Set())).add(event);
+				event.name = literalEvent;
 			}
 		}
 
-
-		const idsSound$idAudio = {};
-
-		for(const sound of objects.filter(object => object instanceof HIRCSound)) {
-			(idsSound$idAudio[sound.idAudio] || (idsSound$idAudio[sound.idAudio] = new Set())).add(sound.id);
-		}
-
-
-		// extract debug info
-
-		// const textsSoundAudio = [];
-		// objects.filter(object => object instanceof HIRCSound).forEach(object =>
-		// 	textsSoundAudio.push(`${showID(object.id)} --> ${showID(object.idAudio)}`)
-		// );
-
-		// writeFileSync(
-		// 	resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@sound.txt`),
-		// 	textsSoundAudio.join('\n')
-		// );
-
-
-		// const textsEvent = [];
-		// objects.filter(object => object instanceof HIRCEvent)
-		// 	.forEach(object =>
-		// 		textsEvent.push(showID(object.id))
-		// 	);
-
-		// writeFileSync(
-		// 	resolve(dirDebug, `[${I.slot}@${C.server.region}@${C.lang}]@${parse(fileBNK).base}@${I.time}@event.txt`),
-		// 	textsEvent.join('\n')
-		// );
-
-
-		if(E.dumpEventTree) {
-			const textsTree = [];
-			for(const object of objects.filter(object => object instanceof HIRCEvent)) {
-				joinTree(object, object.id, objects, textsTree);
-			}
-
-			if(textsTree.length) {
-				const lang = !E.saveWithShort ? E.lang : E.lang.split('_')[0];
-				const region = (!E.saveWithShort ? E.regionCDN : E.regionCDN.replace(/\d+$/, '')).toLowerCase();
-
-				writeFileSync(
-					resolve(E.dirExportDebug, `event-tree@${parsePath(file).base}${E.noRegionInExportFileName ? '' : `@${region}`}@${lang}@${E.slot}@${E.timeExtract.format('HHmmss')}.txt`),
-					textsTree.join('\n')
-				);
-			}
-		}
-
-
-		return [events$idAudio, idsSound$idAudio];
+		return objects;
 	}
 	finally {
 		bifferBNK.close();

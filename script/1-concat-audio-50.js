@@ -13,9 +13,9 @@ import { T, TS } from '../lib/i18n.js';
 import parseRuncom from '../src/parse-runcom.js';
 import parseExtractConfig from '../src/parse-extract-config.js';
 
-
-
 const GG = G.where(T('where:main'));
+
+
 
 /** @param {import('../bases.d.ts').ExtractConfig} E */
 const concatAudioEvery50 = E => {
