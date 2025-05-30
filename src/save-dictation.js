@@ -45,7 +45,7 @@ const convertEventNameToTitle = (name, mapsTitleEvent$name) => {
 
 const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0) => {
 	if(!object) {
-		if(id) { return texts.push(`${'    '.repeat(level)}@Unknown[${showID(id)}]`); }
+		if(id) { return texts.push(`${'\t'.repeat(level)}@Unknown[${showID(id)}]`); }
 
 		return;
 	}
@@ -57,7 +57,7 @@ const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0)
 		texts.push(`- \`${toHexL8(object.id)}|${toHexL8(object.idAudio)}|index=${String(index).padStart(2, '0')}\` ***`);
 	}
 	else {
-		texts.push(`${'    '.repeat(level)}@${object.toString()}`);
+		texts.push(`${'\t'.repeat(level)}@${object.toString()}`);
 	}
 
 
@@ -77,7 +77,7 @@ const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0)
 	) {
 		// Switch Conatiner
 		if(object.type == 6) {
-			object.switches.filter(sw => sw.idsChildren?.length).forEach(sw => texts.push(`${'    '.repeat(level + 1)}@${sw.toString()}`));
+			object.switches.filter(sw => sw.idsChildren?.length).forEach(sw => texts.push(`${'\t'.repeat(level + 1)}@${sw.toString()}`));
 		}
 
 		for(const idSound of(object.idsSound ?? object.idsChildren).toSorted((a, b) => toHexL8(a) > toHexL8(b) ? 1 : -1)) {

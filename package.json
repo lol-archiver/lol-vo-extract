@@ -1,6 +1,6 @@
 {
 	"name": "@lol-archiver/lol-vo-extract",
-	"version": "2.8.0",
+	"version": "2.8.1",
 	"description": "league of legends champion voices download, extract and rename with events",
 	"author": "DanoR",
 	"license": "LGPL-3.0-or-later",
@@ -22,7 +22,7 @@
 		"@nuogz/biffer": "^2.7.1",
 		"@nuogz/i18n": "^3.7.4",
 		"@nuogz/pangu": "^5.6.0",
-		"axios": "^1.8.4",
+		"axios": "^1.9.0",
 		"bluebird": "^3.7.2",
 		"buffer-crc32": "^0.2.13",
 		"dayjs": "^1.11.13",
@@ -36,11 +36,11 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.24.0",
+		"@eslint/js": "^9.27.0",
 		"@stylistic/eslint-plugin-js": "^2.13.0",
 		"@types/fs-extra": "^11.0.4",
-		"@types/node": "^20.17.30",
-		"eslint": "^9.24.0",
-		"globals": "^16.0.0"
+		"@types/node": "^22.15.27",
+		"eslint": "^9.27.0",
+		"globals": "^16.2.0"
 	}
 }

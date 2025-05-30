@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.8.1 - 2025.05.30 15
+* adjust: change the indent of evnent logical structures to 1 tab from 4 spaces
+* chore: update base data
+* chore: bump up dependencies
+
+
 ## v2.8.0 - 2025.04.18 15
 * refactor: refactor the contents of the export dictation file
   * it shows the logical structure of for each event now
