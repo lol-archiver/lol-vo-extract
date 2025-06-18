@@ -3,6 +3,8 @@ import { G } from '@nuogz/pangu';
 import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 
+import Filenamify from 'filenamify';
+
 import { toHexL8, pad0, showID } from '../lib/utility.js';
 import { champions$lang } from '../lib/database.js';
 
@@ -176,6 +178,6 @@ export default async function saveDictation(objectsBNKAll, E) {
 	}
 
 
-	writeFileSync(resolve(E.dirExportDict, `${E.nameFileDictation}.md`), textsDictation.join('\n'));
+	writeFileSync(resolve(E.dirExportDict, Filenamify(`${E.nameFileDictation}.md`)), textsDictation.join('\n'));
 	// (await import('child_process')).spawn('explorer', [`${E.nameFileDictation}.md`], { cwd: E.dirExportDict });
 }

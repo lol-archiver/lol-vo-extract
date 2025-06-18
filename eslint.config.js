@@ -1,11 +1,11 @@
 /**
  * @file @nuogz/dynamic-eslint-config
  * @author DanoR
- * @version 5.4.0 2024.12.10 10
+ * @version 5.4.1 2025.04.08 17
  * @requires globals
  * @requires @eslint/js
  * @requires @stylistic/eslint-plugin-js
- * @requires eslint-plugin-vue (optional)
+ * @requires eslint-plugin-vue@^10 (optional)
  */
 
 
@@ -150,7 +150,7 @@ if(typesSource.has('vue')) {
 		name: 'rule-vue',
 		files: ['**/*.vue'],
 		plugins: configVueBase.plugins,
-		languageOptions: configVueBase.languageOptions,
+		languageOptions: Object.assign({ globals: globals.browser }, configVueBase.languageOptions),
 		processor: configVueBase.processor,
 		rules: {
 			...configVueBase.rules,

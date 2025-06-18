@@ -342,23 +342,18 @@ const parseHIRCContainerHeader = (container, version, B) => {
 		}
 	}
 
-	if(version <= 141) {
-		const [sizeRTPC] = B.unpack('H');
-		if(sizeRTPC) {
-			for(let index = 0; index < sizeRTPC; index++) {
-				B.unpack('4xxx');
+	const [sizeRTPCOrCurves] = B.unpack('H');
+	if(sizeRTPCOrCurves) {
+		for(let index = 0; index < sizeRTPCOrCurves; index++) {
+			B.unpack('4xxx');
 
-				unpackVariableNumber(B);
+			unpackVariableNumber(B);
 
-				const [sizeGraphPoint] = B.unpack('4xxH');
-				for(let indexGraphPoint = 0; indexGraphPoint < sizeGraphPoint; indexGraphPoint++) {
-					B.unpack('4x4x4x');
-				}
+			const [sizeGraphPoint] = B.unpack('4xxH');
+			for(let indexGraphPoint = 0; indexGraphPoint < sizeGraphPoint; indexGraphPoint++) {
+				B.unpack('4x4x4x');
 			}
 		}
-	}
-	else {
-		B.unpack('2x');
 	}
 };
 /**

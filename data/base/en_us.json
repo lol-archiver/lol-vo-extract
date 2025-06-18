@@ -4410,7 +4410,94 @@
 			"74": 66,
 			"75": 66,
 			"76": 66,
-			"77": 66
+			"77": 66,
+			"78": {
+				"id": 78,
+				"name": "Spirit Blossom Kayle",
+				"chromas": {
+					"79": {
+						"id": 79,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"80": {
+						"id": 80,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"82": {
+						"id": 82,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"83": {
+						"id": 83,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"84": {
+						"id": 84,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"85": {
+						"id": 85,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"86": {
+						"id": 86,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"87": {
+						"id": 87,
+						"name": "Spirit Blossom Kayle",
+						"colors": [
+							"#BCD6EF",
+							"#547DF1"
+						]
+					}
+				}
+			},
+			"79": 78,
+			"80": 78,
+			"81": 78,
+			"82": 78,
+			"83": 78,
+			"84": 78,
+			"85": 78,
+			"86": 78,
+			"87": 78
 		},
 		"spells": {
 			"p": "Divine Ascent",
@@ -9994,7 +10081,7 @@
 					},
 					"83": {
 						"id": 83,
-						"name": "",
+						"name": "Fae Dragon Ashe",
 						"colors": [
 							"#BCD6EF",
 							"#474AF7"
@@ -11742,7 +11829,12 @@
 			"76": 70,
 			"77": 70,
 			"78": 70,
-			"79": 70
+			"79": 70,
+			"80": {
+				"id": 80,
+				"name": "Spirit Blossom Morgana",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Soul Siphon",
@@ -12714,7 +12806,12 @@
 			"60": 52,
 			"61": 52,
 			"62": 52,
-			"63": 52
+			"63": 52,
+			"64": {
+				"id": 64,
+				"name": "Nightbringer Evelynn",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Demon Shade",
@@ -17884,7 +17981,12 @@
 			"62": 56,
 			"63": 56,
 			"64": 56,
-			"65": 56
+			"65": 56,
+			"66": {
+				"id": 66,
+				"name": "Dawnbringer Janna",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Tailwind",
@@ -19124,7 +19226,67 @@
 			"66": 61,
 			"67": 61,
 			"68": 61,
-			"69": 61
+			"69": 61,
+			"70": {
+				"id": 70,
+				"name": "Spirit Blossom Karma",
+				"chromas": {
+					"71": {
+						"id": 71,
+						"name": "Spirit Blossom Karma",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Spirit Blossom Karma",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Spirit Blossom Karma",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Spirit Blossom Karma",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Spirit Blossom Karma",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Spirit Blossom Karma",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"71": 70,
+			"72": 70,
+			"73": 70,
+			"74": 70,
+			"75": 70,
+			"76": 70
 		},
 		"spells": {
 			"p": "Gathering Fire",
@@ -28635,7 +28797,94 @@
 			"54": 48,
 			"55": 48,
 			"56": 48,
-			"57": 48
+			"57": 48,
+			"58": {
+				"id": 58,
+				"name": "Spirit Blossom Nidalee",
+				"chromas": {
+					"59": {
+						"id": 59,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Spirit Blossom Nidalee",
+						"colors": [
+							"#FE7CA6",
+							"#547DF1"
+						]
+					}
+				}
+			},
+			"59": 58,
+			"60": 58,
+			"61": 58,
+			"62": 58,
+			"63": 58,
+			"64": 58,
+			"65": 58,
+			"66": 58,
+			"67": 58
 		},
 		"spells": {
 			"p": "Prowl",
@@ -29911,7 +30160,7 @@
 				"chromas": {
 					"74": {
 						"id": 74,
-						"name": "",
+						"name": "Frosted Ezreal",
 						"colors": [
 							"#9364D0",
 							"#69B6C2"
@@ -32222,7 +32471,94 @@
 			"88": 82,
 			"89": 82,
 			"90": 82,
-			"91": 82
+			"91": 82,
+			"92": {
+				"id": 92,
+				"name": "Spirit Blossom Akali",
+				"chromas": {
+					"93": {
+						"id": 93,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"94": {
+						"id": 94,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"95": {
+						"id": 95,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"96": {
+						"id": 96,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"97": {
+						"id": 97,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"98": {
+						"id": 98,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"99": {
+						"id": 99,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"100": {
+						"id": 100,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"101": {
+						"id": 101,
+						"name": "Spirit Blossom Akali",
+						"colors": [
+							"#233CF4",
+							"#9836EB"
+						]
+					}
+				}
+			},
+			"93": 92,
+			"94": 92,
+			"95": 92,
+			"96": 92,
+			"97": 92,
+			"98": 92,
+			"99": 92,
+			"100": 92,
+			"101": 92
 		},
 		"spells": {
 			"p": "Assassin's Mark",
@@ -32866,11 +33202,6 @@
 			"40": 33,
 			"41": 33,
 			"42": 33,
-			"43": {
-				"id": 43,
-				"name": "Pengu Garen",
-				"chromas": {}
-			},
 			"44": {
 				"id": 44,
 				"name": "Fallen God-King Garen",
@@ -48860,13 +49191,17 @@
 			"70": {
 				"id": 70,
 				"name": "Risen Legend Kai'Sa",
-				"chromas": {}
+				"nameStage": "Risen Legend Kai'Sa",
+				"chromas": {
+					"71": {
+						"id": 71,
+						"name": "Immortalized Legend Kai'Sa",
+						"stage": 2
+					}
+				},
+				"stage": 1
 			},
-			"71": {
-				"id": 71,
-				"name": "Immortalized Legend Kai'Sa",
-				"chromas": {}
-			},
+			"71": 70,
 			"72": 69,
 			"73": 69,
 			"74": 69,
@@ -55849,7 +56184,7 @@
 					},
 					"71": {
 						"id": 71,
-						"name": "",
+						"name": "PROJECT: Lucian",
 						"colors": [
 							"#9364D0",
 							"#69B6C2"
@@ -56985,7 +57320,22 @@
 				"id": 68,
 				"name": "Quantum Galaxy Slayer Zed",
 				"chromas": {}
-			}
+			},
+			"69": {
+				"id": 69,
+				"name": "Prestige Spirit Blossom Zed",
+				"chromas": {
+					"70": {
+						"id": 70,
+						"name": "Prestige Spirit Blossom Zed",
+						"colors": [
+							"#FE6ED6",
+							"#5F5CC8"
+						]
+					}
+				}
+			},
+			"70": 69
 		},
 		"spells": {
 			"p": "Contempt for the Weak",
@@ -69846,7 +70196,94 @@
 			"7": 1,
 			"8": 1,
 			"9": 1,
-			"10": 1
+			"10": 1,
+			"11": {
+				"id": 11,
+				"name": "Spirit Blossom Hwei",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"20": {
+						"id": 20,
+						"name": "Spirit Blossom Hwei",
+						"colors": [
+							"#9836EB",
+							"#233CF4"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11,
+			"20": 11
 		},
 		"spells": {
 			"p": "Signature of the Visionary",

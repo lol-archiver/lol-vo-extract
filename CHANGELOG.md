@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.8.2 - 2025.06.18 14
+* fix: fix not handling Curves parameters in `parseHIRCContainerHeader()` when BNK version > 141
+* fix: fix unsafe filename handling when saving dictation file
+* chore: update base data
+* chore: bump up dependencies
+
+
 ## v2.8.1 - 2025.05.30 15
 * adjust: change the indent of evnent logical structures to 1 tab from 4 spaces
 * chore: update base data
