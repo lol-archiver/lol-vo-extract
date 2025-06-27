@@ -1,5 +1,5 @@
 {
-	"eslint.onIgnoredFiles": "warn",
+	"explorer.sortOrder": "modified",
 	"files.eol": "\n",
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,

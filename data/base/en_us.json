@@ -11170,8 +11170,8 @@
 		"title": "the Fallen",
 		"slot": "Morgana",
 		"roles": [
-			"mage",
-			"support"
+			"support",
+			"mage"
 		],
 		"skins": {
 			"0": {
@@ -43686,7 +43686,85 @@
 			"37": 31,
 			"38": 31,
 			"39": 31,
-			"40": 31
+			"40": 31,
+			"41": {
+				"id": 41,
+				"name": "Nightbringer Hecarim",
+				"chromas": {
+					"42": {
+						"id": 42,
+						"name": "Nightbringer Hecarim",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Nightbringer Hecarim",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Nightbringer Hecarim",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Nightbringer Hecarim",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Nightbringer Hecarim",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Nightbringer Hecarim",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Nightbringer Hecarim",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Nightbringer Hecarim",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"42": 41,
+			"43": 41,
+			"44": 41,
+			"45": 41,
+			"46": 41,
+			"47": 41,
+			"48": 41,
+			"49": 41
 		},
 		"spells": {
 			"p": "Warpath",
@@ -60626,7 +60704,85 @@
 			"57": 49,
 			"58": 49,
 			"59": 49,
-			"60": 49
+			"60": 49,
+			"61": {
+				"id": 61,
+				"name": "Nightbringer Yuumi",
+				"chromas": {
+					"62": {
+						"id": 62,
+						"name": "Nightbringer Yuumi",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Nightbringer Yuumi",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Nightbringer Yuumi",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Nightbringer Yuumi",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Nightbringer Yuumi",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Nightbringer Yuumi",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Nightbringer Yuumi",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Nightbringer Yuumi",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					}
+				}
+			},
+			"62": 61,
+			"63": 61,
+			"64": 61,
+			"65": 61,
+			"66": 61,
+			"67": 61,
+			"68": 61,
+			"69": 61
 		},
 		"spells": {
 			"p": "Feline Friendship",
@@ -62629,7 +62785,85 @@
 			"20": 14,
 			"21": 14,
 			"22": 14,
-			"23": 14
+			"23": 14,
+			"24": {
+				"id": 24,
+				"name": "Dawnbringer Kalista",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Dawnbringer Kalista",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Dawnbringer Kalista",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Dawnbringer Kalista",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Dawnbringer Kalista",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Dawnbringer Kalista",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Dawnbringer Kalista",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Dawnbringer Kalista",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Dawnbringer Kalista",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Martial Poise",
@@ -67675,6 +67909,107 @@
 			"w": "Rebuttal",
 			"e": "Solar Snare",
 			"r": "Golden Eclipse"
+		}
+	},
+	"804": {
+		"id": 804,
+		"name": "Yunara",
+		"title": "the Unbroken Faith",
+		"slot": "Yunara",
+		"roles": [
+			"marksman"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Yunara",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "Spirit Blossom Springs Yunara",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "Spirit Blossom Springs Yunara",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "Spirit Blossom Springs Yunara",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "Spirit Blossom Springs Yunara",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "Spirit Blossom Springs Yunara",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "Spirit Blossom Springs Yunara",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "Spirit Blossom Springs Yunara",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "Spirit Blossom Springs Yunara",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "Spirit Blossom Springs Yunara",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1
+		},
+		"spells": {
+			"p": "Vow of the First Lands",
+			"q": "Cultivation of Spirit",
+			"w": "Arc of Judgment | Arc of Ruin",
+			"e": "Kanmei's Steps | Untouchable Shadow",
+			"r": "Transcend One's Self"
 		}
 	},
 	"875": {
