@@ -4513,8 +4513,8 @@
 		"title": "the Wuju Bladesman",
 		"slot": "MasterYi",
 		"roles": [
-			"assassin",
-			"fighter"
+			"fighter",
+			"assassin"
 		],
 		"skins": {
 			"0": {
@@ -7778,7 +7778,85 @@
 			"50": 47,
 			"51": 47,
 			"52": 47,
-			"53": 47
+			"53": 47,
+			"54": {
+				"id": 54,
+				"name": "Spirit Blossom Springs Teemo",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Spirit Blossom Springs Teemo",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Spirit Blossom Springs Teemo",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Spirit Blossom Springs Teemo",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Spirit Blossom Springs Teemo",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Spirit Blossom Springs Teemo",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Spirit Blossom Springs Teemo",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Spirit Blossom Springs Teemo",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Spirit Blossom Springs Teemo",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"55": 54,
+			"56": 54,
+			"57": 54,
+			"58": 54,
+			"59": 54,
+			"60": 54,
+			"61": 54,
+			"62": 54
 		},
 		"spells": {
 			"p": "Guerrilla Warfare",
@@ -16635,7 +16713,85 @@
 			"62": 56,
 			"63": 56,
 			"64": 56,
-			"65": 56
+			"65": 56,
+			"66": {
+				"id": 66,
+				"name": "Spirit Blossom Springs Sona",
+				"chromas": {
+					"67": {
+						"id": 67,
+						"name": "Spirit Blossom Springs Sona",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Spirit Blossom Springs Sona",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Spirit Blossom Springs Sona",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Spirit Blossom Springs Sona",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Spirit Blossom Springs Sona",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Spirit Blossom Springs Sona",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Spirit Blossom Springs Sona",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Spirit Blossom Springs Sona",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"67": 66,
+			"68": 66,
+			"69": 66,
+			"70": 66,
+			"71": 66,
+			"72": 66,
+			"73": 66,
+			"74": 66
 		},
 		"spells": {
 			"p": "Power Chord",
@@ -38164,7 +38320,72 @@
 				},
 				"stage": 1
 			},
-			"86": 85
+			"86": 85,
+			"88": {
+				"id": 88,
+				"name": "Spirit Blossom Springs Ahri",
+				"chromas": {
+					"90": {
+						"id": 90,
+						"name": "Spirit Blossom Springs Ahri",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"91": {
+						"id": 91,
+						"name": "Spirit Blossom Springs Ahri",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"92": {
+						"id": 92,
+						"name": "Spirit Blossom Springs Ahri",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"93": {
+						"id": 93,
+						"name": "Spirit Blossom Springs Ahri",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"94": {
+						"id": 94,
+						"name": "Spirit Blossom Springs Ahri",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"95": {
+						"id": 95,
+						"name": "Spirit Blossom Springs Ahri",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"89": {
+				"id": 89,
+				"name": "After Hours Spirit Blossom Springs Ahri",
+				"chromas": {}
+			},
+			"90": 88,
+			"91": 88,
+			"92": 88,
+			"93": 88,
+			"94": 88,
+			"95": 88
 		},
 		"spells": {
 			"p": "Essence Theft",
@@ -39217,7 +39438,85 @@
 			"25": 19,
 			"26": 19,
 			"27": 19,
-			"28": 19
+			"28": 19,
+			"29": {
+				"id": 29,
+				"name": "Spirit Blossom Springs Volibear",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Spirit Blossom Springs Volibear",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Spirit Blossom Springs Volibear",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Spirit Blossom Springs Volibear",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Spirit Blossom Springs Volibear",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Spirit Blossom Springs Volibear",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Spirit Blossom Springs Volibear",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Spirit Blossom Springs Volibear",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Spirit Blossom Springs Volibear",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29
 		},
 		"spells": {
 			"p": "The Relentless Storm",
@@ -44850,8 +45149,8 @@
 		"title": "the Defender of Tomorrow",
 		"slot": "Jayce",
 		"roles": [
-			"marksman",
-			"fighter"
+			"fighter",
+			"marksman"
 		],
 		"skins": {
 			"0": {
@@ -65800,7 +66099,12 @@
 			"36": 30,
 			"37": 30,
 			"38": 30,
-			"39": 30
+			"39": 30,
+			"40": {
+				"id": 40,
+				"name": "Prestige Spirit Blossom Springs Aphelios",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "The Hitman and the Seer",
@@ -68591,7 +68895,85 @@
 				"id": 66,
 				"name": "Radiant Serpent Sett",
 				"chromas": {}
-			}
+			},
+			"67": {
+				"id": 67,
+				"name": "Spirit Blossom Springs Sett",
+				"chromas": {
+					"68": {
+						"id": 68,
+						"name": "Spirit Blossom Springs Sett",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Spirit Blossom Springs Sett",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Spirit Blossom Springs Sett",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Spirit Blossom Springs Sett",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Spirit Blossom Springs Sett",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Spirit Blossom Springs Sett",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Spirit Blossom Springs Sett",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Spirit Blossom Springs Sett",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"68": 67,
+			"69": 67,
+			"70": 67,
+			"71": 67,
+			"72": 67,
+			"73": 67,
+			"74": 67,
+			"75": 67
 		},
 		"spells": {
 			"p": "Pit Grit",
