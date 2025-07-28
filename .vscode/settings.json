@@ -4,5 +4,8 @@
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
-	"javascript.preferences.importModuleSpecifierEnding": "js"
+	"javascript.preferences.importModuleSpecifierEnding": "js",
+	"explorer.fileNesting.patterns": {
+		"package.json": "pnpm-lock.yaml, tsconfig.json, eslint.config.js, .gitignore, CHANGELOG.md, README.md, LICENSE"
+	},
 }

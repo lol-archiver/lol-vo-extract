@@ -243,8 +243,8 @@ export type ExtractConfig = {
 	readonly noRegionInExportFileName: boolean;
 
 
-	/** zstd压缩程序路径 */
-	readonly fileZSTD: string;
+	/** zstd压缩程序路径（非必要。当用外部ZSTD程序代替Node内建API时声明） */
+	readonly fileZSTD?: string;
 	/** Ravioli Game Tools里的RExtractor Console程序路径 */
 	readonly fileRextractorConsole: string;
 	/** VGMStream里的VGMStreamCLI程序路径 */

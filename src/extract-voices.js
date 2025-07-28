@@ -40,7 +40,8 @@ export default async function extractVoices(E = {}) {
 				[{
 					fileInpack,
 					fileSave: resolvePath(E.dirCacheGame, nameFileInpack),
-				}]
+				}],
+				{ fileZSTD: E.fileZSTD },
 			);
 
 
@@ -73,8 +74,8 @@ export default async function extractVoices(E = {}) {
 		const configsExtractRaw = parseGameFilesNeed(E);
 
 		filesUnpacked.push(...[
-			await extractWAD(filesNeed.find(file => file.type == 'champion-main').path, configsExtractRaw),
-			await extractWAD(filesNeed.find(file => file.type == 'champion-lang').path, configsExtractRaw),
+			await extractWAD(filesNeed.find(file => file.type == 'champion-main').path, configsExtractRaw, { fileZSTD: E.fileZSTD }),
+			await extractWAD(filesNeed.find(file => file.type == 'champion-lang').path, configsExtractRaw, { fileZSTD: E.fileZSTD }),
 		].flat().map(({ fileSave }) => fileSave));
 
 

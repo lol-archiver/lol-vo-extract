@@ -8,7 +8,6 @@
 		"levelSoundEffect": "no",
 		"forceUseBaseSkinFiles": false,
 		"format": "wav",
-		"fileZSTD": "../zstd.exe",
 		"fileRExtractorConsole": "../RExtractorConsole.exe",
 		"dirDictations": "../lol-vo-lines-dictation/dictation",
 		"dirAutogen": "../lol-vo-aeproject-autogen"

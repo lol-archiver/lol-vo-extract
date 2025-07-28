@@ -42,13 +42,13 @@ const updateChampionsBase = async (E) => {
 
 		const [{ buffer: bufferSummary }] = await extractWAD(fileAssets, [
 			{ fileInpack: `plugins/rcp-be-lol-game-data/global/${regionGame}/v1/champion-summary.json` },
-		]);
+		], { fileZSTD: E.fileZSTD });
 
 		const championsSummary = JSON.parse(bufferSummary.toString());
 
 		const buffersJSONChampion = await extractWAD(fileAssets, championsSummary.map(({ id }) =>
 			({ fileInpack: `plugins/rcp-be-lol-game-data/global/${regionGame}/v1/champions/${id}.json`, id })
-		));
+		), { fileZSTD: E.fileZSTD });
 
 
 

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v2.9.0 - 2025.07.28 20
+* feat: bump up `@lol-archiver/lol-wad-extract` to 4.x
+  * `lol-wad-extract@4` use Node's built-in API `zlib` for decompress datas, which offers faster speed and better memory usage!
+* improve: config `fileZSTD`'s desc and update related codes
+* chore: update base data
+* chore: bump up dependencies
+
+
 ## v2.8.2 - 2025.06.18 14
 * fix: fix not handling Curves parameters in `parseHIRCContainerHeader()` when BNK version > 141
 * fix: fix unsafe filename handling when saving dictation file
