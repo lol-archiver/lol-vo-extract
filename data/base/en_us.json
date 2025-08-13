@@ -4548,7 +4548,7 @@
 				"chromas": {
 					"6": {
 						"id": 6,
-						"name": "Headhunter Master Yi Strike",
+						"name": "Headhunter Master Yi Strike Gold",
 						"colors": [
 							"#FED24D",
 							"#D48F3B"
@@ -4556,7 +4556,7 @@
 					},
 					"7": {
 						"id": 7,
-						"name": "Headhunter Master Yi Strike",
+						"name": "Headhunter Master Yi Strike Aqua",
 						"colors": [
 							"#76E7F5",
 							"#DBAD38"
@@ -4564,7 +4564,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Headhunter Master Yi Strike",
+						"name": "Headhunter Master Yi Strike Crimson",
 						"colors": [
 							"#993045",
 							"#AC6A64"
@@ -5551,7 +5551,85 @@
 			"33": 29,
 			"34": 29,
 			"35": 29,
-			"36": 29
+			"36": 29,
+			"40": {
+				"id": 40,
+				"name": "Elderwood Alistar",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Elderwood Alistar",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Elderwood Alistar",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Elderwood Alistar",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Elderwood Alistar",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Elderwood Alistar",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Elderwood Alistar",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Elderwood Alistar",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Elderwood Alistar",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40,
+			"47": 40,
+			"48": 40
 		},
 		"spells": {
 			"p": "Triumphant Roar",
@@ -7912,7 +7990,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Rocket Girl Tristana Punk",
+						"name": "Rocket Girl Tristana Punk Navy",
 						"colors": [
 							"#1C3B63",
 							"#5C66BC"
@@ -7920,7 +7998,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Rocket Girl Tristana Punk",
+						"name": "Rocket Girl Tristana Punk Purple",
 						"colors": [
 							"#B82386",
 							"#4E9DA7"
@@ -7928,7 +8006,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Rocket Girl Tristana Punk",
+						"name": "Rocket Girl Tristana Punk Orange",
 						"colors": [
 							"#A53231",
 							"#B5A57C"
@@ -10900,7 +10978,85 @@
 			"33": 27,
 			"34": 27,
 			"35": 27,
-			"36": 27
+			"36": 27,
+			"37": {
+				"id": 37,
+				"name": "",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37
 		},
 		"spells": {
 			"p": "Battle Fury",
@@ -10960,7 +11116,7 @@
 				"chromas": {
 					"9": {
 						"id": 9,
-						"name": "Nemesis Jax Sand",
+						"name": "Nemesis Jax Sand Cream",
 						"colors": [
 							"#E2D495",
 							"#821434"
@@ -10968,7 +11124,7 @@
 					},
 					"10": {
 						"id": 10,
-						"name": "Nemesis Jax Sand",
+						"name": "Nemesis Jax Sand Amber",
 						"colors": [
 							"#D8A100",
 							"#282B20"
@@ -10976,7 +11132,7 @@
 					},
 					"11": {
 						"id": 11,
-						"name": "Nemesis Jax Sand",
+						"name": "Nemesis Jax Sand Brick",
 						"colors": [
 							"#9A2D43",
 							"#2F2B39"
@@ -11258,7 +11414,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Morgana Haunt",
+						"name": "Morgana Haunt Toxic",
 						"colors": [
 							"#B6E084",
 							"#B6E084"
@@ -11266,7 +11422,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Morgana Haunt",
+						"name": "Morgana Haunt Pale",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -11274,7 +11430,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Morgana Haunt",
+						"name": "Morgana Haunt Ebony",
 						"colors": [
 							"#1B1C27",
 							"#1B1C27"
@@ -13426,7 +13582,7 @@
 				"chromas": {
 					"6": {
 						"id": 6,
-						"name": "Grim Reaper Karthus Plague",
+						"name": "Grim Reaper Karthus Plague Burn",
 						"colors": [
 							"#830E23",
 							"#462336"
@@ -13434,7 +13590,7 @@
 					},
 					"7": {
 						"id": 7,
-						"name": "Grim Reaper Karthus Plague",
+						"name": "Grim Reaper Karthus Plague Blight",
 						"colors": [
 							"#4A2752",
 							"#463A2C"
@@ -13442,7 +13598,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Grim Reaper Karthus Plague",
+						"name": "Grim Reaper Karthus Plague Frostbite",
 						"colors": [
 							"#1F566C",
 							"#373348"
@@ -18794,7 +18950,85 @@
 			"32": 26,
 			"33": 26,
 			"34": 26,
-			"35": 6
+			"35": 6,
+			"36": {
+				"id": 36,
+				"name": "Brick Toy Corki",
+				"chromas": {
+					"37": {
+						"id": 37,
+						"name": "Brick Toy Corki",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Brick Toy Corki",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Brick Toy Corki",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Brick Toy Corki",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Brick Toy Corki",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Brick Toy Corki",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Brick Toy Corki",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Brick Toy Corki",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"37": 36,
+			"38": 36,
+			"39": 36,
+			"40": 36,
+			"41": 36,
+			"42": 36,
+			"43": 36,
+			"44": 36
 		},
 		"spells": {
 			"p": "Hextech Munitions",
@@ -20964,7 +21198,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Caitlyn Rebel",
+						"name": "Caitlyn Rebel Pink",
 						"colors": [
 							"#DA769A",
 							"#F4E3D5"
@@ -20972,7 +21206,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Caitlyn Rebel",
+						"name": "Caitlyn Rebel Green",
 						"colors": [
 							"#2E8B82",
 							"#F7E17F"
@@ -20980,7 +21214,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Caitlyn Rebel",
+						"name": "Caitlyn Rebel Blue",
 						"colors": [
 							"#426FC9",
 							"#A2A8AB"
@@ -21399,7 +21633,7 @@
 				"chromas": {
 					"8": {
 						"id": 8,
-						"name": "Blitzcrank Steel",
+						"name": "Blitzcrank Steel Molten",
 						"colors": [
 							"#DFC764",
 							"#AD3333"
@@ -21407,7 +21641,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Blitzcrank Steel",
+						"name": "Blitzcrank Steel Cobalt",
 						"colors": [
 							"#DFC764",
 							"#446188"
@@ -21415,7 +21649,7 @@
 					},
 					"10": {
 						"id": 10,
-						"name": "Blitzcrank Steel",
+						"name": "Blitzcrank Steel Gunmetal",
 						"colors": [
 							"#9C9C9C",
 							"#585858"
@@ -24474,7 +24708,22 @@
 			"49": 44,
 			"50": 44,
 			"51": 44,
-			"52": 44
+			"52": 44,
+			"54": {
+				"id": 54,
+				"name": "",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "",
+						"colors": [
+							"#297DFF",
+							"#D9D1FE"
+						]
+					}
+				}
+			},
+			"55": 54
 		},
 		"spells": {
 			"p": "Martial Cadence",
@@ -25814,7 +26063,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Dragon Fist Lee Sin",
+						"name": "Dragon Fist Lee Sin Duel Black",
 						"colors": [
 							"#201F20",
 							"#F9CD16"
@@ -25822,7 +26071,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Dragon Fist Lee Sin",
+						"name": "Dragon Fist Lee Sin Duel Blue",
 						"colors": [
 							"#516DA4",
 							"#BFE7E8"
@@ -25830,7 +26079,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Dragon Fist Lee Sin",
+						"name": "Dragon Fist Lee Sin Duel Yellow",
 						"colors": [
 							"#F6E669",
 							"#3B3A41"
@@ -26473,7 +26722,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Dragonslayer Vayne Chaos",
+						"name": "Dragonslayer Vayne Chaos Green",
 						"colors": [
 							"#677117",
 							"#26360D"
@@ -26481,7 +26730,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Dragonslayer Vayne Chaos",
+						"name": "Dragonslayer Vayne Chaos Red",
 						"colors": [
 							"#B21B27",
 							"#59182A"
@@ -26489,7 +26738,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Dragonslayer Vayne Chaos",
+						"name": "Dragonslayer Vayne Chaos Silver",
 						"colors": [
 							"#BCE5E6",
 							"#484961"
@@ -27295,7 +27544,7 @@
 				"chromas": {
 					"5": {
 						"id": 5,
-						"name": "Cassiopeia Curse",
+						"name": "Cassiopeia Curse Day",
 						"colors": [
 							"#323A31",
 							"#B37740"
@@ -27303,7 +27552,7 @@
 					},
 					"6": {
 						"id": 6,
-						"name": "Cassiopeia Curse",
+						"name": "Cassiopeia Curse Dusk",
 						"colors": [
 							"#94CBEE",
 							"#243F4B"
@@ -27311,7 +27560,7 @@
 					},
 					"7": {
 						"id": 7,
-						"name": "Cassiopeia Curse",
+						"name": "Cassiopeia Curse Night",
 						"colors": [
 							"#DF6C2F",
 							"#39111E"
@@ -27982,7 +28231,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Dreadknight Nasus Plague",
+						"name": "Dreadknight Nasus Plague Burn",
 						"colors": [
 							"#6F1819",
 							"#252C4C"
@@ -27990,7 +28239,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Dreadknight Nasus Plague",
+						"name": "Dreadknight Nasus Plague Blight",
 						"colors": [
 							"#388F25",
 							"#3E2245"
@@ -27998,7 +28247,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Dreadknight Nasus Plague",
+						"name": "Dreadknight Nasus Plague Frostbite",
 						"colors": [
 							"#4AB8C2",
 							"#535381"
@@ -33024,7 +33273,7 @@
 				"chromas": {
 					"7": {
 						"id": 7,
-						"name": "Garen Noble",
+						"name": "Garen Noble Garnet",
 						"colors": [
 							"#A12C2B",
 							"#321E42"
@@ -33032,7 +33281,7 @@
 					},
 					"8": {
 						"id": 8,
-						"name": "Garen Noble",
+						"name": "Garen Noble Plum",
 						"colors": [
 							"#E2B105",
 							"#502D5F"
@@ -33040,7 +33289,7 @@
 					},
 					"9": {
 						"id": 9,
-						"name": "Garen Noble",
+						"name": "Garen Noble Ivory",
 						"colors": [
 							"#ABC4FA",
 							"#2F556A"
@@ -33363,7 +33612,85 @@
 				"name": "Fallen God-King Garen",
 				"chromas": {}
 			},
-			"45": 33
+			"45": 33,
+			"46": {
+				"id": 46,
+				"name": "",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					}
+				}
+			},
+			"47": 46,
+			"48": 46,
+			"49": 46,
+			"50": 46,
+			"51": 46,
+			"52": 46,
+			"53": 46,
+			"54": 46
 		},
 		"spells": {
 			"p": "Perseverance",
@@ -33409,7 +33736,7 @@
 				"chromas": {
 					"5": {
 						"id": 5,
-						"name": "Pool Party Leona Dawn",
+						"name": "Pool Party Leona Dawn Pink",
 						"colors": [
 							"#D97576",
 							"#5A2365"
@@ -33417,7 +33744,7 @@
 					},
 					"6": {
 						"id": 6,
-						"name": "Pool Party Leona Dawn",
+						"name": "Pool Party Leona Dawn Azure",
 						"colors": [
 							"#229579",
 							"#491A56"
@@ -33425,7 +33752,7 @@
 					},
 					"7": {
 						"id": 7,
-						"name": "Pool Party Leona Dawn",
+						"name": "Pool Party Leona Dawn Lemon",
 						"colors": [
 							"#E29500",
 							"#DD3C3B"
@@ -38867,7 +39194,7 @@
 				"chromas": {
 					"5": {
 						"id": 5,
-						"name": "Fizz Scorch",
+						"name": "Fizz Scorch Orange",
 						"colors": [
 							"#F9E330",
 							"#E6B427"
@@ -38875,7 +39202,7 @@
 					},
 					"6": {
 						"id": 6,
-						"name": "Fizz Scorch",
+						"name": "Fizz Scorch Black",
 						"colors": [
 							"#78688A",
 							"#23325D"
@@ -38883,7 +39210,7 @@
 					},
 					"7": {
 						"id": 7,
-						"name": "Fizz Scorch",
+						"name": "Fizz Scorch Red",
 						"colors": [
 							"#D97AAF",
 							"#97192C"
@@ -42231,7 +42558,94 @@
 			"94": 89,
 			"95": 89,
 			"96": 89,
-			"97": 89
+			"97": 89,
+			"98": {
+				"id": 98,
+				"name": "Victorious Fiora",
+				"chromas": {
+					"99": {
+						"id": 99,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#764D43",
+							"#764D43"
+						]
+					},
+					"100": {
+						"id": 100,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#AAB5BA",
+							"#AAB5BA"
+						]
+					},
+					"101": {
+						"id": 101,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#D9C445",
+							"#D9C445"
+						]
+					},
+					"102": {
+						"id": 102,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#55CDE5",
+							"#55CDE5"
+						]
+					},
+					"103": {
+						"id": 103,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"104": {
+						"id": 104,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"105": {
+						"id": 105,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#9D228D",
+							"#9D228D"
+						]
+					},
+					"106": {
+						"id": 106,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#B31316",
+							"#B31316"
+						]
+					},
+					"107": {
+						"id": 107,
+						"name": "Victorious Fiora",
+						"colors": [
+							"#1D62C8",
+							"#1D62C8"
+						]
+					}
+				}
+			},
+			"99": 98,
+			"100": 98,
+			"101": 98,
+			"102": 98,
+			"103": 98,
+			"104": 98,
+			"105": 98,
+			"106": 98,
+			"107": 98
 		},
 		"spells": {
 			"p": "Duelist's Dance",
@@ -43060,7 +43474,12 @@
 			"51": 46,
 			"52": 46,
 			"53": 46,
-			"54": 46
+			"54": 46,
+			"55": {
+				"id": 55,
+				"name": "",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Pix, Faerie Companion",
@@ -44598,7 +45017,7 @@
 				"chromas": {
 					"5": {
 						"id": 5,
-						"name": "Darius Forge",
+						"name": "Darius Forge Black Iron",
 						"colors": [
 							"#40464A",
 							"#B3A35A"
@@ -44606,7 +45025,7 @@
 					},
 					"6": {
 						"id": 6,
-						"name": "Darius Forge",
+						"name": "Darius Forge Bronze",
 						"colors": [
 							"#B58D42",
 							"#756C60"
@@ -44614,7 +45033,7 @@
 					},
 					"7": {
 						"id": 7,
-						"name": "Darius Forge",
+						"name": "Darius Forge Copper",
 						"colors": [
 							"#A53522",
 							"#939EA6"
@@ -50482,7 +50901,7 @@
 				"chromas": {
 					"3": {
 						"id": 3,
-						"name": "Zac Sweet",
+						"name": "Zac Sweet Orange",
 						"colors": [
 							"#E9B448",
 							"#E98F46"
@@ -50490,7 +50909,7 @@
 					},
 					"4": {
 						"id": 4,
-						"name": "Zac Sweet",
+						"name": "Zac Sweet Bubblegum",
 						"colors": [
 							"#E49CB8",
 							"#B05F84"
@@ -50498,7 +50917,7 @@
 					},
 					"5": {
 						"id": 5,
-						"name": "Zac Sweet",
+						"name": "Zac Sweet Honey",
 						"colors": [
 							"#FFE37F",
 							"#E8BC2A"
@@ -53696,7 +54115,12 @@
 			"50": 47,
 			"51": 47,
 			"52": 47,
-			"53": 47
+			"53": 47,
+			"55": {
+				"id": 55,
+				"name": "Arcana Jhin",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Whisper",
@@ -56510,7 +56934,7 @@
 				"chromas": {
 					"3": {
 						"id": 3,
-						"name": "Lucian Prime",
+						"name": "Lucian Prime Yellow",
 						"colors": [
 							"#F5CE2C",
 							"#E39603"
@@ -56518,7 +56942,7 @@
 					},
 					"4": {
 						"id": 4,
-						"name": "Lucian Prime",
+						"name": "Lucian Prime Red",
 						"colors": [
 							"#CB3E38",
 							"#4E131C"
@@ -56526,7 +56950,7 @@
 					},
 					"5": {
 						"id": 5,
-						"name": "Lucian Prime",
+						"name": "Lucian Prime Blue",
 						"colors": [
 							"#309DF0",
 							"#2542A1"
@@ -59679,7 +60103,7 @@
 				"chromas": {
 					"4": {
 						"id": 4,
-						"name": "Koi Nami Element",
+						"name": "Koi Nami Element Sunbeam",
 						"colors": [
 							"#CF8730",
 							"#3B899A"
@@ -59687,7 +60111,7 @@
 					},
 					"5": {
 						"id": 5,
-						"name": "Koi Nami Element",
+						"name": "Koi Nami Element Smoke",
 						"colors": [
 							"#5C8694",
 							"#743449"
@@ -59695,7 +60119,7 @@
 					},
 					"6": {
 						"id": 6,
-						"name": "Koi Nami Element",
+						"name": "Koi Nami Element Twilight",
 						"colors": [
 							"#8A397B",
 							"#18214A"
@@ -63188,7 +63612,7 @@
 				"chromas": {
 					"2": {
 						"id": 2,
-						"name": "Bard Bloom",
+						"name": "Bard Bloom Marigold",
 						"colors": [
 							"#F7963F",
 							"#701E1E"
@@ -63196,7 +63620,7 @@
 					},
 					"3": {
 						"id": 3,
-						"name": "Bard Bloom",
+						"name": "Bard Bloom Ivy",
 						"colors": [
 							"#447164",
 							"#262C35"
@@ -63204,7 +63628,7 @@
 					},
 					"4": {
 						"id": 4,
-						"name": "Bard Bloom",
+						"name": "Bard Bloom Sage",
 						"colors": [
 							"#3F4CAF",
 							"#0D124A"
@@ -69309,7 +69733,85 @@
 			"33": 28,
 			"34": 28,
 			"35": 28,
-			"36": 28
+			"36": 28,
+			"37": {
+				"id": 37,
+				"name": "Bowling League Lillia",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Bowling League Lillia",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Bowling League Lillia",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Bowling League Lillia",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Bowling League Lillia",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Bowling League Lillia",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Bowling League Lillia",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Bowling League Lillia",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Bowling League Lillia",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37
 		},
 		"spells": {
 			"p": "Dream-Laden Bough",
@@ -71275,6 +71777,459 @@
 			"w": "The Call of the Pack",
 			"e": "Eviscerate",
 			"r": "Hounds' Pursuit"
+		}
+	},
+	"66600": {
+		"id": 66600,
+		"name": "Doom Bot Urgot",
+		"title": "",
+		"slot": "Ruby_Urgot",
+		"roles": [
+			"fighter",
+			"tank"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Urgot",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Echoing Flames",
+			"q": "Corrosive Charge",
+			"w": "Purge",
+			"e": "Disdain",
+			"r": "Fear Beyond Death"
+		}
+	},
+	"66602": {
+		"id": 66602,
+		"name": "Doom Bot Corki",
+		"title": "",
+		"slot": "Ruby_Corki",
+		"roles": [
+			"marksman",
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Corki",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Hextech Munitions",
+			"q": "Phosphorus Bomb",
+			"w": "Valkyrie",
+			"e": "Gatling Gun",
+			"r": "Missile Barrage"
+		}
+	},
+	"66603": {
+		"id": 66603,
+		"name": "Doom Bot Lux",
+		"title": "",
+		"slot": "Ruby_Lux",
+		"roles": [
+			"mage",
+			"support"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Lux",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Illumination",
+			"q": "Light Binding",
+			"w": "Prismatic Barrier",
+			"e": "Lucent Singularity",
+			"r": "Final Spark"
+		}
+	},
+	"66604": {
+		"id": 66604,
+		"name": "Doom Bot Amumu",
+		"title": "",
+		"slot": "Ruby_Amumu",
+		"roles": [
+			"tank",
+			"support"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Amumu",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Cursed Touch",
+			"q": "Bandage Toss",
+			"w": "Despair",
+			"e": "Tantrum",
+			"r": "Curse of the Sad Mummy"
+		}
+	},
+	"66605": {
+		"id": 66605,
+		"name": "Doom Bot Cho'Gath",
+		"title": "",
+		"slot": "Ruby_Chogath",
+		"roles": [
+			"tank",
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Cho'Gath",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Carnivore",
+			"q": "Rupture",
+			"w": "Feral Scream",
+			"e": "Vorpal Spikes",
+			"r": "Feast"
+		}
+	},
+	"66606": {
+		"id": 66606,
+		"name": "Doom Bot Tristana",
+		"title": "",
+		"slot": "Ruby_Tristana",
+		"roles": [
+			"marksman",
+			"assassin"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Tristana",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Draw a Bead",
+			"q": "Rapid Fire",
+			"w": "Rocket Jump",
+			"e": "Explosive Charge",
+			"r": "Buster Shot"
+		}
+	},
+	"66607": {
+		"id": 66607,
+		"name": "Doom Bot Nami",
+		"title": "",
+		"slot": "Ruby_Nami",
+		"roles": [
+			"support",
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Nami",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Surging Tides",
+			"q": "Aqua Prison",
+			"w": "Ebb and Flow",
+			"e": "Tidecaller's Blessing",
+			"r": "Tidal Wave"
+		}
+	},
+	"66608": {
+		"id": 66608,
+		"name": "Doom Bot Lee Sin",
+		"title": "",
+		"slot": "Ruby_LeeSin",
+		"roles": [
+			"fighter",
+			"assassin"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Lee Sin",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Flurry",
+			"q": "Sonic Wave / Resonating Strike",
+			"w": "Safeguard / Iron Will",
+			"e": "Tempest / Cripple",
+			"r": "Dragon's Rage"
+		}
+	},
+	"66609": {
+		"id": 66609,
+		"name": "Doom Bot Caitlyn",
+		"title": "",
+		"slot": "Ruby_Caitlyn",
+		"roles": [
+			"marksman"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Caitlyn",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Headshot",
+			"q": "Piltover Peacemaker",
+			"w": "Yordle Snap Trap",
+			"e": "90 Caliber Net",
+			"r": "Ace in the Hole"
+		}
+	},
+	"66610": {
+		"id": 66610,
+		"name": "Doom Bot Nautilus",
+		"title": "",
+		"slot": "Ruby_Nautilus",
+		"roles": [
+			"tank",
+			"support"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Nautilus",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Staggering Blow",
+			"q": "Dredge Line",
+			"w": "Titan's Wrath",
+			"e": "Riptide",
+			"r": "Depth Charge"
+		}
+	},
+	"66611": {
+		"id": 66611,
+		"name": "Doom Bot Maokai",
+		"title": "",
+		"slot": "Ruby_Maokai",
+		"roles": [
+			"tank",
+			"support"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Maokai",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Sap Magic",
+			"q": "Bramble Smash",
+			"w": "Twisted Advance",
+			"e": "Sapling Toss",
+			"r": "Nature's Grasp"
+		}
+	},
+	"66612": {
+		"id": 66612,
+		"name": "Doom Bot Xerath",
+		"title": "",
+		"slot": "Ruby_Xerath",
+		"roles": [
+			"mage",
+			"support"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Xerath",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Mana Surge",
+			"q": "Arcanopulse",
+			"w": "Eye of Destruction",
+			"e": "Shocking Orb",
+			"r": "Rite of the Arcane"
+		}
+	},
+	"66613": {
+		"id": 66613,
+		"name": "Doom Bot Brand",
+		"title": "",
+		"slot": "Ruby_Brand",
+		"roles": [
+			"mage",
+			"support"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Brand",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Blaze",
+			"q": "Sear",
+			"w": "Pillar of Flame",
+			"e": "Conflagration",
+			"r": "Pyroclasm"
+		}
+	},
+	"66614": {
+		"id": 66614,
+		"name": "Doom Bot Wukong",
+		"title": "",
+		"slot": "Ruby_Wukong",
+		"roles": [
+			"fighter",
+			"tank"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Wukong",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Stone Skin",
+			"q": "Crushing Blow",
+			"w": "Warrior Trickster",
+			"e": "Nimbus Strike",
+			"r": "Cyclone"
+		}
+	},
+	"66615": {
+		"id": 66615,
+		"name": "Doom Bot Soraka",
+		"title": "",
+		"slot": "Ruby_Soraka",
+		"roles": [
+			"support",
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Soraka",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Salvation",
+			"q": "Starcall",
+			"w": "Astral Infusion",
+			"e": "Equinox",
+			"r": "Wish"
+		}
+	},
+	"66616": {
+		"id": 66616,
+		"name": "Doom Bot Diana",
+		"title": "",
+		"slot": "Ruby_Diana",
+		"roles": [
+			"fighter",
+			"assassin"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Diana",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Moonsilver Blade",
+			"q": "Crescent Strike",
+			"w": "Pale Cascade",
+			"e": "Lunar Rush",
+			"r": "Moonfall"
+		}
+	},
+	"66617": {
+		"id": 66617,
+		"name": "Doom Bot Jinx",
+		"title": "",
+		"slot": "Ruby_Jinx",
+		"roles": [
+			"marksman"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Jinx",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Get Excited!",
+			"q": "Switcheroo!",
+			"w": "Zap!",
+			"e": "Flame Chompers!",
+			"r": "Super Mega Death Rocket!"
+		}
+	},
+	"66618": {
+		"id": 66618,
+		"name": "Doom Bot Malzahar",
+		"title": "",
+		"slot": "Ruby_Malzahar",
+		"roles": [
+			"mage"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Malzahar",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Void Shift",
+			"q": "Call of the Void",
+			"w": "Void Swarm",
+			"e": "Malefic Visions",
+			"r": "Nether Grasp"
+		}
+	},
+	"66619": {
+		"id": 66619,
+		"name": "Doom Bot Blitzcrank",
+		"title": "",
+		"slot": "Ruby_Blitzcrank",
+		"roles": [
+			"tank",
+			"support"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Doom Bot Blitzcrank",
+				"chromas": {}
+			}
+		},
+		"spells": {
+			"p": "Mana Barrier",
+			"q": "Rocket Grab",
+			"w": "Overdrive",
+			"e": "Power Fist",
+			"r": "Static Field"
 		}
 	}
 }

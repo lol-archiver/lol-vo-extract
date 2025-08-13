@@ -4,8 +4,8 @@ node_modules
 /script/0-*
 /@*
 /config/config.*
-!/config/config.default.json
 !/config/*.example
+!/config/config.default.json
 /log/*
 /cache
 /bases.d.ts
