@@ -45,7 +45,7 @@ But I think it is still necessary to keep the following ATTENTION. After all, I'
 ## Usage
 This program is a **`config-file-base`** node.js program. No command line. All behavior is specified and adjusted through the config files.
 
-The entry file is **`index.js`**. Audio files will be stored in `@1voice`, and dictation files will be stored in `@2dict` by default:
+The entry file is `index.js`. Audio files will be stored in `@1voice`, and dictation files will be stored in `@2dict` by default:
 ````batch
 cd lol-vo-extract
 node index.js
