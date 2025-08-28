@@ -1,4 +1,4 @@
-**English** | [中文](./README.zh.md)
+[English](./README.md) | **中文**
 
 # lol-vo-extract
 提取《英雄联盟》英雄/皮肤语音，并将其与游戏内事件进行匹配
