@@ -1,7 +1,7 @@
 {
 	"name": "@lol-archiver/lol-vo-extract",
 	"version": "2.10.0",
-	"description": "league of legends champion voices download, extract and rename with events",
+	"description": "Extracting League of Legends champion/skin voices and matching them to in-game events",
 	"author": "DanoR",
 	"license": "LGPL-3.0-or-later",
 	"repository": {

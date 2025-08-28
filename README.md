@@ -13,23 +13,22 @@ Extracting League of Legends champion/skin voices and matching them to in-game e
   - Heartfelt thanks to this excellent open-source project!
 - Thanks to the code from [wwiser](https://github.com/bnnm/wwiser)
   - Before discovering this project,I could only build parsers by analyzing/guessing binary patterns through reverse engineering
-  - Its emergence allowed me to fix quite a few potential bugs in parsing bnk/wpk formats.
+  - Its emergence allowed me to fix quite a few potential bugs in parsing bnk/wpk formats
     This further improved the program's event matching success rate
 
 ## Notable on v2
-After very LONG delays, and three straight weeks of squeezing time out of my regular job to refactor codes.
+After very LONG delays, and three straight weeks of squeezing time out of my regular job to refactor codes
 Finally I finished the vast majority of v2!
 
 The program is **WORKING** now, I still haven't had the time to finish internationalizing the console outputs and docs!
 
-**In v2, the event matching success rate was greatly improved.**
-
+**In v2, the event matching success rate was greatly improved**\
 But I think it is still necessary to keep the following ATTENTION. After all, I'm only analyzing data as a rookie unofficial data miner:
 
->ATTENTION PLEASE:\
-**`lol-vo-extract` does not guarantee 100% match for all events for all skin.**
+> ATTENTION PLEASE:\
+**`lol-vo-extract` does not guarantee 100% match for all events for all skin!**
 
-- Different skins have **different** production dates and packaging formats. The possibility of extracting unknown events still exists..
+- Different skins have **different** production dates and packaging formats. The possibility of extracting unknown events still exists
 - Sometimes the literal event and actual trigger are different!
 
 ## Requirement
@@ -43,9 +42,9 @@ But I think it is still necessary to keep the following ATTENTION. After all, I'
     No longer need to specified the `fileZSTD` option (still can if specified, the program will prioritize using `fileZSTD`)
 
 ## Usage
-This program is a **`config-file-base`** node.js program. No command line. All behavior is specified and adjusted through the config files.
+This program is a **`config-file-base`** node.js program. No command line. All behavior is specified and adjusted through the config files
 
-The entry file is `index.js`. Audio files will be stored in `@1voice`, and dictation files will be stored in `@2dict` by default:
+The entry file is `index.js`. Audio files will be stored in `@1voice`, and dictation files will be stored in `@2dict` by default
 ````batch
 cd lol-vo-extract
 node index.js
@@ -71,7 +70,7 @@ Special Keys:
 - `$base` in a profile\
   This key indicates which profile the current profile is based on, including configs from `config.default.json`
 
-Profiles will be assigned/overridden based on their relationships before extraction.
+Profiles will be assigned/overridden based on their relationships before extraction
 
 ### config.default.json
 This file provides the most basic configs for some preset profiles\
