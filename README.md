@@ -1,4 +1,4 @@
-> [!INFO]\
+> [!NOTE]\
 > This document is produced by machine translation
 >
 > I am not a native English speaker. Sorry if the expression is not clear enough
