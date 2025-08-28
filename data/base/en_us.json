@@ -7014,7 +7014,16 @@
 			"4": {
 				"id": 4,
 				"name": "Reaper Soraka",
-				"chromas": {}
+				"chromas": {
+					"62": {
+						"id": 62,
+						"name": "Reaper Soraka",
+						"colors": [
+							"#E23129",
+							"#602E55"
+						]
+					}
+				}
 			},
 			"5": {
 				"id": 5,
@@ -7404,7 +7413,8 @@
 			"49": 44,
 			"50": 44,
 			"51": 44,
-			"52": 44
+			"52": 44,
+			"62": 4
 		},
 		"spells": {
 			"p": "Salvation",
@@ -10981,11 +10991,11 @@
 			"36": 27,
 			"37": {
 				"id": 37,
-				"name": "",
+				"name": "Visions of the Fallen Tryndamere",
 				"chromas": {
 					"38": {
 						"id": 38,
-						"name": "",
+						"name": "Visions of the Fallen Tryndamere",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -10993,7 +11003,7 @@
 					},
 					"39": {
 						"id": 39,
-						"name": "",
+						"name": "Visions of the Fallen Tryndamere",
 						"colors": [
 							"#FFEE59",
 							"#FFEE59"
@@ -11001,7 +11011,7 @@
 					},
 					"40": {
 						"id": 40,
-						"name": "",
+						"name": "Visions of the Fallen Tryndamere",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -11009,7 +11019,7 @@
 					},
 					"41": {
 						"id": 41,
-						"name": "",
+						"name": "Visions of the Fallen Tryndamere",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -11017,7 +11027,7 @@
 					},
 					"42": {
 						"id": 42,
-						"name": "",
+						"name": "Visions of the Fallen Tryndamere",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -11025,7 +11035,7 @@
 					},
 					"43": {
 						"id": 43,
-						"name": "",
+						"name": "Visions of the Fallen Tryndamere",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -11033,7 +11043,7 @@
 					},
 					"44": {
 						"id": 44,
-						"name": "",
+						"name": "Visions of the Fallen Tryndamere",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -11041,7 +11051,7 @@
 					},
 					"45": {
 						"id": 45,
-						"name": "",
+						"name": "Visions of the Fallen Tryndamere",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -24711,11 +24721,11 @@
 			"52": 44,
 			"54": {
 				"id": 54,
-				"name": "",
+				"name": "Prestige Visions of the Fallen Jarvan IV",
 				"chromas": {
 					"55": {
 						"id": 55,
-						"name": "",
+						"name": "Prestige Visions of the Fallen Jarvan IV",
 						"colors": [
 							"#297DFF",
 							"#D9D1FE"
@@ -25414,7 +25424,16 @@
 			"4": {
 				"id": 4,
 				"name": "Underworld Wukong",
-				"chromas": {}
+				"chromas": {
+					"27": {
+						"id": 27,
+						"name": "Underworld Wukong",
+						"colors": [
+							"#E23129",
+							"#602E55"
+						]
+					}
+				}
 			},
 			"5": {
 				"id": 5,
@@ -25582,7 +25601,8 @@
 			"22": 16,
 			"23": 16,
 			"24": 16,
-			"25": 3
+			"25": 3,
+			"27": 4
 		},
 		"spells": {
 			"p": "Stone Skin",
@@ -25625,7 +25645,16 @@
 			"4": {
 				"id": 4,
 				"name": "Zombie Brand",
-				"chromas": {}
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Zombie Brand",
+						"colors": [
+							"#E23129",
+							"#602E55"
+						]
+					}
+				}
 			},
 			"5": {
 				"id": 5,
@@ -26022,7 +26051,8 @@
 			"48": 42,
 			"49": 42,
 			"50": 42,
-			"51": 42
+			"51": 42,
+			"52": 4
 		},
 		"spells": {
 			"p": "Blaze",
@@ -33615,11 +33645,11 @@
 			"45": 33,
 			"46": {
 				"id": 46,
-				"name": "",
+				"name": "Visions of the Fallen Garen",
 				"chromas": {
 					"47": {
 						"id": 47,
-						"name": "",
+						"name": "Visions of the Fallen Garen",
 						"colors": [
 							"#D33528",
 							"#D33528"
@@ -33627,7 +33657,7 @@
 					},
 					"48": {
 						"id": 48,
-						"name": "",
+						"name": "Visions of the Fallen Garen",
 						"colors": [
 							"#2DA130",
 							"#2DA130"
@@ -33635,7 +33665,7 @@
 					},
 					"49": {
 						"id": 49,
-						"name": "",
+						"name": "Visions of the Fallen Garen",
 						"colors": [
 							"#54209B",
 							"#54209B"
@@ -33643,7 +33673,7 @@
 					},
 					"50": {
 						"id": 50,
-						"name": "",
+						"name": "Visions of the Fallen Garen",
 						"colors": [
 							"#2756CE",
 							"#2756CE"
@@ -33651,7 +33681,7 @@
 					},
 					"51": {
 						"id": 51,
-						"name": "",
+						"name": "Visions of the Fallen Garen",
 						"colors": [
 							"#ECF9F8",
 							"#ECF9F8"
@@ -33659,7 +33689,7 @@
 					},
 					"52": {
 						"id": 52,
-						"name": "",
+						"name": "Visions of the Fallen Garen",
 						"colors": [
 							"#E58BA5",
 							"#E58BA5"
@@ -33667,7 +33697,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "",
+						"name": "Visions of the Fallen Garen",
 						"colors": [
 							"#27211C",
 							"#27211C"
@@ -33675,7 +33705,7 @@
 					},
 					"54": {
 						"id": 54,
-						"name": "",
+						"name": "Visions of the Fallen Garen",
 						"colors": [
 							"#DF9117",
 							"#DF9117"
@@ -40862,7 +40892,22 @@
 			"65": 60,
 			"66": 60,
 			"67": 60,
-			"68": 60
+			"68": 60,
+			"69": {
+				"id": 69,
+				"name": "T1 Varus",
+				"chromas": {
+					"70": {
+						"id": 70,
+						"name": "T1 Varus",
+						"colors": [
+							"#BB363D",
+							"#BCBBC6"
+						]
+					}
+				}
+			},
+			"70": 69
 		},
 		"spells": {
 			"p": "Living Vengeance",
@@ -42607,8 +42652,8 @@
 						"id": 104,
 						"name": "Victorious Fiora",
 						"colors": [
-							"#26854C",
-							"#26854C"
+							"#65337F",
+							"#65337F"
 						]
 					},
 					"105": {
@@ -43477,7 +43522,7 @@
 			"54": 46,
 			"55": {
 				"id": 55,
-				"name": "",
+				"name": "Arcana Lulu",
 				"chromas": {}
 			}
 		},
@@ -50875,7 +50920,22 @@
 			"37": 31,
 			"38": 31,
 			"39": 31,
-			"40": 31
+			"40": 31,
+			"41": {
+				"id": 41,
+				"name": "T1 Gnar",
+				"chromas": {
+					"42": {
+						"id": 42,
+						"name": "T1 Gnar",
+						"colors": [
+							"#BB363D",
+							"#BCBBC6"
+						]
+					}
+				}
+			},
+			"42": 41
 		},
 		"spells": {
 			"p": "Rage Gene",
@@ -54954,7 +55014,16 @@
 			"3": {
 				"id": 3,
 				"name": "Zombie Slayer Jinx",
-				"chromas": {}
+				"chromas": {
+					"64": {
+						"id": 64,
+						"name": "Zombie Slayer Jinx",
+						"colors": [
+							"#E23129",
+							"#602E55"
+						]
+					}
+				}
 			},
 			"4": {
 				"id": 4,
@@ -55385,7 +55454,8 @@
 					}
 				}
 			},
-			"63": 62
+			"63": 62,
+			"64": 3
 		},
 		"spells": {
 			"p": "Get Excited!",
@@ -59740,7 +59810,22 @@
 				"id": 48,
 				"name": "Arcane Brawler Vi",
 				"chromas": {}
-			}
+			},
+			"49": {
+				"id": 49,
+				"name": "T1 Vi",
+				"chromas": {
+					"50": {
+						"id": 50,
+						"name": "T1 Vi",
+						"colors": [
+							"#BB363D",
+							"#BCBBC6"
+						]
+					}
+				}
+			},
+			"50": 49
 		},
 		"spells": {
 			"p": "Blast Shield",
@@ -65744,7 +65829,12 @@
 			"49": 46,
 			"50": 46,
 			"51": 46,
-			"52": 46
+			"52": 46,
+			"53": {
+				"id": 53,
+				"name": "T1 Sylas",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Petricite Burst",
@@ -67530,6 +67620,20 @@
 					}
 				}
 			},
+			"75": {
+				"id": 75,
+				"name": "T1 Pyke",
+				"chromas": {
+					"84": {
+						"id": 84,
+						"name": "T1 Pyke",
+						"colors": [
+							"#BB363D",
+							"#BCBBC6"
+						]
+					}
+				}
+			},
 			"76": 74,
 			"77": 74,
 			"78": 74,
@@ -67537,7 +67641,8 @@
 			"80": 74,
 			"81": 74,
 			"82": 74,
-			"83": 74
+			"83": 74,
+			"84": 75
 		},
 		"spells": {
 			"p": "Gift of the Drowned Ones",
@@ -68443,7 +68548,22 @@
 			"70": 65,
 			"71": 65,
 			"72": 65,
-			"73": 65
+			"73": 65,
+			"74": {
+				"id": 74,
+				"name": "T1 Yone",
+				"chromas": {
+					"75": {
+						"id": 75,
+						"name": "T1 Yone",
+						"colors": [
+							"#BB363D",
+							"#BCBBC6"
+						]
+					}
+				}
+			},
+			"75": 74
 		},
 		"spells": {
 			"p": "Way of the Hunter",

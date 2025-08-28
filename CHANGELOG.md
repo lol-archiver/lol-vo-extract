@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## v2.10.0 - 2025.08.28 16
+* docs: renew `readme.md`, add some config instructions
+* docs: add `readme.zh.md`
+  * now the English readme is machine-translated from the Chinese version.
+* regular: update base data
+* regular: tweak enviroment
+* regular: bump up dependencies
+
+
+## v2.9.1 - 2025.08.13 19
+* chore: update base data
+* chore: tweak enviroment
+* chore: bump up dependencies
+
+
 ## v2.9.0 - 2025.07.28 20
 * feat: bump up `@lol-archiver/lol-wad-extract` to 4.x
   * `lol-wad-extract@4` use Node's built-in API `zlib` for decompress datas, which offers faster speed and better memory usage!

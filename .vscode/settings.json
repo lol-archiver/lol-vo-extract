@@ -6,7 +6,7 @@
 	"files.trimTrailingWhitespace": true,
 	"javascript.preferences.importModuleSpecifierEnding": "js",
 	"explorer.fileNesting.patterns": {
-		"package.json": "pnpm-lock.yaml, tsconfig.json, eslint.config.js, .gitignore, CHANGELOG.md, README.md, LICENSE",
+		"package.json": "pnpm-lock.yaml, tsconfig.json, eslint.config.js, .gitignore, CHANGELOG.md, README.md, README.zh.md, LICENSE",
 		"config.*.json": "config.${capture}.json.example, config.${capture}.json.example",
 		"config.*.jsonc": "config.${capture}.json.example, config.${capture}.jsonc.example",
 		"*.d.ts": "${capture}.d.ts.example"

@@ -8,18 +8,20 @@
 		"levelSoundEffect": "no",
 		"forceUseBaseSkinFiles": false,
 		"format": "wav",
-		"fileRExtractorConsole": "../RExtractorConsole.exe",
-		"dirDictations": "../lol-vo-lines-dictation/dictation",
-		"dirAutogen": "../lol-vo-aeproject-autogen"
+		"fileVGMStreamCLI": ".../vgmstream-cli.exe",
+		"-fileZSTD": ".../zstd.exe",
+		"-fileRExtractorConsole": ".../RExtractorConsole.exe",
+		"dirDictations": ".../lol-vo-lines-dictation/dictation",
+		"dirAutogen": ".../lol-vo-aeproject-autogen"
 	},
 	"pbe": {
 		"$base": "common",
-		"dirGameClient": "../Riot Games/League of Legends (PBE)",
-		"dirGameDataPlugin": "../Riot Games/League of Legends (PBE)/Plugins/rcp-be-lol-game-data"
+		"dirGameClient": ".../Riot Games/League of Legends (PBE)",
+		"dirGameDataPlugin": ".../Riot Games/League of Legends (PBE)/Plugins/rcp-be-lol-game-data"
 	},
 	"cn": {
 		"$base": "common",
-		"dirGameClient": "../WeGameApps/英雄联盟",
-		"dirGameDataPlugin": "../WeGameApps/英雄联盟/LeagueClient/Plugins/rcp-be-lol-game-data"
+		"dirGameClient": ".../WeGameApps/英雄联盟",
+		"dirGameDataPlugin": ".../WeGameApps/英雄联盟/LeagueClient/Plugins/rcp-be-lol-game-data"
 	}
 }
