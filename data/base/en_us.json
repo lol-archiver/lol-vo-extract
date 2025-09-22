@@ -12283,7 +12283,85 @@
 			"20": 14,
 			"21": 14,
 			"22": 14,
-			"23": 14
+			"23": 14,
+			"24": {
+				"id": 24,
+				"name": "Arcana Zilean",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "Arcana Zilean",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Arcana Zilean",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Arcana Zilean",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Arcana Zilean",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "Arcana Zilean",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "Arcana Zilean",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Arcana Zilean",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Arcana Zilean",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Time In A Bottle",
@@ -13849,7 +13927,85 @@
 			"31": 26,
 			"32": 26,
 			"33": 26,
-			"34": 26
+			"34": 26,
+			"35": {
+				"id": 35,
+				"name": "Arcana Karthus",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Arcana Karthus",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Arcana Karthus",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Arcana Karthus",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Arcana Karthus",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Arcana Karthus",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Arcana Karthus",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Arcana Karthus",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Arcana Karthus",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35
 		},
 		"spells": {
 			"p": "Death Defied",
@@ -65832,7 +65988,7 @@
 			"52": 46,
 			"53": {
 				"id": 53,
-				"name": "T1 Sylas",
+				"name": "Prestige T1 Sylas",
 				"chromas": {}
 			}
 		},
@@ -70681,7 +70837,85 @@
 			"7": 1,
 			"8": 1,
 			"9": 1,
-			"10": 1
+			"10": 1,
+			"11": {
+				"id": 11,
+				"name": "Arcana Aurora",
+				"chromas": {
+					"12": {
+						"id": 12,
+						"name": "Arcana Aurora",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "Arcana Aurora",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "Arcana Aurora",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "Arcana Aurora",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "Arcana Aurora",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"17": {
+						"id": 17,
+						"name": "Arcana Aurora",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"18": {
+						"id": 18,
+						"name": "Arcana Aurora",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"19": {
+						"id": 19,
+						"name": "Arcana Aurora",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"12": 11,
+			"13": 11,
+			"14": 11,
+			"15": 11,
+			"16": 11,
+			"17": 11,
+			"18": 11,
+			"19": 11
 		},
 		"spells": {
 			"p": "Spirit Abjuration",
