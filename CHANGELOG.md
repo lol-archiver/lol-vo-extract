@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v2.10.2 - 2025.10.09 09
+* regular: update base data
+* regular: bump up dependencies
+
+
+## v2.10.1 - 2025.09.22 11
+* docs: fix `readme.md`
+* regular: update base data
+* regular: tweak enviroment
+* regular: bump up dependencies
+
+
 ## v2.10.0 - 2025.08.28 16
 * docs: renew `readme.md`, add some config instructions
 * docs: add `readme.zh.md`

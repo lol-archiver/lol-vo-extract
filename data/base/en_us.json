@@ -2096,7 +2096,58 @@
 			"42": 36,
 			"43": 36,
 			"44": 36,
-			"45": 36
+			"45": 36,
+			"47": {
+				"id": 47,
+				"name": "Trials of Twilight Xin Zhao",
+				"chromas": {
+					"48": {
+						"id": 48,
+						"name": "Trials of Twilight Xin Zhao",
+						"colors": [
+							"#DDDDDD",
+							"#CBAD90"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Trials of Twilight Xin Zhao",
+						"colors": [
+							"#002CFD",
+							"#001471"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Trials of Twilight Xin Zhao",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Trials of Twilight Xin Zhao",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Trials of Twilight Xin Zhao",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"48": 47,
+			"49": 47,
+			"50": 47,
+			"51": 47,
+			"52": 47
 		},
 		"spells": {
 			"p": "Determination",
@@ -2633,6 +2684,14 @@
 							"#FF1515",
 							"#E8CD6B"
 						]
+					},
+					"58": {
+						"id": 58,
+						"name": "iG LeBlanc",
+						"colors": [
+							"#568DF3",
+							"#ECC642"
+						]
 					}
 				}
 			},
@@ -2950,7 +3009,8 @@
 				}
 			},
 			"56": 55,
-			"57": 55
+			"57": 55,
+			"58": 19
 		},
 		"spells": {
 			"p": "Mirror Image",
@@ -3749,7 +3809,85 @@
 			"42": 37,
 			"43": 37,
 			"44": 37,
-			"45": 37
+			"45": 37,
+			"46": {
+				"id": 46,
+				"name": "Flora Fatalis Fiddlesticks",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Flora Fatalis Fiddlesticks",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Flora Fatalis Fiddlesticks",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Flora Fatalis Fiddlesticks",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Flora Fatalis Fiddlesticks",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Flora Fatalis Fiddlesticks",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Flora Fatalis Fiddlesticks",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Flora Fatalis Fiddlesticks",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Flora Fatalis Fiddlesticks",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"47": 46,
+			"48": 46,
+			"49": 46,
+			"50": 46,
+			"51": 46,
+			"52": 46,
+			"53": 46,
+			"54": 46
 		},
 		"spells": {
 			"p": "A Harmless Scarecrow",
@@ -7414,6 +7552,84 @@
 			"50": 44,
 			"51": 44,
 			"52": 44,
+			"53": {
+				"id": 53,
+				"name": "Flora Fatalis Soraka",
+				"chromas": {
+					"54": {
+						"id": 54,
+						"name": "Flora Fatalis Soraka",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Flora Fatalis Soraka",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Flora Fatalis Soraka",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Flora Fatalis Soraka",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Flora Fatalis Soraka",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Flora Fatalis Soraka",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Flora Fatalis Soraka",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Flora Fatalis Soraka",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"54": 53,
+			"55": 53,
+			"56": 53,
+			"57": 53,
+			"58": 53,
+			"59": 53,
+			"60": 53,
+			"61": 53,
 			"62": 4
 		},
 		"spells": {
@@ -17523,7 +17739,16 @@
 			"15": {
 				"id": 15,
 				"name": "iG Irelia",
-				"chromas": {}
+				"chromas": {
+					"62": {
+						"id": 62,
+						"name": "iG Irelia",
+						"colors": [
+							"#568DF3",
+							"#ECC642"
+						]
+					}
+				}
 			},
 			"16": {
 				"id": 16,
@@ -17903,7 +18128,8 @@
 			"58": 55,
 			"59": 55,
 			"60": 55,
-			"61": 55
+			"61": 55,
+			"62": 15
 		},
 		"spells": {
 			"p": "Ionian Fervor",
@@ -24521,7 +24747,16 @@
 			"8": {
 				"id": 8,
 				"name": "SSG Jarvan IV",
-				"chromas": {}
+				"chromas": {
+					"56": {
+						"id": 56,
+						"name": "SSG Jarvan IV",
+						"colors": [
+							"#C271F5",
+							"#CBE1F7"
+						]
+					}
+				}
 			},
 			"9": {
 				"id": 9,
@@ -24889,7 +25124,8 @@
 					}
 				}
 			},
-			"55": 54
+			"55": 54,
+			"56": 8
 		},
 		"spells": {
 			"p": "Martial Cadence",
@@ -28151,7 +28387,12 @@
 			"10": 5,
 			"11": 5,
 			"12": 5,
-			"13": 5
+			"13": 5,
+			"14": {
+				"id": 14,
+				"name": "Mecha Kingdoms Skarner",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Threads of Vibration",
@@ -30870,7 +31111,16 @@
 			"19": {
 				"id": 19,
 				"name": "SSG Ezreal",
-				"chromas": {}
+				"chromas": {
+					"75": {
+						"id": 75,
+						"name": "SSG Ezreal",
+						"colors": [
+							"#C271F5",
+							"#CBE1F7"
+						]
+					}
+				}
 			},
 			"20": {
 				"id": 20,
@@ -31315,7 +31565,8 @@
 			"71": 65,
 			"72": 65,
 			"73": 65,
-			"74": 3
+			"74": 3,
+			"75": 19
 		},
 		"spells": {
 			"p": "Rising Spell Force",
@@ -42282,6 +42533,14 @@
 							"#FF1515",
 							"#E8CD6B"
 						]
+					},
+					"108": {
+						"id": 108,
+						"name": "iG Fiora",
+						"colors": [
+							"#568DF3",
+							"#ECC642"
+						]
 					}
 				}
 			},
@@ -42846,7 +43105,8 @@
 			"104": 98,
 			"105": 98,
 			"106": 98,
-			"107": 98
+			"107": 98,
+			"108": 31
 		},
 		"spells": {
 			"p": "Duelist's Dance",
@@ -46443,7 +46703,85 @@
 			"39": 34,
 			"40": 34,
 			"41": 34,
-			"42": 34
+			"42": 34,
+			"43": {
+				"id": 43,
+				"name": "Flora Fatalis Lissandra",
+				"chromas": {
+					"44": {
+						"id": 44,
+						"name": "Flora Fatalis Lissandra",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Flora Fatalis Lissandra",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Flora Fatalis Lissandra",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Flora Fatalis Lissandra",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Flora Fatalis Lissandra",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Flora Fatalis Lissandra",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Flora Fatalis Lissandra",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Flora Fatalis Lissandra",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"44": 43,
+			"45": 43,
+			"46": 43,
+			"47": 43,
+			"48": 43,
+			"49": 43,
+			"50": 43,
+			"51": 43
 		},
 		"spells": {
 			"p": "Iceborn Subjugation",
@@ -48906,7 +49244,22 @@
 			"39": 33,
 			"40": 33,
 			"41": 33,
-			"42": 33
+			"42": 33,
+			"43": {
+				"id": 43,
+				"name": "Prestige Eternal Aspect Zoe",
+				"chromas": {
+					"44": {
+						"id": 44,
+						"name": "Prestige Eternal Aspect Zoe",
+						"colors": [
+							"#40E4DF",
+							"#735FDC"
+						]
+					}
+				}
+			},
+			"44": 43
 		},
 		"spells": {
 			"p": "More Sparkles!",
@@ -49675,8 +50028,16 @@
 						"id": 58,
 						"name": "iG Kai'Sa",
 						"colors": [
-							"#FF1500",
+							"#FF1515",
 							"#E8CD6B"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "iG Kai'Sa",
+						"colors": [
+							"#568DF3",
+							"#ECC642"
 						]
 					}
 				}
@@ -50207,7 +50568,8 @@
 			"77": 69,
 			"78": 69,
 			"79": 69,
-			"80": 69
+			"80": 69,
+			"81": 16
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -50850,7 +51212,16 @@
 			"14": {
 				"id": 14,
 				"name": "SSG Gnar",
-				"chromas": {}
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "SSG Gnar",
+						"colors": [
+							"#C271F5",
+							"#CBE1F7"
+						]
+					}
+				}
 			},
 			"15": {
 				"id": 15,
@@ -51091,7 +51462,8 @@
 					}
 				}
 			},
-			"42": 41
+			"42": 41,
+			"43": 14
 		},
 		"spells": {
 			"p": "Rage Gene",
@@ -52420,7 +52792,16 @@
 			"2": {
 				"id": 2,
 				"name": "SSG Taliyah",
-				"chromas": {}
+				"chromas": {
+					"23": {
+						"id": 23,
+						"name": "SSG Taliyah",
+						"colors": [
+							"#C271F5",
+							"#CBE1F7"
+						]
+					}
+				}
 			},
 			"3": {
 				"id": 3,
@@ -52592,7 +52973,8 @@
 					}
 				}
 			},
-			"22": 21
+			"22": 21,
+			"23": 2
 		},
 		"spells": {
 			"p": "Rock Surfing",
@@ -52702,7 +53084,16 @@
 			"10": {
 				"id": 10,
 				"name": "iG Camille",
-				"chromas": {}
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "iG Camille",
+						"colors": [
+							"#568DF3",
+							"#ECC642"
+						]
+					}
+				}
 			},
 			"11": {
 				"id": 11,
@@ -52970,7 +53361,8 @@
 			"39": 31,
 			"40": 31,
 			"41": 31,
-			"42": 31
+			"42": 31,
+			"43": 10
 		},
 		"spells": {
 			"p": "Adaptive Defenses",
@@ -64268,12 +64660,30 @@
 			"3": {
 				"id": 3,
 				"name": "SSG Rakan",
-				"chromas": {}
+				"chromas": {
+					"56": {
+						"id": 56,
+						"name": "SSG Rakan",
+						"colors": [
+							"#C271F5",
+							"#CBE1F7"
+						]
+					}
+				}
 			},
 			"4": {
 				"id": 4,
 				"name": "iG Rakan",
-				"chromas": {}
+				"chromas": {
+					"57": {
+						"id": 57,
+						"name": "iG Rakan",
+						"colors": [
+							"#568DF3",
+							"#ECC642"
+						]
+					}
+				}
 			},
 			"5": {
 				"id": 5,
@@ -64707,7 +65117,9 @@
 			"52": 47,
 			"53": 47,
 			"54": 47,
-			"55": 47
+			"55": 47,
+			"56": 3,
+			"57": 4
 		},
 		"spells": {
 			"p": "Fey Feathers",
@@ -64744,7 +65156,16 @@
 			"3": {
 				"id": 3,
 				"name": "SSG Xayah",
-				"chromas": {}
+				"chromas": {
+					"65": {
+						"id": 65,
+						"name": "SSG Xayah",
+						"colors": [
+							"#C271F5",
+							"#CBE1F7"
+						]
+					}
+				}
 			},
 			"4": {
 				"id": 4,
@@ -65256,7 +65677,8 @@
 			"60": 57,
 			"61": 57,
 			"62": 57,
-			"63": 57
+			"63": 57,
+			"65": 3
 		},
 		"spells": {
 			"p": "Clean Cuts",
@@ -66419,7 +66841,12 @@
 			"45": 40,
 			"46": 40,
 			"47": 40,
-			"48": 40
+			"48": 40,
+			"49": {
+				"id": 49,
+				"name": "Beeko",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Inherent Glamour",
