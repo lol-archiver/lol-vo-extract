@@ -67,7 +67,7 @@ const copyAudioWithLine = E => {
 
 				return { type, params: rawParams.split(/(?<!\\),/) };
 			});
-			if(extras.find(e => e.type == 'ignore')) { continue; }
+			if(extras.find(e => e.type == 'skip')) { continue; }
 
 
 			let condNow = '';
