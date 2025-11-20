@@ -225,7 +225,7 @@ export class HIRCSwitchContainer extends HIRCContainer {
 	toString() {
 		const string = `${super.toString()}${this.idsChildren.length ? ` ${this.idsChildren.length}` : ''}`;
 
-		return `${string} --> group-${this.typeGroup == 0 ? 'switch' : 'state'}[${showID(this.idGroup)}] defaut[${showID(this.idSwitchDefault)}]`;
+		return `${string} --> group-${this.typeGroup == 0 ? 'switch' : 'state'}[${showID(this.idGroup)}] default[${showID(this.idSwitchDefault)}]`;
 	}
 }
 export class HIRCLayerContainer extends HIRCContainer {
