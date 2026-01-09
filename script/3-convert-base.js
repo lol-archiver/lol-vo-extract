@@ -160,15 +160,23 @@ const updateChampionsBase = async (E) => {
 			try {
 				let now = result;
 
-				for(const path of pathsFix) { now = now[path]; }
+				let count = 0;
+				let chroma;
+				for(const path of pathsFix) {
+					now = now[path];
+
+					if(~~path && count == 0) { count++; continue; }
+					if(~~path && count == 1) { count++; continue; }
+					if(~~path && count == 2) { chroma = now; count++; continue; }
+				}
 
 				if(now[keyTarget] == strMatch) {
-					G.info('convert-base', 'fix data', `✔ ${pathFix}: ~{${strMatch}} ==> ~{${strReplace}}`);
+					G.info('convert-base', 'fix data', `✔ ${pathFix}: ${chroma ? `~[Chroma]~{${chroma?.name || ''}}` : ''} ~{${strMatch}} ==> ~{${strReplace}}`);
 
 					now[keyTarget] = strReplace;
 				}
 				else {
-					G.warn('convert-base', 'fix data', `✖ ${pathFix}: ~{${strMatch}} changed, now is ~{${now[keyTarget]}}`);
+					G.warn('convert-base', 'fix data', `✖ ${pathFix}: ${chroma ? `~[Chroma]~{${chroma?.name || ''}}` : ''} ~{${strMatch}} changed, now is ~{${now[keyTarget]}}`);
 				}
 			}
 			catch { void 0; }

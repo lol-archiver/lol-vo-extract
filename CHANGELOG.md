@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v2.11.0 - 2026.01.09 10
+* feat(config): new config `sortDictationChildrenByID`
+  * which can effct output format in dictation text
+* feat(config): new config `indentDictationSound`
+  * which can effct output format in dictation text
+* fix: tweak a keyword in sciprt `copy-audio-with-line`
+* fix: fix typo
+* regular: update base data
+* regular: bump up dependencies
+
+
 ## v2.10.2 - 2025.10.09 09
 * regular: update base data
 * regular: bump up dependencies

@@ -1259,7 +1259,67 @@
 			"36": 28,
 			"37": 28,
 			"38": 28,
-			"39": 28
+			"39": 28,
+			"40": {
+				"id": 40,
+				"name": "Aegis Frame Galio",
+				"chromas": {
+					"41": {
+						"id": 41,
+						"name": "Aegis Frame Galio (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Aegis Frame Galio (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Aegis Frame Galio (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Aegis Frame Galio (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Aegis Frame Galio (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Aegis Frame Galio (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"41": 40,
+			"42": 40,
+			"43": 40,
+			"44": 40,
+			"45": 40,
+			"46": 40
 		},
 		"spells": {
 			"p": "Colossal Smash",
@@ -1755,48 +1815,48 @@
 						"id": 7,
 						"name": "Warring Kingdoms Xin Zhao (Ruby)",
 						"colors": [
-							"#AA0000",
-							"#2956BE"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"8": {
 						"id": 8,
 						"name": "Warring Kingdoms Xin Zhao (Peridot)",
 						"colors": [
-							"#88C162",
-							"#BEB22E"
+							"#B6E084",
+							"#B6E084"
 						]
 					},
 					"9": {
 						"id": 9,
 						"name": "Warring Kingdoms Xin Zhao (Amethyst)",
 						"colors": [
-							"#D4B124",
-							"#9098B1"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"10": {
 						"id": 10,
 						"name": "Warring Kingdoms Xin Zhao (Aquamarine)",
 						"colors": [
-							"#29B8D8",
-							"#9F4A28"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"11": {
 						"id": 11,
 						"name": "Warring Kingdoms Xin Zhao (Rose Quartz)",
 						"colors": [
-							"#AA007F",
-							"#AA8B0D"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"12": {
 						"id": 12,
 						"name": "Warring Kingdoms Xin Zhao (Pearl)",
 						"colors": [
-							"#55AAFF",
-							"#DDFFFD"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"26": {
@@ -2554,8 +2614,8 @@
 						"id": 7,
 						"name": "Prestigious LeBlanc (Tanzanite)",
 						"colors": [
-							"#2756CE",
-							"#2756CE"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"8": {
@@ -7692,16 +7752,16 @@
 						"id": 9,
 						"name": "Cottontail Teemo (Aquamarine)",
 						"colors": [
-							"#73C2DA",
-							"#73C2DA"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"10": {
 						"id": 10,
 						"name": "Cottontail Teemo (Rose Quartz)",
 						"colors": [
-							"#FF95EC",
-							"#FF95EC"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"11": {
@@ -7716,16 +7776,16 @@
 						"id": 12,
 						"name": "Cottontail Teemo (Turquoise)",
 						"colors": [
-							"#96F4B9",
-							"#96F4B9"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"13": {
 						"id": 13,
 						"name": "Cottontail Teemo (Amethyst)",
 						"colors": [
-							"#5F52BD",
-							"#5F52BD"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					}
 				}
@@ -8692,8 +8752,8 @@
 						"id": 63,
 						"name": "Faerie Court Tristana (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"64": {
@@ -8942,8 +9002,8 @@
 						"id": 12,
 						"name": "Lunar Guardian Warwick (Meteorite)",
 						"colors": [
-							"#9F4A25",
-							"#9F4A25"
+							"#5F432B",
+							"#5F432B"
 						]
 					},
 					"13": {
@@ -9781,40 +9841,40 @@
 						"id": 10,
 						"name": "Arcade Miss Fortune (Aquamarine)",
 						"colors": [
-							"#AAFFFF",
-							"#FF55FF"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"11": {
 						"id": 11,
 						"name": "Arcade Miss Fortune (Amethyst)",
 						"colors": [
-							"#592AB5",
-							"#6FCAD4"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"12": {
 						"id": 12,
 						"name": "Arcade Miss Fortune (Citrine)",
 						"colors": [
-							"#BC7E11",
-							"#2298CA"
+							"#DF9117",
+							"#DF9117"
 						]
 					},
 					"13": {
 						"id": 13,
 						"name": "Arcade Miss Fortune (Peridot)",
 						"colors": [
-							"#BDDF5D",
-							"#CA37BE"
+							"#B6E084",
+							"#B6E084"
 						]
 					},
 					"14": {
 						"id": 14,
 						"name": "Arcade Miss Fortune (Ruby)",
 						"colors": [
-							"#B51717",
-							"#222DC8"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"19": {
@@ -10003,8 +10063,8 @@
 						"id": 39,
 						"name": "Battle Bunny Miss Fortune (Nightwire)",
 						"colors": [
-							"#2B7CFF",
-							"#FF930E"
+							"#F6A630",
+							"#1C61B4"
 						]
 					}
 				}
@@ -10041,8 +10101,8 @@
 						"id": 43,
 						"name": "Broken Covenant Miss Fortune (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"44": {
@@ -11185,6 +11245,14 @@
 							"#1E1B1A",
 							"#FFFFFF"
 						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Nightbringer Tryndamere (Paragon)",
+						"colors": [
+							"#B0B3EE",
+							"#6599EF"
+						]
 					}
 				}
 			},
@@ -11360,7 +11428,8 @@
 			"42": 37,
 			"43": 37,
 			"44": 37,
-			"45": 37
+			"45": 37,
+			"46": 18
 		},
 		"spells": {
 			"p": "Battle Fury",
@@ -12372,7 +12441,22 @@
 				"id": 80,
 				"name": "Spirit Blossom Morgana",
 				"chromas": {}
-			}
+			},
+			"81": {
+				"id": 81,
+				"name": "Prestige Veiled Lady Morgana",
+				"chromas": {
+					"82": {
+						"id": 82,
+						"name": "Prestige Veiled Lady Morgana (Vivid)",
+						"colors": [
+							"#3D266C",
+							"#E89DFE"
+						]
+					}
+				}
+			},
+			"82": 81
 		},
 		"spells": {
 			"p": "Soul Siphon",
@@ -12819,8 +12903,8 @@
 						"id": 21,
 						"name": "Astronaut Singed (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"22": {
@@ -14618,8 +14702,8 @@
 						"id": 38,
 						"name": "Toy Terror Cho'Gath (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"39": {
@@ -14647,7 +14731,12 @@
 			"37": 32,
 			"38": 32,
 			"39": 32,
-			"40": 32
+			"40": 32,
+			"41": {
+				"id": 41,
+				"name": "Petricite Cho'Gath",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Carnivore",
@@ -16816,8 +16905,8 @@
 						"id": 8,
 						"name": "Guqin Sona (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					},
 					"55": {
@@ -18357,8 +18446,8 @@
 						"id": 19,
 						"name": "Bewitching Janna (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -19175,8 +19264,8 @@
 						"id": 17,
 						"name": "Dragonwing Corki (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					},
 					"35": {
@@ -21143,8 +21232,8 @@
 						"id": 14,
 						"name": "Fright Night Trundle (Turquoise)",
 						"colors": [
-							"#2756CE",
-							"#2756CE"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"15": {
@@ -23170,8 +23259,8 @@
 						"id": 11,
 						"name": "Warring Kingdoms Katarina (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -23753,8 +23842,8 @@
 						"id": 10,
 						"name": "Old God Nocturne (Sapphire)",
 						"colors": [
-							"#2377FF",
-							"#2377FF"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"11": {
@@ -24058,8 +24147,8 @@
 						"id": 11,
 						"name": "Meowkai (Tanzanite)",
 						"colors": [
-							"#2756CE",
-							"#2756CE"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"12": {
@@ -25814,8 +25903,8 @@
 						"id": 37,
 						"name": "Star Guardian Orianna (Rainbow)",
 						"colors": [
-							"#C1F2D7",
-							"#C1F2D7"
+							"#C1F2FF",
+							"#C1F2FF"
 						]
 					}
 				}
@@ -27613,8 +27702,8 @@
 						"id": 43,
 						"name": "Battle Bat Vayne (Nightwire)",
 						"colors": [
-							"#2B7CFF",
-							"#FF930E"
+							"#F6A630",
+							"#1C61B4"
 						]
 					}
 				}
@@ -28877,8 +28966,8 @@
 						"id": 13,
 						"name": "Lunar Guardian Nasus (Meteorite)",
 						"colors": [
-							"#9F4A25",
-							"#9F4A25"
+							"#5F432B",
+							"#5F432B"
 						]
 					},
 					"14": {
@@ -31023,7 +31112,7 @@
 						"id": 37,
 						"name": "Ashen Conqueror Pantheon (Emberwoken)",
 						"colors": [
-							"#9D0600",
+							"#9D0606",
 							"#2B263F"
 						]
 					}
@@ -33322,16 +33411,16 @@
 						"id": 76,
 						"name": "Coven Akali (Amethyst)",
 						"colors": [
-							"#54209B",
-							"#54209B"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"77": {
 						"id": 77,
 						"name": "Coven Akali (Tanzanite)",
 						"colors": [
-							"#9C68D7",
-							"#9C68D7"
+							"#54209B",
+							"#54209B"
 						]
 					},
 					"78": {
@@ -33779,8 +33868,8 @@
 						"id": 27,
 						"name": "Astronaut Kennen (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"28": {
@@ -33936,8 +34025,8 @@
 						"id": 12,
 						"name": "Warring Kingdoms Garen (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -35212,8 +35301,8 @@
 						"id": 48,
 						"name": "Empyrean Malzahar (Neon Facade)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E14940",
+							"#83E584"
 						]
 					}
 				}
@@ -35934,8 +36023,8 @@
 						"id": 17,
 						"name": "Dragonblade Riven (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -35962,8 +36051,8 @@
 						"id": 19,
 						"name": "Reignited Worlds 2012 Riven (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -36264,8 +36353,8 @@
 						"id": 54,
 						"name": "Battle Bunny Prime Riven (Nightwire)",
 						"colors": [
-							"#2B7CFF",
-							"#FF930E"
+							"#F6A630",
+							"#1C61B4"
 						]
 					},
 					"72": {
@@ -37301,6 +37390,14 @@
 							"#B2D1E4",
 							"#3CABFF"
 						]
+					},
+					"53": {
+						"id": 53,
+						"name": "PsyOps Shen (Paragon)",
+						"colors": [
+							"#B0B3EE",
+							"#6599EF"
+						]
 					}
 				}
 			},
@@ -37418,7 +37515,8 @@
 				"id": 51,
 				"name": "Three Honors Shen",
 				"chromas": {}
-			}
+			},
+			"53": 22
 		},
 		"spells": {
 			"p": "Ki Barrier",
@@ -38410,8 +38508,8 @@
 						"id": 7,
 						"name": "Worlds 2014 Shyvana (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -41177,8 +41275,8 @@
 						"id": 20,
 						"name": "Cosmic Hunter Varus (Amethyst)",
 						"colors": [
-							"#E58BA5",
-							"#E58BA5"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"21": {
@@ -41861,7 +41959,85 @@
 					}
 				}
 			},
-			"37": 36
+			"37": 36,
+			"39": {
+				"id": 39,
+				"name": "Petricite Nautilus",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Petricite Nautilus (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Petricite Nautilus (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Petricite Nautilus (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Petricite Nautilus (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Petricite Nautilus (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Petricite Nautilus (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Petricite Nautilus (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Petricite Nautilus (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39
 		},
 		"spells": {
 			"p": "Staggering Blow",
@@ -44840,7 +45016,7 @@
 				"chromas": {
 					"69": {
 						"id": 69,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Bronze)",
 						"colors": [
 							"#764D43",
 							"#764D43"
@@ -44848,7 +45024,7 @@
 					},
 					"70": {
 						"id": 70,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Silver)",
 						"colors": [
 							"#AAB5BA",
 							"#AAB5BA"
@@ -44856,7 +45032,7 @@
 					},
 					"71": {
 						"id": 71,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Gold)",
 						"colors": [
 							"#D9C445",
 							"#D9C445"
@@ -44864,7 +45040,7 @@
 					},
 					"72": {
 						"id": 72,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Platinum)",
 						"colors": [
 							"#55CDE5",
 							"#55CDE5"
@@ -44872,7 +45048,7 @@
 					},
 					"73": {
 						"id": 73,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Emerald)",
 						"colors": [
 							"#26854C",
 							"#26854C"
@@ -44880,7 +45056,7 @@
 					},
 					"74": {
 						"id": 74,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Diamond)",
 						"colors": [
 							"#65337F",
 							"#65337F"
@@ -44888,7 +45064,7 @@
 					},
 					"75": {
 						"id": 75,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Master)",
 						"colors": [
 							"#9D228D",
 							"#9D228D"
@@ -44896,7 +45072,7 @@
 					},
 					"76": {
 						"id": 76,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Grandmaster)",
 						"colors": [
 							"#B31316",
 							"#B31316"
@@ -44904,7 +45080,7 @@
 					},
 					"77": {
 						"id": 77,
-						"name": "Victorious Draven",
+						"name": "Victorious Draven (Challenger)",
 						"colors": [
 							"#1D62C8",
 							"#1D62C8"
@@ -45449,8 +45625,8 @@
 						"id": 12,
 						"name": "Worlds 2018 Kha'Zix (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					},
 					"13": {
@@ -52247,40 +52423,40 @@
 						"id": 4,
 						"name": "High Noon Yasuo (Sapphire)",
 						"colors": [
-							"#002B83",
-							"#AA5500"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"5": {
 						"id": 5,
 						"name": "High Noon Yasuo (Amethyst)",
 						"colors": [
-							"#797ACF",
-							"#E6CE13"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"6": {
 						"id": 6,
 						"name": "High Noon Yasuo (Jasper)",
 						"colors": [
-							"#752505",
-							"#2E9C5C"
+							"#9F4A25",
+							"#9F4A25"
 						]
 					},
 					"7": {
 						"id": 7,
 						"name": "High Noon Yasuo (Emerald)",
 						"colors": [
-							"#00AA7F",
-							"#550000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"8": {
 						"id": 8,
 						"name": "High Noon Yasuo (Obsidian)",
 						"colors": [
-							"#030635",
-							"#D2D894"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -53433,7 +53609,12 @@
 				}
 			},
 			"22": 21,
-			"23": 2
+			"23": 2,
+			"24": {
+				"id": 24,
+				"name": "Durand's Legacy Taliyah",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Rock Surfing",
@@ -54984,8 +55165,8 @@
 						"id": 31,
 						"name": "Empyrean Jhin (Rainbow)",
 						"colors": [
-							"#C1F2D7",
-							"#C1F2D7"
+							"#C1F2FF",
+							"#C1F2FF"
 						]
 					},
 					"32": {
@@ -55926,50 +56107,50 @@
 				"chromas": {
 					"41": {
 						"id": 41,
-						"name": "Winter Wonder Zeri",
+						"name": "Winter Wonder Zeri (Ruby)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"42": {
 						"id": 42,
-						"name": "Winter Wonder Zeri",
+						"name": "Winter Wonder Zeri (Turquoise)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"43": {
 						"id": 43,
-						"name": "Winter Wonder Zeri",
+						"name": "Winter Wonder Zeri (Amethyst)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"44": {
 						"id": 44,
-						"name": "Winter Wonder Zeri",
+						"name": "Winter Wonder Zeri (Rose Quartz)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"45": {
 						"id": 45,
-						"name": "Winter Wonder Zeri",
+						"name": "Winter Wonder Zeri (Obsidian)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"46": {
 						"id": 46,
-						"name": "Winter Wonder Zeri",
+						"name": "Winter Wonder Zeri (Pearl)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					}
 				}
@@ -56402,8 +56583,8 @@
 						"id": 49,
 						"name": "Battle Cat Jinx (Nightwire)",
 						"colors": [
-							"#2B7CFF",
-							"#FF930E"
+							"#F6A630",
+							"#1C61B4"
 						]
 					}
 				}
@@ -56806,8 +56987,8 @@
 						"id": 33,
 						"name": "Shan Hai Scrolls Tahm Kench (Granite)",
 						"colors": [
-							"#85827F",
-							"#85827F"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"34": {
@@ -56846,8 +57027,8 @@
 						"id": 38,
 						"name": "Shan Hai Scrolls Tahm Kench (Pearl)",
 						"colors": [
-							"#9C68D7",
-							"#9C68D7"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					}
 				}
@@ -57048,7 +57229,85 @@
 			"16": 10,
 			"17": 10,
 			"18": 10,
-			"19": 10
+			"19": 10,
+			"20": {
+				"id": 20,
+				"name": "Battle Academia Briar",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Battle Academia Briar (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Battle Academia Briar (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Battle Academia Briar (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Battle Academia Briar (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Battle Academia Briar (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Battle Academia Briar (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Battle Academia Briar (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Battle Academia Briar (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20
 		},
 		"spells": {
 			"p": "Crimson Curse",
@@ -58191,7 +58450,7 @@
 						"id": 51,
 						"name": "High Noon Lucian (Tenfold Triumph)",
 						"colors": [
-							"#FF1502",
+							"#FF1515",
 							"#E8CD6B"
 						]
 					}
@@ -58702,48 +58961,48 @@
 						"id": 4,
 						"name": "Shockblade Zed (Rose Quartz)",
 						"colors": [
-							"#B768C7",
-							"#591A61"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"5": {
 						"id": 5,
 						"name": "Shockblade Zed (Catseye)",
 						"colors": [
-							"#E3C425",
-							"#552121"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"6": {
 						"id": 6,
 						"name": "Shockblade Zed (Aquamarine)",
 						"colors": [
-							"#5BBCF0",
-							"#151A61"
+							"#6ABBEE",
+							"#6ABBEE"
 						]
 					},
 					"7": {
 						"id": 7,
 						"name": "Shockblade Zed (Ruby)",
 						"colors": [
-							"#B9172C",
-							"#320808"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"8": {
 						"id": 8,
 						"name": "Shockblade Zed (Amethyst)",
 						"colors": [
-							"#5C52E5",
-							"#132151"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"9": {
 						"id": 9,
 						"name": "Shockblade Zed (Emerald)",
 						"colors": [
-							"#2FD482",
-							"#0C1E17"
+							"#2DA130",
+							"#2DA130"
 						]
 					}
 				}
@@ -58790,8 +59049,8 @@
 						"id": 12,
 						"name": "Worlds 2016 Zed (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -59118,8 +59377,8 @@
 						"id": 51,
 						"name": "Immortal Journey Zed (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"52": {
@@ -59196,8 +59455,8 @@
 						"id": 60,
 						"name": "Blood Moon Zed (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"61": {
@@ -59355,8 +59614,8 @@
 						"id": 8,
 						"name": "Count Kledula (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -59679,8 +59938,8 @@
 						"id": 18,
 						"name": "Trick or Treat Ekko (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -60967,7 +61226,16 @@
 			"7": {
 				"id": 7,
 				"name": "Blood Moon Aatrox",
-				"chromas": {}
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Blood Moon Aatrox (Paragon)",
+						"colors": [
+							"#B0B3EE",
+							"#6599EF"
+						]
+					}
+				}
 			},
 			"8": {
 				"id": 8,
@@ -61229,7 +61497,8 @@
 			"36": 33,
 			"37": 33,
 			"38": 33,
-			"39": 33
+			"39": 33,
+			"40": 7
 		},
 		"spells": {
 			"p": "Deathbringer Stance",
@@ -62962,7 +63231,85 @@
 				"name": "Masque of the Black Rose Samira",
 				"chromas": {}
 			},
-			"34": 20
+			"34": 20,
+			"35": {
+				"id": 35,
+				"name": "Battle Professor Samira",
+				"chromas": {
+					"36": {
+						"id": 36,
+						"name": "Battle Professor Samira (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Battle Professor Samira (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Battle Professor Samira (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Battle Professor Samira (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Battle Professor Samira (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Battle Professor Samira (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Battle Professor Samira (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Battle Professor Samira (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"36": 35,
+			"37": 35,
+			"38": 35,
+			"39": 35,
+			"40": 35,
+			"41": 35,
+			"42": 35,
+			"43": 35
 		},
 		"spells": {
 			"p": "Daredevil Impulse",
@@ -63000,8 +63347,8 @@
 						"id": 12,
 						"name": "Worlds 2013 Thresh (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -64391,8 +64738,8 @@
 						"id": 22,
 						"name": "Astronaut Ivern (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"23": {
@@ -64494,8 +64841,8 @@
 						"id": 4,
 						"name": "Worlds 2015 Kalista (Golden)",
 						"colors": [
-							"#FFEE59",
-							"#FFEE59"
+							"#FFC948",
+							"#FFC948"
 						]
 					}
 				}
@@ -65419,8 +65766,8 @@
 						"id": 29,
 						"name": "Broken Covenant Rakan (Catseye)",
 						"colors": [
-							"#DF9117",
-							"#DF9117"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"30": {
@@ -66469,7 +66816,85 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"29": {
+				"id": 29,
+				"name": "Aegis Frame Ornn",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Aegis Frame Ornn (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Aegis Frame Ornn (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Aegis Frame Ornn (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Aegis Frame Ornn (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Aegis Frame Ornn (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Aegis Frame Ornn (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Aegis Frame Ornn (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Aegis Frame Ornn (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29
 		},
 		"spells": {
 			"p": "Living Forge",
@@ -66760,8 +67185,8 @@
 						"id": 33,
 						"name": "Battle Wolf Sylas (Nightwire)",
 						"colors": [
-							"#2B7CFF",
-							"#FF930E"
+							"#F6A630",
+							"#1C61B4"
 						]
 					}
 				}
@@ -66990,8 +67415,8 @@
 						"id": 4,
 						"name": "Winter Wonder Neeko (Emerald)",
 						"colors": [
-							"#B6E084",
-							"#B6E084"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"5": {
@@ -68044,8 +68469,8 @@
 						"id": 2,
 						"name": "Sand Wraith Pyke (Catseye)",
 						"colors": [
-							"#E1EE59",
-							"#E1EE59"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"3": {
@@ -69414,6 +69839,14 @@
 							"#B5CED6",
 							"#33D889"
 						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Inkshadow Yone (Paragon)",
+						"colors": [
+							"#B0B3EE",
+							"#6599EF"
+						]
 					}
 				}
 			},
@@ -69565,7 +69998,7 @@
 						"id": 64,
 						"name": "High Noon Yone (Noonday)",
 						"colors": [
-							"#9DB3E1",
+							"#A8BFF1",
 							"#CD5867"
 						]
 					}
@@ -69675,7 +70108,8 @@
 					}
 				}
 			},
-			"75": 74
+			"75": 74,
+			"76": 35
 		},
 		"spells": {
 			"p": "Way of the Hunter",
@@ -69868,10 +70302,10 @@
 				"chromas": {
 					"11": {
 						"id": 11,
-						"name": "Prestige Winterblessed Mel",
+						"name": "Prestige Winterblessed Mel (Vivid)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#F44EDB",
+							"#F3AE71"
 						]
 					}
 				}
@@ -70547,7 +70981,7 @@
 						"id": 65,
 						"name": "HEARTSTEEL Sett (Rockstar)",
 						"colors": [
-							"#E1F0F5",
+							"#CDE9EF",
 							"#E9628F"
 						]
 					}
@@ -72525,66 +72959,66 @@
 				"chromas": {
 					"12": {
 						"id": 12,
-						"name": "Reindeer Smolder",
+						"name": "Reindeer Smolder (Ruby)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"13": {
 						"id": 13,
-						"name": "Reindeer Smolder",
+						"name": "Reindeer Smolder (Catseye)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"14": {
 						"id": 14,
-						"name": "Reindeer Smolder",
+						"name": "Reindeer Smolder (Sapphire)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2756CE",
+							"#2756CE"
 						]
 					},
 					"15": {
 						"id": 15,
-						"name": "Reindeer Smolder",
+						"name": "Reindeer Smolder (Rose Quartz)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					},
 					"16": {
 						"id": 16,
-						"name": "Reindeer Smolder",
+						"name": "Reindeer Smolder (Turquoise)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"17": {
 						"id": 17,
-						"name": "Reindeer Smolder",
+						"name": "Reindeer Smolder (Amethyst)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"18": {
 						"id": 18,
-						"name": "Reindeer Smolder",
+						"name": "Reindeer Smolder (Pearl)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"19": {
 						"id": 19,
-						"name": "Reindeer Smolder",
+						"name": "Reindeer Smolder (Obsidian)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					}
 				}
@@ -72792,66 +73226,66 @@
 				"chromas": {
 					"21": {
 						"id": 21,
-						"name": "Winter Wonder Milio",
+						"name": "Winter Wonder Milio (Ruby)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#D33528",
+							"#D33528"
 						]
 					},
 					"22": {
 						"id": 22,
-						"name": "Winter Wonder Milio",
+						"name": "Winter Wonder Milio (Catseye)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#FFEE59",
+							"#FFEE59"
 						]
 					},
 					"23": {
 						"id": 23,
-						"name": "Winter Wonder Milio",
+						"name": "Winter Wonder Milio (Emerald)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#2DA130",
+							"#2DA130"
 						]
 					},
 					"24": {
 						"id": 24,
-						"name": "Winter Wonder Milio",
+						"name": "Winter Wonder Milio (Turquoise)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#73BFBE",
+							"#73BFBE"
 						]
 					},
 					"25": {
 						"id": 25,
-						"name": "Winter Wonder Milio",
+						"name": "Winter Wonder Milio (Amethyst)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#9C68D7",
+							"#9C68D7"
 						]
 					},
 					"26": {
 						"id": 26,
-						"name": "Winter Wonder Milio",
+						"name": "Winter Wonder Milio (Pearl)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#ECF9F8",
+							"#ECF9F8"
 						]
 					},
 					"27": {
 						"id": 27,
-						"name": "Winter Wonder Milio",
+						"name": "Winter Wonder Milio (Obsidian)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#27211C",
+							"#27211C"
 						]
 					},
 					"28": {
 						"id": 28,
-						"name": "Winter Wonder Milio",
+						"name": "Winter Wonder Milio (Rose Quartz)",
 						"colors": [
-							"#000000",
-							"#000000"
+							"#E58BA5",
+							"#E58BA5"
 						]
 					}
 				}

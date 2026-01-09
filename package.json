@@ -1,6 +1,6 @@
 {
 	"name": "@lol-archiver/lol-vo-extract",
-	"version": "2.10.4",
+	"version": "2.11.0",
 	"description": "Extracting League of Legends champion/skin voices and matching them to in-game events",
 	"author": "DanoR",
 	"license": "LGPL-3.0-or-later",
@@ -27,7 +27,7 @@
 		"buffer-crc32": "^0.2.13",
 		"dayjs": "^1.11.19",
 		"filenamify": "^6.0.0",
-		"fs-extra": "^11.3.2",
+		"fs-extra": "^11.3.3",
 		"https-proxy-agent": "^5.0.1",
 		"iconv-lite": "^0.6.3",
 		"node-gzip": "^1.1.2",
@@ -36,11 +36,11 @@
 		"xxhashjs": "^0.2.2"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.39.1",
+		"@eslint/js": "^9.39.2",
 		"@stylistic/eslint-plugin": "^5.6.1",
 		"@types/fs-extra": "^11.0.4",
-		"@types/node": "^24.10.1",
-		"eslint": "^9.39.1",
+		"@types/node": "^24.10.4",
+		"eslint": "^9.39.2",
 		"globals": "^16.5.0"
 	}
 }

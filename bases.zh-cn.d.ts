@@ -229,18 +229,24 @@ export type ExtractConfig = {
 
 	/** 是否跳过提取语音文件 */
 	readonly skipExtract: boolean;
-	/** 是否跳过保存听写文件 */
-	readonly skipSaveDictation: boolean;
-	/** 是否用更简短的名称来导出内容 */
-	readonly saveWithShort: boolean;
 	/** 是否无视提取缓存，强制提取音频 */
 	readonly forceExtractFile: boolean;
+
+	/** 是否用更简短的名称来导出内容 */
+	readonly saveWithShort: boolean;
 	/** 导出的文件名是否包含对应的wem文件哈希（用于横向对比） */
 	readonly noWEMHashInExportFileName: boolean;
 	/** 导出的文件名是否包含对应的Audio ID（用于横向对比） */
 	readonly noAudioIDInExportFileName: boolean;
 	/** 导出的文件名是否包含对应的服务器（用于横向对比） */
 	readonly noRegionInExportFileName: boolean;
+
+	/** 是否跳过保存听写文件 */
+	readonly skipSaveDictation: boolean;
+	/** 是否根据id排序听写文件的子项 */
+	readonly sortDictationChildrenByID: boolean;
+	/** 是否缩进听写文件的Sound子项 */
+	readonly indentDictationSound: boolean;
 
 
 	/** zstd压缩程序路径（非必要。当用外部ZSTD程序代替Node内建API时声明） */

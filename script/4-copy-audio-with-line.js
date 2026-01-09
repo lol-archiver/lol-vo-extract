@@ -23,7 +23,6 @@ const copyAudioWithLine = E => {
 	const dirTarget = resolve(dirWorking, '@3side', '@line-audio');
 	emptyDirSync(dirTarget);
 
-
 	const region = (!E.saveWithShort ? E.regionCDN : E.regionCDN.replace(/\d+$/, '')).toLowerCase();
 
 	const slotMatch = E.mode == 'skin' ? `${pad0(E.champion.id)}${pad0(E.skin.id)}@` : `${E.slot}@`;

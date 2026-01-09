@@ -45,33 +45,33 @@ const convertEventNameToTitle = (name, mapsTitleEvent$name) => {
 };
 
 
-const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0) => {
+const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0, E) => {
 	if(!object) {
 		if(id) { return texts.push(`${'\t'.repeat(level)}@Unknown[${showID(id)}]`); }
 
 		return;
 	}
 
+	const idsSound = objectParent.idsSound ?? objectParent.idsChildren ?? [];
+	const index = idsSound.indexOf(object.id);
 	if(object instanceof HIRCSound) {
-		const idsSound = objectParent.idsSound ?? objectParent.idsChildren ?? [];
-		const index = idsSound.indexOf(object.id);
 
-		texts.push(`- \`${toHexL8(object.id)}|${toHexL8(object.idAudio)}|index=${String(index).padStart(2, '0')}\` ***`);
+		texts.push(`idx(${String(index).padStart(2, '0')}) => ${'    '.repeat(E.indentDictationSound ? level : 0)}- \`${toHexL8(object.id)}|${toHexL8(object.idAudio)}\` ***`);
 	}
 	else {
-		texts.push(`${'\t'.repeat(level)}@${object.toString()}`);
+		texts.push(`idx(${String(index).padStart(2, '0')}) => ${'    '.repeat(level)}@${object.toString()}`);
 	}
 
 
 	if(object instanceof HIRCEvent) {
 		for(const idAction of object.idsAction) {
-			pushHIRCObjectText(objects.find(o => o.id == idAction), idAction, object, objects, texts, level + 1);
+			pushHIRCObjectText(objects.find(o => o.id == idAction), idAction, object, objects, texts, level + 1, E);
 		}
 
 		texts.push('');
 	}
 	else if(object instanceof HIRCAction) {
-		pushHIRCObjectText(objects.find(o => o.id == object.idTarget), object.idTarget, object, objects, texts, level + 1);
+		pushHIRCObjectText(objects.find(o => o.id == object.idTarget), object.idTarget, object, objects, texts, level + 1, E);
 	}
 	else if(
 		object instanceof HIRCContainer ||
@@ -82,10 +82,14 @@ const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0)
 			object.switches.filter(sw => sw.idsChildren?.length).forEach(sw => texts.push(`${'\t'.repeat(level + 1)}@${sw.toString()}`));
 		}
 
-		for(const idSound of(object.idsSound ?? object.idsChildren).toSorted((a, b) => toHexL8(a) > toHexL8(b) ? 1 : -1)) {
+
+		let idsSub = object.idsSound ?? object.idsChildren;
+		if(E.sortDictationChildrenByID) { idsSub = idsSub.toSorted((a, b) => toHexL8(a) > toHexL8(b) ? 1 : -1); }
+
+		for(const idSound of idsSub) {
 			const objectChild = objects.find(e => e.id == idSound);
 
-			pushHIRCObjectText(objectChild, idSound, object, objects, texts, level + 1);
+			pushHIRCObjectText(objectChild, idSound, object, objects, texts, level + 1, E);
 		}
 	}
 };
@@ -154,7 +158,7 @@ export default async function saveDictation(objectsBNKAll, E) {
 		};
 		textersEvent.push(texterEvent);
 
-		pushHIRCObjectText(event, event.id, {}, objectsBNKAll, texterEvent.texts);
+		pushHIRCObjectText(event, event.id, {}, objectsBNKAll, texterEvent.texts, 0, E);
 
 
 		for(const action of objectsBNKAll.filter(object => event.idsAction.includes(object.id))) {
@@ -171,7 +175,6 @@ export default async function saveDictation(objectsBNKAll, E) {
 
 		for(const text of texterEvent.texts) {
 			textsDictation.push(text);
-
 		}
 
 		textsDictation.push('');
