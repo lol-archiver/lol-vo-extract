@@ -11039,7 +11039,85 @@
 			"80": 76,
 			"81": 76,
 			"82": 76,
-			"83": 23
+			"83": 23,
+			"84": {
+				"id": 84,
+				"name": "Firecracker Ashe",
+				"chromas": {
+					"85": {
+						"id": 85,
+						"name": "Firecracker Ashe (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"86": {
+						"id": 86,
+						"name": "Firecracker Ashe (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"87": {
+						"id": 87,
+						"name": "Firecracker Ashe (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"88": {
+						"id": 88,
+						"name": "Firecracker Ashe (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"89": {
+						"id": 89,
+						"name": "Firecracker Ashe (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"90": {
+						"id": 90,
+						"name": "Firecracker Ashe (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"91": {
+						"id": 91,
+						"name": "Firecracker Ashe (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"92": {
+						"id": 92,
+						"name": "Firecracker Ashe (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"85": 84,
+			"86": 84,
+			"87": 84,
+			"88": 84,
+			"89": 84,
+			"90": 84,
+			"91": 84,
+			"92": 84
 		},
 		"spells": {
 			"p": "Frost Shot",
@@ -22166,7 +22244,85 @@
 				}
 			},
 			"52": 50,
-			"53": 51
+			"53": 51,
+			"54": {
+				"id": 54,
+				"name": "Firecracker Caitlyn",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Firecracker Caitlyn (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Firecracker Caitlyn (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Firecracker Caitlyn (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Firecracker Caitlyn (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Firecracker Caitlyn (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Firecracker Caitlyn (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Firecracker Caitlyn (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Firecracker Caitlyn (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"55": 54,
+			"56": 54,
+			"57": 54,
+			"58": 54,
+			"59": 54,
+			"60": 54,
+			"61": 54,
+			"62": 54
 		},
 		"spells": {
 			"p": "Headshot",
@@ -23763,7 +23919,85 @@
 			"66": 59,
 			"67": 59,
 			"68": 59,
-			"69": 60
+			"69": 60,
+			"70": {
+				"id": 70,
+				"name": "Petals of Spring Katarina",
+				"chromas": {
+					"71": {
+						"id": 71,
+						"name": "Petals of Spring Katarina (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Petals of Spring Katarina (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Petals of Spring Katarina (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Petals of Spring Katarina (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Petals of Spring Katarina (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Petals of Spring Katarina (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"77": {
+						"id": 77,
+						"name": "Petals of Spring Katarina (Peridot)",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Petals of Spring Katarina (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"71": 70,
+			"72": 70,
+			"73": 70,
+			"74": 70,
+			"75": 70,
+			"76": 70,
+			"77": 70,
+			"78": 70
 		},
 		"spells": {
 			"p": "Voracity",
@@ -30410,7 +30644,85 @@
 			"38": 33,
 			"39": 33,
 			"40": 33,
-			"41": 33
+			"41": 33,
+			"42": {
+				"id": 42,
+				"name": "Firecracker Poppy",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Firecracker Poppy (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Firecracker Poppy (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Firecracker Poppy (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Firecracker Poppy (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Firecracker Poppy (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Firecracker Poppy (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Firecracker Poppy (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Firecracker Poppy (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42,
+			"48": 42,
+			"49": 42,
+			"50": 42
 		},
 		"spells": {
 			"p": "Iron Ambassador",
@@ -43955,7 +44267,85 @@
 			"39": 33,
 			"40": 33,
 			"41": 33,
-			"42": 33
+			"42": 33,
+			"43": {
+				"id": 43,
+				"name": "Firecracker Ziggs",
+				"chromas": {
+					"44": {
+						"id": 44,
+						"name": "Firecracker Ziggs (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Firecracker Ziggs (Citrine)",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Firecracker Ziggs (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Firecracker Ziggs (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Firecracker Ziggs (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Firecracker Ziggs (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Firecracker Ziggs (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Firecracker Ziggs (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"44": 43,
+			"45": 43,
+			"46": 43,
+			"47": 43,
+			"48": 43,
+			"49": 43,
+			"50": 43,
+			"51": 43
 		},
 		"spells": {
 			"p": "Short Fuse",
@@ -46965,7 +47355,85 @@
 				"name": "Prestige T1 Jayce",
 				"chromas": {}
 			},
-			"37": 34
+			"37": 34,
+			"38": {
+				"id": 38,
+				"name": "Petals of Spring Jayce",
+				"chromas": {
+					"39": {
+						"id": 39,
+						"name": "Petals of Spring Jayce (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Petals of Spring Jayce (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Petals of Spring Jayce (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Petals of Spring Jayce (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Petals of Spring Jayce (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Petals of Spring Jayce (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Petals of Spring Jayce (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Petals of Spring Jayce (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"39": 38,
+			"40": 38,
+			"41": 38,
+			"42": 38,
+			"43": 38,
+			"44": 38,
+			"45": 38,
+			"46": 38
 		},
 		"spells": {
 			"p": "Hextech Capacitor",
@@ -49234,7 +49702,12 @@
 			"34": 31,
 			"35": 31,
 			"36": 31,
-			"37": 31
+			"37": 31,
+			"38": {
+				"id": 38,
+				"name": "Divine Architect Porcelain Aurelion Sol",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Cosmic Creator",
@@ -51721,7 +52194,85 @@
 			"55": 50,
 			"56": 50,
 			"57": 50,
-			"58": 50
+			"58": 50,
+			"59": {
+				"id": 59,
+				"name": "Firecracker Seraphine",
+				"chromas": {
+					"60": {
+						"id": 60,
+						"name": "Firecracker Seraphine (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Firecracker Seraphine (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Firecracker Seraphine (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"63": {
+						"id": 63,
+						"name": "Firecracker Seraphine (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"64": {
+						"id": 64,
+						"name": "Firecracker Seraphine (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Firecracker Seraphine (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Firecracker Seraphine (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Firecracker Seraphine (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"60": 59,
+			"61": 59,
+			"62": 59,
+			"63": 59,
+			"64": 59,
+			"65": 59,
+			"66": 59,
+			"67": 59
 		},
 		"spells": {
 			"p": "Stage Presence",
@@ -53139,7 +53690,85 @@
 				"id": 87,
 				"name": "Genesis Nightbringer Yasuo",
 				"chromas": {}
-			}
+			},
+			"88": {
+				"id": 88,
+				"name": "Petals of Spring Yasuo",
+				"chromas": {
+					"89": {
+						"id": 89,
+						"name": "Petals of Spring Yasuo (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"90": {
+						"id": 90,
+						"name": "Petals of Spring Yasuo (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"91": {
+						"id": 91,
+						"name": "Petals of Spring Yasuo (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"92": {
+						"id": 92,
+						"name": "Petals of Spring Yasuo (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"93": {
+						"id": 93,
+						"name": "Petals of Spring Yasuo (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"94": {
+						"id": 94,
+						"name": "Petals of Spring Yasuo (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"95": {
+						"id": 95,
+						"name": "Petals of Spring Yasuo (Peridot)",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"96": {
+						"id": 96,
+						"name": "Petals of Spring Yasuo (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"89": 88,
+			"90": 88,
+			"91": 88,
+			"92": 88,
+			"93": 88,
+			"94": 88,
+			"95": 88,
+			"96": 88
 		},
 		"spells": {
 			"p": "Way of the Wanderer",
@@ -54002,7 +54631,85 @@
 			"40": 31,
 			"41": 31,
 			"42": 31,
-			"43": 10
+			"43": 10,
+			"44": {
+				"id": 44,
+				"name": "Petals of Spring Camille",
+				"chromas": {
+					"45": {
+						"id": 45,
+						"name": "Petals of Spring Camille (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Petals of Spring Camille (Peridot)",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Petals of Spring Camille (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Petals of Spring Camille (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Petals of Spring Camille (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Petals of Spring Camille (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Petals of Spring Camille (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Petals of Spring Camille (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"45": 44,
+			"46": 44,
+			"47": 44,
+			"48": 44,
+			"49": 44,
+			"50": 44,
+			"51": 44,
+			"52": 44
 		},
 		"spells": {
 			"p": "Adaptive Defenses",
@@ -57682,7 +58389,12 @@
 			"39": 37,
 			"40": 37,
 			"41": 37,
-			"42": 37
+			"42": 37,
+			"43": {
+				"id": 43,
+				"name": "Revenant Reign Viego",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Sovereign's Domination",
@@ -62936,7 +63648,85 @@
 			"66": 61,
 			"67": 61,
 			"68": 61,
-			"69": 61
+			"69": 61,
+			"70": {
+				"id": 70,
+				"name": "Firecracker Yuumi",
+				"chromas": {
+					"71": {
+						"id": 71,
+						"name": "Firecracker Yuumi (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Firecracker Yuumi (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Firecracker Yuumi (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Firecracker Yuumi (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "Firecracker Yuumi (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Firecracker Yuumi (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"77": {
+						"id": 77,
+						"name": "Firecracker Yuumi (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "Firecracker Yuumi (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"71": 70,
+			"72": 70,
+			"73": 70,
+			"74": 70,
+			"75": 70,
+			"76": 70,
+			"77": 70,
+			"78": 70
 		},
 		"spells": {
 			"p": "Feline Friendship",
@@ -71492,7 +72282,67 @@
 			"42": 37,
 			"43": 37,
 			"44": 37,
-			"45": 37
+			"45": 37,
+			"46": {
+				"id": 46,
+				"name": "Petals of Spring Lillia",
+				"chromas": {
+					"47": {
+						"id": 47,
+						"name": "Petals of Spring Lillia (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Petals of Spring Lillia (Citrine)",
+						"colors": [
+							"#DF9117",
+							"#DF9117"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Petals of Spring Lillia (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Petals of Spring Lillia (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Petals of Spring Lillia (Peridot)",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Petals of Spring Lillia (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					}
+				}
+			},
+			"47": 46,
+			"48": 46,
+			"49": 46,
+			"50": 46,
+			"51": 46,
+			"52": 46
 		},
 		"spells": {
 			"p": "Dream-Laden Bough",
