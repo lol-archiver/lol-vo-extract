@@ -58,6 +58,7 @@ export default [
 	['PingEnemyMissing', '信号:敌人不见了'],
 	['PingOnMyWay', '信号:正在路上'],
 	['PingCaution', '信号:谨慎行事'],
+	['PingTarget', '信号:指定目标'],
 
 	['Ally', '友方'],
 	['Enemy', '敌方'],
@@ -104,9 +105,12 @@ export default [
 	['Gromp', '生物:魔沼蛙'],
 	['Raptor', '生物:锋喙鸟'],
 	['Murkwolf', '生物:暗影狼'],
+	['wolf', '生物:暗影狼'],
 	['RiftScuttler', '生物:峡谷迅捷蟹'],
+	['Scuttler', '生物:迅捷蟹'],
 	['JungleBuff', '生物:野区增益生物'],
 	['BlueSentinel', '生物:苍蓝雕纹魔像'],
+	['Sentinel', '生物:魔像'],
 	['RedBrambleback', '生物:绯红印记树怪'],
 
 	['Buff', '强化'],

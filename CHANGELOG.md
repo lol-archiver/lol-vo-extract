@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## v2.11.3 - 2026.04.20 09
+* improve: not streaming HIRCSound detected! update detect condition
+* improve: dictation text format
+* regular: update base data
+* regular: bump up dependencies
+
+
+## v2.11.2 - 2026.03.06 09
+* regular: update base data
+* regular: bump up dependencies
+
+
+## v2.11.1 - 2026.01.30 15
+* regular: update base data
+* regular: bump up dependencies
+
+
 ## v2.11.0 - 2026.01.09 10
 * feat(config): new config `sortDictationChildrenByID`
   * which can effct output format in dictation text

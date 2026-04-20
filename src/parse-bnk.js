@@ -205,7 +205,7 @@ const parseHIRCSound = (idSection, B, GGG) => {
 	] = B.unpack('HxxBI');
 
 
-	if(typeStream != 2) { GGG.warnD(`! A ~[HIRCSound] not streaming. Check it!`); }
+	if(typeStream != 0 && typeStream != 2) { GGG.warnD(`! A ~[HIRCSound] not in bank and not streaming. Check it!`); }
 	if(typePlugin == 2) { GGG.warnD(`! A ~[HIRCSound] use source plguin. It may include params. Check it!`); }
 
 

@@ -47,7 +47,7 @@ const convertEventNameToTitle = (name, mapsTitleEvent$name) => {
 
 const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0, E) => {
 	if(!object) {
-		if(id) { return texts.push(`${'\t'.repeat(level)}@Unknown[${showID(id)}]`); }
+		if(id) { return texts.push(`idx(-1) => ${'    '.repeat(level)}@Unknown[${showID(id)}]`); }
 
 		return;
 	}
@@ -79,7 +79,7 @@ const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0,
 	) {
 		// Switch Conatiner
 		if(object.type == 6) {
-			object.switches.filter(sw => sw.idsChildren?.length).forEach(sw => texts.push(`${'\t'.repeat(level + 1)}@${sw.toString()}`));
+			object.switches.filter(sw => sw.idsChildren?.length).forEach(sw => texts.push(`idx(-1) => ${'    '.repeat(level + 1)}@${sw.toString()}`));
 		}
 
 

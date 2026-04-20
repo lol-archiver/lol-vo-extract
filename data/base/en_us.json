@@ -463,7 +463,12 @@
 			"55": 50,
 			"56": 50,
 			"57": 50,
-			"58": 50
+			"58": 50,
+			"59": {
+				"id": 59,
+				"name": "Pandemonium Annie",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Pyromania",
@@ -3479,7 +3484,85 @@
 				"id": 48,
 				"name": "Masque of the Black Rose Vladimir",
 				"chromas": {}
-			}
+			},
+			"49": {
+				"id": 49,
+				"name": "PsyOps Vladimir",
+				"chromas": {
+					"50": {
+						"id": 50,
+						"name": "PsyOps Vladimir (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "PsyOps Vladimir (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "PsyOps Vladimir (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "PsyOps Vladimir (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "PsyOps Vladimir (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "PsyOps Vladimir (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "PsyOps Vladimir (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "PsyOps Vladimir (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"50": 49,
+			"51": 49,
+			"52": 49,
+			"53": 49,
+			"54": 49,
+			"55": 49,
+			"56": 49,
+			"57": 49
 		},
 		"spells": {
 			"p": "Crimson Pact",
@@ -5453,7 +5536,12 @@
 			"112": 106,
 			"113": 106,
 			"114": 106,
-			"115": 106
+			"115": 106,
+			"116": {
+				"id": 116,
+				"name": "PROJECT: Command Line Yi",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Double Strike",
@@ -7169,7 +7257,85 @@
 				"name": "Ann-Sivir-sary",
 				"chromas": {}
 			},
-			"71": 50
+			"71": 50,
+			"72": {
+				"id": 72,
+				"name": "PROJECT: Sivir",
+				"chromas": {
+					"73": {
+						"id": 73,
+						"name": "PROJECT: Sivir (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "PROJECT: Sivir (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "PROJECT: Sivir (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"76": {
+						"id": 76,
+						"name": "PROJECT: Sivir (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"77": {
+						"id": 77,
+						"name": "PROJECT: Sivir (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"78": {
+						"id": 78,
+						"name": "PROJECT: Sivir (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"79": {
+						"id": 79,
+						"name": "PROJECT: Sivir (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"80": {
+						"id": 80,
+						"name": "PROJECT: Sivir (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"73": 72,
+			"74": 72,
+			"75": 72,
+			"76": 72,
+			"77": 72,
+			"78": 72,
+			"79": 72,
+			"80": 72
 		},
 		"spells": {
 			"p": "Fleet of Foot",
@@ -16769,7 +16935,22 @@
 			"67": 64,
 			"68": 64,
 			"69": 64,
-			"70": 64
+			"70": 64,
+			"71": {
+				"id": 71,
+				"name": "Prestige Pandemonium Shaco",
+				"chromas": {
+					"72": {
+						"id": 72,
+						"name": "Prestige Pandemonium Shaco (Vivid)",
+						"colors": [
+							"#CE1717",
+							"#550000"
+						]
+					}
+				}
+			},
+			"72": 71
 		},
 		"spells": {
 			"p": "Backstab",
@@ -21903,7 +22084,85 @@
 			"38": 32,
 			"39": 32,
 			"40": 32,
-			"41": 32
+			"41": 32,
+			"42": {
+				"id": 42,
+				"name": "Fried Chicken King Swain",
+				"chromas": {
+					"43": {
+						"id": 43,
+						"name": "Fried Chicken King Swain (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Fried Chicken King Swain (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Fried Chicken King Swain (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Fried Chicken King Swain (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Fried Chicken King Swain (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"48": {
+						"id": 48,
+						"name": "Fried Chicken King Swain (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "Fried Chicken King Swain (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Fried Chicken King Swain (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					}
+				}
+			},
+			"43": 42,
+			"44": 42,
+			"45": 42,
+			"46": 42,
+			"47": 42,
+			"48": 42,
+			"49": 42,
+			"50": 42
 		},
 		"spells": {
 			"p": "Ravenous Flock",
@@ -22962,7 +23221,85 @@
 			"61": 56,
 			"62": 56,
 			"63": 56,
-			"64": 56
+			"64": 56,
+			"66": {
+				"id": 66,
+				"name": "Bubble Bash Blitzcrank",
+				"chromas": {
+					"67": {
+						"id": 67,
+						"name": "Bubble Bash Blitzcrank (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Bubble Bash Blitzcrank (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Bubble Bash Blitzcrank (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Bubble Bash Blitzcrank (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Bubble Bash Blitzcrank (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Bubble Bash Blitzcrank (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Bubble Bash Blitzcrank (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "Bubble Bash Blitzcrank (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					}
+				}
+			},
+			"67": 66,
+			"68": 66,
+			"69": 66,
+			"70": 66,
+			"71": 66,
+			"72": 66,
+			"73": 66,
+			"74": 66
 		},
 		"spells": {
 			"p": "Mana Barrier",
@@ -28236,7 +28573,67 @@
 				}
 			},
 			"65": 64,
-			"66": 64
+			"66": 64,
+			"67": {
+				"id": 67,
+				"name": "Demoncursed Vayne",
+				"chromas": {
+					"68": {
+						"id": 68,
+						"name": "Demoncursed Vayne (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Demoncursed Vayne (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Demoncursed Vayne (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Demoncursed Vayne (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Demoncursed Vayne (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "Demoncursed Vayne (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"68": 67,
+			"69": 67,
+			"70": 67,
+			"71": 67,
+			"72": 67,
+			"73": 67
 		},
 		"spells": {
 			"p": "Night Hunter",
@@ -32689,7 +33086,22 @@
 				"id": 54,
 				"name": "Sahn-Uzal Mordekaiser",
 				"chromas": {}
-			}
+			},
+			"55": {
+				"id": 55,
+				"name": "Prestige Money Miser Mordekaiser",
+				"chromas": {
+					"58": {
+						"id": 58,
+						"name": "Prestige Money Miser Mordekaiser (Vivid)",
+						"colors": [
+							"#D231B6",
+							"#BBA147"
+						]
+					}
+				}
+			},
+			"58": 55
 		},
 		"spells": {
 			"p": "Darkness Rise",
@@ -38897,7 +39309,7 @@
 			},
 			"1": {
 				"id": 1,
-				"name": "Ironscale Shyvana",
+				"name": "Shyvana Ironscale",
 				"chromas": {}
 			},
 			"2": {
@@ -43146,7 +43558,85 @@
 			"44": 36,
 			"45": 36,
 			"46": 36,
-			"47": 5
+			"47": 5,
+			"48": {
+				"id": 48,
+				"name": "Pug Trainer Sejuani",
+				"chromas": {
+					"49": {
+						"id": 49,
+						"name": "Pug Trainer Sejuani (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "Pug Trainer Sejuani (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Pug Trainer Sejuani (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Pug Trainer Sejuani (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Pug Trainer Sejuani (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Pug Trainer Sejuani (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Pug Trainer Sejuani (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Pug Trainer Sejuani (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"49": 48,
+			"50": 48,
+			"51": 48,
+			"52": 48,
+			"53": 48,
+			"54": 48,
+			"55": 48,
+			"56": 48
 		},
 		"spells": {
 			"p": "Fury of the North",
@@ -53044,7 +53534,85 @@
 			"29": 24,
 			"30": 24,
 			"31": 24,
-			"32": 24
+			"32": 24,
+			"33": {
+				"id": 33,
+				"name": "Space Groove Zac",
+				"chromas": {
+					"34": {
+						"id": 34,
+						"name": "Space Groove Zac (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Space Groove Zac (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Space Groove Zac (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Space Groove Zac (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Space Groove Zac (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Space Groove Zac (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Space Groove Zac (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Space Groove Zac (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"34": 33,
+			"35": 33,
+			"36": 33,
+			"37": 33,
+			"38": 33,
+			"39": 33,
+			"40": 33,
+			"41": 33
 		},
 		"spells": {
 			"p": "Cell Division",
@@ -55719,7 +56287,94 @@
 			"47": 42,
 			"48": 42,
 			"49": 42,
-			"50": 42
+			"50": 42,
+			"51": {
+				"id": 51,
+				"name": "Victorious Braum",
+				"chromas": {
+					"52": {
+						"id": 52,
+						"name": "Victorious Braum (Bronze)",
+						"colors": [
+							"#764D43",
+							"#764D43"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Victorious Braum (Silver)",
+						"colors": [
+							"#AAB5BA",
+							"#AAB5BA"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Victorious Braum (Gold)",
+						"colors": [
+							"#D9C445",
+							"#D9C445"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Victorious Braum (Platinum)",
+						"colors": [
+							"#55CDE5",
+							"#55CDE5"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Victorious Braum (Emerald)",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Victorious Braum (Diamond)",
+						"colors": [
+							"#65337F",
+							"#65337F"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Victorious Braum (Master)",
+						"colors": [
+							"#9D228D",
+							"#9D228D"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Victorious Braum (Grandmaster)",
+						"colors": [
+							"#B31316",
+							"#B31316"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Victorious Braum (Challenger)",
+						"colors": [
+							"#1D62C8",
+							"#1D62C8"
+						]
+					}
+				}
+			},
+			"52": 51,
+			"53": 51,
+			"54": 51,
+			"55": 51,
+			"56": 51,
+			"57": 51,
+			"58": 51,
+			"59": 51,
+			"60": 51
 		},
 		"spells": {
 			"p": "Concussive Blows",
@@ -56552,7 +57207,12 @@
 			"39": 34,
 			"40": 34,
 			"41": 34,
-			"42": 34
+			"42": 34,
+			"45": {
+				"id": 45,
+				"name": "Pandemonium Kindred",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Mark of the Kindred",
@@ -57850,7 +58510,85 @@
 			"35": 30,
 			"36": 30,
 			"37": 30,
-			"38": 30
+			"38": 30,
+			"39": {
+				"id": 39,
+				"name": "Choncc Kench",
+				"chromas": {
+					"40": {
+						"id": 40,
+						"name": "Choncc Kench (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Choncc Kench (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Choncc Kench (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Choncc Kench (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Choncc Kench (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Choncc Kench (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"46": {
+						"id": 46,
+						"name": "Choncc Kench (Sandstone)",
+						"colors": [
+							"#DED6B0",
+							"#DED6B0"
+						]
+					},
+					"47": {
+						"id": 47,
+						"name": "Choncc Kench (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"40": 39,
+			"41": 39,
+			"42": 39,
+			"43": 39,
+			"44": 39,
+			"45": 39,
+			"46": 39,
+			"47": 39
 		},
 		"spells": {
 			"p": "An Acquired Taste",
@@ -70416,7 +71154,85 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"29": {
+				"id": 29,
+				"name": "Surprise Party Vex",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Surprise Party Vex (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Surprise Party Vex (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Surprise Party Vex (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Surprise Party Vex (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Surprise Party Vex (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Surprise Party Vex (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Surprise Party Vex (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Surprise Party Vex (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29,
+			"36": 29,
+			"37": 29
 		},
 		"spells": {
 			"p": "Doom 'n Gloom",
