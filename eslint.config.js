@@ -1,10 +1,11 @@
 /**
- * @file @nuogz/dynamic-eslint-config
+ * @file @danor-lib/dynamic-eslint-config
  * @author DanoR
- * @version 5.5.1+25090510
- * @requires globals
- * @requires @eslint/js
- * @requires @stylistic/eslint-plugin
+ * @version 5.5.3+26041417
+ * @requires eslint@10
+ * @requires globals@17
+ * @requires @eslint/js@10
+ * @requires @stylistic/eslint-plugin@5
  * @requires eslint-plugin-vue@^10 (optional)
  * @link https://gist.github.com/zheung/60a57c1bd87a82296fdf22dd9c277dec
  */
@@ -43,7 +44,7 @@ const configs = [
 			stylistic$linebreakStyle: [2, 'unix'],
 			stylistic$quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: 'always' }],
 			stylistic$commaDangle: [2, 'only-multiline'],
-			semi: [2],
+			stylistic$semi: [2],
 			noUnusedVars: [2, { vars: 'all', args: 'none' }],
 			noVar: [2],
 			noConsole: [2],
@@ -85,8 +86,9 @@ if(typesSource.has('browser')) {
 			'**/*.pure.?(c|m)js',
 			'src/**/*.?(c|m)js',
 			'!src/**/*.{api,lib,map}.?(c|m)js',
-			'!src/**/*.lib/**/*.?(c|m)js'
-		]);
+			'!src/**/*.lib/**/*.?(c|m)js',
+			typesSource.has('browser') ? '**/*.vue' : null,
+		].filter(Boolean));
 
 		configs.push({
 			name: 'globals-browser',
