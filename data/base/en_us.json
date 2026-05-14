@@ -6659,7 +6659,85 @@
 				"id": 49,
 				"name": "Grand Reckoning Sion",
 				"chromas": {}
-			}
+			},
+			"50": {
+				"id": 50,
+				"name": "Pizza Chef Sion",
+				"chromas": {
+					"51": {
+						"id": 51,
+						"name": "Pizza Chef Sion (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Pizza Chef Sion (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Pizza Chef Sion (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Pizza Chef Sion (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Pizza Chef Sion (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Pizza Chef Sion (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Pizza Chef Sion (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Pizza Chef Sion (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"51": 50,
+			"52": 50,
+			"53": 50,
+			"54": 50,
+			"55": 50,
+			"56": 50,
+			"57": 50,
+			"58": 50
 		},
 		"spells": {
 			"p": "Glory in Death",
@@ -18648,7 +18726,85 @@
 			"59": 55,
 			"60": 55,
 			"61": 55,
-			"62": 15
+			"62": 15,
+			"63": {
+				"id": 63,
+				"name": "Breadsticks Irelia",
+				"chromas": {
+					"64": {
+						"id": 64,
+						"name": "Breadsticks Irelia (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"65": {
+						"id": 65,
+						"name": "Breadsticks Irelia (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Breadsticks Irelia (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Breadsticks Irelia (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Breadsticks Irelia (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Breadsticks Irelia (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Breadsticks Irelia (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Breadsticks Irelia (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"64": 63,
+			"65": 63,
+			"66": 63,
+			"67": 63,
+			"68": 63,
+			"69": 63,
+			"70": 63,
+			"71": 63
 		},
 		"spells": {
 			"p": "Ionian Fervor",
@@ -35725,7 +35881,67 @@
 			"60": 52,
 			"61": 52,
 			"62": 52,
-			"63": 52
+			"63": 52,
+			"64": {
+				"id": 64,
+				"name": "Eternal Aspect Leona",
+				"chromas": {
+					"65": {
+						"id": 65,
+						"name": "Eternal Aspect Leona (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Eternal Aspect Leona (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Eternal Aspect Leona (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Eternal Aspect Leona (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Eternal Aspect Leona (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Eternal Aspect Leona (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"65": 64,
+			"66": 64,
+			"67": 64,
+			"68": 64,
+			"69": 64,
+			"70": 64
 		},
 		"spells": {
 			"p": "Sunlight",
@@ -49119,7 +49335,72 @@
 			"71": 64,
 			"72": 64,
 			"73": 64,
-			"74": 64
+			"74": 64,
+			"76": {
+				"id": 76,
+				"name": "Eternal Aspect Diana",
+				"chromas": {
+					"78": {
+						"id": 78,
+						"name": "Eternal Aspect Diana (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"79": {
+						"id": 79,
+						"name": "Eternal Aspect Diana (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"80": {
+						"id": 80,
+						"name": "Eternal Aspect Diana (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "Eternal Aspect Diana (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"82": {
+						"id": 82,
+						"name": "Eternal Aspect Diana (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"83": {
+						"id": 83,
+						"name": "Eternal Aspect Diana (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"77": {
+				"id": 77,
+				"name": "Eclipse Eternal Aspect Diana",
+				"chromas": {}
+			},
+			"78": 76,
+			"79": 76,
+			"80": 76,
+			"81": 76,
+			"82": 76,
+			"83": 76
 		},
 		"spells": {
 			"p": "Moonsilver Blade",
@@ -49328,7 +49609,85 @@
 			"20": 14,
 			"21": 14,
 			"22": 14,
-			"23": 14
+			"23": 14,
+			"24": {
+				"id": 24,
+				"name": "PROJECT: Quinn",
+				"chromas": {
+					"25": {
+						"id": 25,
+						"name": "PROJECT: Quinn (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "PROJECT: Quinn (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "PROJECT: Quinn (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "PROJECT: Quinn (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "PROJECT: Quinn (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"30": {
+						"id": 30,
+						"name": "PROJECT: Quinn (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "PROJECT: Quinn (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "PROJECT: Quinn (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"25": 24,
+			"26": 24,
+			"27": 24,
+			"28": 24,
+			"29": 24,
+			"30": 24,
+			"31": 24,
+			"32": 24
 		},
 		"spells": {
 			"p": "Harrier",
@@ -54694,7 +55053,67 @@
 			"25": 20,
 			"26": 20,
 			"27": 20,
-			"28": 20
+			"28": 20,
+			"29": {
+				"id": 29,
+				"name": "Spaghetti alla Vel'Koz",
+				"chromas": {
+					"30": {
+						"id": 30,
+						"name": "Spaghetti alla Vel'Koz (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"31": {
+						"id": 31,
+						"name": "Spaghetti alla Vel'Koz (Pesto)",
+						"colors": [
+							"#B6E084",
+							"#B6E084"
+						]
+					},
+					"32": {
+						"id": 32,
+						"name": "Spaghetti alla Vel'Koz (Dragon Fruit Noodle)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Spaghetti alla Vel'Koz (Strawberry Pasta)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Spaghetti alla Vel'Koz (Squid Ink Pasta)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Spaghetti alla Vel'Koz (Alfredo)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					}
+				}
+			},
+			"30": 29,
+			"31": 29,
+			"32": 29,
+			"33": 29,
+			"34": 29,
+			"35": 29
 		},
 		"spells": {
 			"p": "Organic Deconstruction",
@@ -65922,7 +66341,85 @@
 			"33": 27,
 			"34": 27,
 			"35": 27,
-			"36": 27
+			"36": 27,
+			"37": {
+				"id": 37,
+				"name": "Pasta Maker Illaoi",
+				"chromas": {
+					"38": {
+						"id": 38,
+						"name": "Pasta Maker Illaoi (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Pasta Maker Illaoi (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"40": {
+						"id": 40,
+						"name": "Pasta Maker Illaoi (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"41": {
+						"id": 41,
+						"name": "Pasta Maker Illaoi (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"42": {
+						"id": 42,
+						"name": "Pasta Maker Illaoi (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"43": {
+						"id": 43,
+						"name": "Pasta Maker Illaoi (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"44": {
+						"id": 44,
+						"name": "Pasta Maker Illaoi (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"45": {
+						"id": 45,
+						"name": "Pasta Maker Illaoi (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"38": 37,
+			"39": 37,
+			"40": 37,
+			"41": 37,
+			"42": 37,
+			"43": 37,
+			"44": 37,
+			"45": 37
 		},
 		"spells": {
 			"p": "Prophet of an Elder God",
@@ -66513,7 +67010,85 @@
 				"id": 30,
 				"name": "Spirit Blossom Ivern",
 				"chromas": {}
-			}
+			},
+			"31": {
+				"id": 31,
+				"name": "Rain Shepherd Ivern",
+				"chromas": {
+					"32": {
+						"id": 32,
+						"name": "Rain Shepherd Ivern (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"33": {
+						"id": 33,
+						"name": "Rain Shepherd Ivern (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"34": {
+						"id": 34,
+						"name": "Rain Shepherd Ivern (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"35": {
+						"id": 35,
+						"name": "Rain Shepherd Ivern (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"36": {
+						"id": 36,
+						"name": "Rain Shepherd Ivern (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"37": {
+						"id": 37,
+						"name": "Rain Shepherd Ivern (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"38": {
+						"id": 38,
+						"name": "Rain Shepherd Ivern (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"39": {
+						"id": 39,
+						"name": "Rain Shepherd Ivern (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"32": 31,
+			"33": 31,
+			"34": 31,
+			"35": 31,
+			"36": 31,
+			"37": 31,
+			"38": 31,
+			"39": 31
 		},
 		"spells": {
 			"p": "Friend of the Forest",

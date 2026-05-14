@@ -1,7 +1,7 @@
 /**
  * @file @danor-lib/dynamic-eslint-config
  * @author DanoR
- * @version 5.5.3+26041417
+ * @version 5.5.4+26051111
  * @requires eslint@10
  * @requires globals@17
  * @requires @eslint/js@10
@@ -11,9 +11,9 @@
  */
 
 
-import { readFileSync } from 'fs';
-import { dirname, resolve } from 'path';
-import { fileURLToPath } from 'url';
+import { readFileSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import globals from 'globals';
 import js from '@eslint/js';

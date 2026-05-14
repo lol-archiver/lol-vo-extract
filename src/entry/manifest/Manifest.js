@@ -1,11 +1,11 @@
-import AS from 'assert';
-import { existsSync, readFileSync, writeFileSync } from 'fs';
-import { resolve } from 'path';
+import AS from 'node:assert';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 import Axios from 'axios';
 
 import { C, G } from '@nuogz/pangu';
-import Biffer from '@nuogz/biffer';
+import Biffer from '@danor-lib/biffer';
 
 import { dirCache } from '../../../lib/dir.js';
 import { T } from '../../../lib/i18n.js';

@@ -1,4 +1,3 @@
-
 import { T } from '../../../lib/i18n.js';
 
 import ManifestListItem from './ManifestListItem.js';

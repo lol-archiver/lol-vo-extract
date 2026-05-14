@@ -1,5 +1,5 @@
-import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { resolve } from 'path';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { ensureDirSync } from 'fs-extra/esm';
 import { dirTextAudio } from '../lib/dir.js';
 

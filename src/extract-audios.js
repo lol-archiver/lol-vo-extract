@@ -1,10 +1,10 @@
-import { execFileSync } from 'child_process';
-import { existsSync, writeFileSync, readdirSync, renameSync } from 'fs';
-import { parse as parsePath, resolve as resolvePath } from 'path';
+import { execFileSync } from 'node:child_process';
+import { existsSync, writeFileSync, readdirSync, renameSync } from 'node:fs';
+import { parse as parsePath, resolve as resolvePath } from 'node:path';
 
 import { emptyDirSync } from 'fs-extra/esm';
 
-import Biffer from '@nuogz/biffer';
+import Biffer from '@danor-lib/biffer';
 
 import { G } from '@nuogz/pangu';
 
@@ -36,7 +36,7 @@ const extractWEM = (file, dirExtract) => {
 			bifferBank.seek(0);
 
 			let indexData;
-			while(!bifferBank.isEnd()) {
+			while(!bifferBank.isReach()) {
 				const [tagSection, sizeSection] = bifferBank.unpack('4sL');
 
 				// Bank Header
@@ -75,10 +75,10 @@ const extractWEM = (file, dirExtract) => {
 						throw Error(`unexpected ~[Data Index] length`);
 					}
 
-					const bifferDIDX = bifferBank.sub(sizeSection);
+					const bifferDIDX = bifferBank.slice(sizeSection);
 
 					const headers = [];
-					while(!bifferDIDX.isEnd()) {
+					while(!bifferDIDX.isReach()) {
 						const [id, offset, size] = bifferDIDX.unpack('3L');
 
 						headers.push({ id, offset, size });
@@ -89,14 +89,14 @@ const extractWEM = (file, dirExtract) => {
 					G.debugD('AudioExtractor', `~[${base}] ~[Data Index]`, `~[Size]~{${headers.length}}`);
 				}
 				else if(tagSection == 'DATA') {
-					const bifferDATA = bifferBank.sub(sizeSection);
+					const bifferDATA = bifferBank.slice(sizeSection);
 
 					if(!indexData) { continue; }
 
 					for(const { id, offset, size } of indexData.headers) {
 						bifferDATA.seek(offset);
 
-						writeFileSync(resolvePath(dirExtract, `${id}.wem`), bifferDATA.slice(size));
+						writeFileSync(resolvePath(dirExtract, `${id}.wem`), bifferDATA.slice(size, { wrap: false }));
 					}
 				}
 				else {
@@ -121,12 +121,12 @@ const extractWEM = (file, dirExtract) => {
 				const [offset, size, nameLength] = bifferBank.unpack('LLL');
 
 				if(size && offset && offset < bifferBank.length) {
-					const name = Buffer.from([...bifferBank.slice(nameLength * 2)].filter(byte => byte)).toString('utf8');
+					const name = Buffer.from([...bifferBank.slice(nameLength * 2, { wrap: false })].filter(byte => byte)).toString('utf8');
 
 					bifferBank.seek(offset);
 
 					if(name) {
-						writeFileSync(resolvePath(dirExtract, name), bifferBank.slice(size));
+						writeFileSync(resolvePath(dirExtract, name), bifferBank.slice(size, { wrap: false }));
 					}
 				}
 			}

@@ -7,7 +7,7 @@ export default class ManifestListItem {
 	/** @type {string} */
 	static nameItem;
 
-	/** @param {import('@nuogz/biffer').default} biffer */
+	/** @param {import('@danor-lib/biffer').default} biffer */
 	static parse = biffer => { };
 
 	constructor() {

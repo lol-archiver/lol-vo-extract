@@ -1,8 +1,15 @@
 # CHANGELOG
 
+## v2.12.0 - 2026.05.14 16
+* feat!: use `@danor-lib/biffer` instead `@nuogz/biffer`, and fix break
+* feat!: use `node:zlib.crc32` instead `buffer-crc32`
+* improve: improve import
+* regular: update base data
+* regular: bump up dependencies
+
+
 ## v2.11.3 - 2026.04.20 09
 * improve: not streaming HIRCSound detected! update detect condition
-* improve: dictation text format
 * regular: update base data
 * regular: bump up dependencies
 

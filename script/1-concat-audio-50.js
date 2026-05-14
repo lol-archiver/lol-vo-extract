@@ -1,9 +1,9 @@
 import '@nuogz/pangu/index.js?i18n&config&day&log=concat-audio-50&log.willOutputConsoleError=true&day';
 import { C, G, dirWorking } from '@nuogz/pangu';
 
-import { spawnSync } from 'child_process';
-import { copyFileSync, readdirSync, writeFileSync } from 'fs';
-import { parse, resolve } from 'path';
+import { spawnSync } from 'node:child_process';
+import { copyFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { parse, resolve } from 'node:path';
 
 import { emptyDirSync } from 'fs-extra/esm';
 import Iconv from 'iconv-lite';

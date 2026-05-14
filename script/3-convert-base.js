@@ -1,9 +1,9 @@
 import '@nuogz/pangu/index.js?i18n&dir=<entry>/..&config&day&log=convert-base&log.willOutputConsoleError=true';
 import { G, dirWorking } from '@nuogz/pangu';
 
-import AS from 'assert';
-import { writeFileSync } from 'fs';
-import { resolve as resolvePath } from 'path';
+import AS from 'node:assert';
+import { writeFileSync } from 'node:fs';
+import { resolve as resolvePath } from 'node:path';
 
 import { readJSONSync } from 'fs-extra/esm';
 

@@ -1,7 +1,7 @@
 import { G } from '@nuogz/pangu';
 
-import { appendFileSync, copyFileSync, existsSync, readdirSync, readFileSync } from 'fs';
-import { parse as parsePath, resolve as resolvePath } from 'path';
+import { appendFileSync, copyFileSync, existsSync, readdirSync, readFileSync } from 'node:fs';
+import { parse as parsePath, resolve as resolvePath } from 'node:path';
 
 import { ensureDirSync } from 'fs-extra/esm';
 

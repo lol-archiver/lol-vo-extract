@@ -1,4 +1,4 @@
-import { parse as parsePath, resolve } from 'path';
+import { parse as parsePath, resolve } from 'node:path';
 
 import { pad0 } from '../lib/utility.js';
 import { LEVEL_SOUND_EFFECT } from '../lib/constant.js';

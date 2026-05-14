@@ -1,9 +1,9 @@
 import '@nuogz/pangu/index.js?i18n&config&day&log=copy-audio-with-line&log.willOutputConsoleError=true';
 import { C, G, dirWorking } from '@nuogz/pangu';
 
-import { spawnSync } from 'child_process';
-import { copyFileSync, existsSync, readdirSync, readFileSync } from 'fs';
-import { resolve } from 'path';
+import { spawnSync } from 'node:child_process';
+import { copyFileSync, existsSync, readdirSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 import Filenamify from 'filenamify';
 import { emptyDirSync } from 'fs-extra/esm';

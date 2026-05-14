@@ -1,4 +1,4 @@
-import { writeFileSync } from 'fs';
+import { writeFileSync } from 'node:fs';
 
 import { en_us as dataE, zh_cn as dataZ } from '../lib/global.dataBase.js';
 

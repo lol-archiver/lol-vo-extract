@@ -1,6 +1,6 @@
 import { G } from '@nuogz/pangu';
 
-import { parse as parsePath, resolve as resolvePath } from 'path';
+import { parse as parsePath, resolve as resolvePath } from 'node:path';
 
 import { extractWAD } from '@lol-archiver/lol-wad-extract';
 

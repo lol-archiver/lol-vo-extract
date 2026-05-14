@@ -1,4 +1,4 @@
-import Biffer from '@nuogz/biffer';
+import Biffer from '@danor-lib/biffer';
 
 
 

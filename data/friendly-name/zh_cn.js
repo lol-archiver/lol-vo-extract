@@ -41,6 +41,8 @@ export default [
 	['RankOne', '初次'],
 	['Health', '血量'],
 	['General', ''],
+	['UseItemWard', '使用:道具:监视图腾'],
+	['KillWard', '摧毁:道具:监视图腾'],
 	['UseItem', '使用:道具'],
 	['Purchase', '购买:道具'],
 
@@ -115,4 +117,6 @@ export default [
 
 	['Buff', '强化'],
 	['Assist', '助攻'],
+	['RankOne', '升级:初次'],
+	['RankUp', '升级:技能'],
 ];

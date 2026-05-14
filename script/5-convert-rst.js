@@ -1,10 +1,10 @@
-import AS from 'assert';
-import { readFileSync, writeFileSync } from 'fs';
-import { parse, resolve } from 'path';
+import AS from 'node:assert';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { parse, resolve } from 'node:path';
 
 import { dirData } from '../lib/dir.js';
 import { C, G } from '../lib/global.js';
-import Biffer from '@nuogz/biffer';
+import Biffer from '@danor-lib/biffer';
 
 
 const hashes = readFileSync(resolve(dirData, 'hashes.rst.txt'), 'utf8').split('\n').map(line => line.split(' '))
@@ -52,7 +52,7 @@ if(versionMajor < 5) {
 	AS(biffer.slice(1)[0] == versionMinor);
 }
 
-const bifferEntries = biffer.sub(biffer.length);
+const bifferEntries = biffer.slice(biffer.length);
 
 for(const entry of entries) {
 	AS(entry.pos <= Number.MAX_SAFE_INTEGER, 'Over MAX_SAFE_INTEGER');

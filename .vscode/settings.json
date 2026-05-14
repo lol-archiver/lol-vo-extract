@@ -1,14 +1,25 @@
 {
-	"explorer.sortOrder": "modified",
+	"explorer.fileNesting.patterns": {
+		"package.json": "pnpm-lock.yaml, pnpm-workspace.yaml, tsconfig.json, eslint.config.js, .gitignore, CHANGELOG.md, README.md, README.*.md, LICENSE",
+		"vite.config.js": "postcss.config.js",
+		"index.js": "index.html, index.env.js",
+		"config.*.json": "config.${capture}.json.example, config.${capture}.json.example",
+		"config.*.jsonc": "config.${capture}.json.example, config.${capture}.jsonc.example",
+		"*.d.ts": "${capture}.d.ts.example",
+	},
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
 	"files.eol": "\n",
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
-	"javascript.preferences.importModuleSpecifierEnding": "js",
-	"explorer.fileNesting.patterns": {
-		"package.json": "pnpm-lock.yaml, tsconfig.json, eslint.config.js, .gitignore, CHANGELOG.md, README.md, README.zh.md, LICENSE",
-		"config.*.json": "config.${capture}.json.example, config.${capture}.json.example",
-		"config.*.jsonc": "config.${capture}.json.example, config.${capture}.jsonc.example",
-		"*.d.ts": "${capture}.d.ts.example"
-	}
+	"js/ts.preferences.importModuleSpecifierEnding": "js",
+	"js/ts.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	"js/ts.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+	"js/ts.format.semicolons": "insert",
+	"js/ts.preferences.quoteStyle": "single",
+	"js/ts.suggestionActions.enabled": false,
+	"js/ts.updateImportsOnFileMove.enabled": "always",
+	"explorer.sortOrder": "modified",
 }

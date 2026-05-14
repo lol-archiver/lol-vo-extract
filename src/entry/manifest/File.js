@@ -1,11 +1,11 @@
-import { appendFileSync } from 'fs';
-import { parse, resolve } from 'path';
+import { appendFileSync } from 'node:fs';
+import { parse, resolve } from 'node:path';
 
 import Bluebird from 'bluebird';
 import { ensureDirSync, removeSync } from 'fs-extra/esm';
 import { decompress } from 'node-zstandard';
 
-import Biffer from '@nuogz/biffer';
+import Biffer from '@danor-lib/biffer';
 
 import { G } from '@nuogz/pangu';
 

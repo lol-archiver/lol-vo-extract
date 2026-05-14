@@ -1,8 +1,8 @@
 import { G } from '@nuogz/pangu';
 
-import { parse as parsePath } from 'path';
+import { parse as parsePath } from 'node:path';
 
-import Biffer from '@nuogz/biffer';
+import Biffer from '@danor-lib/biffer';
 
 import { T, TS } from '../lib/i18n.js';
 import { toHexL8, showID, TLogError, StackError } from '../lib/utility.js';
@@ -519,12 +519,12 @@ export default async function parseBNK(E, file, literalsEvent) {
 		/** @type {number} */
 		let versionBank;
 
-		while(!bifferBNK.isEnd()) {
+		while(!bifferBNK.isReach()) {
 			const [tagSection, sizeSection] = bifferBNK.unpack('4sI');
 
 			// Hierarchy
 			if(tagSection == 'HIRC') {
-				const bifferSection = bifferBNK.sub(sizeSection);
+				const bifferSection = bifferBNK.slice(sizeSection);
 
 				const [sizeObject] = bifferSection.unpack('I');
 
@@ -533,7 +533,7 @@ export default async function parseBNK(E, file, literalsEvent) {
 
 					GG.traceD(...TS(`parse-bnk:parse-hirc`, { id: showID(id), type, pos: bifferSection.tell() - 10, length }, 'header'));
 
-					const B = bifferSection.sub(length - 4);
+					const B = bifferSection.slice(length - 4);
 
 					const [objectSection, objectsExtra] = parseHIRCObject(id, type, versionBank, idsBank, B, GG);
 

@@ -1,7 +1,7 @@
 import '../index.env.js';
 
-import { copyFileSync, readdirSync, writeFileSync } from 'fs';
-import { parse, resolve } from 'path';
+import { copyFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { parse, resolve } from 'node:path';
 
 import { emptyDirSync, ensureDirSync } from 'fs-extra/esm';
 import Iconv from 'iconv-lite';

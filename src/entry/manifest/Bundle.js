@@ -1,6 +1,6 @@
-import { createHash } from 'crypto';
-import { existsSync, readFileSync, writeFileSync } from 'fs';
-import { join } from 'path';
+import { createHash } from 'node:crypto';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 
 import Axios from 'axios';
 import joinURL from 'url-join';

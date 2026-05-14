@@ -1,5 +1,5 @@
-import AS from 'assert';
-import { appendFileSync } from 'fs';
+import AS from 'node:assert';
+import { appendFileSync } from 'node:fs';
 
 import { G } from '../../lib/global.js';
 import { en_us as dataE, zh_cn as dataZ } from '../../lib/database.js';

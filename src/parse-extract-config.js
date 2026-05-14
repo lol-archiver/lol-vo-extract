@@ -1,6 +1,6 @@
 import { C, Day, dirWorking } from '@nuogz/pangu';
 
-import { resolve as resolvePath } from 'path';
+import { resolve as resolvePath } from 'node:path';
 
 import { ensureDirSync } from 'fs-extra/esm';
 

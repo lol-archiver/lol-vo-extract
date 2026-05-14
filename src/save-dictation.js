@@ -1,7 +1,7 @@
 import { G } from '@nuogz/pangu';
 
-import { writeFileSync } from 'fs';
-import { resolve } from 'path';
+import { writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 import Filenamify from 'filenamify';
 
