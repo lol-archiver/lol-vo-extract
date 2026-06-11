@@ -3075,7 +3075,22 @@
 			},
 			"56": 55,
 			"57": 55,
-			"58": 19
+			"58": 19,
+			"59": {
+				"id": 59,
+				"name": "Prestige Sinful Shores LeBlanc",
+				"chromas": {
+					"60": {
+						"id": 60,
+						"name": "Prestige Sinful Shores LeBlanc (Vivid)",
+						"colors": [
+							"#B58CD2",
+							"#782834"
+						]
+					}
+				}
+			},
+			"60": 59
 		},
 		"spells": {
 			"p": "Mirror Image",
@@ -10720,7 +10735,7 @@
 				"chromas": {
 					"62": {
 						"id": 62,
-						"name": "PROJECT: Ashe Mythic Chroma",
+						"name": "PROJECT: Ashe (Mythic)",
 						"colors": [
 							"#DF9117",
 							"#821133"
@@ -27514,7 +27529,12 @@
 			"49": 42,
 			"50": 42,
 			"51": 42,
-			"52": 4
+			"52": 4,
+			"53": {
+				"id": 53,
+				"name": "Sinful Shores Brand",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Blaze",
@@ -27906,10 +27926,18 @@
 					},
 					"50": {
 						"id": 50,
-						"name": "Storm Dragon Lee Sin Mythic Chroma",
+						"name": "Storm Dragon Lee Sin (Mythic)",
 						"colors": [
 							"#E3CB3E",
 							"#BD3030"
+						]
+					},
+					"81": {
+						"id": 81,
+						"name": "Storm Dragon Lee Sin (Beacon)",
+						"colors": [
+							"#FF7D31",
+							"#4E3426"
 						]
 					}
 				}
@@ -28173,7 +28201,8 @@
 			"77": 72,
 			"78": 72,
 			"79": 72,
-			"80": 72
+			"80": 72,
+			"81": 31
 		},
 		"spells": {
 			"p": "Flurry",
@@ -32668,6 +32697,14 @@
 							"#27211C",
 							"#27211C"
 						]
+					},
+					"76": {
+						"id": 76,
+						"name": "Heavenscale Ezreal (Beacon)",
+						"colors": [
+							"#C8B557",
+							"#306781"
+						]
 					}
 				}
 			},
@@ -32774,7 +32811,8 @@
 			"72": 65,
 			"73": 65,
 			"74": 3,
-			"75": 19
+			"75": 19,
+			"76": 44
 		},
 		"spells": {
 			"p": "Rising Spell Force",
@@ -38554,7 +38592,85 @@
 				"name": "Three Honors Shen",
 				"chromas": {}
 			},
-			"53": 22
+			"53": 22,
+			"54": {
+				"id": 54,
+				"name": "Broken Covenant Shen",
+				"chromas": {
+					"55": {
+						"id": 55,
+						"name": "Broken Covenant Shen (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Broken Covenant Shen (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Broken Covenant Shen (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Broken Covenant Shen (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "Broken Covenant Shen (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"60": {
+						"id": 60,
+						"name": "Broken Covenant Shen (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"61": {
+						"id": 61,
+						"name": "Broken Covenant Shen (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"62": {
+						"id": 62,
+						"name": "Broken Covenant Shen (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"55": 54,
+			"56": 54,
+			"57": 54,
+			"58": 54,
+			"59": 54,
+			"60": 54,
+			"61": 54,
+			"62": 54
 		},
 		"spells": {
 			"p": "Ki Barrier",
@@ -47337,7 +47453,7 @@
 					},
 					"53": {
 						"id": 53,
-						"name": "Dunkmaster Darius Mythic Chroma",
+						"name": "Dunkmaster Darius (Mythic)",
 						"colors": [
 							"#B5A025",
 							"#17110D"
@@ -52516,6 +52632,14 @@
 							"#27211C",
 							"#27211C"
 						]
+					},
+					"82": {
+						"id": 82,
+						"name": "Heavenscale Kai'Sa (Beacon)",
+						"colors": [
+							"#F2A22F",
+							"#15A9CE"
+						]
 					}
 				}
 			},
@@ -52629,7 +52753,8 @@
 			"78": 69,
 			"79": 69,
 			"80": 69,
-			"81": 16
+			"81": 16,
+			"82": 59
 		},
 		"spells": {
 			"p": "Second Skin",
@@ -55993,7 +56118,85 @@
 				"id": 20,
 				"name": "Three Honors Akshan",
 				"chromas": {}
-			}
+			},
+			"21": {
+				"id": 21,
+				"name": "High Noon Akshan",
+				"chromas": {
+					"22": {
+						"id": 22,
+						"name": "High Noon Akshan (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "High Noon Akshan (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "High Noon Akshan (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "High Noon Akshan (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "High Noon Akshan (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "High Noon Akshan (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "High Noon Akshan (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"29": {
+						"id": 29,
+						"name": "High Noon Akshan (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"22": 21,
+			"23": 21,
+			"24": 21,
+			"25": 21,
+			"26": 21,
+			"27": 21,
+			"28": 21,
+			"29": 21
 		},
 		"spells": {
 			"p": "Dirty Fighting",
@@ -57252,7 +57455,85 @@
 				"id": 55,
 				"name": "Arcana Jhin",
 				"chromas": {}
-			}
+			},
+			"64": {
+				"id": 64,
+				"name": "Broken Covenant Jhin",
+				"chromas": {
+					"65": {
+						"id": 65,
+						"name": "Broken Covenant Jhin (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"66": {
+						"id": 66,
+						"name": "Broken Covenant Jhin (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"67": {
+						"id": 67,
+						"name": "Broken Covenant Jhin (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"68": {
+						"id": 68,
+						"name": "Broken Covenant Jhin (Turquoise)",
+						"colors": [
+							"#73BFBE",
+							"#73BFBE"
+						]
+					},
+					"69": {
+						"id": 69,
+						"name": "Broken Covenant Jhin (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"70": {
+						"id": 70,
+						"name": "Broken Covenant Jhin (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "Broken Covenant Jhin (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "Broken Covenant Jhin (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"65": 64,
+			"66": 64,
+			"67": 64,
+			"68": 64,
+			"69": 64,
+			"70": 64,
+			"71": 64,
+			"72": 64
 		},
 		"spells": {
 			"p": "Whisper",
@@ -60490,7 +60771,7 @@
 					},
 					"50": {
 						"id": 50,
-						"name": "High Noon Lucian Mythic Chroma",
+						"name": "High Noon Lucian (Mythic)",
 						"colors": [
 							"#CFC0A7",
 							"#59C3F2"
@@ -72783,6 +73064,107 @@
 			"r": "Transcend One's Self"
 		}
 	},
+	"805": {
+		"id": 805,
+		"name": "Locke",
+		"title": "",
+		"slot": "Locke",
+		"roles": [
+			"assassin"
+		],
+		"skins": {
+			"0": {
+				"id": 0,
+				"name": "Locke",
+				"chromas": {}
+			},
+			"1": {
+				"id": 1,
+				"name": "High Noon Locke",
+				"chromas": {
+					"2": {
+						"id": 2,
+						"name": "High Noon Locke (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"3": {
+						"id": 3,
+						"name": "High Noon Locke (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"4": {
+						"id": 4,
+						"name": "High Noon Locke (Amethyst)",
+						"colors": [
+							"#9C68D7",
+							"#9C68D7"
+						]
+					},
+					"5": {
+						"id": 5,
+						"name": "High Noon Locke (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"6": {
+						"id": 6,
+						"name": "High Noon Locke (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"7": {
+						"id": 7,
+						"name": "High Noon Locke (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"8": {
+						"id": 8,
+						"name": "High Noon Locke (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"9": {
+						"id": 9,
+						"name": "High Noon Locke (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"2": 1,
+			"3": 1,
+			"4": 1,
+			"5": 1,
+			"6": 1,
+			"7": 1,
+			"8": 1,
+			"9": 1
+		},
+		"spells": {
+			"p": "Silver Stake",
+			"q": "Ritual Nails",
+			"w": "Soul Ignition",
+			"e": "Ashen Pursuit",
+			"r": "Purgatory"
+		}
+	},
 	"875": {
 		"id": 875,
 		"name": "Sett",
@@ -74820,7 +75202,85 @@
 			"16": 11,
 			"17": 11,
 			"18": 11,
-			"19": 11
+			"19": 11,
+			"20": {
+				"id": 20,
+				"name": "Broken Covenant Aurora",
+				"chromas": {
+					"21": {
+						"id": 21,
+						"name": "Broken Covenant Aurora (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"22": {
+						"id": 22,
+						"name": "Broken Covenant Aurora (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"23": {
+						"id": 23,
+						"name": "Broken Covenant Aurora (Emerald)",
+						"colors": [
+							"#2DA130",
+							"#2DA130"
+						]
+					},
+					"24": {
+						"id": 24,
+						"name": "Broken Covenant Aurora (Tanzanite)",
+						"colors": [
+							"#54209B",
+							"#54209B"
+						]
+					},
+					"25": {
+						"id": 25,
+						"name": "Broken Covenant Aurora (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					},
+					"26": {
+						"id": 26,
+						"name": "Broken Covenant Aurora (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"27": {
+						"id": 27,
+						"name": "Broken Covenant Aurora (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"28": {
+						"id": 28,
+						"name": "Broken Covenant Aurora (Obsidian)",
+						"colors": [
+							"#27211C",
+							"#27211C"
+						]
+					}
+				}
+			},
+			"21": 20,
+			"22": 20,
+			"23": 20,
+			"24": 20,
+			"25": 20,
+			"26": 20,
+			"27": 20,
+			"28": 20
 		},
 		"spells": {
 			"p": "Spirit Abjuration",
@@ -76019,7 +76479,12 @@
 			"17": 11,
 			"18": 11,
 			"19": 11,
-			"20": 11
+			"20": 11,
+			"21": {
+				"id": 21,
+				"name": "Sinful Shores Hwei",
+				"chromas": {}
+			}
 		},
 		"spells": {
 			"p": "Signature of the Visionary",
@@ -76372,459 +76837,6 @@
 			"w": "The Call of the Pack",
 			"e": "Eviscerate",
 			"r": "Hounds' Pursuit"
-		}
-	},
-	"66600": {
-		"id": 66600,
-		"name": "Doom Bot Urgot",
-		"title": "",
-		"slot": "Ruby_Urgot",
-		"roles": [
-			"fighter",
-			"tank"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Urgot",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Echoing Flames",
-			"q": "Corrosive Charge",
-			"w": "Purge",
-			"e": "Disdain",
-			"r": "Fear Beyond Death"
-		}
-	},
-	"66602": {
-		"id": 66602,
-		"name": "Doom Bot Corki",
-		"title": "",
-		"slot": "Ruby_Corki",
-		"roles": [
-			"marksman",
-			"mage"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Corki",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Hextech Munitions",
-			"q": "Phosphorus Bomb",
-			"w": "Valkyrie",
-			"e": "Gatling Gun",
-			"r": "Missile Barrage"
-		}
-	},
-	"66603": {
-		"id": 66603,
-		"name": "Doom Bot Lux",
-		"title": "",
-		"slot": "Ruby_Lux",
-		"roles": [
-			"mage",
-			"support"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Lux",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Illumination",
-			"q": "Light Binding",
-			"w": "Prismatic Barrier",
-			"e": "Lucent Singularity",
-			"r": "Final Spark"
-		}
-	},
-	"66604": {
-		"id": 66604,
-		"name": "Doom Bot Amumu",
-		"title": "",
-		"slot": "Ruby_Amumu",
-		"roles": [
-			"tank",
-			"support"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Amumu",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Cursed Touch",
-			"q": "Bandage Toss",
-			"w": "Despair",
-			"e": "Tantrum",
-			"r": "Curse of the Sad Mummy"
-		}
-	},
-	"66605": {
-		"id": 66605,
-		"name": "Doom Bot Cho'Gath",
-		"title": "",
-		"slot": "Ruby_Chogath",
-		"roles": [
-			"tank",
-			"mage"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Cho'Gath",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Carnivore",
-			"q": "Rupture",
-			"w": "Feral Scream",
-			"e": "Vorpal Spikes",
-			"r": "Feast"
-		}
-	},
-	"66606": {
-		"id": 66606,
-		"name": "Doom Bot Tristana",
-		"title": "",
-		"slot": "Ruby_Tristana",
-		"roles": [
-			"marksman",
-			"assassin"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Tristana",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Draw a Bead",
-			"q": "Rapid Fire",
-			"w": "Rocket Jump",
-			"e": "Explosive Charge",
-			"r": "Buster Shot"
-		}
-	},
-	"66607": {
-		"id": 66607,
-		"name": "Doom Bot Nami",
-		"title": "",
-		"slot": "Ruby_Nami",
-		"roles": [
-			"support",
-			"mage"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Nami",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Surging Tides",
-			"q": "Aqua Prison",
-			"w": "Ebb and Flow",
-			"e": "Tidecaller's Blessing",
-			"r": "Tidal Wave"
-		}
-	},
-	"66608": {
-		"id": 66608,
-		"name": "Doom Bot Lee Sin",
-		"title": "",
-		"slot": "Ruby_LeeSin",
-		"roles": [
-			"fighter",
-			"assassin"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Lee Sin",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Flurry",
-			"q": "Sonic Wave / Resonating Strike",
-			"w": "Safeguard / Iron Will",
-			"e": "Tempest / Cripple",
-			"r": "Dragon's Rage"
-		}
-	},
-	"66609": {
-		"id": 66609,
-		"name": "Doom Bot Caitlyn",
-		"title": "",
-		"slot": "Ruby_Caitlyn",
-		"roles": [
-			"marksman"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Caitlyn",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Headshot",
-			"q": "Piltover Peacemaker",
-			"w": "Yordle Snap Trap",
-			"e": "90 Caliber Net",
-			"r": "Ace in the Hole"
-		}
-	},
-	"66610": {
-		"id": 66610,
-		"name": "Doom Bot Nautilus",
-		"title": "",
-		"slot": "Ruby_Nautilus",
-		"roles": [
-			"tank",
-			"support"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Nautilus",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Staggering Blow",
-			"q": "Dredge Line",
-			"w": "Titan's Wrath",
-			"e": "Riptide",
-			"r": "Depth Charge"
-		}
-	},
-	"66611": {
-		"id": 66611,
-		"name": "Doom Bot Maokai",
-		"title": "",
-		"slot": "Ruby_Maokai",
-		"roles": [
-			"tank",
-			"support"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Maokai",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Sap Magic",
-			"q": "Bramble Smash",
-			"w": "Twisted Advance",
-			"e": "Sapling Toss",
-			"r": "Nature's Grasp"
-		}
-	},
-	"66612": {
-		"id": 66612,
-		"name": "Doom Bot Xerath",
-		"title": "",
-		"slot": "Ruby_Xerath",
-		"roles": [
-			"mage",
-			"support"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Xerath",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Mana Surge",
-			"q": "Arcanopulse",
-			"w": "Eye of Destruction",
-			"e": "Shocking Orb",
-			"r": "Rite of the Arcane"
-		}
-	},
-	"66613": {
-		"id": 66613,
-		"name": "Doom Bot Brand",
-		"title": "",
-		"slot": "Ruby_Brand",
-		"roles": [
-			"mage",
-			"support"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Brand",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Blaze",
-			"q": "Sear",
-			"w": "Pillar of Flame",
-			"e": "Conflagration",
-			"r": "Pyroclasm"
-		}
-	},
-	"66614": {
-		"id": 66614,
-		"name": "Doom Bot Wukong",
-		"title": "",
-		"slot": "Ruby_Wukong",
-		"roles": [
-			"fighter",
-			"tank"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Wukong",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Stone Skin",
-			"q": "Crushing Blow",
-			"w": "Warrior Trickster",
-			"e": "Nimbus Strike",
-			"r": "Cyclone"
-		}
-	},
-	"66615": {
-		"id": 66615,
-		"name": "Doom Bot Soraka",
-		"title": "",
-		"slot": "Ruby_Soraka",
-		"roles": [
-			"support",
-			"mage"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Soraka",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Salvation",
-			"q": "Starcall",
-			"w": "Astral Infusion",
-			"e": "Equinox",
-			"r": "Wish"
-		}
-	},
-	"66616": {
-		"id": 66616,
-		"name": "Doom Bot Diana",
-		"title": "",
-		"slot": "Ruby_Diana",
-		"roles": [
-			"fighter",
-			"assassin"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Diana",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Moonsilver Blade",
-			"q": "Crescent Strike",
-			"w": "Pale Cascade",
-			"e": "Lunar Rush",
-			"r": "Moonfall"
-		}
-	},
-	"66617": {
-		"id": 66617,
-		"name": "Doom Bot Jinx",
-		"title": "",
-		"slot": "Ruby_Jinx",
-		"roles": [
-			"marksman"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Jinx",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Get Excited!",
-			"q": "Switcheroo!",
-			"w": "Zap!",
-			"e": "Flame Chompers!",
-			"r": "Super Mega Death Rocket!"
-		}
-	},
-	"66618": {
-		"id": 66618,
-		"name": "Doom Bot Malzahar",
-		"title": "",
-		"slot": "Ruby_Malzahar",
-		"roles": [
-			"mage"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Malzahar",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Void Shift",
-			"q": "Call of the Void",
-			"w": "Void Swarm",
-			"e": "Malefic Visions",
-			"r": "Nether Grasp"
-		}
-	},
-	"66619": {
-		"id": 66619,
-		"name": "Doom Bot Blitzcrank",
-		"title": "",
-		"slot": "Ruby_Blitzcrank",
-		"roles": [
-			"tank",
-			"support"
-		],
-		"skins": {
-			"0": {
-				"id": 0,
-				"name": "Doom Bot Blitzcrank",
-				"chromas": {}
-			}
-		},
-		"spells": {
-			"p": "Mana Barrier",
-			"q": "Rocket Grab",
-			"w": "Overdrive",
-			"e": "Power Fist",
-			"r": "Static Field"
 		}
 	}
 }
