@@ -47,7 +47,7 @@ const convertEventNameToTitle = (name, mapsTitleEvent$name) => {
 
 const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0, E) => {
 	if(!object) {
-		if(id) { return texts.push(`idx(-1) => ${'    '.repeat(level)}@Unknown[${showID(id)}]`); }
+		if(id) { return texts.push(`idx(--) => ${'    '.repeat(level)}@Unknown[${showID(id)}]`); }
 
 		return;
 	}
@@ -55,11 +55,10 @@ const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0,
 	const idsSound = objectParent.idsSound ?? objectParent.idsChildren ?? [];
 	const index = idsSound.indexOf(object.id);
 	if(object instanceof HIRCSound) {
-
-		texts.push(`idx(${String(index).padStart(2, '0')}) => ${'    '.repeat(E.indentDictationSound ? level : 0)}- \`${toHexL8(object.id)}|${toHexL8(object.idAudio)}\` ***`);
+		texts.push(`idx(${idsSound.length == 1 ? 'o1' : String(index).padStart(2, '0')}) => ${'    '.repeat(E.indentDictationSound ? level : 0)}- \`${toHexL8(object.id)}|${toHexL8(object.idAudio)}\` ***`);
 	}
 	else {
-		texts.push(`idx(${String(index).padStart(2, '0')}) => ${'    '.repeat(level)}@${object.toString()}`);
+		texts.push(`idx(--) => ${'    '.repeat(level)}@${object.toString()}`);
 	}
 
 
@@ -79,7 +78,7 @@ const pushHIRCObjectText = (object, id, objectParent, objects, texts, level = 0,
 	) {
 		// Switch Conatiner
 		if(object.type == 6) {
-			object.switches.filter(sw => sw.idsChildren?.length).forEach(sw => texts.push(`idx(-1) => ${'    '.repeat(level + 1)}@${sw.toString()}`));
+			object.switches.filter(sw => sw.idsChildren?.length).forEach(sw => texts.push(`idx(--) => ${'    '.repeat(level + 1)}@${sw.toString()}`));
 		}
 
 

@@ -2,7 +2,7 @@ import { G } from '@nuogz/pangu';
 
 import { parse as parsePath } from 'node:path';
 
-import Biffer from '@danor-lib/biffer';
+import { Biffer } from '@danor-lib/biffer';
 
 import { T, TS } from '../lib/i18n.js';
 import { toHexL8, showID, TLogError, StackError } from '../lib/utility.js';

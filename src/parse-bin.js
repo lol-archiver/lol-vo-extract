@@ -1,4 +1,4 @@
-import Biffer from '@danor-lib/biffer';
+import { Biffer } from '@danor-lib/biffer';
 
 
 

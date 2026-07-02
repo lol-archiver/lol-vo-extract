@@ -1324,7 +1324,67 @@
 			"43": 40,
 			"44": 40,
 			"45": 40,
-			"46": 40
+			"46": 40,
+			"47": {
+				"id": 47,
+				"name": "T1 Galio",
+				"chromas": {
+					"48": {
+						"id": 48,
+						"name": "T1 Galio (Elite)",
+						"colors": [
+							"#27211C",
+							"#A21743"
+						]
+					},
+					"49": {
+						"id": 49,
+						"name": "T1 Galio (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"50": {
+						"id": 50,
+						"name": "T1 Galio (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "T1 Galio (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "T1 Galio (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "T1 Galio (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					}
+				}
+			},
+			"48": 47,
+			"49": 47,
+			"50": 47,
+			"51": 47,
+			"52": 47,
+			"53": 47
 		},
 		"spells": {
 			"p": "Colossal Smash",
@@ -2212,7 +2272,67 @@
 			"49": 47,
 			"50": 47,
 			"51": 47,
-			"52": 47
+			"52": 47,
+			"53": {
+				"id": 53,
+				"name": "T1 Xin Zhao",
+				"chromas": {
+					"54": {
+						"id": 54,
+						"name": "T1 Xin Zhao (Elite)",
+						"colors": [
+							"#27211C",
+							"#A21743"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "T1 Xin Zhao (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "T1 Xin Zhao (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "T1 Xin Zhao (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "T1 Xin Zhao (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"59": {
+						"id": 59,
+						"name": "T1 Xin Zhao (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					}
+				}
+			},
+			"54": 53,
+			"55": 53,
+			"56": 53,
+			"57": 53,
+			"58": 53,
+			"59": 53
 		},
 		"spells": {
 			"p": "Determination",
@@ -10669,7 +10789,67 @@
 			"65": 60,
 			"66": 60,
 			"67": 60,
-			"68": 60
+			"68": 60,
+			"69": {
+				"id": 69,
+				"name": "MVP T1 Miss Fortune",
+				"chromas": {
+					"70": {
+						"id": 70,
+						"name": "MVP T1 Miss Fortune (Elite)",
+						"colors": [
+							"#27211C",
+							"#A21743"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "MVP T1 Miss Fortune (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "MVP T1 Miss Fortune (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "MVP T1 Miss Fortune (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "MVP T1 Miss Fortune (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "MVP T1 Miss Fortune (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					}
+				}
+			},
+			"70": 69,
+			"71": 69,
+			"72": 69,
+			"73": 69,
+			"74": 69,
+			"75": 69
 		},
 		"spells": {
 			"p": "Love Tap",
@@ -42201,7 +42381,94 @@
 			"45": 40,
 			"46": 40,
 			"47": 40,
-			"48": 40
+			"48": 40,
+			"49": {
+				"id": 49,
+				"name": "Victorious Rengar",
+				"chromas": {
+					"50": {
+						"id": 50,
+						"name": "Victorious Rengar (Bronze)",
+						"colors": [
+							"#764D43",
+							"#764D43"
+						]
+					},
+					"51": {
+						"id": 51,
+						"name": "Victorious Rengar (Silver)",
+						"colors": [
+							"#AAB5BA",
+							"#AAB5BA"
+						]
+					},
+					"52": {
+						"id": 52,
+						"name": "Victorious Rengar (Gold)",
+						"colors": [
+							"#D9C445",
+							"#D9C445"
+						]
+					},
+					"53": {
+						"id": 53,
+						"name": "Victorious Rengar (Platinum)",
+						"colors": [
+							"#55CDE5",
+							"#55CDE5"
+						]
+					},
+					"54": {
+						"id": 54,
+						"name": "Victorious Rengar (Emerald)",
+						"colors": [
+							"#26854C",
+							"#26854C"
+						]
+					},
+					"55": {
+						"id": 55,
+						"name": "Victorious Rengar (Diamond)",
+						"colors": [
+							"#65337F",
+							"#65337F"
+						]
+					},
+					"56": {
+						"id": 56,
+						"name": "Victorious Rengar (Master)",
+						"colors": [
+							"#9D228D",
+							"#9D228D"
+						]
+					},
+					"57": {
+						"id": 57,
+						"name": "Victorious Rengar (Grandmaster)",
+						"colors": [
+							"#B31316",
+							"#B31316"
+						]
+					},
+					"58": {
+						"id": 58,
+						"name": "Victorious Rengar (Challenger)",
+						"colors": [
+							"#1D62C8",
+							"#1D62C8"
+						]
+					}
+				}
+			},
+			"50": 49,
+			"51": 49,
+			"52": 49,
+			"53": 49,
+			"54": 49,
+			"55": 49,
+			"56": 49,
+			"57": 49,
+			"58": 49
 		},
 		"spells": {
 			"p": "Unseen Predator",
@@ -53349,7 +53616,67 @@
 			"64": 59,
 			"65": 59,
 			"66": 59,
-			"67": 59
+			"67": 59,
+			"68": {
+				"id": 68,
+				"name": "T1 Seraphine",
+				"chromas": {
+					"70": {
+						"id": 70,
+						"name": "T1 Seraphine (Elite)",
+						"colors": [
+							"#27211C",
+							"#A21743"
+						]
+					},
+					"71": {
+						"id": 71,
+						"name": "T1 Seraphine (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"72": {
+						"id": 72,
+						"name": "T1 Seraphine (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"73": {
+						"id": 73,
+						"name": "T1 Seraphine (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"74": {
+						"id": 74,
+						"name": "T1 Seraphine (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"75": {
+						"id": 75,
+						"name": "T1 Seraphine (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					}
+				}
+			},
+			"70": 68,
+			"71": 68,
+			"72": 68,
+			"73": 68,
+			"74": 68,
+			"75": 68
 		},
 		"spells": {
 			"p": "Stage Presence",
@@ -72836,7 +73163,67 @@
 			"4": 1,
 			"5": 1,
 			"6": 1,
-			"7": 1
+			"7": 1,
+			"8": {
+				"id": 8,
+				"name": "T1 Ambessa",
+				"chromas": {
+					"9": {
+						"id": 9,
+						"name": "T1 Ambessa (Elite)",
+						"colors": [
+							"#27211C",
+							"#A21743"
+						]
+					},
+					"10": {
+						"id": 10,
+						"name": "T1 Ambessa (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"11": {
+						"id": 11,
+						"name": "T1 Ambessa (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "T1 Ambessa (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "T1 Ambessa (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "T1 Ambessa (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					}
+				}
+			},
+			"9": 8,
+			"10": 8,
+			"11": 8,
+			"12": 8,
+			"13": 8,
+			"14": 8
 		},
 		"spells": {
 			"p": "Drakehound's Step",
@@ -73054,7 +73441,67 @@
 			"6": 1,
 			"7": 1,
 			"8": 1,
-			"9": 1
+			"9": 1,
+			"10": {
+				"id": 10,
+				"name": "T1 Yunara",
+				"chromas": {
+					"11": {
+						"id": 11,
+						"name": "T1 Yunara (Elite)",
+						"colors": [
+							"#27211C",
+							"#A21743"
+						]
+					},
+					"12": {
+						"id": 12,
+						"name": "T1 Yunara (Pearl)",
+						"colors": [
+							"#ECF9F8",
+							"#ECF9F8"
+						]
+					},
+					"13": {
+						"id": 13,
+						"name": "T1 Yunara (Ruby)",
+						"colors": [
+							"#D33528",
+							"#D33528"
+						]
+					},
+					"14": {
+						"id": 14,
+						"name": "T1 Yunara (Rose Quartz)",
+						"colors": [
+							"#E58BA5",
+							"#E58BA5"
+						]
+					},
+					"15": {
+						"id": 15,
+						"name": "T1 Yunara (Catseye)",
+						"colors": [
+							"#FFEE59",
+							"#FFEE59"
+						]
+					},
+					"16": {
+						"id": 16,
+						"name": "T1 Yunara (Sapphire)",
+						"colors": [
+							"#2756CE",
+							"#2756CE"
+						]
+					}
+				}
+			},
+			"11": 10,
+			"12": 10,
+			"13": 10,
+			"14": 10,
+			"15": 10,
+			"16": 10
 		},
 		"spells": {
 			"p": "Vow of the First Lands",
@@ -73067,10 +73514,11 @@
 	"805": {
 		"id": 805,
 		"name": "Locke",
-		"title": "",
+		"title": "the Ashen Exorcist",
 		"slot": "Locke",
 		"roles": [
-			"assassin"
+			"assassin",
+			"mage"
 		],
 		"skins": {
 			"0": {

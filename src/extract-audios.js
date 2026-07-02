@@ -4,7 +4,7 @@ import { parse as parsePath, resolve as resolvePath } from 'node:path';
 
 import { emptyDirSync } from 'fs-extra/esm';
 
-import Biffer from '@danor-lib/biffer';
+import { Biffer } from '@danor-lib/biffer';
 
 import { G } from '@nuogz/pangu';
 

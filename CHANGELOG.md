@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v2.13.0 - 2026.07.02 09
+* improve: [save-dictation] for non-HIRCSound, `idx(-1)` becomes `idx(--)`
+* improve: [save-dictation] when a HIRCContainer has only one audio, the audio's `idx(01)` becomes `idx(o1)` (only one)
+  * this helps quickly identify which containers need reordering
+* improve: improve import
+* regular: update base data
+* regular: bump up dependencies
+
+
 ## v2.12.0 - 2026.05.14 16
 * feat!: use `@danor-lib/biffer` instead `@nuogz/biffer`, and fix break
 * feat!: use `node:zlib.crc32` instead `buffer-crc32`
