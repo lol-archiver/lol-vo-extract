@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v2.13.1 - 2026.08.31 14
+* improve: fix various errors when extracting with stage skin as the main skin
+* regular: update base data
+
+
 ## v2.13.0 - 2026.07.02 09
 * improve: [save-dictation] for non-HIRCSound, `idx(-1)` becomes `idx(--)`
 * improve: [save-dictation] when a HIRCContainer has only one audio, the audio's `idx(01)` becomes `idx(o1)` (only one)

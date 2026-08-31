@@ -1,6 +1,6 @@
 {
 	"name": "@lol-archiver/lol-vo-extract",
-	"version": "2.13.0",
+	"version": "2.13.1",
 	"description": "Extracting League of Legends champion/skin voices and matching them to in-game events",
 	"author": "DanoR",
 	"license": "LGPL-3.0-or-later",

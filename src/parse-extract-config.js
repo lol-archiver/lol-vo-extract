@@ -86,7 +86,7 @@ export default function parseExtractConfig(runcoms) {
 			const champions = champions$lang[E.lang];
 
 			const champion = E.champion = champions[String(championFallback.id)];
-			const skin = E.skin = champion.skins[String(skinFallback.id)];
+			const skin = E.skin = E.skinParent ? champion.skins[String(E.skinParent.id)].chromas[String(skinFallback.id)] : champion.skins[String(skinFallback.id)];
 
 			E.slot = champion.slot.toLowerCase();
 			E.title = skin.id == 0 ? `${champion.title} ${champion.name}` : skin.name;

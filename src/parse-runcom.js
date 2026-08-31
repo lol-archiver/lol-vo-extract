@@ -40,13 +40,21 @@ export default function parseRuncom(rawsRuncom = []) {
 
 			const champion = championsEN[Number(slot)] || championsEN.find(c => c.slot.toLowerCase() == slot.toLowerCase());
 			if(!champion) { throw '找不到对应英雄'; }
+			runcom.champion = champion;
+
+
 			const skin = champion.skins[idSkin];
 			if(!skin) { throw '找不到对应皮肤'; }
+			runcom.skin = skin;
 			// if(!champion) { throw TLogError('parse-runcom', { rc, slot: slotRC }, 'unknown-champion'); }
 
+			if(typeof skin == 'number') {
+				runcom.skinParent = champion.skins[skin];
 
-			runcom.champion = champion;
-			runcom.skin = skin;
+				runcom.skin = runcom.skinParent.chromas[idSkin];
+			}
+
+
 			if(title) { runcom.title = title; }
 			if(profile) { runcom.profile = profile; }
 		}
